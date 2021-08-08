@@ -7,20 +7,20 @@ PallyPowerDB = {
 	},
 	["profiles"] = {
 		["Default"] = {
-			["freeassign"] = true,
 			["rfbuff"] = false,
-			["rf"] = false,
 			["display"] = {
 				["buffDuration"] = false,
 				["frameLocked"] = true,
-				["enableDragHandle"] = false,
 				["showPlayerButtons"] = false,
+				["enableDragHandle"] = false,
 			},
-			["ShowWhenSolo"] = false,
+			["freeassign"] = true,
 			["enable"] = true,
 			["minimap"] = {
 				["minimapPos"] = 214.3417257850349,
 			},
+			["ShowWhenSolo"] = false,
+			["rf"] = false,
 		},
 		["Other"] = {
 			["enable"] = true,
@@ -54,14 +54,14 @@ PallyPower_Assignments = {
 	},
 	["Kealthas"] = {
 		3, -- [1]
-		4, -- [2]
-		1, -- [3]
-		4, -- [4]
-		1, -- [5]
-		4, -- [6]
-		4, -- [7]
-		4, -- [8]
-		4, -- [9]
+		3, -- [2]
+		3, -- [3]
+		3, -- [4]
+		3, -- [5]
+		3, -- [6]
+		3, -- [7]
+		3, -- [8]
+		3, -- [9]
 		3, -- [10]
 	},
 	["Busar"] = {
@@ -84,7 +84,7 @@ PallyPower_AuraAssignments = {
 	["Ebolas"] = 0,
 	["Perms"] = 0,
 	["Ogola"] = 0,
-	["Kealthas"] = 1,
+	["Kealthas"] = 2,
 	["Holykibb"] = 0,
 	["Cakmak"] = 0,
 	["Donniehmoow"] = 3,
@@ -104,9 +104,8 @@ PallyPower_AuraAssignments = {
 }
 PallyPower_SavedPresets = nil
 PallyPower_ChanNames = {
-	[5] = "world",
-	[6] = "lfg",
 	[0] = "None",
+	[5] = "world",
 }
 LCD_Data = nil
 LCD_GUIDAccess = nil

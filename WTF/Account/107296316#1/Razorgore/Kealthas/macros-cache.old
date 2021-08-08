@@ -1,7 +1,3 @@
-VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast [@mouseover,help,nodead][] Righteous Defense
-END
 VER 3 000000000100000B " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /start attack
@@ -10,6 +6,10 @@ END
 VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover,harm,nodead][] Hammer of Justice
+END
+VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,help,nodead][] Righteous Defense
 END
 VER 3 0000000001000005 " might" "INV_MISC_QUESTIONMARK"
 #showtooltip

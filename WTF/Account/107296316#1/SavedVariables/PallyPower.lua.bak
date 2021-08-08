@@ -7,19 +7,19 @@ PallyPowerDB = {
 	},
 	["profiles"] = {
 		["Default"] = {
-			["rfbuff"] = false,
-			["display"] = {
-				["buffDuration"] = false,
-				["frameLocked"] = true,
-				["showPlayerButtons"] = false,
-				["enableDragHandle"] = false,
-			},
 			["freeassign"] = true,
-			["enable"] = true,
+			["rfbuff"] = false,
 			["minimap"] = {
 				["minimapPos"] = 214.3417257850349,
 			},
+			["display"] = {
+				["buffDuration"] = false,
+				["frameLocked"] = true,
+				["enableDragHandle"] = false,
+				["showPlayerButtons"] = false,
+			},
 			["ShowWhenSolo"] = false,
+			["enable"] = true,
 			["rf"] = false,
 		},
 		["Other"] = {
@@ -104,8 +104,9 @@ PallyPower_AuraAssignments = {
 }
 PallyPower_SavedPresets = nil
 PallyPower_ChanNames = {
-	[0] = "None",
 	[5] = "world",
+	[6] = "lfg",
+	[0] = "None",
 }
 LCD_Data = nil
 LCD_GUIDAccess = nil

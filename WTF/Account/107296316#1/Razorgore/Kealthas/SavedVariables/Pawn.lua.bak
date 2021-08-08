@@ -1,6 +1,8 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.052,
+	["LastPlayerFullName"] = "Kealthas-Razorgore",
+	["AutoSelectScales"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 24922,
@@ -87,8 +89,6 @@ PawnOptions = {
 			["Link"] = "|cff1eff00|Hitem:25073::::::-45:83361813:58::::::::|h[Emperor Shield of the Champion]|h|r",
 		},
 	},
-	["AutoSelectScales"] = false,
-	["LastPlayerFullName"] = "Kealthas-Razorgore",
 }
 PawnMrRobotScaleProviderOptions = nil
 PawnClassicScaleProviderOptions = {

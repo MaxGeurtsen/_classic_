@@ -38,12 +38,12 @@ AtlasLootClassicDB = {
 		["Cursedbreath - Firemaw"] = "Cursedbreath - Firemaw",
 		["Mírjam - Razorgore"] = "Mírjam - Razorgore",
 		["Helpsiebren - Razorgore"] = "Helpsiebren - Razorgore",
-		["Mirjam - Firemaw"] = "Mirjam - Firemaw",
 		["Mírjam - Firemaw"] = "Mírjam - Firemaw",
-		["Partijlijder - Razorgore"] = "Partijlijder - Razorgore",
+		["Mirjam - Firemaw"] = "Mirjam - Firemaw",
+		["Partijleider - Razorgore"] = "Partijleider - Razorgore",
 		["Eefjé - Razorgore"] = "Eefjé - Razorgore",
 		["Bankerinos - Firemaw"] = "Bankerinos - Firemaw",
-		["Partijleider - Razorgore"] = "Partijleider - Razorgore",
+		["Partijlijder - Razorgore"] = "Partijlijder - Razorgore",
 		["Kealthas - Razorgore"] = "Kealthas - Razorgore",
 	},
 	["profiles"] = {
@@ -118,6 +118,8 @@ AtlasLootClassicDB = {
 		},
 		["Helpsiebren - Razorgore"] = {
 		},
+		["Mírjam - Firemaw"] = {
+		},
 		["Mirjam - Firemaw"] = {
 			["GUI"] = {
 				["point"] = {
@@ -139,51 +141,9 @@ AtlasLootClassicDB = {
 				["minimapPos"] = 140.500116826767,
 			},
 		},
-		["Mírjam - Firemaw"] = {
-		},
-		["Partijlijder - Razorgore"] = {
-			["GUI"] = {
-				["selected"] = {
-					nil, -- [1]
-					"HellfireRamparts", -- [2]
-					4, -- [3]
-					6, -- [4]
-					0, -- [5]
-				},
-			},
-		},
-		["Eefjé - Razorgore"] = {
-		},
-		["Bankerinos - Firemaw"] = {
-			["minimap"] = {
-				["minimapPos"] = 198.399252515843,
-			},
-			["GUI"] = {
-				["selected"] = {
-					nil, -- [1]
-					"MoltenCore", -- [2]
-					2, -- [3]
-					3, -- [4]
-					0, -- [5]
-				},
-			},
-		},
 		["Partijleider - Razorgore"] = {
-			["GUI"] = {
-				["point"] = {
-					nil, -- [1]
-					nil, -- [2]
-					"CENTER", -- [3]
-					139.7778778076172, -- [4]
-					-37.65074157714844, -- [5]
-				},
-				["selected"] = {
-					nil, -- [1]
-					"Karazhan", -- [2]
-					15, -- [3]
-					1, -- [4]
-					0, -- [5]
-				},
+			["minimap"] = {
+				["minimapPos"] = 246.6099503657943,
 			},
 			["Addons"] = {
 				["Favourites"] = {
@@ -271,11 +231,67 @@ AtlasLootClassicDB = {
 					},
 				},
 			},
+			["GUI"] = {
+				["point"] = {
+					nil, -- [1]
+					nil, -- [2]
+					"CENTER", -- [3]
+					139.7778778076172, -- [4]
+					-37.65074157714844, -- [5]
+				},
+				["selected"] = {
+					nil, -- [1]
+					"Karazhan", -- [2]
+					nil, -- [3]
+					1, -- [4]
+					0, -- [5]
+				},
+			},
+		},
+		["Eefjé - Razorgore"] = {
+		},
+		["Bankerinos - Firemaw"] = {
 			["minimap"] = {
-				["minimapPos"] = 246.6099503657943,
+				["minimapPos"] = 198.399252515843,
+			},
+			["GUI"] = {
+				["selected"] = {
+					nil, -- [1]
+					"MoltenCore", -- [2]
+					2, -- [3]
+					3, -- [4]
+					0, -- [5]
+				},
+			},
+		},
+		["Partijlijder - Razorgore"] = {
+			["GUI"] = {
+				["selected"] = {
+					nil, -- [1]
+					"HellfireRamparts", -- [2]
+					4, -- [3]
+					6, -- [4]
+					0, -- [5]
+				},
 			},
 		},
 		["Kealthas - Razorgore"] = {
+			["GUI"] = {
+				["point"] = {
+					nil, -- [1]
+					nil, -- [2]
+					"CENTER", -- [3]
+					171.9842834472656, -- [4]
+					-49.01583862304688, -- [5]
+				},
+				["selected"] = {
+					nil, -- [1]
+					"HellfireRamparts", -- [2]
+					nil, -- [3]
+					1, -- [4]
+					0, -- [5]
+				},
+			},
 			["minimap"] = {
 				["minimapPos"] = 237.8996868822576,
 			},
@@ -314,14 +330,14 @@ AtlasLootClassicDB = {
 							[28285] = true,
 							[29252] = true,
 							["__name"] = "pre-raid",
-							[29253] = true,
+							[27672] = true,
 							[29176] = true,
-							[29254] = true,
+							[28262] = true,
 							[29184] = true,
 							[27891] = true,
 							[27535] = true,
-							[28262] = true,
-							[27672] = true,
+							[29254] = true,
+							[29253] = true,
 							[28203] = true,
 							[32082] = true,
 						},
@@ -339,31 +355,31 @@ AtlasLootClassicDB = {
 							[29070] = true,
 							[29388] = true,
 							[29266] = true,
-							[28621] = true,
 							[28262] = true,
-							[27804] = true,
+							[28621] = true,
 							[28390] = true,
-							[29069] = true,
+							[27804] = true,
 							[28203] = true,
+							[29069] = true,
 							[29766] = true,
-							[28566] = true,
 							[27891] = true,
+							[28566] = true,
 							[29067] = true,
-							[27672] = true,
 							[27917] = true,
 							[29155] = true,
+							[27672] = true,
 							[29763] = true,
-							[28749] = true,
 							[28528] = true,
-							[29184] = true,
+							[28749] = true,
 							[28530] = true,
 							[29173] = true,
-							[27535] = true,
+							[29184] = true,
 							[28407] = true,
 							[28597] = true,
 							[27527] = true,
-							[29757] = true,
+							[27535] = true,
 							[27529] = true,
+							[29757] = true,
 							[28518] = true,
 							[28285] = true,
 							[28793] = true,
@@ -383,22 +399,6 @@ AtlasLootClassicDB = {
 							},
 						},
 					},
-				},
-			},
-			["GUI"] = {
-				["point"] = {
-					nil, -- [1]
-					nil, -- [2]
-					"CENTER", -- [3]
-					171.9842834472656, -- [4]
-					-49.01583862304688, -- [5]
-				},
-				["selected"] = {
-					nil, -- [1]
-					"HellfireRamparts", -- [2]
-					nil, -- [3]
-					1, -- [4]
-					0, -- [5]
 				},
 			},
 		},

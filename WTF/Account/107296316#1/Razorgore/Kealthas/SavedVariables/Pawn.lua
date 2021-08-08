@@ -1,8 +1,6 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.052,
-	["LastPlayerFullName"] = "Kealthas-Razorgore",
-	["AutoSelectScales"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 24922,
@@ -15,9 +13,9 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:24385::::::::61::::::::|h[Pendant of Battle-Lust]|h|r",
 		}, -- [2]
 		{
-			["ID"] = 24932,
-			["Level"] = 84,
-			["Link"] = "|cff1eff00|Hitem:24932::::::-8:2075263005:58::::::::|h[Ango'rosh Pauldrons of the Whale]|h|r",
+			["ID"] = 25715,
+			["Level"] = 85,
+			["Link"] = "|cff0070dd|Hitem:25715::::::::61::::::::|h[Jade Warrior Pauldrons]|h|r",
 		}, -- [3]
 		[13] = {
 			["ID"] = 24390,
@@ -89,6 +87,8 @@ PawnOptions = {
 			["Link"] = "|cff1eff00|Hitem:25073::::::-45:83361813:58::::::::|h[Emperor Shield of the Champion]|h|r",
 		},
 	},
+	["AutoSelectScales"] = false,
+	["LastPlayerFullName"] = "Kealthas-Razorgore",
 }
 PawnMrRobotScaleProviderOptions = nil
 PawnClassicScaleProviderOptions = {

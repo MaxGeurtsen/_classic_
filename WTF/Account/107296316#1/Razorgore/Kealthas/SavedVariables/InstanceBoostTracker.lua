@@ -16,19 +16,29 @@ SavedComments = {
 SavedSettings = {
 	["LOCKOUT_LOGOFFWARNING"] = true,
 	["FEATURE_Payment"] = true,
+	["REPORT_ELEMENTAL_EARTH"] = false,
 	["AUTO_FOLLOW"] = false,
-	["LOCKOUT_RESETONGROUPCHANGE"] = true,
 	["FEATURE_LockoutStatistics"] = true,
 	["SPEEDY_AUTO_LOOT"] = false,
 	["PAYMENT_REPORTCHAT"] = false,
 	["FEATURE_LockoutTracker"] = true,
-	["LOCKOUT_REPORTRESET"] = true,
 	["PAYMENT_REPORTMAIN"] = true,
+	["LOCKOUT_REPORTRESET"] = true,
 	["STATISTICS_REPORT"] = true,
-	["REPORT_ELEMENTAL_EARTH"] = false,
+	["LOCKOUT_RESETONGROUPCHANGE"] = true,
 }
 SavedAntiReloadUISettings = {
-	["IsEnteringFirstInstanceAfterLogin"] = true,
+	["IsEnteringFirstInstanceAfterLogin"] = false,
 	["SavedCharacterLockouts"] = {
+		["Mabbs"] = {
+		},
+		["Elfstone"] = {
+		},
+		["Kealthas"] = {
+		},
+		["Hycklare"] = {
+		},
+		["Mundane"] = {
+		},
 	},
 }

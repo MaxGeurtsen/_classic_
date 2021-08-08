@@ -160,6 +160,26 @@ SavedAccountLockouts = {
 			["second"] = "42",
 		},
 	},
+	[1883171] = {
+		["instanceName"] = "Hellfire Citadel: Ramparts",
+		["startDateTime"] = {
+			["year"] = "2021",
+			["month"] = "08",
+			["day"] = "08",
+			["minute"] = "38",
+			["hour"] = "18",
+			["second"] = "40",
+		},
+		["endDateTime"] = {
+			["year"] = "2021",
+			["month"] = "08",
+			["day"] = "08",
+			["minute"] = "12",
+			["hour"] = "19",
+			["second"] = "28",
+		},
+		["playerName"] = "Kealthas",
+	},
 	[618081] = {
 		["instanceName"] = "Scarlet Monastery",
 		["startDateTime"] = {
@@ -240,45 +260,65 @@ SavedAccountLockouts = {
 			["second"] = "30",
 		},
 	},
-	[9706556] = {
-		["instanceName"] = "Hellfire Citadel: Ramparts",
+	[3349483] = {
+		["instanceName"] = "Stratholme",
 		["startDateTime"] = {
 			["year"] = "2021",
 			["month"] = "07",
-			["day"] = "27",
-			["minute"] = "52",
+			["day"] = "22",
+			["minute"] = "55",
+			["hour"] = "22",
+			["second"] = "45",
+		},
+		["endDateTime"] = {
+			["year"] = "2021",
+			["month"] = "07",
+			["day"] = "22",
+			["minute"] = "14",
 			["hour"] = "23",
-			["second"] = "39",
+			["second"] = "40",
 		},
 		["playerName"] = "Kealthas",
+	},
+	[6873357] = {
+		["instanceName"] = "Maraudon",
+		["startDateTime"] = {
+			["year"] = "2021",
+			["month"] = "07",
+			["day"] = "19",
+			["minute"] = "32",
+			["hour"] = "20",
+			["second"] = "16",
+		},
 		["endDateTime"] = {
 			["year"] = "2021",
 			["month"] = "07",
-			["day"] = "28",
-			["minute"] = "25",
-			["hour"] = "00",
-			["second"] = "29",
+			["day"] = "19",
+			["minute"] = "49",
+			["hour"] = "20",
+			["second"] = "44",
 		},
+		["playerName"] = "Kealthas",
 	},
-	[19606] = {
-		["instanceName"] = "Karazhan",
+	[5965509] = {
+		["instanceName"] = "Stratholme",
 		["startDateTime"] = {
 			["year"] = "2021",
-			["month"] = "08",
-			["day"] = "05",
-			["minute"] = "18",
-			["hour"] = "19",
-			["second"] = "55",
+			["month"] = "07",
+			["day"] = "21",
+			["minute"] = "06",
+			["hour"] = "21",
+			["second"] = "17",
 		},
-		["playerName"] = "Partijleider",
 		["endDateTime"] = {
 			["year"] = "2021",
-			["month"] = "08",
-			["day"] = "05",
-			["minute"] = "31",
+			["month"] = "07",
+			["day"] = "21",
+			["minute"] = "17",
 			["hour"] = "21",
-			["second"] = "29",
+			["second"] = "06",
 		},
+		["playerName"] = "Kealthas",
 	},
 	[4317413] = {
 		["instanceName"] = "Scarlet Monastery",
@@ -360,25 +400,25 @@ SavedAccountLockouts = {
 		},
 		["playerName"] = "Kealthas",
 	},
-	[6873357] = {
-		["instanceName"] = "Maraudon",
+	[46374] = {
+		["instanceName"] = "Hellfire Citadel: Ramparts",
 		["startDateTime"] = {
 			["year"] = "2021",
 			["month"] = "07",
-			["day"] = "19",
-			["minute"] = "32",
-			["hour"] = "20",
-			["second"] = "16",
-		},
-		["endDateTime"] = {
-			["year"] = "2021",
-			["month"] = "07",
-			["day"] = "19",
-			["minute"] = "49",
-			["hour"] = "20",
+			["day"] = "28",
+			["minute"] = "05",
+			["hour"] = "11",
 			["second"] = "44",
 		},
 		["playerName"] = "Kealthas",
+		["endDateTime"] = {
+			["year"] = "2021",
+			["month"] = "07",
+			["day"] = "28",
+			["minute"] = "28",
+			["hour"] = "11",
+			["second"] = "09",
+		},
 	},
 	[889613] = {
 		["instanceName"] = "Maraudon",
@@ -420,25 +460,25 @@ SavedAccountLockouts = {
 			["second"] = "54",
 		},
 	},
-	[5965509] = {
-		["instanceName"] = "Stratholme",
+	[19606] = {
+		["instanceName"] = "Karazhan",
 		["startDateTime"] = {
 			["year"] = "2021",
-			["month"] = "07",
-			["day"] = "21",
-			["minute"] = "06",
-			["hour"] = "21",
-			["second"] = "17",
+			["month"] = "08",
+			["day"] = "05",
+			["minute"] = "18",
+			["hour"] = "19",
+			["second"] = "55",
 		},
+		["playerName"] = "Partijleider",
 		["endDateTime"] = {
 			["year"] = "2021",
-			["month"] = "07",
-			["day"] = "21",
-			["minute"] = "17",
+			["month"] = "08",
+			["day"] = "05",
+			["minute"] = "31",
 			["hour"] = "21",
-			["second"] = "06",
+			["second"] = "29",
 		},
-		["playerName"] = "Kealthas",
 	},
 	[7628705] = {
 		["instanceName"] = "Maraudon",
@@ -660,44 +700,44 @@ SavedAccountLockouts = {
 			["second"] = "02",
 		},
 	},
-	[9721773] = {
-		["instanceName"] = "Hellfire Citadel: Ramparts",
+	[6589415] = {
+		["instanceName"] = "Maraudon",
 		["startDateTime"] = {
 			["year"] = "2021",
 			["month"] = "07",
-			["day"] = "28",
-			["minute"] = "53",
-			["hour"] = "00",
-			["second"] = "53",
+			["day"] = "19",
+			["minute"] = "07",
+			["hour"] = "22",
+			["second"] = "23",
 		},
 		["endDateTime"] = {
 			["year"] = "2021",
 			["month"] = "07",
-			["day"] = "28",
-			["minute"] = "54",
-			["hour"] = "00",
-			["second"] = "04",
+			["day"] = "19",
+			["minute"] = "24",
+			["hour"] = "22",
+			["second"] = "07",
 		},
 		["playerName"] = "Kealthas",
 	},
-	[46374] = {
+	[9706556] = {
 		["instanceName"] = "Hellfire Citadel: Ramparts",
 		["startDateTime"] = {
 			["year"] = "2021",
 			["month"] = "07",
-			["day"] = "28",
-			["minute"] = "05",
-			["hour"] = "11",
-			["second"] = "44",
+			["day"] = "27",
+			["minute"] = "52",
+			["hour"] = "23",
+			["second"] = "39",
 		},
 		["playerName"] = "Kealthas",
 		["endDateTime"] = {
 			["year"] = "2021",
 			["month"] = "07",
 			["day"] = "28",
-			["minute"] = "28",
-			["hour"] = "11",
-			["second"] = "09",
+			["minute"] = "25",
+			["hour"] = "00",
+			["second"] = "29",
 		},
 	},
 	[4380605] = {
@@ -1080,23 +1120,23 @@ SavedAccountLockouts = {
 		},
 		["playerName"] = "Kealthas",
 	},
-	[1891087] = {
+	[5684729] = {
 		["instanceName"] = "Stratholme",
 		["startDateTime"] = {
 			["year"] = "2021",
 			["month"] = "07",
-			["day"] = "22",
-			["minute"] = "27",
-			["hour"] = "23",
-			["second"] = "14",
+			["day"] = "21",
+			["minute"] = "37",
+			["hour"] = "14",
+			["second"] = "42",
 		},
 		["endDateTime"] = {
 			["year"] = "2021",
 			["month"] = "07",
-			["day"] = "22",
-			["minute"] = "43",
-			["hour"] = "23",
-			["second"] = "53",
+			["day"] = "21",
+			["minute"] = "55",
+			["hour"] = "14",
+			["second"] = "45",
 		},
 		["playerName"] = "Kealthas",
 	},
@@ -1140,23 +1180,23 @@ SavedAccountLockouts = {
 			["second"] = "16",
 		},
 	},
-	[5684729] = {
+	[1891087] = {
 		["instanceName"] = "Stratholme",
 		["startDateTime"] = {
 			["year"] = "2021",
 			["month"] = "07",
-			["day"] = "21",
-			["minute"] = "37",
-			["hour"] = "14",
-			["second"] = "42",
+			["day"] = "22",
+			["minute"] = "27",
+			["hour"] = "23",
+			["second"] = "14",
 		},
 		["endDateTime"] = {
 			["year"] = "2021",
 			["month"] = "07",
-			["day"] = "21",
-			["minute"] = "55",
-			["hour"] = "14",
-			["second"] = "45",
+			["day"] = "22",
+			["minute"] = "43",
+			["hour"] = "23",
+			["second"] = "53",
 		},
 		["playerName"] = "Kealthas",
 	},
@@ -1180,26 +1220,6 @@ SavedAccountLockouts = {
 			["second"] = "40",
 		},
 	},
-	[2504417] = {
-		["instanceName"] = "Hellfire Citadel: Ramparts",
-		["startDateTime"] = {
-			["year"] = "2021",
-			["month"] = "07",
-			["day"] = "28",
-			["minute"] = "41",
-			["hour"] = "19",
-			["second"] = "09",
-		},
-		["endDateTime"] = {
-			["year"] = "2021",
-			["month"] = "07",
-			["day"] = "28",
-			["minute"] = "00",
-			["hour"] = "20",
-			["second"] = "46",
-		},
-		["playerName"] = "Kealthas",
-	},
 	[1742119] = {
 		["instanceName"] = "Hellfire Citadel: Ramparts",
 		["startDateTime"] = {
@@ -1217,6 +1237,26 @@ SavedAccountLockouts = {
 			["minute"] = "11",
 			["hour"] = "12",
 			["second"] = "23",
+		},
+		["playerName"] = "Kealthas",
+	},
+	[9043331] = {
+		["instanceName"] = "Maraudon",
+		["startDateTime"] = {
+			["year"] = "2021",
+			["month"] = "07",
+			["day"] = "18",
+			["minute"] = "23",
+			["hour"] = "22",
+			["second"] = "20",
+		},
+		["endDateTime"] = {
+			["year"] = "2021",
+			["month"] = "07",
+			["day"] = "18",
+			["minute"] = "49",
+			["hour"] = "22",
+			["second"] = "59",
 		},
 		["playerName"] = "Kealthas",
 	},
@@ -1300,43 +1340,43 @@ SavedAccountLockouts = {
 		},
 		["playerName"] = "Kealthas",
 	},
-	[3349483] = {
-		["instanceName"] = "Stratholme",
+	[129822] = {
+		["instanceName"] = "Hellfire Citadel: Ramparts",
 		["startDateTime"] = {
 			["year"] = "2021",
-			["month"] = "07",
-			["day"] = "22",
-			["minute"] = "55",
-			["hour"] = "22",
-			["second"] = "45",
+			["month"] = "08",
+			["day"] = "08",
+			["minute"] = "38",
+			["hour"] = "18",
+			["second"] = "11",
 		},
 		["endDateTime"] = {
 			["year"] = "2021",
-			["month"] = "07",
-			["day"] = "22",
-			["minute"] = "14",
-			["hour"] = "23",
-			["second"] = "40",
+			["month"] = "08",
+			["day"] = "08",
+			["minute"] = "38",
+			["hour"] = "18",
+			["second"] = "34",
 		},
 		["playerName"] = "Kealthas",
 	},
-	[214758] = {
-		["instanceName"] = "Stratholme",
+	[686629] = {
+		["instanceName"] = "Maraudon",
 		["startDateTime"] = {
 			["year"] = "2021",
 			["month"] = "07",
-			["day"] = "22",
-			["minute"] = "44",
-			["hour"] = "23",
-			["second"] = "02",
+			["day"] = "18",
+			["minute"] = "45",
+			["hour"] = "20",
+			["second"] = "06",
 		},
 		["endDateTime"] = {
 			["year"] = "2021",
 			["month"] = "07",
-			["day"] = "22",
-			["minute"] = "57",
-			["hour"] = "23",
-			["second"] = "44",
+			["day"] = "18",
+			["minute"] = "08",
+			["hour"] = "21",
+			["second"] = "30",
 		},
 		["playerName"] = "Kealthas",
 	},
@@ -1400,23 +1440,23 @@ SavedAccountLockouts = {
 		},
 		["playerName"] = "Kealthas",
 	},
-	[686629] = {
-		["instanceName"] = "Maraudon",
+	[214758] = {
+		["instanceName"] = "Stratholme",
 		["startDateTime"] = {
 			["year"] = "2021",
 			["month"] = "07",
-			["day"] = "18",
-			["minute"] = "45",
-			["hour"] = "20",
-			["second"] = "06",
+			["day"] = "22",
+			["minute"] = "44",
+			["hour"] = "23",
+			["second"] = "02",
 		},
 		["endDateTime"] = {
 			["year"] = "2021",
 			["month"] = "07",
-			["day"] = "18",
-			["minute"] = "08",
-			["hour"] = "21",
-			["second"] = "30",
+			["day"] = "22",
+			["minute"] = "57",
+			["hour"] = "23",
+			["second"] = "44",
 		},
 		["playerName"] = "Kealthas",
 	},
@@ -1500,25 +1540,25 @@ SavedAccountLockouts = {
 		},
 		["playerName"] = "Kealthas",
 	},
-	[7100639] = {
-		["instanceName"] = "Karazhan",
+	[3047264] = {
+		["instanceName"] = "Stratholme",
 		["startDateTime"] = {
 			["year"] = "2021",
 			["month"] = "07",
-			["day"] = "18",
-			["minute"] = "20",
-			["hour"] = "20",
-			["second"] = "08",
+			["day"] = "21",
+			["minute"] = "26",
+			["hour"] = "23",
+			["second"] = "02",
 		},
-		["playerName"] = "Partijleider",
 		["endDateTime"] = {
 			["year"] = "2021",
 			["month"] = "07",
-			["day"] = "18",
-			["minute"] = "27",
-			["hour"] = "20",
-			["second"] = "37",
+			["day"] = "21",
+			["minute"] = "36",
+			["hour"] = "23",
+			["second"] = "55",
 		},
+		["playerName"] = "Kealthas",
 	},
 	[3983761] = {
 		["instanceName"] = "Stratholme",
@@ -1540,25 +1580,25 @@ SavedAccountLockouts = {
 		},
 		["playerName"] = "Kealthas",
 	},
-	[3047264] = {
-		["instanceName"] = "Stratholme",
+	[7100639] = {
+		["instanceName"] = "Karazhan",
 		["startDateTime"] = {
 			["year"] = "2021",
 			["month"] = "07",
-			["day"] = "21",
-			["minute"] = "26",
-			["hour"] = "23",
-			["second"] = "02",
+			["day"] = "18",
+			["minute"] = "20",
+			["hour"] = "20",
+			["second"] = "08",
 		},
+		["playerName"] = "Partijleider",
 		["endDateTime"] = {
 			["year"] = "2021",
 			["month"] = "07",
-			["day"] = "21",
-			["minute"] = "36",
-			["hour"] = "23",
-			["second"] = "55",
+			["day"] = "18",
+			["minute"] = "27",
+			["hour"] = "20",
+			["second"] = "37",
 		},
-		["playerName"] = "Kealthas",
 	},
 	[1738962] = {
 		["instanceName"] = "Maraudon",
@@ -2040,23 +2080,23 @@ SavedAccountLockouts = {
 			["second"] = "24",
 		},
 	},
-	[9043331] = {
-		["instanceName"] = "Maraudon",
+	[2504417] = {
+		["instanceName"] = "Hellfire Citadel: Ramparts",
 		["startDateTime"] = {
 			["year"] = "2021",
 			["month"] = "07",
-			["day"] = "18",
-			["minute"] = "23",
-			["hour"] = "22",
-			["second"] = "20",
+			["day"] = "28",
+			["minute"] = "41",
+			["hour"] = "19",
+			["second"] = "09",
 		},
 		["endDateTime"] = {
 			["year"] = "2021",
 			["month"] = "07",
-			["day"] = "18",
-			["minute"] = "49",
-			["hour"] = "22",
-			["second"] = "59",
+			["day"] = "28",
+			["minute"] = "00",
+			["hour"] = "20",
+			["second"] = "46",
 		},
 		["playerName"] = "Kealthas",
 	},
@@ -2200,23 +2240,23 @@ SavedAccountLockouts = {
 			["second"] = "22",
 		},
 	},
-	[6589415] = {
-		["instanceName"] = "Maraudon",
+	[9721773] = {
+		["instanceName"] = "Hellfire Citadel: Ramparts",
 		["startDateTime"] = {
 			["year"] = "2021",
 			["month"] = "07",
-			["day"] = "19",
-			["minute"] = "07",
-			["hour"] = "22",
-			["second"] = "23",
+			["day"] = "28",
+			["minute"] = "53",
+			["hour"] = "00",
+			["second"] = "53",
 		},
 		["endDateTime"] = {
 			["year"] = "2021",
 			["month"] = "07",
-			["day"] = "19",
-			["minute"] = "24",
-			["hour"] = "22",
-			["second"] = "07",
+			["day"] = "28",
+			["minute"] = "54",
+			["hour"] = "00",
+			["second"] = "04",
 		},
 		["playerName"] = "Kealthas",
 	},
@@ -2386,6 +2426,14 @@ SavedStatistics = {
 			["Gold"] = 58317,
 		},
 	},
+	[1883171] = {
+		["Kealthas"] = {
+			["Reputation"] = 0,
+			["Kills"] = 104,
+			["Experience"] = 130626,
+			["Gold"] = 43159,
+		},
+	},
 	[618081] = {
 		["Kealthas"] = {
 			["Reputation"] = 0,
@@ -2424,20 +2472,28 @@ SavedStatistics = {
 			["Gold"] = 0,
 		},
 	},
-	[9706556] = {
+	[3349483] = {
 		["Kealthas"] = {
-			["Reputation"] = 474,
-			["Kills"] = 86,
-			["Experience"] = 47713,
-			["Gold"] = 34271,
+			["Reputation"] = 435,
+			["Kills"] = 177,
+			["Experience"] = 39786,
+			["Gold"] = 35377,
 		},
 	},
-	[19606] = {
-		["Partijleider"] = {
-			["Reputation"] = 6008,
-			["Kills"] = 422,
-			["Experience"] = 0,
-			["Gold"] = 527688,
+	[6873357] = {
+		["Kealthas"] = {
+			["Reputation"] = 0,
+			["Kills"] = 341,
+			["Experience"] = 33808,
+			["Gold"] = 0,
+		},
+	},
+	[5965509] = {
+		["Kealthas"] = {
+			["Reputation"] = 1017,
+			["Kills"] = 184,
+			["Experience"] = 24109,
+			["Gold"] = 35804,
 		},
 	},
 	[4317413] = {
@@ -2478,12 +2534,12 @@ SavedStatistics = {
 			["Gold"] = 0,
 		},
 	},
-	[6873357] = {
+	[46374] = {
 		["Kealthas"] = {
-			["Reputation"] = 0,
-			["Kills"] = 341,
-			["Experience"] = 33808,
-			["Gold"] = 0,
+			["Reputation"] = 590,
+			["Kills"] = 93,
+			["Experience"] = 47208,
+			["Gold"] = 41599,
 		},
 	},
 	[889613] = {
@@ -2502,12 +2558,12 @@ SavedStatistics = {
 			["Gold"] = 15392,
 		},
 	},
-	[5965509] = {
-		["Kealthas"] = {
-			["Reputation"] = 1017,
-			["Kills"] = 184,
-			["Experience"] = 24109,
-			["Gold"] = 35804,
+	[19606] = {
+		["Partijleider"] = {
+			["Reputation"] = 6008,
+			["Kills"] = 422,
+			["Experience"] = 0,
+			["Gold"] = 527688,
 		},
 	},
 	[7628705] = {
@@ -2610,20 +2666,20 @@ SavedStatistics = {
 			["Gold"] = 5743,
 		},
 	},
-	[9721773] = {
+	[6589415] = {
 		["Kealthas"] = {
 			["Reputation"] = 0,
-			["Kills"] = 0,
-			["Experience"] = 0,
+			["Kills"] = 328,
+			["Experience"] = 36060,
 			["Gold"] = 0,
 		},
 	},
-	[46374] = {
+	[9706556] = {
 		["Kealthas"] = {
-			["Reputation"] = 590,
-			["Kills"] = 93,
-			["Experience"] = 47208,
-			["Gold"] = 41599,
+			["Reputation"] = 474,
+			["Kills"] = 86,
+			["Experience"] = 47713,
+			["Gold"] = 34271,
 		},
 	},
 	[4380605] = {
@@ -2778,12 +2834,12 @@ SavedStatistics = {
 			["Gold"] = 35767,
 		},
 	},
-	[1891087] = {
+	[5684729] = {
 		["Kealthas"] = {
-			["Reputation"] = 441,
-			["Kills"] = 166,
-			["Experience"] = 25755,
-			["Gold"] = 30258,
+			["Reputation"] = 1954,
+			["Kills"] = 179,
+			["Experience"] = 28295,
+			["Gold"] = 44987,
 		},
 	},
 	[6690738] = {
@@ -2802,12 +2858,12 @@ SavedStatistics = {
 			["Gold"] = 202129,
 		},
 	},
-	[5684729] = {
+	[1891087] = {
 		["Kealthas"] = {
-			["Reputation"] = 1954,
-			["Kills"] = 179,
-			["Experience"] = 28295,
-			["Gold"] = 44987,
+			["Reputation"] = 441,
+			["Kills"] = 166,
+			["Experience"] = 25755,
+			["Gold"] = 30258,
 		},
 	},
 	[4662114] = {
@@ -2818,20 +2874,20 @@ SavedStatistics = {
 			["Gold"] = 197931,
 		},
 	},
-	[2504417] = {
-		["Kealthas"] = {
-			["Reputation"] = 148,
-			["Kills"] = 30,
-			["Experience"] = 18745,
-			["Gold"] = 8603,
-		},
-	},
 	[1742119] = {
 		["Kealthas"] = {
 			["Reputation"] = 30,
 			["Kills"] = 7,
 			["Experience"] = 7244,
 			["Gold"] = 2464,
+		},
+	},
+	[9043331] = {
+		["Kealthas"] = {
+			["Reputation"] = 0,
+			["Kills"] = 335,
+			["Experience"] = 37421,
+			["Gold"] = 18324,
 		},
 	},
 	[3715906] = {
@@ -2866,20 +2922,20 @@ SavedStatistics = {
 			["Gold"] = 21202,
 		},
 	},
-	[3349483] = {
+	[129822] = {
 		["Kealthas"] = {
-			["Reputation"] = 435,
-			["Kills"] = 177,
-			["Experience"] = 39786,
-			["Gold"] = 35377,
+			["Reputation"] = 0,
+			["Kills"] = 0,
+			["Experience"] = 0,
+			["Gold"] = 0,
 		},
 	},
-	[214758] = {
+	[686629] = {
 		["Kealthas"] = {
-			["Reputation"] = 537,
-			["Kills"] = 177,
-			["Experience"] = 26602,
-			["Gold"] = 35616,
+			["Reputation"] = 0,
+			["Kills"] = 325,
+			["Experience"] = 40697,
+			["Gold"] = 12619,
 		},
 	},
 	[6166876] = {
@@ -2906,12 +2962,12 @@ SavedStatistics = {
 			["Gold"] = 66662,
 		},
 	},
-	[686629] = {
+	[214758] = {
 		["Kealthas"] = {
-			["Reputation"] = 0,
-			["Kills"] = 325,
-			["Experience"] = 40697,
-			["Gold"] = 12619,
+			["Reputation"] = 537,
+			["Kills"] = 177,
+			["Experience"] = 26602,
+			["Gold"] = 35616,
 		},
 	},
 	[598555] = {
@@ -2946,12 +3002,12 @@ SavedStatistics = {
 			["Gold"] = 35713,
 		},
 	},
-	[7100639] = {
-		["Partijleider"] = {
-			["Reputation"] = 0,
-			["Kills"] = 0,
-			["Experience"] = 0,
-			["Gold"] = 0,
+	[3047264] = {
+		["Kealthas"] = {
+			["Reputation"] = 433,
+			["Kills"] = 187,
+			["Experience"] = 24773,
+			["Gold"] = 35148,
 		},
 	},
 	[3983761] = {
@@ -2962,12 +3018,12 @@ SavedStatistics = {
 			["Gold"] = 49086,
 		},
 	},
-	[3047264] = {
-		["Kealthas"] = {
-			["Reputation"] = 433,
-			["Kills"] = 187,
-			["Experience"] = 24773,
-			["Gold"] = 35148,
+	[7100639] = {
+		["Partijleider"] = {
+			["Reputation"] = 0,
+			["Kills"] = 0,
+			["Experience"] = 0,
+			["Gold"] = 0,
 		},
 	},
 	[1738962] = {
@@ -3186,12 +3242,12 @@ SavedStatistics = {
 			["Gold"] = 34597,
 		},
 	},
-	[9043331] = {
+	[2504417] = {
 		["Kealthas"] = {
-			["Reputation"] = 0,
-			["Kills"] = 335,
-			["Experience"] = 37421,
-			["Gold"] = 18324,
+			["Reputation"] = 148,
+			["Kills"] = 30,
+			["Experience"] = 18745,
+			["Gold"] = 8603,
 		},
 	},
 	[6533307] = {
@@ -3262,11 +3318,11 @@ SavedStatistics = {
 			["Gold"] = 13350,
 		},
 	},
-	[6589415] = {
+	[9721773] = {
 		["Kealthas"] = {
 			["Reputation"] = 0,
-			["Kills"] = 328,
-			["Experience"] = 36060,
+			["Kills"] = 0,
+			["Experience"] = 0,
 			["Gold"] = 0,
 		},
 	},

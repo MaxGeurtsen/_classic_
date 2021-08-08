@@ -118,28 +118,7 @@ DBM_AllSavedOptions = {
 			0, -- [2]
 			0, -- [3]
 		},
-		["WarningColors"] = {
-			{
-				["r"] = 0.411764705882353,
-				["g"] = 0.8,
-				["b"] = 0.941176470588235,
-			}, -- [1]
-			{
-				["r"] = 0.949019607843137,
-				["g"] = 0.949019607843137,
-				["b"] = 0,
-			}, -- [2]
-			{
-				["r"] = 1,
-				["g"] = 0.501960784313726,
-				["b"] = 0,
-			}, -- [3]
-			{
-				["r"] = 1,
-				["g"] = 0.101960784313725,
-				["b"] = 0.101960784313725,
-			}, -- [4]
-		},
+		["InfoFrameFontSize"] = 12,
 		["InfoFrameX"] = 442.7466430664063,
 		["SWarningAlphabetical"] = true,
 		["DontShowSpecialWarningText"] = false,
@@ -154,12 +133,12 @@ DBM_AllSavedOptions = {
 		["RangeFrameRadarPoint"] = "CENTER",
 		["SpecialWarningY"] = 75,
 		["AutoCorrectTimer"] = false,
-		["CustomSounds"] = 0,
+		["DontRestoreRange"] = false,
 		["RangeFrameUpdates"] = "Average",
 		["MovieFilter2"] = "OnlyFight",
 		["SpecialWarningFlashRepeat3"] = true,
-		["WarningY"] = 260,
-		["DontRestoreRange"] = false,
+		["RaidWarningSound"] = 6674,
+		["CustomSounds"] = 0,
 		["SilentMode"] = false,
 		["SpecialWarningFlashCount3"] = 3,
 		["ShortTimerText"] = true,
@@ -182,20 +161,20 @@ DBM_AllSavedOptions = {
 		["SettingsMessageShown"] = true,
 		["SpecialWarningPoint"] = "CENTER",
 		["SpecialWarningFlashAlph2"] = 0.3,
-		["SpecialWarningFlashRepeat4"] = false,
-		["SpecialWarningFlashRepeat2"] = false,
+		["CountdownVoice"] = "Corsica",
+		["DontShowUserTimers"] = false,
 		["DontSetIcons"] = false,
 		["BigBrotherAnnounceToRaid"] = false,
 		["UseRetailShamanColor"] = false,
-		["CountdownVoice"] = "Corsica",
-		["RecordOnlyBosses"] = false,
-		["DontShowUserTimers"] = false,
+		["SpecialWarningFlashRepeat4"] = false,
 		["CountdownVoice3"] = "Smooth",
+		["SpecialWarningFlashRepeat2"] = false,
+		["RecordOnlyBosses"] = false,
 		["WarningX"] = 0,
 		["SpecialWarningFlashRepeat5"] = true,
-		["AutoRespond"] = true,
+		["DisableStatusWhisper"] = false,
 		["EventDungMusicMythicFilter"] = true,
-		["DontShowRangeFrame"] = false,
+		["WarningDuration2"] = 1.5,
 		["RangeFrameFrames"] = "radar",
 		["DontPlayCountdowns"] = false,
 		["ShowBigBrotherOnCombatStart"] = false,
@@ -204,12 +183,12 @@ DBM_AllSavedOptions = {
 		["SpecialWarningFlashAlph1"] = 0.3,
 		["ShowDefeatMessage"] = true,
 		["FilterTankSpec"] = true,
-		["WarningDuration2"] = 1.5,
+		["DontShowRangeFrame"] = false,
 		["SpecialWarningFont"] = "standardFont",
 		["InfoFrameShowSelf"] = false,
 		["WarningFontShadow"] = true,
 		["RangeFrameSound2"] = "none",
-		["DisableStatusWhisper"] = false,
+		["AutoRespond"] = true,
 		["DontShowBossTimers"] = false,
 		["SpecialWarningFontStyle"] = "THICKOUTLINE",
 		["DontShowSpecialWarningFlash"] = false,
@@ -222,7 +201,7 @@ DBM_AllSavedOptions = {
 		["AutoAcceptFriendInvite"] = false,
 		["WarningIconChat"] = true,
 		["SpecialWarningFlashCount1"] = 1,
-		["RaidWarningSound"] = 6674,
+		["WarningY"] = 260,
 		["SpecialWarningSound5"] = "Interface\\AddOns\\DBM-Core\\sounds\\ClassicSupport\\LOA_NAXX_AGGRO02.ogg",
 		["DontSendYells"] = false,
 		["ShowPizzaMessage"] = true,
@@ -231,7 +210,28 @@ DBM_AllSavedOptions = {
 		["SpecialWarningFlash3"] = true,
 		["RLReadyCheckSound"] = true,
 		["Enabled"] = true,
-		["InfoFrameFontSize"] = 12,
+		["WarningColors"] = {
+			{
+				["r"] = 0.411764705882353,
+				["g"] = 0.8,
+				["b"] = 0.941176470588235,
+			}, -- [1]
+			{
+				["r"] = 0.949019607843137,
+				["g"] = 0.949019607843137,
+				["b"] = 0,
+			}, -- [2]
+			{
+				["r"] = 1,
+				["g"] = 0.501960784313726,
+				["b"] = 0,
+			}, -- [3]
+			{
+				["r"] = 1,
+				["g"] = 0.101960784313725,
+				["b"] = 0.101960784313725,
+			}, -- [4]
+		},
 		["GUIWidth"] = 800,
 		["SpecialWarningSound3"] = "Interface\\AddOns\\DBM-Core\\sounds\\AirHorn.ogg",
 		["ShowWarningsInChat"] = true,
