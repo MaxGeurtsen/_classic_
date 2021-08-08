@@ -1,0 +1,64 @@
+VER 3 0000000000000007 " dwa" "132166"
+/cast enchant cloak - superior defense
+/use Cloak of Scintillating Auras
+/click StaticPopup1Button1
+END
+VER 3 0000000000000002 "4" "132156"
+https://www.twitch.tv/firebreathereu
+END
+VER 3 000000000000000A "aaaa" "INV_MISC_QUESTIONMARK"
+/run local a,b="Formula: Enchant Shield - Greater Stamina"; for i=30,33 do b=GetMerchantItemInfo(i) if b==a then BuyMerchantItem(i,1) else end end CloseMerchant()
+END
+VER 3 0000000000000008 "ad" "INV_MISC_QUESTIONMARK"
+/run for i=1,GetMerchantNumItems() do local l=GetMerchantItemLink(i) if l then if l:find("Formula: Enchant Shield - Greater Stamina") then BuyMerchantItem(i, 1)end end end
+END
+VER 3 000000000000000E "AutoHP" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [combat] item:3928; item:6948
+END
+VER 3 000000000000000F "ConsumableHP" "INV_Misc_QuestionMark"
+#showtooltip
+/cast item:3928
+END
+VER 3 0000000000000010 "ConsumableMP" "INV_Misc_QuestionMark"
+#showtooltip
+/cast item:6948
+END
+VER 3 0000000000000001 "d" "132089"
+/2 Crafting [Small Silk Pack] 10 slots  with your mats! 12 silk cloth, 2 heavy leather, 3 fine thread
+END
+VER 3 0000000000000009 "dad" "INV_MISC_QUESTIONMARK"
+/run for i=1,GetMerchantNumItems() do local l=GetMerchantItemLink(i) if l then if l:find("Design: Amulet of the Moon") then BuyMerchantItem(i, 1)end end end
+END
+VER 3 0000000000000005 "Decursive" "INV_MISC_QUESTIONMARK"
+/stopcasting
+/cast [@mouseover,nomod,exists] Remove Curse;  [@mouseover,exists,mod:ctrl] Abolish Poison; [@mouseover,exists,mod:shift] Remove Curse
+END
+VER 3 000000000000000B "drink" "3867503"
+#showtooltip
+/use Conjured Manna Biscuit
+/use Purified Draenic Water
+END
+VER 3 000000000000000C "DrinkOnlyMP" "INV_Misc_QuestionMark"
+#showtooltip
+/cast item:8766
+END
+VER 3 000000000000000D "FoodOnlyHP" "INV_Misc_QuestionMark"
+#showtooltip
+/cast item:6948
+END
+VER 3 0000000000000003 "p" "132156"
+/p follow me plz on: twitch.tv/firebreathereu
+END
+VER 3 0000000000000004 "part" "132089"
+/leave party
+END
+VER 3 0000000000000006 "ROLL" "INV_MISC_QUESTIONMARK"
+/ROLL
+END
+VER 3 0000000000000011 "trade" "INV_MISC_QUESTIONMARK"
+/2 WTS |cffa335ee|Hitem:31332::::::::70::::::::|h[Blinkstrike]|h|r, wisp me an offer
+END
+VER 3 0000000000000012 "world" "INV_MISC_QUESTIONMARK"
+/4 WTS |cffa335ee|Hitem:31332::::::::70::::::::|h[Blinkstrike]|h|r, wisp me an offer
+END

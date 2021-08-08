@@ -1,0 +1,2713 @@
+
+_detalhes_database = {
+	["savedbuffs"] = {
+	},
+	["mythic_dungeon_id"] = 0,
+	["tabela_historico"] = {
+		["tabelas"] = {
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 66834,
+							["totalabsorbed"] = 0.008226,
+							["damage_from"] = {
+								["Geelvanbuite"] = true,
+							},
+							["targets"] = {
+							},
+							["pets"] = {
+							},
+							["tipo"] = 1,
+							["on_hold"] = false,
+							["classe"] = "PRIEST",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.008226,
+							["delay"] = 0,
+							["fight_component"] = true,
+							["total"] = 0.008226,
+							["friendlyfire_total"] = 43,
+							["damage_taken"] = 153.008226,
+							["nome"] = "Ay",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["end_time"] = 1617733707,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1617733699,
+							["friendlyfire"] = {
+								["Geelvanbuite"] = {
+									["total"] = 43,
+									["spells"] = {
+										["!Melee"] = 43,
+									},
+								},
+							},
+							["start_time"] = 1617733672,
+							["serial"] = "Player-4478-0314FB0A",
+							["dps_started"] = false,
+						}, -- [1]
+						{
+							["flag_original"] = 1298,
+							["totalabsorbed"] = 0.00419,
+							["damage_from"] = {
+								["Ay"] = true,
+							},
+							["targets"] = {
+							},
+							["pets"] = {
+							},
+							["tipo"] = 1,
+							["on_hold"] = false,
+							["classe"] = "WARRIOR",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.00419,
+							["delay"] = 0,
+							["fight_component"] = true,
+							["total"] = 0.00419,
+							["friendlyfire_total"] = 153,
+							["damage_taken"] = 43.00419,
+							["nome"] = "Geelvanbuite",
+							["spells"] = {
+								["_ActorTable"] = {
+									["Heroic Strike"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Ay"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["c_min"] = 0,
+										["id"] = "Heroic Strike",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["b_dmg"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["spellschool"] = 1,
+										["MISS"] = 1,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["end_time"] = 1617733707,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1617733699,
+							["friendlyfire"] = {
+								["Ay"] = {
+									["total"] = 153,
+									["spells"] = {
+										["!Melee"] = 50,
+										["Heroic Strike"] = 103,
+									},
+								},
+							},
+							["start_time"] = 1617733672,
+							["serial"] = "Player-4478-03150501",
+							["dps_started"] = false,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 66834,
+							["totalabsorb"] = 0.005664,
+							["last_hps"] = 0,
+							["healing_from"] = {
+								["Ay"] = true,
+							},
+							["targets"] = {
+								["Ay"] = 107,
+							},
+							["delay"] = 1617733693,
+							["pets"] = {
+							},
+							["totalover_without_pet"] = 0.005664,
+							["targets_overheal"] = {
+								["Ay"] = 6,
+							},
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 6.005664,
+							["total_without_pet"] = 101.005664,
+							["iniciar_hps"] = false,
+							["totaldenied"] = 0.005664,
+							["fight_component"] = true,
+							["end_time"] = 1617733707,
+							["healing_taken"] = 101.005664,
+							["total"] = 101.005664,
+							["nome"] = "Ay",
+							["spells"] = {
+								["_ActorTable"] = {
+									["Lesser Heal"] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Ay"] = 6,
+										},
+										["n_max"] = 56,
+										["targets"] = {
+											["Ay"] = 101,
+										},
+										["n_min"] = 45,
+										["counter"] = 2,
+										["overheal"] = 6,
+										["total"] = 101,
+										["c_max"] = 0,
+										["id"] = "Lesser Heal",
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["m_healed"] = 0,
+										["c_min"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 2,
+										["n_curado"] = 101,
+										["m_amt"] = 0,
+										["absorbed"] = 0,
+									},
+								},
+								["tipo"] = 3,
+							},
+							["grupo"] = true,
+							["classe"] = "PRIEST",
+							["heal_enemy"] = {
+							},
+							["last_event"] = 1617733693,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["on_hold"] = false,
+							["start_time"] = 1617733706,
+							["serial"] = "Player-4478-0314FB0A",
+							["targets_absorbs"] = {
+							},
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["nome"] = "Pepijn",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["classe"] = "MAGE",
+							["last_event"] = 1617733707,
+							["tipo"] = 4,
+							["buff_uptime"] = 35,
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Frost Armor"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Frost Armor",
+										["uptime"] = 35,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["serial"] = "Player-4478-0315078A",
+							["buff_uptime_targets"] = {
+							},
+						}, -- [1]
+						{
+							["flag_original"] = 1298,
+							["spell_cast"] = {
+								["Heroic Strike"] = 6,
+							},
+							["nome"] = "Geelvanbuite",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["classe"] = "WARRIOR",
+							["tipo"] = 4,
+							["last_event"] = 0,
+							["serial"] = "Player-4478-03150501",
+							["fight_component"] = true,
+						}, -- [2]
+						{
+							["flag_original"] = 66834,
+							["spell_cast"] = {
+								["Lesser Heal"] = 2,
+							},
+							["nome"] = "Ay",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["classe"] = "PRIEST",
+							["tipo"] = 4,
+							["last_event"] = 0,
+							["serial"] = "Player-4478-0314FB0A",
+							["fight_component"] = true,
+						}, -- [3]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Pepijn"] = true,
+					["Geelvanbuite"] = true,
+					["Okayhugee"] = true,
+					["Ay"] = true,
+					["Eefjé"] = true,
+				},
+				["tempo_start"] = 1617733672,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["enemy"] = "Unknown",
+				["combat_counter"] = 6,
+				["spells_cast_timeline"] = {
+				},
+				["totals"] = {
+					-0.0107060000000001, -- [1]
+					101, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage"] = {
+						{
+							["Ay"] = 0.008226,
+							["Geelvanbuite"] = 0.00419,
+						}, -- [1]
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Ay"] = 101.005664,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+				},
+				["frags_need_refresh"] = false,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "20:27:52",
+				["end_time"] = 35149.524,
+				["overall_added"] = true,
+				["instance_type"] = "none",
+				["combat_id"] = 3,
+				["cleu_timeline"] = {
+				},
+				["hasSaved"] = true,
+				["frags"] = {
+				},
+				["data_fim"] = "20:28:27",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["CombatSkillCache"] = {
+				},
+				["totals_grupo"] = {
+					196, -- [1]
+					101, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
+				["start_time"] = 35114.523,
+				["TimeData"] = {
+				},
+				["pvp"] = true,
+			}, -- [1]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 66834,
+							["totalabsorbed"] = 0.008638,
+							["damage_from"] = {
+								["Geelvanbuite"] = true,
+							},
+							["targets"] = {
+							},
+							["pets"] = {
+							},
+							["damage_taken"] = 10.008638,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.008638,
+							["last_event"] = 0,
+							["dps_started"] = false,
+							["total"] = 0.008638,
+							["delay"] = 0,
+							["classe"] = "PRIEST",
+							["nome"] = "Ay",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["end_time"] = 1617733672,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
+							["start_time"] = 1617733672,
+							["serial"] = "Player-4478-0314FB0A",
+							["on_hold"] = false,
+						}, -- [1]
+						{
+							["flag_original"] = 1298,
+							["totalabsorbed"] = 0.006397,
+							["damage_from"] = {
+								["Pepijn"] = true,
+							},
+							["targets"] = {
+							},
+							["pets"] = {
+							},
+							["tipo"] = 1,
+							["friendlyfire"] = {
+								["Pepijn"] = {
+									["total"] = 68,
+									["spells"] = {
+										["!Melee"] = 10,
+										["Heroic Strike"] = 58,
+									},
+								},
+								["Ay"] = {
+									["total"] = 10,
+									["spells"] = {
+										["!Melee"] = 10,
+									},
+								},
+							},
+							["classe"] = "WARRIOR",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.006397,
+							["delay"] = 1617733593,
+							["fight_component"] = true,
+							["end_time"] = 1617733672,
+							["friendlyfire_total"] = 78,
+							["damage_taken"] = 77.006397,
+							["nome"] = "Geelvanbuite",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["total"] = 0.006397,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1617733668,
+							["on_hold"] = false,
+							["start_time"] = 1617733594,
+							["serial"] = "Player-4478-03150501",
+							["dps_started"] = false,
+						}, -- [2]
+						{
+							["flag_original"] = 1298,
+							["totalabsorbed"] = 0.002968,
+							["damage_from"] = {
+								["Geelvanbuite"] = true,
+							},
+							["targets"] = {
+							},
+							["pets"] = {
+							},
+							["tipo"] = 1,
+							["friendlyfire_total"] = 77,
+							["classe"] = "MAGE",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.002968,
+							["delay"] = 1617733591,
+							["fight_component"] = true,
+							["total"] = 0.002968,
+							["end_time"] = 1617733606,
+							["damage_taken"] = 68.002968,
+							["nome"] = "Pepijn",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["dps_started"] = false,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1617733591,
+							["on_hold"] = false,
+							["start_time"] = 1617733594,
+							["serial"] = "Player-4478-0315078A",
+							["friendlyfire"] = {
+								["Geelvanbuite"] = {
+									["total"] = 77,
+									["spells"] = {
+										["Fireball"] = 65,
+										["!Melee"] = 12,
+									},
+								},
+							},
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorb"] = 0.005663,
+							["last_hps"] = 0,
+							["targets_overheal"] = {
+								["Geelvanbuite"] = 17,
+							},
+							["targets"] = {
+								["Geelvanbuite"] = 85,
+							},
+							["total"] = 68.005663,
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["healing_from"] = {
+							},
+							["healing_taken"] = 0.005663,
+							["totalover"] = 17.005663,
+							["total_without_pet"] = 68.005663,
+							["totalover_without_pet"] = 0.005663,
+							["totaldenied"] = 0.005663,
+							["fight_component"] = true,
+							["end_time"] = 1617733606,
+							["classe"] = "SHAMAN",
+							["heal_enemy_amt"] = 0,
+							["nome"] = "Eefjé",
+							["targets_absorbs"] = {
+							},
+							["grupo"] = true,
+							["tipo"] = 2,
+							["heal_enemy"] = {
+							},
+							["spells"] = {
+								["_ActorTable"] = {
+									["Healing Wave"] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Geelvanbuite"] = 17,
+										},
+										["n_max"] = 44,
+										["targets"] = {
+											["Geelvanbuite"] = 68,
+										},
+										["n_min"] = 24,
+										["counter"] = 2,
+										["overheal"] = 17,
+										["total"] = 68,
+										["c_max"] = 0,
+										["id"] = "Healing Wave",
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["m_healed"] = 0,
+										["c_min"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 2,
+										["n_curado"] = 68,
+										["m_amt"] = 0,
+										["absorbed"] = 0,
+									},
+								},
+								["tipo"] = 3,
+							},
+							["custom"] = 0,
+							["last_event"] = 1617733597,
+							["on_hold"] = false,
+							["start_time"] = 1617733596,
+							["serial"] = "Player-4478-0315049E",
+							["delay"] = 0,
+						}, -- [1]
+						{
+							["flag_original"] = 66834,
+							["totalabsorb"] = 0.00311,
+							["last_hps"] = 0,
+							["healing_from"] = {
+								["Eefjé"] = true,
+							},
+							["targets"] = {
+							},
+							["delay"] = 0,
+							["pets"] = {
+							},
+							["totalover_without_pet"] = 0.00311,
+							["targets_overheal"] = {
+							},
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 0.00311,
+							["total_without_pet"] = 0.00311,
+							["iniciar_hps"] = false,
+							["totaldenied"] = 0.00311,
+							["fight_component"] = true,
+							["end_time"] = 1617733606,
+							["healing_taken"] = 68.00311,
+							["total"] = 0.00311,
+							["nome"] = "Geelvanbuite",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 3,
+							},
+							["grupo"] = true,
+							["classe"] = "WARRIOR",
+							["heal_enemy"] = {
+							},
+							["last_event"] = 0,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["on_hold"] = false,
+							["start_time"] = 1617733606,
+							["serial"] = "Player-4478-03150501",
+							["targets_absorbs"] = {
+							},
+						}, -- [2]
+						{
+							["flag_original"] = 1298,
+							["totalabsorb"] = 0.002446,
+							["last_hps"] = 0,
+							["targets_overheal"] = {
+								["Pepijn"] = 42,
+							},
+							["targets"] = {
+								["Pepijn"] = 102,
+							},
+							["total"] = 60.002446,
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["healing_from"] = {
+							},
+							["healing_taken"] = 0.002446,
+							["totalover"] = 42.002446,
+							["total_without_pet"] = 60.002446,
+							["totalover_without_pet"] = 0.002446,
+							["totaldenied"] = 0.002446,
+							["fight_component"] = true,
+							["end_time"] = 1617733606,
+							["classe"] = "PRIEST",
+							["heal_enemy_amt"] = 0,
+							["nome"] = "Ay",
+							["targets_absorbs"] = {
+							},
+							["grupo"] = true,
+							["tipo"] = 2,
+							["heal_enemy"] = {
+							},
+							["spells"] = {
+								["_ActorTable"] = {
+									["Lesser Heal"] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Pepijn"] = 42,
+										},
+										["n_max"] = 51,
+										["targets"] = {
+											["Pepijn"] = 60,
+										},
+										["n_min"] = 9,
+										["counter"] = 2,
+										["overheal"] = 42,
+										["total"] = 60,
+										["c_max"] = 0,
+										["id"] = "Lesser Heal",
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["m_healed"] = 0,
+										["c_min"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 2,
+										["n_curado"] = 60,
+										["m_amt"] = 0,
+										["absorbed"] = 0,
+									},
+								},
+								["tipo"] = 3,
+							},
+							["custom"] = 0,
+							["last_event"] = 1617733598,
+							["on_hold"] = false,
+							["start_time"] = 1617733596,
+							["serial"] = "Player-4478-0314FB0A",
+							["delay"] = 0,
+						}, -- [3]
+						{
+							["flag_original"] = 1298,
+							["totalabsorb"] = 0.003876,
+							["last_hps"] = 0,
+							["healing_from"] = {
+								["Ay"] = true,
+							},
+							["targets"] = {
+							},
+							["delay"] = 0,
+							["pets"] = {
+							},
+							["totalover_without_pet"] = 0.003876,
+							["targets_overheal"] = {
+							},
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 0.003876,
+							["total_without_pet"] = 0.003876,
+							["iniciar_hps"] = false,
+							["totaldenied"] = 0.003876,
+							["fight_component"] = true,
+							["end_time"] = 1617733606,
+							["healing_taken"] = 60.003876,
+							["total"] = 0.003876,
+							["nome"] = "Pepijn",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 3,
+							},
+							["grupo"] = true,
+							["classe"] = "MAGE",
+							["heal_enemy"] = {
+							},
+							["last_event"] = 0,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["on_hold"] = false,
+							["start_time"] = 1617733606,
+							["serial"] = "Player-4478-0315078A",
+							["targets_absorbs"] = {
+							},
+						}, -- [4]
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1298,
+							["spell_cast"] = {
+								["Heroic Strike"] = 3,
+							},
+							["nome"] = "Geelvanbuite",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["classe"] = "WARRIOR",
+							["tipo"] = 4,
+							["last_event"] = 0,
+							["serial"] = "Player-4478-03150501",
+							["fight_component"] = true,
+						}, -- [1]
+						{
+							["flag_original"] = 1298,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Chilled"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = -1,
+										["refreshamt"] = 2,
+										["id"] = "Chilled",
+										["uptime"] = 24,
+										["targets"] = {
+										},
+										["appliedamt"] = 0,
+									},
+									["Fireball"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = -1,
+										["refreshamt"] = 1,
+										["id"] = "Fireball",
+										["uptime"] = 23,
+										["targets"] = {
+										},
+										["appliedamt"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["buff_uptime"] = 0,
+							["classe"] = "MAGE",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Frost Armor"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = "Frost Armor",
+										["uptime"] = 0,
+										["targets"] = {
+										},
+										["appliedamt"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 47,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								["Fireball"] = 2,
+							},
+							["pets"] = {
+							},
+							["last_event"] = 1617733606,
+							["debuff_uptime_targets"] = {
+							},
+							["tipo"] = 4,
+							["serial"] = "Player-4478-0315078A",
+							["nome"] = "Pepijn",
+						}, -- [2]
+						{
+							["flag_original"] = 1297,
+							["spell_cast"] = {
+								["Healing Wave"] = 2,
+							},
+							["nome"] = "Eefjé",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["classe"] = "SHAMAN",
+							["tipo"] = 4,
+							["last_event"] = 0,
+							["serial"] = "Player-4478-0315049E",
+							["fight_component"] = true,
+						}, -- [3]
+						{
+							["flag_original"] = 1298,
+							["spell_cast"] = {
+								["Lesser Heal"] = 2,
+							},
+							["nome"] = "Ay",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["classe"] = "PRIEST",
+							["tipo"] = 4,
+							["last_event"] = 0,
+							["serial"] = "Player-4478-0314FB0A",
+							["fight_component"] = true,
+						}, -- [4]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Pepijn"] = true,
+					["Geelvanbuite"] = true,
+					["Okayhugee"] = true,
+					["Ay"] = true,
+					["Eefjé"] = true,
+				},
+				["tempo_start"] = 1617733580,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["enemy"] = "Unknown",
+				["combat_counter"] = 5,
+				["spells_cast_timeline"] = {
+				},
+				["totals"] = {
+					0, -- [1]
+					128, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
+				},
+				["player_last_events"] = {
+					["Ay"] = {
+						{
+							true, -- [1]
+							"!Melee", -- [2]
+							10, -- [3]
+							1617733668.562, -- [4]
+							62, -- [5]
+							"Geelvanbuite", -- [6]
+							nil, -- [7]
+							1, -- [8]
+							true, -- [9]
+							-1, -- [10]
+						}, -- [1]
+						{
+						}, -- [2]
+						{
+						}, -- [3]
+						{
+						}, -- [4]
+						{
+						}, -- [5]
+						{
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						{
+						}, -- [9]
+						{
+						}, -- [10]
+						{
+						}, -- [11]
+						{
+						}, -- [12]
+						{
+						}, -- [13]
+						{
+						}, -- [14]
+						{
+						}, -- [15]
+						{
+						}, -- [16]
+						{
+						}, -- [17]
+						{
+						}, -- [18]
+						{
+						}, -- [19]
+						{
+						}, -- [20]
+						{
+						}, -- [21]
+						{
+						}, -- [22]
+						{
+						}, -- [23]
+						{
+						}, -- [24]
+						{
+						}, -- [25]
+						{
+						}, -- [26]
+						{
+						}, -- [27]
+						{
+						}, -- [28]
+						{
+						}, -- [29]
+						{
+						}, -- [30]
+						{
+						}, -- [31]
+						{
+						}, -- [32]
+						["n"] = 2,
+					},
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage"] = {
+						{
+							["Pepijn"] = 0.002968,
+							["Geelvanbuite"] = 0.006397,
+						}, -- [1]
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Ay"] = 60.002446,
+							["Eefjé"] = 68.005663,
+							["Pepijn"] = 0.003876,
+							["Geelvanbuite"] = 0.00311,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+				},
+				["frags_need_refresh"] = false,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "20:26:20",
+				["end_time"] = 35048.373,
+				["overall_added"] = true,
+				["instance_type"] = "none",
+				["combat_id"] = 2,
+				["cleu_timeline"] = {
+				},
+				["hasSaved"] = true,
+				["frags"] = {
+				},
+				["data_fim"] = "20:26:46",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["CombatSkillCache"] = {
+				},
+				["totals_grupo"] = {
+					155, -- [1]
+					128, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
+				["start_time"] = 35022.372,
+				["TimeData"] = {
+				},
+				["pvp"] = true,
+			}, -- [2]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 1,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 66888,
+							["totalabsorbed"] = 0.008919,
+							["damage_from"] = {
+								["Eefjé"] = true,
+								["Geelvanbuite"] = true,
+							},
+							["targets"] = {
+							},
+							["pets"] = {
+							},
+							["tipo"] = 1,
+							["total"] = 0.008919,
+							["classe"] = "MAGE",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.008919,
+							["delay"] = 1617733464,
+							["fight_component"] = true,
+							["end_time"] = 1617733482,
+							["on_hold"] = false,
+							["damage_taken"] = 78.008919,
+							["nome"] = "Pepijn",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["friendlyfire_total"] = 66,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1617733464,
+							["friendlyfire"] = {
+								["Eefjé"] = {
+									["total"] = 66,
+									["spells"] = {
+										["Fireball"] = 44,
+										["!Melee"] = 22,
+									},
+								},
+							},
+							["start_time"] = 1617733464,
+							["serial"] = "Player-4478-0315078A",
+							["dps_started"] = false,
+						}, -- [1]
+						{
+							["flag_original"] = 1298,
+							["totalabsorbed"] = 0.005144,
+							["damage_from"] = {
+							},
+							["targets"] = {
+							},
+							["pets"] = {
+							},
+							["damage_taken"] = 0.005144,
+							["friendlyfire_total"] = 9,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.005144,
+							["last_event"] = 1617733578,
+							["dps_started"] = false,
+							["total"] = 0.005144,
+							["delay"] = 0,
+							["classe"] = "WARRIOR",
+							["nome"] = "Geelvanbuite",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["end_time"] = 1617733580,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["friendlyfire"] = {
+								["Pepijn"] = {
+									["total"] = 9,
+									["spells"] = {
+										["!Melee"] = 9,
+									},
+								},
+							},
+							["start_time"] = 1617733578,
+							["serial"] = "Player-4478-03150501",
+							["on_hold"] = false,
+						}, -- [2]
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.001066,
+							["damage_from"] = {
+								["Pepijn"] = true,
+							},
+							["targets"] = {
+							},
+							["pets"] = {
+							},
+							["tipo"] = 1,
+							["total"] = 0.001066,
+							["classe"] = "SHAMAN",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.001066,
+							["delay"] = 1617733467,
+							["fight_component"] = true,
+							["end_time"] = 1617733482,
+							["on_hold"] = false,
+							["damage_taken"] = 66.001066,
+							["nome"] = "Eefjé",
+							["spells"] = {
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Pepijn"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["c_min"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["b_dmg"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["spellschool"] = 1,
+										["MISS"] = 1,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["friendlyfire_total"] = 69,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1617733467,
+							["friendlyfire"] = {
+								["Pepijn"] = {
+									["total"] = 69,
+									["spells"] = {
+										["Lightning Bolt"] = 59,
+										["!Melee"] = 10,
+									},
+								},
+							},
+							["start_time"] = 1617733468,
+							["serial"] = "Player-4478-0315049E",
+							["dps_started"] = false,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 1,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorb"] = 0.003268,
+							["last_hps"] = 0,
+							["targets_overheal"] = {
+								["Pepijn"] = 41,
+							},
+							["targets"] = {
+								["Eefjé"] = 38,
+							},
+							["total"] = 38.003268,
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["healing_from"] = {
+								["Ay"] = true,
+								["Eefjé"] = true,
+							},
+							["healing_taken"] = 88.003268,
+							["totalover"] = 41.003268,
+							["total_without_pet"] = 38.003268,
+							["totalover_without_pet"] = 0.003268,
+							["totaldenied"] = 0.003268,
+							["fight_component"] = true,
+							["end_time"] = 1617733482,
+							["classe"] = "SHAMAN",
+							["heal_enemy_amt"] = 0,
+							["nome"] = "Eefjé",
+							["targets_absorbs"] = {
+							},
+							["grupo"] = true,
+							["tipo"] = 2,
+							["heal_enemy"] = {
+							},
+							["spells"] = {
+								["_ActorTable"] = {
+									["Healing Wave"] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Pepijn"] = 41,
+										},
+										["n_max"] = 38,
+										["targets"] = {
+											["Pepijn"] = 0,
+											["Eefjé"] = 38,
+										},
+										["n_min"] = 0,
+										["counter"] = 2,
+										["overheal"] = 41,
+										["total"] = 38,
+										["c_max"] = 0,
+										["id"] = "Healing Wave",
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["m_healed"] = 0,
+										["c_min"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 2,
+										["n_curado"] = 38,
+										["m_amt"] = 0,
+										["absorbed"] = 0,
+									},
+								},
+								["tipo"] = 3,
+							},
+							["custom"] = 0,
+							["last_event"] = 1617733471,
+							["on_hold"] = false,
+							["start_time"] = 1617733481,
+							["serial"] = "Player-4478-0315049E",
+							["delay"] = 1617733471,
+						}, -- [1]
+						{
+							["flag_original"] = 1298,
+							["totalabsorb"] = 0.00187,
+							["last_hps"] = 0,
+							["targets_overheal"] = {
+								["Pepijn"] = 36,
+								["Eefjé"] = 5,
+							},
+							["targets"] = {
+								["Pepijn"] = 96,
+								["Eefjé"] = 55,
+							},
+							["total"] = 110.00187,
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["healing_from"] = {
+							},
+							["healing_taken"] = 0.00187,
+							["totalover"] = 41.00187,
+							["total_without_pet"] = 110.00187,
+							["totalover_without_pet"] = 0.00187,
+							["totaldenied"] = 0.00187,
+							["fight_component"] = true,
+							["end_time"] = 1617733482,
+							["classe"] = "PRIEST",
+							["heal_enemy_amt"] = 0,
+							["nome"] = "Ay",
+							["targets_absorbs"] = {
+							},
+							["grupo"] = true,
+							["tipo"] = 2,
+							["heal_enemy"] = {
+							},
+							["spells"] = {
+								["_ActorTable"] = {
+									["Lesser Heal"] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Pepijn"] = 36,
+											["Eefjé"] = 5,
+										},
+										["n_max"] = 50,
+										["targets"] = {
+											["Pepijn"] = 60,
+											["Eefjé"] = 50,
+										},
+										["n_min"] = 14,
+										["counter"] = 3,
+										["overheal"] = 41,
+										["total"] = 110,
+										["c_max"] = 0,
+										["id"] = "Lesser Heal",
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["m_healed"] = 0,
+										["c_min"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 3,
+										["n_curado"] = 110,
+										["m_amt"] = 0,
+										["absorbed"] = 0,
+									},
+								},
+								["tipo"] = 3,
+							},
+							["custom"] = 0,
+							["last_event"] = 1617733475,
+							["on_hold"] = false,
+							["start_time"] = 1617733469,
+							["serial"] = "Player-4478-0314FB0A",
+							["delay"] = 0,
+						}, -- [2]
+						{
+							["flag_original"] = 66834,
+							["totalabsorb"] = 0.003302,
+							["last_hps"] = 0,
+							["healing_from"] = {
+								["Ay"] = true,
+							},
+							["targets"] = {
+							},
+							["delay"] = 0,
+							["pets"] = {
+							},
+							["totalover_without_pet"] = 0.003302,
+							["targets_overheal"] = {
+							},
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 0.003302,
+							["total_without_pet"] = 0.003302,
+							["iniciar_hps"] = false,
+							["totaldenied"] = 0.003302,
+							["fight_component"] = true,
+							["end_time"] = 1617733482,
+							["healing_taken"] = 60.003302,
+							["total"] = 0.003302,
+							["nome"] = "Pepijn",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 3,
+							},
+							["grupo"] = true,
+							["classe"] = "MAGE",
+							["heal_enemy"] = {
+							},
+							["last_event"] = 0,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["on_hold"] = false,
+							["start_time"] = 1617733482,
+							["serial"] = "Player-4478-0315078A",
+							["targets_absorbs"] = {
+							},
+						}, -- [3]
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 1,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 1,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 66888,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Fireball"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = -1,
+										["refreshamt"] = 0,
+										["id"] = "Fireball",
+										["uptime"] = 35,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									["Chilled"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 1,
+										["id"] = "Chilled",
+										["uptime"] = 6,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["buff_uptime"] = 0,
+							["classe"] = "MAGE",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Frost Armor"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = "Frost Armor",
+										["uptime"] = 0,
+										["targets"] = {
+										},
+										["appliedamt"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 41,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								["Fireball"] = 1,
+							},
+							["pets"] = {
+							},
+							["last_event"] = 1617733482,
+							["debuff_uptime_targets"] = {
+							},
+							["tipo"] = 4,
+							["serial"] = "Player-4478-0315078A",
+							["nome"] = "Pepijn",
+						}, -- [1]
+						{
+							["flag_original"] = 1297,
+							["spell_cast"] = {
+								["Lightning Bolt"] = 4,
+								["Healing Wave"] = 2,
+							},
+							["nome"] = "Eefjé",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["classe"] = "SHAMAN",
+							["tipo"] = 4,
+							["last_event"] = 0,
+							["serial"] = "Player-4478-0315049E",
+							["fight_component"] = true,
+						}, -- [2]
+						{
+							["flag_original"] = 1298,
+							["spell_cast"] = {
+								["Lesser Heal"] = 3,
+							},
+							["nome"] = "Ay",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["classe"] = "PRIEST",
+							["tipo"] = 4,
+							["last_event"] = 0,
+							["serial"] = "Player-4478-0314FB0A",
+							["fight_component"] = true,
+						}, -- [3]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 1,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Pepijn"] = true,
+					["Geelvanbuite"] = true,
+					["Okayhugee"] = true,
+					["Ay"] = true,
+					["Eefjé"] = true,
+				},
+				["CombatStartedAt"] = 34914.673,
+				["overall_added"] = true,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 4,
+				["totals"] = {
+					0, -- [1]
+					148, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
+				},
+				["totals_grupo"] = {
+					144, -- [1]
+					148, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = false,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "20:24:42",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Unknown",
+				["TotalElapsedCombatTime"] = 6.08699999999953,
+				["CombatEndedAt"] = 34920.76,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage"] = {
+						{
+							["Pepijn"] = 0.008919,
+							["Eefjé"] = 0.001066,
+						}, -- [1]
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Ay"] = 110.00187,
+							["Pepijn"] = 0.003302,
+							["Eefjé"] = 38.003268,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+				},
+				["end_time"] = 34924.55,
+				["combat_id"] = 1,
+				["player_last_events"] = {
+					["Pepijn"] = {
+						{
+							true, -- [1]
+							"!Melee", -- [2]
+							9, -- [3]
+							1617733578.773, -- [4]
+							62, -- [5]
+							"Geelvanbuite", -- [6]
+							nil, -- [7]
+							1, -- [8]
+							true, -- [9]
+							-1, -- [10]
+						}, -- [1]
+						{
+						}, -- [2]
+						{
+						}, -- [3]
+						{
+						}, -- [4]
+						{
+						}, -- [5]
+						{
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						{
+						}, -- [9]
+						{
+						}, -- [10]
+						{
+						}, -- [11]
+						{
+						}, -- [12]
+						{
+						}, -- [13]
+						{
+						}, -- [14]
+						{
+						}, -- [15]
+						{
+						}, -- [16]
+						{
+						}, -- [17]
+						{
+						}, -- [18]
+						{
+						}, -- [19]
+						{
+						}, -- [20]
+						{
+						}, -- [21]
+						{
+						}, -- [22]
+						{
+						}, -- [23]
+						{
+						}, -- [24]
+						{
+						}, -- [25]
+						{
+						}, -- [26]
+						{
+						}, -- [27]
+						{
+						}, -- [28]
+						{
+						}, -- [29]
+						{
+						}, -- [30]
+						{
+						}, -- [31]
+						{
+						}, -- [32]
+						["n"] = 2,
+					},
+				},
+				["tempo_start"] = 1617733447,
+				["spells_cast_timeline"] = {
+				},
+				["TimeData"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["CombatSkillCache"] = {
+				},
+				["data_inicio"] = "20:24:07",
+				["start_time"] = 34889.551,
+				["contra"] = "Pepijn",
+				["frags"] = {
+				},
+			}, -- [3]
+		},
+	},
+	["last_version"] = "v1.13.6.216",
+	["SoloTablesSaved"] = {
+		["Mode"] = 1,
+	},
+	["tabela_instancias"] = {
+	},
+	["on_death_menu"] = true,
+	["nick_tag_cache"] = {
+		["nextreset"] = 1619029039,
+		["last_version"] = 11,
+	},
+	["last_instance_id"] = 0,
+	["announce_interrupts"] = {
+		["enabled"] = false,
+		["whisper"] = "",
+		["channel"] = "SAY",
+		["custom"] = "",
+		["next"] = "",
+	},
+	["last_instance_time"] = 0,
+	["active_profile"] = "Mirjam-Firemaw",
+	["mythic_dungeon_currentsaved"] = {
+		["dungeon_name"] = "",
+		["started"] = false,
+		["segment_id"] = 0,
+		["ej_id"] = 0,
+		["started_at"] = 0,
+		["run_id"] = 0,
+		["level"] = 0,
+		["dungeon_zone_id"] = 0,
+		["previous_boss_killed_at"] = 0,
+	},
+	["ignore_nicktag"] = false,
+	["plugin_database"] = {
+		["DETAILS_PLUGIN_TINY_THREAT"] = {
+			["enabled"] = true,
+			["animate"] = true,
+			["useclasscolors"] = true,
+			["playercolor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
+			["openedfromcommand"] = false,
+			["updatespeed"] = 0.25,
+			["dividebyhundred"] = true,
+			["showamount"] = true,
+			["useplayercolor"] = true,
+			["author"] = "Terciob",
+			["alwaysshowme"] = true,
+		},
+		["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
+			["font_color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["is_first_run"] = false,
+			["arrow_color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["main_frame_size"] = {
+				300, -- [1]
+				500.000030517578, -- [2]
+			},
+			["minimap"] = {
+				["minimapPos"] = 183.914992144094,
+				["radius"] = 160,
+				["hide"] = false,
+			},
+			["arrow_anchor_x"] = 0,
+			["row_texture"] = "Details Serenity",
+			["font_size"] = 10,
+			["main_frame_locked"] = false,
+			["use_spark"] = true,
+			["enabled"] = false,
+			["arrow_size"] = 10,
+			["arrow_anchor_y"] = 0,
+			["row_spacement"] = 21,
+			["main_frame_color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.2, -- [4]
+			},
+			["author"] = "Details! Team",
+			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
+			["row_color"] = {
+				0.1, -- [1]
+				0.1, -- [2]
+				0.1, -- [3]
+				0.4, -- [4]
+			},
+			["y"] = -1.525878906250e-05,
+			["x"] = 3.05175781250e-05,
+			["font_face"] = "Friz Quadrata TT",
+			["per_second"] = {
+				["enabled"] = false,
+				["point"] = "CENTER",
+				["scale"] = 1,
+				["font_shadow"] = true,
+				["y"] = -1.525878906250e-05,
+				["x"] = -3.05175781250e-05,
+				["attribute_type"] = 1,
+				["update_speed"] = 0.05,
+				["size"] = 32,
+			},
+			["point"] = "CENTER",
+			["main_frame_strata"] = "LOW",
+			["row_height"] = 20,
+			["scale"] = 1,
+		},
+	},
+	["last_day"] = "06",
+	["cached_talents"] = {
+	},
+	["announce_prepots"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+		["reverse"] = false,
+	},
+	["benchmark_db"] = {
+		["frame"] = {
+		},
+	},
+	["character_data"] = {
+		["logons"] = 2,
+	},
+	["combat_id"] = 3,
+	["savedStyles"] = {
+	},
+	["local_instances_config"] = {
+		{
+			["segment"] = 0,
+			["sub_attribute"] = 1,
+			["sub_atributo_last"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+				1, -- [5]
+			},
+			["is_open"] = true,
+			["isLocked"] = false,
+			["snap"] = {
+			},
+			["mode"] = 2,
+			["attribute"] = 1,
+			["pos"] = {
+				["normal"] = {
+					["y"] = -357.135726928711,
+					["x"] = 755.22216796875,
+					["w"] = 310.000061035156,
+					["h"] = 157.999969482422,
+				},
+				["solo"] = {
+					["y"] = 2,
+					["x"] = 1,
+					["w"] = 300,
+					["h"] = 200,
+				},
+			},
+		}, -- [1]
+	},
+	["force_font_outline"] = "",
+	["announce_deaths"] = {
+		["enabled"] = false,
+		["last_hits"] = 1,
+		["only_first"] = 5,
+		["where"] = 1,
+	},
+	["tabela_overall"] = {
+		{
+			["tipo"] = 2,
+			["_ActorTable"] = {
+				{
+					["flag_original"] = 66888,
+					["totalabsorbed"] = 0.013257,
+					["damage_from"] = {
+						["Eefjé"] = true,
+						["Geelvanbuite"] = true,
+					},
+					["targets"] = {
+					},
+					["pets"] = {
+					},
+					["last_dps"] = 0,
+					["tipo"] = 1,
+					["classe"] = "MAGE",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.013257,
+					["delay"] = 0,
+					["fight_component"] = true,
+					["end_time"] = 1617733482,
+					["friendlyfire"] = {
+						["Eefjé"] = {
+							["total"] = 66,
+							["spells"] = {
+								["Fireball"] = 0,
+								["!Melee"] = 0,
+							},
+						},
+						["Geelvanbuite"] = {
+							["total"] = 77,
+							["spells"] = {
+								["Fireball"] = 0,
+								["!Melee"] = 0,
+							},
+						},
+					},
+					["damage_taken"] = 137.013257,
+					["nome"] = "Pepijn",
+					["spells"] = {
+						["_ActorTable"] = {
+						},
+						["tipo"] = 2,
+					},
+					["grupo"] = true,
+					["total"] = 0.013257,
+					["friendlyfire_total"] = 143,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["start_time"] = 1617733449,
+					["serial"] = "Player-4478-0315078A",
+					["dps_started"] = false,
+				}, -- [1]
+				{
+					["flag_original"] = 1297,
+					["totalabsorbed"] = 0.007517,
+					["damage_from"] = {
+						["Pepijn"] = true,
+					},
+					["targets"] = {
+					},
+					["pets"] = {
+					},
+					["last_dps"] = 0,
+					["tipo"] = 1,
+					["classe"] = "SHAMAN",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.007517,
+					["delay"] = 0,
+					["fight_component"] = true,
+					["end_time"] = 1617733482,
+					["friendlyfire"] = {
+						["Pepijn"] = {
+							["total"] = 69,
+							["spells"] = {
+								["Lightning Bolt"] = 0,
+								["!Melee"] = 0,
+							},
+						},
+					},
+					["damage_taken"] = 66.007517,
+					["nome"] = "Eefjé",
+					["spells"] = {
+						["_ActorTable"] = {
+							["!Melee"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Pepijn"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 1,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["c_min"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_dmg"] = 0,
+								["MISS"] = 1,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["grupo"] = true,
+					["total"] = 0.007517,
+					["friendlyfire_total"] = 69,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["start_time"] = 1617733465,
+					["serial"] = "Player-4478-0315049E",
+					["dps_started"] = false,
+				}, -- [2]
+				{
+					["flag_original"] = 1298,
+					["totalabsorbed"] = 0.016416,
+					["damage_from"] = {
+						["Pepijn"] = true,
+						["Ay"] = true,
+					},
+					["targets"] = {
+					},
+					["pets"] = {
+					},
+					["last_dps"] = 0,
+					["tipo"] = 1,
+					["classe"] = "WARRIOR",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.016416,
+					["delay"] = 0,
+					["fight_component"] = true,
+					["end_time"] = 1617733606,
+					["friendlyfire"] = {
+						["Pepijn"] = {
+							["total"] = 68,
+							["spells"] = {
+								["!Melee"] = 0,
+								["Heroic Strike"] = 0,
+							},
+						},
+						["Ay"] = {
+							["total"] = 153,
+							["spells"] = {
+								["!Melee"] = 0,
+								["Heroic Strike"] = 0,
+							},
+						},
+					},
+					["damage_taken"] = 120.016416,
+					["nome"] = "Geelvanbuite",
+					["spells"] = {
+						["_ActorTable"] = {
+							["Heroic Strike"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Ay"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 1,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Heroic Strike",
+								["r_dmg"] = 0,
+								["c_min"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_dmg"] = 0,
+								["MISS"] = 1,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["grupo"] = true,
+					["total"] = 0.016416,
+					["friendlyfire_total"] = 221,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["start_time"] = 1617733556,
+					["serial"] = "Player-4478-03150501",
+					["dps_started"] = false,
+				}, -- [3]
+				{
+					["flag_original"] = 66834,
+					["totalabsorbed"] = 0.016009,
+					["damage_from"] = {
+						["Geelvanbuite"] = true,
+					},
+					["targets"] = {
+					},
+					["pets"] = {
+					},
+					["last_dps"] = 0,
+					["tipo"] = 1,
+					["classe"] = "PRIEST",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.016009,
+					["delay"] = 0,
+					["fight_component"] = true,
+					["end_time"] = 1617733707,
+					["friendlyfire"] = {
+						["Geelvanbuite"] = {
+							["total"] = 43,
+							["spells"] = {
+								["!Melee"] = 0,
+							},
+						},
+					},
+					["damage_taken"] = 153.016009,
+					["nome"] = "Ay",
+					["spells"] = {
+						["_ActorTable"] = {
+						},
+						["tipo"] = 2,
+					},
+					["grupo"] = true,
+					["total"] = 0.016009,
+					["friendlyfire_total"] = 43,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["start_time"] = 1617733669,
+					["serial"] = "Player-4478-0314FB0A",
+					["dps_started"] = false,
+				}, -- [4]
+			},
+		}, -- [1]
+		{
+			["tipo"] = 3,
+			["_ActorTable"] = {
+				{
+					["flag_original"] = 1297,
+					["totalabsorb"] = 0.011405,
+					["last_hps"] = 0,
+					["targets_overheal"] = {
+						["Pepijn"] = 0,
+						["Geelvanbuite"] = 0,
+					},
+					["targets"] = {
+						["Eefjé"] = 0,
+						["Geelvanbuite"] = 0,
+					},
+					["delay"] = 0,
+					["pets"] = {
+					},
+					["iniciar_hps"] = false,
+					["healing_from"] = {
+						["Ay"] = true,
+						["Eefjé"] = true,
+					},
+					["healing_taken"] = 88.011405,
+					["totalover"] = 58.011405,
+					["total_without_pet"] = 106.011405,
+					["totalover_without_pet"] = 0.011405,
+					["totaldenied"] = 0.011405,
+					["fight_component"] = true,
+					["total"] = 106.011405,
+					["heal_enemy_amt"] = 0,
+					["classe"] = "SHAMAN",
+					["nome"] = "Eefjé",
+					["targets_absorbs"] = {
+					},
+					["grupo"] = true,
+					["end_time"] = 1617733482,
+					["heal_enemy"] = {
+					},
+					["tipo"] = 2,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["start_time"] = 1617733468,
+					["serial"] = "Player-4478-0315049E",
+					["spells"] = {
+						["_ActorTable"] = {
+							["Healing Wave"] = {
+								["c_amt"] = 0,
+								["totalabsorb"] = 0,
+								["targets_overheal"] = {
+									["Pepijn"] = 41,
+									["Geelvanbuite"] = 17,
+								},
+								["n_max"] = 44,
+								["targets"] = {
+									["Pepijn"] = 0,
+									["Eefjé"] = 38,
+									["Geelvanbuite"] = 68,
+								},
+								["n_min"] = 0,
+								["counter"] = 4,
+								["overheal"] = 58,
+								["total"] = 106,
+								["c_max"] = 0,
+								["id"] = "Healing Wave",
+								["targets_absorbs"] = {
+								},
+								["c_curado"] = 0,
+								["m_crit"] = 0,
+								["m_healed"] = 0,
+								["c_min"] = 0,
+								["totaldenied"] = 0,
+								["n_amt"] = 4,
+								["n_curado"] = 106,
+								["m_amt"] = 0,
+								["absorbed"] = 0,
+							},
+						},
+						["tipo"] = 3,
+					},
+				}, -- [1]
+				{
+					["flag_original"] = 1298,
+					["totalabsorb"] = 0.012083,
+					["last_hps"] = 0,
+					["healing_from"] = {
+						["Ay"] = true,
+					},
+					["targets"] = {
+						["Pepijn"] = 0,
+						["Ay"] = 0,
+						["Eefjé"] = 0,
+					},
+					["delay"] = 0,
+					["pets"] = {
+					},
+					["totalover_without_pet"] = 0.012083,
+					["targets_overheal"] = {
+						["Pepijn"] = 0,
+						["Ay"] = 0,
+						["Eefjé"] = 0,
+					},
+					["heal_enemy_amt"] = 0,
+					["totalover"] = 89.012083,
+					["total_without_pet"] = 271.012083,
+					["iniciar_hps"] = false,
+					["totaldenied"] = 0.012083,
+					["fight_component"] = true,
+					["total"] = 271.012083,
+					["classe"] = "PRIEST",
+					["healing_taken"] = 101.012083,
+					["nome"] = "Ay",
+					["spells"] = {
+						["_ActorTable"] = {
+							["Lesser Heal"] = {
+								["c_amt"] = 0,
+								["totalabsorb"] = 0,
+								["targets_overheal"] = {
+									["Pepijn"] = 78,
+									["Ay"] = 6,
+									["Eefjé"] = 5,
+								},
+								["n_max"] = 56,
+								["targets"] = {
+									["Pepijn"] = 120,
+									["Ay"] = 101,
+									["Eefjé"] = 50,
+								},
+								["n_min"] = 0,
+								["counter"] = 7,
+								["overheal"] = 89,
+								["total"] = 271,
+								["c_max"] = 0,
+								["id"] = "Lesser Heal",
+								["targets_absorbs"] = {
+								},
+								["c_curado"] = 0,
+								["m_crit"] = 0,
+								["m_healed"] = 0,
+								["c_min"] = 0,
+								["totaldenied"] = 0,
+								["n_amt"] = 7,
+								["n_curado"] = 271,
+								["m_amt"] = 0,
+								["absorbed"] = 0,
+							},
+						},
+						["tipo"] = 3,
+					},
+					["grupo"] = true,
+					["end_time"] = 1617733482,
+					["heal_enemy"] = {
+					},
+					["last_event"] = 0,
+					["custom"] = 0,
+					["tipo"] = 2,
+					["on_hold"] = false,
+					["start_time"] = 1617733455,
+					["serial"] = "Player-4478-0314FB0A",
+					["targets_absorbs"] = {
+					},
+				}, -- [2]
+				{
+					["flag_original"] = 66834,
+					["totalabsorb"] = 0.011115,
+					["last_hps"] = 0,
+					["targets_overheal"] = {
+					},
+					["targets"] = {
+					},
+					["delay"] = 0,
+					["pets"] = {
+					},
+					["iniciar_hps"] = false,
+					["healing_from"] = {
+						["Ay"] = true,
+					},
+					["healing_taken"] = 120.011115,
+					["totalover"] = 0.011115,
+					["total_without_pet"] = 0.011115,
+					["totalover_without_pet"] = 0.011115,
+					["totaldenied"] = 0.011115,
+					["fight_component"] = true,
+					["total"] = 0.011115,
+					["heal_enemy_amt"] = 0,
+					["classe"] = "MAGE",
+					["nome"] = "Pepijn",
+					["targets_absorbs"] = {
+					},
+					["grupo"] = true,
+					["end_time"] = 1617733482,
+					["heal_enemy"] = {
+					},
+					["tipo"] = 2,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["start_time"] = 1617733479,
+					["serial"] = "Player-4478-0315078A",
+					["spells"] = {
+						["_ActorTable"] = {
+						},
+						["tipo"] = 3,
+					},
+				}, -- [3]
+				{
+					["flag_original"] = 66834,
+					["totalabsorb"] = 0.007482,
+					["last_hps"] = 0,
+					["healing_from"] = {
+						["Eefjé"] = true,
+					},
+					["targets"] = {
+					},
+					["end_time"] = 1617733606,
+					["pets"] = {
+					},
+					["iniciar_hps"] = false,
+					["targets_overheal"] = {
+					},
+					["heal_enemy_amt"] = 0,
+					["totalover"] = 0.007482,
+					["total_without_pet"] = 0.007482,
+					["totalover_without_pet"] = 0.007482,
+					["totaldenied"] = 0.007482,
+					["fight_component"] = true,
+					["total"] = 0.007482,
+					["classe"] = "WARRIOR",
+					["healing_taken"] = 68.007482,
+					["nome"] = "Geelvanbuite",
+					["spells"] = {
+						["_ActorTable"] = {
+						},
+						["tipo"] = 3,
+					},
+					["grupo"] = true,
+					["last_event"] = 0,
+					["heal_enemy"] = {
+					},
+					["targets_absorbs"] = {
+					},
+					["custom"] = 0,
+					["tipo"] = 2,
+					["on_hold"] = false,
+					["start_time"] = 1617733603,
+					["serial"] = "Player-4478-03150501",
+					["delay"] = 0,
+				}, -- [4]
+			},
+		}, -- [2]
+		{
+			["tipo"] = 7,
+			["_ActorTable"] = {
+			},
+		}, -- [3]
+		{
+			["tipo"] = 9,
+			["_ActorTable"] = {
+				{
+					["flag_original"] = 66888,
+					["debuff_uptime_spells"] = {
+						["_ActorTable"] = {
+							["Fireball"] = {
+								["counter"] = 0,
+								["activedamt"] = -2,
+								["appliedamt"] = 1,
+								["id"] = "Fireball",
+								["uptime"] = 58,
+								["targets"] = {
+								},
+								["refreshamt"] = 1,
+							},
+							["Chilled"] = {
+								["counter"] = 0,
+								["activedamt"] = -1,
+								["appliedamt"] = 1,
+								["id"] = "Chilled",
+								["uptime"] = 30,
+								["targets"] = {
+								},
+								["refreshamt"] = 3,
+							},
+						},
+						["tipo"] = 9,
+					},
+					["buff_uptime"] = 35,
+					["classe"] = "MAGE",
+					["buff_uptime_spells"] = {
+						["_ActorTable"] = {
+							["Frost Armor"] = {
+								["counter"] = 0,
+								["activedamt"] = 1,
+								["appliedamt"] = 1,
+								["id"] = "Frost Armor",
+								["uptime"] = 35,
+								["targets"] = {
+								},
+								["refreshamt"] = 0,
+							},
+						},
+						["tipo"] = 9,
+					},
+					["fight_component"] = true,
+					["debuff_uptime"] = 88,
+					["debuff_uptime_targets"] = {
+					},
+					["grupo"] = true,
+					["spell_cast"] = {
+						["Fireball"] = 3,
+					},
+					["pets"] = {
+					},
+					["last_event"] = 0,
+					["buff_uptime_targets"] = {
+					},
+					["nome"] = "Pepijn",
+					["serial"] = "Player-4478-0315078A",
+					["tipo"] = 4,
+				}, -- [1]
+				{
+					["fight_component"] = true,
+					["spell_cast"] = {
+						["Lightning Bolt"] = 4,
+						["Healing Wave"] = 4,
+					},
+					["nome"] = "Eefjé",
+					["grupo"] = true,
+					["pets"] = {
+					},
+					["last_event"] = 0,
+					["tipo"] = 4,
+					["classe"] = "SHAMAN",
+					["serial"] = "Player-4478-0315049E",
+					["flag_original"] = 1297,
+				}, -- [2]
+				{
+					["fight_component"] = true,
+					["spell_cast"] = {
+						["Lesser Heal"] = 7,
+					},
+					["nome"] = "Ay",
+					["grupo"] = true,
+					["pets"] = {
+					},
+					["last_event"] = 0,
+					["tipo"] = 4,
+					["classe"] = "PRIEST",
+					["serial"] = "Player-4478-0314FB0A",
+					["flag_original"] = 1298,
+				}, -- [3]
+				{
+					["fight_component"] = true,
+					["spell_cast"] = {
+						["Heroic Strike"] = 9,
+					},
+					["nome"] = "Geelvanbuite",
+					["grupo"] = true,
+					["pets"] = {
+					},
+					["last_event"] = 0,
+					["tipo"] = 4,
+					["classe"] = "WARRIOR",
+					["serial"] = "Player-4478-03150501",
+					["flag_original"] = 1298,
+				}, -- [4]
+			},
+		}, -- [4]
+		{
+			["tipo"] = 2,
+			["_ActorTable"] = {
+			},
+		}, -- [5]
+		["raid_roster"] = {
+		},
+		["tempo_start"] = 1617733447,
+		["last_events_tables"] = {
+		},
+		["alternate_power"] = {
+		},
+		["cleu_timeline"] = {
+		},
+		["combat_counter"] = 3,
+		["totals"] = {
+			0.031766, -- [1]
+			377.029199, -- [2]
+			{
+				0, -- [1]
+				[0] = 0,
+				["alternatepower"] = 0,
+				[6] = 0,
+				[3] = 0,
+			}, -- [3]
+			{
+				["buff_uptime"] = 0,
+				["ress"] = 0,
+				["dead"] = 0,
+				["cc_break"] = 0,
+				["interrupt"] = 0,
+				["debuff_uptime"] = 0,
+				["dispell"] = 0,
+				["cooldowns_defensive"] = 0,
+			}, -- [4]
+			["voidzone_damage"] = 0,
+			["frags_total"] = 0,
+		},
+		["player_last_events"] = {
+		},
+		["frags_need_refresh"] = false,
+		["aura_timeline"] = {
+		},
+		["__call"] = {
+		},
+		["data_inicio"] = "20:24:07",
+		["end_time"] = 35149.524,
+		["totals_grupo"] = {
+			0.031766, -- [1]
+			377.029199, -- [2]
+			{
+				0, -- [1]
+				[0] = 0,
+				["alternatepower"] = 0,
+				[6] = 0,
+				[3] = 0,
+			}, -- [3]
+			{
+				["buff_uptime"] = 0,
+				["ress"] = 0,
+				["dead"] = 0,
+				["cc_break"] = 0,
+				["interrupt"] = 0,
+				["debuff_uptime"] = 0,
+				["dispell"] = 0,
+				["cooldowns_defensive"] = 0,
+			}, -- [4]
+		},
+		["overall_refreshed"] = true,
+		["PhaseData"] = {
+			{
+				1, -- [1]
+				1, -- [2]
+			}, -- [1]
+			["damage"] = {
+			},
+			["heal_section"] = {
+			},
+			["heal"] = {
+			},
+			["damage_section"] = {
+			},
+		},
+		["segments_added"] = {
+			{
+				["elapsed"] = 35.0009999999966,
+				["type"] = 0,
+				["name"] = "Unknown",
+				["clock"] = "20:27:52",
+			}, -- [1]
+			{
+				["elapsed"] = 26.0009999999966,
+				["type"] = 0,
+				["name"] = "Unknown",
+				["clock"] = "20:26:20",
+			}, -- [2]
+			{
+				["elapsed"] = 34.9990000000034,
+				["type"] = 0,
+				["name"] = "Unknown",
+				["clock"] = "20:24:07",
+			}, -- [3]
+		},
+		["hasSaved"] = true,
+		["spells_cast_timeline"] = {
+		},
+		["data_fim"] = "20:28:27",
+		["overall_enemy_name"] = "Unknown",
+		["CombatSkillCache"] = {
+		},
+		["frags"] = {
+		},
+		["start_time"] = 35053.523,
+		["TimeData"] = {
+		},
+		["cleu_events"] = {
+			["n"] = 1,
+		},
+	},
+	["combat_counter"] = 7,
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
+	["last_realversion"] = 142,
+	["announce_cooldowns"] = {
+		["ignored_cooldowns"] = {
+		},
+		["enabled"] = false,
+		["custom"] = "",
+		["channel"] = "RAID",
+	},
+	["rank_window"] = {
+		["last_difficulty"] = 15,
+		["last_raid"] = "",
+	},
+	["announce_damagerecord"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
+	["cached_specs"] = {
+	},
+}

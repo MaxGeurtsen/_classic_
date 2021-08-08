@@ -1,0 +1,12 @@
+ClassicCastbars: enabled
+Decursive: disabled
+ClassicCastbars_Options: enabled
+eCastingBar: disabled
+WeaponSwingTimer: enabled
+AAP-Classic: enabled
+WhatsTraining: enabled
+AtlasLootClassic_Options: enabled
+AtlasLootClassic_Collections: enabled
+RCLootCouncil_Classic: enabled
+Details: enabled
+TradeSkillMaster: enabled

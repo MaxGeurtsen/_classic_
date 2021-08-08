@@ -1,0 +1,43 @@
+VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [focus] Earth Shock
+END
+VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast Reincarnation
+END
+VER 3 0000000001000009 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [harm]Chain Lightning; Chain Heal
+END
+VER 3 0000000001000008 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [harm]Lightning Bolt; Healing Wave
+END
+VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast Stormstrike
+/startattack [harm]
+END
+VER 3 0000000001000005 " /castsequence r" "INV_MISC_QUESTIONMARK"
+/castsequence reset=combat/5   Grace of air Totem, Strength of Earth Totem, Mana Spring Totem,Searing Totem
+END
+VER 3 000000000100000B " focus" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/stopcasting
+/cast [@focus] Earth shock(rank 1)
+END
+VER 3 000000000100000A " Wspamawdaw" "INV_MISC_QUESTIONMARK"
+/castsequence reset=combat/5  Wrath of Air Totem, Strength of Earth Totem, Mana Spring Totem,Searing Totem
+END
+VER 3 000000000100000C "focus" "132090"
+/focus [@mouseover, exists, harm]
+END
+VER 3 0000000001000006 "PUMP" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast Blood Fury
+/cast Shamanistic Rage
+END
+VER 3 0000000001000001 "TT Cast" "INV_MISC_QUESTIONMARK"
+/castsequence reset=combat/5   Windfury Totem, Strength of Earth Totem, Mana Spring Totem,Searing Totem
+END

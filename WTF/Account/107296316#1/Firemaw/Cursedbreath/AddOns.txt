@@ -1,0 +1,6 @@
+WeaponSwingTimer: disabled
+ClassicCastbars: enabled
+ClassicCastbars_Options: enabled
+eCastingBar: disabled
+Decursive: disabled
+AAP-Classic: enabled

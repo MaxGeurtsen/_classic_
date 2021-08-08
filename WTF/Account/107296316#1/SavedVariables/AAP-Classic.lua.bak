@@ -1,0 +1,110 @@
+
+AAPC1 = {
+	["Razorgore"] = {
+		["Partijleider"] = {
+			["Elite"] = {
+			},
+			["Zones"] = {
+				["34-37"] = 9,
+				["20-TB-Prep"] = 35,
+				["20-23Ashenvale-SouthBarrens"] = 87,
+				["37-40"] = 10,
+				["1-12OrcTroll-Shaman"] = 194,
+				["12-15TheBarrens"] = 42,
+				["23-25StonetalonMountains"] = 49,
+				["16TheBarrens"] = 15,
+				["16-20TheBarrens"] = 59,
+				["15-16StonetalonMountains"] = 9,
+				["16GotoTB-Rest"] = 14,
+			},
+			["Completed"] = {
+				[813] = 1,
+			},
+		},
+	},
+	["Firemaw"] = {
+		["Firebreather"] = {
+			["Elite"] = {
+			},
+			["Completed"] = {
+			},
+			["Zones"] = {
+				["37-38ArathiHighlands"] = 1,
+			},
+		},
+		["Bankerinos"] = {
+			["Elite"] = {
+			},
+			["Zones"] = {
+				["1-5Human-Priest"] = 24,
+			},
+			["Completed"] = {
+			},
+		},
+		["Mírjam"] = {
+			["Elite"] = {
+			},
+			["Zones"] = {
+				["1-6DwarfGnome-Hunter"] = 1,
+			},
+			["Completed"] = {
+			},
+		},
+		["Cursedbreath"] = {
+			["Elite"] = {
+			},
+			["Zones"] = {
+				["6-12DwarfGnome-Warlock"] = 173,
+				["12-17Darkshore"] = 9,
+			},
+			["Completed"] = {
+			},
+		},
+		["Mirjam"] = {
+			["Elite"] = {
+				[304] = 1,
+				[1012] = 1,
+				[271] = 1,
+				[474] = 1,
+			},
+			["Zones"] = {
+				["18-20RedridgeMountains"] = 32,
+				["28-30Duskwood"] = 108,
+				[1428] = 1,
+				[1453] = 1,
+				["32-RunAbout"] = 6,
+				["33-34Thousand Needles"] = 1,
+				["24-Ashenvale"] = 34,
+				[1426] = 1,
+				[1427] = 1,
+				["5-12Human-Rogue"] = 120,
+				["20-RedridgeDarkshore"] = 14,
+				["17-18HumanDwarfGnome-LochModan"] = 48,
+				[1437] = 1,
+				["12-17Darkshore"] = 101,
+				["27-28RedridgeMountains"] = 29,
+				["21-22AshenvaleStonetalon"] = 72,
+				["31-32HillsbradFoothills"] = 43,
+				[1440] = 1,
+				["30-Ashenvale"] = 109,
+				[1438] = 1,
+				[1439] = 1,
+				["24-27Wetlands"] = 83,
+				["30-31Wetlands"] = 51,
+				[1442] = 1,
+				["20-21Darkshore"] = 25,
+				["22-24Darkshore"] = 20,
+				[1414] = 1,
+				["18-Human-IronforgeRedridge"] = 11,
+				[1429] = 1,
+				["12-13Human-LochModan-Darkshore"] = 58,
+			},
+			["Completed"] = {
+			},
+		},
+	},
+}
+AAPC2 = nil
+AAPC3 = nil
+AAPCQuestNames = nil
+AAPC_HoldZoneVar = nil

@@ -1,0 +1,7770 @@
+
+_detalhes_database = {
+	["savedbuffs"] = {
+	},
+	["mythic_dungeon_id"] = 0,
+	["tabela_historico"] = {
+		["tabelas"] = {
+			{
+				{
+					["combatId"] = 25,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.005189,
+							["friendlyfire"] = {
+							},
+							["damage_from"] = {
+								["Timber Wolf"] = true,
+							},
+							["targets"] = {
+								["Timber Wolf"] = 83,
+							},
+							["colocacao"] = 1,
+							["pets"] = {
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 83.005189,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["total"] = 83.005189,
+							["classe"] = "WARRIOR",
+							["serial"] = "Player-4467-009DCD0A",
+							["nome"] = "Maximaal",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[0] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Timber Wolf"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["MISS"] = 1,
+										["id"] = 0,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Heroic Strike"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 34,
+										["g_amt"] = 0,
+										["n_max"] = 16,
+										["targets"] = {
+											["Timber Wolf"] = 50,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 16,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 50,
+										["c_max"] = 34,
+										["id"] = "Heroic Strike",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 34,
+									},
+									["Attack"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 7,
+										["targets"] = {
+											["Timber Wolf"] = 33,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 33,
+										["n_min"] = 6,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 33,
+										["c_max"] = 0,
+										["id"] = "Attack",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 5,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["end_time"] = 1566886682,
+							["last_dps"] = 5.55962417950695,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 8.005189,
+							["start_time"] = 1566886667,
+							["delay"] = 0,
+							["last_event"] = 1566886681,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.004044,
+							["damage_from"] = {
+								["Deseasy"] = true,
+								["Kitto"] = true,
+								["Maximaal"] = true,
+								["Govenator"] = true,
+								["Livredderen"] = true,
+								["Tuborggrøn"] = true,
+								["Medow"] = true,
+								["Jellybae"] = true,
+								["Bilte"] = true,
+								["Tafyz"] = true,
+							},
+							["targets"] = {
+								["Kitto"] = 55,
+								["Maximaal"] = 8,
+								["Rabbit"] = 3,
+								["Livredderen"] = 18,
+								["Govenator"] = 6,
+								["Medow"] = 10,
+								["Jellybae"] = 7,
+								["Bilte"] = 34,
+								["Tafyz"] = 8,
+							},
+							["timeMachine"] = 17,
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 149.004044,
+							["on_hold"] = true,
+							["dps_started"] = true,
+							["total"] = 149.004044,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4446-0-486-69-000064CAEC",
+							["nome"] = "Timber Wolf",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Maximaal"] = 0,
+											["Kitto"] = 0,
+											["Medow"] = 0,
+											["Tafyz"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["BLOCK"] = 1,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 11,
+										["DODGE"] = 8,
+										["total"] = 0,
+										["c_max"] = 0,
+										["MISS"] = 2,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									}, -- [1]
+									["Attack"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 2,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 3,
+										["targets"] = {
+											["Kitto"] = 55,
+											["Maximaal"] = 8,
+											["Rabbit"] = 3,
+											["Livredderen"] = 18,
+											["Govenator"] = 6,
+											["Medow"] = 10,
+											["Jellybae"] = 7,
+											["Bilte"] = 34,
+											["Tafyz"] = 8,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 149,
+										["n_min"] = 1,
+										["g_dmg"] = 0,
+										["counter"] = 80,
+										["total"] = 149,
+										["c_max"] = 0,
+										["id"] = "Attack",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 2,
+										["n_amt"] = 80,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 1056.004044,
+							["start_time"] = 1566886868,
+							["delay"] = 1566887005,
+							["last_event"] = 1566887005,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 25,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 25,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 25,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["nome"] = "Maximaal",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["tipo"] = 4,
+							["last_event"] = 0,
+							["spell_cast"] = {
+								[0] = 3,
+							},
+							["serial"] = "Player-4467-009DCD0A",
+							["classe"] = "WARRIOR",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 25,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Maximaal"] = true,
+				},
+				["CombatStartedAt"] = 152177.611,
+				["tempo_start"] = 1566886667,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 28,
+				["playing_solo"] = true,
+				["totals"] = {
+					231.742196999999, -- [1]
+					0, -- [2]
+					{
+						-0.015288, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					83, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "08:18:02",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Timber Wolf",
+				["TotalElapsedCombatTime"] = 14.929999999993,
+				["CombatEndedAt"] = 152192.541,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Maximaal"] = 83.005189,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 152192.541,
+				["combat_id"] = 25,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["overall_added"] = true,
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["data_inicio"] = "08:17:47",
+				["start_time"] = 152177.611,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Kobold Vermin"] = 4,
+					["Kobold Worker"] = 6,
+					["Young Wolf"] = 1,
+					["Timber Wolf"] = 4,
+				},
+			}, -- [1]
+			{
+				{
+					["combatId"] = 24,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.006652,
+							["damage_from"] = {
+								["Kobold Vermin"] = true,
+							},
+							["targets"] = {
+								["Kobold Vermin"] = 37,
+							},
+							["pets"] = {
+							},
+							["classe"] = "WARRIOR",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 37.006652,
+							["friendlyfire"] = {
+							},
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["end_time"] = 1566886637,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Maximaal",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["Heroic Strike"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 18,
+										["targets"] = {
+											["Kobold Vermin"] = 18,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 18,
+										["n_min"] = 18,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 18,
+										["c_max"] = 0,
+										["id"] = "Heroic Strike",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Attack"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 7,
+										["targets"] = {
+											["Kobold Vermin"] = 19,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 19,
+										["n_min"] = 6,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 19,
+										["c_max"] = 0,
+										["id"] = "Attack",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["total"] = 37.006652,
+							["serial"] = "Player-4467-009DCD0A",
+							["last_dps"] = 5.49630952029096,
+							["custom"] = 0,
+							["last_event"] = 1566886636,
+							["damage_taken"] = 4.006652,
+							["start_time"] = 1566886630,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.004276,
+							["damage_from"] = {
+								["Quiet"] = true,
+								["Seterina"] = true,
+								["Sarthor"] = true,
+								["Everest"] = true,
+								["Maximaal"] = true,
+								["Kizzy"] = true,
+								["Devitalize"] = true,
+								["Coolyoudown"] = true,
+								["Kratimus"] = true,
+								["Chober"] = true,
+								["Andriel"] = true,
+								["Johnsnowdk"] = true,
+							},
+							["targets"] = {
+								["Quiet"] = 6,
+								["Sarthor"] = 14,
+								["Seterina"] = 2,
+								["Kizzy"] = 8,
+								["Coolyoudown"] = 11,
+								["Devitalize"] = 8,
+								["Maximaal"] = 4,
+								["Kratimus"] = 6,
+								["Chober"] = 4,
+								["Everest"] = 2,
+								["Johnsnowdk"] = 10,
+							},
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 75.004276,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["total"] = 75.004276,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4446-0-486-6-000264CAD5",
+							["nome"] = "Kobold Vermin",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Kizzy"] = 0,
+											["Devitalize"] = 0,
+											["Quiet"] = 0,
+											["Kratimus"] = 0,
+											["Sarthor"] = 0,
+											["Johnsnowdk"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 10,
+										["MISS"] = 6,
+										["total"] = 0,
+										["c_max"] = 0,
+										["DODGE"] = 4,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									}, -- [1]
+									["Attack"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 3,
+										["targets"] = {
+											["Quiet"] = 6,
+											["Sarthor"] = 14,
+											["Seterina"] = 2,
+											["Kizzy"] = 8,
+											["Coolyoudown"] = 11,
+											["Devitalize"] = 8,
+											["Maximaal"] = 4,
+											["Kratimus"] = 6,
+											["Chober"] = 4,
+											["Everest"] = 2,
+											["Johnsnowdk"] = 10,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 75,
+										["n_min"] = 1,
+										["g_dmg"] = 0,
+										["counter"] = 42,
+										["total"] = 75,
+										["c_max"] = 0,
+										["id"] = "Attack",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 42,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1566886667,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 633.004276,
+							["start_time"] = 1566886631,
+							["delay"] = 0,
+							["last_event"] = 1566886666,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 24,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 24,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 24,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["nome"] = "Maximaal",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["tipo"] = 4,
+							["last_event"] = 0,
+							["spell_cast"] = {
+								[0] = 1,
+							},
+							["serial"] = "Player-4467-009DCD0A",
+							["classe"] = "WARRIOR",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 24,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Maximaal"] = true,
+				},
+				["CombatStartedAt"] = 152141.482,
+				["tempo_start"] = 1566886630,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 27,
+				["playing_solo"] = true,
+				["totals"] = {
+					111.834488, -- [1]
+					0, -- [2]
+					{
+						-0.00802799999999948, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					37, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "08:17:17",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Kobold Vermin",
+				["TotalElapsedCombatTime"] = 6.52400000000489,
+				["CombatEndedAt"] = 152148.006,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Maximaal"] = 37.006652,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 152148.006,
+				["combat_id"] = 24,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["overall_added"] = true,
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["data_inicio"] = "08:17:11",
+				["start_time"] = 152141.273,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Kobold Vermin"] = 3,
+					["Kobold Worker"] = 3,
+					["Rabbit"] = 1,
+					["Timber Wolf"] = 1,
+				},
+			}, -- [2]
+			{
+				{
+					["combatId"] = 23,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.00135,
+							["damage_from"] = {
+								["Kobold Vermin"] = true,
+							},
+							["targets"] = {
+								["Kobold Vermin"] = 45,
+							},
+							["pets"] = {
+							},
+							["classe"] = "WARRIOR",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 45.00135,
+							["friendlyfire"] = {
+							},
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["end_time"] = 1566886622,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Maximaal",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["Heroic Strike"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 33,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Kobold Vermin"] = 33,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 33,
+										["c_max"] = 33,
+										["id"] = "Heroic Strike",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 33,
+									},
+									["Attack"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 6,
+										["targets"] = {
+											["Kobold Vermin"] = 12,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 12,
+										["n_min"] = 6,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 12,
+										["c_max"] = 0,
+										["id"] = "Attack",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["total"] = 45.00135,
+							["serial"] = "Player-4467-009DCD0A",
+							["last_dps"] = 8.49402604754944,
+							["custom"] = 0,
+							["last_event"] = 1566886621,
+							["damage_taken"] = 2.00135,
+							["start_time"] = 1566886617,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.002835,
+							["damage_from"] = {
+								["Devitalize"] = true,
+								["Kizzy"] = true,
+								["Btwbank"] = true,
+								["Sarthor"] = true,
+								["Argania"] = true,
+								["Vizility"] = true,
+								["Andriel"] = true,
+								["Broey"] = true,
+								["Maximaal"] = true,
+								["Quiet"] = true,
+								["Chober"] = true,
+								["Kratimus"] = true,
+								["Johnsnowdk"] = true,
+							},
+							["targets"] = {
+								["Sarthor"] = 21,
+								["Btwbank"] = 1,
+								["Maximaal"] = 2,
+								["Broey"] = 6,
+								["Kizzy"] = 2,
+								["Quiet"] = 4,
+								["Chober"] = 6,
+								["Kratimus"] = 8,
+								["Johnsnowdk"] = 7,
+							},
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 57.002835,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["total"] = 57.002835,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4446-0-486-6-0000E4CAD5",
+							["nome"] = "Kobold Vermin",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Quiet"] = 0,
+											["Kratimus"] = 0,
+											["Johnsnowdk"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["MISS"] = 1,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["DODGE"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["BLOCK"] = 1,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									}, -- [1]
+									["Attack"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 2,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 3,
+										["targets"] = {
+											["Sarthor"] = 21,
+											["Btwbank"] = 1,
+											["Maximaal"] = 2,
+											["Broey"] = 6,
+											["Kizzy"] = 2,
+											["Quiet"] = 4,
+											["Chober"] = 6,
+											["Kratimus"] = 8,
+											["Johnsnowdk"] = 7,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 57,
+										["n_min"] = 1,
+										["g_dmg"] = 0,
+										["counter"] = 31,
+										["total"] = 57,
+										["c_max"] = 0,
+										["id"] = "Attack",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 2,
+										["n_amt"] = 31,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1566886630,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 517.002835,
+							["start_time"] = 1566886617,
+							["delay"] = 0,
+							["last_event"] = 1566886630,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 23,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 23,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 23,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["nome"] = "Maximaal",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["tipo"] = 4,
+							["last_event"] = 0,
+							["spell_cast"] = {
+								[0] = 1,
+							},
+							["serial"] = "Player-4467-009DCD0A",
+							["classe"] = "WARRIOR",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 23,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Maximaal"] = true,
+				},
+				["CombatStartedAt"] = 152127.685,
+				["tempo_start"] = 1566886617,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 26,
+				["playing_solo"] = true,
+				["totals"] = {
+					101.870544, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					45, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "08:17:02",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Kobold Vermin",
+				["TotalElapsedCombatTime"] = 5.29800000000978,
+				["CombatEndedAt"] = 152132.983,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Maximaal"] = 45.00135,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 152132.983,
+				["combat_id"] = 23,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["overall_added"] = true,
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["data_inicio"] = "08:16:57",
+				["start_time"] = 152127.685,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Kobold Vermin"] = 1,
+					["Kobold Worker"] = 2,
+				},
+			}, -- [3]
+			{
+				{
+					["combatId"] = 22,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.007907,
+							["damage_from"] = {
+								["Kobold Worker"] = true,
+							},
+							["targets"] = {
+								["Kobold Worker"] = 76,
+							},
+							["pets"] = {
+							},
+							["classe"] = "WARRIOR",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 76.007907,
+							["friendlyfire"] = {
+							},
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["end_time"] = 1566886614,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Maximaal",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["Heroic Strike"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 17,
+										["targets"] = {
+											["Kobold Worker"] = 48,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 48,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 48,
+										["c_max"] = 0,
+										["id"] = "Heroic Strike",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Attack"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 2,
+										["n_max"] = 6,
+										["targets"] = {
+											["Kobold Worker"] = 28,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 17,
+										["n_min"] = 5,
+										["g_dmg"] = 11,
+										["counter"] = 5,
+										["total"] = 28,
+										["c_max"] = 0,
+										["id"] = "Attack",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["total"] = 76.007907,
+							["serial"] = "Player-4467-009DCD0A",
+							["last_dps"] = 4.98249144542621,
+							["custom"] = 0,
+							["last_event"] = 1566886613,
+							["damage_taken"] = 20.007907,
+							["start_time"] = 1566886599,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.00553,
+							["damage_from"] = {
+								["Chiéf"] = true,
+								["Seterina"] = true,
+								["Vras"] = true,
+								["Solstoss"] = true,
+								["Kattlërv"] = true,
+								["Tafyz"] = true,
+								["Comradus"] = true,
+								["Maximaal"] = true,
+								["Decreaze"] = true,
+								["Jellybae"] = true,
+								["Devitalize"] = true,
+								["Andriel"] = true,
+							},
+							["targets"] = {
+								["Chiéf"] = 16,
+								["Vras"] = 9,
+								["Comradus"] = 15,
+								["Kattlërv"] = 15,
+								["Devitalize"] = 19,
+								["Seterina"] = 17,
+								["Maximaal"] = 20,
+								["Decreaze"] = 7,
+								["Jellybae"] = 9,
+								["Tafyz"] = 2,
+								["Andriel"] = 12,
+							},
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 141.00553,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["total"] = 141.00553,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4446-0-486-257-0000E4CA98",
+							["nome"] = "Kobold Worker",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Kattlërv"] = 0,
+											["Chiéf"] = 0,
+											["Seterina"] = 0,
+											["Tafyz"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 9,
+										["MISS"] = 4,
+										["total"] = 0,
+										["c_max"] = 0,
+										["DODGE"] = 5,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									}, -- [1]
+									["Attack"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 4,
+										["targets"] = {
+											["Chiéf"] = 16,
+											["Vras"] = 9,
+											["Comradus"] = 15,
+											["Kattlërv"] = 15,
+											["Devitalize"] = 19,
+											["Seterina"] = 17,
+											["Maximaal"] = 20,
+											["Decreaze"] = 7,
+											["Jellybae"] = 9,
+											["Tafyz"] = 2,
+											["Andriel"] = 12,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 141,
+										["n_min"] = 2,
+										["g_dmg"] = 0,
+										["counter"] = 50,
+										["total"] = 141,
+										["c_max"] = 0,
+										["id"] = "Attack",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 50,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1566886617,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 770.00553,
+							["start_time"] = 1566886599,
+							["delay"] = 0,
+							["last_event"] = 1566886616,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 22,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 22,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 22,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["nome"] = "Maximaal",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["tipo"] = 4,
+							["last_event"] = 0,
+							["spell_cast"] = {
+								[0] = 3,
+							},
+							["serial"] = "Player-4467-009DCD0A",
+							["classe"] = "WARRIOR",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 22,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Maximaal"] = true,
+				},
+				["CombatStartedAt"] = 152109.836,
+				["tempo_start"] = 1566886599,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 25,
+				["playing_solo"] = true,
+				["totals"] = {
+					216.878189, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					76, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "08:16:54",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Kobold Worker",
+				["TotalElapsedCombatTime"] = 15.054999999993,
+				["CombatEndedAt"] = 152124.891,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Maximaal"] = 76.007907,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 152124.891,
+				["combat_id"] = 22,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["overall_added"] = true,
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["data_inicio"] = "08:16:39",
+				["start_time"] = 152109.636,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Young Wolf"] = 1,
+					["Timber Wolf"] = 1,
+					["Kobold Worker"] = 7,
+					["Deer"] = 1,
+					["Kobold Vermin"] = 6,
+				},
+			}, -- [4]
+			{
+				{
+					["combatId"] = 21,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.008378,
+							["damage_from"] = {
+								["Kobold Vermin"] = true,
+							},
+							["targets"] = {
+								["Kobold Vermin"] = 59,
+							},
+							["pets"] = {
+							},
+							["classe"] = "WARRIOR",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 59.008378,
+							["friendlyfire"] = {
+							},
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["end_time"] = 1566886587,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Maximaal",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["Heroic Strike"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 35,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Kobold Vermin"] = 35,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 35,
+										["c_max"] = 35,
+										["id"] = "Heroic Strike",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 35,
+									},
+									["Attack"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 1,
+										["n_max"] = 6,
+										["targets"] = {
+											["Kobold Vermin"] = 24,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 18,
+										["n_min"] = 6,
+										["g_dmg"] = 6,
+										["counter"] = 4,
+										["total"] = 24,
+										["c_max"] = 0,
+										["id"] = "Attack",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["total"] = 59.008378,
+							["serial"] = "Player-4467-009DCD0A",
+							["last_dps"] = 6.90317945717507,
+							["custom"] = 0,
+							["last_event"] = 1566886586,
+							["damage_taken"] = 8.008378,
+							["start_time"] = 1566886579,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.004444,
+							["damage_from"] = {
+								["Quiet"] = true,
+								["Everest"] = true,
+								["Argania"] = true,
+								["Sothial"] = true,
+								["Maximaal"] = true,
+								["Sarthor"] = true,
+								["Kizzy"] = true,
+								["Coolyoudown"] = true,
+								["Chober"] = true,
+								["Govenator"] = true,
+								["Johnsnowdk"] = true,
+							},
+							["targets"] = {
+								["Kizzy"] = 6,
+								["Johnsnowdk"] = 5,
+								["Govenator"] = 6,
+								["Sothial"] = 4,
+								["Coolyoudown"] = 10,
+								["Chober"] = 10,
+								["Maximaal"] = 8,
+								["Argania"] = 15,
+							},
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 64.004444,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["total"] = 64.004444,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4446-0-486-6-000064CA74",
+							["nome"] = "Kobold Vermin",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["Attack"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 3,
+										["targets"] = {
+											["Kizzy"] = 6,
+											["Johnsnowdk"] = 5,
+											["Govenator"] = 6,
+											["Sothial"] = 4,
+											["Coolyoudown"] = 10,
+											["Chober"] = 10,
+											["Maximaal"] = 8,
+											["Argania"] = 15,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 64,
+										["n_min"] = 1,
+										["g_dmg"] = 0,
+										["counter"] = 32,
+										["total"] = 64,
+										["c_max"] = 0,
+										["id"] = "Attack",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 32,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1566886599,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 468.004444,
+							["start_time"] = 1566886579,
+							["delay"] = 0,
+							["last_event"] = 1566886598,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 21,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 21,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 21,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["nome"] = "Maximaal",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["tipo"] = 4,
+							["last_event"] = 0,
+							["spell_cast"] = {
+								[0] = 1,
+							},
+							["serial"] = "Player-4467-009DCD0A",
+							["classe"] = "WARRIOR",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 21,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Maximaal"] = true,
+				},
+				["CombatStartedAt"] = 152089.998,
+				["tempo_start"] = 1566886579,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 24,
+				["playing_solo"] = true,
+				["totals"] = {
+					122.871098, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					59, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "08:16:28",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Kobold Vermin",
+				["TotalElapsedCombatTime"] = 8.12700000000768,
+				["CombatEndedAt"] = 152098.125,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Maximaal"] = 59.008378,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 152098.125,
+				["combat_id"] = 21,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["overall_added"] = true,
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["data_inicio"] = "08:16:19",
+				["start_time"] = 152089.577,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Kobold Worker"] = 3,
+					["Timber Wolf"] = 1,
+					["Kobold Vermin"] = 2,
+				},
+			}, -- [5]
+			{
+				{
+					["combatId"] = 20,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.003321,
+							["damage_from"] = {
+								["Young Wolf"] = true,
+							},
+							["targets"] = {
+								["Young Wolf"] = 42,
+							},
+							["pets"] = {
+							},
+							["classe"] = "WARRIOR",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 42.003321,
+							["friendlyfire"] = {
+							},
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["end_time"] = 1566886571,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Maximaal",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["Heroic Strike"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 16,
+										["targets"] = {
+											["Young Wolf"] = 16,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 16,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 16,
+										["c_max"] = 0,
+										["id"] = "Heroic Strike",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Attack"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 7,
+										["targets"] = {
+											["Young Wolf"] = 26,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 26,
+										["n_min"] = 6,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 26,
+										["c_max"] = 0,
+										["id"] = "Attack",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["total"] = 42.003321,
+							["serial"] = "Player-4467-009DCD0A",
+							["last_dps"] = 4.58251374645557,
+							["custom"] = 0,
+							["last_event"] = 1566886570,
+							["damage_taken"] = 6.003321,
+							["start_time"] = 1566886562,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.008291,
+							["damage_from"] = {
+								["Maximaal"] = true,
+							},
+							["targets"] = {
+								["Maximaal"] = 6,
+							},
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 6.008291,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["total"] = 6.008291,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4446-0-486-299-0000E4CA8E",
+							["nome"] = "Young Wolf",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["Attack"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 2,
+										["targets"] = {
+											["Maximaal"] = 6,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 6,
+										["n_min"] = 1,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 6,
+										["c_max"] = 0,
+										["id"] = "Attack",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1566886571,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 42.008291,
+							["start_time"] = 1566886562,
+							["delay"] = 0,
+							["last_event"] = 1566886568,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 20,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 20,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 20,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["nome"] = "Maximaal",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["tipo"] = 4,
+							["last_event"] = 0,
+							["spell_cast"] = {
+								[0] = 1,
+							},
+							["serial"] = "Player-4467-009DCD0A",
+							["classe"] = "WARRIOR",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 20,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Maximaal"] = true,
+				},
+				["CombatStartedAt"] = 152073.038,
+				["tempo_start"] = 1566886562,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 23,
+				["playing_solo"] = true,
+				["totals"] = {
+					47.9188260000001, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					42, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "08:16:11",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Young Wolf",
+				["TotalElapsedCombatTime"] = 8.83300000001327,
+				["CombatEndedAt"] = 152081.871,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Maximaal"] = 42.003321,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 152081.871,
+				["combat_id"] = 20,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["overall_added"] = true,
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["data_inicio"] = "08:16:02",
+				["start_time"] = 152072.705,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Timber Wolf"] = 1,
+					["Kobold Worker"] = 1,
+					["Young Wolf"] = 1,
+					["Kobold Vermin"] = 5,
+				},
+			}, -- [6]
+			{
+				{
+					["combatId"] = 19,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.001303,
+							["damage_from"] = {
+								["Kobold Vermin"] = true,
+							},
+							["targets"] = {
+								["Kobold Vermin"] = 55,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["classe"] = "WARRIOR",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 55.001303,
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1566886539,
+							["dps_started"] = false,
+							["total"] = 55.001303,
+							["colocacao"] = 1,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Maximaal",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["Heroic Strike"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 16,
+										["targets"] = {
+											["Kobold Vermin"] = 32,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 32,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 32,
+										["c_max"] = 0,
+										["id"] = "Heroic Strike",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Attack"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 1,
+										["n_max"] = 6,
+										["targets"] = {
+											["Kobold Vermin"] = 23,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 18,
+										["n_min"] = 6,
+										["g_dmg"] = 5,
+										["counter"] = 4,
+										["total"] = 23,
+										["c_max"] = 0,
+										["id"] = "Attack",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4467-009DCD0A",
+							["last_dps"] = 4.79606757935396,
+							["custom"] = 0,
+							["last_event"] = 1566886537,
+							["damage_taken"] = 8.001303,
+							["start_time"] = 1566886527,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.004068,
+							["damage_from"] = {
+								["Maximaal"] = true,
+								["Govenator"] = true,
+								["Everest"] = true,
+								["Kizzy"] = true,
+								["Kratimus"] = true,
+								["Chober"] = true,
+								["Sarthor"] = true,
+								["Tafyz"] = true,
+							},
+							["targets"] = {
+								["Maximaal"] = 8,
+								["Govenator"] = 9,
+								["Kizzy"] = 1,
+								["Sarthor"] = 7,
+								["Chober"] = 20,
+								["Everest"] = 6,
+								["Tafyz"] = 2,
+							},
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["end_time"] = 1566886562,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 53.004068,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["total"] = 53.004068,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4446-0-486-6-000064CA6E",
+							["nome"] = "Kobold Vermin",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Sarthor"] = 0,
+											["Chober"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["DODGE"] = 4,
+										["total"] = 0,
+										["c_max"] = 0,
+										["BLOCK"] = 1,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									}, -- [1]
+									["Attack"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 2,
+										["targets"] = {
+											["Maximaal"] = 8,
+											["Govenator"] = 9,
+											["Kizzy"] = 1,
+											["Sarthor"] = 7,
+											["Chober"] = 20,
+											["Everest"] = 6,
+											["Tafyz"] = 2,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 53,
+										["n_min"] = 1,
+										["g_dmg"] = 0,
+										["counter"] = 33,
+										["total"] = 53,
+										["c_max"] = 0,
+										["id"] = "Attack",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 33,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 587.004068,
+							["start_time"] = 1566886527,
+							["delay"] = 0,
+							["last_event"] = 1566886562,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 19,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 19,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 19,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["nome"] = "Maximaal",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["tipo"] = 4,
+							["last_event"] = 0,
+							["spell_cast"] = {
+								[0] = 2,
+							},
+							["serial"] = "Player-4467-009DCD0A",
+							["classe"] = "WARRIOR",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 19,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Maximaal"] = true,
+				},
+				["CombatStartedAt"] = 152038.088,
+				["tempo_start"] = 1566886527,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 22,
+				["playing_solo"] = true,
+				["totals"] = {
+					107.878577, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					55, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "08:15:39",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Kobold Vermin",
+				["TotalElapsedCombatTime"] = 11.3570000000182,
+				["CombatEndedAt"] = 152049.445,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Maximaal"] = 55.001303,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 152049.445,
+				["combat_id"] = 19,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["overall_added"] = true,
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["data_inicio"] = "08:15:27",
+				["start_time"] = 152037.977,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Kobold Worker"] = 5,
+					["Young Wolf"] = 1,
+					["Kobold Vermin"] = 4,
+				},
+			}, -- [7]
+			{
+				{
+					["combatId"] = 18,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.001918,
+							["damage_from"] = {
+								["Young Wolf"] = true,
+							},
+							["targets"] = {
+								["Young Wolf"] = 47,
+							},
+							["pets"] = {
+							},
+							["classe"] = "WARRIOR",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 47.001918,
+							["friendlyfire"] = {
+							},
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["end_time"] = 1566886519,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Maximaal",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["Heroic Strike"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 18,
+										["targets"] = {
+											["Young Wolf"] = 34,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 34,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 34,
+										["c_max"] = 0,
+										["id"] = "Heroic Strike",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Attack"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 7,
+										["targets"] = {
+											["Young Wolf"] = 13,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 13,
+										["n_min"] = 6,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 13,
+										["c_max"] = 0,
+										["id"] = "Attack",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["total"] = 47.001918,
+							["serial"] = "Player-4467-009DCD0A",
+							["last_dps"] = 6.76481260794088,
+							["custom"] = 0,
+							["last_event"] = 1566886518,
+							["damage_taken"] = 4.001918,
+							["start_time"] = 1566886512,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.006173,
+							["damage_from"] = {
+								["Maximaal"] = true,
+							},
+							["targets"] = {
+								["Maximaal"] = 4,
+							},
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 4.006173,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["total"] = 4.006173,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4446-0-486-299-000164C9E1",
+							["nome"] = "Young Wolf",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["Attack"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 2,
+										["targets"] = {
+											["Maximaal"] = 4,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 4,
+										["n_min"] = 1,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 4,
+										["c_max"] = 0,
+										["id"] = "Attack",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1566886519,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 47.006173,
+							["start_time"] = 1566886512,
+							["delay"] = 0,
+							["last_event"] = 1566886516,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 18,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 18,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 18,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["nome"] = "Maximaal",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["tipo"] = 4,
+							["last_event"] = 0,
+							["spell_cast"] = {
+								[0] = 2,
+							},
+							["serial"] = "Player-4467-009DCD0A",
+							["classe"] = "WARRIOR",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 18,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Maximaal"] = true,
+				},
+				["CombatStartedAt"] = 152023.148,
+				["tempo_start"] = 1566886512,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 21,
+				["playing_solo"] = true,
+				["totals"] = {
+					50.9163919999999, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					47, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "08:15:19",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Young Wolf",
+				["TotalElapsedCombatTime"] = 6.84799999999814,
+				["CombatEndedAt"] = 152029.996,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Maximaal"] = 47.001918,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 152029.996,
+				["combat_id"] = 18,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["overall_added"] = true,
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["data_inicio"] = "08:15:13",
+				["start_time"] = 152023.048,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Timber Wolf"] = 1,
+					["Kobold Worker"] = 3,
+					["Young Wolf"] = 1,
+					["Kobold Vermin"] = 2,
+				},
+			}, -- [8]
+			{
+				{
+					["combatId"] = 17,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.00391,
+							["damage_from"] = {
+								["Kobold Worker"] = true,
+							},
+							["targets"] = {
+								["Kobold Worker"] = 73,
+							},
+							["pets"] = {
+							},
+							["classe"] = "WARRIOR",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 73.00391,
+							["friendlyfire"] = {
+							},
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["end_time"] = 1566886508,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Maximaal",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["Heroic Strike"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 17,
+										["targets"] = {
+											["Kobold Worker"] = 32,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 32,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 32,
+										["c_max"] = 0,
+										["id"] = "Heroic Strike",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Attack"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 1,
+										["n_max"] = 7,
+										["targets"] = {
+											["Kobold Worker"] = 41,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 36,
+										["n_min"] = 5,
+										["g_dmg"] = 5,
+										["counter"] = 7,
+										["total"] = 41,
+										["c_max"] = 0,
+										["id"] = "Attack",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 6,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["total"] = 73.00391,
+							["serial"] = "Player-4467-009DCD0A",
+							["last_dps"] = 4.33849824686017,
+							["custom"] = 0,
+							["last_event"] = 1566886507,
+							["damage_taken"] = 17.00391,
+							["start_time"] = 1566886491,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.002139,
+							["damage_from"] = {
+								["Maximaal"] = true,
+								["Chiéf"] = true,
+								["Meatyy"] = true,
+								["Kizzy"] = true,
+								["Kattlërv"] = true,
+								["Andriel"] = true,
+							},
+							["targets"] = {
+								["Maximaal"] = 17,
+								["Chiéf"] = 16,
+								["Meatyy"] = 13,
+								["Kizzy"] = 14,
+								["Kattlërv"] = 21,
+								["Andriel"] = 23,
+							},
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 104.002139,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["total"] = 104.002139,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4446-0-486-257-0000E4CA1A",
+							["nome"] = "Kobold Worker",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Maximaal"] = 0,
+											["Chiéf"] = 0,
+											["Kattlërv"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["MISS"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["DODGE"] = 2,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									}, -- [1]
+									["Attack"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 2,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 4,
+										["targets"] = {
+											["Maximaal"] = 17,
+											["Chiéf"] = 16,
+											["Meatyy"] = 13,
+											["Kizzy"] = 14,
+											["Kattlërv"] = 21,
+											["Andriel"] = 23,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 104,
+										["n_min"] = 1,
+										["g_dmg"] = 0,
+										["counter"] = 36,
+										["total"] = 104,
+										["c_max"] = 0,
+										["id"] = "Attack",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 3,
+										["n_amt"] = 36,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1566886512,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 377.002139,
+							["start_time"] = 1566886492,
+							["delay"] = 0,
+							["last_event"] = 1566886511,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 17,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 17,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 17,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["nome"] = "Maximaal",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["tipo"] = 4,
+							["last_event"] = 0,
+							["spell_cast"] = {
+								[0] = 2,
+							},
+							["serial"] = "Player-4467-009DCD0A",
+							["classe"] = "WARRIOR",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 17,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Maximaal"] = true,
+				},
+				["CombatStartedAt"] = 152002.431,
+				["tempo_start"] = 1566886491,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 20,
+				["playing_solo"] = true,
+				["totals"] = {
+					176.92523, -- [1]
+					-0.00796800000000175, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					73, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "08:15:09",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Kobold Worker",
+				["TotalElapsedCombatTime"] = 16.6870000000054,
+				["CombatEndedAt"] = 152019.118,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Maximaal"] = 73.00391,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 152019.118,
+				["combat_id"] = 17,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["overall_added"] = true,
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["data_inicio"] = "08:14:52",
+				["start_time"] = 152002.291,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Kobold Worker"] = 4,
+					["Timber Wolf"] = 2,
+					["Kobold Vermin"] = 6,
+				},
+			}, -- [9]
+			{
+				{
+					["combatId"] = 16,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.003903,
+							["damage_from"] = {
+								["Young Wolf"] = true,
+							},
+							["targets"] = {
+								["Young Wolf"] = 43,
+							},
+							["pets"] = {
+							},
+							["classe"] = "WARRIOR",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 43.003903,
+							["friendlyfire"] = {
+							},
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["end_time"] = 1566886488,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Maximaal",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["Heroic Strike"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 16,
+										["targets"] = {
+											["Young Wolf"] = 16,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 16,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 16,
+										["c_max"] = 0,
+										["id"] = "Heroic Strike",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Attack"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 7,
+										["targets"] = {
+											["Young Wolf"] = 27,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 27,
+										["n_min"] = 6,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 27,
+										["c_max"] = 0,
+										["id"] = "Attack",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["total"] = 43.003903,
+							["serial"] = "Player-4467-009DCD0A",
+							["last_dps"] = 4.6275587000943,
+							["custom"] = 0,
+							["last_event"] = 1566886486,
+							["damage_taken"] = 5.003903,
+							["start_time"] = 1566886478,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.007522,
+							["damage_from"] = {
+								["Maximaal"] = true,
+								["Argania"] = true,
+							},
+							["targets"] = {
+								["Maximaal"] = 5,
+							},
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 5.007522,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["total"] = 5.007522,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4446-0-486-299-0000E4C9F2",
+							["nome"] = "Young Wolf",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["Attack"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 2,
+										["targets"] = {
+											["Maximaal"] = 5,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 5,
+										["n_min"] = 1,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 5,
+										["c_max"] = 0,
+										["id"] = "Attack",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1566886488,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 86.007522,
+							["start_time"] = 1566886478,
+							["delay"] = 0,
+							["last_event"] = 1566886484,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 16,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 16,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 16,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["nome"] = "Maximaal",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["tipo"] = 4,
+							["last_event"] = 0,
+							["spell_cast"] = {
+								[0] = 1,
+							},
+							["serial"] = "Player-4467-009DCD0A",
+							["classe"] = "WARRIOR",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 16,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Maximaal"] = true,
+				},
+				["CombatStartedAt"] = 151989.014,
+				["tempo_start"] = 1566886478,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 19,
+				["playing_solo"] = true,
+				["totals"] = {
+					47.9331920000001, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					43, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "08:14:48",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Young Wolf",
+				["TotalElapsedCombatTime"] = 9.29300000000512,
+				["CombatEndedAt"] = 151998.307,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Maximaal"] = 43.003903,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 151998.307,
+				["combat_id"] = 16,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["overall_added"] = true,
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["data_inicio"] = "08:14:38",
+				["start_time"] = 151989.014,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Timber Wolf"] = 2,
+					["Kobold Worker"] = 1,
+					["Young Wolf"] = 2,
+					["Kobold Vermin"] = 3,
+				},
+			}, -- [10]
+			{
+				{
+					["combatId"] = 15,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.007889,
+							["damage_from"] = {
+								["Young Wolf"] = true,
+							},
+							["targets"] = {
+								["Young Wolf"] = 45,
+							},
+							["pets"] = {
+							},
+							["classe"] = "WARRIOR",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 45.007889,
+							["friendlyfire"] = {
+							},
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["end_time"] = 1566886474,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Maximaal",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["Attack"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 6,
+										["targets"] = {
+											["Young Wolf"] = 12,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 12,
+										["n_min"] = 6,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 12,
+										["c_max"] = 0,
+										["id"] = "Attack",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Heroic Strike"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 17,
+										["targets"] = {
+											["Young Wolf"] = 33,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 33,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 33,
+										["c_max"] = 0,
+										["id"] = "Heroic Strike",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["total"] = 45.007889,
+							["serial"] = "Player-4467-009DCD0A",
+							["last_dps"] = 6.95209901141259,
+							["custom"] = 0,
+							["last_event"] = 1566886473,
+							["damage_taken"] = 3.007889,
+							["start_time"] = 1566886467,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.006837,
+							["damage_from"] = {
+								["Maximaal"] = true,
+								["Argania"] = true,
+							},
+							["targets"] = {
+								["Maximaal"] = 3,
+							},
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 3.006837,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["total"] = 3.006837,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4446-0-486-299-0000E4C9D9",
+							["nome"] = "Young Wolf",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["Attack"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 1,
+										["targets"] = {
+											["Maximaal"] = 3,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 3,
+										["n_min"] = 1,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 3,
+										["c_max"] = 0,
+										["id"] = "Attack",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1566886474,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 60.006837,
+							["start_time"] = 1566886467,
+							["delay"] = 0,
+							["last_event"] = 1566886471,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 15,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 15,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 15,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["nome"] = "Maximaal",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["tipo"] = 4,
+							["last_event"] = 0,
+							["spell_cast"] = {
+								[0] = 1,
+							},
+							["serial"] = "Player-4467-009DCD0A",
+							["classe"] = "WARRIOR",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 15,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Maximaal"] = true,
+				},
+				["last_events_tables"] = {
+				},
+				["overall_added"] = true,
+				["cleu_timeline"] = {
+				},
+				["alternate_power"] = {
+				},
+				["tempo_start"] = 1566886467,
+				["enemy"] = "Young Wolf",
+				["combat_counter"] = 18,
+				["playing_solo"] = true,
+				["totals"] = {
+					47.915662, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["CombatEndedAt"] = 151984.616,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "08:14:28",
+				["end_time"] = 151984.616,
+				["totals_grupo"] = {
+					45, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["combat_id"] = 15,
+				["TotalElapsedCombatTime"] = 151984.616,
+				["frags_need_refresh"] = true,
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Maximaal"] = 45.007889,
+						}, -- [1]
+					},
+				},
+				["frags"] = {
+					["Young Wolf"] = 1,
+					["Kobold Vermin"] = 1,
+				},
+				["data_fim"] = "08:14:34",
+				["instance_type"] = "none",
+				["CombatSkillCache"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 151978.142,
+				["TimeData"] = {
+				},
+				["pvp"] = true,
+			}, -- [11]
+			{
+				{
+					["combatId"] = 14,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.004203,
+							["damage_from"] = {
+								["Timber Wolf"] = true,
+							},
+							["targets"] = {
+								["Timber Wolf"] = 56,
+							},
+							["pets"] = {
+							},
+							["classe"] = "WARRIOR",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 56.004203,
+							["friendlyfire"] = {
+							},
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["end_time"] = 1566886462,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Maximaal",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["Attack"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 8,
+										["targets"] = {
+											["Timber Wolf"] = 21,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 21,
+										["n_min"] = 6,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 21,
+										["c_max"] = 0,
+										["id"] = "Attack",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Heroic Strike"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 18,
+										["targets"] = {
+											["Timber Wolf"] = 35,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 35,
+										["n_min"] = 17,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 35,
+										["c_max"] = 0,
+										["id"] = "Heroic Strike",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["total"] = 56.004203,
+							["serial"] = "Player-4467-009DCD0A",
+							["last_dps"] = 6.30891100596503,
+							["custom"] = 0,
+							["last_event"] = 1566886460,
+							["damage_taken"] = 6.004203,
+							["start_time"] = 1566886453,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.004966,
+							["damage_from"] = {
+								["Maximaal"] = true,
+								["Johnsnowdk"] = true,
+								["Tafyz"] = true,
+							},
+							["targets"] = {
+								["Maximaal"] = 6,
+								["Tafyz"] = 2,
+								["Johnsnowdk"] = 4,
+							},
+							["pets"] = {
+							},
+							["end_time"] = 1566886467,
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 12.004966,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["total"] = 12.004966,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4446-0-486-69-000064CA08",
+							["nome"] = "Timber Wolf",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Maximaal"] = 0,
+											["Tafyz"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["MISS"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["DODGE"] = 1,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									}, -- [1]
+									["Attack"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 2,
+										["targets"] = {
+											["Maximaal"] = 6,
+											["Tafyz"] = 2,
+											["Johnsnowdk"] = 4,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 12,
+										["n_min"] = 2,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 12,
+										["c_max"] = 0,
+										["id"] = "Attack",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 6,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 138.004966,
+							["start_time"] = 1566886456,
+							["delay"] = 0,
+							["last_event"] = 1566886465,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 14,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 14,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 14,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["nome"] = "Maximaal",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["tipo"] = 4,
+							["last_event"] = 0,
+							["spell_cast"] = {
+								[0] = 1,
+							},
+							["serial"] = "Player-4467-009DCD0A",
+							["classe"] = "WARRIOR",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 14,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Maximaal"] = true,
+				},
+				["CombatStartedAt"] = 151978.142,
+				["tempo_start"] = 1566886453,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 17,
+				["playing_solo"] = true,
+				["totals"] = {
+					67.9041559999999, -- [1]
+					-0.00549900000000037, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					56, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "08:14:22",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Timber Wolf",
+				["TotalElapsedCombatTime"] = 151972.833,
+				["CombatEndedAt"] = 151972.833,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Maximaal"] = 56.004203,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 151972.833,
+				["combat_id"] = 14,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["overall_added"] = true,
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["data_inicio"] = "08:14:13",
+				["start_time"] = 151963.956,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Timber Wolf"] = 1,
+					["Kobold Worker"] = 5,
+					["Young Wolf"] = 1,
+					["Kobold Vermin"] = 1,
+				},
+			}, -- [12]
+			{
+				{
+					["combatId"] = 13,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.006562,
+							["damage_from"] = {
+								["Kobold Vermin"] = true,
+							},
+							["targets"] = {
+								["Kobold Vermin"] = 59,
+							},
+							["pets"] = {
+							},
+							["classe"] = "WARRIOR",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 59.006562,
+							["friendlyfire"] = {
+							},
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["end_time"] = 1566886445,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Maximaal",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["Heroic Strike"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 16,
+										["targets"] = {
+											["Kobold Vermin"] = 16,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 16,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 16,
+										["c_max"] = 0,
+										["id"] = "Heroic Strike",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Attack"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 3,
+										["n_max"] = 7,
+										["targets"] = {
+											["Kobold Vermin"] = 43,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 25,
+										["n_min"] = 6,
+										["g_dmg"] = 18,
+										["counter"] = 7,
+										["total"] = 43,
+										["c_max"] = 0,
+										["id"] = "Attack",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["total"] = 59.006562,
+							["serial"] = "Player-4467-009DCD0A",
+							["last_dps"] = 3.85764657426725,
+							["custom"] = 0,
+							["last_event"] = 1566886444,
+							["damage_taken"] = 14.006562,
+							["start_time"] = 1566886430,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.003594,
+							["damage_from"] = {
+								["Maximaal"] = true,
+								["Sothial"] = true,
+								["Decreaze"] = true,
+								["Quiet"] = true,
+								["Pyrocx"] = true,
+								["Medow"] = true,
+							},
+							["targets"] = {
+								["Maximaal"] = 14,
+								["Decreaze"] = 11,
+								["Sothial"] = 46,
+								["Quiet"] = 2,
+								["Medow"] = 6,
+							},
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 79.003594,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["total"] = 79.003594,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4446-0-486-6-0001E4CA1A",
+							["nome"] = "Kobold Vermin",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Decreaze"] = 0,
+											["Sothial"] = 0,
+											["Quiet"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["MISS"] = 2,
+										["total"] = 0,
+										["c_max"] = 0,
+										["DODGE"] = 2,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									}, -- [1]
+									["Attack"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 3,
+										["targets"] = {
+											["Maximaal"] = 14,
+											["Decreaze"] = 11,
+											["Sothial"] = 46,
+											["Quiet"] = 2,
+											["Medow"] = 6,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 79,
+										["n_min"] = 1,
+										["g_dmg"] = 0,
+										["counter"] = 44,
+										["total"] = 79,
+										["c_max"] = 0,
+										["id"] = "Attack",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 44,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1566886453,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 362.003594,
+							["start_time"] = 1566886430,
+							["delay"] = 0,
+							["last_event"] = 1566886453,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 13,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 13,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 13,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["nome"] = "Maximaal",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["tipo"] = 4,
+							["last_event"] = 0,
+							["spell_cast"] = {
+								[0] = 1,
+							},
+							["serial"] = "Player-4467-009DCD0A",
+							["classe"] = "WARRIOR",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 13,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Maximaal"] = true,
+				},
+				["CombatStartedAt"] = 151963.956,
+				["tempo_start"] = 1566886430,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 16,
+				["playing_solo"] = true,
+				["totals"] = {
+					137.898148, -- [1]
+					-0.00610100000000102, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					59, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "08:14:06",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Kobold Vermin",
+				["TotalElapsedCombatTime"] = 15.0460000000021,
+				["CombatEndedAt"] = 151956.272,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Maximaal"] = 59.006562,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 151956.272,
+				["combat_id"] = 13,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["overall_added"] = true,
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["data_inicio"] = "08:13:50",
+				["start_time"] = 151940.976,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Timber Wolf"] = 1,
+					["Kobold Worker"] = 4,
+					["Young Wolf"] = 1,
+					["Kobold Vermin"] = 5,
+				},
+			}, -- [13]
+			{
+				{
+					["combatId"] = 12,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.004049,
+							["damage_from"] = {
+								["Kobold Vermin"] = true,
+							},
+							["targets"] = {
+								["Kobold Vermin"] = 58,
+							},
+							["pets"] = {
+							},
+							["classe"] = "WARRIOR",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 58.004049,
+							["friendlyfire"] = {
+							},
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["end_time"] = 1566886407,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Maximaal",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[0] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Kobold Vermin"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["MISS"] = 1,
+										["id"] = 0,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Heroic Strike"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 17,
+										["targets"] = {
+											["Kobold Vermin"] = 34,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 34,
+										["n_min"] = 17,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 34,
+										["c_max"] = 0,
+										["id"] = "Heroic Strike",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Attack"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 13,
+										["g_amt"] = 2,
+										["n_max"] = 0,
+										["targets"] = {
+											["Kobold Vermin"] = 24,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 11,
+										["counter"] = 3,
+										["total"] = 24,
+										["c_max"] = 13,
+										["id"] = "Attack",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 13,
+									},
+								},
+							},
+							["grupo"] = true,
+							["total"] = 58.004049,
+							["serial"] = "Player-4467-009DCD0A",
+							["last_dps"] = 5.56660738964402,
+							["custom"] = 0,
+							["last_event"] = 1566886406,
+							["damage_taken"] = 10.004049,
+							["start_time"] = 1566886396,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.0065,
+							["damage_from"] = {
+								["Chober"] = true,
+								["Everest"] = true,
+								["Jellybae"] = true,
+								["Sothial"] = true,
+								["Maximaal"] = true,
+								["Kratimus"] = true,
+								["Quiet"] = true,
+								["Medow"] = true,
+								["Govenator"] = true,
+								["Decreaze"] = true,
+								["Andriel"] = true,
+							},
+							["targets"] = {
+								["Everest"] = 4,
+								["Decreaze"] = 5,
+								["Sothial"] = 31,
+								["Maximaal"] = 10,
+								["Chober"] = 7,
+								["Quiet"] = 2,
+								["Kratimus"] = 11,
+								["Govenator"] = 12,
+								["Medow"] = 5,
+								["Jellybae"] = 6,
+							},
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 93.0065,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["total"] = 93.0065,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4446-0-486-6-0001E4C9F0",
+							["nome"] = "Kobold Vermin",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Sothial"] = 0,
+											["Medow"] = 0,
+											["Kratimus"] = 0,
+											["Jellybae"] = 0,
+											["Everest"] = 0,
+											["Govenator"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 12,
+										["MISS"] = 3,
+										["total"] = 0,
+										["c_max"] = 0,
+										["DODGE"] = 9,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									}, -- [1]
+									["Attack"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 2,
+										["targets"] = {
+											["Everest"] = 4,
+											["Decreaze"] = 5,
+											["Sothial"] = 31,
+											["Maximaal"] = 10,
+											["Chober"] = 7,
+											["Quiet"] = 2,
+											["Kratimus"] = 11,
+											["Govenator"] = 12,
+											["Medow"] = 5,
+											["Jellybae"] = 6,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 93,
+										["n_min"] = 1,
+										["g_dmg"] = 0,
+										["counter"] = 52,
+										["total"] = 93,
+										["c_max"] = 0,
+										["id"] = "Attack",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 52,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1566886430,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 704.0065,
+							["start_time"] = 1566886397,
+							["delay"] = 0,
+							["last_event"] = 1566886428,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 12,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 12,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 12,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["nome"] = "Maximaal",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["tipo"] = 4,
+							["last_event"] = 0,
+							["spell_cast"] = {
+								[0] = 3,
+							},
+							["serial"] = "Player-4467-009DCD0A",
+							["classe"] = "WARRIOR",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 12,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Maximaal"] = true,
+				},
+				["CombatStartedAt"] = 151907.564,
+				["tempo_start"] = 1566886396,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 15,
+				["playing_solo"] = true,
+				["totals"] = {
+					150.88379, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					58, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "08:13:27",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Kobold Vermin",
+				["TotalElapsedCombatTime"] = 10.1399999999849,
+				["CombatEndedAt"] = 151917.704,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Maximaal"] = 58.004049,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 151917.704,
+				["combat_id"] = 12,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["overall_added"] = true,
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["data_inicio"] = "08:13:17",
+				["start_time"] = 151907.284,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Kobold Worker"] = 4,
+					["Timber Wolf"] = 2,
+					["Kobold Vermin"] = 7,
+				},
+			}, -- [14]
+			{
+				{
+					["combatId"] = 11,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.004456,
+							["damage_from"] = {
+								["Kobold Worker"] = true,
+							},
+							["targets"] = {
+								["Kobold Worker"] = 74,
+							},
+							["pets"] = {
+							},
+							["classe"] = "WARRIOR",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 74.004456,
+							["friendlyfire"] = {
+							},
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["end_time"] = 1566886394,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Maximaal",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["Heroic Strike"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 18,
+										["targets"] = {
+											["Kobold Worker"] = 34,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 34,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 34,
+										["c_max"] = 0,
+										["id"] = "Heroic Strike",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Attack"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 11,
+										["g_amt"] = 0,
+										["n_max"] = 7,
+										["targets"] = {
+											["Kobold Worker"] = 40,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 29,
+										["n_min"] = 5,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 40,
+										["c_max"] = 11,
+										["id"] = "Attack",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 5,
+										["r_amt"] = 0,
+										["c_min"] = 11,
+									},
+								},
+							},
+							["grupo"] = true,
+							["total"] = 74.004456,
+							["serial"] = "Player-4467-009DCD0A",
+							["last_dps"] = 4.54684541656075,
+							["custom"] = 0,
+							["last_event"] = 1566886393,
+							["damage_taken"] = 21.004456,
+							["start_time"] = 1566886378,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.002815,
+							["damage_from"] = {
+								["Meatyy"] = true,
+								["Pyrocx"] = true,
+								["Kizzy"] = true,
+								["Week"] = true,
+								["Holdamayo"] = true,
+								["Maximaal"] = true,
+								["Mikelo"] = true,
+								["Andriel"] = true,
+								["Tafyz"] = true,
+							},
+							["targets"] = {
+								["Maximaal"] = 21,
+								["Week"] = 6,
+								["Meatyy"] = 15,
+								["Holdamayo"] = 3,
+								["Kizzy"] = 3,
+								["Mikelo"] = 6,
+							},
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 54.002815,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["total"] = 54.002815,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4446-0-486-257-000064C9D4",
+							["nome"] = "Kobold Worker",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Maximaal"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["MISS"] = 1,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									}, -- [1]
+									["Attack"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 3,
+										["targets"] = {
+											["Maximaal"] = 21,
+											["Week"] = 6,
+											["Meatyy"] = 15,
+											["Holdamayo"] = 3,
+											["Kizzy"] = 3,
+											["Mikelo"] = 6,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 54,
+										["n_min"] = 3,
+										["g_dmg"] = 0,
+										["counter"] = 18,
+										["total"] = 54,
+										["c_max"] = 0,
+										["id"] = "Attack",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 18,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1566886396,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 435.002815,
+							["start_time"] = 1566886378,
+							["delay"] = 0,
+							["last_event"] = 1566886395,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 11,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 11,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 11,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["nome"] = "Maximaal",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["tipo"] = 4,
+							["last_event"] = 0,
+							["spell_cast"] = {
+								[0] = 2,
+							},
+							["serial"] = "Player-4467-009DCD0A",
+							["classe"] = "WARRIOR",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 11,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Maximaal"] = true,
+				},
+				["CombatStartedAt"] = 151888.558,
+				["tempo_start"] = 1566886378,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 14,
+				["playing_solo"] = true,
+				["totals"] = {
+					127.892578, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					74, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "08:13:14",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Kobold Worker",
+				["TotalElapsedCombatTime"] = 16.1560000000172,
+				["CombatEndedAt"] = 151904.714,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Maximaal"] = 74.004456,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 151904.714,
+				["combat_id"] = 11,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["overall_added"] = true,
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["data_inicio"] = "08:12:58",
+				["start_time"] = 151888.438,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Kobold Worker"] = 6,
+					["Young Wolf"] = 1,
+					["Kobold Vermin"] = 7,
+				},
+			}, -- [15]
+			{
+				{
+					["combatId"] = 10,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.003274,
+							["damage_from"] = {
+								["Kobold Vermin"] = true,
+							},
+							["targets"] = {
+								["Kobold Vermin"] = 43,
+							},
+							["pets"] = {
+							},
+							["classe"] = "WARRIOR",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 43.003274,
+							["friendlyfire"] = {
+							},
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["end_time"] = 1566886364,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Maximaal",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["Heroic Strike"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 18,
+										["targets"] = {
+											["Kobold Vermin"] = 18,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 18,
+										["n_min"] = 18,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 18,
+										["c_max"] = 0,
+										["id"] = "Heroic Strike",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Attack"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 7,
+										["targets"] = {
+											["Kobold Vermin"] = 25,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 25,
+										["n_min"] = 6,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 25,
+										["c_max"] = 0,
+										["id"] = "Attack",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["total"] = 43.003274,
+							["serial"] = "Player-4467-009DCD0A",
+							["last_dps"] = 4.70083887189151,
+							["custom"] = 0,
+							["last_event"] = 1566886362,
+							["damage_taken"] = 5.003274,
+							["start_time"] = 1566886354,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.003622,
+							["damage_from"] = {
+								["Sothial"] = true,
+								["Jellybae"] = true,
+								["Maximaal"] = true,
+								["Medow"] = true,
+								["Govenator"] = true,
+								["Everest"] = true,
+								["Solstoss"] = true,
+							},
+							["targets"] = {
+								["Sothial"] = 14,
+								["Maximaal"] = 5,
+								["Medow"] = 2,
+								["Govenator"] = 3,
+								["Everest"] = 4,
+								["Solstoss"] = 8,
+							},
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 36.003622,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["total"] = 36.003622,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4446-0-486-6-0000E4C9B5",
+							["nome"] = "Kobold Vermin",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Maximaal"] = 0,
+											["Govenator"] = 0,
+											["Solstoss"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["MISS"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["DODGE"] = 2,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									}, -- [1]
+									["Attack"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 3,
+										["targets"] = {
+											["Sothial"] = 14,
+											["Maximaal"] = 5,
+											["Medow"] = 2,
+											["Govenator"] = 3,
+											["Everest"] = 4,
+											["Solstoss"] = 8,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 36,
+										["n_min"] = 1,
+										["g_dmg"] = 0,
+										["counter"] = 20,
+										["total"] = 36,
+										["c_max"] = 0,
+										["id"] = "Attack",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 20,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1566886378,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 335.003622,
+							["start_time"] = 1566886357,
+							["delay"] = 0,
+							["last_event"] = 1566886377,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 10,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 10,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 10,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["nome"] = "Maximaal",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["tipo"] = 4,
+							["last_event"] = 0,
+							["spell_cast"] = {
+								[0] = 1,
+							},
+							["serial"] = "Player-4467-009DCD0A",
+							["classe"] = "WARRIOR",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 10,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Maximaal"] = true,
+				},
+				["CombatStartedAt"] = 151865.466,
+				["tempo_start"] = 1566886354,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 13,
+				["playing_solo"] = true,
+				["totals"] = {
+					78.8778220000002, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					43, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "08:12:44",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Kobold Vermin",
+				["TotalElapsedCombatTime"] = 8.88799999997718,
+				["CombatEndedAt"] = 151874.354,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Maximaal"] = 43.003274,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 151874.354,
+				["combat_id"] = 10,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["overall_added"] = true,
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["data_inicio"] = "08:12:35",
+				["start_time"] = 151865.206,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Timber Wolf"] = 1,
+					["Kobold Worker"] = 5,
+					["Young Wolf"] = 1,
+					["Kobold Vermin"] = 3,
+				},
+			}, -- [16]
+			{
+				{
+					["combatId"] = 9,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.007103,
+							["damage_from"] = {
+								["Timber Wolf"] = true,
+							},
+							["targets"] = {
+								["Timber Wolf"] = 55,
+							},
+							["pets"] = {
+							},
+							["classe"] = "WARRIOR",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 55.007103,
+							["friendlyfire"] = {
+							},
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["end_time"] = 1566886340,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Maximaal",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Timber Wolf"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["a_amt"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 1,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									}, -- [1]
+									["Heroic Strike"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 18,
+										["targets"] = {
+											["Timber Wolf"] = 34,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 34,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 34,
+										["c_max"] = 0,
+										["id"] = "Heroic Strike",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Attack"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 1,
+										["n_max"] = 7,
+										["targets"] = {
+											["Timber Wolf"] = 21,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 14,
+										["n_min"] = 7,
+										["g_dmg"] = 7,
+										["counter"] = 3,
+										["total"] = 21,
+										["c_max"] = 0,
+										["id"] = "Attack",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["total"] = 55.007103,
+							["serial"] = "Player-4467-009DCD0A",
+							["last_dps"] = 4.8078929289433,
+							["custom"] = 0,
+							["last_event"] = 1566886339,
+							["damage_taken"] = 11.007103,
+							["start_time"] = 1566886329,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.002375,
+							["damage_from"] = {
+								["Maximaal"] = true,
+								["Tombruise"] = true,
+								["Tius"] = true,
+							},
+							["targets"] = {
+								["Maximaal"] = 11,
+								["Tombruise"] = 2,
+								["Tius"] = 19,
+							},
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 32.002375,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["total"] = 32.002375,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4446-0-486-69-000164C9AA",
+							["nome"] = "Timber Wolf",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["Attack"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 3,
+										["targets"] = {
+											["Maximaal"] = 11,
+											["Tombruise"] = 2,
+											["Tius"] = 19,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 32,
+										["n_min"] = 1,
+										["g_dmg"] = 0,
+										["counter"] = 16,
+										["total"] = 32,
+										["c_max"] = 0,
+										["id"] = "Attack",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 16,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1566886354,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 140.002375,
+							["start_time"] = 1566886329,
+							["delay"] = 0,
+							["last_event"] = 1566886353,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 9,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 9,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 9,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["nome"] = "Maximaal",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["tipo"] = 4,
+							["last_event"] = 0,
+							["spell_cast"] = {
+								[0] = 2,
+							},
+							["serial"] = "Player-4467-009DCD0A",
+							["classe"] = "WARRIOR",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 9,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Maximaal"] = true,
+				},
+				["CombatStartedAt"] = 151839.924,
+				["tempo_start"] = 1566886329,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 12,
+				["playing_solo"] = true,
+				["totals"] = {
+					86.9238140000001, -- [1]
+					0, -- [2]
+					{
+						-0.00871700000000075, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					55, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "08:12:21",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Timber Wolf",
+				["TotalElapsedCombatTime"] = 11.3310000000056,
+				["CombatEndedAt"] = 151851.255,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Maximaal"] = 55.007103,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 151851.255,
+				["combat_id"] = 9,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["overall_added"] = true,
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["data_inicio"] = "08:12:09",
+				["start_time"] = 151839.814,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Kobold Vermin"] = 1,
+					["Kobold Worker"] = 1,
+					["Young Wolf"] = 2,
+					["Timber Wolf"] = 2,
+				},
+			}, -- [17]
+			{
+				{
+					["combatId"] = 8,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.002941,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Young Wolf"] = 14,
+							},
+							["pets"] = {
+							},
+							["classe"] = "WARRIOR",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 14.002941,
+							["friendlyfire"] = {
+							},
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["end_time"] = 1566886323,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Maximaal",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["Attack"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 7,
+										["targets"] = {
+											["Young Wolf"] = 14,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 14,
+										["n_min"] = 7,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 14,
+										["c_max"] = 0,
+										["id"] = "Attack",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["total"] = 14.002941,
+							["serial"] = "Player-4467-009DCD0A",
+							["last_dps"] = 2.77946427153607,
+							["custom"] = 0,
+							["last_event"] = 1566886320,
+							["damage_taken"] = 0.002941,
+							["start_time"] = 1566886318,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.008917,
+							["damage_from"] = {
+								["Maximaal"] = true,
+								["Decreaze"] = true,
+								["Tius"] = true,
+								["Handsome"] = true,
+							},
+							["targets"] = {
+								["Decreaze"] = 1,
+								["Tius"] = 6,
+								["Handsome"] = 1,
+							},
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 8.008917,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["total"] = 8.008917,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4446-0-486-299-000164C9A0",
+							["nome"] = "Young Wolf",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Tius"] = 0,
+											["Decreaze"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 0,
+										["c_max"] = 0,
+										["DODGE"] = 3,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									}, -- [1]
+									["Attack"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 2,
+										["targets"] = {
+											["Decreaze"] = 1,
+											["Tius"] = 6,
+											["Handsome"] = 1,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 8,
+										["n_min"] = 1,
+										["g_dmg"] = 0,
+										["counter"] = 7,
+										["total"] = 8,
+										["c_max"] = 0,
+										["id"] = "Attack",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 7,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1566886329,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 135.008917,
+							["start_time"] = 1566886319,
+							["delay"] = 0,
+							["last_event"] = 1566886327,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 8,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 8,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 8,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+					},
+				}, -- [4]
+				{
+					["combatId"] = 8,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Maximaal"] = true,
+				},
+				["CombatStartedAt"] = 151828.975,
+				["tempo_start"] = 1566886318,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 11,
+				["playing_solo"] = true,
+				["totals"] = {
+					21.93814, -- [1]
+					0, -- [2]
+					{
+						-0.00402799999999992, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					14, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "08:12:03",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Young Wolf",
+				["TotalElapsedCombatTime"] = 4.91800000000512,
+				["CombatEndedAt"] = 151833.893,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Maximaal"] = 14.002941,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 151833.893,
+				["combat_id"] = 8,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["overall_added"] = true,
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["data_inicio"] = "08:11:58",
+				["start_time"] = 151828.855,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Rabbit"] = 1,
+					["Young Wolf"] = 3,
+					["Timber Wolf"] = 1,
+				},
+			}, -- [18]
+		},
+	},
+	["last_version"] = "v1.13.2.7176",
+	["SoloTablesSaved"] = {
+		["Mode"] = 1,
+	},
+	["tabela_instancias"] = {
+	},
+	["on_death_menu"] = true,
+	["nick_tag_cache"] = {
+		["nextreset"] = 1568181981,
+		["last_version"] = 11,
+	},
+	["last_instance_id"] = 0,
+	["announce_interrupts"] = {
+		["enabled"] = false,
+		["whisper"] = "",
+		["channel"] = "SAY",
+		["custom"] = "",
+		["next"] = "",
+	},
+	["last_instance_time"] = 0,
+	["active_profile"] = "Maximaal-Firemaw",
+	["mythic_dungeon_currentsaved"] = {
+		["dungeon_name"] = "",
+		["started"] = false,
+		["segment_id"] = 0,
+		["ej_id"] = 0,
+		["started_at"] = 0,
+		["run_id"] = 0,
+		["level"] = 0,
+		["dungeon_zone_id"] = 0,
+		["previous_boss_killed_at"] = 0,
+	},
+	["ignore_nicktag"] = false,
+	["plugin_database"] = {
+	},
+	["cached_talents"] = {
+	},
+	["announce_prepots"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+		["reverse"] = false,
+	},
+	["last_day"] = "27",
+	["benchmark_db"] = {
+		["frame"] = {
+		},
+	},
+	["last_realversion"] = 140,
+	["combat_id"] = 25,
+	["savedStyles"] = {
+	},
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
+	["combat_counter"] = 28,
+	["announce_deaths"] = {
+		["enabled"] = false,
+		["last_hits"] = 1,
+		["only_first"] = 5,
+		["where"] = 1,
+	},
+	["tabela_overall"] = {
+		{
+			["tipo"] = 2,
+			["_ActorTable"] = {
+				{
+					["flag_original"] = 1297,
+					["totalabsorbed"] = 0.125635,
+					["damage_from"] = {
+						["Timber Wolf"] = true,
+						["Kobold Worker"] = true,
+						["Young Wolf"] = true,
+						["Kobold Vermin"] = true,
+					},
+					["targets"] = {
+						["Timber Wolf"] = 194,
+						["Kobold Worker"] = 298,
+						["Young Wolf"] = 340,
+						["Kobold Vermin"] = 518,
+					},
+					["pets"] = {
+					},
+					["friendlyfire"] = {
+					},
+					["friendlyfire_total"] = 0,
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 1350.125635,
+					["classe"] = "WARRIOR",
+					["dps_started"] = false,
+					["total"] = 1350.125635,
+					["last_event"] = 0,
+					["end_time"] = 1566886207,
+					["nome"] = "Maximaal",
+					["spells"] = {
+						["tipo"] = 2,
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Timber Wolf"] = 0,
+									["Kobold Worker"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 2,
+								["total"] = 0,
+								["c_max"] = 0,
+								["a_amt"] = 0,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["DODGE"] = 1,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["PARRY"] = 1,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							}, -- [1]
+							[0] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Kobold Worker"] = 0,
+									["Timber Wolf"] = 0,
+									["Kobold Vermin"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 3,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 0,
+								["r_dmg"] = 0,
+								["MISS"] = 3,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							},
+							["Attack"] = {
+								["c_amt"] = 3,
+								["b_amt"] = 0,
+								["c_dmg"] = 37,
+								["g_amt"] = 17,
+								["n_max"] = 8,
+								["targets"] = {
+									["Timber Wolf"] = 75,
+									["Kobold Worker"] = 137,
+									["Young Wolf"] = 142,
+									["Kobold Vermin"] = 234,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 455,
+								["n_min"] = 0,
+								["g_dmg"] = 96,
+								["counter"] = 94,
+								["total"] = 588,
+								["c_max"] = 13,
+								["id"] = "Attack",
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 74,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							},
+							["Heroic Strike"] = {
+								["c_amt"] = 6,
+								["b_amt"] = 0,
+								["c_dmg"] = 199,
+								["g_amt"] = 0,
+								["n_max"] = 18,
+								["targets"] = {
+									["Timber Wolf"] = 119,
+									["Kobold Worker"] = 161,
+									["Young Wolf"] = 198,
+									["Kobold Vermin"] = 284,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 563,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 40,
+								["total"] = 762,
+								["c_max"] = 35,
+								["id"] = "Heroic Strike",
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 34,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							},
+						},
+					},
+					["grupo"] = true,
+					["on_hold"] = false,
+					["serial"] = "Player-4467-009DCD0A",
+					["custom"] = 0,
+					["tipo"] = 1,
+					["last_dps"] = 0,
+					["start_time"] = 1566885944,
+					["delay"] = 0,
+					["damage_taken"] = 211.125635,
+				}, -- [1]
+				{
+					["flag_original"] = 68136,
+					["totalabsorbed"] = 0.135168,
+					["damage_from"] = {
+						["Shinyhead"] = true,
+						["Sarthor"] = true,
+						["Maximaal"] = true,
+						["Turbosnuppa"] = true,
+						["Decreaze"] = true,
+						["Chober"] = true,
+						["Gwendir"] = true,
+						["Tius"] = true,
+						["Govenator"] = true,
+						["Pyrocx"] = true,
+						["Sagax"] = true,
+						["Quiet"] = true,
+						["Argania"] = true,
+						["Sothial"] = true,
+						["Lockeazy"] = true,
+						["Comradus"] = true,
+						["Handsome"] = true,
+						["Medow"] = true,
+						["Kratimus"] = true,
+						["Trøyka"] = true,
+						["Tafyz"] = true,
+					},
+					["targets"] = {
+						["Shinyhead"] = 2,
+						["Sarthor"] = 3,
+						["Maximaal"] = 28,
+						["Decreaze"] = 21,
+						["Chober"] = 5,
+						["Gwendir"] = 11,
+						["Tius"] = 28,
+						["Govenator"] = 4,
+						["Pyrocx"] = 5,
+						["Sothial"] = 14,
+						["Rabbit"] = 1,
+						["Comradus"] = 9,
+						["Handsome"] = 11,
+						["Medow"] = 2,
+						["Lockeazy"] = 3,
+						["Sagax"] = 3,
+						["Trøyka"] = 4,
+					},
+					["pets"] = {
+					},
+					["end_time"] = 1566886207,
+					["friendlyfire_total"] = 0,
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 154.135168,
+					["fight_component"] = true,
+					["dps_started"] = false,
+					["total"] = 154.135168,
+					["on_hold"] = false,
+					["classe"] = "UNKNOW",
+					["nome"] = "Young Wolf",
+					["spells"] = {
+						["tipo"] = 2,
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Tius"] = 0,
+									["Sothial"] = 0,
+									["Maximaal"] = 0,
+									["Turbosnuppa"] = 0,
+									["Handsome"] = 0,
+									["Quiet"] = 0,
+									["Chober"] = 0,
+									["Medow"] = 0,
+									["Decreaze"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 17,
+								["total"] = 0,
+								["c_max"] = 0,
+								["MISS"] = 5,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["DODGE"] = 12,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							}, -- [1]
+							["Attack"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 1,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 2,
+								["targets"] = {
+									["Shinyhead"] = 2,
+									["Sarthor"] = 3,
+									["Maximaal"] = 28,
+									["Decreaze"] = 21,
+									["Chober"] = 5,
+									["Gwendir"] = 11,
+									["Tius"] = 28,
+									["Govenator"] = 4,
+									["Pyrocx"] = 5,
+									["Sothial"] = 14,
+									["Rabbit"] = 1,
+									["Comradus"] = 9,
+									["Handsome"] = 11,
+									["Medow"] = 2,
+									["Lockeazy"] = 3,
+									["Sagax"] = 3,
+									["Trøyka"] = 4,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 154,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 117,
+								["total"] = 154,
+								["c_max"] = 0,
+								["id"] = "Attack",
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 1,
+								["n_amt"] = 117,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							},
+						},
+					},
+					["friendlyfire"] = {
+					},
+					["last_event"] = 0,
+					["serial"] = "Creature-0-4446-0-486-299-0000E4C925",
+					["custom"] = 0,
+					["tipo"] = 1,
+					["last_dps"] = 0,
+					["start_time"] = 1566886036,
+					["delay"] = 0,
+					["damage_taken"] = 1394.135168,
+				}, -- [2]
+				{
+					["flag_original"] = 2600,
+					["totalabsorbed"] = 0.105355,
+					["damage_from"] = {
+						["Tombruise"] = true,
+						["Sarthor"] = true,
+						["Solstoss"] = true,
+						["Holdamayo"] = true,
+						["Livredderen"] = true,
+						["Kratimus"] = true,
+						["Chober"] = true,
+						["Yoof"] = true,
+						["Tius"] = true,
+						["Btwbank"] = true,
+						["Pyrocx"] = true,
+						["Argania"] = true,
+						["Johnsnowdk"] = true,
+						["Decreaze"] = true,
+						["Maximaal"] = true,
+						["Jellybae"] = true,
+						["Govenator"] = true,
+						["Mcangel"] = true,
+						["Quiet"] = true,
+						["Tafyz"] = true,
+					},
+					["targets"] = {
+						["Tombruise"] = 4,
+						["Sarthor"] = 12,
+						["Solstoss"] = 2,
+						["Holdamayo"] = 4,
+						["Livredderen"] = 2,
+						["Kratimus"] = 10,
+						["Chober"] = 10,
+						["Yoof"] = 3,
+						["Tius"] = 18,
+						["Quiet"] = 2,
+						["Btwbank"] = 10,
+						["Pyrocx"] = 6,
+						["Decreaze"] = 15,
+						["Argania"] = 7,
+						["Johnsnowdk"] = 10,
+						["Rabbit"] = 3,
+						["Maximaal"] = 25,
+						["Jellybae"] = 5,
+						["Govenator"] = 6,
+						["Mcangel"] = 21,
+						["Deer"] = 2,
+						["Tafyz"] = 32,
+					},
+					["pets"] = {
+					},
+					["friendlyfire_total"] = 0,
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 209.105355,
+					["on_hold"] = false,
+					["dps_started"] = false,
+					["total"] = 209.105355,
+					["fight_component"] = true,
+					["classe"] = "UNKNOW",
+					["nome"] = "Timber Wolf",
+					["spells"] = {
+						["tipo"] = 2,
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Maximaal"] = 0,
+									["Livredderen"] = 0,
+									["Decreaze"] = 0,
+									["Chober"] = 0,
+									["Btwbank"] = 0,
+									["Tafyz"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 15,
+								["total"] = 0,
+								["c_max"] = 0,
+								["DODGE"] = 11,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["MISS"] = 4,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							}, -- [1]
+							["Attack"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 3,
+								["targets"] = {
+									["Tombruise"] = 4,
+									["Sarthor"] = 12,
+									["Solstoss"] = 2,
+									["Holdamayo"] = 4,
+									["Livredderen"] = 2,
+									["Kratimus"] = 10,
+									["Chober"] = 10,
+									["Yoof"] = 3,
+									["Tius"] = 18,
+									["Quiet"] = 2,
+									["Btwbank"] = 10,
+									["Pyrocx"] = 6,
+									["Decreaze"] = 15,
+									["Argania"] = 7,
+									["Johnsnowdk"] = 10,
+									["Rabbit"] = 3,
+									["Maximaal"] = 25,
+									["Jellybae"] = 5,
+									["Govenator"] = 6,
+									["Mcangel"] = 21,
+									["Deer"] = 2,
+									["Tafyz"] = 32,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 209,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 102,
+								["total"] = 209,
+								["c_max"] = 0,
+								["id"] = "Attack",
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 102,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							},
+						},
+					},
+					["friendlyfire"] = {
+					},
+					["end_time"] = 1566886207,
+					["last_event"] = 0,
+					["serial"] = "Creature-0-4446-0-486-69-0000E4C921",
+					["custom"] = 0,
+					["tipo"] = 1,
+					["last_dps"] = 0,
+					["start_time"] = 1566886023,
+					["delay"] = 0,
+					["damage_taken"] = 1637.105355,
+				}, -- [3]
+				{
+					["flag_original"] = 2600,
+					["totalabsorbed"] = 0.126315,
+					["damage_from"] = {
+						["Doubledeltas"] = true,
+						["Coolyoudown"] = true,
+						["Devitalize"] = true,
+						["Zyciic"] = true,
+						["Solstoss"] = true,
+						["Maximaal"] = true,
+						["Johnsnowdk"] = true,
+						["Vizility"] = true,
+						["Chiéf"] = true,
+						["Quiet"] = true,
+						["Govenator"] = true,
+						["Everest"] = true,
+						["Tafyz"] = true,
+						["Kizzy"] = true,
+						["Gwendir"] = true,
+						["Tius"] = true,
+						["Sarthor"] = true,
+						["Kattlërv"] = true,
+						["Chober"] = true,
+						["Pyrocx"] = true,
+						["Argania"] = true,
+						["Sothial"] = true,
+						["Decreaze"] = true,
+						["Broey"] = true,
+						["Kratimus"] = true,
+						["Medow"] = true,
+						["Jellybae"] = true,
+						["Eques"] = true,
+						["Andriel"] = true,
+					},
+					["targets"] = {
+						["Doubledeltas"] = 7,
+						["Zyciic"] = 33,
+						["Solstoss"] = 34,
+						["Maximaal"] = 74,
+						["Coolyoudown"] = 5,
+						["Johnsnowdk"] = 4,
+						["Decreaze"] = 13,
+						["Govenator"] = 29,
+						["Devitalize"] = 6,
+						["Eques"] = 19,
+						["Sarthor"] = 35,
+						["Chiéf"] = 22,
+						["Tius"] = 13,
+						["Piztip"] = 13,
+						["Kizzy"] = 25,
+						["Tafyz"] = 4,
+						["Chober"] = 25,
+						["Argania"] = 15,
+						["Sothial"] = 83,
+						["Everest"] = 10,
+						["Broey"] = 4,
+						["Kratimus"] = 19,
+						["Medow"] = 48,
+						["Jellybae"] = 23,
+						["Quiet"] = 18,
+						["Andriel"] = 2,
+					},
+					["pets"] = {
+					},
+					["friendlyfire_total"] = 0,
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 583.126315,
+					["on_hold"] = false,
+					["dps_started"] = false,
+					["total"] = 583.126315,
+					["fight_component"] = true,
+					["classe"] = "UNKNOW",
+					["nome"] = "Kobold Vermin",
+					["spells"] = {
+						["tipo"] = 2,
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Eques"] = 0,
+									["Solstoss"] = 0,
+									["Maximaal"] = 0,
+									["Quiet"] = 0,
+									["Govenator"] = 0,
+									["Kizzy"] = 0,
+									["Chiéf"] = 0,
+									["Tius"] = 0,
+									["Decreaze"] = 0,
+									["Johnsnowdk"] = 0,
+									["Tafyz"] = 0,
+									["Chober"] = 0,
+									["Sarthor"] = 0,
+									["Sothial"] = 0,
+									["Everest"] = 0,
+									["Devitalize"] = 0,
+									["Kratimus"] = 0,
+									["Medow"] = 0,
+									["Jellybae"] = 0,
+									["Zyciic"] = 0,
+									["Andriel"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 49,
+								["BLOCK"] = 4,
+								["total"] = 0,
+								["c_max"] = 0,
+								["DODGE"] = 30,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["MISS"] = 15,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							}, -- [1]
+							["Attack"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 5,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 3,
+								["targets"] = {
+									["Doubledeltas"] = 7,
+									["Zyciic"] = 33,
+									["Solstoss"] = 34,
+									["Maximaal"] = 74,
+									["Coolyoudown"] = 5,
+									["Johnsnowdk"] = 4,
+									["Decreaze"] = 13,
+									["Govenator"] = 29,
+									["Devitalize"] = 6,
+									["Eques"] = 19,
+									["Sarthor"] = 35,
+									["Chiéf"] = 22,
+									["Tius"] = 13,
+									["Piztip"] = 13,
+									["Kizzy"] = 25,
+									["Tafyz"] = 4,
+									["Chober"] = 25,
+									["Argania"] = 15,
+									["Sothial"] = 83,
+									["Everest"] = 10,
+									["Broey"] = 4,
+									["Kratimus"] = 19,
+									["Medow"] = 48,
+									["Jellybae"] = 23,
+									["Quiet"] = 18,
+									["Andriel"] = 2,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 583,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 334,
+								["total"] = 583,
+								["c_max"] = 0,
+								["id"] = "Attack",
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 5,
+								["n_amt"] = 334,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							},
+						},
+					},
+					["friendlyfire"] = {
+					},
+					["end_time"] = 1566886207,
+					["last_event"] = 0,
+					["serial"] = "Creature-0-4446-0-486-6-000464C916",
+					["custom"] = 0,
+					["tipo"] = 1,
+					["last_dps"] = 0,
+					["start_time"] = 1566885966,
+					["delay"] = 0,
+					["damage_taken"] = 4375.126315,
+				}, -- [4]
+				{
+					["flag_original"] = 2600,
+					["totalabsorbed"] = 0.097752,
+					["damage_from"] = {
+						["Vras"] = true,
+						["Holdamayo"] = true,
+						["Kratimus"] = true,
+						["Govenator"] = true,
+						["Onixya"] = true,
+						["Piztip"] = true,
+						["Errorfailure"] = true,
+						["Frozti"] = true,
+						["Kizzy"] = true,
+						["Kytheon"] = true,
+						["Comradus"] = true,
+						["Medow"] = true,
+						["Tuborggrøn"] = true,
+						["Tafyz"] = true,
+						["Doubledeltas"] = true,
+						["Paskijainen"] = true,
+						["Meatyy"] = true,
+						["Tombruise"] = true,
+						["Pyrocx"] = true,
+						["Solstoss"] = true,
+						["Vizility"] = true,
+						["Seterina"] = true,
+						["Gorgon"] = true,
+						["Quiet"] = true,
+						["Coolyoudown"] = true,
+						["Btwbank"] = true,
+						["Mikelo"] = true,
+						["Everest"] = true,
+						["Chiéf"] = true,
+						["Broey"] = true,
+						["Devitalize"] = true,
+						["Decreaze"] = true,
+						["Zyciic"] = true,
+						["Klauth"] = true,
+						["Jellybae"] = true,
+						["Maximaal"] = true,
+						["Week"] = true,
+						["Sagax"] = true,
+						["Kattlërv"] = true,
+						["Lothiar"] = true,
+						["Mcangel"] = true,
+						["Gwendir"] = true,
+						["Andriel"] = true,
+					},
+					["targets"] = {
+						["Vras"] = 29,
+						["Holdamayo"] = 27,
+						["Decreaze"] = 18,
+						["Govenator"] = 18,
+						["Errorfailure"] = 10,
+						["Frozti"] = 16,
+						["Kizzy"] = 20,
+						["Kytheon"] = 12,
+						["Comradus"] = 26,
+						["Medow"] = 6,
+						["Tuborggrøn"] = 8,
+						["Tafyz"] = 29,
+						["Doubledeltas"] = 8,
+						["Paskijainen"] = 8,
+						["Meatyy"] = 42,
+						["Tombruise"] = 13,
+						["Everest"] = 13,
+						["Solstoss"] = 16,
+						["Seterina"] = 29,
+						["Gorgon"] = 34,
+						["Kattlërv"] = 56,
+						["Mikelo"] = 11,
+						["Coolyoudown"] = 5,
+						["Chiéf"] = 67,
+						["Btwbank"] = 15,
+						["Zyciic"] = 21,
+						["Devitalize"] = 22,
+						["Pyrocx"] = 23,
+						["Klauth"] = 29,
+						["Maximaal"] = 84,
+						["Jellybae"] = 19,
+						["Week"] = 23,
+						["Sagax"] = 37,
+						["Quiet"] = 22,
+						["Lothiar"] = 7,
+						["Mcangel"] = 36,
+						["Gwendir"] = 8,
+						["Andriel"] = 35,
+					},
+					["pets"] = {
+					},
+					["friendlyfire_total"] = 0,
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 902.097752,
+					["on_hold"] = false,
+					["dps_started"] = false,
+					["total"] = 902.097752,
+					["fight_component"] = true,
+					["classe"] = "UNKNOW",
+					["nome"] = "Kobold Worker",
+					["spells"] = {
+						["tipo"] = 2,
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Paskijainen"] = 0,
+									["Everest"] = 0,
+									["Solstoss"] = 0,
+									["Holdamayo"] = 0,
+									["Seterina"] = 0,
+									["Decreaze"] = 0,
+									["Broey"] = 0,
+									["Chiéf"] = 0,
+									["Kattlërv"] = 0,
+									["Zyciic"] = 0,
+									["Vras"] = 0,
+									["Kytheon"] = 0,
+									["Klauth"] = 0,
+									["Frozti"] = 0,
+									["Andriel"] = 0,
+									["Week"] = 0,
+									["Comradus"] = 0,
+									["Pyrocx"] = 0,
+									["Medow"] = 0,
+									["Mcangel"] = 0,
+									["Maximaal"] = 0,
+									["Tafyz"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 40,
+								["total"] = 0,
+								["c_max"] = 0,
+								["MISS"] = 21,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["DODGE"] = 19,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							}, -- [1]
+							["Attack"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 6,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 4,
+								["targets"] = {
+									["Vras"] = 29,
+									["Holdamayo"] = 27,
+									["Decreaze"] = 18,
+									["Govenator"] = 18,
+									["Errorfailure"] = 10,
+									["Frozti"] = 16,
+									["Kizzy"] = 20,
+									["Kytheon"] = 12,
+									["Comradus"] = 26,
+									["Medow"] = 6,
+									["Tuborggrøn"] = 8,
+									["Tafyz"] = 29,
+									["Doubledeltas"] = 8,
+									["Paskijainen"] = 8,
+									["Meatyy"] = 42,
+									["Tombruise"] = 13,
+									["Everest"] = 13,
+									["Solstoss"] = 16,
+									["Seterina"] = 29,
+									["Gorgon"] = 34,
+									["Kattlërv"] = 56,
+									["Mikelo"] = 11,
+									["Coolyoudown"] = 5,
+									["Chiéf"] = 67,
+									["Btwbank"] = 15,
+									["Zyciic"] = 21,
+									["Devitalize"] = 22,
+									["Pyrocx"] = 23,
+									["Klauth"] = 29,
+									["Maximaal"] = 84,
+									["Jellybae"] = 19,
+									["Week"] = 23,
+									["Sagax"] = 37,
+									["Quiet"] = 22,
+									["Lothiar"] = 7,
+									["Mcangel"] = 36,
+									["Gwendir"] = 8,
+									["Andriel"] = 35,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 902,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 321,
+								["total"] = 902,
+								["c_max"] = 0,
+								["id"] = "Attack",
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 10,
+								["n_amt"] = 321,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							},
+						},
+					},
+					["friendlyfire"] = {
+					},
+					["end_time"] = 1566886207,
+					["last_event"] = 0,
+					["serial"] = "Creature-0-4446-0-486-257-0002E4C92F",
+					["custom"] = 0,
+					["tipo"] = 1,
+					["last_dps"] = 0,
+					["start_time"] = 1566885963,
+					["delay"] = 0,
+					["damage_taken"] = 5277.097752,
+				}, -- [5]
+			},
+		}, -- [1]
+		{
+			["tipo"] = 3,
+			["_ActorTable"] = {
+			},
+		}, -- [2]
+		{
+			["tipo"] = 7,
+			["_ActorTable"] = {
+			},
+		}, -- [3]
+		{
+			["tipo"] = 9,
+			["_ActorTable"] = {
+				{
+					["flag_original"] = 1297,
+					["nome"] = "Maximaal",
+					["grupo"] = true,
+					["spell_cast"] = {
+						[0] = 40,
+					},
+					["classe"] = "WARRIOR",
+					["last_event"] = 0,
+					["pets"] = {
+					},
+					["serial"] = "Player-4467-009DCD0A",
+					["tipo"] = 4,
+				}, -- [1]
+			},
+		}, -- [4]
+		{
+			["tipo"] = 2,
+			["_ActorTable"] = {
+			},
+		}, -- [5]
+		["raid_roster"] = {
+		},
+		["tempo_start"] = 1566886196,
+		["last_events_tables"] = {
+		},
+		["alternate_power"] = {
+		},
+		["combat_counter"] = 3,
+		["totals"] = {
+			3198.28529899999, -- [1]
+			-0.00859200000000726, -- [2]
+			{
+				-0.00176299999999685, -- [1]
+				[0] = 0,
+				["alternatepower"] = 0,
+				[3] = 0,
+				[6] = 0,
+			}, -- [3]
+			{
+				["buff_uptime"] = 0,
+				["ress"] = 0,
+				["debuff_uptime"] = 0,
+				["cooldowns_defensive"] = 0,
+				["interrupt"] = 0,
+				["dispell"] = 0,
+				["cc_break"] = 0,
+				["dead"] = 0,
+			}, -- [4]
+			["frags_total"] = 0,
+			["voidzone_damage"] = 0,
+		},
+		["player_last_events"] = {
+		},
+		["spells_cast_timeline"] = {
+		},
+		["frags_need_refresh"] = false,
+		["aura_timeline"] = {
+		},
+		["__call"] = {
+		},
+		["data_inicio"] = "08:09:56",
+		["end_time"] = 152192.541,
+		["cleu_events"] = {
+			["n"] = 1,
+		},
+		["segments_added"] = {
+			{
+				["elapsed"] = 14.929999999993,
+				["type"] = 0,
+				["name"] = "Timber Wolf",
+				["clock"] = "08:17:47",
+			}, -- [1]
+			{
+				["elapsed"] = 6.73299999997835,
+				["type"] = 0,
+				["name"] = "Kobold Vermin",
+				["clock"] = "08:17:11",
+			}, -- [2]
+			{
+				["elapsed"] = 5.29800000000978,
+				["type"] = 0,
+				["name"] = "Kobold Vermin",
+				["clock"] = "08:16:57",
+			}, -- [3]
+			{
+				["elapsed"] = 15.2550000000047,
+				["type"] = 0,
+				["name"] = "Kobold Worker",
+				["clock"] = "08:16:39",
+			}, -- [4]
+			{
+				["elapsed"] = 8.54800000000978,
+				["type"] = 0,
+				["name"] = "Kobold Vermin",
+				["clock"] = "08:16:19",
+			}, -- [5]
+			{
+				["elapsed"] = 9.16599999999744,
+				["type"] = 0,
+				["name"] = "Young Wolf",
+				["clock"] = "08:16:02",
+			}, -- [6]
+			{
+				["elapsed"] = 11.4679999999935,
+				["type"] = 0,
+				["name"] = "Kobold Vermin",
+				["clock"] = "08:15:27",
+			}, -- [7]
+			{
+				["elapsed"] = 6.94800000000396,
+				["type"] = 0,
+				["name"] = "Young Wolf",
+				["clock"] = "08:15:13",
+			}, -- [8]
+			{
+				["elapsed"] = 16.8270000000193,
+				["type"] = 0,
+				["name"] = "Kobold Worker",
+				["clock"] = "08:14:52",
+			}, -- [9]
+			{
+				["elapsed"] = 9.29300000000512,
+				["type"] = 0,
+				["name"] = "Young Wolf",
+				["clock"] = "08:14:38",
+			}, -- [10]
+			{
+				["elapsed"] = 6.47400000001653,
+				["type"] = 0,
+				["name"] = "Young Wolf",
+				["clock"] = "08:14:28",
+			}, -- [11]
+			{
+				["elapsed"] = 8.87700000000768,
+				["type"] = 0,
+				["name"] = "Timber Wolf",
+				["clock"] = "08:14:13",
+			}, -- [12]
+			{
+				["elapsed"] = 15.2960000000021,
+				["type"] = 0,
+				["name"] = "Kobold Vermin",
+				["clock"] = "08:13:50",
+			}, -- [13]
+			{
+				["elapsed"] = 10.4199999999837,
+				["type"] = 0,
+				["name"] = "Kobold Vermin",
+				["clock"] = "08:13:17",
+			}, -- [14]
+			{
+				["elapsed"] = 16.2760000000126,
+				["type"] = 0,
+				["name"] = "Kobold Worker",
+				["clock"] = "08:12:58",
+			}, -- [15]
+			{
+				["elapsed"] = 9.1479999999865,
+				["type"] = 0,
+				["name"] = "Kobold Vermin",
+				["clock"] = "08:12:35",
+			}, -- [16]
+			{
+				["elapsed"] = 11.4409999999916,
+				["type"] = 0,
+				["name"] = "Timber Wolf",
+				["clock"] = "08:12:09",
+			}, -- [17]
+			{
+				["elapsed"] = 5.03800000000047,
+				["type"] = 0,
+				["name"] = "Young Wolf",
+				["clock"] = "08:11:58",
+			}, -- [18]
+			{
+				["elapsed"] = 9.24299999998766,
+				["type"] = 0,
+				["name"] = "Kobold Vermin",
+				["clock"] = "08:11:33",
+			}, -- [19]
+			{
+				["elapsed"] = 11.4550000000163,
+				["type"] = 0,
+				["name"] = "Kobold Vermin",
+				["clock"] = "08:11:11",
+			}, -- [20]
+			{
+				["elapsed"] = 16.5460000000021,
+				["type"] = 0,
+				["name"] = "Kobold Worker",
+				["clock"] = "08:10:50",
+			}, -- [21]
+			{
+				["elapsed"] = 11.4510000000009,
+				["type"] = 0,
+				["name"] = "Kobold Vermin",
+				["clock"] = "08:10:37",
+			}, -- [22]
+			{
+				["elapsed"] = 5.42399999999907,
+				["type"] = 0,
+				["name"] = "Young Wolf",
+				["clock"] = "08:10:25",
+			}, -- [23]
+			{
+				["elapsed"] = 6.49800000002142,
+				["type"] = 0,
+				["name"] = "Young Wolf",
+				["clock"] = "08:10:14",
+			}, -- [24]
+			{
+				["elapsed"] = 10.5069999999832,
+				["type"] = 0,
+				["name"] = "Young Wolf",
+				["clock"] = "08:09:56",
+			}, -- [25]
+		},
+		["totals_grupo"] = {
+			1350.121056, -- [1]
+			0, -- [2]
+			{
+				0, -- [1]
+				[0] = 0,
+				["alternatepower"] = 0,
+				[3] = 0,
+				[6] = 0,
+			}, -- [3]
+			{
+				["buff_uptime"] = 0,
+				["ress"] = 0,
+				["debuff_uptime"] = 0,
+				["cooldowns_defensive"] = 0,
+				["interrupt"] = 0,
+				["dispell"] = 0,
+				["cc_break"] = 0,
+				["dead"] = 0,
+			}, -- [4]
+		},
+		["frags"] = {
+		},
+		["data_fim"] = "08:18:02",
+		["overall_enemy_name"] = "-- x -- x --",
+		["CombatSkillCache"] = {
+		},
+		["cleu_timeline"] = {
+		},
+		["start_time"] = 151933.981,
+		["TimeData"] = {
+		},
+		["PhaseData"] = {
+			{
+				1, -- [1]
+				1, -- [2]
+			}, -- [1]
+			["heal_section"] = {
+			},
+			["heal"] = {
+			},
+			["damage_section"] = {
+			},
+			["damage"] = {
+			},
+		},
+	},
+	["force_font_outline"] = "",
+	["local_instances_config"] = {
+		{
+			["segment"] = 0,
+			["sub_attribute"] = 1,
+			["sub_atributo_last"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+				1, -- [5]
+			},
+			["is_open"] = true,
+			["isLocked"] = false,
+			["snap"] = {
+			},
+			["mode"] = 2,
+			["attribute"] = 1,
+			["pos"] = {
+				["normal"] = {
+					["y"] = -262.321044921875,
+					["x"] = 670.679077148438,
+					["w"] = 175.679092407227,
+					["h"] = 157.999984741211,
+				},
+				["solo"] = {
+					["y"] = 2,
+					["x"] = 1,
+					["w"] = 300,
+					["h"] = 200,
+				},
+			},
+		}, -- [1]
+	},
+	["character_data"] = {
+		["logons"] = 1,
+	},
+	["announce_cooldowns"] = {
+		["enabled"] = false,
+		["ignored_cooldowns"] = {
+		},
+		["custom"] = "",
+		["channel"] = "RAID",
+	},
+	["rank_window"] = {
+		["last_difficulty"] = 15,
+		["last_raid"] = "",
+	},
+	["announce_damagerecord"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
+	["cached_specs"] = {
+	},
+}

@@ -1,0 +1,13 @@
+AtlasLoot_BattleforAzeroth: disabled
+AtlasLoot_BurningCrusade: disabled
+AtlasLoot_Cataclysm: disabled
+AtlasLoot_Collections: disabled
+AtlasLoot_Crafting: disabled
+AtlasLoot_Factions: disabled
+AtlasLoot_Legion: disabled
+AtlasLoot_MistsofPandaria: disabled
+AtlasLoot_Options: disabled
+AtlasLoot_WarlordsofDraenor: disabled
+AtlasLoot_WrathoftheLichKing: disabled
+AtlasLoot_WorldEvents: disabled
+AtlasLoot_PvP: disabled

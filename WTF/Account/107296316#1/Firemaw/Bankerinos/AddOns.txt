@@ -1,0 +1,9 @@
+TradeSkillMaster: enabled
+Mapster: enabled
+ClassicCastbars: enabled
+Decursive: disabled
+ClassicCastbars_Options: disabled
+eCastingBar: disabled
+RCLootCouncil_Classic: enabled
+Details: enabled
+AAP-Classic: enabled

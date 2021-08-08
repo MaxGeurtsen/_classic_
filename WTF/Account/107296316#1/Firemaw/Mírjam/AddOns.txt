@@ -1,0 +1,5 @@
+ClassicCastbars: disabled
+ClassicCastbars_Options: disabled
+eCastingBar: disabled
+AAP-Classic: enabled
+Decursive: disabled

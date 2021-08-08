@@ -1,0 +1,4 @@
+VER 3 0000000001000001 "/tg" "132100"
+/target Greater healing ward
+/cast Fire Blast(Rank 1)
+END

@@ -1,0 +1,8 @@
+Version: 1
+Frame: XToLevel_AverageFrame_Blocky_PlayerFrame
+FrameLevel: 1
+Anchor: TOP
+X: 21
+Y: -9
+W: 213
+H: 18

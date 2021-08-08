@@ -1,0 +1,15 @@
+Version: 1
+Frame: XToLevel_AverageFrame_Blocky_PlayerFrame
+FrameLevel: 1
+Anchor: TOP
+X: 20
+Y: -38
+W: 319
+H: 18
+Frame: GroupBulletinBoardFrame
+FrameLevel: 1
+Anchor: CENTER
+X: -5
+Y: -128
+W: 735
+H: 345

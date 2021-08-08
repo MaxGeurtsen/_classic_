@@ -1,0 +1,13 @@
+TradeSkillMaster: enabled
+Mapster: enabled
+ClassicCastbars: enabled
+Decursive: enabled
+ClassicCastbars_Options: enabled
+eCastingBar: enabled
+WeaponSwingTimer: disabled
+WhatsTraining: enabled
+AAP-Classic: enabled
+RCLootCouncil_Classic: enabled
+Details: enabled
+WeakAurasCompanion: enabled
+WeakAurasArchive: enabled
