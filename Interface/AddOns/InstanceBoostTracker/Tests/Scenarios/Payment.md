@@ -1,0 +1,4 @@
+- Open the settings menu and enable the Payment feature.
+- Run the **/it test** command a few times.
+  - Payments should be added
+  - In the Payments view you should be able to sort on values.

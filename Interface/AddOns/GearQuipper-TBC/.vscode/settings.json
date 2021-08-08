@@ -1,0 +1,20 @@
+{
+    "Lua.diagnostics.globals": [
+        "MAX_CONTAINER_ITEMS",
+        "GetContainerItemLink",
+        "tinsert",
+        "GameTooltip",
+        "C_Timer",
+        "C_Map",
+        "GetRealZoneText",
+        "MAX_SKILLLINE_TABS",
+        "BOOKTYPE_PET",
+        "BOOKTYPE_SPELL",
+        "GetSpellTabInfo",
+        "GetSpellBookItemName",
+        "GetSpellId",
+        "PickupSpell",
+        "GetSpellSubtext",
+        "GetSpellInfo"
+    ]
+}

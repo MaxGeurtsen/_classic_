@@ -1,0 +1,18 @@
+tag eeab343d32372e8e98824c9df64091787747d231 2.5.1_62
+Author:	R4d1o4ct1v3_ <r4d1o4ct1v3v3@gmail.com>
+Date:	Thu Jun 10 16:49:50 2021 +0000
+
+Fixes errors on high-level chars in TBC
+
+commit 718d3f7377cb000c92a90aeb84ad56e3cc938d0c
+Author: R4d1o4ct1v3_ <r4d1o4ct1v3v3@gmail.com>
+Date:   Thu Jun 10 16:30:31 2021 +0000
+
+    Fixes a LUA error on high-level characters.
+
+commit 718d3f7377cb000c92a90aeb84ad56e3cc938d0c
+Author: R4d1o4ct1v3_ <r4d1o4ct1v3v3@gmail.com>
+Date:   Thu Jun 10 16:30:31 2021 +0000
+
+    Fixes a LUA error on high-level characters.
+
