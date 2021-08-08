@@ -2,25 +2,25 @@
 PallyPowerDB = {
 	["profileKeys"] = {
 		["Firebreather - Firemaw"] = "Other",
-		["Partijleider - Razorgore"] = "Other",
 		["Kealthas - Razorgore"] = "Default",
+		["Partijleider - Razorgore"] = "Other",
 	},
 	["profiles"] = {
 		["Default"] = {
+			["freeassign"] = true,
 			["rfbuff"] = false,
+			["rf"] = false,
 			["display"] = {
 				["buffDuration"] = false,
 				["frameLocked"] = true,
-				["showPlayerButtons"] = false,
 				["enableDragHandle"] = false,
+				["showPlayerButtons"] = false,
 			},
-			["freeassign"] = true,
+			["ShowWhenSolo"] = false,
 			["enable"] = true,
 			["minimap"] = {
 				["minimapPos"] = 214.3417257850349,
 			},
-			["ShowWhenSolo"] = false,
-			["rf"] = false,
 		},
 		["Other"] = {
 			["enable"] = true,
@@ -40,18 +40,6 @@ PallyPower_Assignments = {
 		1, -- [9]
 		3, -- [10]
 	},
-	["Kealthas"] = {
-		3, -- [1]
-		4, -- [2]
-		1, -- [3]
-		4, -- [4]
-		1, -- [5]
-		4, -- [6]
-		4, -- [7]
-		4, -- [8]
-		4, -- [9]
-		3, -- [10]
-	},
 	["Donniehmoow"] = {
 		6, -- [1]
 		3, -- [2]
@@ -63,6 +51,18 @@ PallyPower_Assignments = {
 		3, -- [8]
 		3, -- [9]
 		4, -- [10]
+	},
+	["Kealthas"] = {
+		3, -- [1]
+		4, -- [2]
+		1, -- [3]
+		4, -- [4]
+		1, -- [5]
+		4, -- [6]
+		4, -- [7]
+		4, -- [8]
+		4, -- [9]
+		3, -- [10]
 	},
 	["Busar"] = {
 		3, -- [1]
@@ -93,19 +93,20 @@ PallyPower_AuraAssignments = {
 	["Aclypso"] = 0,
 	["Rylande"] = 0,
 	["Holymagic"] = 1,
-	["Chavy"] = 0,
-	["Arid"] = 0,
-	["Bakan"] = 0,
-	["Lucina"] = 0,
-	["Wárez"] = 0,
-	["Holysteroid"] = 0,
 	["Tiojel"] = 7,
+	["Holysteroid"] = 0,
+	["Wárez"] = 0,
+	["Lucina"] = 0,
+	["Bakan"] = 0,
+	["Arid"] = 0,
+	["Chavy"] = 0,
 	["Busar"] = 7,
 }
 PallyPower_SavedPresets = nil
 PallyPower_ChanNames = {
-	[0] = "None",
 	[5] = "world",
+	[6] = "lfg",
+	[0] = "None",
 }
 LCD_Data = nil
 LCD_GUIDAccess = nil

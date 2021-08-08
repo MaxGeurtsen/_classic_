@@ -2,18 +2,18 @@
 ExtendedCharacterStats = {
 	["general"] = {
 		["addColorsToStatTexts"] = true,
-		["statsWindowClosedOnOpen"] = false,
+		["statFontSize"] = 10,
 		["statColorSelection"] = "texts",
-		["headerFontSize"] = 11,
+		["profileVersion"] = 10,
 		["showQualityColors"] = true,
 		["window"] = {
 			["height"] = 422,
-			["width"] = 180,
-			["xOffset"] = -30,
 			["yOffset"] = 30,
+			["xOffset"] = -30,
+			["width"] = 180,
 		},
-		["profileVersion"] = 10,
-		["statFontSize"] = 10,
+		["headerFontSize"] = 11,
+		["statsWindowClosedOnOpen"] = false,
 	},
 	["profile"] = {
 		["ranged"] = {
@@ -33,20 +33,20 @@ ExtendedCharacterStats = {
 					["text"] = "MISS_BOSS",
 					["refName"] = "RangedHitBossLevel",
 				},
+				["isSubGroup"] = true,
+				["display"] = true,
+				["text"] = "HIT",
 				["sameLevel"] = {
 					["display"] = true,
 					["text"] = "MISS",
 					["refName"] = "RangedHitSameLevel",
 				},
-				["isSubGroup"] = true,
 				["rating"] = {
 					["display"] = true,
 					["isTbcOnly"] = true,
 					["refName"] = "RangedHitRating",
 					["text"] = "RATING",
 				},
-				["display"] = true,
-				["text"] = "HIT",
 				["refName"] = "RangedHitHeader",
 				["bonus"] = {
 					["display"] = true,
@@ -80,10 +80,10 @@ ExtendedCharacterStats = {
 				["text"] = "PARRY_CHANCE",
 				["refName"] = "ParryChance",
 			},
-			["resilience"] = {
+			["blockValue"] = {
 				["display"] = true,
-				["text"] = "RESILIENCE_VALUE",
-				["refName"] = "ResilienceValue",
+				["text"] = "BLOCK_VALUE",
+				["refName"] = "BlockValue",
 			},
 			["dodge"] = {
 				["display"] = true,
@@ -97,10 +97,10 @@ ExtendedCharacterStats = {
 				["refName"] = "Armor",
 			},
 			["refName"] = "DefenseHeader",
-			["blockValue"] = {
+			["resilience"] = {
 				["display"] = true,
-				["text"] = "BLOCK_VALUE",
-				["refName"] = "BlockValue",
+				["text"] = "RESILIENCE_VALUE",
+				["refName"] = "ResilienceValue",
 			},
 		},
 		["general"] = {
@@ -113,87 +113,46 @@ ExtendedCharacterStats = {
 				["refName"] = "MovementSpeed",
 			},
 		},
-		["melee"] = {
-			["attackPower"] = {
+		["spell"] = {
+			["crit"] = {
 				["display"] = true,
-				["text"] = "ATTACK_POWER",
-				["refName"] = "MeleeAttackPower",
+				["text"] = "CRIT_CHANCE",
+				["refName"] = "SpellCritChance",
 			},
-			["attackSpeed"] = {
-				["offHand"] = {
-					["display"] = true,
-					["text"] = "ATTACK_SPEED_OFF_HAND",
-					["refName"] = "MeleeAttackSpeedOffHand",
-				},
-				["mainHand"] = {
-					["display"] = true,
-					["text"] = "ATTACK_SPEED_MAIN_HAND",
-					["refName"] = "MeleeAttackSpeedMainHand",
-				},
-				["display"] = true,
-				["text"] = "ATTACK_SPEED",
-				["refName"] = "MeleeAttackSpeedHeader",
-				["isSubGroup"] = true,
+			["penetration"] = {
+				["display"] = false,
+				["text"] = "SPELL_PENETRATION",
+				["refName"] = "SpellPenetration",
 			},
+			["display"] = true,
+			["text"] = "SPELL",
+			["refName"] = "SpellHeader",
 			["hit"] = {
 				["bossLevel"] = {
 					["display"] = true,
 					["text"] = "MISS_BOSS",
-					["refName"] = "MeleeHitBossLevel",
+					["refName"] = "SpellHitBossLevel",
 				},
+				["isSubGroup"] = true,
+				["display"] = true,
+				["text"] = "HIT",
 				["sameLevel"] = {
 					["display"] = true,
 					["text"] = "MISS",
-					["refName"] = "MeleeHitSameLevel",
+					["refName"] = "SpellHitSameLevel",
 				},
-				["isSubGroup"] = true,
 				["rating"] = {
 					["display"] = true,
 					["isTbcOnly"] = true,
-					["refName"] = "MeleeHitRating",
+					["refName"] = "SpellHitRating",
 					["text"] = "RATING",
 				},
-				["display"] = true,
-				["text"] = "HIT",
-				["refName"] = "MeleeHitHeader",
+				["refName"] = "SpellHitHeader",
 				["bonus"] = {
-					["display"] = true,
+					["display"] = false,
 					["text"] = "BONUS",
-					["refName"] = "MeleeHitBonus",
+					["refName"] = "SpellHitBonus",
 				},
-			},
-			["display"] = false,
-			["text"] = "MELEE",
-			["refName"] = "MeleeHeader",
-			["crit"] = {
-				["display"] = true,
-				["text"] = "CRIT_CHANCE",
-				["refName"] = "MeleeCritChance",
-			},
-		},
-		["regen"] = {
-			["mp5Buffs"] = {
-				["display"] = true,
-				["text"] = "MP5_BUFFS",
-				["refName"] = "MP5Buffs",
-			},
-			["mp5Spirit"] = {
-				["display"] = true,
-				["text"] = "MP5_SPIRIT",
-				["refName"] = "MP5Spirit",
-			},
-			["mp5Casting"] = {
-				["display"] = true,
-				["text"] = "MP5_CASTING",
-				["refName"] = "MP5Casting",
-			},
-			["display"] = true,
-			["text"] = "MANA",
-			["refName"] = "ManaHeader",
-			["mp5Items"] = {
-				["display"] = true,
-				["text"] = "MP5_ITEMS",
-				["refName"] = "MP5Items",
 			},
 		},
 		["spellBonus"] = {
@@ -276,46 +235,87 @@ ExtendedCharacterStats = {
 				["refName"] = "NatureCritChance",
 			},
 		},
-		["spell"] = {
-			["penetration"] = {
-				["display"] = false,
-				["text"] = "SPELL_PENETRATION",
-				["refName"] = "SpellPenetration",
+		["regen"] = {
+			["mp5Buffs"] = {
+				["display"] = true,
+				["text"] = "MP5_BUFFS",
+				["refName"] = "MP5Buffs",
+			},
+			["mp5Spirit"] = {
+				["display"] = true,
+				["text"] = "MP5_SPIRIT",
+				["refName"] = "MP5Spirit",
+			},
+			["mp5Casting"] = {
+				["display"] = true,
+				["text"] = "MP5_CASTING",
+				["refName"] = "MP5Casting",
+			},
+			["display"] = true,
+			["text"] = "MANA",
+			["refName"] = "ManaHeader",
+			["mp5Items"] = {
+				["display"] = true,
+				["text"] = "MP5_ITEMS",
+				["refName"] = "MP5Items",
+			},
+		},
+		["melee"] = {
+			["attackPower"] = {
+				["display"] = true,
+				["text"] = "ATTACK_POWER",
+				["refName"] = "MeleeAttackPower",
+			},
+			["attackSpeed"] = {
+				["offHand"] = {
+					["display"] = true,
+					["text"] = "ATTACK_SPEED_OFF_HAND",
+					["refName"] = "MeleeAttackSpeedOffHand",
+				},
+				["isSubGroup"] = true,
+				["mainHand"] = {
+					["display"] = true,
+					["text"] = "ATTACK_SPEED_MAIN_HAND",
+					["refName"] = "MeleeAttackSpeedMainHand",
+				},
+				["text"] = "ATTACK_SPEED",
+				["refName"] = "MeleeAttackSpeedHeader",
+				["display"] = true,
 			},
 			["hit"] = {
 				["bossLevel"] = {
 					["display"] = true,
 					["text"] = "MISS_BOSS",
-					["refName"] = "SpellHitBossLevel",
+					["refName"] = "MeleeHitBossLevel",
 				},
+				["isSubGroup"] = true,
+				["display"] = true,
+				["text"] = "HIT",
 				["sameLevel"] = {
 					["display"] = true,
 					["text"] = "MISS",
-					["refName"] = "SpellHitSameLevel",
+					["refName"] = "MeleeHitSameLevel",
 				},
-				["isSubGroup"] = true,
 				["rating"] = {
 					["display"] = true,
 					["isTbcOnly"] = true,
-					["refName"] = "SpellHitRating",
+					["refName"] = "MeleeHitRating",
 					["text"] = "RATING",
 				},
-				["display"] = true,
-				["text"] = "HIT",
-				["refName"] = "SpellHitHeader",
+				["refName"] = "MeleeHitHeader",
 				["bonus"] = {
-					["display"] = false,
+					["display"] = true,
 					["text"] = "BONUS",
-					["refName"] = "SpellHitBonus",
+					["refName"] = "MeleeHitBonus",
 				},
 			},
-			["display"] = true,
-			["text"] = "SPELL",
-			["refName"] = "SpellHeader",
+			["display"] = false,
+			["text"] = "MELEE",
+			["refName"] = "MeleeHeader",
 			["crit"] = {
 				["display"] = true,
 				["text"] = "CRIT_CHANCE",
-				["refName"] = "SpellCritChance",
+				["refName"] = "MeleeCritChance",
 			},
 		},
 	},

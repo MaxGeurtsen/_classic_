@@ -5,17 +5,22 @@ Details_StreamerDB = {
 		["Cursedbreath - Firemaw"] = "Firebreather - Firemaw",
 		["Mírjam - Razorgore"] = "Firebreather - Firemaw",
 		["Helpsiebren - Razorgore"] = "Firebreather - Firemaw",
+		["Partijleider - Razorgore"] = "Firebreather - Firemaw",
 		["Mírjam - Firemaw"] = "Firebreather - Firemaw",
-		["Mirjam - Firemaw"] = "Firebreather - Firemaw",
 		["Partijlijder - Razorgore"] = "Firebreather - Firemaw",
 		["Eefjé - Razorgore"] = "Firebreather - Firemaw",
 		["Bankerinos - Firemaw"] = "Firebreather - Firemaw",
-		["Partijleider - Razorgore"] = "Firebreather - Firemaw",
+		["Mirjam - Firemaw"] = "Firebreather - Firemaw",
 		["Kealthas - Razorgore"] = "Firebreather - Firemaw",
 	},
 	["profiles"] = {
 		["Firebreather - Firemaw"] = {
-			["use_square_mode"] = false,
+			["font_color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["is_first_run"] = false,
 			["grow_direction"] = "right",
 			["arrow_color"] = {
@@ -54,7 +59,7 @@ Details_StreamerDB = {
 				["update_speed"] = 0.05,
 				["size"] = 32,
 			},
-			["author"] = "Details! Team",
+			["main_frame_strata"] = "LOW",
 			["square_amount"] = 5,
 			["enabled"] = false,
 			["arrow_size"] = 10,
@@ -66,22 +71,17 @@ Details_StreamerDB = {
 				0, -- [3]
 				0.2, -- [4]
 			},
-			["main_frame_strata"] = "LOW",
+			["author"] = "Details! Team",
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
-			["y"] = -1.52587890625e-05,
 			["use_spark"] = true,
+			["y"] = -1.52587890625e-05,
 			["x"] = 3.0517578125e-05,
 			["font_face"] = "Friz Quadrata TT",
 			["square_size"] = 32,
-			["point"] = "CENTER",
-			["font_color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["row_height"] = 20,
+			["use_square_mode"] = false,
 			["scale"] = 1,
+			["row_height"] = 20,
+			["point"] = "CENTER",
 		},
 	},
 }

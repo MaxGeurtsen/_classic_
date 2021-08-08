@@ -6,11 +6,11 @@ SimpleUnitFramesDB = {
 		["Firebreather - Firemaw"] = "Firebreather - Firemaw",
 		["Cursedbreath - Firemaw"] = "Cursedbreath - Firemaw",
 		["Mírjam - Razorgore"] = "Mírjam - Razorgore",
-		["Mírjam - Firemaw"] = "Mírjam - Firemaw",
-		["Helpsiebren - Razorgore"] = "Helpsiebren - Razorgore",
-		["Partijlijder - Razorgore"] = "Partijlijder - Razorgore",
 		["Mirjam - Firemaw"] = "Mirjam - Firemaw",
+		["Helpsiebren - Razorgore"] = "Helpsiebren - Razorgore",
 		["Partijleider - Razorgore"] = "Partijleider - Razorgore",
+		["Mírjam - Firemaw"] = "Mírjam - Firemaw",
+		["Partijlijder - Razorgore"] = "Partijlijder - Razorgore",
 		["Eefjé - Razorgore"] = "Eefjé - Razorgore",
 		["Bankerinos - Firemaw"] = "Bankerinos - Firemaw",
 		["Max - Razorfen"] = "Max - Razorfen",
@@ -27,15 +27,15 @@ SimpleUnitFramesDB = {
 		},
 		["Mírjam - Razorgore"] = {
 		},
-		["Mírjam - Firemaw"] = {
+		["Mirjam - Firemaw"] = {
 		},
 		["Helpsiebren - Razorgore"] = {
 		},
-		["Partijlijder - Razorgore"] = {
-		},
-		["Mirjam - Firemaw"] = {
-		},
 		["Partijleider - Razorgore"] = {
+		},
+		["Mírjam - Firemaw"] = {
+		},
+		["Partijlijder - Razorgore"] = {
 		},
 		["Eefjé - Razorgore"] = {
 		},

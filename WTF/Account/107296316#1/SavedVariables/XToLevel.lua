@@ -924,8 +924,8 @@ XToLevelDB = {
 		["Firebreather - Firemaw"] = {
 			["data"] = {
 				["total"] = {
-					["quests"] = 113,
 					["dungeonKills"] = 16379,
+					["quests"] = 113,
 					["mobKills"] = 18333,
 				},
 				["killAverage"] = 282.8,
@@ -1339,904 +1339,904 @@ XToLevelDB = {
 				},
 				["dungeonList"] = {
 					{
-						["killCount"] = 171,
+						["totalXP"] = 41968,
 						["name"] = "Stratholme",
-						["inProgress"] = false,
+						["rested"] = 402,
 						["killTotal"] = 41968,
 						["level"] = 59,
-						["rested"] = 402,
-						["totalXP"] = 41968,
+						["killCount"] = 171,
+						["inProgress"] = false,
 					}, -- [1]
 					{
-						["killCount"] = 164,
+						["totalXP"] = 37822,
 						["name"] = "Stratholme",
-						["inProgress"] = false,
+						["rested"] = 0,
 						["killTotal"] = 37822,
 						["level"] = 59,
-						["rested"] = 0,
-						["totalXP"] = 37822,
+						["killCount"] = 164,
+						["inProgress"] = false,
 					}, -- [2]
 					{
-						["killCount"] = 101,
+						["totalXP"] = 13358,
 						["name"] = "Blackrock Depths",
-						["inProgress"] = false,
+						["rested"] = 24,
 						["killTotal"] = 13358,
 						["level"] = 59,
-						["rested"] = 24,
-						["totalXP"] = 13358,
+						["killCount"] = 101,
+						["inProgress"] = false,
 					}, -- [3]
 					{
-						["killCount"] = 66,
+						["totalXP"] = 6883,
 						["name"] = "Blackrock Depths",
-						["inProgress"] = false,
+						["rested"] = 0,
 						["killTotal"] = 6883,
 						["level"] = 59,
-						["rested"] = 0,
-						["totalXP"] = 6883,
+						["killCount"] = 66,
+						["inProgress"] = false,
 					}, -- [4]
 					{
-						["killCount"] = 108,
+						["totalXP"] = 10500,
 						["name"] = "Blackrock Depths",
-						["inProgress"] = false,
+						["rested"] = 0,
 						["killTotal"] = 10500,
 						["level"] = 59,
-						["rested"] = 0,
-						["totalXP"] = 10500,
+						["killCount"] = 108,
+						["inProgress"] = false,
 					}, -- [5]
 					{
-						["inProgress"] = false,
+						["name"] = "Blackrock Depths",
 						["totalXP"] = 10612,
-						["killCount"] = 100,
+						["rested"] = 10612,
 						["killTotal"] = 10612,
 						["level"] = 58,
-						["rested"] = 10612,
-						["name"] = "Blackrock Depths",
+						["inProgress"] = false,
+						["killCount"] = 100,
 					}, -- [6]
 					{
-						["inProgress"] = false,
+						["name"] = "Blackrock Depths",
 						["totalXP"] = 15555,
-						["killCount"] = 146,
+						["rested"] = 15555,
 						["killTotal"] = 15555,
 						["level"] = 58,
-						["rested"] = 15555,
-						["name"] = "Blackrock Depths",
+						["inProgress"] = false,
+						["killCount"] = 146,
 					}, -- [7]
 					{
+						["inProgress"] = false,
 						["totalXP"] = 21642,
-						["name"] = "Blackrock Depths",
-						["rested"] = 21642,
+						["killCount"] = 142,
 						["killTotal"] = 21642,
 						["level"] = 58,
-						["killCount"] = 142,
-						["inProgress"] = false,
+						["rested"] = 21642,
+						["name"] = "Blackrock Depths",
 					}, -- [8]
 					{
-						["killCount"] = 222,
+						["totalXP"] = 45767,
 						["name"] = "Blackrock Spire",
-						["inProgress"] = false,
+						["rested"] = 9231,
 						["killTotal"] = 45767,
 						["level"] = 58,
-						["rested"] = 9231,
-						["totalXP"] = 45767,
-					}, -- [9]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 11067,
-						["killCount"] = 106,
-						["killTotal"] = 11067,
-						["level"] = 58,
-						["rested"] = 11067,
-						["name"] = "Blackrock Depths",
-					}, -- [10]
-					{
-						["killCount"] = 109,
-						["name"] = "Blackrock Spire",
-						["inProgress"] = false,
-						["killTotal"] = 24618,
-						["level"] = 57,
-						["rested"] = 0,
-						["totalXP"] = 24618,
-					}, -- [11]
-					{
-						["totalXP"] = 23800,
-						["name"] = "Blackrock Spire",
-						["rested"] = 0,
-						["killTotal"] = 23800,
-						["level"] = 57,
-						["killCount"] = 109,
-						["inProgress"] = false,
-					}, -- [12]
-					{
-						["totalXP"] = 23720,
-						["name"] = "Blackrock Spire",
-						["rested"] = 0,
-						["killTotal"] = 23720,
-						["level"] = 57,
-						["killCount"] = 109,
-						["inProgress"] = false,
-					}, -- [13]
-					{
-						["totalXP"] = 22251,
-						["name"] = "Blackrock Spire",
-						["rested"] = 168,
-						["killTotal"] = 22251,
-						["level"] = 57,
-						["killCount"] = 101,
-						["inProgress"] = false,
-					}, -- [14]
-					{
-						["totalXP"] = 24524,
-						["name"] = "Blackrock Spire",
-						["rested"] = 24524,
-						["killTotal"] = 24524,
-						["level"] = 57,
-						["killCount"] = 109,
-						["inProgress"] = false,
-					}, -- [15]
-					{
-						["totalXP"] = 9683,
-						["name"] = "Blackrock Depths",
-						["rested"] = 0,
-						["killTotal"] = 9683,
-						["level"] = 56,
-						["killCount"] = 80,
-						["inProgress"] = false,
-					}, -- [16]
-					{
-						["totalXP"] = 26428,
-						["name"] = "Blackrock Depths",
-						["rested"] = 0,
-						["killTotal"] = 26428,
-						["level"] = 56,
-						["killCount"] = 205,
-						["inProgress"] = false,
-					}, -- [17]
-					{
-						["totalXP"] = 25355,
-						["name"] = "Blackrock Depths",
-						["rested"] = 10220,
-						["killTotal"] = 25355,
-						["level"] = 56,
-						["killCount"] = 199,
-						["inProgress"] = false,
-					}, -- [18]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 25444,
-						["killCount"] = 165,
-						["killTotal"] = 25444,
-						["level"] = 56,
-						["rested"] = 8333,
-						["name"] = "Blackrock Depths",
-					}, -- [19]
-					{
-						["killCount"] = 117,
-						["name"] = "Blackrock Depths",
-						["inProgress"] = false,
-						["killTotal"] = 16306,
-						["level"] = 56,
-						["rested"] = 331,
-						["totalXP"] = 16306,
-					}, -- [20]
-					{
-						["killCount"] = 165,
-						["name"] = "Blackrock Depths",
-						["inProgress"] = false,
-						["killTotal"] = 16761,
-						["level"] = 55,
-						["rested"] = 1115,
-						["totalXP"] = 16761,
-					}, -- [21]
-					{
-						["killCount"] = 7,
-						["name"] = "Blackrock Depths",
-						["inProgress"] = false,
-						["killTotal"] = 966,
-						["level"] = 55,
-						["rested"] = 0,
-						["totalXP"] = 966,
-					}, -- [22]
-					{
-						["killCount"] = 70,
-						["name"] = "Blackrock Depths",
-						["inProgress"] = false,
-						["killTotal"] = 10807,
-						["level"] = 55,
-						["rested"] = 0,
-						["totalXP"] = 10807,
-					}, -- [23]
-					{
-						["killCount"] = 87,
-						["name"] = "Blackrock Depths",
-						["inProgress"] = false,
-						["killTotal"] = 12739,
-						["level"] = 55,
-						["rested"] = 9250,
-						["totalXP"] = 12739,
-					}, -- [24]
-					{
-						["killCount"] = 3,
-						["name"] = "Blackrock Depths",
-						["inProgress"] = false,
-						["killTotal"] = 869,
-						["level"] = 55,
-						["rested"] = 869,
-						["totalXP"] = 869,
-					}, -- [25]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 19578,
-						["killCount"] = 143,
-						["killTotal"] = 19578,
-						["level"] = 55,
-						["rested"] = 2028,
-						["name"] = "Blackrock Depths",
-					}, -- [26]
-					{
-						["name"] = "Blackrock Depths",
-						["totalXP"] = 7474,
-						["rested"] = 85,
-						["killTotal"] = 7474,
-						["level"] = 55,
-						["inProgress"] = false,
-						["killCount"] = 65,
-					}, -- [27]
-					{
-						["name"] = "Blackrock Depths",
-						["totalXP"] = 656,
-						["rested"] = 656,
-						["killTotal"] = 656,
-						["level"] = 55,
-						["inProgress"] = false,
-						["killCount"] = 7,
-					}, -- [28]
-					{
-						["killCount"] = 127,
-						["name"] = "Blackrock Depths",
-						["inProgress"] = false,
-						["killTotal"] = 12916,
-						["level"] = 55,
-						["rested"] = 10617,
-						["totalXP"] = 12916,
-					}, -- [29]
-					{
-						["killCount"] = 135,
-						["name"] = "Blackrock Depths",
-						["inProgress"] = false,
-						["killTotal"] = 14170,
-						["level"] = 55,
-						["rested"] = 14170,
-						["totalXP"] = 14170,
-					}, -- [30]
-					{
-						["killCount"] = 114,
-						["name"] = "Blackrock Depths",
-						["inProgress"] = false,
-						["killTotal"] = 15860,
-						["level"] = 54,
-						["rested"] = 0,
-						["totalXP"] = 15860,
-					}, -- [31]
-					{
-						["killCount"] = 113,
-						["name"] = "Blackrock Depths",
-						["inProgress"] = false,
-						["killTotal"] = 16489,
-						["level"] = 54,
-						["rested"] = 0,
-						["totalXP"] = 16489,
-					}, -- [32]
-					{
-						["killCount"] = 127,
-						["name"] = "Blackrock Depths",
-						["inProgress"] = false,
-						["killTotal"] = 17273,
-						["level"] = 54,
-						["rested"] = 0,
-						["totalXP"] = 17273,
-					}, -- [33]
-					{
-						["killCount"] = 129,
-						["name"] = "Blackrock Depths",
-						["inProgress"] = false,
-						["killTotal"] = 17546,
-						["level"] = 54,
-						["rested"] = 0,
-						["totalXP"] = 17546,
-					}, -- [34]
-					{
-						["killCount"] = 131,
-						["name"] = "Blackrock Depths",
-						["inProgress"] = false,
-						["killTotal"] = 18090,
-						["level"] = 54,
-						["rested"] = 0,
-						["totalXP"] = 18090,
-					}, -- [35]
-					{
-						["killCount"] = 125,
-						["name"] = "Blackrock Depths",
-						["inProgress"] = false,
-						["killTotal"] = 16823,
-						["level"] = 54,
-						["rested"] = 7080,
-						["totalXP"] = 16823,
-					}, -- [36]
-					{
-						["totalXP"] = 25663,
-						["name"] = "Blackrock Spire",
-						["rested"] = 0,
-						["killTotal"] = 25663,
-						["level"] = 54,
-						["killCount"] = 101,
-						["inProgress"] = false,
-					}, -- [37]
-					{
-						["totalXP"] = 27453,
-						["name"] = "Blackrock Spire",
-						["rested"] = 0,
-						["killTotal"] = 27453,
-						["level"] = 53,
-						["killCount"] = 105,
-						["inProgress"] = false,
-					}, -- [38]
-					{
-						["totalXP"] = 24416,
-						["name"] = "Blackrock Spire",
-						["rested"] = 2958,
-						["killTotal"] = 24416,
-						["level"] = 53,
-						["killCount"] = 105,
-						["inProgress"] = false,
-					}, -- [39]
-					{
-						["killCount"] = 173,
-						["name"] = "Blackrock Depths",
-						["inProgress"] = false,
-						["killTotal"] = 22244,
-						["level"] = 53,
-						["rested"] = 11785,
-						["totalXP"] = 22244,
-					}, -- [40]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 15919,
-						["killCount"] = 132,
-						["killTotal"] = 15919,
-						["level"] = 53,
-						["rested"] = 0,
-						["name"] = "Blackrock Depths",
-					}, -- [41]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 12884,
-						["killCount"] = 108,
-						["killTotal"] = 12884,
-						["level"] = 53,
-						["rested"] = 0,
-						["name"] = "Blackrock Depths",
-					}, -- [42]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 15615,
-						["killCount"] = 128,
-						["killTotal"] = 15615,
-						["level"] = 53,
-						["rested"] = 0,
-						["name"] = "Blackrock Depths",
-					}, -- [43]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 14565,
-						["killCount"] = 126,
-						["killTotal"] = 14565,
-						["level"] = 53,
-						["rested"] = 0,
-						["name"] = "Blackrock Depths",
-					}, -- [44]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 16280,
-						["killCount"] = 130,
-						["killTotal"] = 16280,
-						["level"] = 52,
-						["rested"] = 0,
-						["name"] = "Blackrock Depths",
-					}, -- [45]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 14889,
-						["killCount"] = 125,
-						["killTotal"] = 14889,
-						["level"] = 52,
-						["rested"] = 0,
-						["name"] = "Blackrock Depths",
-					}, -- [46]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 15079,
-						["killCount"] = 122,
-						["killTotal"] = 15079,
-						["level"] = 52,
-						["rested"] = 7036,
-						["name"] = "Blackrock Depths",
-					}, -- [47]
-					{
-						["killCount"] = 11,
-						["name"] = "Blackrock Depths",
-						["inProgress"] = false,
-						["killTotal"] = 1456,
-						["level"] = 52,
-						["rested"] = 1456,
-						["totalXP"] = 1456,
-					}, -- [48]
-					{
-						["killCount"] = 81,
-						["name"] = "Blackrock Depths",
-						["inProgress"] = false,
-						["killTotal"] = 11384,
-						["level"] = 52,
-						["rested"] = 11384,
-						["totalXP"] = 11384,
-					}, -- [49]
-					{
-						["killCount"] = 126,
-						["name"] = "Blackrock Depths",
-						["inProgress"] = false,
-						["killTotal"] = 18235,
-						["level"] = 51,
-						["rested"] = 0,
-						["totalXP"] = 18235,
-					}, -- [50]
-					{
-						["killCount"] = 15,
-						["name"] = "Blackrock Depths",
-						["inProgress"] = false,
-						["killTotal"] = 1178,
-						["level"] = 51,
-						["rested"] = 0,
-						["totalXP"] = 1178,
-					}, -- [51]
-					{
-						["killCount"] = 147,
-						["name"] = "Blackrock Depths",
-						["inProgress"] = false,
-						["killTotal"] = 19709,
-						["level"] = 51,
-						["rested"] = 336,
-						["totalXP"] = 19709,
-					}, -- [52]
-					{
-						["totalXP"] = 24125,
-						["name"] = "Zul'Farrak",
-						["rested"] = 0,
-						["killTotal"] = 24125,
-						["level"] = 51,
 						["killCount"] = 222,
 						["inProgress"] = false,
-					}, -- [53]
+					}, -- [9]
 					{
-						["totalXP"] = 13627,
-						["name"] = "Zul'Farrak",
-						["rested"] = 0,
-						["killTotal"] = 13627,
-						["level"] = 51,
-						["killCount"] = 97,
-						["inProgress"] = false,
-					}, -- [54]
-					{
-						["totalXP"] = 13938,
-						["name"] = "Zul'Farrak",
-						["rested"] = 0,
-						["killTotal"] = 13938,
-						["level"] = 51,
-						["killCount"] = 119,
-						["inProgress"] = false,
-					}, -- [55]
-					{
-						["totalXP"] = 14878,
-						["name"] = "Zul'Farrak",
-						["rested"] = 0,
-						["killTotal"] = 14878,
-						["level"] = 51,
-						["killCount"] = 127,
-						["inProgress"] = false,
-					}, -- [56]
-					{
-						["totalXP"] = 13999,
-						["name"] = "Zul'Farrak",
-						["rested"] = 0,
-						["killTotal"] = 13999,
-						["level"] = 51,
-						["killCount"] = 120,
-						["inProgress"] = false,
-					}, -- [57]
-					{
-						["totalXP"] = 13765,
-						["name"] = "Zul'Farrak",
-						["rested"] = 0,
-						["killTotal"] = 13765,
-						["level"] = 51,
-						["killCount"] = 120,
-						["inProgress"] = false,
-					}, -- [58]
-					{
-						["totalXP"] = 12967,
-						["name"] = "Zul'Farrak",
-						["rested"] = 0,
-						["killTotal"] = 12967,
-						["level"] = 51,
-						["killCount"] = 113,
-						["inProgress"] = false,
-					}, -- [59]
-					{
-						["totalXP"] = 13882,
-						["name"] = "Zul'Farrak",
-						["rested"] = 0,
-						["killTotal"] = 13882,
-						["level"] = 50,
-						["killCount"] = 118,
-						["inProgress"] = false,
-					}, -- [60]
-					{
-						["totalXP"] = 16648,
-						["name"] = "Zul'Farrak",
-						["rested"] = 0,
-						["killTotal"] = 16648,
-						["level"] = 50,
-						["killCount"] = 129,
-						["inProgress"] = false,
-					}, -- [61]
-					{
-						["totalXP"] = 14761,
-						["name"] = "Zul'Farrak",
-						["rested"] = 39,
-						["killTotal"] = 14761,
-						["level"] = 50,
-						["killCount"] = 115,
-						["inProgress"] = false,
-					}, -- [62]
-					{
-						["totalXP"] = 13111,
-						["name"] = "Maraudon",
-						["rested"] = 5315,
-						["killTotal"] = 13111,
-						["level"] = 50,
-						["killCount"] = 133,
-						["inProgress"] = false,
-					}, -- [63]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 14032,
-						["killCount"] = 89,
-						["killTotal"] = 14032,
-						["level"] = 50,
-						["rested"] = 0,
-						["name"] = "Zul'Farrak",
-					}, -- [64]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 15829,
-						["killCount"] = 126,
-						["killTotal"] = 15829,
-						["level"] = 50,
-						["rested"] = 0,
-						["name"] = "Zul'Farrak",
-					}, -- [65]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 15408,
-						["killCount"] = 120,
-						["killTotal"] = 15408,
-						["level"] = 50,
-						["rested"] = 0,
-						["name"] = "Zul'Farrak",
-					}, -- [66]
-					{
-						["killCount"] = 95,
-						["name"] = "Zul'Farrak",
-						["inProgress"] = false,
-						["killTotal"] = 14684,
-						["level"] = 49,
-						["rested"] = 0,
-						["totalXP"] = 14684,
-					}, -- [67]
-					{
-						["killCount"] = 83,
-						["name"] = "Zul'Farrak",
-						["inProgress"] = false,
-						["killTotal"] = 12693,
-						["level"] = 49,
-						["rested"] = 0,
-						["totalXP"] = 12693,
-					}, -- [68]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 1938,
-						["killCount"] = 12,
-						["killTotal"] = 1938,
-						["level"] = 49,
-						["rested"] = 0,
-						["name"] = "Zul'Farrak",
-					}, -- [69]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 3860,
-						["killCount"] = 23,
-						["killTotal"] = 3860,
-						["level"] = 49,
-						["rested"] = 221,
-						["name"] = "Zul'Farrak",
-					}, -- [70]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 7859,
-						["killCount"] = 70,
-						["killTotal"] = 7859,
-						["level"] = 49,
-						["rested"] = 7859,
-						["name"] = "Zul'Farrak",
-					}, -- [71]
-					{
-						["killCount"] = 129,
-						["name"] = "Zul'Farrak",
-						["inProgress"] = false,
-						["killTotal"] = 18015,
-						["level"] = 49,
-						["rested"] = 0,
-						["totalXP"] = 18015,
-					}, -- [72]
-					{
-						["killCount"] = 151,
-						["name"] = "Zul'Farrak",
-						["inProgress"] = false,
-						["killTotal"] = 20926,
-						["level"] = 49,
-						["rested"] = 0,
-						["totalXP"] = 20926,
-					}, -- [73]
-					{
-						["killCount"] = 148,
-						["name"] = "Zul'Farrak",
-						["inProgress"] = false,
-						["killTotal"] = 20646,
-						["level"] = 49,
-						["rested"] = 0,
-						["totalXP"] = 20646,
-					}, -- [74]
-					{
-						["killCount"] = 169,
-						["name"] = "Zul'Farrak",
-						["inProgress"] = false,
-						["killTotal"] = 23690,
-						["level"] = 49,
-						["rested"] = 0,
-						["totalXP"] = 23690,
-					}, -- [75]
-					{
-						["killCount"] = 20,
-						["name"] = "Zul'Farrak",
-						["inProgress"] = false,
-						["killTotal"] = 1789,
-						["level"] = 49,
-						["rested"] = 0,
-						["totalXP"] = 1789,
-					}, -- [76]
-					{
-						["totalXP"] = 13083,
-						["name"] = "Zul'Farrak",
-						["rested"] = 179,
-						["killTotal"] = 13083,
-						["level"] = 48,
-						["killCount"] = 82,
-						["inProgress"] = false,
-					}, -- [77]
-					{
-						["totalXP"] = 16070,
-						["name"] = "Zul'Farrak",
-						["rested"] = 0,
-						["killTotal"] = 16070,
-						["level"] = 48,
-						["killCount"] = 111,
-						["inProgress"] = false,
-					}, -- [78]
-					{
-						["totalXP"] = 17753,
-						["name"] = "Zul'Farrak",
-						["rested"] = 0,
-						["killTotal"] = 17753,
-						["level"] = 48,
-						["killCount"] = 124,
-						["inProgress"] = false,
-					}, -- [79]
-					{
-						["totalXP"] = 20312,
-						["name"] = "Zul'Farrak",
-						["rested"] = 0,
-						["killTotal"] = 20312,
-						["level"] = 48,
-						["killCount"] = 137,
-						["inProgress"] = false,
-					}, -- [80]
-					{
-						["totalXP"] = 17217,
-						["name"] = "Zul'Farrak",
-						["rested"] = 0,
-						["killTotal"] = 17217,
-						["level"] = 48,
-						["killCount"] = 103,
-						["inProgress"] = false,
-					}, -- [81]
-					{
-						["totalXP"] = 15856,
-						["name"] = "Zul'Farrak",
-						["rested"] = 0,
-						["killTotal"] = 15856,
-						["level"] = 48,
-						["killCount"] = 113,
-						["inProgress"] = false,
-					}, -- [82]
-					{
-						["totalXP"] = 18755,
-						["name"] = "Zul'Farrak",
-						["rested"] = 3899,
-						["killTotal"] = 18755,
-						["level"] = 47,
-						["killCount"] = 126,
-						["inProgress"] = false,
-					}, -- [83]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 470,
-						["killCount"] = 3,
-						["killTotal"] = 470,
-						["level"] = 47,
-						["rested"] = 0,
-						["name"] = "Zul'Farrak",
-					}, -- [84]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 5988,
-						["killCount"] = 30,
-						["killTotal"] = 5988,
-						["level"] = 47,
-						["rested"] = 22,
-						["name"] = "Zul'Farrak",
-					}, -- [85]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 21609,
-						["killCount"] = 191,
-						["killTotal"] = 21609,
-						["level"] = 47,
-						["rested"] = 318,
-						["name"] = "Uldaman",
-					}, -- [86]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 20664,
-						["killCount"] = 110,
-						["killTotal"] = 20664,
-						["level"] = 47,
-						["rested"] = 6387,
-						["name"] = "Zul'Farrak",
-					}, -- [87]
-					{
-						["name"] = "Zul'Farrak",
-						["totalXP"] = 15301,
-						["rested"] = 0,
-						["killTotal"] = 15301,
-						["level"] = 47,
+						["name"] = "Blackrock Depths",
+						["totalXP"] = 11067,
+						["rested"] = 11067,
+						["killTotal"] = 11067,
+						["level"] = 58,
 						["inProgress"] = false,
 						["killCount"] = 106,
-					}, -- [88]
+					}, -- [10]
 					{
-						["name"] = "Zul'Farrak",
-						["totalXP"] = 16699,
+						["totalXP"] = 24618,
+						["name"] = "Blackrock Spire",
 						["rested"] = 0,
-						["killTotal"] = 16699,
-						["level"] = 46,
+						["killTotal"] = 24618,
+						["level"] = 57,
+						["killCount"] = 109,
 						["inProgress"] = false,
-						["killCount"] = 112,
-					}, -- [89]
+					}, -- [11]
 					{
-						["name"] = "Zul'Farrak",
-						["totalXP"] = 16554,
+						["inProgress"] = false,
+						["totalXP"] = 23800,
+						["killCount"] = 109,
+						["killTotal"] = 23800,
+						["level"] = 57,
 						["rested"] = 0,
-						["killTotal"] = 16554,
-						["level"] = 46,
-						["inProgress"] = false,
-						["killCount"] = 104,
-					}, -- [90]
+						["name"] = "Blackrock Spire",
+					}, -- [12]
 					{
-						["name"] = "Zul'Farrak",
-						["totalXP"] = 16215,
+						["inProgress"] = false,
+						["totalXP"] = 23720,
+						["killCount"] = 109,
+						["killTotal"] = 23720,
+						["level"] = 57,
 						["rested"] = 0,
-						["killTotal"] = 16215,
-						["level"] = 46,
-						["inProgress"] = false,
-						["killCount"] = 107,
-					}, -- [91]
+						["name"] = "Blackrock Spire",
+					}, -- [13]
 					{
-						["name"] = "Zul'Farrak",
-						["totalXP"] = 17656,
+						["inProgress"] = false,
+						["totalXP"] = 22251,
+						["killCount"] = 101,
+						["killTotal"] = 22251,
+						["level"] = 57,
+						["rested"] = 168,
+						["name"] = "Blackrock Spire",
+					}, -- [14]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 24524,
+						["killCount"] = 109,
+						["killTotal"] = 24524,
+						["level"] = 57,
+						["rested"] = 24524,
+						["name"] = "Blackrock Spire",
+					}, -- [15]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 9683,
+						["killCount"] = 80,
+						["killTotal"] = 9683,
+						["level"] = 56,
 						["rested"] = 0,
-						["killTotal"] = 17656,
-						["level"] = 46,
-						["inProgress"] = false,
-						["killCount"] = 104,
-					}, -- [92]
+						["name"] = "Blackrock Depths",
+					}, -- [16]
 					{
-						["name"] = "Zul'Farrak",
-						["totalXP"] = 16473,
+						["inProgress"] = false,
+						["totalXP"] = 26428,
+						["killCount"] = 205,
+						["killTotal"] = 26428,
+						["level"] = 56,
 						["rested"] = 0,
-						["killTotal"] = 16473,
-						["level"] = 46,
-						["inProgress"] = false,
-						["killCount"] = 103,
-					}, -- [93]
+						["name"] = "Blackrock Depths",
+					}, -- [17]
 					{
-						["name"] = "Zul'Farrak",
-						["totalXP"] = 14878,
-						["rested"] = 9241,
-						["killTotal"] = 14878,
-						["level"] = 46,
 						["inProgress"] = false,
-						["killCount"] = 86,
-					}, -- [94]
+						["totalXP"] = 25355,
+						["killCount"] = 199,
+						["killTotal"] = 25355,
+						["level"] = 56,
+						["rested"] = 10220,
+						["name"] = "Blackrock Depths",
+					}, -- [18]
 					{
-						["totalXP"] = 15426,
-						["name"] = "Zul'Farrak",
+						["name"] = "Blackrock Depths",
+						["totalXP"] = 25444,
+						["rested"] = 8333,
+						["killTotal"] = 25444,
+						["level"] = 56,
+						["inProgress"] = false,
+						["killCount"] = 165,
+					}, -- [19]
+					{
+						["totalXP"] = 16306,
+						["name"] = "Blackrock Depths",
+						["rested"] = 331,
+						["killTotal"] = 16306,
+						["level"] = 56,
+						["killCount"] = 117,
+						["inProgress"] = false,
+					}, -- [20]
+					{
+						["totalXP"] = 16761,
+						["name"] = "Blackrock Depths",
+						["rested"] = 1115,
+						["killTotal"] = 16761,
+						["level"] = 55,
+						["killCount"] = 165,
+						["inProgress"] = false,
+					}, -- [21]
+					{
+						["totalXP"] = 966,
+						["name"] = "Blackrock Depths",
 						["rested"] = 0,
-						["killTotal"] = 15426,
-						["level"] = 45,
-						["killCount"] = 76,
+						["killTotal"] = 966,
+						["level"] = 55,
+						["killCount"] = 7,
 						["inProgress"] = false,
-					}, -- [95]
+					}, -- [22]
 					{
-						["totalXP"] = 17794,
-						["name"] = "Zul'Farrak",
+						["totalXP"] = 10807,
+						["name"] = "Blackrock Depths",
 						["rested"] = 0,
-						["killTotal"] = 17794,
-						["level"] = 45,
-						["killCount"] = 86,
+						["killTotal"] = 10807,
+						["level"] = 55,
+						["killCount"] = 70,
 						["inProgress"] = false,
-					}, -- [96]
+					}, -- [23]
 					{
-						["totalXP"] = 19439,
-						["name"] = "Zul'Farrak",
-						["rested"] = 1168,
-						["killTotal"] = 19439,
-						["level"] = 45,
-						["killCount"] = 111,
+						["totalXP"] = 12739,
+						["name"] = "Blackrock Depths",
+						["rested"] = 9250,
+						["killTotal"] = 12739,
+						["level"] = 55,
+						["killCount"] = 87,
 						["inProgress"] = false,
-					}, -- [97]
+					}, -- [24]
 					{
-						["totalXP"] = 4922,
-						["name"] = "Zul'Farrak",
-						["rested"] = 4922,
-						["killTotal"] = 4922,
-						["level"] = 45,
-						["killCount"] = 20,
+						["totalXP"] = 869,
+						["name"] = "Blackrock Depths",
+						["rested"] = 869,
+						["killTotal"] = 869,
+						["level"] = 55,
+						["killCount"] = 3,
 						["inProgress"] = false,
-					}, -- [98]
+					}, -- [25]
 					{
+						["name"] = "Blackrock Depths",
+						["totalXP"] = 19578,
+						["rested"] = 2028,
+						["killTotal"] = 19578,
+						["level"] = 55,
 						["inProgress"] = false,
-						["totalXP"] = 12785,
-						["killCount"] = 71,
-						["killTotal"] = 12785,
-						["level"] = 45,
-						["rested"] = 9423,
-						["name"] = "Zul'Farrak",
-					}, -- [99]
+						["killCount"] = 143,
+					}, -- [26]
 					{
-						["totalXP"] = 25491,
-						["name"] = "Zul'Farrak",
-						["rested"] = 834,
-						["killTotal"] = 25491,
-						["level"] = 44,
+						["killCount"] = 65,
+						["name"] = "Blackrock Depths",
+						["inProgress"] = false,
+						["killTotal"] = 7474,
+						["level"] = 55,
+						["rested"] = 85,
+						["totalXP"] = 7474,
+					}, -- [27]
+					{
+						["killCount"] = 7,
+						["name"] = "Blackrock Depths",
+						["inProgress"] = false,
+						["killTotal"] = 656,
+						["level"] = 55,
+						["rested"] = 656,
+						["totalXP"] = 656,
+					}, -- [28]
+					{
+						["totalXP"] = 12916,
+						["name"] = "Blackrock Depths",
+						["rested"] = 10617,
+						["killTotal"] = 12916,
+						["level"] = 55,
+						["killCount"] = 127,
+						["inProgress"] = false,
+					}, -- [29]
+					{
+						["totalXP"] = 14170,
+						["name"] = "Blackrock Depths",
+						["rested"] = 14170,
+						["killTotal"] = 14170,
+						["level"] = 55,
+						["killCount"] = 135,
+						["inProgress"] = false,
+					}, -- [30]
+					{
+						["totalXP"] = 15860,
+						["name"] = "Blackrock Depths",
+						["rested"] = 0,
+						["killTotal"] = 15860,
+						["level"] = 54,
+						["killCount"] = 114,
+						["inProgress"] = false,
+					}, -- [31]
+					{
+						["totalXP"] = 16489,
+						["name"] = "Blackrock Depths",
+						["rested"] = 0,
+						["killTotal"] = 16489,
+						["level"] = 54,
+						["killCount"] = 113,
+						["inProgress"] = false,
+					}, -- [32]
+					{
+						["totalXP"] = 17273,
+						["name"] = "Blackrock Depths",
+						["rested"] = 0,
+						["killTotal"] = 17273,
+						["level"] = 54,
+						["killCount"] = 127,
+						["inProgress"] = false,
+					}, -- [33]
+					{
+						["totalXP"] = 17546,
+						["name"] = "Blackrock Depths",
+						["rested"] = 0,
+						["killTotal"] = 17546,
+						["level"] = 54,
+						["killCount"] = 129,
+						["inProgress"] = false,
+					}, -- [34]
+					{
+						["totalXP"] = 18090,
+						["name"] = "Blackrock Depths",
+						["rested"] = 0,
+						["killTotal"] = 18090,
+						["level"] = 54,
+						["killCount"] = 131,
+						["inProgress"] = false,
+					}, -- [35]
+					{
+						["totalXP"] = 16823,
+						["name"] = "Blackrock Depths",
+						["rested"] = 7080,
+						["killTotal"] = 16823,
+						["level"] = 54,
 						["killCount"] = 125,
 						["inProgress"] = false,
+					}, -- [36]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 25663,
+						["killCount"] = 101,
+						["killTotal"] = 25663,
+						["level"] = 54,
+						["rested"] = 0,
+						["name"] = "Blackrock Spire",
+					}, -- [37]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 27453,
+						["killCount"] = 105,
+						["killTotal"] = 27453,
+						["level"] = 53,
+						["rested"] = 0,
+						["name"] = "Blackrock Spire",
+					}, -- [38]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 24416,
+						["killCount"] = 105,
+						["killTotal"] = 24416,
+						["level"] = 53,
+						["rested"] = 2958,
+						["name"] = "Blackrock Spire",
+					}, -- [39]
+					{
+						["totalXP"] = 22244,
+						["name"] = "Blackrock Depths",
+						["rested"] = 11785,
+						["killTotal"] = 22244,
+						["level"] = 53,
+						["killCount"] = 173,
+						["inProgress"] = false,
+					}, -- [40]
+					{
+						["name"] = "Blackrock Depths",
+						["totalXP"] = 15919,
+						["rested"] = 0,
+						["killTotal"] = 15919,
+						["level"] = 53,
+						["inProgress"] = false,
+						["killCount"] = 132,
+					}, -- [41]
+					{
+						["name"] = "Blackrock Depths",
+						["totalXP"] = 12884,
+						["rested"] = 0,
+						["killTotal"] = 12884,
+						["level"] = 53,
+						["inProgress"] = false,
+						["killCount"] = 108,
+					}, -- [42]
+					{
+						["name"] = "Blackrock Depths",
+						["totalXP"] = 15615,
+						["rested"] = 0,
+						["killTotal"] = 15615,
+						["level"] = 53,
+						["inProgress"] = false,
+						["killCount"] = 128,
+					}, -- [43]
+					{
+						["name"] = "Blackrock Depths",
+						["totalXP"] = 14565,
+						["rested"] = 0,
+						["killTotal"] = 14565,
+						["level"] = 53,
+						["inProgress"] = false,
+						["killCount"] = 126,
+					}, -- [44]
+					{
+						["name"] = "Blackrock Depths",
+						["totalXP"] = 16280,
+						["rested"] = 0,
+						["killTotal"] = 16280,
+						["level"] = 52,
+						["inProgress"] = false,
+						["killCount"] = 130,
+					}, -- [45]
+					{
+						["name"] = "Blackrock Depths",
+						["totalXP"] = 14889,
+						["rested"] = 0,
+						["killTotal"] = 14889,
+						["level"] = 52,
+						["inProgress"] = false,
+						["killCount"] = 125,
+					}, -- [46]
+					{
+						["name"] = "Blackrock Depths",
+						["totalXP"] = 15079,
+						["rested"] = 7036,
+						["killTotal"] = 15079,
+						["level"] = 52,
+						["inProgress"] = false,
+						["killCount"] = 122,
+					}, -- [47]
+					{
+						["totalXP"] = 1456,
+						["name"] = "Blackrock Depths",
+						["rested"] = 1456,
+						["killTotal"] = 1456,
+						["level"] = 52,
+						["killCount"] = 11,
+						["inProgress"] = false,
+					}, -- [48]
+					{
+						["totalXP"] = 11384,
+						["name"] = "Blackrock Depths",
+						["rested"] = 11384,
+						["killTotal"] = 11384,
+						["level"] = 52,
+						["killCount"] = 81,
+						["inProgress"] = false,
+					}, -- [49]
+					{
+						["totalXP"] = 18235,
+						["name"] = "Blackrock Depths",
+						["rested"] = 0,
+						["killTotal"] = 18235,
+						["level"] = 51,
+						["killCount"] = 126,
+						["inProgress"] = false,
+					}, -- [50]
+					{
+						["totalXP"] = 1178,
+						["name"] = "Blackrock Depths",
+						["rested"] = 0,
+						["killTotal"] = 1178,
+						["level"] = 51,
+						["killCount"] = 15,
+						["inProgress"] = false,
+					}, -- [51]
+					{
+						["totalXP"] = 19709,
+						["name"] = "Blackrock Depths",
+						["rested"] = 336,
+						["killTotal"] = 19709,
+						["level"] = 51,
+						["killCount"] = 147,
+						["inProgress"] = false,
+					}, -- [52]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 24125,
+						["killCount"] = 222,
+						["killTotal"] = 24125,
+						["level"] = 51,
+						["rested"] = 0,
+						["name"] = "Zul'Farrak",
+					}, -- [53]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 13627,
+						["killCount"] = 97,
+						["killTotal"] = 13627,
+						["level"] = 51,
+						["rested"] = 0,
+						["name"] = "Zul'Farrak",
+					}, -- [54]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 13938,
+						["killCount"] = 119,
+						["killTotal"] = 13938,
+						["level"] = 51,
+						["rested"] = 0,
+						["name"] = "Zul'Farrak",
+					}, -- [55]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 14878,
+						["killCount"] = 127,
+						["killTotal"] = 14878,
+						["level"] = 51,
+						["rested"] = 0,
+						["name"] = "Zul'Farrak",
+					}, -- [56]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 13999,
+						["killCount"] = 120,
+						["killTotal"] = 13999,
+						["level"] = 51,
+						["rested"] = 0,
+						["name"] = "Zul'Farrak",
+					}, -- [57]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 13765,
+						["killCount"] = 120,
+						["killTotal"] = 13765,
+						["level"] = 51,
+						["rested"] = 0,
+						["name"] = "Zul'Farrak",
+					}, -- [58]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 12967,
+						["killCount"] = 113,
+						["killTotal"] = 12967,
+						["level"] = 51,
+						["rested"] = 0,
+						["name"] = "Zul'Farrak",
+					}, -- [59]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 13882,
+						["killCount"] = 118,
+						["killTotal"] = 13882,
+						["level"] = 50,
+						["rested"] = 0,
+						["name"] = "Zul'Farrak",
+					}, -- [60]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 16648,
+						["killCount"] = 129,
+						["killTotal"] = 16648,
+						["level"] = 50,
+						["rested"] = 0,
+						["name"] = "Zul'Farrak",
+					}, -- [61]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 14761,
+						["killCount"] = 115,
+						["killTotal"] = 14761,
+						["level"] = 50,
+						["rested"] = 39,
+						["name"] = "Zul'Farrak",
+					}, -- [62]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 13111,
+						["killCount"] = 133,
+						["killTotal"] = 13111,
+						["level"] = 50,
+						["rested"] = 5315,
+						["name"] = "Maraudon",
+					}, -- [63]
+					{
+						["name"] = "Zul'Farrak",
+						["totalXP"] = 14032,
+						["rested"] = 0,
+						["killTotal"] = 14032,
+						["level"] = 50,
+						["inProgress"] = false,
+						["killCount"] = 89,
+					}, -- [64]
+					{
+						["name"] = "Zul'Farrak",
+						["totalXP"] = 15829,
+						["rested"] = 0,
+						["killTotal"] = 15829,
+						["level"] = 50,
+						["inProgress"] = false,
+						["killCount"] = 126,
+					}, -- [65]
+					{
+						["name"] = "Zul'Farrak",
+						["totalXP"] = 15408,
+						["rested"] = 0,
+						["killTotal"] = 15408,
+						["level"] = 50,
+						["inProgress"] = false,
+						["killCount"] = 120,
+					}, -- [66]
+					{
+						["totalXP"] = 14684,
+						["name"] = "Zul'Farrak",
+						["rested"] = 0,
+						["killTotal"] = 14684,
+						["level"] = 49,
+						["killCount"] = 95,
+						["inProgress"] = false,
+					}, -- [67]
+					{
+						["totalXP"] = 12693,
+						["name"] = "Zul'Farrak",
+						["rested"] = 0,
+						["killTotal"] = 12693,
+						["level"] = 49,
+						["killCount"] = 83,
+						["inProgress"] = false,
+					}, -- [68]
+					{
+						["name"] = "Zul'Farrak",
+						["totalXP"] = 1938,
+						["rested"] = 0,
+						["killTotal"] = 1938,
+						["level"] = 49,
+						["inProgress"] = false,
+						["killCount"] = 12,
+					}, -- [69]
+					{
+						["name"] = "Zul'Farrak",
+						["totalXP"] = 3860,
+						["rested"] = 221,
+						["killTotal"] = 3860,
+						["level"] = 49,
+						["inProgress"] = false,
+						["killCount"] = 23,
+					}, -- [70]
+					{
+						["name"] = "Zul'Farrak",
+						["totalXP"] = 7859,
+						["rested"] = 7859,
+						["killTotal"] = 7859,
+						["level"] = 49,
+						["inProgress"] = false,
+						["killCount"] = 70,
+					}, -- [71]
+					{
+						["totalXP"] = 18015,
+						["name"] = "Zul'Farrak",
+						["rested"] = 0,
+						["killTotal"] = 18015,
+						["level"] = 49,
+						["killCount"] = 129,
+						["inProgress"] = false,
+					}, -- [72]
+					{
+						["totalXP"] = 20926,
+						["name"] = "Zul'Farrak",
+						["rested"] = 0,
+						["killTotal"] = 20926,
+						["level"] = 49,
+						["killCount"] = 151,
+						["inProgress"] = false,
+					}, -- [73]
+					{
+						["totalXP"] = 20646,
+						["name"] = "Zul'Farrak",
+						["rested"] = 0,
+						["killTotal"] = 20646,
+						["level"] = 49,
+						["killCount"] = 148,
+						["inProgress"] = false,
+					}, -- [74]
+					{
+						["totalXP"] = 23690,
+						["name"] = "Zul'Farrak",
+						["rested"] = 0,
+						["killTotal"] = 23690,
+						["level"] = 49,
+						["killCount"] = 169,
+						["inProgress"] = false,
+					}, -- [75]
+					{
+						["totalXP"] = 1789,
+						["name"] = "Zul'Farrak",
+						["rested"] = 0,
+						["killTotal"] = 1789,
+						["level"] = 49,
+						["killCount"] = 20,
+						["inProgress"] = false,
+					}, -- [76]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 13083,
+						["killCount"] = 82,
+						["killTotal"] = 13083,
+						["level"] = 48,
+						["rested"] = 179,
+						["name"] = "Zul'Farrak",
+					}, -- [77]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 16070,
+						["killCount"] = 111,
+						["killTotal"] = 16070,
+						["level"] = 48,
+						["rested"] = 0,
+						["name"] = "Zul'Farrak",
+					}, -- [78]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 17753,
+						["killCount"] = 124,
+						["killTotal"] = 17753,
+						["level"] = 48,
+						["rested"] = 0,
+						["name"] = "Zul'Farrak",
+					}, -- [79]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 20312,
+						["killCount"] = 137,
+						["killTotal"] = 20312,
+						["level"] = 48,
+						["rested"] = 0,
+						["name"] = "Zul'Farrak",
+					}, -- [80]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 17217,
+						["killCount"] = 103,
+						["killTotal"] = 17217,
+						["level"] = 48,
+						["rested"] = 0,
+						["name"] = "Zul'Farrak",
+					}, -- [81]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 15856,
+						["killCount"] = 113,
+						["killTotal"] = 15856,
+						["level"] = 48,
+						["rested"] = 0,
+						["name"] = "Zul'Farrak",
+					}, -- [82]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 18755,
+						["killCount"] = 126,
+						["killTotal"] = 18755,
+						["level"] = 47,
+						["rested"] = 3899,
+						["name"] = "Zul'Farrak",
+					}, -- [83]
+					{
+						["name"] = "Zul'Farrak",
+						["totalXP"] = 470,
+						["rested"] = 0,
+						["killTotal"] = 470,
+						["level"] = 47,
+						["inProgress"] = false,
+						["killCount"] = 3,
+					}, -- [84]
+					{
+						["name"] = "Zul'Farrak",
+						["totalXP"] = 5988,
+						["rested"] = 22,
+						["killTotal"] = 5988,
+						["level"] = 47,
+						["inProgress"] = false,
+						["killCount"] = 30,
+					}, -- [85]
+					{
+						["name"] = "Uldaman",
+						["totalXP"] = 21609,
+						["rested"] = 318,
+						["killTotal"] = 21609,
+						["level"] = 47,
+						["inProgress"] = false,
+						["killCount"] = 191,
+					}, -- [86]
+					{
+						["name"] = "Zul'Farrak",
+						["totalXP"] = 20664,
+						["rested"] = 6387,
+						["killTotal"] = 20664,
+						["level"] = 47,
+						["inProgress"] = false,
+						["killCount"] = 110,
+					}, -- [87]
+					{
+						["killCount"] = 106,
+						["name"] = "Zul'Farrak",
+						["inProgress"] = false,
+						["killTotal"] = 15301,
+						["level"] = 47,
+						["rested"] = 0,
+						["totalXP"] = 15301,
+					}, -- [88]
+					{
+						["killCount"] = 112,
+						["name"] = "Zul'Farrak",
+						["inProgress"] = false,
+						["killTotal"] = 16699,
+						["level"] = 46,
+						["rested"] = 0,
+						["totalXP"] = 16699,
+					}, -- [89]
+					{
+						["killCount"] = 104,
+						["name"] = "Zul'Farrak",
+						["inProgress"] = false,
+						["killTotal"] = 16554,
+						["level"] = 46,
+						["rested"] = 0,
+						["totalXP"] = 16554,
+					}, -- [90]
+					{
+						["killCount"] = 107,
+						["name"] = "Zul'Farrak",
+						["inProgress"] = false,
+						["killTotal"] = 16215,
+						["level"] = 46,
+						["rested"] = 0,
+						["totalXP"] = 16215,
+					}, -- [91]
+					{
+						["killCount"] = 104,
+						["name"] = "Zul'Farrak",
+						["inProgress"] = false,
+						["killTotal"] = 17656,
+						["level"] = 46,
+						["rested"] = 0,
+						["totalXP"] = 17656,
+					}, -- [92]
+					{
+						["killCount"] = 103,
+						["name"] = "Zul'Farrak",
+						["inProgress"] = false,
+						["killTotal"] = 16473,
+						["level"] = 46,
+						["rested"] = 0,
+						["totalXP"] = 16473,
+					}, -- [93]
+					{
+						["killCount"] = 86,
+						["name"] = "Zul'Farrak",
+						["inProgress"] = false,
+						["killTotal"] = 14878,
+						["level"] = 46,
+						["rested"] = 9241,
+						["totalXP"] = 14878,
+					}, -- [94]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 15426,
+						["killCount"] = 76,
+						["killTotal"] = 15426,
+						["level"] = 45,
+						["rested"] = 0,
+						["name"] = "Zul'Farrak",
+					}, -- [95]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 17794,
+						["killCount"] = 86,
+						["killTotal"] = 17794,
+						["level"] = 45,
+						["rested"] = 0,
+						["name"] = "Zul'Farrak",
+					}, -- [96]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 19439,
+						["killCount"] = 111,
+						["killTotal"] = 19439,
+						["level"] = 45,
+						["rested"] = 1168,
+						["name"] = "Zul'Farrak",
+					}, -- [97]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 4922,
+						["killCount"] = 20,
+						["killTotal"] = 4922,
+						["level"] = 45,
+						["rested"] = 4922,
+						["name"] = "Zul'Farrak",
+					}, -- [98]
+					{
+						["name"] = "Zul'Farrak",
+						["totalXP"] = 12785,
+						["rested"] = 9423,
+						["killTotal"] = 12785,
+						["level"] = 45,
+						["inProgress"] = false,
+						["killCount"] = 71,
+					}, -- [99]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 25491,
+						["killCount"] = 125,
+						["killTotal"] = 25491,
+						["level"] = 44,
+						["rested"] = 834,
+						["name"] = "Zul'Farrak",
 					}, -- [100]
 				},
 				["questAverage"] = 5105,
@@ -2777,925 +2777,313 @@ XToLevelDB = {
 				},
 			},
 		},
-		["Partijleider - Razorgore"] = {
+		["Mírjam - Firemaw"] = {
 			["data"] = {
 				["total"] = {
-					["quests"] = 635,
-					["dungeonKills"] = 10210,
-					["mobKills"] = 15786,
+					["quests"] = 2,
+					["mobKills"] = 70,
 				},
-				["killAverage"] = 451.2,
-				["dungeonList"] = {
-					{
-						["killCount"] = 31,
-						["name"] = "The Black Morass",
-						["inProgress"] = false,
-						["killTotal"] = 20716,
-						["level"] = 68,
-						["rested"] = 438,
-						["totalXP"] = 20716,
-					}, -- [1]
-					{
-						["name"] = "Sethekk Halls",
-						["totalXP"] = 84291,
-						["rested"] = 0,
-						["killTotal"] = 84291,
-						["level"] = 66,
-						["inProgress"] = false,
-						["killCount"] = 137,
-					}, -- [2]
-					{
-						["name"] = "Sethekk Halls",
-						["totalXP"] = 84017,
-						["rested"] = 0,
-						["killTotal"] = 84017,
-						["level"] = 66,
-						["inProgress"] = false,
-						["killCount"] = 138,
-					}, -- [3]
-					{
-						["name"] = "Sethekk Halls",
-						["totalXP"] = 81974,
-						["rested"] = 0,
-						["killTotal"] = 81974,
-						["level"] = 66,
-						["inProgress"] = false,
-						["killCount"] = 138,
-					}, -- [4]
-					{
-						["name"] = "Sethekk Halls",
-						["totalXP"] = 81364,
-						["rested"] = 0,
-						["killTotal"] = 81364,
-						["level"] = 66,
-						["inProgress"] = false,
-						["killCount"] = 133,
-					}, -- [5]
-					{
-						["totalXP"] = 5937,
-						["name"] = "Sethekk Halls",
-						["rested"] = 0,
-						["killTotal"] = 5937,
-						["level"] = 66,
-						["killCount"] = 6,
-						["inProgress"] = false,
-					}, -- [6]
-					{
-						["totalXP"] = 75353,
-						["name"] = "Sethekk Halls",
-						["rested"] = 382,
-						["killTotal"] = 75353,
-						["level"] = 66,
-						["killCount"] = 125,
-						["inProgress"] = false,
-					}, -- [7]
-					{
-						["totalXP"] = 75565,
-						["name"] = "Sethekk Halls",
-						["rested"] = 0,
-						["killTotal"] = 75565,
-						["level"] = 66,
-						["killCount"] = 130,
-						["inProgress"] = false,
-					}, -- [8]
-					{
-						["totalXP"] = 81529,
-						["name"] = "Sethekk Halls",
-						["rested"] = 1630,
-						["killTotal"] = 81529,
-						["level"] = 66,
-						["killCount"] = 139,
-						["inProgress"] = false,
-					}, -- [9]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 13200,
-						["killCount"] = 15,
-						["killTotal"] = 13200,
-						["level"] = 66,
-						["rested"] = 0,
-						["name"] = "Sethekk Halls",
-					}, -- [10]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 23349,
-						["killCount"] = 49,
-						["killTotal"] = 23349,
-						["level"] = 66,
-						["rested"] = 0,
-						["name"] = "Sethekk Halls",
-					}, -- [11]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 43933,
-						["killCount"] = 68,
-						["killTotal"] = 43933,
-						["level"] = 66,
-						["rested"] = 134,
-						["name"] = "Sethekk Halls",
-					}, -- [12]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 92822,
-						["killCount"] = 160,
-						["killTotal"] = 92822,
-						["level"] = 65,
-						["rested"] = 18434,
-						["name"] = "Mana-Tombs",
-					}, -- [13]
-					{
-						["name"] = "The Underbog",
-						["totalXP"] = 77223,
-						["rested"] = 0,
-						["killTotal"] = 77223,
-						["level"] = 64,
-						["inProgress"] = false,
-						["killCount"] = 115,
-					}, -- [14]
-					{
-						["name"] = "The Underbog",
-						["totalXP"] = 50828,
-						["rested"] = 0,
-						["killTotal"] = 50828,
-						["level"] = 64,
-						["inProgress"] = false,
-						["killCount"] = 73,
-					}, -- [15]
-					{
-						["name"] = "The Underbog",
-						["totalXP"] = 28442,
-						["rested"] = 0,
-						["killTotal"] = 28442,
-						["level"] = 64,
-						["inProgress"] = false,
-						["killCount"] = 43,
-					}, -- [16]
-					{
-						["name"] = "The Underbog",
-						["totalXP"] = 78710,
-						["rested"] = 0,
-						["killTotal"] = 78710,
-						["level"] = 64,
-						["inProgress"] = false,
-						["killCount"] = 116,
-					}, -- [17]
-					{
-						["name"] = "The Slave Pens",
-						["totalXP"] = 56364,
-						["rested"] = 0,
-						["killTotal"] = 56364,
-						["level"] = 64,
-						["inProgress"] = false,
-						["killCount"] = 96,
-					}, -- [18]
-					{
-						["name"] = "The Underbog",
-						["totalXP"] = 71132,
-						["rested"] = 7830,
-						["killTotal"] = 71132,
-						["level"] = 64,
-						["inProgress"] = false,
-						["killCount"] = 103,
-					}, -- [19]
-					{
-						["totalXP"] = 78765,
-						["name"] = "The Underbog",
-						["rested"] = 0,
-						["killTotal"] = 78765,
-						["level"] = 64,
-						["killCount"] = 116,
-						["inProgress"] = false,
-					}, -- [20]
-					{
-						["totalXP"] = 77051,
-						["name"] = "The Underbog",
-						["rested"] = 1131,
-						["killTotal"] = 77051,
-						["level"] = 63,
-						["killCount"] = 113,
-						["inProgress"] = false,
-					}, -- [21]
-					{
-						["totalXP"] = 87659,
-						["name"] = "The Slave Pens",
-						["rested"] = 0,
-						["killTotal"] = 87659,
-						["level"] = 63,
-						["killCount"] = 151,
-						["inProgress"] = false,
-					}, -- [22]
-					{
-						["totalXP"] = 74897,
-						["name"] = "The Underbog",
-						["rested"] = 0,
-						["killTotal"] = 74897,
-						["level"] = 63,
-						["killCount"] = 105,
-						["inProgress"] = false,
-					}, -- [23]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 8292,
-						["killCount"] = 20,
-						["killTotal"] = 8292,
-						["level"] = 63,
-						["rested"] = 5211,
-						["name"] = "The Slave Pens",
-					}, -- [24]
-					{
-						["name"] = "The Slave Pens",
-						["totalXP"] = 81749,
-						["rested"] = 0,
-						["killTotal"] = 81749,
-						["level"] = 63,
-						["inProgress"] = false,
-						["killCount"] = 134,
-					}, -- [25]
-					{
-						["name"] = "The Blood Furnace",
-						["totalXP"] = 79154,
-						["rested"] = 0,
-						["killTotal"] = 79154,
-						["level"] = 62,
-						["inProgress"] = false,
-						["killCount"] = 132,
-					}, -- [26]
-					{
-						["name"] = "Hellfire Ramparts",
-						["totalXP"] = 58392,
-						["rested"] = 0,
-						["killTotal"] = 58392,
-						["level"] = 61,
-						["inProgress"] = false,
-						["killCount"] = 104,
-					}, -- [27]
-					{
-						["name"] = "The Blood Furnace",
-						["totalXP"] = 78929,
-						["rested"] = 0,
-						["killTotal"] = 78929,
-						["level"] = 61,
-						["inProgress"] = false,
-						["killCount"] = 125,
-					}, -- [28]
-					{
-						["name"] = "The Blood Furnace",
-						["totalXP"] = 25219,
-						["rested"] = 14705,
-						["killTotal"] = 25219,
-						["level"] = 61,
-						["inProgress"] = false,
-						["killCount"] = 39,
-					}, -- [29]
-					{
-						["killCount"] = 101,
-						["name"] = "Hellfire Ramparts",
-						["inProgress"] = false,
-						["killTotal"] = 57402,
-						["level"] = 61,
-						["rested"] = 173,
-						["totalXP"] = 57402,
-					}, -- [30]
-					{
-						["killCount"] = 35,
-						["name"] = "The Blood Furnace",
-						["inProgress"] = false,
-						["killTotal"] = 19946,
-						["level"] = 61,
-						["rested"] = 55,
-						["totalXP"] = 19946,
-					}, -- [31]
-					{
-						["killCount"] = 54,
-						["name"] = "Hellfire Ramparts",
-						["inProgress"] = false,
-						["killTotal"] = 28641,
-						["level"] = 61,
-						["rested"] = 0,
-						["totalXP"] = 28641,
-					}, -- [32]
-					{
-						["killCount"] = 136,
-						["name"] = "The Blood Furnace",
-						["inProgress"] = false,
-						["killTotal"] = 87323,
-						["level"] = 61,
-						["rested"] = 0,
-						["totalXP"] = 87323,
-					}, -- [33]
-					{
-						["killCount"] = 94,
-						["name"] = "Hellfire Ramparts",
-						["inProgress"] = false,
-						["killTotal"] = 54654,
-						["level"] = 61,
-						["rested"] = 0,
-						["totalXP"] = 54654,
-					}, -- [34]
-					{
-						["killCount"] = 132,
-						["name"] = "The Blood Furnace",
-						["inProgress"] = false,
-						["killTotal"] = 79662,
-						["level"] = 60,
-						["rested"] = 11311,
-						["totalXP"] = 79662,
-					}, -- [35]
-					{
-						["totalXP"] = 85371,
-						["name"] = "The Blood Furnace",
-						["rested"] = 0,
-						["killTotal"] = 85371,
-						["level"] = 60,
-						["killCount"] = 136,
-						["inProgress"] = false,
-					}, -- [36]
-					{
-						["totalXP"] = 58279,
-						["name"] = "The Blood Furnace",
-						["rested"] = 0,
-						["killTotal"] = 58279,
-						["level"] = 60,
-						["killCount"] = 91,
-						["inProgress"] = false,
-					}, -- [37]
-					{
-						["totalXP"] = 56453,
-						["name"] = "Hellfire Ramparts",
-						["rested"] = 0,
-						["killTotal"] = 56453,
-						["level"] = 60,
-						["killCount"] = 93,
-						["inProgress"] = false,
-					}, -- [38]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 56572,
-						["killCount"] = 96,
-						["killTotal"] = 56572,
-						["level"] = 60,
-						["rested"] = 10,
-						["name"] = "Hellfire Ramparts",
-					}, -- [39]
-					{
-						["name"] = "Hellfire Ramparts",
-						["totalXP"] = 48942,
-						["rested"] = 0,
-						["killTotal"] = 48942,
-						["level"] = 60,
-						["inProgress"] = false,
-						["killCount"] = 81,
-					}, -- [40]
-					{
-						["killCount"] = 3,
-						["name"] = "Hellfire Ramparts",
-						["inProgress"] = false,
-						["killTotal"] = 1794,
-						["level"] = 60,
-						["rested"] = 0,
-						["totalXP"] = 1794,
-					}, -- [41]
-					{
-						["killCount"] = 59,
-						["name"] = "The Blood Furnace",
-						["inProgress"] = false,
-						["killTotal"] = 36148,
-						["level"] = 60,
-						["rested"] = 15231,
-						["totalXP"] = 36148,
-					}, -- [42]
-					{
-						["name"] = "Stratholme",
-						["totalXP"] = 12987,
-						["rested"] = 2761,
-						["killTotal"] = 12987,
-						["level"] = 59,
-						["inProgress"] = false,
-						["killCount"] = 84,
-					}, -- [43]
-					{
-						["killCount"] = 179,
-						["name"] = "Stratholme",
-						["inProgress"] = false,
-						["killTotal"] = 38692,
-						["level"] = 59,
-						["rested"] = 0,
-						["totalXP"] = 38692,
-					}, -- [44]
-					{
-						["killCount"] = 125,
-						["name"] = "Stratholme",
-						["inProgress"] = false,
-						["killTotal"] = 20323,
-						["level"] = 59,
-						["rested"] = 152,
-						["totalXP"] = 20323,
-					}, -- [45]
-					{
-						["killCount"] = 91,
-						["name"] = "Blackrock Spire",
-						["inProgress"] = false,
-						["killTotal"] = 22088,
-						["level"] = 58,
-						["rested"] = 12052,
-						["totalXP"] = 22088,
-					}, -- [46]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 52221,
-						["killCount"] = 230,
-						["killTotal"] = 52221,
-						["level"] = 58,
-						["rested"] = 6685,
-						["name"] = "Scholomance",
-					}, -- [47]
-					{
-						["killCount"] = 88,
-						["name"] = "Stratholme",
-						["inProgress"] = false,
-						["killTotal"] = 13601,
-						["level"] = 57,
-						["rested"] = 0,
-						["totalXP"] = 13601,
-					}, -- [48]
-					{
-						["killCount"] = 28,
-						["name"] = "Scholomance",
-						["inProgress"] = false,
-						["killTotal"] = 8524,
-						["level"] = 57,
-						["rested"] = 142,
-						["totalXP"] = 8524,
-					}, -- [49]
-					{
-						["killCount"] = 176,
-						["name"] = "Stratholme",
-						["inProgress"] = false,
-						["killTotal"] = 40546,
-						["level"] = 57,
-						["rested"] = 0,
-						["totalXP"] = 40546,
-					}, -- [50]
-					{
-						["killCount"] = 43,
-						["name"] = "Blackrock Depths",
-						["inProgress"] = false,
-						["killTotal"] = 8152,
-						["level"] = 52,
-						["rested"] = 1658,
-						["totalXP"] = 8152,
-					}, -- [51]
-					{
-						["name"] = "The Temple of Atal'Hakkar",
-						["totalXP"] = 40474,
-						["rested"] = 8577,
-						["killTotal"] = 40474,
-						["level"] = 50,
-						["inProgress"] = false,
-						["killCount"] = 373,
-					}, -- [52]
-					{
-						["killCount"] = 179,
-						["name"] = "The Temple of Atal'Hakkar",
-						["inProgress"] = false,
-						["killTotal"] = 20738,
-						["level"] = 50,
-						["rested"] = 2231,
-						["totalXP"] = 20738,
-					}, -- [53]
-					{
-						["killCount"] = 110,
-						["name"] = "Zul'Farrak",
-						["inProgress"] = false,
-						["killTotal"] = 17357,
-						["level"] = 49,
-						["rested"] = 4966,
-						["totalXP"] = 17357,
-					}, -- [54]
-					{
-						["totalXP"] = 20851,
-						["name"] = "Zul'Farrak",
-						["rested"] = 4267,
-						["killTotal"] = 20851,
-						["level"] = 48,
-						["killCount"] = 202,
-						["inProgress"] = false,
-					}, -- [55]
-					{
-						["killCount"] = 261,
-						["name"] = "Maraudon",
-						["inProgress"] = false,
-						["killTotal"] = 24584,
-						["level"] = 47,
-						["rested"] = 0,
-						["totalXP"] = 24584,
-					}, -- [56]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 14618,
-						["killCount"] = 177,
-						["killTotal"] = 14618,
-						["level"] = 47,
-						["rested"] = 0,
-						["name"] = "Zul'Farrak",
-					}, -- [57]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 24117,
-						["killCount"] = 209,
-						["killTotal"] = 24117,
-						["level"] = 46,
-						["rested"] = 0,
-						["name"] = "Maraudon",
-					}, -- [58]
-					{
-						["name"] = "Zul'Farrak",
-						["totalXP"] = 32673,
-						["rested"] = 114,
-						["killTotal"] = 32673,
-						["level"] = 46,
-						["inProgress"] = false,
-						["killCount"] = 249,
-					}, -- [59]
-					{
-						["killCount"] = 261,
-						["name"] = "Zul'Farrak",
-						["inProgress"] = false,
-						["killTotal"] = 33219,
-						["level"] = 46,
-						["rested"] = 75,
-						["totalXP"] = 33219,
-					}, -- [60]
-					{
-						["killCount"] = 286,
-						["name"] = "Zul'Farrak",
-						["inProgress"] = false,
-						["killTotal"] = 33269,
-						["level"] = 44,
-						["rested"] = 0,
-						["totalXP"] = 33269,
-					}, -- [61]
-					{
-						["name"] = "Uldaman",
-						["totalXP"] = 6493,
-						["rested"] = 6493,
-						["killTotal"] = 6493,
-						["level"] = 44,
-						["inProgress"] = false,
-						["killCount"] = 71,
-					}, -- [62]
-					{
-						["totalXP"] = 26519,
-						["name"] = "Uldaman",
-						["rested"] = 1979,
-						["killTotal"] = 26519,
-						["level"] = 43,
-						["killCount"] = 216,
-						["inProgress"] = false,
-					}, -- [63]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 26042,
-						["killCount"] = 209,
-						["killTotal"] = 26042,
-						["level"] = 43,
-						["rested"] = 2664,
-						["name"] = "Zul'Farrak",
-					}, -- [64]
-					{
-						["killCount"] = 201,
-						["name"] = "Razorfen Downs",
-						["inProgress"] = false,
-						["killTotal"] = 22688,
-						["level"] = 40,
-						["rested"] = 0,
-						["totalXP"] = 22688,
-					}, -- [65]
-					{
-						["killCount"] = 67,
-						["name"] = "Scarlet Monastery",
-						["inProgress"] = false,
-						["killTotal"] = 10298,
-						["level"] = 39,
-						["rested"] = 0,
-						["totalXP"] = 10298,
-					}, -- [66]
-					{
-						["killCount"] = 72,
-						["name"] = "Scarlet Monastery",
-						["inProgress"] = false,
-						["killTotal"] = 8586,
-						["level"] = 39,
-						["rested"] = 0,
-						["totalXP"] = 8586,
-					}, -- [67]
-					{
-						["killCount"] = 66,
-						["name"] = "Scarlet Monastery",
-						["inProgress"] = false,
-						["killTotal"] = 8859,
-						["level"] = 39,
-						["rested"] = 0,
-						["totalXP"] = 8859,
-					}, -- [68]
-					{
-						["name"] = "Scarlet Monastery",
-						["totalXP"] = 12717,
-						["rested"] = 0,
-						["killTotal"] = 12717,
-						["level"] = 39,
-						["inProgress"] = false,
-						["killCount"] = 70,
-					}, -- [69]
-					{
-						["killCount"] = 3,
-						["name"] = "Scarlet Monastery",
-						["inProgress"] = false,
-						["killTotal"] = 663,
-						["level"] = 39,
-						["rested"] = 0,
-						["totalXP"] = 663,
-					}, -- [70]
-					{
-						["totalXP"] = 10837,
-						["name"] = "Scarlet Monastery",
-						["rested"] = 0,
-						["killTotal"] = 10837,
-						["level"] = 39,
-						["killCount"] = 67,
-						["inProgress"] = false,
-					}, -- [71]
-					{
-						["totalXP"] = 9667,
-						["name"] = "Scarlet Monastery",
-						["rested"] = 0,
-						["killTotal"] = 9667,
-						["level"] = 39,
-						["killCount"] = 50,
-						["inProgress"] = false,
-					}, -- [72]
-					{
-						["totalXP"] = 8361,
-						["name"] = "Scarlet Monastery",
-						["rested"] = 0,
-						["killTotal"] = 8361,
-						["level"] = 39,
-						["killCount"] = 45,
-						["inProgress"] = false,
-					}, -- [73]
-					{
-						["totalXP"] = 10842,
-						["name"] = "Scarlet Monastery",
-						["rested"] = 0,
-						["killTotal"] = 10842,
-						["level"] = 38,
-						["killCount"] = 65,
-						["inProgress"] = false,
-					}, -- [74]
-					{
-						["totalXP"] = 7029,
-						["name"] = "Scarlet Monastery",
-						["rested"] = 0,
-						["killTotal"] = 7029,
-						["level"] = 38,
-						["killCount"] = 38,
-						["inProgress"] = false,
-					}, -- [75]
-					{
-						["killCount"] = 70,
-						["name"] = "Scarlet Monastery",
-						["inProgress"] = false,
-						["killTotal"] = 10735,
-						["level"] = 36,
-						["rested"] = 0,
-						["totalXP"] = 10735,
-					}, -- [76]
-					{
-						["killCount"] = 70,
-						["name"] = "Scarlet Monastery",
-						["inProgress"] = false,
-						["killTotal"] = 11031,
-						["level"] = 36,
-						["rested"] = 0,
-						["totalXP"] = 11031,
-					}, -- [77]
-					{
-						["totalXP"] = 9125,
-						["name"] = "Scarlet Monastery",
-						["rested"] = 0,
-						["killTotal"] = 9125,
-						["level"] = 35,
-						["killCount"] = 78,
-						["inProgress"] = false,
-					}, -- [78]
-					{
-						["totalXP"] = 3325,
-						["name"] = "Scarlet Monastery",
-						["rested"] = 4,
-						["killTotal"] = 3325,
-						["level"] = 35,
-						["killCount"] = 69,
-						["inProgress"] = false,
-					}, -- [79]
-					{
-						["totalXP"] = 13319,
-						["name"] = "Scarlet Monastery",
-						["rested"] = 0,
-						["killTotal"] = 13319,
-						["level"] = 35,
-						["killCount"] = 75,
-						["inProgress"] = false,
-					}, -- [80]
-					{
-						["totalXP"] = 10902,
-						["name"] = "Scarlet Monastery",
-						["rested"] = 4519,
-						["killTotal"] = 10902,
-						["level"] = 35,
-						["killCount"] = 87,
-						["inProgress"] = false,
-					}, -- [81]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 8860,
-						["killCount"] = 81,
-						["killTotal"] = 8860,
-						["level"] = 34,
-						["rested"] = 2,
-						["name"] = "Scarlet Monastery",
-					}, -- [82]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 12627,
-						["killCount"] = 79,
-						["killTotal"] = 12627,
-						["level"] = 32,
-						["rested"] = 0,
-						["name"] = "Scarlet Monastery",
-					}, -- [83]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 10393,
-						["killCount"] = 63,
-						["killTotal"] = 10393,
-						["level"] = 32,
-						["rested"] = 0,
-						["name"] = "Scarlet Monastery",
-					}, -- [84]
-					{
-						["totalXP"] = 7887,
-						["name"] = "Scarlet Monastery",
-						["rested"] = 0,
-						["killTotal"] = 7887,
-						["level"] = 30,
-						["killCount"] = 64,
-						["inProgress"] = false,
-					}, -- [85]
-					{
-						["totalXP"] = 4799,
-						["name"] = "Scarlet Monastery",
-						["rested"] = 0,
-						["killTotal"] = 4799,
-						["level"] = 30,
-						["killCount"] = 41,
-						["inProgress"] = false,
-					}, -- [86]
-					{
-						["totalXP"] = 5730,
-						["name"] = "Scarlet Monastery",
-						["rested"] = 0,
-						["killTotal"] = 5730,
-						["level"] = 30,
-						["killCount"] = 51,
-						["inProgress"] = false,
-					}, -- [87]
-					{
-						["totalXP"] = 7711,
-						["name"] = "Scarlet Monastery",
-						["rested"] = 2,
-						["killTotal"] = 7711,
-						["level"] = 30,
-						["killCount"] = 78,
-						["inProgress"] = false,
-					}, -- [88]
-					{
-						["totalXP"] = 14511,
-						["name"] = "Razorfen Kraul",
-						["rested"] = 0,
-						["killTotal"] = 14511,
-						["level"] = 27,
-						["killCount"] = 158,
-						["inProgress"] = false,
-					}, -- [89]
-					{
-						["name"] = "Shadowfang Keep",
-						["totalXP"] = 7218,
-						["rested"] = 0,
-						["killTotal"] = 7218,
-						["level"] = 25,
-						["inProgress"] = false,
-						["killCount"] = 100,
-					}, -- [90]
-					{
-						["killCount"] = 77,
-						["name"] = "Shadowfang Keep",
-						["inProgress"] = false,
-						["killTotal"] = 6638,
-						["level"] = 25,
-						["rested"] = 27,
-						["totalXP"] = 6638,
-					}, -- [91]
-					{
-						["killCount"] = 205,
-						["name"] = "Wailing Caverns",
-						["inProgress"] = false,
-						["killTotal"] = 10339,
-						["level"] = 17,
-						["rested"] = 0,
-						["totalXP"] = 10339,
-					}, -- [92]
-					{
-						["name"] = "Ragefire Chasm",
-						["totalXP"] = 7616,
-						["rested"] = 1,
-						["killTotal"] = 7616,
-						["level"] = 14,
-						["inProgress"] = false,
-						["killCount"] = 97,
-					}, -- [93]
-					{
-						["name"] = "Ragefire Chasm",
-						["totalXP"] = 3939,
-						["rested"] = 0,
-						["killTotal"] = 3939,
-						["level"] = 13,
-						["inProgress"] = false,
-						["killCount"] = 111,
-					}, -- [94]
-				},
-				["questAverage"] = 11890,
-				["questList"] = {
-					12650, -- [1]
-				},
+				["killAverage"] = 12.3,
 				["killList"] = {
 					{
-						["mob"] = "Coilskar Waterkeeper",
-						["xp"] = 580,
+						["mob"] = "Burly Rockjaw Trogg",
+						["xp"] = 15,
 					}, -- [1]
 					{
-						["mob"] = "Enraged Water Spirit",
-						["xp"] = 546,
+						["mob"] = "Ragged Young Wolf",
+						["xp"] = 12,
 					}, -- [2]
 					{
-						["mob"] = "Enraged Water Spirit",
-						["xp"] = 580,
+						["mob"] = "Ragged Young Wolf",
+						["xp"] = 12,
 					}, -- [3]
 					{
-						["mob"] = "Enraged Water Spirit",
-						["xp"] = 546,
+						["mob"] = "Ragged Young Wolf",
+						["xp"] = 12,
 					}, -- [4]
+					{
+						["mob"] = "Ragged Young Wolf",
+						["xp"] = 12,
+					}, -- [5]
+					{
+						["mob"] = "Ragged Young Wolf",
+						["xp"] = 12,
+					}, -- [6]
+					{
+						["mob"] = "Ragged Young Wolf",
+						["xp"] = 12,
+					}, -- [7]
+					{
+						["mob"] = "Ragged Young Wolf",
+						["xp"] = 12,
+					}, -- [8]
+					{
+						["mob"] = "Ragged Young Wolf",
+						["xp"] = 12,
+					}, -- [9]
+					{
+						["mob"] = "Ragged Young Wolf",
+						["xp"] = 12,
+					}, -- [10]
+					{
+						["mob"] = "Small Crag Boar",
+						["xp"] = 16,
+					}, -- [11]
+					{
+						["mob"] = "Rockjaw Trogg",
+						["xp"] = 12,
+					}, -- [12]
+					{
+						["mob"] = "Ragged Young Wolf",
+						["xp"] = 12,
+					}, -- [13]
+					{
+						["mob"] = "Ragged Young Wolf",
+						["xp"] = 12,
+					}, -- [14]
+					{
+						["mob"] = "Ragged Young Wolf",
+						["xp"] = 12,
+					}, -- [15]
+					{
+						["mob"] = "Ragged Young Wolf",
+						["xp"] = 12,
+					}, -- [16]
+					{
+						["mob"] = "Ragged Young Wolf",
+						["xp"] = 12,
+					}, -- [17]
+					{
+						["mob"] = "Small Crag Boar",
+						["xp"] = 16,
+					}, -- [18]
+					{
+						["mob"] = "Ragged Young Wolf",
+						["xp"] = 12,
+					}, -- [19]
+					{
+						["mob"] = "Ragged Young Wolf",
+						["xp"] = 12,
+					}, -- [20]
+					{
+						["mob"] = "Rockjaw Trogg",
+						["xp"] = 12,
+					}, -- [21]
+					{
+						["mob"] = "Ragged Young Wolf",
+						["xp"] = 12,
+					}, -- [22]
+					{
+						["mob"] = "Ragged Young Wolf",
+						["xp"] = 12,
+					}, -- [23]
+					{
+						["mob"] = "Ragged Young Wolf",
+						["xp"] = 12,
+					}, -- [24]
+					{
+						["mob"] = "Ragged Young Wolf",
+						["xp"] = 12,
+					}, -- [25]
+					{
+						["mob"] = "Rockjaw Trogg",
+						["xp"] = 15,
+					}, -- [26]
+					{
+						["mob"] = "Burly Rockjaw Trogg",
+						["xp"] = 15,
+					}, -- [27]
+					{
+						["mob"] = "Ragged Young Wolf",
+						["xp"] = 12,
+					}, -- [28]
+					{
+						["mob"] = "Ragged Young Wolf",
+						["xp"] = 12,
+					}, -- [29]
+					{
+						["mob"] = "Ragged Young Wolf",
+						["xp"] = 12,
+					}, -- [30]
+					{
+						["mob"] = "Rockjaw Trogg",
+						["xp"] = 15,
+					}, -- [31]
+					{
+						["mob"] = "Ragged Young Wolf",
+						["xp"] = 12,
+					}, -- [32]
+					{
+						["mob"] = "Ragged Young Wolf",
+						["xp"] = 12,
+					}, -- [33]
+					{
+						["mob"] = "Burly Rockjaw Trogg",
+						["xp"] = 15,
+					}, -- [34]
+					{
+						["mob"] = "Ragged Young Wolf",
+						["xp"] = 12,
+					}, -- [35]
+					{
+						["mob"] = "Ragged Young Wolf",
+						["xp"] = 12,
+					}, -- [36]
+					{
+						["mob"] = "Ragged Young Wolf",
+						["xp"] = 12,
+					}, -- [37]
+					{
+						["mob"] = "Ragged Young Wolf",
+						["xp"] = 12,
+					}, -- [38]
+					{
+						["mob"] = "Rockjaw Trogg",
+						["xp"] = 15,
+					}, -- [39]
+					{
+						["mob"] = "Ragged Young Wolf",
+						["xp"] = 12,
+					}, -- [40]
+					{
+						["mob"] = "Ragged Young Wolf",
+						["xp"] = 12,
+					}, -- [41]
+					{
+						["mob"] = "Burly Rockjaw Trogg",
+						["xp"] = 15,
+					}, -- [42]
+					{
+						["mob"] = "Ragged Young Wolf",
+						["xp"] = 12,
+					}, -- [43]
+					{
+						["mob"] = "Ragged Young Wolf",
+						["xp"] = 14,
+					}, -- [44]
+					{
+						["mob"] = "Ragged Young Wolf",
+						["xp"] = 14,
+					}, -- [45]
+					{
+						["mob"] = "Ragged Timber Wolf",
+						["xp"] = 15,
+					}, -- [46]
+					{
+						["mob"] = "Rockjaw Trogg",
+						["xp"] = 15,
+					}, -- [47]
+					{
+						["mob"] = "Ragged Young Wolf",
+						["xp"] = 14,
+					}, -- [48]
+					{
+						["mob"] = "Ragged Young Wolf",
+						["xp"] = 14,
+					}, -- [49]
+					{
+						["mob"] = "Ragged Young Wolf",
+						["xp"] = 14,
+					}, -- [50]
+					{
+						["mob"] = "Rockjaw Trogg",
+						["xp"] = 14,
+					}, -- [51]
+					{
+						["mob"] = "Ragged Young Wolf",
+						["xp"] = 14,
+					}, -- [52]
+					{
+						["mob"] = "Burly Rockjaw Trogg",
+						["xp"] = 15,
+					}, -- [53]
+					{
+						["mob"] = "Ragged Young Wolf",
+						["xp"] = 14,
+					}, -- [54]
+					{
+						["mob"] = "Ragged Young Wolf",
+						["xp"] = 14,
+					}, -- [55]
+					{
+						["mob"] = "Ragged Young Wolf",
+						["xp"] = 14,
+					}, -- [56]
+					{
+						["mob"] = "Ragged Young Wolf",
+						["xp"] = 14,
+					}, -- [57]
+					{
+						["mob"] = "Ragged Young Wolf",
+						["xp"] = 14,
+					}, -- [58]
+					{
+						["mob"] = "Rockjaw Trogg",
+						["xp"] = 14,
+					}, -- [59]
+					{
+						["mob"] = "Ragged Young Wolf",
+						["xp"] = 14,
+					}, -- [60]
+					{
+						["mob"] = "Ragged Young Wolf",
+						["xp"] = 14,
+					}, -- [61]
+					{
+						["mob"] = "Ragged Young Wolf",
+						["xp"] = 14,
+					}, -- [62]
+					{
+						["mob"] = "Rockjaw Trogg",
+						["xp"] = 15,
+					}, -- [63]
+					{
+						["mob"] = "Rockjaw Trogg",
+						["xp"] = 14,
+					}, -- [64]
+					{
+						["mob"] = "Ragged Young Wolf",
+						["xp"] = 14,
+					}, -- [65]
+					{
+						["mob"] = "Ragged Timber Wolf",
+						["xp"] = 15,
+					}, -- [66]
+					{
+						["mob"] = "Ragged Young Wolf",
+						["xp"] = 14,
+					}, -- [67]
+					{
+						["mob"] = "Ragged Young Wolf",
+						["xp"] = 14,
+					}, -- [68]
+					{
+						["mob"] = "Ragged Young Wolf",
+						["xp"] = 14,
+					}, -- [69]
+					{
+						["mob"] = "Ragged Young Wolf",
+						["xp"] = 14,
+					}, -- [70]
 				},
 				["timer"] = {
-					["start"] = 102.766,
-					["total"] = 51568,
-					["lastUpdated"] = 3492.451,
-					["xpPerSec"] = 15.21321302716919,
+					["start"] = 269541.019,
+					["total"] = 1182,
+					["lastUpdated"] = 270875.547,
+					["xpPerSec"] = 0.885706407059242,
 				},
-				["npcXP"] = {
-					{
-						["level"] = 68,
-						["name"] = "Enraged Water Spirit",
-						["xp"] = 546,
-					}, -- [1]
-					{
-						["level"] = 69,
-						["name"] = "Enraged Water Spirit",
-						["xp"] = 580,
-					}, -- [2]
-					{
-						["level"] = 69,
-						["name"] = "Coilskar Waterkeeper",
-						["xp"] = 580,
-					}, -- [3]
-				},
-				["gathering"] = {
-					["Mining"] = {
-						{
-							["count"] = 1,
-							["target"] = "Fel Iron Deposit",
-							["level"] = 63,
-							["xp"] = 140,
-							["zoneID"] = 1944,
-						}, -- [1]
-					},
+				["questAverage"] = 60,
+				["questList"] = {
+					40, -- [1]
+					80, -- [2]
 				},
 			},
 		},
 		["Mirjam - Firemaw"] = {
 			["data"] = {
 				["total"] = {
-					["quests"] = 316,
 					["dungeonKills"] = 177,
+					["quests"] = 316,
 					["mobKills"] = 2209,
 				},
 				["killAverage"] = 92.4,
@@ -4109,13 +3497,13 @@ XToLevelDB = {
 				},
 				["dungeonList"] = {
 					{
+						["killCount"] = 177,
 						["name"] = "Zul'Farrak",
-						["totalXP"] = 25552,
-						["rested"] = 16322,
+						["inProgress"] = false,
 						["killTotal"] = 25552,
 						["level"] = 43,
-						["inProgress"] = false,
-						["killCount"] = 177,
+						["rested"] = 16322,
+						["totalXP"] = 25552,
 					}, -- [1]
 				},
 				["questAverage"] = 2452.5,
@@ -4223,54 +3611,1240 @@ XToLevelDB = {
 				},
 			},
 		},
-		["Partijlijder - Razorgore"] = {
+		["Partijleider - Razorgore"] = {
 			["data"] = {
+				["total"] = {
+					["dungeonKills"] = 10210,
+					["quests"] = 635,
+					["mobKills"] = 15786,
+				},
+				["killAverage"] = 451.2,
 				["dungeonList"] = {
 					{
+						["totalXP"] = 20716,
+						["name"] = "The Black Morass",
+						["rested"] = 438,
+						["killTotal"] = 20716,
+						["level"] = 68,
+						["killCount"] = 31,
 						["inProgress"] = false,
-						["totalXP"] = 61487,
-						["killCount"] = 106,
-						["killTotal"] = 61487,
-						["level"] = 60,
-						["rested"] = 2282,
-						["name"] = "Hellfire Ramparts",
 					}, -- [1]
 					{
-						["name"] = "Hellfire Ramparts",
-						["totalXP"] = 54900,
-						["rested"] = 0,
-						["killTotal"] = 54900,
-						["level"] = 59,
+						["killCount"] = 137,
+						["name"] = "Sethekk Halls",
 						["inProgress"] = false,
-						["killCount"] = 95,
+						["killTotal"] = 84291,
+						["level"] = 66,
+						["rested"] = 0,
+						["totalXP"] = 84291,
 					}, -- [2]
 					{
-						["name"] = "Hellfire Ramparts",
-						["totalXP"] = 50712,
-						["rested"] = 0,
-						["killTotal"] = 50712,
-						["level"] = 59,
+						["killCount"] = 138,
+						["name"] = "Sethekk Halls",
 						["inProgress"] = false,
-						["killCount"] = 89,
+						["killTotal"] = 84017,
+						["level"] = 66,
+						["rested"] = 0,
+						["totalXP"] = 84017,
 					}, -- [3]
 					{
-						["name"] = "Hellfire Ramparts",
-						["totalXP"] = 51622,
-						["rested"] = 0,
-						["killTotal"] = 51622,
-						["level"] = 59,
+						["killCount"] = 138,
+						["name"] = "Sethekk Halls",
 						["inProgress"] = false,
-						["killCount"] = 93,
+						["killTotal"] = 81974,
+						["level"] = 66,
+						["rested"] = 0,
+						["totalXP"] = 81974,
 					}, -- [4]
 					{
-						["totalXP"] = 48121,
-						["name"] = "Hellfire Ramparts",
-						["rested"] = 48121,
-						["killTotal"] = 48121,
-						["level"] = 58,
-						["killCount"] = 84,
+						["killCount"] = 133,
+						["name"] = "Sethekk Halls",
 						["inProgress"] = false,
+						["killTotal"] = 81364,
+						["level"] = 66,
+						["rested"] = 0,
+						["totalXP"] = 81364,
 					}, -- [5]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 5937,
+						["killCount"] = 6,
+						["killTotal"] = 5937,
+						["level"] = 66,
+						["rested"] = 0,
+						["name"] = "Sethekk Halls",
+					}, -- [6]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 75353,
+						["killCount"] = 125,
+						["killTotal"] = 75353,
+						["level"] = 66,
+						["rested"] = 382,
+						["name"] = "Sethekk Halls",
+					}, -- [7]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 75565,
+						["killCount"] = 130,
+						["killTotal"] = 75565,
+						["level"] = 66,
+						["rested"] = 0,
+						["name"] = "Sethekk Halls",
+					}, -- [8]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 81529,
+						["killCount"] = 139,
+						["killTotal"] = 81529,
+						["level"] = 66,
+						["rested"] = 1630,
+						["name"] = "Sethekk Halls",
+					}, -- [9]
+					{
+						["name"] = "Sethekk Halls",
+						["totalXP"] = 13200,
+						["rested"] = 0,
+						["killTotal"] = 13200,
+						["level"] = 66,
+						["inProgress"] = false,
+						["killCount"] = 15,
+					}, -- [10]
+					{
+						["name"] = "Sethekk Halls",
+						["totalXP"] = 23349,
+						["rested"] = 0,
+						["killTotal"] = 23349,
+						["level"] = 66,
+						["inProgress"] = false,
+						["killCount"] = 49,
+					}, -- [11]
+					{
+						["name"] = "Sethekk Halls",
+						["totalXP"] = 43933,
+						["rested"] = 134,
+						["killTotal"] = 43933,
+						["level"] = 66,
+						["inProgress"] = false,
+						["killCount"] = 68,
+					}, -- [12]
+					{
+						["name"] = "Mana-Tombs",
+						["totalXP"] = 92822,
+						["rested"] = 18434,
+						["killTotal"] = 92822,
+						["level"] = 65,
+						["inProgress"] = false,
+						["killCount"] = 160,
+					}, -- [13]
+					{
+						["killCount"] = 115,
+						["name"] = "The Underbog",
+						["inProgress"] = false,
+						["killTotal"] = 77223,
+						["level"] = 64,
+						["rested"] = 0,
+						["totalXP"] = 77223,
+					}, -- [14]
+					{
+						["killCount"] = 73,
+						["name"] = "The Underbog",
+						["inProgress"] = false,
+						["killTotal"] = 50828,
+						["level"] = 64,
+						["rested"] = 0,
+						["totalXP"] = 50828,
+					}, -- [15]
+					{
+						["killCount"] = 43,
+						["name"] = "The Underbog",
+						["inProgress"] = false,
+						["killTotal"] = 28442,
+						["level"] = 64,
+						["rested"] = 0,
+						["totalXP"] = 28442,
+					}, -- [16]
+					{
+						["killCount"] = 116,
+						["name"] = "The Underbog",
+						["inProgress"] = false,
+						["killTotal"] = 78710,
+						["level"] = 64,
+						["rested"] = 0,
+						["totalXP"] = 78710,
+					}, -- [17]
+					{
+						["killCount"] = 96,
+						["name"] = "The Slave Pens",
+						["inProgress"] = false,
+						["killTotal"] = 56364,
+						["level"] = 64,
+						["rested"] = 0,
+						["totalXP"] = 56364,
+					}, -- [18]
+					{
+						["killCount"] = 103,
+						["name"] = "The Underbog",
+						["inProgress"] = false,
+						["killTotal"] = 71132,
+						["level"] = 64,
+						["rested"] = 7830,
+						["totalXP"] = 71132,
+					}, -- [19]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 78765,
+						["killCount"] = 116,
+						["killTotal"] = 78765,
+						["level"] = 64,
+						["rested"] = 0,
+						["name"] = "The Underbog",
+					}, -- [20]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 77051,
+						["killCount"] = 113,
+						["killTotal"] = 77051,
+						["level"] = 63,
+						["rested"] = 1131,
+						["name"] = "The Underbog",
+					}, -- [21]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 87659,
+						["killCount"] = 151,
+						["killTotal"] = 87659,
+						["level"] = 63,
+						["rested"] = 0,
+						["name"] = "The Slave Pens",
+					}, -- [22]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 74897,
+						["killCount"] = 105,
+						["killTotal"] = 74897,
+						["level"] = 63,
+						["rested"] = 0,
+						["name"] = "The Underbog",
+					}, -- [23]
+					{
+						["name"] = "The Slave Pens",
+						["totalXP"] = 8292,
+						["rested"] = 5211,
+						["killTotal"] = 8292,
+						["level"] = 63,
+						["inProgress"] = false,
+						["killCount"] = 20,
+					}, -- [24]
+					{
+						["killCount"] = 134,
+						["name"] = "The Slave Pens",
+						["inProgress"] = false,
+						["killTotal"] = 81749,
+						["level"] = 63,
+						["rested"] = 0,
+						["totalXP"] = 81749,
+					}, -- [25]
+					{
+						["killCount"] = 132,
+						["name"] = "The Blood Furnace",
+						["inProgress"] = false,
+						["killTotal"] = 79154,
+						["level"] = 62,
+						["rested"] = 0,
+						["totalXP"] = 79154,
+					}, -- [26]
+					{
+						["killCount"] = 104,
+						["name"] = "Hellfire Ramparts",
+						["inProgress"] = false,
+						["killTotal"] = 58392,
+						["level"] = 61,
+						["rested"] = 0,
+						["totalXP"] = 58392,
+					}, -- [27]
+					{
+						["killCount"] = 125,
+						["name"] = "The Blood Furnace",
+						["inProgress"] = false,
+						["killTotal"] = 78929,
+						["level"] = 61,
+						["rested"] = 0,
+						["totalXP"] = 78929,
+					}, -- [28]
+					{
+						["killCount"] = 39,
+						["name"] = "The Blood Furnace",
+						["inProgress"] = false,
+						["killTotal"] = 25219,
+						["level"] = 61,
+						["rested"] = 14705,
+						["totalXP"] = 25219,
+					}, -- [29]
+					{
+						["totalXP"] = 57402,
+						["name"] = "Hellfire Ramparts",
+						["rested"] = 173,
+						["killTotal"] = 57402,
+						["level"] = 61,
+						["killCount"] = 101,
+						["inProgress"] = false,
+					}, -- [30]
+					{
+						["totalXP"] = 19946,
+						["name"] = "The Blood Furnace",
+						["rested"] = 55,
+						["killTotal"] = 19946,
+						["level"] = 61,
+						["killCount"] = 35,
+						["inProgress"] = false,
+					}, -- [31]
+					{
+						["totalXP"] = 28641,
+						["name"] = "Hellfire Ramparts",
+						["rested"] = 0,
+						["killTotal"] = 28641,
+						["level"] = 61,
+						["killCount"] = 54,
+						["inProgress"] = false,
+					}, -- [32]
+					{
+						["totalXP"] = 87323,
+						["name"] = "The Blood Furnace",
+						["rested"] = 0,
+						["killTotal"] = 87323,
+						["level"] = 61,
+						["killCount"] = 136,
+						["inProgress"] = false,
+					}, -- [33]
+					{
+						["totalXP"] = 54654,
+						["name"] = "Hellfire Ramparts",
+						["rested"] = 0,
+						["killTotal"] = 54654,
+						["level"] = 61,
+						["killCount"] = 94,
+						["inProgress"] = false,
+					}, -- [34]
+					{
+						["totalXP"] = 79662,
+						["name"] = "The Blood Furnace",
+						["rested"] = 11311,
+						["killTotal"] = 79662,
+						["level"] = 60,
+						["killCount"] = 132,
+						["inProgress"] = false,
+					}, -- [35]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 85371,
+						["killCount"] = 136,
+						["killTotal"] = 85371,
+						["level"] = 60,
+						["rested"] = 0,
+						["name"] = "The Blood Furnace",
+					}, -- [36]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 58279,
+						["killCount"] = 91,
+						["killTotal"] = 58279,
+						["level"] = 60,
+						["rested"] = 0,
+						["name"] = "The Blood Furnace",
+					}, -- [37]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 56453,
+						["killCount"] = 93,
+						["killTotal"] = 56453,
+						["level"] = 60,
+						["rested"] = 0,
+						["name"] = "Hellfire Ramparts",
+					}, -- [38]
+					{
+						["name"] = "Hellfire Ramparts",
+						["totalXP"] = 56572,
+						["rested"] = 10,
+						["killTotal"] = 56572,
+						["level"] = 60,
+						["inProgress"] = false,
+						["killCount"] = 96,
+					}, -- [39]
+					{
+						["killCount"] = 81,
+						["name"] = "Hellfire Ramparts",
+						["inProgress"] = false,
+						["killTotal"] = 48942,
+						["level"] = 60,
+						["rested"] = 0,
+						["totalXP"] = 48942,
+					}, -- [40]
+					{
+						["totalXP"] = 1794,
+						["name"] = "Hellfire Ramparts",
+						["rested"] = 0,
+						["killTotal"] = 1794,
+						["level"] = 60,
+						["killCount"] = 3,
+						["inProgress"] = false,
+					}, -- [41]
+					{
+						["totalXP"] = 36148,
+						["name"] = "The Blood Furnace",
+						["rested"] = 15231,
+						["killTotal"] = 36148,
+						["level"] = 60,
+						["killCount"] = 59,
+						["inProgress"] = false,
+					}, -- [42]
+					{
+						["killCount"] = 84,
+						["name"] = "Stratholme",
+						["inProgress"] = false,
+						["killTotal"] = 12987,
+						["level"] = 59,
+						["rested"] = 2761,
+						["totalXP"] = 12987,
+					}, -- [43]
+					{
+						["totalXP"] = 38692,
+						["name"] = "Stratholme",
+						["rested"] = 0,
+						["killTotal"] = 38692,
+						["level"] = 59,
+						["killCount"] = 179,
+						["inProgress"] = false,
+					}, -- [44]
+					{
+						["totalXP"] = 20323,
+						["name"] = "Stratholme",
+						["rested"] = 152,
+						["killTotal"] = 20323,
+						["level"] = 59,
+						["killCount"] = 125,
+						["inProgress"] = false,
+					}, -- [45]
+					{
+						["totalXP"] = 22088,
+						["name"] = "Blackrock Spire",
+						["rested"] = 12052,
+						["killTotal"] = 22088,
+						["level"] = 58,
+						["killCount"] = 91,
+						["inProgress"] = false,
+					}, -- [46]
+					{
+						["name"] = "Scholomance",
+						["totalXP"] = 52221,
+						["rested"] = 6685,
+						["killTotal"] = 52221,
+						["level"] = 58,
+						["inProgress"] = false,
+						["killCount"] = 230,
+					}, -- [47]
+					{
+						["totalXP"] = 13601,
+						["name"] = "Stratholme",
+						["rested"] = 0,
+						["killTotal"] = 13601,
+						["level"] = 57,
+						["killCount"] = 88,
+						["inProgress"] = false,
+					}, -- [48]
+					{
+						["totalXP"] = 8524,
+						["name"] = "Scholomance",
+						["rested"] = 142,
+						["killTotal"] = 8524,
+						["level"] = 57,
+						["killCount"] = 28,
+						["inProgress"] = false,
+					}, -- [49]
+					{
+						["totalXP"] = 40546,
+						["name"] = "Stratholme",
+						["rested"] = 0,
+						["killTotal"] = 40546,
+						["level"] = 57,
+						["killCount"] = 176,
+						["inProgress"] = false,
+					}, -- [50]
+					{
+						["totalXP"] = 8152,
+						["name"] = "Blackrock Depths",
+						["rested"] = 1658,
+						["killTotal"] = 8152,
+						["level"] = 52,
+						["killCount"] = 43,
+						["inProgress"] = false,
+					}, -- [51]
+					{
+						["killCount"] = 373,
+						["name"] = "The Temple of Atal'Hakkar",
+						["inProgress"] = false,
+						["killTotal"] = 40474,
+						["level"] = 50,
+						["rested"] = 8577,
+						["totalXP"] = 40474,
+					}, -- [52]
+					{
+						["totalXP"] = 20738,
+						["name"] = "The Temple of Atal'Hakkar",
+						["rested"] = 2231,
+						["killTotal"] = 20738,
+						["level"] = 50,
+						["killCount"] = 179,
+						["inProgress"] = false,
+					}, -- [53]
+					{
+						["totalXP"] = 17357,
+						["name"] = "Zul'Farrak",
+						["rested"] = 4966,
+						["killTotal"] = 17357,
+						["level"] = 49,
+						["killCount"] = 110,
+						["inProgress"] = false,
+					}, -- [54]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 20851,
+						["killCount"] = 202,
+						["killTotal"] = 20851,
+						["level"] = 48,
+						["rested"] = 4267,
+						["name"] = "Zul'Farrak",
+					}, -- [55]
+					{
+						["totalXP"] = 24584,
+						["name"] = "Maraudon",
+						["rested"] = 0,
+						["killTotal"] = 24584,
+						["level"] = 47,
+						["killCount"] = 261,
+						["inProgress"] = false,
+					}, -- [56]
+					{
+						["name"] = "Zul'Farrak",
+						["totalXP"] = 14618,
+						["rested"] = 0,
+						["killTotal"] = 14618,
+						["level"] = 47,
+						["inProgress"] = false,
+						["killCount"] = 177,
+					}, -- [57]
+					{
+						["name"] = "Maraudon",
+						["totalXP"] = 24117,
+						["rested"] = 0,
+						["killTotal"] = 24117,
+						["level"] = 46,
+						["inProgress"] = false,
+						["killCount"] = 209,
+					}, -- [58]
+					{
+						["killCount"] = 249,
+						["name"] = "Zul'Farrak",
+						["inProgress"] = false,
+						["killTotal"] = 32673,
+						["level"] = 46,
+						["rested"] = 114,
+						["totalXP"] = 32673,
+					}, -- [59]
+					{
+						["totalXP"] = 33219,
+						["name"] = "Zul'Farrak",
+						["rested"] = 75,
+						["killTotal"] = 33219,
+						["level"] = 46,
+						["killCount"] = 261,
+						["inProgress"] = false,
+					}, -- [60]
+					{
+						["totalXP"] = 33269,
+						["name"] = "Zul'Farrak",
+						["rested"] = 0,
+						["killTotal"] = 33269,
+						["level"] = 44,
+						["killCount"] = 286,
+						["inProgress"] = false,
+					}, -- [61]
+					{
+						["killCount"] = 71,
+						["name"] = "Uldaman",
+						["inProgress"] = false,
+						["killTotal"] = 6493,
+						["level"] = 44,
+						["rested"] = 6493,
+						["totalXP"] = 6493,
+					}, -- [62]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 26519,
+						["killCount"] = 216,
+						["killTotal"] = 26519,
+						["level"] = 43,
+						["rested"] = 1979,
+						["name"] = "Uldaman",
+					}, -- [63]
+					{
+						["name"] = "Zul'Farrak",
+						["totalXP"] = 26042,
+						["rested"] = 2664,
+						["killTotal"] = 26042,
+						["level"] = 43,
+						["inProgress"] = false,
+						["killCount"] = 209,
+					}, -- [64]
+					{
+						["totalXP"] = 22688,
+						["name"] = "Razorfen Downs",
+						["rested"] = 0,
+						["killTotal"] = 22688,
+						["level"] = 40,
+						["killCount"] = 201,
+						["inProgress"] = false,
+					}, -- [65]
+					{
+						["totalXP"] = 10298,
+						["name"] = "Scarlet Monastery",
+						["rested"] = 0,
+						["killTotal"] = 10298,
+						["level"] = 39,
+						["killCount"] = 67,
+						["inProgress"] = false,
+					}, -- [66]
+					{
+						["totalXP"] = 8586,
+						["name"] = "Scarlet Monastery",
+						["rested"] = 0,
+						["killTotal"] = 8586,
+						["level"] = 39,
+						["killCount"] = 72,
+						["inProgress"] = false,
+					}, -- [67]
+					{
+						["totalXP"] = 8859,
+						["name"] = "Scarlet Monastery",
+						["rested"] = 0,
+						["killTotal"] = 8859,
+						["level"] = 39,
+						["killCount"] = 66,
+						["inProgress"] = false,
+					}, -- [68]
+					{
+						["killCount"] = 70,
+						["name"] = "Scarlet Monastery",
+						["inProgress"] = false,
+						["killTotal"] = 12717,
+						["level"] = 39,
+						["rested"] = 0,
+						["totalXP"] = 12717,
+					}, -- [69]
+					{
+						["totalXP"] = 663,
+						["name"] = "Scarlet Monastery",
+						["rested"] = 0,
+						["killTotal"] = 663,
+						["level"] = 39,
+						["killCount"] = 3,
+						["inProgress"] = false,
+					}, -- [70]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 10837,
+						["killCount"] = 67,
+						["killTotal"] = 10837,
+						["level"] = 39,
+						["rested"] = 0,
+						["name"] = "Scarlet Monastery",
+					}, -- [71]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 9667,
+						["killCount"] = 50,
+						["killTotal"] = 9667,
+						["level"] = 39,
+						["rested"] = 0,
+						["name"] = "Scarlet Monastery",
+					}, -- [72]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 8361,
+						["killCount"] = 45,
+						["killTotal"] = 8361,
+						["level"] = 39,
+						["rested"] = 0,
+						["name"] = "Scarlet Monastery",
+					}, -- [73]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 10842,
+						["killCount"] = 65,
+						["killTotal"] = 10842,
+						["level"] = 38,
+						["rested"] = 0,
+						["name"] = "Scarlet Monastery",
+					}, -- [74]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 7029,
+						["killCount"] = 38,
+						["killTotal"] = 7029,
+						["level"] = 38,
+						["rested"] = 0,
+						["name"] = "Scarlet Monastery",
+					}, -- [75]
+					{
+						["totalXP"] = 10735,
+						["name"] = "Scarlet Monastery",
+						["rested"] = 0,
+						["killTotal"] = 10735,
+						["level"] = 36,
+						["killCount"] = 70,
+						["inProgress"] = false,
+					}, -- [76]
+					{
+						["totalXP"] = 11031,
+						["name"] = "Scarlet Monastery",
+						["rested"] = 0,
+						["killTotal"] = 11031,
+						["level"] = 36,
+						["killCount"] = 70,
+						["inProgress"] = false,
+					}, -- [77]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 9125,
+						["killCount"] = 78,
+						["killTotal"] = 9125,
+						["level"] = 35,
+						["rested"] = 0,
+						["name"] = "Scarlet Monastery",
+					}, -- [78]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 3325,
+						["killCount"] = 69,
+						["killTotal"] = 3325,
+						["level"] = 35,
+						["rested"] = 4,
+						["name"] = "Scarlet Monastery",
+					}, -- [79]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 13319,
+						["killCount"] = 75,
+						["killTotal"] = 13319,
+						["level"] = 35,
+						["rested"] = 0,
+						["name"] = "Scarlet Monastery",
+					}, -- [80]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 10902,
+						["killCount"] = 87,
+						["killTotal"] = 10902,
+						["level"] = 35,
+						["rested"] = 4519,
+						["name"] = "Scarlet Monastery",
+					}, -- [81]
+					{
+						["name"] = "Scarlet Monastery",
+						["totalXP"] = 8860,
+						["rested"] = 2,
+						["killTotal"] = 8860,
+						["level"] = 34,
+						["inProgress"] = false,
+						["killCount"] = 81,
+					}, -- [82]
+					{
+						["name"] = "Scarlet Monastery",
+						["totalXP"] = 12627,
+						["rested"] = 0,
+						["killTotal"] = 12627,
+						["level"] = 32,
+						["inProgress"] = false,
+						["killCount"] = 79,
+					}, -- [83]
+					{
+						["name"] = "Scarlet Monastery",
+						["totalXP"] = 10393,
+						["rested"] = 0,
+						["killTotal"] = 10393,
+						["level"] = 32,
+						["inProgress"] = false,
+						["killCount"] = 63,
+					}, -- [84]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 7887,
+						["killCount"] = 64,
+						["killTotal"] = 7887,
+						["level"] = 30,
+						["rested"] = 0,
+						["name"] = "Scarlet Monastery",
+					}, -- [85]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 4799,
+						["killCount"] = 41,
+						["killTotal"] = 4799,
+						["level"] = 30,
+						["rested"] = 0,
+						["name"] = "Scarlet Monastery",
+					}, -- [86]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 5730,
+						["killCount"] = 51,
+						["killTotal"] = 5730,
+						["level"] = 30,
+						["rested"] = 0,
+						["name"] = "Scarlet Monastery",
+					}, -- [87]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 7711,
+						["killCount"] = 78,
+						["killTotal"] = 7711,
+						["level"] = 30,
+						["rested"] = 2,
+						["name"] = "Scarlet Monastery",
+					}, -- [88]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 14511,
+						["killCount"] = 158,
+						["killTotal"] = 14511,
+						["level"] = 27,
+						["rested"] = 0,
+						["name"] = "Razorfen Kraul",
+					}, -- [89]
+					{
+						["killCount"] = 100,
+						["name"] = "Shadowfang Keep",
+						["inProgress"] = false,
+						["killTotal"] = 7218,
+						["level"] = 25,
+						["rested"] = 0,
+						["totalXP"] = 7218,
+					}, -- [90]
+					{
+						["totalXP"] = 6638,
+						["name"] = "Shadowfang Keep",
+						["rested"] = 27,
+						["killTotal"] = 6638,
+						["level"] = 25,
+						["killCount"] = 77,
+						["inProgress"] = false,
+					}, -- [91]
+					{
+						["totalXP"] = 10339,
+						["name"] = "Wailing Caverns",
+						["rested"] = 0,
+						["killTotal"] = 10339,
+						["level"] = 17,
+						["killCount"] = 205,
+						["inProgress"] = false,
+					}, -- [92]
+					{
+						["killCount"] = 97,
+						["name"] = "Ragefire Chasm",
+						["inProgress"] = false,
+						["killTotal"] = 7616,
+						["level"] = 14,
+						["rested"] = 1,
+						["totalXP"] = 7616,
+					}, -- [93]
+					{
+						["killCount"] = 111,
+						["name"] = "Ragefire Chasm",
+						["inProgress"] = false,
+						["killTotal"] = 3939,
+						["level"] = 13,
+						["rested"] = 0,
+						["totalXP"] = 3939,
+					}, -- [94]
+				},
+				["questAverage"] = 11890,
+				["questList"] = {
+					12650, -- [1]
+				},
+				["killList"] = {
+					{
+						["mob"] = "Coilskar Waterkeeper",
+						["xp"] = 580,
+					}, -- [1]
+					{
+						["mob"] = "Enraged Water Spirit",
+						["xp"] = 546,
+					}, -- [2]
+					{
+						["mob"] = "Enraged Water Spirit",
+						["xp"] = 580,
+					}, -- [3]
+					{
+						["mob"] = "Enraged Water Spirit",
+						["xp"] = 546,
+					}, -- [4]
+				},
+				["timer"] = {
+					["start"] = 102.766,
+					["total"] = 51568,
+					["lastUpdated"] = 3492.451,
+					["xpPerSec"] = 15.21321302716919,
+				},
+				["npcXP"] = {
+					{
+						["level"] = 68,
+						["name"] = "Enraged Water Spirit",
+						["xp"] = 546,
+					}, -- [1]
+					{
+						["level"] = 69,
+						["name"] = "Enraged Water Spirit",
+						["xp"] = 580,
+					}, -- [2]
+					{
+						["level"] = 69,
+						["name"] = "Coilskar Waterkeeper",
+						["xp"] = 580,
+					}, -- [3]
+				},
+				["gathering"] = {
+					["Mining"] = {
+						{
+							["count"] = 1,
+							["target"] = "Fel Iron Deposit",
+							["level"] = 63,
+							["xp"] = 140,
+							["zoneID"] = 1944,
+						}, -- [1]
+					},
+				},
+			},
+		},
+		["Eefjé - Razorgore"] = {
+			["data"] = {
+				["timer"] = {
+					["start"] = 7916.26,
+					["total"] = 0,
+					["lastUpdated"] = 7946.26,
+					["xpPerSec"] = 0,
+				},
+			},
+		},
+		["Bankerinos - Firemaw"] = {
+			["data"] = {
+				["total"] = {
+					["quests"] = 8,
+					["mobKills"] = 69,
+				},
+				["killAverage"] = 49.4,
+				["killList"] = {
+					{
+						["mob"] = "Kobold Vermin",
+						["xp"] = 39,
+					}, -- [1]
+					{
+						["mob"] = "Kobold Worker",
+						["xp"] = 52,
+					}, -- [2]
+					{
+						["mob"] = "Kobold Worker",
+						["xp"] = 52,
+					}, -- [3]
+					{
+						["mob"] = "Kobold Worker",
+						["xp"] = 52,
+					}, -- [4]
+					{
+						["mob"] = "Kobold Worker",
+						["xp"] = 52,
+					}, -- [5]
+					{
+						["mob"] = "Kobold Worker",
+						["xp"] = 52,
+					}, -- [6]
+					{
+						["mob"] = "Kobold Worker",
+						["xp"] = 52,
+					}, -- [7]
+					{
+						["mob"] = "Timber Wolf",
+						["xp"] = 39,
+					}, -- [8]
+					{
+						["mob"] = "Kobold Worker",
+						["xp"] = 52,
+					}, -- [9]
+					{
+						["mob"] = "Kobold Worker",
+						["xp"] = 52,
+					}, -- [10]
+					{
+						["mob"] = "Kobold Worker",
+						["xp"] = 52,
+					}, -- [11]
+					{
+						["mob"] = "Defias Thug",
+						["xp"] = 65,
+					}, -- [12]
+					{
+						["mob"] = "Defias Thug",
+						["xp"] = 52,
+					}, -- [13]
+					{
+						["mob"] = "Defias Thug",
+						["xp"] = 65,
+					}, -- [14]
+					{
+						["mob"] = "Defias Thug",
+						["xp"] = 65,
+					}, -- [15]
+					{
+						["mob"] = "Defias Thug",
+						["xp"] = 52,
+					}, -- [16]
+					{
+						["mob"] = "Defias Thug",
+						["xp"] = 52,
+					}, -- [17]
+					{
+						["mob"] = "Defias Thug",
+						["xp"] = 52,
+					}, -- [18]
+					{
+						["mob"] = "Defias Thug",
+						["xp"] = 52,
+					}, -- [19]
+					{
+						["mob"] = "Defias Thug",
+						["xp"] = 65,
+					}, -- [20]
+					{
+						["mob"] = "Defias Thug",
+						["xp"] = 52,
+					}, -- [21]
+					{
+						["mob"] = "Defias Thug",
+						["xp"] = 52,
+					}, -- [22]
+					{
+						["mob"] = "Defias Thug",
+						["xp"] = 52,
+					}, -- [23]
+					{
+						["mob"] = "Defias Thug",
+						["xp"] = 65,
+					}, -- [24]
+					{
+						["mob"] = "Defias Thug",
+						["xp"] = 24,
+					}, -- [25]
+					{
+						["mob"] = "Defias Thug",
+						["xp"] = 24,
+					}, -- [26]
+					{
+						["mob"] = "Defias Thug",
+						["xp"] = 30,
+					}, -- [27]
+					{
+						["mob"] = "Defias Thug",
+						["xp"] = 24,
+					}, -- [28]
+					{
+						["mob"] = "Defias Thug",
+						["xp"] = 30,
+					}, -- [29]
+					{
+						["mob"] = "Defias Thug",
+						["xp"] = 24,
+					}, -- [30]
+					{
+						["mob"] = "Defias Thug",
+						["xp"] = 24,
+					}, -- [31]
+					{
+						["mob"] = "Defias Thug",
+						["xp"] = 52,
+					}, -- [32]
+					{
+						["mob"] = "Defias Thug",
+						["xp"] = 52,
+					}, -- [33]
+					{
+						["mob"] = "Defias Thug",
+						["xp"] = 52,
+					}, -- [34]
+					{
+						["mob"] = "Young Wolf",
+						["xp"] = 26,
+					}, -- [35]
+					{
+						["mob"] = "Timber Wolf",
+						["xp"] = 39,
+					}, -- [36]
+					{
+						["mob"] = "Timber Wolf",
+						["xp"] = 48,
+					}, -- [37]
+					{
+						["mob"] = "Timber Wolf",
+						["xp"] = 48,
+					}, -- [38]
+					{
+						["mob"] = "Young Wolf",
+						["xp"] = 36,
+					}, -- [39]
+					{
+						["mob"] = "Timber Wolf",
+						["xp"] = 48,
+					}, -- [40]
+					{
+						["mob"] = "Kobold Worker",
+						["xp"] = 60,
+					}, -- [41]
+					{
+						["mob"] = "Kobold Worker",
+						["xp"] = 60,
+					}, -- [42]
+					{
+						["mob"] = "Kobold Worker",
+						["xp"] = 60,
+					}, -- [43]
+					{
+						["mob"] = "Kobold Worker",
+						["xp"] = 60,
+					}, -- [44]
+					{
+						["mob"] = "Kobold Worker",
+						["xp"] = 60,
+					}, -- [45]
+					{
+						["mob"] = "Kobold Worker",
+						["xp"] = 60,
+					}, -- [46]
+					{
+						["mob"] = "Kobold Worker",
+						["xp"] = 60,
+					}, -- [47]
+					{
+						["mob"] = "Kobold Worker",
+						["xp"] = 60,
+					}, -- [48]
+					{
+						["mob"] = "Kobold Worker",
+						["xp"] = 60,
+					}, -- [49]
+					{
+						["mob"] = "Kobold Worker",
+						["xp"] = 60,
+					}, -- [50]
+					{
+						["mob"] = "Kobold Vermin",
+						["xp"] = 55,
+					}, -- [51]
+					{
+						["mob"] = "Kobold Vermin",
+						["xp"] = 44,
+					}, -- [52]
+					{
+						["mob"] = "Kobold Vermin",
+						["xp"] = 44,
+					}, -- [53]
+					{
+						["mob"] = "Kobold Vermin",
+						["xp"] = 55,
+					}, -- [54]
+					{
+						["mob"] = "Kobold Vermin",
+						["xp"] = 44,
+					}, -- [55]
+					{
+						["mob"] = "Kobold Vermin",
+						["xp"] = 44,
+					}, -- [56]
+					{
+						["mob"] = "Kobold Worker",
+						["xp"] = 58,
+					}, -- [57]
+					{
+						["mob"] = "Kobold Vermin",
+						["xp"] = 44,
+					}, -- [58]
+					{
+						["mob"] = "Kobold Vermin",
+						["xp"] = 44,
+					}, -- [59]
+					{
+						["mob"] = "Kobold Vermin",
+						["xp"] = 44,
+					}, -- [60]
+					{
+						["mob"] = "Kobold Vermin",
+						["xp"] = 44,
+					}, -- [61]
+					{
+						["mob"] = "Young Wolf",
+						["xp"] = 44,
+					}, -- [62]
+					{
+						["mob"] = "Young Wolf",
+						["xp"] = 44,
+					}, -- [63]
+					{
+						["mob"] = "Young Wolf",
+						["xp"] = 44,
+					}, -- [64]
+					{
+						["mob"] = "Young Wolf",
+						["xp"] = 44,
+					}, -- [65]
+					{
+						["mob"] = "Young Wolf",
+						["xp"] = 44,
+					}, -- [66]
+					{
+						["mob"] = "Young Wolf",
+						["xp"] = 44,
+					}, -- [67]
+					{
+						["mob"] = "Young Wolf",
+						["xp"] = 50,
+					}, -- [68]
+					{
+						["mob"] = "Young Wolf",
+						["xp"] = 50,
+					}, -- [69]
+				},
+				["timer"] = {
+					["start"] = 225.115,
+					["total"] = 0,
+					["lastUpdated"] = 235.125,
+					["xpPerSec"] = 1.92169422304955,
+				},
+				["questAverage"] = 143.75,
+				["questList"] = {
+					35, -- [1]
+					360, -- [2]
+					250, -- [3]
+					40, -- [4]
+					170, -- [5]
+					170, -- [6]
+					85, -- [7]
+					40, -- [8]
+				},
+			},
+		},
+		["Partijlijder - Razorgore"] = {
+			["data"] = {
+				["total"] = {
+					["dungeonKills"] = 467,
+					["quests"] = 9,
+					["mobKills"] = 517,
 				},
 				["questList"] = {
 					2400, -- [1]
@@ -4686,6 +5260,54 @@ XToLevelDB = {
 					["lastUpdated"] = 21925.346,
 					["xpPerSec"] = 22.95576187315324,
 				},
+				["dungeonList"] = {
+					{
+						["name"] = "Hellfire Ramparts",
+						["totalXP"] = 61487,
+						["rested"] = 2282,
+						["killTotal"] = 61487,
+						["level"] = 60,
+						["inProgress"] = false,
+						["killCount"] = 106,
+					}, -- [1]
+					{
+						["killCount"] = 95,
+						["name"] = "Hellfire Ramparts",
+						["inProgress"] = false,
+						["killTotal"] = 54900,
+						["level"] = 59,
+						["rested"] = 0,
+						["totalXP"] = 54900,
+					}, -- [2]
+					{
+						["killCount"] = 89,
+						["name"] = "Hellfire Ramparts",
+						["inProgress"] = false,
+						["killTotal"] = 50712,
+						["level"] = 59,
+						["rested"] = 0,
+						["totalXP"] = 50712,
+					}, -- [3]
+					{
+						["killCount"] = 93,
+						["name"] = "Hellfire Ramparts",
+						["inProgress"] = false,
+						["killTotal"] = 51622,
+						["level"] = 59,
+						["rested"] = 0,
+						["totalXP"] = 51622,
+					}, -- [4]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 48121,
+						["killCount"] = 84,
+						["killTotal"] = 48121,
+						["level"] = 58,
+						["rested"] = 48121,
+						["name"] = "Hellfire Ramparts",
+					}, -- [5]
+				},
+				["questAverage"] = 1925,
 				["npcXP"] = {
 					{
 						["level"] = 60,
@@ -4793,1561 +5415,203 @@ XToLevelDB = {
 						["xp"] = 577,
 					}, -- [21]
 				},
-				["questAverage"] = 1925,
-				["total"] = {
-					["quests"] = 9,
-					["dungeonKills"] = 467,
-					["mobKills"] = 517,
-				},
-			},
-		},
-		["Eefjé - Razorgore"] = {
-			["data"] = {
-				["timer"] = {
-					["start"] = 7916.26,
-					["total"] = 0,
-					["lastUpdated"] = 7946.26,
-					["xpPerSec"] = 0,
-				},
-			},
-		},
-		["Bankerinos - Firemaw"] = {
-			["data"] = {
-				["total"] = {
-					["quests"] = 8,
-					["mobKills"] = 69,
-				},
-				["killAverage"] = 49.4,
-				["killList"] = {
-					{
-						["mob"] = "Kobold Vermin",
-						["xp"] = 39,
-					}, -- [1]
-					{
-						["mob"] = "Kobold Worker",
-						["xp"] = 52,
-					}, -- [2]
-					{
-						["mob"] = "Kobold Worker",
-						["xp"] = 52,
-					}, -- [3]
-					{
-						["mob"] = "Kobold Worker",
-						["xp"] = 52,
-					}, -- [4]
-					{
-						["mob"] = "Kobold Worker",
-						["xp"] = 52,
-					}, -- [5]
-					{
-						["mob"] = "Kobold Worker",
-						["xp"] = 52,
-					}, -- [6]
-					{
-						["mob"] = "Kobold Worker",
-						["xp"] = 52,
-					}, -- [7]
-					{
-						["mob"] = "Timber Wolf",
-						["xp"] = 39,
-					}, -- [8]
-					{
-						["mob"] = "Kobold Worker",
-						["xp"] = 52,
-					}, -- [9]
-					{
-						["mob"] = "Kobold Worker",
-						["xp"] = 52,
-					}, -- [10]
-					{
-						["mob"] = "Kobold Worker",
-						["xp"] = 52,
-					}, -- [11]
-					{
-						["mob"] = "Defias Thug",
-						["xp"] = 65,
-					}, -- [12]
-					{
-						["mob"] = "Defias Thug",
-						["xp"] = 52,
-					}, -- [13]
-					{
-						["mob"] = "Defias Thug",
-						["xp"] = 65,
-					}, -- [14]
-					{
-						["mob"] = "Defias Thug",
-						["xp"] = 65,
-					}, -- [15]
-					{
-						["mob"] = "Defias Thug",
-						["xp"] = 52,
-					}, -- [16]
-					{
-						["mob"] = "Defias Thug",
-						["xp"] = 52,
-					}, -- [17]
-					{
-						["mob"] = "Defias Thug",
-						["xp"] = 52,
-					}, -- [18]
-					{
-						["mob"] = "Defias Thug",
-						["xp"] = 52,
-					}, -- [19]
-					{
-						["mob"] = "Defias Thug",
-						["xp"] = 65,
-					}, -- [20]
-					{
-						["mob"] = "Defias Thug",
-						["xp"] = 52,
-					}, -- [21]
-					{
-						["mob"] = "Defias Thug",
-						["xp"] = 52,
-					}, -- [22]
-					{
-						["mob"] = "Defias Thug",
-						["xp"] = 52,
-					}, -- [23]
-					{
-						["mob"] = "Defias Thug",
-						["xp"] = 65,
-					}, -- [24]
-					{
-						["mob"] = "Defias Thug",
-						["xp"] = 24,
-					}, -- [25]
-					{
-						["mob"] = "Defias Thug",
-						["xp"] = 24,
-					}, -- [26]
-					{
-						["mob"] = "Defias Thug",
-						["xp"] = 30,
-					}, -- [27]
-					{
-						["mob"] = "Defias Thug",
-						["xp"] = 24,
-					}, -- [28]
-					{
-						["mob"] = "Defias Thug",
-						["xp"] = 30,
-					}, -- [29]
-					{
-						["mob"] = "Defias Thug",
-						["xp"] = 24,
-					}, -- [30]
-					{
-						["mob"] = "Defias Thug",
-						["xp"] = 24,
-					}, -- [31]
-					{
-						["mob"] = "Defias Thug",
-						["xp"] = 52,
-					}, -- [32]
-					{
-						["mob"] = "Defias Thug",
-						["xp"] = 52,
-					}, -- [33]
-					{
-						["mob"] = "Defias Thug",
-						["xp"] = 52,
-					}, -- [34]
-					{
-						["mob"] = "Young Wolf",
-						["xp"] = 26,
-					}, -- [35]
-					{
-						["mob"] = "Timber Wolf",
-						["xp"] = 39,
-					}, -- [36]
-					{
-						["mob"] = "Timber Wolf",
-						["xp"] = 48,
-					}, -- [37]
-					{
-						["mob"] = "Timber Wolf",
-						["xp"] = 48,
-					}, -- [38]
-					{
-						["mob"] = "Young Wolf",
-						["xp"] = 36,
-					}, -- [39]
-					{
-						["mob"] = "Timber Wolf",
-						["xp"] = 48,
-					}, -- [40]
-					{
-						["mob"] = "Kobold Worker",
-						["xp"] = 60,
-					}, -- [41]
-					{
-						["mob"] = "Kobold Worker",
-						["xp"] = 60,
-					}, -- [42]
-					{
-						["mob"] = "Kobold Worker",
-						["xp"] = 60,
-					}, -- [43]
-					{
-						["mob"] = "Kobold Worker",
-						["xp"] = 60,
-					}, -- [44]
-					{
-						["mob"] = "Kobold Worker",
-						["xp"] = 60,
-					}, -- [45]
-					{
-						["mob"] = "Kobold Worker",
-						["xp"] = 60,
-					}, -- [46]
-					{
-						["mob"] = "Kobold Worker",
-						["xp"] = 60,
-					}, -- [47]
-					{
-						["mob"] = "Kobold Worker",
-						["xp"] = 60,
-					}, -- [48]
-					{
-						["mob"] = "Kobold Worker",
-						["xp"] = 60,
-					}, -- [49]
-					{
-						["mob"] = "Kobold Worker",
-						["xp"] = 60,
-					}, -- [50]
-					{
-						["mob"] = "Kobold Vermin",
-						["xp"] = 55,
-					}, -- [51]
-					{
-						["mob"] = "Kobold Vermin",
-						["xp"] = 44,
-					}, -- [52]
-					{
-						["mob"] = "Kobold Vermin",
-						["xp"] = 44,
-					}, -- [53]
-					{
-						["mob"] = "Kobold Vermin",
-						["xp"] = 55,
-					}, -- [54]
-					{
-						["mob"] = "Kobold Vermin",
-						["xp"] = 44,
-					}, -- [55]
-					{
-						["mob"] = "Kobold Vermin",
-						["xp"] = 44,
-					}, -- [56]
-					{
-						["mob"] = "Kobold Worker",
-						["xp"] = 58,
-					}, -- [57]
-					{
-						["mob"] = "Kobold Vermin",
-						["xp"] = 44,
-					}, -- [58]
-					{
-						["mob"] = "Kobold Vermin",
-						["xp"] = 44,
-					}, -- [59]
-					{
-						["mob"] = "Kobold Vermin",
-						["xp"] = 44,
-					}, -- [60]
-					{
-						["mob"] = "Kobold Vermin",
-						["xp"] = 44,
-					}, -- [61]
-					{
-						["mob"] = "Young Wolf",
-						["xp"] = 44,
-					}, -- [62]
-					{
-						["mob"] = "Young Wolf",
-						["xp"] = 44,
-					}, -- [63]
-					{
-						["mob"] = "Young Wolf",
-						["xp"] = 44,
-					}, -- [64]
-					{
-						["mob"] = "Young Wolf",
-						["xp"] = 44,
-					}, -- [65]
-					{
-						["mob"] = "Young Wolf",
-						["xp"] = 44,
-					}, -- [66]
-					{
-						["mob"] = "Young Wolf",
-						["xp"] = 44,
-					}, -- [67]
-					{
-						["mob"] = "Young Wolf",
-						["xp"] = 50,
-					}, -- [68]
-					{
-						["mob"] = "Young Wolf",
-						["xp"] = 50,
-					}, -- [69]
-				},
-				["timer"] = {
-					["start"] = 225.115,
-					["total"] = 0,
-					["lastUpdated"] = 235.125,
-					["xpPerSec"] = 1.92169422304955,
-				},
-				["questAverage"] = 143.75,
-				["questList"] = {
-					35, -- [1]
-					360, -- [2]
-					250, -- [3]
-					40, -- [4]
-					170, -- [5]
-					170, -- [6]
-					85, -- [7]
-					40, -- [8]
-				},
-			},
-		},
-		["Mírjam - Firemaw"] = {
-			["data"] = {
-				["total"] = {
-					["quests"] = 2,
-					["mobKills"] = 70,
-				},
-				["killAverage"] = 12.3,
-				["killList"] = {
-					{
-						["mob"] = "Burly Rockjaw Trogg",
-						["xp"] = 15,
-					}, -- [1]
-					{
-						["mob"] = "Ragged Young Wolf",
-						["xp"] = 12,
-					}, -- [2]
-					{
-						["mob"] = "Ragged Young Wolf",
-						["xp"] = 12,
-					}, -- [3]
-					{
-						["mob"] = "Ragged Young Wolf",
-						["xp"] = 12,
-					}, -- [4]
-					{
-						["mob"] = "Ragged Young Wolf",
-						["xp"] = 12,
-					}, -- [5]
-					{
-						["mob"] = "Ragged Young Wolf",
-						["xp"] = 12,
-					}, -- [6]
-					{
-						["mob"] = "Ragged Young Wolf",
-						["xp"] = 12,
-					}, -- [7]
-					{
-						["mob"] = "Ragged Young Wolf",
-						["xp"] = 12,
-					}, -- [8]
-					{
-						["mob"] = "Ragged Young Wolf",
-						["xp"] = 12,
-					}, -- [9]
-					{
-						["mob"] = "Ragged Young Wolf",
-						["xp"] = 12,
-					}, -- [10]
-					{
-						["mob"] = "Small Crag Boar",
-						["xp"] = 16,
-					}, -- [11]
-					{
-						["mob"] = "Rockjaw Trogg",
-						["xp"] = 12,
-					}, -- [12]
-					{
-						["mob"] = "Ragged Young Wolf",
-						["xp"] = 12,
-					}, -- [13]
-					{
-						["mob"] = "Ragged Young Wolf",
-						["xp"] = 12,
-					}, -- [14]
-					{
-						["mob"] = "Ragged Young Wolf",
-						["xp"] = 12,
-					}, -- [15]
-					{
-						["mob"] = "Ragged Young Wolf",
-						["xp"] = 12,
-					}, -- [16]
-					{
-						["mob"] = "Ragged Young Wolf",
-						["xp"] = 12,
-					}, -- [17]
-					{
-						["mob"] = "Small Crag Boar",
-						["xp"] = 16,
-					}, -- [18]
-					{
-						["mob"] = "Ragged Young Wolf",
-						["xp"] = 12,
-					}, -- [19]
-					{
-						["mob"] = "Ragged Young Wolf",
-						["xp"] = 12,
-					}, -- [20]
-					{
-						["mob"] = "Rockjaw Trogg",
-						["xp"] = 12,
-					}, -- [21]
-					{
-						["mob"] = "Ragged Young Wolf",
-						["xp"] = 12,
-					}, -- [22]
-					{
-						["mob"] = "Ragged Young Wolf",
-						["xp"] = 12,
-					}, -- [23]
-					{
-						["mob"] = "Ragged Young Wolf",
-						["xp"] = 12,
-					}, -- [24]
-					{
-						["mob"] = "Ragged Young Wolf",
-						["xp"] = 12,
-					}, -- [25]
-					{
-						["mob"] = "Rockjaw Trogg",
-						["xp"] = 15,
-					}, -- [26]
-					{
-						["mob"] = "Burly Rockjaw Trogg",
-						["xp"] = 15,
-					}, -- [27]
-					{
-						["mob"] = "Ragged Young Wolf",
-						["xp"] = 12,
-					}, -- [28]
-					{
-						["mob"] = "Ragged Young Wolf",
-						["xp"] = 12,
-					}, -- [29]
-					{
-						["mob"] = "Ragged Young Wolf",
-						["xp"] = 12,
-					}, -- [30]
-					{
-						["mob"] = "Rockjaw Trogg",
-						["xp"] = 15,
-					}, -- [31]
-					{
-						["mob"] = "Ragged Young Wolf",
-						["xp"] = 12,
-					}, -- [32]
-					{
-						["mob"] = "Ragged Young Wolf",
-						["xp"] = 12,
-					}, -- [33]
-					{
-						["mob"] = "Burly Rockjaw Trogg",
-						["xp"] = 15,
-					}, -- [34]
-					{
-						["mob"] = "Ragged Young Wolf",
-						["xp"] = 12,
-					}, -- [35]
-					{
-						["mob"] = "Ragged Young Wolf",
-						["xp"] = 12,
-					}, -- [36]
-					{
-						["mob"] = "Ragged Young Wolf",
-						["xp"] = 12,
-					}, -- [37]
-					{
-						["mob"] = "Ragged Young Wolf",
-						["xp"] = 12,
-					}, -- [38]
-					{
-						["mob"] = "Rockjaw Trogg",
-						["xp"] = 15,
-					}, -- [39]
-					{
-						["mob"] = "Ragged Young Wolf",
-						["xp"] = 12,
-					}, -- [40]
-					{
-						["mob"] = "Ragged Young Wolf",
-						["xp"] = 12,
-					}, -- [41]
-					{
-						["mob"] = "Burly Rockjaw Trogg",
-						["xp"] = 15,
-					}, -- [42]
-					{
-						["mob"] = "Ragged Young Wolf",
-						["xp"] = 12,
-					}, -- [43]
-					{
-						["mob"] = "Ragged Young Wolf",
-						["xp"] = 14,
-					}, -- [44]
-					{
-						["mob"] = "Ragged Young Wolf",
-						["xp"] = 14,
-					}, -- [45]
-					{
-						["mob"] = "Ragged Timber Wolf",
-						["xp"] = 15,
-					}, -- [46]
-					{
-						["mob"] = "Rockjaw Trogg",
-						["xp"] = 15,
-					}, -- [47]
-					{
-						["mob"] = "Ragged Young Wolf",
-						["xp"] = 14,
-					}, -- [48]
-					{
-						["mob"] = "Ragged Young Wolf",
-						["xp"] = 14,
-					}, -- [49]
-					{
-						["mob"] = "Ragged Young Wolf",
-						["xp"] = 14,
-					}, -- [50]
-					{
-						["mob"] = "Rockjaw Trogg",
-						["xp"] = 14,
-					}, -- [51]
-					{
-						["mob"] = "Ragged Young Wolf",
-						["xp"] = 14,
-					}, -- [52]
-					{
-						["mob"] = "Burly Rockjaw Trogg",
-						["xp"] = 15,
-					}, -- [53]
-					{
-						["mob"] = "Ragged Young Wolf",
-						["xp"] = 14,
-					}, -- [54]
-					{
-						["mob"] = "Ragged Young Wolf",
-						["xp"] = 14,
-					}, -- [55]
-					{
-						["mob"] = "Ragged Young Wolf",
-						["xp"] = 14,
-					}, -- [56]
-					{
-						["mob"] = "Ragged Young Wolf",
-						["xp"] = 14,
-					}, -- [57]
-					{
-						["mob"] = "Ragged Young Wolf",
-						["xp"] = 14,
-					}, -- [58]
-					{
-						["mob"] = "Rockjaw Trogg",
-						["xp"] = 14,
-					}, -- [59]
-					{
-						["mob"] = "Ragged Young Wolf",
-						["xp"] = 14,
-					}, -- [60]
-					{
-						["mob"] = "Ragged Young Wolf",
-						["xp"] = 14,
-					}, -- [61]
-					{
-						["mob"] = "Ragged Young Wolf",
-						["xp"] = 14,
-					}, -- [62]
-					{
-						["mob"] = "Rockjaw Trogg",
-						["xp"] = 15,
-					}, -- [63]
-					{
-						["mob"] = "Rockjaw Trogg",
-						["xp"] = 14,
-					}, -- [64]
-					{
-						["mob"] = "Ragged Young Wolf",
-						["xp"] = 14,
-					}, -- [65]
-					{
-						["mob"] = "Ragged Timber Wolf",
-						["xp"] = 15,
-					}, -- [66]
-					{
-						["mob"] = "Ragged Young Wolf",
-						["xp"] = 14,
-					}, -- [67]
-					{
-						["mob"] = "Ragged Young Wolf",
-						["xp"] = 14,
-					}, -- [68]
-					{
-						["mob"] = "Ragged Young Wolf",
-						["xp"] = 14,
-					}, -- [69]
-					{
-						["mob"] = "Ragged Young Wolf",
-						["xp"] = 14,
-					}, -- [70]
-				},
-				["timer"] = {
-					["start"] = 269541.019,
-					["total"] = 1182,
-					["lastUpdated"] = 270875.547,
-					["xpPerSec"] = 0.885706407059242,
-				},
-				["questAverage"] = 60,
-				["questList"] = {
-					40, -- [1]
-					80, -- [2]
-				},
 			},
 		},
 		["Kealthas - Razorgore"] = {
 			["data"] = {
+				["npcXP"] = {
+					{
+						["level"] = 61,
+						["name"] = "Bleeding Hollow Grunt",
+						["xp"] = 540,
+					}, -- [1]
+					{
+						["level"] = 60,
+						["name"] = "Bleeding Hollow Grunt",
+						["xp"] = 508,
+					}, -- [2]
+					{
+						["level"] = 60,
+						["name"] = "Worg Master Kruush",
+						["xp"] = 559,
+					}, -- [3]
+					{
+						["level"] = 60,
+						["name"] = "Bleeding Hollow Necrolyte",
+						["xp"] = 508,
+					}, -- [4]
+					{
+						["level"] = 61,
+						["name"] = "Bleeding Hollow Tormentor",
+						["xp"] = 540,
+					}, -- [5]
+					{
+						["level"] = 58,
+						["name"] = "Ripp",
+						["xp"] = 244,
+					}, -- [6]
+					{
+						["level"] = 60,
+						["name"] = "Bleeding Hollow Tormentor",
+						["xp"] = 557,
+					}, -- [7]
+					{
+						["level"] = 60,
+						["name"] = "Bleeding Hollow Dark Shaman",
+						["xp"] = 508,
+					}, -- [8]
+					{
+						["level"] = 60,
+						["name"] = "Bleeding Hollow Riding Worg",
+						["xp"] = 279,
+					}, -- [9]
+					{
+						["level"] = 59,
+						["name"] = "Bleeding Hollow Peon",
+						["xp"] = 476,
+					}, -- [10]
+					{
+						["level"] = 61,
+						["name"] = "Bleeding Hollow Necrolyte",
+						["xp"] = 540,
+					}, -- [11]
+					{
+						["level"] = 61,
+						["name"] = "Bleeding Hollow Riding Worg",
+						["xp"] = 297,
+					}, -- [12]
+					{
+						["level"] = 61,
+						["name"] = "Bleeding Hollow Dark Shaman",
+						["xp"] = 540,
+					}, -- [13]
+					{
+						["level"] = 60,
+						["name"] = "Bleeding Hollow Skeleton",
+						["xp"] = 25,
+					}, -- [14]
+					{
+						["level"] = 61,
+						["name"] = "Bleeding Hollow Skeleton",
+						["xp"] = 27,
+					}, -- [15]
+					{
+						["level"] = 61,
+						["name"] = "Grillok \"Darkeye\"",
+						["xp"] = 810,
+					}, -- [16]
+					{
+						["level"] = 60,
+						["name"] = "Unyielding Footman",
+						["xp"] = 557,
+					}, -- [17]
+					{
+						["level"] = 59,
+						["name"] = "Unyielding Footman",
+						["xp"] = 521,
+					}, -- [18]
+					{
+						["level"] = 60,
+						["name"] = "Unyielding Knight",
+						["xp"] = 553,
+					}, -- [19]
+					{
+						["level"] = 59,
+						["name"] = "Unyielding Sorcerer",
+						["xp"] = 524,
+					}, -- [20]
+					{
+						["level"] = 60,
+						["name"] = "Unyielding Sorcerer",
+						["xp"] = 559,
+					}, -- [21]
+					{
+						["level"] = 59,
+						["name"] = "Unyielding Knight",
+						["xp"] = 514,
+					}, -- [22]
+					{
+						["level"] = 61,
+						["name"] = "Uncontrolled Voidwalker",
+						["xp"] = 594,
+					}, -- [23]
+					{
+						["level"] = 59,
+						["name"] = "Razorfang Hatchling",
+						["xp"] = 476,
+					}, -- [24]
+					{
+						["level"] = 60,
+						["name"] = "Razorfang Hatchling",
+						["xp"] = 508,
+					}, -- [25]
+					{
+						["level"] = 61,
+						["name"] = "Razorfang Ravager",
+						["xp"] = 540,
+					}, -- [26]
+					{
+						["level"] = 61,
+						["name"] = "Lieutenant Commander Thalvos",
+						["xp"] = 592,
+					}, -- [27]
+					{
+						["level"] = 61,
+						["name"] = "Deranged Helboar",
+						["xp"] = 540,
+					}, -- [28]
+					{
+						["level"] = 60,
+						["name"] = "Deranged Helboar",
+						["xp"] = 557,
+					}, -- [29]
+					{
+						["level"] = 59,
+						["name"] = "Starving Helboar",
+						["xp"] = 524,
+					}, -- [30]
+					{
+						["level"] = 58,
+						["name"] = "Starving Helboar",
+						["xp"] = 490,
+					}, -- [31]
+					{
+						["level"] = 61,
+						["name"] = "Urtrak",
+						["xp"] = 340,
+					}, -- [32]
+					{
+						["level"] = 60,
+						["name"] = "Rogue Voidwalker",
+						["xp"] = 559,
+					}, -- [33]
+					{
+						["level"] = 60,
+						["name"] = "Uncontrolled Voidwalker",
+						["xp"] = 559,
+					}, -- [34]
+					{
+						["level"] = 61,
+						["name"] = "Rogue Voidwalker",
+						["xp"] = 591,
+					}, -- [35]
+					{
+						["level"] = 58,
+						["name"] = "Bonestripper Buzzard",
+						["xp"] = 490,
+					}, -- [36]
+					{
+						["level"] = 59,
+						["name"] = "Bonestripper Buzzard",
+						["xp"] = 524,
+					}, -- [37]
+				},
 				["total"] = {
-					["dungeonKills"] = 15621,
 					["quests"] = 200,
+					["dungeonKills"] = 15621,
 					["mobKills"] = 17171,
 				},
 				["killAverage"] = 527.1,
-				["dungeonList"] = {
-					{
-						["killCount"] = 138,
-						["name"] = "The Blood Furnace",
-						["inProgress"] = false,
-						["killTotal"] = 69598,
-						["level"] = 60,
-						["rested"] = 0,
-						["totalXP"] = 69598,
-					}, -- [1]
-					{
-						["killCount"] = 30,
-						["name"] = "Hellfire Ramparts",
-						["inProgress"] = false,
-						["killTotal"] = 18579,
-						["level"] = 60,
-						["rested"] = 166,
-						["totalXP"] = 18579,
-					}, -- [2]
-					{
-						["totalXP"] = 36234,
-						["name"] = "Hellfire Ramparts",
-						["rested"] = 0,
-						["killTotal"] = 36234,
-						["level"] = 60,
-						["killCount"] = 56,
-						["inProgress"] = false,
-					}, -- [3]
-					{
-						["name"] = "Hellfire Ramparts",
-						["totalXP"] = 57919,
-						["rested"] = 0,
-						["killTotal"] = 57919,
-						["level"] = 60,
-						["inProgress"] = false,
-						["killCount"] = 96,
-					}, -- [4]
-					{
-						["totalXP"] = 58654,
-						["name"] = "The Blood Furnace",
-						["rested"] = 0,
-						["killTotal"] = 58654,
-						["level"] = 60,
-						["killCount"] = 138,
-						["inProgress"] = false,
-					}, -- [5]
-					{
-						["totalXP"] = 34891,
-						["name"] = "Hellfire Ramparts",
-						["rested"] = 12317,
-						["killTotal"] = 34891,
-						["level"] = 60,
-						["killCount"] = 93,
-						["inProgress"] = false,
-					}, -- [6]
-					{
-						["name"] = "Hellfire Ramparts",
-						["totalXP"] = 47713,
-						["rested"] = 0,
-						["killTotal"] = 47713,
-						["level"] = 59,
-						["inProgress"] = false,
-						["killCount"] = 86,
-					}, -- [7]
-					{
-						["name"] = "Hellfire Ramparts",
-						["totalXP"] = 50433,
-						["rested"] = 0,
-						["killTotal"] = 50433,
-						["level"] = 59,
-						["inProgress"] = false,
-						["killCount"] = 96,
-					}, -- [8]
-					{
-						["name"] = "Hellfire Ramparts",
-						["totalXP"] = 50325,
-						["rested"] = 0,
-						["killTotal"] = 50325,
-						["level"] = 59,
-						["inProgress"] = false,
-						["killCount"] = 96,
-					}, -- [9]
-					{
-						["name"] = "Hellfire Ramparts",
-						["totalXP"] = 51777,
-						["rested"] = 215,
-						["killTotal"] = 51777,
-						["level"] = 58,
-						["inProgress"] = false,
-						["killCount"] = 103,
-					}, -- [10]
-					{
-						["killCount"] = 7,
-						["name"] = "Hellfire Ramparts",
-						["inProgress"] = false,
-						["killTotal"] = 3622,
-						["level"] = 58,
-						["rested"] = 3622,
-						["totalXP"] = 3622,
-					}, -- [11]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 12001,
-						["killCount"] = 64,
-						["killTotal"] = 12001,
-						["level"] = 57,
-						["rested"] = 0,
-						["name"] = "Stratholme",
-					}, -- [12]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 12490,
-						["killCount"] = 69,
-						["killTotal"] = 12490,
-						["level"] = 57,
-						["rested"] = 0,
-						["name"] = "Stratholme",
-					}, -- [13]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 10840,
-						["killCount"] = 65,
-						["killTotal"] = 10840,
-						["level"] = 57,
-						["rested"] = 0,
-						["name"] = "Stratholme",
-					}, -- [14]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 10743,
-						["killCount"] = 63,
-						["killTotal"] = 10743,
-						["level"] = 57,
-						["rested"] = 10743,
-						["name"] = "Stratholme",
-					}, -- [15]
-					{
-						["killCount"] = 60,
-						["name"] = "Stratholme",
-						["inProgress"] = false,
-						["killTotal"] = 9638,
-						["level"] = 56,
-						["rested"] = 0,
-						["totalXP"] = 9638,
-					}, -- [16]
-					{
-						["killCount"] = 63,
-						["name"] = "Stratholme",
-						["inProgress"] = false,
-						["killTotal"] = 8846,
-						["level"] = 56,
-						["rested"] = 0,
-						["totalXP"] = 8846,
-					}, -- [17]
-					{
-						["killCount"] = 68,
-						["name"] = "Stratholme",
-						["inProgress"] = false,
-						["killTotal"] = 11295,
-						["level"] = 56,
-						["rested"] = 0,
-						["totalXP"] = 11295,
-					}, -- [18]
-					{
-						["killCount"] = 47,
-						["name"] = "Stratholme",
-						["inProgress"] = false,
-						["killTotal"] = 8215,
-						["level"] = 56,
-						["rested"] = 0,
-						["totalXP"] = 8215,
-					}, -- [19]
-					{
-						["killCount"] = 63,
-						["name"] = "Stratholme",
-						["inProgress"] = false,
-						["killTotal"] = 9601,
-						["level"] = 55,
-						["rested"] = 0,
-						["totalXP"] = 9601,
-					}, -- [20]
-					{
-						["killCount"] = 64,
-						["name"] = "Stratholme",
-						["inProgress"] = false,
-						["killTotal"] = 9846,
-						["level"] = 55,
-						["rested"] = 0,
-						["totalXP"] = 9846,
-					}, -- [21]
-					{
-						["killCount"] = 54,
-						["name"] = "Stratholme",
-						["inProgress"] = false,
-						["killTotal"] = 11374,
-						["level"] = 55,
-						["rested"] = 8915,
-						["totalXP"] = 11374,
-					}, -- [22]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 10370,
-						["killCount"] = 65,
-						["killTotal"] = 10370,
-						["level"] = 55,
-						["rested"] = 0,
-						["name"] = "Stratholme",
-					}, -- [23]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 9968,
-						["killCount"] = 64,
-						["killTotal"] = 9968,
-						["level"] = 55,
-						["rested"] = 0,
-						["name"] = "Stratholme",
-					}, -- [24]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 9190,
-						["killCount"] = 63,
-						["killTotal"] = 9190,
-						["level"] = 54,
-						["rested"] = 0,
-						["name"] = "Stratholme",
-					}, -- [25]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 8502,
-						["killCount"] = 64,
-						["killTotal"] = 8502,
-						["level"] = 54,
-						["rested"] = 0,
-						["name"] = "Stratholme",
-					}, -- [26]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 12037,
-						["killCount"] = 78,
-						["killTotal"] = 12037,
-						["level"] = 54,
-						["rested"] = 0,
-						["name"] = "Stratholme",
-					}, -- [27]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 15061,
-						["killCount"] = 87,
-						["killTotal"] = 15061,
-						["level"] = 54,
-						["rested"] = 0,
-						["name"] = "Stratholme",
-					}, -- [28]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 13634,
-						["killCount"] = 76,
-						["killTotal"] = 13634,
-						["level"] = 54,
-						["rested"] = 0,
-						["name"] = "Stratholme",
-					}, -- [29]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 14079,
-						["killCount"] = 89,
-						["killTotal"] = 14079,
-						["level"] = 54,
-						["rested"] = 0,
-						["name"] = "Stratholme",
-					}, -- [30]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 9463,
-						["killCount"] = 70,
-						["killTotal"] = 9463,
-						["level"] = 53,
-						["rested"] = 0,
-						["name"] = "Stratholme",
-					}, -- [31]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 14149,
-						["killCount"] = 89,
-						["killTotal"] = 14149,
-						["level"] = 53,
-						["rested"] = 0,
-						["name"] = "Stratholme",
-					}, -- [32]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 12811,
-						["killCount"] = 91,
-						["killTotal"] = 12811,
-						["level"] = 53,
-						["rested"] = 0,
-						["name"] = "Stratholme",
-					}, -- [33]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 10236,
-						["killCount"] = 57,
-						["killTotal"] = 10236,
-						["level"] = 53,
-						["rested"] = 0,
-						["name"] = "Stratholme",
-					}, -- [34]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 10555,
-						["killCount"] = 74,
-						["killTotal"] = 10555,
-						["level"] = 53,
-						["rested"] = 85,
-						["name"] = "Stratholme",
-					}, -- [35]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 10823,
-						["killCount"] = 76,
-						["killTotal"] = 10823,
-						["level"] = 52,
-						["rested"] = 0,
-						["name"] = "Stratholme",
-					}, -- [36]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 13075,
-						["killCount"] = 88,
-						["killTotal"] = 13075,
-						["level"] = 52,
-						["rested"] = 0,
-						["name"] = "Stratholme",
-					}, -- [37]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 12118,
-						["killCount"] = 82,
-						["killTotal"] = 12118,
-						["level"] = 52,
-						["rested"] = 0,
-						["name"] = "Stratholme",
-					}, -- [38]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 14027,
-						["killCount"] = 89,
-						["killTotal"] = 14027,
-						["level"] = 52,
-						["rested"] = 0,
-						["name"] = "Stratholme",
-					}, -- [39]
-					{
-						["name"] = "Stratholme",
-						["totalXP"] = 9805,
-						["rested"] = 0,
-						["killTotal"] = 9805,
-						["level"] = 51,
-						["inProgress"] = false,
-						["killCount"] = 66,
-					}, -- [40]
-					{
-						["name"] = "Stratholme",
-						["totalXP"] = 9453,
-						["rested"] = 0,
-						["killTotal"] = 9453,
-						["level"] = 51,
-						["inProgress"] = false,
-						["killCount"] = 63,
-					}, -- [41]
-					{
-						["name"] = "Stratholme",
-						["totalXP"] = 10003,
-						["rested"] = 297,
-						["killTotal"] = 10003,
-						["level"] = 51,
-						["inProgress"] = false,
-						["killCount"] = 65,
-					}, -- [42]
-					{
-						["killCount"] = 45,
-						["name"] = "Stratholme",
-						["inProgress"] = false,
-						["killTotal"] = 8676,
-						["level"] = 51,
-						["rested"] = 0,
-						["totalXP"] = 8676,
-					}, -- [43]
-					{
-						["killCount"] = 68,
-						["name"] = "Stratholme",
-						["inProgress"] = false,
-						["killTotal"] = 10482,
-						["level"] = 51,
-						["rested"] = 0,
-						["totalXP"] = 10482,
-					}, -- [44]
-					{
-						["killCount"] = 72,
-						["name"] = "Stratholme",
-						["inProgress"] = false,
-						["killTotal"] = 11995,
-						["level"] = 50,
-						["rested"] = 0,
-						["totalXP"] = 11995,
-					}, -- [45]
-					{
-						["killCount"] = 68,
-						["name"] = "Stratholme",
-						["inProgress"] = false,
-						["killTotal"] = 11258,
-						["level"] = 50,
-						["rested"] = 0,
-						["totalXP"] = 11258,
-					}, -- [46]
-					{
-						["killCount"] = 78,
-						["name"] = "Stratholme",
-						["inProgress"] = false,
-						["killTotal"] = 12045,
-						["level"] = 50,
-						["rested"] = 0,
-						["totalXP"] = 12045,
-					}, -- [47]
-					{
-						["killCount"] = 62,
-						["name"] = "Stratholme",
-						["inProgress"] = false,
-						["killTotal"] = 9668,
-						["level"] = 50,
-						["rested"] = 9397,
-						["totalXP"] = 9668,
-					}, -- [48]
-					{
-						["totalXP"] = 35378,
-						["name"] = "Maraudon",
-						["rested"] = 0,
-						["killTotal"] = 35378,
-						["level"] = 49,
-						["killCount"] = 349,
-						["inProgress"] = false,
-					}, -- [49]
-					{
-						["totalXP"] = 30823,
-						["name"] = "Maraudon",
-						["rested"] = 0,
-						["killTotal"] = 30823,
-						["level"] = 49,
-						["killCount"] = 265,
-						["inProgress"] = false,
-					}, -- [50]
-					{
-						["totalXP"] = 36168,
-						["name"] = "Maraudon",
-						["rested"] = 0,
-						["killTotal"] = 36168,
-						["level"] = 49,
-						["killCount"] = 353,
-						["inProgress"] = false,
-					}, -- [51]
-					{
-						["totalXP"] = 37358,
-						["name"] = "Maraudon",
-						["rested"] = 3635,
-						["killTotal"] = 37358,
-						["level"] = 48,
-						["killCount"] = 349,
-						["inProgress"] = false,
-					}, -- [52]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 10120,
-						["killCount"] = 110,
-						["killTotal"] = 10120,
-						["level"] = 48,
-						["rested"] = 0,
-						["name"] = "Maraudon",
-					}, -- [53]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 11547,
-						["killCount"] = 142,
-						["killTotal"] = 11547,
-						["level"] = 48,
-						["rested"] = 0,
-						["name"] = "Maraudon",
-					}, -- [54]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 12896,
-						["killCount"] = 137,
-						["killTotal"] = 12896,
-						["level"] = 47,
-						["rested"] = 0,
-						["name"] = "Maraudon",
-					}, -- [55]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 14586,
-						["killCount"] = 144,
-						["killTotal"] = 14586,
-						["level"] = 47,
-						["rested"] = 0,
-						["name"] = "Maraudon",
-					}, -- [56]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 36060,
-						["killCount"] = 328,
-						["killTotal"] = 36060,
-						["level"] = 47,
-						["rested"] = 0,
-						["name"] = "Maraudon",
-					}, -- [57]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 11759,
-						["killCount"] = 125,
-						["killTotal"] = 11759,
-						["level"] = 46,
-						["rested"] = 0,
-						["name"] = "Maraudon",
-					}, -- [58]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 10441,
-						["killCount"] = 123,
-						["killTotal"] = 10441,
-						["level"] = 46,
-						["rested"] = 0,
-						["name"] = "Maraudon",
-					}, -- [59]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 6464,
-						["killCount"] = 80,
-						["killTotal"] = 6464,
-						["level"] = 46,
-						["rested"] = 0,
-						["name"] = "Maraudon",
-					}, -- [60]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 8476,
-						["killCount"] = 83,
-						["killTotal"] = 8476,
-						["level"] = 45,
-						["rested"] = 0,
-						["name"] = "Maraudon",
-					}, -- [61]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 33490,
-						["killCount"] = 341,
-						["killTotal"] = 33490,
-						["level"] = 45,
-						["rested"] = 318,
-						["name"] = "Maraudon",
-					}, -- [62]
-					{
-						["totalXP"] = 34111,
-						["name"] = "Maraudon",
-						["rested"] = 0,
-						["killTotal"] = 34111,
-						["level"] = 44,
-						["killCount"] = 341,
-						["inProgress"] = false,
-					}, -- [63]
-					{
-						["totalXP"] = 34291,
-						["name"] = "Maraudon",
-						["rested"] = 0,
-						["killTotal"] = 34291,
-						["level"] = 44,
-						["killCount"] = 341,
-						["inProgress"] = false,
-					}, -- [64]
-					{
-						["totalXP"] = 31217,
-						["name"] = "Maraudon",
-						["rested"] = 0,
-						["killTotal"] = 31217,
-						["level"] = 44,
-						["killCount"] = 355,
-						["inProgress"] = false,
-					}, -- [65]
-					{
-						["totalXP"] = 30576,
-						["name"] = "Maraudon",
-						["rested"] = 0,
-						["killTotal"] = 30576,
-						["level"] = 43,
-						["killCount"] = 353,
-						["inProgress"] = false,
-					}, -- [66]
-					{
-						["totalXP"] = 33698,
-						["name"] = "Maraudon",
-						["rested"] = 946,
-						["killTotal"] = 33698,
-						["level"] = 43,
-						["killCount"] = 356,
-						["inProgress"] = false,
-					}, -- [67]
-					{
-						["killCount"] = 334,
-						["name"] = "Maraudon",
-						["inProgress"] = false,
-						["killTotal"] = 37273,
-						["level"] = 42,
-						["rested"] = 0,
-						["totalXP"] = 37273,
-					}, -- [68]
-					{
-						["killCount"] = 319,
-						["name"] = "Maraudon",
-						["inProgress"] = false,
-						["killTotal"] = 32784,
-						["level"] = 42,
-						["rested"] = 0,
-						["totalXP"] = 32784,
-					}, -- [69]
-					{
-						["killCount"] = 334,
-						["name"] = "Maraudon",
-						["inProgress"] = false,
-						["killTotal"] = 35008,
-						["level"] = 41,
-						["rested"] = 0,
-						["totalXP"] = 35008,
-					}, -- [70]
-					{
-						["killCount"] = 324,
-						["name"] = "Maraudon",
-						["inProgress"] = false,
-						["killTotal"] = 34214,
-						["level"] = 41,
-						["rested"] = 0,
-						["totalXP"] = 34214,
-					}, -- [71]
-					{
-						["killCount"] = 325,
-						["name"] = "Maraudon",
-						["inProgress"] = false,
-						["killTotal"] = 36001,
-						["level"] = 40,
-						["rested"] = 4696,
-						["totalXP"] = 36001,
-					}, -- [72]
-					{
-						["killCount"] = 1,
-						["name"] = "Scarlet Monastery",
-						["inProgress"] = false,
-						["killTotal"] = 133,
-						["level"] = 40,
-						["rested"] = 0,
-						["totalXP"] = 133,
-					}, -- [73]
-					{
-						["killCount"] = 66,
-						["name"] = "Scarlet Monastery",
-						["inProgress"] = false,
-						["killTotal"] = 8010,
-						["level"] = 40,
-						["rested"] = 0,
-						["totalXP"] = 8010,
-					}, -- [74]
-					{
-						["killCount"] = 92,
-						["name"] = "Scarlet Monastery",
-						["inProgress"] = false,
-						["killTotal"] = 13859,
-						["level"] = 40,
-						["rested"] = 0,
-						["totalXP"] = 13859,
-					}, -- [75]
-					{
-						["killCount"] = 66,
-						["name"] = "Scarlet Monastery",
-						["inProgress"] = false,
-						["killTotal"] = 8141,
-						["level"] = 40,
-						["rested"] = 0,
-						["totalXP"] = 8141,
-					}, -- [76]
-					{
-						["killCount"] = 95,
-						["name"] = "Scarlet Monastery",
-						["inProgress"] = false,
-						["killTotal"] = 15297,
-						["level"] = 40,
-						["rested"] = 0,
-						["totalXP"] = 15297,
-					}, -- [77]
-					{
-						["killCount"] = 65,
-						["name"] = "Scarlet Monastery",
-						["inProgress"] = false,
-						["killTotal"] = 8444,
-						["level"] = 40,
-						["rested"] = 0,
-						["totalXP"] = 8444,
-					}, -- [78]
-					{
-						["killCount"] = 94,
-						["name"] = "Scarlet Monastery",
-						["inProgress"] = false,
-						["killTotal"] = 15050,
-						["level"] = 39,
-						["rested"] = 0,
-						["totalXP"] = 15050,
-					}, -- [79]
-					{
-						["killCount"] = 66,
-						["name"] = "Scarlet Monastery",
-						["inProgress"] = false,
-						["killTotal"] = 9079,
-						["level"] = 39,
-						["rested"] = 0,
-						["totalXP"] = 9079,
-					}, -- [80]
-					{
-						["killCount"] = 94,
-						["name"] = "Scarlet Monastery",
-						["inProgress"] = false,
-						["killTotal"] = 14953,
-						["level"] = 39,
-						["rested"] = 0,
-						["totalXP"] = 14953,
-					}, -- [81]
-					{
-						["killCount"] = 1,
-						["name"] = "Scarlet Monastery",
-						["inProgress"] = false,
-						["killTotal"] = 168,
-						["level"] = 39,
-						["rested"] = 0,
-						["totalXP"] = 168,
-					}, -- [82]
-					{
-						["killCount"] = 66,
-						["name"] = "Scarlet Monastery",
-						["inProgress"] = false,
-						["killTotal"] = 9165,
-						["level"] = 39,
-						["rested"] = 0,
-						["totalXP"] = 9165,
-					}, -- [83]
-					{
-						["killCount"] = 95,
-						["name"] = "Scarlet Monastery",
-						["inProgress"] = false,
-						["killTotal"] = 15252,
-						["level"] = 39,
-						["rested"] = 145,
-						["totalXP"] = 15252,
-					}, -- [84]
-					{
-						["name"] = "Scarlet Monastery",
-						["totalXP"] = 8802,
-						["rested"] = 0,
-						["killTotal"] = 8802,
-						["level"] = 38,
-						["inProgress"] = false,
-						["killCount"] = 66,
-					}, -- [85]
-					{
-						["name"] = "Scarlet Monastery",
-						["totalXP"] = 11677,
-						["rested"] = 0,
-						["killTotal"] = 11677,
-						["level"] = 38,
-						["inProgress"] = false,
-						["killCount"] = 80,
-					}, -- [86]
-					{
-						["name"] = "Scarlet Monastery",
-						["totalXP"] = 722,
-						["rested"] = 0,
-						["killTotal"] = 722,
-						["level"] = 38,
-						["inProgress"] = false,
-						["killCount"] = 5,
-					}, -- [87]
-					{
-						["name"] = "Scarlet Monastery",
-						["totalXP"] = 8755,
-						["rested"] = 0,
-						["killTotal"] = 8755,
-						["level"] = 38,
-						["inProgress"] = false,
-						["killCount"] = 66,
-					}, -- [88]
-					{
-						["name"] = "Scarlet Monastery",
-						["totalXP"] = 13277,
-						["rested"] = 0,
-						["killTotal"] = 13277,
-						["level"] = 38,
-						["inProgress"] = false,
-						["killCount"] = 91,
-					}, -- [89]
-					{
-						["name"] = "Scarlet Monastery",
-						["totalXP"] = 8478,
-						["rested"] = 0,
-						["killTotal"] = 8478,
-						["level"] = 37,
-						["inProgress"] = false,
-						["killCount"] = 62,
-					}, -- [90]
-					{
-						["name"] = "Scarlet Monastery",
-						["totalXP"] = 12742,
-						["rested"] = 0,
-						["killTotal"] = 12742,
-						["level"] = 37,
-						["inProgress"] = false,
-						["killCount"] = 86,
-					}, -- [91]
-					{
-						["name"] = "Scarlet Monastery",
-						["totalXP"] = 8743,
-						["rested"] = 0,
-						["killTotal"] = 8743,
-						["level"] = 37,
-						["inProgress"] = false,
-						["killCount"] = 64,
-					}, -- [92]
-					{
-						["name"] = "Scarlet Monastery",
-						["totalXP"] = 13414,
-						["rested"] = 0,
-						["killTotal"] = 13414,
-						["level"] = 37,
-						["inProgress"] = false,
-						["killCount"] = 91,
-					}, -- [93]
-					{
-						["name"] = "Scarlet Monastery",
-						["totalXP"] = 11193,
-						["rested"] = 8130,
-						["killTotal"] = 11193,
-						["level"] = 37,
-						["inProgress"] = false,
-						["killCount"] = 78,
-					}, -- [94]
-					{
-						["name"] = "Scarlet Monastery",
-						["totalXP"] = 9816,
-						["rested"] = 0,
-						["killTotal"] = 9816,
-						["level"] = 36,
-						["inProgress"] = false,
-						["killCount"] = 67,
-					}, -- [95]
-					{
-						["name"] = "Scarlet Monastery",
-						["totalXP"] = 15626,
-						["rested"] = 0,
-						["killTotal"] = 15626,
-						["level"] = 36,
-						["inProgress"] = false,
-						["killCount"] = 95,
-					}, -- [96]
-					{
-						["name"] = "Scarlet Monastery",
-						["totalXP"] = 11663,
-						["rested"] = 0,
-						["killTotal"] = 11663,
-						["level"] = 36,
-						["inProgress"] = false,
-						["killCount"] = 71,
-					}, -- [97]
-					{
-						["name"] = "Scarlet Monastery",
-						["totalXP"] = 15186,
-						["rested"] = 0,
-						["killTotal"] = 15186,
-						["level"] = 36,
-						["inProgress"] = false,
-						["killCount"] = 91,
-					}, -- [98]
-					{
-						["name"] = "Scarlet Monastery",
-						["totalXP"] = 8708,
-						["rested"] = 0,
-						["killTotal"] = 8708,
-						["level"] = 35,
-						["inProgress"] = false,
-						["killCount"] = 69,
-					}, -- [99]
-					{
-						["name"] = "Scarlet Monastery",
-						["totalXP"] = 12114,
-						["rested"] = 38,
-						["killTotal"] = 12114,
-						["level"] = 35,
-						["inProgress"] = false,
-						["killCount"] = 89,
-					}, -- [100]
-				},
-				["questAverage"] = 8917.5,
-				["questList"] = {
-					9800, -- [1]
-					9800, -- [2]
-					9800, -- [3]
-					9800, -- [4]
-					9800, -- [5]
-					9800, -- [6]
-					9800, -- [7]
-					975, -- [8]
-					9800, -- [9]
-					9800, -- [10]
-					9800, -- [11]
-					2400, -- [12]
-					2400, -- [13]
-					12600, -- [14]
-					9550, -- [15]
-					9800, -- [16]
-					5000, -- [17]
-					9550, -- [18]
-				},
 				["killList"] = {
 					{
 						["mob"] = "Deranged Helboar",
@@ -6756,192 +6020,928 @@ XToLevelDB = {
 					["lastUpdated"] = 5109.083000000001,
 					["xpPerSec"] = 1.323524545865639,
 				},
-				["npcXP"] = {
+				["dungeonList"] = {
 					{
-						["level"] = 61,
-						["name"] = "Bleeding Hollow Grunt",
-						["xp"] = 540,
+						["totalXP"] = 69598,
+						["name"] = "The Blood Furnace",
+						["rested"] = 0,
+						["killTotal"] = 69598,
+						["level"] = 60,
+						["killCount"] = 138,
+						["inProgress"] = false,
 					}, -- [1]
 					{
+						["totalXP"] = 18579,
+						["name"] = "Hellfire Ramparts",
+						["rested"] = 166,
+						["killTotal"] = 18579,
 						["level"] = 60,
-						["name"] = "Bleeding Hollow Grunt",
-						["xp"] = 508,
+						["killCount"] = 30,
+						["inProgress"] = false,
 					}, -- [2]
 					{
+						["inProgress"] = false,
+						["totalXP"] = 36234,
+						["killCount"] = 56,
+						["killTotal"] = 36234,
 						["level"] = 60,
-						["name"] = "Worg Master Kruush",
-						["xp"] = 559,
+						["rested"] = 0,
+						["name"] = "Hellfire Ramparts",
 					}, -- [3]
 					{
+						["killCount"] = 96,
+						["name"] = "Hellfire Ramparts",
+						["inProgress"] = false,
+						["killTotal"] = 57919,
 						["level"] = 60,
-						["name"] = "Bleeding Hollow Necrolyte",
-						["xp"] = 508,
+						["rested"] = 0,
+						["totalXP"] = 57919,
 					}, -- [4]
 					{
-						["level"] = 61,
-						["name"] = "Bleeding Hollow Tormentor",
-						["xp"] = 540,
+						["inProgress"] = false,
+						["totalXP"] = 58654,
+						["killCount"] = 138,
+						["killTotal"] = 58654,
+						["level"] = 60,
+						["rested"] = 0,
+						["name"] = "The Blood Furnace",
 					}, -- [5]
 					{
-						["level"] = 58,
-						["name"] = "Ripp",
-						["xp"] = 244,
+						["inProgress"] = false,
+						["totalXP"] = 34891,
+						["killCount"] = 93,
+						["killTotal"] = 34891,
+						["level"] = 60,
+						["rested"] = 12317,
+						["name"] = "Hellfire Ramparts",
 					}, -- [6]
 					{
-						["level"] = 60,
-						["name"] = "Bleeding Hollow Tormentor",
-						["xp"] = 557,
+						["killCount"] = 86,
+						["name"] = "Hellfire Ramparts",
+						["inProgress"] = false,
+						["killTotal"] = 47713,
+						["level"] = 59,
+						["rested"] = 0,
+						["totalXP"] = 47713,
 					}, -- [7]
 					{
-						["level"] = 60,
-						["name"] = "Bleeding Hollow Dark Shaman",
-						["xp"] = 508,
+						["killCount"] = 96,
+						["name"] = "Hellfire Ramparts",
+						["inProgress"] = false,
+						["killTotal"] = 50433,
+						["level"] = 59,
+						["rested"] = 0,
+						["totalXP"] = 50433,
 					}, -- [8]
 					{
-						["level"] = 60,
-						["name"] = "Bleeding Hollow Riding Worg",
-						["xp"] = 279,
+						["killCount"] = 96,
+						["name"] = "Hellfire Ramparts",
+						["inProgress"] = false,
+						["killTotal"] = 50325,
+						["level"] = 59,
+						["rested"] = 0,
+						["totalXP"] = 50325,
 					}, -- [9]
 					{
-						["level"] = 59,
-						["name"] = "Bleeding Hollow Peon",
-						["xp"] = 476,
+						["killCount"] = 103,
+						["name"] = "Hellfire Ramparts",
+						["inProgress"] = false,
+						["killTotal"] = 51777,
+						["level"] = 58,
+						["rested"] = 215,
+						["totalXP"] = 51777,
 					}, -- [10]
 					{
-						["level"] = 61,
-						["name"] = "Bleeding Hollow Necrolyte",
-						["xp"] = 540,
+						["totalXP"] = 3622,
+						["name"] = "Hellfire Ramparts",
+						["rested"] = 3622,
+						["killTotal"] = 3622,
+						["level"] = 58,
+						["killCount"] = 7,
+						["inProgress"] = false,
 					}, -- [11]
 					{
-						["level"] = 61,
-						["name"] = "Bleeding Hollow Riding Worg",
-						["xp"] = 297,
+						["name"] = "Stratholme",
+						["totalXP"] = 12001,
+						["rested"] = 0,
+						["killTotal"] = 12001,
+						["level"] = 57,
+						["inProgress"] = false,
+						["killCount"] = 64,
 					}, -- [12]
 					{
-						["level"] = 61,
-						["name"] = "Bleeding Hollow Dark Shaman",
-						["xp"] = 540,
+						["name"] = "Stratholme",
+						["totalXP"] = 12490,
+						["rested"] = 0,
+						["killTotal"] = 12490,
+						["level"] = 57,
+						["inProgress"] = false,
+						["killCount"] = 69,
 					}, -- [13]
 					{
-						["level"] = 60,
-						["name"] = "Bleeding Hollow Skeleton",
-						["xp"] = 25,
+						["name"] = "Stratholme",
+						["totalXP"] = 10840,
+						["rested"] = 0,
+						["killTotal"] = 10840,
+						["level"] = 57,
+						["inProgress"] = false,
+						["killCount"] = 65,
 					}, -- [14]
 					{
-						["level"] = 61,
-						["name"] = "Bleeding Hollow Skeleton",
-						["xp"] = 27,
+						["name"] = "Stratholme",
+						["totalXP"] = 10743,
+						["rested"] = 10743,
+						["killTotal"] = 10743,
+						["level"] = 57,
+						["inProgress"] = false,
+						["killCount"] = 63,
 					}, -- [15]
 					{
-						["level"] = 61,
-						["name"] = "Grillok \"Darkeye\"",
-						["xp"] = 810,
+						["totalXP"] = 9638,
+						["name"] = "Stratholme",
+						["rested"] = 0,
+						["killTotal"] = 9638,
+						["level"] = 56,
+						["killCount"] = 60,
+						["inProgress"] = false,
 					}, -- [16]
 					{
-						["level"] = 60,
-						["name"] = "Unyielding Footman",
-						["xp"] = 557,
+						["totalXP"] = 8846,
+						["name"] = "Stratholme",
+						["rested"] = 0,
+						["killTotal"] = 8846,
+						["level"] = 56,
+						["killCount"] = 63,
+						["inProgress"] = false,
 					}, -- [17]
 					{
-						["level"] = 59,
-						["name"] = "Unyielding Footman",
-						["xp"] = 521,
+						["totalXP"] = 11295,
+						["name"] = "Stratholme",
+						["rested"] = 0,
+						["killTotal"] = 11295,
+						["level"] = 56,
+						["killCount"] = 68,
+						["inProgress"] = false,
 					}, -- [18]
 					{
-						["level"] = 60,
-						["name"] = "Unyielding Knight",
-						["xp"] = 553,
+						["totalXP"] = 8215,
+						["name"] = "Stratholme",
+						["rested"] = 0,
+						["killTotal"] = 8215,
+						["level"] = 56,
+						["killCount"] = 47,
+						["inProgress"] = false,
 					}, -- [19]
 					{
-						["level"] = 59,
-						["name"] = "Unyielding Sorcerer",
-						["xp"] = 524,
+						["totalXP"] = 9601,
+						["name"] = "Stratholme",
+						["rested"] = 0,
+						["killTotal"] = 9601,
+						["level"] = 55,
+						["killCount"] = 63,
+						["inProgress"] = false,
 					}, -- [20]
 					{
-						["level"] = 60,
-						["name"] = "Unyielding Sorcerer",
-						["xp"] = 559,
+						["totalXP"] = 9846,
+						["name"] = "Stratholme",
+						["rested"] = 0,
+						["killTotal"] = 9846,
+						["level"] = 55,
+						["killCount"] = 64,
+						["inProgress"] = false,
 					}, -- [21]
 					{
-						["level"] = 59,
-						["name"] = "Unyielding Knight",
-						["xp"] = 514,
+						["totalXP"] = 11374,
+						["name"] = "Stratholme",
+						["rested"] = 8915,
+						["killTotal"] = 11374,
+						["level"] = 55,
+						["killCount"] = 54,
+						["inProgress"] = false,
 					}, -- [22]
 					{
-						["level"] = 61,
-						["name"] = "Uncontrolled Voidwalker",
-						["xp"] = 594,
+						["name"] = "Stratholme",
+						["totalXP"] = 10370,
+						["rested"] = 0,
+						["killTotal"] = 10370,
+						["level"] = 55,
+						["inProgress"] = false,
+						["killCount"] = 65,
 					}, -- [23]
 					{
-						["level"] = 59,
-						["name"] = "Razorfang Hatchling",
-						["xp"] = 476,
+						["name"] = "Stratholme",
+						["totalXP"] = 9968,
+						["rested"] = 0,
+						["killTotal"] = 9968,
+						["level"] = 55,
+						["inProgress"] = false,
+						["killCount"] = 64,
 					}, -- [24]
 					{
-						["level"] = 60,
-						["name"] = "Razorfang Hatchling",
-						["xp"] = 508,
+						["name"] = "Stratholme",
+						["totalXP"] = 9190,
+						["rested"] = 0,
+						["killTotal"] = 9190,
+						["level"] = 54,
+						["inProgress"] = false,
+						["killCount"] = 63,
 					}, -- [25]
 					{
-						["level"] = 61,
-						["name"] = "Razorfang Ravager",
-						["xp"] = 540,
+						["name"] = "Stratholme",
+						["totalXP"] = 8502,
+						["rested"] = 0,
+						["killTotal"] = 8502,
+						["level"] = 54,
+						["inProgress"] = false,
+						["killCount"] = 64,
 					}, -- [26]
 					{
-						["level"] = 61,
-						["name"] = "Lieutenant Commander Thalvos",
-						["xp"] = 592,
+						["name"] = "Stratholme",
+						["totalXP"] = 12037,
+						["rested"] = 0,
+						["killTotal"] = 12037,
+						["level"] = 54,
+						["inProgress"] = false,
+						["killCount"] = 78,
 					}, -- [27]
 					{
-						["level"] = 61,
-						["name"] = "Deranged Helboar",
-						["xp"] = 540,
+						["name"] = "Stratholme",
+						["totalXP"] = 15061,
+						["rested"] = 0,
+						["killTotal"] = 15061,
+						["level"] = 54,
+						["inProgress"] = false,
+						["killCount"] = 87,
 					}, -- [28]
 					{
-						["level"] = 60,
-						["name"] = "Deranged Helboar",
-						["xp"] = 557,
+						["name"] = "Stratholme",
+						["totalXP"] = 13634,
+						["rested"] = 0,
+						["killTotal"] = 13634,
+						["level"] = 54,
+						["inProgress"] = false,
+						["killCount"] = 76,
 					}, -- [29]
 					{
-						["level"] = 59,
-						["name"] = "Starving Helboar",
-						["xp"] = 524,
+						["name"] = "Stratholme",
+						["totalXP"] = 14079,
+						["rested"] = 0,
+						["killTotal"] = 14079,
+						["level"] = 54,
+						["inProgress"] = false,
+						["killCount"] = 89,
 					}, -- [30]
 					{
-						["level"] = 58,
-						["name"] = "Starving Helboar",
-						["xp"] = 490,
+						["name"] = "Stratholme",
+						["totalXP"] = 9463,
+						["rested"] = 0,
+						["killTotal"] = 9463,
+						["level"] = 53,
+						["inProgress"] = false,
+						["killCount"] = 70,
 					}, -- [31]
 					{
-						["level"] = 61,
-						["name"] = "Urtrak",
-						["xp"] = 340,
+						["name"] = "Stratholme",
+						["totalXP"] = 14149,
+						["rested"] = 0,
+						["killTotal"] = 14149,
+						["level"] = 53,
+						["inProgress"] = false,
+						["killCount"] = 89,
 					}, -- [32]
 					{
-						["level"] = 60,
-						["name"] = "Rogue Voidwalker",
-						["xp"] = 559,
+						["name"] = "Stratholme",
+						["totalXP"] = 12811,
+						["rested"] = 0,
+						["killTotal"] = 12811,
+						["level"] = 53,
+						["inProgress"] = false,
+						["killCount"] = 91,
 					}, -- [33]
 					{
-						["level"] = 60,
-						["name"] = "Uncontrolled Voidwalker",
-						["xp"] = 559,
+						["name"] = "Stratholme",
+						["totalXP"] = 10236,
+						["rested"] = 0,
+						["killTotal"] = 10236,
+						["level"] = 53,
+						["inProgress"] = false,
+						["killCount"] = 57,
 					}, -- [34]
 					{
-						["level"] = 61,
-						["name"] = "Rogue Voidwalker",
-						["xp"] = 591,
+						["name"] = "Stratholme",
+						["totalXP"] = 10555,
+						["rested"] = 85,
+						["killTotal"] = 10555,
+						["level"] = 53,
+						["inProgress"] = false,
+						["killCount"] = 74,
 					}, -- [35]
 					{
-						["level"] = 58,
-						["name"] = "Bonestripper Buzzard",
-						["xp"] = 490,
+						["name"] = "Stratholme",
+						["totalXP"] = 10823,
+						["rested"] = 0,
+						["killTotal"] = 10823,
+						["level"] = 52,
+						["inProgress"] = false,
+						["killCount"] = 76,
 					}, -- [36]
 					{
-						["level"] = 59,
-						["name"] = "Bonestripper Buzzard",
-						["xp"] = 524,
+						["name"] = "Stratholme",
+						["totalXP"] = 13075,
+						["rested"] = 0,
+						["killTotal"] = 13075,
+						["level"] = 52,
+						["inProgress"] = false,
+						["killCount"] = 88,
 					}, -- [37]
+					{
+						["name"] = "Stratholme",
+						["totalXP"] = 12118,
+						["rested"] = 0,
+						["killTotal"] = 12118,
+						["level"] = 52,
+						["inProgress"] = false,
+						["killCount"] = 82,
+					}, -- [38]
+					{
+						["name"] = "Stratholme",
+						["totalXP"] = 14027,
+						["rested"] = 0,
+						["killTotal"] = 14027,
+						["level"] = 52,
+						["inProgress"] = false,
+						["killCount"] = 89,
+					}, -- [39]
+					{
+						["killCount"] = 66,
+						["name"] = "Stratholme",
+						["inProgress"] = false,
+						["killTotal"] = 9805,
+						["level"] = 51,
+						["rested"] = 0,
+						["totalXP"] = 9805,
+					}, -- [40]
+					{
+						["killCount"] = 63,
+						["name"] = "Stratholme",
+						["inProgress"] = false,
+						["killTotal"] = 9453,
+						["level"] = 51,
+						["rested"] = 0,
+						["totalXP"] = 9453,
+					}, -- [41]
+					{
+						["killCount"] = 65,
+						["name"] = "Stratholme",
+						["inProgress"] = false,
+						["killTotal"] = 10003,
+						["level"] = 51,
+						["rested"] = 297,
+						["totalXP"] = 10003,
+					}, -- [42]
+					{
+						["totalXP"] = 8676,
+						["name"] = "Stratholme",
+						["rested"] = 0,
+						["killTotal"] = 8676,
+						["level"] = 51,
+						["killCount"] = 45,
+						["inProgress"] = false,
+					}, -- [43]
+					{
+						["totalXP"] = 10482,
+						["name"] = "Stratholme",
+						["rested"] = 0,
+						["killTotal"] = 10482,
+						["level"] = 51,
+						["killCount"] = 68,
+						["inProgress"] = false,
+					}, -- [44]
+					{
+						["totalXP"] = 11995,
+						["name"] = "Stratholme",
+						["rested"] = 0,
+						["killTotal"] = 11995,
+						["level"] = 50,
+						["killCount"] = 72,
+						["inProgress"] = false,
+					}, -- [45]
+					{
+						["totalXP"] = 11258,
+						["name"] = "Stratholme",
+						["rested"] = 0,
+						["killTotal"] = 11258,
+						["level"] = 50,
+						["killCount"] = 68,
+						["inProgress"] = false,
+					}, -- [46]
+					{
+						["totalXP"] = 12045,
+						["name"] = "Stratholme",
+						["rested"] = 0,
+						["killTotal"] = 12045,
+						["level"] = 50,
+						["killCount"] = 78,
+						["inProgress"] = false,
+					}, -- [47]
+					{
+						["totalXP"] = 9668,
+						["name"] = "Stratholme",
+						["rested"] = 9397,
+						["killTotal"] = 9668,
+						["level"] = 50,
+						["killCount"] = 62,
+						["inProgress"] = false,
+					}, -- [48]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 35378,
+						["killCount"] = 349,
+						["killTotal"] = 35378,
+						["level"] = 49,
+						["rested"] = 0,
+						["name"] = "Maraudon",
+					}, -- [49]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 30823,
+						["killCount"] = 265,
+						["killTotal"] = 30823,
+						["level"] = 49,
+						["rested"] = 0,
+						["name"] = "Maraudon",
+					}, -- [50]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 36168,
+						["killCount"] = 353,
+						["killTotal"] = 36168,
+						["level"] = 49,
+						["rested"] = 0,
+						["name"] = "Maraudon",
+					}, -- [51]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 37358,
+						["killCount"] = 349,
+						["killTotal"] = 37358,
+						["level"] = 48,
+						["rested"] = 3635,
+						["name"] = "Maraudon",
+					}, -- [52]
+					{
+						["name"] = "Maraudon",
+						["totalXP"] = 10120,
+						["rested"] = 0,
+						["killTotal"] = 10120,
+						["level"] = 48,
+						["inProgress"] = false,
+						["killCount"] = 110,
+					}, -- [53]
+					{
+						["name"] = "Maraudon",
+						["totalXP"] = 11547,
+						["rested"] = 0,
+						["killTotal"] = 11547,
+						["level"] = 48,
+						["inProgress"] = false,
+						["killCount"] = 142,
+					}, -- [54]
+					{
+						["name"] = "Maraudon",
+						["totalXP"] = 12896,
+						["rested"] = 0,
+						["killTotal"] = 12896,
+						["level"] = 47,
+						["inProgress"] = false,
+						["killCount"] = 137,
+					}, -- [55]
+					{
+						["name"] = "Maraudon",
+						["totalXP"] = 14586,
+						["rested"] = 0,
+						["killTotal"] = 14586,
+						["level"] = 47,
+						["inProgress"] = false,
+						["killCount"] = 144,
+					}, -- [56]
+					{
+						["name"] = "Maraudon",
+						["totalXP"] = 36060,
+						["rested"] = 0,
+						["killTotal"] = 36060,
+						["level"] = 47,
+						["inProgress"] = false,
+						["killCount"] = 328,
+					}, -- [57]
+					{
+						["name"] = "Maraudon",
+						["totalXP"] = 11759,
+						["rested"] = 0,
+						["killTotal"] = 11759,
+						["level"] = 46,
+						["inProgress"] = false,
+						["killCount"] = 125,
+					}, -- [58]
+					{
+						["name"] = "Maraudon",
+						["totalXP"] = 10441,
+						["rested"] = 0,
+						["killTotal"] = 10441,
+						["level"] = 46,
+						["inProgress"] = false,
+						["killCount"] = 123,
+					}, -- [59]
+					{
+						["name"] = "Maraudon",
+						["totalXP"] = 6464,
+						["rested"] = 0,
+						["killTotal"] = 6464,
+						["level"] = 46,
+						["inProgress"] = false,
+						["killCount"] = 80,
+					}, -- [60]
+					{
+						["name"] = "Maraudon",
+						["totalXP"] = 8476,
+						["rested"] = 0,
+						["killTotal"] = 8476,
+						["level"] = 45,
+						["inProgress"] = false,
+						["killCount"] = 83,
+					}, -- [61]
+					{
+						["name"] = "Maraudon",
+						["totalXP"] = 33490,
+						["rested"] = 318,
+						["killTotal"] = 33490,
+						["level"] = 45,
+						["inProgress"] = false,
+						["killCount"] = 341,
+					}, -- [62]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 34111,
+						["killCount"] = 341,
+						["killTotal"] = 34111,
+						["level"] = 44,
+						["rested"] = 0,
+						["name"] = "Maraudon",
+					}, -- [63]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 34291,
+						["killCount"] = 341,
+						["killTotal"] = 34291,
+						["level"] = 44,
+						["rested"] = 0,
+						["name"] = "Maraudon",
+					}, -- [64]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 31217,
+						["killCount"] = 355,
+						["killTotal"] = 31217,
+						["level"] = 44,
+						["rested"] = 0,
+						["name"] = "Maraudon",
+					}, -- [65]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 30576,
+						["killCount"] = 353,
+						["killTotal"] = 30576,
+						["level"] = 43,
+						["rested"] = 0,
+						["name"] = "Maraudon",
+					}, -- [66]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 33698,
+						["killCount"] = 356,
+						["killTotal"] = 33698,
+						["level"] = 43,
+						["rested"] = 946,
+						["name"] = "Maraudon",
+					}, -- [67]
+					{
+						["totalXP"] = 37273,
+						["name"] = "Maraudon",
+						["rested"] = 0,
+						["killTotal"] = 37273,
+						["level"] = 42,
+						["killCount"] = 334,
+						["inProgress"] = false,
+					}, -- [68]
+					{
+						["totalXP"] = 32784,
+						["name"] = "Maraudon",
+						["rested"] = 0,
+						["killTotal"] = 32784,
+						["level"] = 42,
+						["killCount"] = 319,
+						["inProgress"] = false,
+					}, -- [69]
+					{
+						["totalXP"] = 35008,
+						["name"] = "Maraudon",
+						["rested"] = 0,
+						["killTotal"] = 35008,
+						["level"] = 41,
+						["killCount"] = 334,
+						["inProgress"] = false,
+					}, -- [70]
+					{
+						["totalXP"] = 34214,
+						["name"] = "Maraudon",
+						["rested"] = 0,
+						["killTotal"] = 34214,
+						["level"] = 41,
+						["killCount"] = 324,
+						["inProgress"] = false,
+					}, -- [71]
+					{
+						["totalXP"] = 36001,
+						["name"] = "Maraudon",
+						["rested"] = 4696,
+						["killTotal"] = 36001,
+						["level"] = 40,
+						["killCount"] = 325,
+						["inProgress"] = false,
+					}, -- [72]
+					{
+						["totalXP"] = 133,
+						["name"] = "Scarlet Monastery",
+						["rested"] = 0,
+						["killTotal"] = 133,
+						["level"] = 40,
+						["killCount"] = 1,
+						["inProgress"] = false,
+					}, -- [73]
+					{
+						["totalXP"] = 8010,
+						["name"] = "Scarlet Monastery",
+						["rested"] = 0,
+						["killTotal"] = 8010,
+						["level"] = 40,
+						["killCount"] = 66,
+						["inProgress"] = false,
+					}, -- [74]
+					{
+						["totalXP"] = 13859,
+						["name"] = "Scarlet Monastery",
+						["rested"] = 0,
+						["killTotal"] = 13859,
+						["level"] = 40,
+						["killCount"] = 92,
+						["inProgress"] = false,
+					}, -- [75]
+					{
+						["totalXP"] = 8141,
+						["name"] = "Scarlet Monastery",
+						["rested"] = 0,
+						["killTotal"] = 8141,
+						["level"] = 40,
+						["killCount"] = 66,
+						["inProgress"] = false,
+					}, -- [76]
+					{
+						["totalXP"] = 15297,
+						["name"] = "Scarlet Monastery",
+						["rested"] = 0,
+						["killTotal"] = 15297,
+						["level"] = 40,
+						["killCount"] = 95,
+						["inProgress"] = false,
+					}, -- [77]
+					{
+						["totalXP"] = 8444,
+						["name"] = "Scarlet Monastery",
+						["rested"] = 0,
+						["killTotal"] = 8444,
+						["level"] = 40,
+						["killCount"] = 65,
+						["inProgress"] = false,
+					}, -- [78]
+					{
+						["totalXP"] = 15050,
+						["name"] = "Scarlet Monastery",
+						["rested"] = 0,
+						["killTotal"] = 15050,
+						["level"] = 39,
+						["killCount"] = 94,
+						["inProgress"] = false,
+					}, -- [79]
+					{
+						["totalXP"] = 9079,
+						["name"] = "Scarlet Monastery",
+						["rested"] = 0,
+						["killTotal"] = 9079,
+						["level"] = 39,
+						["killCount"] = 66,
+						["inProgress"] = false,
+					}, -- [80]
+					{
+						["totalXP"] = 14953,
+						["name"] = "Scarlet Monastery",
+						["rested"] = 0,
+						["killTotal"] = 14953,
+						["level"] = 39,
+						["killCount"] = 94,
+						["inProgress"] = false,
+					}, -- [81]
+					{
+						["totalXP"] = 168,
+						["name"] = "Scarlet Monastery",
+						["rested"] = 0,
+						["killTotal"] = 168,
+						["level"] = 39,
+						["killCount"] = 1,
+						["inProgress"] = false,
+					}, -- [82]
+					{
+						["totalXP"] = 9165,
+						["name"] = "Scarlet Monastery",
+						["rested"] = 0,
+						["killTotal"] = 9165,
+						["level"] = 39,
+						["killCount"] = 66,
+						["inProgress"] = false,
+					}, -- [83]
+					{
+						["totalXP"] = 15252,
+						["name"] = "Scarlet Monastery",
+						["rested"] = 145,
+						["killTotal"] = 15252,
+						["level"] = 39,
+						["killCount"] = 95,
+						["inProgress"] = false,
+					}, -- [84]
+					{
+						["killCount"] = 66,
+						["name"] = "Scarlet Monastery",
+						["inProgress"] = false,
+						["killTotal"] = 8802,
+						["level"] = 38,
+						["rested"] = 0,
+						["totalXP"] = 8802,
+					}, -- [85]
+					{
+						["killCount"] = 80,
+						["name"] = "Scarlet Monastery",
+						["inProgress"] = false,
+						["killTotal"] = 11677,
+						["level"] = 38,
+						["rested"] = 0,
+						["totalXP"] = 11677,
+					}, -- [86]
+					{
+						["killCount"] = 5,
+						["name"] = "Scarlet Monastery",
+						["inProgress"] = false,
+						["killTotal"] = 722,
+						["level"] = 38,
+						["rested"] = 0,
+						["totalXP"] = 722,
+					}, -- [87]
+					{
+						["killCount"] = 66,
+						["name"] = "Scarlet Monastery",
+						["inProgress"] = false,
+						["killTotal"] = 8755,
+						["level"] = 38,
+						["rested"] = 0,
+						["totalXP"] = 8755,
+					}, -- [88]
+					{
+						["killCount"] = 91,
+						["name"] = "Scarlet Monastery",
+						["inProgress"] = false,
+						["killTotal"] = 13277,
+						["level"] = 38,
+						["rested"] = 0,
+						["totalXP"] = 13277,
+					}, -- [89]
+					{
+						["killCount"] = 62,
+						["name"] = "Scarlet Monastery",
+						["inProgress"] = false,
+						["killTotal"] = 8478,
+						["level"] = 37,
+						["rested"] = 0,
+						["totalXP"] = 8478,
+					}, -- [90]
+					{
+						["killCount"] = 86,
+						["name"] = "Scarlet Monastery",
+						["inProgress"] = false,
+						["killTotal"] = 12742,
+						["level"] = 37,
+						["rested"] = 0,
+						["totalXP"] = 12742,
+					}, -- [91]
+					{
+						["killCount"] = 64,
+						["name"] = "Scarlet Monastery",
+						["inProgress"] = false,
+						["killTotal"] = 8743,
+						["level"] = 37,
+						["rested"] = 0,
+						["totalXP"] = 8743,
+					}, -- [92]
+					{
+						["killCount"] = 91,
+						["name"] = "Scarlet Monastery",
+						["inProgress"] = false,
+						["killTotal"] = 13414,
+						["level"] = 37,
+						["rested"] = 0,
+						["totalXP"] = 13414,
+					}, -- [93]
+					{
+						["killCount"] = 78,
+						["name"] = "Scarlet Monastery",
+						["inProgress"] = false,
+						["killTotal"] = 11193,
+						["level"] = 37,
+						["rested"] = 8130,
+						["totalXP"] = 11193,
+					}, -- [94]
+					{
+						["killCount"] = 67,
+						["name"] = "Scarlet Monastery",
+						["inProgress"] = false,
+						["killTotal"] = 9816,
+						["level"] = 36,
+						["rested"] = 0,
+						["totalXP"] = 9816,
+					}, -- [95]
+					{
+						["killCount"] = 95,
+						["name"] = "Scarlet Monastery",
+						["inProgress"] = false,
+						["killTotal"] = 15626,
+						["level"] = 36,
+						["rested"] = 0,
+						["totalXP"] = 15626,
+					}, -- [96]
+					{
+						["killCount"] = 71,
+						["name"] = "Scarlet Monastery",
+						["inProgress"] = false,
+						["killTotal"] = 11663,
+						["level"] = 36,
+						["rested"] = 0,
+						["totalXP"] = 11663,
+					}, -- [97]
+					{
+						["killCount"] = 91,
+						["name"] = "Scarlet Monastery",
+						["inProgress"] = false,
+						["killTotal"] = 15186,
+						["level"] = 36,
+						["rested"] = 0,
+						["totalXP"] = 15186,
+					}, -- [98]
+					{
+						["killCount"] = 69,
+						["name"] = "Scarlet Monastery",
+						["inProgress"] = false,
+						["killTotal"] = 8708,
+						["level"] = 35,
+						["rested"] = 0,
+						["totalXP"] = 8708,
+					}, -- [99]
+					{
+						["killCount"] = 89,
+						["name"] = "Scarlet Monastery",
+						["inProgress"] = false,
+						["killTotal"] = 12114,
+						["level"] = 35,
+						["rested"] = 38,
+						["totalXP"] = 12114,
+					}, -- [100]
+				},
+				["questAverage"] = 8917.5,
+				["questList"] = {
+					9800, -- [1]
+					9800, -- [2]
+					9800, -- [3]
+					9800, -- [4]
+					9800, -- [5]
+					9800, -- [6]
+					9800, -- [7]
+					975, -- [8]
+					9800, -- [9]
+					9800, -- [10]
+					9800, -- [11]
+					2400, -- [12]
+					2400, -- [13]
+					12600, -- [14]
+					9550, -- [15]
+					9800, -- [16]
+					5000, -- [17]
+					9550, -- [18]
 				},
 			},
 		},
@@ -6952,12 +6952,12 @@ XToLevelDB = {
 		["Cursedbreath - Firemaw"] = "Cursedbreath - Firemaw",
 		["Firebreather - Firemaw"] = "Firebreather - Firemaw",
 		["Helpsiebren - Razorgore"] = "Helpsiebren - Razorgore",
-		["Partijleider - Razorgore"] = "Partijleider - Razorgore",
+		["Mírjam - Firemaw"] = "Mírjam - Firemaw",
 		["Mirjam - Firemaw"] = "Mirjam - Firemaw",
-		["Partijlijder - Razorgore"] = "Partijlijder - Razorgore",
+		["Partijleider - Razorgore"] = "Partijleider - Razorgore",
 		["Eefjé - Razorgore"] = "Eefjé - Razorgore",
 		["Bankerinos - Firemaw"] = "Bankerinos - Firemaw",
-		["Mírjam - Firemaw"] = "Mírjam - Firemaw",
+		["Partijlijder - Razorgore"] = "Partijlijder - Razorgore",
 		["Kealthas - Razorgore"] = "Kealthas - Razorgore",
 	},
 	["profiles"] = {
@@ -6971,8 +6971,8 @@ XToLevelDB = {
 		["Cursedbreath - Firemaw"] = {
 			["ldb"] = {
 				["tooltip"] = {
-					["showBGInfo"] = false,
 					["showArchaeologyInfo"] = false,
+					["showBGInfo"] = false,
 				},
 			},
 			["averageDisplay"] = {
@@ -6985,8 +6985,8 @@ XToLevelDB = {
 			},
 			["averageDisplay"] = {
 				["playerGathering"] = false,
-				["orientation"] = "h",
 				["scale"] = 1.3,
+				["orientation"] = "h",
 				["playerBGs"] = false,
 				["playerDigs"] = false,
 				["playerQuests"] = false,
@@ -6997,7 +6997,7 @@ XToLevelDB = {
 				["orientation"] = "h",
 			},
 		},
-		["Partijleider - Razorgore"] = {
+		["Mírjam - Firemaw"] = {
 			["averageDisplay"] = {
 				["orientation"] = "h",
 			},
@@ -7008,7 +7008,7 @@ XToLevelDB = {
 				["playerBGs"] = false,
 			},
 		},
-		["Partijlijder - Razorgore"] = {
+		["Partijleider - Razorgore"] = {
 			["averageDisplay"] = {
 				["orientation"] = "h",
 			},
@@ -7020,7 +7020,7 @@ XToLevelDB = {
 		},
 		["Bankerinos - Firemaw"] = {
 		},
-		["Mírjam - Firemaw"] = {
+		["Partijlijder - Razorgore"] = {
 			["averageDisplay"] = {
 				["orientation"] = "h",
 			},

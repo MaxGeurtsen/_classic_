@@ -2,8 +2,8 @@
 IdentityDB = {
 	["profileKeys"] = {
 		["Firebreather - Firemaw"] = "Default",
-		["Kealthas - Razorgore"] = "Default",
 		["Partijleider - Razorgore"] = "Partijleider - Razorgore",
+		["Kealthas - Razorgore"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

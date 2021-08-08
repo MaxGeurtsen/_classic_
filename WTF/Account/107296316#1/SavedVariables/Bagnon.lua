@@ -35,12 +35,26 @@ Bagnon_Sets = {
 				1, -- [4]
 			},
 			["bagToggle"] = true,
-			["spacing"] = 0,
+			["color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
 			["enabled"] = true,
 			["brokerObject"] = "BagnonLauncher",
 			["columns"] = 10,
-			["options"] = true,
+			["reverseBags"] = false,
 			["money"] = true,
+			["hiddenRules"] = {
+			},
+			["itemScale"] = 1.01,
+			["y"] = 82.72373962402344,
+			["bagBreak"] = false,
+			["x"] = -112.0658518547975,
+			["alpha"] = 1,
+			["showBags"] = true,
+			["reverseSlots"] = false,
 			["rules"] = {
 				"all", -- [1]
 				"all/normal", -- [2]
@@ -65,22 +79,8 @@ Bagnon_Sets = {
 				"all/souls", -- [21]
 				"equip/ammo", -- [22]
 			},
-			["itemScale"] = 1.01,
-			["bagBreak"] = false,
-			["y"] = 82.72373962402344,
-			["x"] = -112.0658518547975,
-			["alpha"] = 1,
-			["showBags"] = true,
-			["reverseSlots"] = false,
-			["hiddenRules"] = {
-			},
-			["reverseBags"] = false,
-			["color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
+			["options"] = true,
+			["spacing"] = 0,
 		},
 		["vault"] = {
 			["rules"] = {
@@ -182,10 +182,10 @@ Bagnon_Sets = {
 			["x"] = 504.2839965820313,
 			["borderColor"] = {
 			},
-			["showBags"] = true,
-			["itemScale"] = 1,
-			["scale"] = 1,
 			["alpha"] = 1,
+			["scale"] = 1,
+			["itemScale"] = 1,
+			["showBags"] = true,
 		},
 	},
 	["keyColor"] = {
@@ -196,14 +196,14 @@ Bagnon_Sets = {
 	},
 	["mineColor"] = {
 	},
-	["glowUnusable"] = true,
-	["version"] = "9.1.0",
-	["displayGems"] = false,
-	["glowPoor"] = false,
-	["herbColor"] = {
-	},
-	["enchantColor"] = {
-	},
 	["leatherColor"] = {
 	},
+	["version"] = "9.1.0",
+	["displayGems"] = false,
+	["enchantColor"] = {
+	},
+	["herbColor"] = {
+	},
+	["glowPoor"] = false,
+	["glowUnusable"] = true,
 }
