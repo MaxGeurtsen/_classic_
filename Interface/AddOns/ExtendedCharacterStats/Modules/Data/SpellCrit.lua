@@ -17,7 +17,7 @@ function Data:GetSpellCrit(school)
     if ECS.IsTBC then
         crit = crit + GetCombatRatingBonus(CR_CRIT_SPELL) + GetSpellCritChanceFromIntellect("player") + itemBonus + setBonus
     else
-        crit = crit + GetSpellCritChance() + itemBonus + setBonus
+        crit = crit + GetSpellCritChance(1) + itemBonus + setBonus
     end
 
     crit = crit + _SpellCrit:GetSpellCritFromBuffs()
@@ -112,6 +112,10 @@ function _SpellCrit:GetTalentModifierHolyCrit()
     if classId == Data.PRIEST then
         local _, _, _, _, points, _, _, _ = GetTalentInfo(2, 3)
         mod = points * 1 -- 0-5% Holy Specialization
+    end
+    if classId == Data.PALADIN then
+        local _, _, _, _, points, _, _, _ = GetTalentInfo(1, 15)
+        mod = points * 1 -- 0-5% Holy Power
     end
 
     return mod

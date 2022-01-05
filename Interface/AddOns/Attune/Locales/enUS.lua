@@ -6,7 +6,7 @@ end
 
 
 -- INTERFACE
-Lang["Credits"] = "A huge thank you to my guild |cffffd100<Divine Heresy>|r for their support and understanding while I test the addon, and heaps of kudos to |cffffd100Bushido @ Pyrewood Village|r for the help on TBC!\n\n Also, many, many thanks to the translators:\n  - German translation: |cffffd100Sumaya @ Razorfen DE|r\n  - Russian translation: |cffffd100Greymarch Guild @ Flamegor RU|r\n  - Spanish translation: |cffffd100Coyu @ Pyrewood Village EU|r\n  - Chinese translation: |cffffd100ly395842562|r and |cffffd100Icyblade|r\n  - Korean translation: |cffffd100Drix @ Azshara KR|r\n\n/Hug from Cixi/Gaya @ Remulos Horde"
+Lang["Credits"] = "A huge thank you to my guild |cffffd100<Divine Heresy>|r for their support and understanding while I test the addon, and heaps of kudos to |cffffd100Bushido @ Pyrewood Village|r for the help on TBC!\n\n Also, many, many thanks to the translators:\n  - German translation: |cffffd100Sumaya @ Razorfen DE|r\n  - Russian translation: |cffffd100Greymarch Guild @ Flamegor RU|r\n  - Spanish translation: |cffffd100Coyu @ Pyrewood Village EU|r\n  - Chinese translation (simp.): |cffffd100ly395842562|r and |cffffd100Icyblade|r\n  - Chinese translation (trad.): |cffffd100DayZ|r @ Ivus TW|r\n  - Korean translation: |cffffd100Drix @ Azshara KR|r\n\n/Hug from Cixi/Gaya @ Remulos Horde"
 Lang["Mini"] = "Mini"
 Lang["Maxi"] = "Maxi"
 Lang["Version"] = "Attune v##VERSION## by Cixi@Remulos"
@@ -130,6 +130,24 @@ Lang["Save"] = "Save"
 Lang["Invite"] = "Invite"
 Lang["Send raid invites to all listed players?"] = "Send raid invites to all listed players?"
 Lang["External link"] = "Link to an online database"
+--v243
+Lang["Ogrila"] = "Ogri'la"
+Lang["Ogri'la Quest Hub"] = "Ogri'la Quest Hub"
+Lang["Ogrila_Desc"] = "Ogri'la is a Neutral faction in The Burning Crusade with weapons, armor, and consumables as rewards."
+Lang["DelInactive_TEXT"] = "Delete Inactive"
+Lang["DelInactive_DESC"] = "Delete all the information about players marked as Inactive"
+Lang["DelInactive_CONF"] = "Really delete all Inactive?"
+Lang["DelInactive_DONE"] = "All Inactive deleted"
+Lang["RAIDS"] = "RAIDS"
+Lang["KEYS"] = "KEYS"
+Lang["MISC"] = "MISC"
+Lang["HEROICS"] = "HEROICS"
+--v244
+Lang["Ally of the Netherwing"] = "Ally of the Netherwing"
+Lang["Netherwing_Desc"] = "The Netherwing is a faction of dragons located in Outland."
+--v247
+Lang["Tirisfal Glades"] = "Tirisfal Glades"
+Lang["Scholomance"] = "Scholomance"
 
 
 -- OPTIONS
@@ -399,6 +417,9 @@ Lang["I_29905"] = "Kael's Vial Remnant"			-- https://www.thegeekcrusade-serveur.
 Lang["I_29906"] = "Vashj's Vial Remnant"			-- https://www.thegeekcrusade-serveur.com/db/?item=29906
 Lang["I_31307"] = "Heart of Fury"			-- https://www.thegeekcrusade-serveur.com/db/?item=31307
 Lang["I_32649"] = "Medaillon of Karabor"			-- https://www.thegeekcrusade-serveur.com/db/?item=32649
+--v247
+Lang["Shrine of Thaurissan"] = "Shrine of Thaurissan"
+Lang["I_14610"] = "Araj's Scarab"
 
 
 -- QUESTS - Classic
@@ -729,6 +750,81 @@ Lang["Q1_10949"] = "Entry Into the Black Temple"			-- https://www.thegeekcrusade
 Lang["Q2_10949"] = "Travel to the entrance to the Black Temple in Shadowmoon Valley and speak to Xi'ri."
 Lang["Q1_10985"] = "A Distraction for Akama"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10985
 Lang["Q2_10985"] = "Ensure that Akama and Maiev enter the Black Temple in Shadowmoon Valley after Xi'ri's forces create a distraction."
+--v243
+Lang["Q1_10984"] = "Speak with the Ogre"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10984
+Lang["Q2_10984"] = "Speak with the Ogre, Grok, in the Lower City section of Shattrath City."
+Lang["Q1_10983"] = "Mog'dorg the Wizened"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10983
+Lang["Q2_10983"] = "Visit Mog'dorg the Wizened atop one of the towers just outside the Circle of Blood in the Blade's Edge Mountains."
+Lang["Q1_10995"] = "Grulloc Has Two Skulls"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10995
+Lang["Q2_10995"] = "Retrieve Grulloc's Dragon Skull and deliver it to Mog'dorg the Wizened atop the tower at the Circle of Blood in the Blade's Edge Mountains."
+Lang["Q1_10996"] = "Maggoc's Treasure Chest"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10996
+Lang["Q2_10996"] = "Retrieve Maggoc's Treasure Chest and deliver it to Mog'dorg the Wizened atop the tower at the Circle of Blood in the Blade's Edge Mountains."
+Lang["Q1_10997"] = "Even Gronn Have Standards"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10997
+Lang["Q2_10997"] = "Retrieve Slaag's Standard and deliver it to Mog'dorg the Wizened atop the tower at the Circle of Blood in the Blade's Edge Mountains."
+Lang["Q1_10998"] = "Grim(oire) Business"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10998
+Lang["Q2_10998"] = "You must retrieve Vim'gol's Vile Grimoire. Deliver it to Mog'dorg the Wizened atop the tower at the Circle of Blood in the Blade's Edge Mountains."
+Lang["Q1_11000"] = "Into the Soulgrinder"			-- https://www.thegeekcrusade-serveur.com/db/?quest=11000
+Lang["Q2_11000"] = "Retrieve Skulloc's Soul and deliver it to Mog'dorg the Wizened atop the tower at the Circle of Blood in the Blade's Edge Mountains."
+Lang["Q1_11022"] = "Speak with Mog'dorg"			-- https://www.thegeekcrusade-serveur.com/db/?quest=11022
+Lang["Q2_11022"] = "Speak with Mog'dorg the Wizened. He stands atop the tower on the east side of the Circle of Blood in the Blade's Edge Mountains."
+Lang["Q1_11009"] = "Ogre Heaven"			-- https://www.thegeekcrusade-serveur.com/db/?quest=11009
+Lang["Q2_11009"] = "Mog'dorg the Wizened has asked you to speak with Chu'a'lor at Ogri'la in the Blade's Edge Mountains."
+--v244
+Lang["Q1_10804"] = "Kindness"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10804
+Lang["Q2_10804"] = "Mordenai at Netherwing Fields in Shadowmoon Valley wants you to feed 8 Mature Netherwing Drakes."
+Lang["Q1_10811"] = "Seek Out Neltharaku"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10811
+Lang["Q2_10811"] = "Seek out Neltharaku, patron of the Netherwing Dragonflight."
+Lang["Q1_10814"] = "Neltharaku's Tale"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10814
+Lang["Q2_10814"] = "Speak with Neltharaku and listen to his story."
+Lang["Q1_10836"] = "Infiltrating Dragonmaw Fortress"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10836
+Lang["Q2_10836"] = "Neltharaku, flying high above Netherwing Fields in Shadowmoon Valley, wants you to slay 15 Dragonmaw Orcs."
+Lang["Q1_10837"] = "To Netherwing Ledge!"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10837
+Lang["Q2_10837"] = "Neltharaku, flying high above Netherwing Fields in Shadowmoon Valley, wants you to collect 12 Nethervine Crystals from Netherwing Ledge."
+Lang["Q1_10854"] = "The Force of Neltharaku"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10854
+Lang["Q2_10854"] = "Neltharaku, flying high above Netherwing Fields in Shadowmoon Valley, wants you to free 5 Enslaved Netherwing Drakes."
+Lang["Q1_10858"] = "Karynaku"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10858
+Lang["Q2_10858"] = "Seek out Karynaku at Dragonmaw Fortress."
+Lang["Q1_10866"] = "Zuluhed the Whacked"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10866
+Lang["Q2_10866"] = "Kill Zuluhed the Whacked and recover Zuluhed's Key. Use Zuluhed's Key on Zuluhed's Chains to free Karynaku."
+Lang["Q1_10870"] = "Ally of the Netherwing"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10870
+Lang["Q2_10870"] = "Let Karynaku return you to Mordenai in the Netherwing Fields."
+--v247
+Lang["Q1_3801"] = "Dark Iron Legacy"			-- https://www.thegeekcrusade-serveur.com/db/?quest=3801
+Lang["Q2_3801"] = "Speak with Franclorn Forgewright if you are interested in obtaining a key to the city major."
+Lang["Q1_3802"] = "Dark Iron Legacy"			-- https://www.thegeekcrusade-serveur.com/db/?quest=3802
+Lang["Q2_3802"] = "Slay Fineous Darkvire and recover the great hammer, Ironfel. Take Ironfel to the Shrine of Thaurissan and place it on the statue of Franclorn Forgewright."
+Lang["Q1_5096"] = "Scarlet Diversions"
+Lang["Q2_5096"] = "Proceed to the Scarlet Crusade's base camp between Felstone Field and Dalson's Tears and destroy their command tent."
+Lang["Q1_5098"] = "All Along the Watchtowers"
+Lang["Q2_5098"] = "Using the Beacon Torch, mark each tower in Andorhal; you will need to stand in the doorway of the tower to successfully mark it."
+Lang["Q1_838"] = "Scholomance"
+Lang["Q2_838"] = "Speak with Apothecary Dithers at the Bulwark, Western Plaguelands."
+Lang["Q1_964"] = "Skeletal Fragments"
+Lang["Q2_964"] = "Bring 15 Skeletal Fragments to Apothecary Dithers at the Bulwark, Western Plaguelands."
+Lang["Q1_5514"] = "Mold Rhymes With..."
+Lang["Q2_5514"] = "Bring the Imbued Skeletal Fragments and 15 gold coins to Krinkle Goodsteel in Gadgetzan."
+Lang["Q1_5802"] = "Fire Plume Forged"
+Lang["Q2_5802"] = "Take the Skeleton Key Mold and 2 Thorium Bars to the top of Fire Plume Ridge in Un'Goro Crater. Use the Skeleton Key Mold by the lava lake to forge the Unfinished Skeleton Key."
+Lang["Q1_5804"] = "Araj's Scarab"
+Lang["Q2_5804"] = "Destroy Araj the Summoner and bring Araj's Scarab to Apothecary Dithers at the Bulwark, Western Plaguelands."
+Lang["Q1_5511"] = "The Key to Scholomance"
+Lang["Q2_5511"] = "Well, here you are - the completed Skeleton Key.  I am certain as I can be that this key will allow you within the confines of the Scholomance. "
+Lang["Q1_5092"] = "Clear the Way"
+Lang["Q2_5092"] = "Kill 10 Skeletal Flayers and 10 Slavering Ghouls in Sorrow Hill."
+Lang["Q1_5097"] = "All Along the Watchtowers"
+Lang["Q2_5097"] = "Using the Beacon Torch, mark each tower in Andorhal; you will need to stand in the doorway of the tower to successfully mark it."
+Lang["Q1_5533"] = "Scholomance"
+Lang["Q2_5533"] = "Speak with Alchemist Arbington at Chillwind Point, Western Plaguelands."
+Lang["Q1_5537"] = "Skeletal Fragments"
+Lang["Q2_5537"] = "Bring 15 Skeletal Fragments to Alchemist Arbington at Chillwind Point, Western Plaguelands."
+Lang["Q1_5538"] = "Mold Rhymes With..."
+Lang["Q2_5538"] = "Bring the Imbued Skeletal Fragments and 15 gold coins to Krinkle Goodsteel in Gadgetzan."
+Lang["Q1_5801"] = "Fire Plume Forged"
+Lang["Q2_5801"] = "Take the Skeleton Key Mold and 2 Thorium Bars to the top of Fire Plume Ridge in Un'Goro Crater. Use the Skeleton Key Mold by the lava lake to forge the Unfinished Skeleton Key."
+Lang["Q1_5803"] = "Araj's Scarab"
+Lang["Q2_5803"] = "Destroy Araj the Summoner and bring Araj's Scarab to Alchemist Arbington at Chillwind Point, Western Plaguelands."
+Lang["Q1_5505"] = "The Key to Scholomance"
+Lang["Q2_5505"] = "Well, here you are - the completed Skeleton Key.  I am certain as I can be that this key will allow you within the confines of the Scholomance. "
 	
 
 -- NPC
@@ -884,7 +980,27 @@ Lang["N1_17767"] = "Rage Winterchill"	-- https://www.thegeekcrusade-serveur.com/
 Lang["N2_17767"] = "Rage Winterchill is the first boss in the Mount Hyjal raid instance."
 Lang["N1_18528"] = "Xi'ri"	-- https://www.thegeekcrusade-serveur.com/db/?npc=18528
 Lang["N2_18528"] = "Xi'ri is located at the entrance of the Black Temple. Big blue shiny thingy. Can't miss it either, really."
+--v243
+Lang["N1_22497"] = "V'eru"	-- https://www.thegeekcrusade-serveur.com/db/?npc=22497
+Lang["N2_22497"] = "V'eru is in the same room as A'dal, but he's blue. He's on the top landing."
+--v244
+Lang["N1_22113"] = "Mordenai"
+Lang["N2_22113"] = "A Blood Elf (spoiler alert, actually a dragon) who walks the Netherwing Fields just east of the Sanctum of the Stars"
+--v247
+Lang["N1_8888"]  = "Franclorn Forgewright"
+Lang["N2_8888"]  = "A ghost dwarf, standing on his own tomb OUTSIDE the dungeon, in the structure suspended above the lava. You can only interact with him if you are DEAD."
+Lang["N1_9056"]  = "Fineous Darkvire"
+Lang["N2_9056"]  = "He is INSIDE the dungeon, and patrols the quarry area outside of Lord Incendius' chamber."
+Lang["N1_10837"] = "High Executor Derrington"
+Lang["N2_10837"] = "He can be found at the Bulwark, near the border of Tirisfal and Western Plaguelands"
+Lang["N1_10838"] = "Commander Ashlam Valorfist"
+Lang["N2_10838"] = "He can be found at Chillwind Camp, just south of Andorhal in the Western Plaguelands"
+Lang["N1_1852"]  = "Araj the Summoner"
+Lang["N2_1852"]  = "The Lich, in the middle of Andorhal"
 
 
 Lang["O_1"] = "Click Drakkisath's Brand to complete the quest.\nIt's a glowing orb located behind General Drakkisath."
 Lang["O_2"] = "It's a tiny glowing red dot on the ground\nin front of the gates of Ahn'Qiraj (28.7,89.2)."
+--v247
+Lang["O_3"] = "The shrine is located at the end of a corridor\nthat starts from the upper level of the Ring of Law."
+

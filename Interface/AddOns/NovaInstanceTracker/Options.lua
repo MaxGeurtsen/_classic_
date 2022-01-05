@@ -630,6 +630,8 @@ NIT.optionDefaults = {
 		autoSlavePens = true,
 		autoBlackMorass = true,
 		autoCavernsFlight = true,
+		showPvpLog = true,
+		showPveLog = true,
 		resetCharData = true, --Reset one time to delete data before alt UI stuff was added.
 	},
 };

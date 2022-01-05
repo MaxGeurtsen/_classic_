@@ -210,4 +210,66 @@ NIT.critterCreatures = {
 	[14801] = "Wild Polymorph Target",
 	[3681] = "Wisp",
 	[12861] = "Wisp (Ghost Visual Only)",
+	
+	--TBC critters.
+	[20396] = "Captured Critter",
+	[22189] = "Marmot",
+	[18651] = "Young Blanchy",
+	[22480] = "Brown Marmot",
+	[25058] = "Fuzz",
+	[17970] = "Stormcrow Shape",
+	[21034] = "Boar Piglet",
+	[17213] = "Broom",
+	[23086] = "Sewer Rat",
+	[22843] = "Rook",
+	[17285] = "Ragnarose",
+	[16532] = "Leapgate",
+	[23979] = "Giant Marsh Frog",
+	[16859] = "Dragonhawk Hatchling",
+	[22816] = "Black Cat",
+	[20398] = "Reanimated Critter",
+	[19665] = "Ewe",
+	[20725] = "Bat",
+	[21247] = "Oronok's Chicken",
+	[19482] = "Sagan",
+	[15923] = "Golden Hare",
+	[21333] = "[PH]Test Skunk",
+	[19941] = "Sagan (Skunk Form)",
+	[20411] = "Spectral Bovine",
+	[19154] = "Soot",
+	[17467] = "Skunk",
+	[22306] = "Skittering Cavern Crawler",
+	[23087] = "Sewer Crocolisk",
+	[22152] = "Ruuan Weald Wisp",
+	[25886] = "Doomsday Rat",
+	[22842] = "Corvax",
+	[26177] = "2.4 Sunwell 5 Man Tradeskill Bunny [PH]",
+	[17559] = "Niblet",
+	[28100] = "Lemming",
+	[21922] = "Talbuk",
+	
+	--Other NPC's to ignore with a Creature guid, so it doesn't add to creature death counts.
+	[19668] = "Shadowfiend",
+	[510] = "Water Elemental",
+	[19833] = "Venomous Snake", --Snake trap.
+	[19921] = "Viper", --Snake trap.
+	[1964] = "Treant",
+	[15438] = "Greater Fire Elemental",
+	[15352] = "Greater Earth Elemental",
+	[21160] = "Conjured Water Elemental",
+	[17299] = "Crashin' Thrashin' Robot",
+	[25305] = "Dancing Flames",
+	[24780] = "Field Repair Bot 110G",
+	[18846] = "Furious Mr. Pinchy",
+	[19405] = "Steam Tonk",
+	[15368] = "Tonk Mine",
+	[11859] = "Doomguard",
+	[14337] = "Field Repair Bot 74A",
+	
 };
+
+--for k, v in pairs(NIT.critterCreatures2) do
+--	if (not NIT.critterCreatures[k]) then
+--		print("[" .. k .. "] = \"" .. v .. "\",");
+--	end
+--end

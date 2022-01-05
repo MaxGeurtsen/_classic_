@@ -32,6 +32,7 @@ GQ_DATA = {
 					},
 					["FIELD_OPT_PARTIAL"] = false,
 					["FIELD_SHOWCLOAK"] = true,
+					["FIELD_OPT_ACTIONSLOTS"] = true,
 					["FIELD_ACTIONSLOTS"] = {
 						{
 							["FIELD_ID"] = 2973,
@@ -192,7 +193,6 @@ GQ_DATA = {
 						"VALUE_NONE", -- [119]
 						"VALUE_NONE", -- [120]
 					},
-					["FIELD_OPT_ACTIONSLOTS"] = true,
 					["FIELD_SHOWHELMET"] = true,
 					["FIELD_SLOTSTATES"] = {
 					},
@@ -874,31 +874,32 @@ GQ_DATA = {
 				},
 				["Resto"] = {
 					["FIELD_SLOTS"] = {
-						"item:29028:3001:25897:24057:::::70::::::::", -- [1]
-						"item:28609::::::::70::::::::", -- [2]
-						"item:29031:2979:23094:23094:::::70::::::::", -- [3]
-						"item:154::::::::70::::::::", -- [4]
-						"item:28230:3150:23094:23094:23094::::70::::::::", -- [5]
-						"item:28567::::::::70::::::::", -- [6]
-						"item:28591::23094:23094:23094::::70::::::::", -- [7]
-						"item:28752:464:23094:23094:::::70::::::::", -- [8]
-						"item:28503:369:::::::70::::::::", -- [9]
-						"item:28520::23094:23094:::::70::::::::", -- [10]
-						"item:28790::::::::70::::::::", -- [11]
-						"item:29168::::::::70::::::::", -- [12]
-						"item:30841::::::::70::::::::", -- [13]
-						"item:29376::::::::70::::::::", -- [14]
-						"item:28765::::::::70::::::::", -- [15]
-						"item:28771:2343:::::::70::::::::", -- [16]
-						"item:29274::::::::70::::::::", -- [17]
-						"item:27544::::::::70::::::::", -- [18]
-						"item:28788::::::::70::::::::", -- [19]
+						"item:29028:3001:25897:24057:::::70:::::::::", -- [1]
+						"item:28609::::::::70:::::::::", -- [2]
+						"item:29031:2979:23094:23094:::::70:::::::::", -- [3]
+						"item:154::::::::70:::::::::", -- [4]
+						"item:28230:3150:23094:23094:23094::::70:::::::::", -- [5]
+						"item:28567::::::::70:::::::::", -- [6]
+						"item:28591::23094:23094:23094::::70:::::::::", -- [7]
+						"item:28752:464:23094:23094:::::70:::::::::", -- [8]
+						"item:28503:369:::::::70:::::::::", -- [9]
+						"item:28520::23094:23094:::::70:::::::::", -- [10]
+						"item:28790::::::::70:::::::::", -- [11]
+						"item:29168::::::::70:::::::::", -- [12]
+						"item:30841::::::::70:::::::::", -- [13]
+						"item:29376::::::::70:::::::::", -- [14]
+						"item:28765::::::::70:::::::::", -- [15]
+						"item:28771:2343:::::::70:::::::::", -- [16]
+						"item:29274::::::::70:::::::::", -- [17]
+						"item:27544::::::::70:::::::::", -- [18]
+						"item:28788::::::::70:::::::::", -- [19]
 						[0] = 0,
 					},
 					["FIELD_OPT_PARTIAL"] = false,
 					["FIELD_SLOTSTATES"] = {
 					},
 					["FIELD_SHOWHELMET"] = true,
+					["FIELD_OPT_ACTIONSLOTS"] = true,
 					["FIELD_ACTIONSLOTS"] = {
 						{
 							["FIELD_ID"] = 32594,
@@ -1064,9 +1065,9 @@ GQ_DATA = {
 						}, -- [40]
 						"VALUE_NONE", -- [41]
 						{
-							["FIELD_ID"] = 25587,
-							["FIELD_TYPE"] = "spell",
+							["FIELD_ID"] = 25359,
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [42]
 						{
 							["FIELD_ID"] = " ",
@@ -1096,9 +1097,9 @@ GQ_DATA = {
 							["FIELD_SUBTYPE"] = "spell",
 						}, -- [48]
 						{
-							["FIELD_ID"] = 25528,
-							["FIELD_TYPE"] = "spell",
+							["FIELD_ID"] = 8143,
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [49]
 						{
 							["FIELD_ID"] = 2870,
@@ -1155,23 +1156,23 @@ GQ_DATA = {
 							["FIELD_TYPE"] = "item",
 						}, -- [60]
 						{
-							["FIELD_ID"] = 8143,
-							["FIELD_TYPE"] = "spell",
+							["FIELD_ID"] = 25528,
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [61]
 						{
 							["FIELD_ID"] = " focus",
 							["FIELD_TYPE"] = "macro",
 						}, -- [62]
 						{
-							["FIELD_ID"] = 25570,
-							["FIELD_TYPE"] = "spell",
+							["FIELD_ID"] = 25567,
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [63]
 						{
-							["FIELD_ID"] = 25359,
-							["FIELD_TYPE"] = "spell",
+							["FIELD_ID"] = 25587,
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [64]
 						{
 							["FIELD_ID"] = 29376,
@@ -1192,9 +1193,9 @@ GQ_DATA = {
 							["FIELD_TYPE"] = "macro",
 						}, -- [68]
 						{
-							["FIELD_ID"] = 25567,
-							["FIELD_TYPE"] = "spell",
+							["FIELD_ID"] = 25570,
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [69]
 						{
 							["FIELD_ID"] = 3738,
@@ -1345,7 +1346,6 @@ GQ_DATA = {
 						"VALUE_NONE", -- [119]
 						"VALUE_NONE", -- [120]
 					},
-					["FIELD_OPT_ACTIONSLOTS"] = true,
 					["FIELD_SHOWCLOAK"] = false,
 				},
 			},
@@ -1682,6 +1682,7 @@ GQ_DATA = {
 					},
 					["FIELD_OPT_PARTIAL"] = false,
 					["FIELD_SHOWCLOAK"] = false,
+					["FIELD_OPT_ACTIONSLOTS"] = true,
 					["FIELD_ACTIONSLOTS"] = {
 						{
 							["FIELD_ID"] = " ",
@@ -1979,7 +1980,6 @@ GQ_DATA = {
 						"VALUE_NONE", -- [119]
 						"VALUE_NONE", -- [120]
 					},
-					["FIELD_OPT_ACTIONSLOTS"] = true,
 					["FIELD_SHOWHELMET"] = true,
 					["FIELD_SLOTSTATES"] = {
 						[17] = true,
@@ -2015,6 +2015,7 @@ GQ_DATA = {
 						[17] = true,
 					},
 					["FIELD_SHOWHELMET"] = true,
+					["FIELD_OPT_ACTIONSLOTS"] = true,
 					["FIELD_ACTIONSLOTS"] = {
 						{
 							["FIELD_ID"] = 20271,
@@ -2251,7 +2252,6 @@ GQ_DATA = {
 						"VALUE_NONE", -- [119]
 						"VALUE_NONE", -- [120]
 					},
-					["FIELD_OPT_ACTIONSLOTS"] = true,
 					["FIELD_SHOWCLOAK"] = true,
 				},
 			},
@@ -2307,7 +2307,6 @@ GQ_DATA = {
 					["FIELD_SLOTSTATES"] = {
 					},
 					["FIELD_SHOWHELMET"] = true,
-					["FIELD_OPT_ACTIONSLOTS"] = true,
 					["FIELD_ACTIONSLOTS"] = {
 						{
 							["FIELD_ID"] = 6603,
@@ -2460,6 +2459,7 @@ GQ_DATA = {
 						"VALUE_NONE", -- [119]
 						"VALUE_NONE", -- [120]
 					},
+					["FIELD_OPT_ACTIONSLOTS"] = true,
 					["FIELD_SHOWCLOAK"] = true,
 				},
 				["$PREVIOUSEQUIPMENT"] = {
@@ -2684,6 +2684,7 @@ GQ_DATA = {
 					["FIELD_SLOTSTATES"] = {
 					},
 					["FIELD_SHOWHELMET"] = true,
+					["FIELD_OPT_ACTIONSLOTS"] = true,
 					["FIELD_ACTIONSLOTS"] = {
 						{
 							["FIELD_ID"] = 5019,
@@ -3019,7 +3020,6 @@ GQ_DATA = {
 						"VALUE_NONE", -- [119]
 						"VALUE_NONE", -- [120]
 					},
-					["FIELD_OPT_ACTIONSLOTS"] = true,
 					["FIELD_SHOWCLOAK"] = true,
 				},
 				["$PREVIOUSEQUIPMENT"] = {
@@ -3395,21 +3395,24 @@ GQ_DATA = {
 	},
 }
 GQ_OPTIONS = {
-	["OPT_SCRIPTEDITORENABLED"] = false,
-	["OPT_ACTIONBARS"] = true,
-	["OPT_AUTOUPRANKSPELLS_ALLRANKS"] = false,
 	["OPT_SHOWITEMTOOLTIP"] = true,
 	["OPT_SLOTSTATES"] = false,
+	["OPT_SHOWCURRENTSET"] = true,
+	["OPT_ACTIONBARS"] = true,
+	["OPT_SWITCHDELAY"] = 600,
+	["OPT_AUTOUPRANKSPELLS_ALLRANKS"] = false,
+	["OPT_NOTIFYQUEUES"] = true,
+	["OPT_MOUNTING_CRUSADER_AURA"] = true,
+	["OPT_SCRIPTEDITORENABLED"] = false,
+	["OPT_SHOWBROKERTOOLTIP"] = true,
 	["OPT_MENUOPEN"] = true,
 	["OPT_IGNOREMANUALITEMS"] = false,
-	["OPT_SHOWCURRENTSET"] = true,
 	["OPT_AUTOUPRANKSPELLS"] = true,
-	["OPT_NOTIFYQUEUES"] = true,
+	["OPT_SAVECHANGES_ACTIONSLOTS"] = "OPTVALUE_SAVECHANGES_ALWAYS",
 	["OPT_SHOWSLOTBACKDROPS"] = true,
-	["OPT_SHOWBROKERTOOLTIP"] = true,
 	["OPT_HIGHLIGHTCHANGES"] = true,
 	["OPT_SAVECHANGES"] = "OPTVALUE_SAVECHANGES_ALWAYS",
-	["OPT_VERSION"] = 16,
+	["OPT_VERSION"] = 27,
 	["OPT_NOTIFYCHANGES"] = true,
 }
 GQ_AUX = {

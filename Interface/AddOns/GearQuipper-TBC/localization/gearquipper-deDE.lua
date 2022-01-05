@@ -59,7 +59,6 @@ L["Removed event:"]                                                             
 L["<%s> Saved slot state for %s (%s): %s"]                                                              = "<%s> Slot-Status für %s (%s) gespeichert: %s";
 L["active"]                                                                                             = "aktiv";
 L["not active"]                                                                                         = "nicht aktiv";
-L["Automatically save gear changes:"]                                                                   = "Ausrüstungs-Änderungen automatisch speichern:";
 L["Always"]                                                                                             = "Immer";
 L["Character menu open"]                                                                                = "Charakter-Menü offen";
 L["GearQuipper menu open"]                                                                              = "GearQuipper-Menü offen";
@@ -171,16 +170,38 @@ L["Event bindings %s."]                                                         
 L["enabled"]                                                                                            = "eingeschaltet";
 L["disabled"]                                                                                           = "ausgeschaltet";
 
-L["Error while pushing set to bank."]                                                                   = "Fehler beim Einlagern des Sets.";
-L["Error while pulling set from bank."]                                                                 = "Fehler beim Auslagern des Sets.";
+L["%s could not be pushed to bank."]                                                                    = "%s konnte nicht erfolgreich eingelagert werden.";
+L["%s could not be pulled from bank."]                                                                  = "%s konnte nicht erfolgreich ausgelagert werden.";
 
 L["Action finished. Switch to set \"%s\" complete."]                                                    = "Aktion beendet. Wechsel zu Set \"%s\" abgeschlossen.";
 L["Switching interrupted by action. It will be re-attempted once the action is finished."]              = "Set-Wechsel wurde durch eine Aktion unterbrochen. Es wird noch einmal versucht, sobald die Aktion abgeschlossen ist.";
 L["Missing Items: %s"]                                                                                  = "Fehlende Gegenstände: %s";
 L["Expected Item:"]                                                                                     = "Erwarteter Gegenstand:";
 
-L["(Hint: Does not affect action slots. Use the"]                                                       = "(Hinweis: Betrifft nicht die Action-Slots. Nutze";
-L["\"Affects action slots\" option of your sets instead.)"]                                             = "die \"Betrifft Action-Slots\"-Option deiner Sets stattdessen.)";
 L["Automatically uprank spells on your sets' action bars"]                                              = "Action-Slots automatisch auf neue Zauber-Ränge hochstufen"
 L["Uprank from any rank (will uprank any lower rank to max rank)"]                                      = "Hochstufen aller Ränge (stuft jeden niedrigeren Rang auf den maximalen Rang hoch)"
 L["Spell database updated."]                                                                            = "Zauber-Datenbank aktualisiert.";
+
+L["Affects helmet visibility:"]                                                                         = "Betrifft Helm-Sichtbarkeit:";
+L["Affects cloak visibility:"]                                                                          = "Betrifft Umhang-Sichtbarkeit:";
+
+L["Save gear when:"]                                                                                    = "Ausrüstung speichern wenn:";
+L["Save action slots when:"]                                                                            = "Action-Slots speichern wenn:";
+
+L["on shapeshift (enter)"]                                                                              = "Gestaltwandeln"
+L["on shapeshift (leave)"]                                                                              = "Gestalt verlassen"
+L["< choose form >"]                                                                                    = "< Gestalt wählen >";
+L["on aura change"]                                                                                     = "Aurawechsel";
+L["< none >"]                                                                                           = "< keine >";
+L["< choose aura >"]                                                                                    = "< Aura wählen >";
+
+L["Deprecated event"]                                                                                   = "Veraltetes Event";
+L["Replace me!"]                                                                                        = "Ersetze mich!";
+
+L["Options"]                                                                                            = "Optionen";
+
+L["Set \"%s\" was incompletely pushed to bank."]                                                        = "Set \"%s\" unvollständig eingelagert.";
+L["Set \"%s\" was incompletely pulled from bank."]                                                      = "Set \"%s\" unvollständig ausgelagert.";
+
+L["Set switch delay: %sms"]                                                                             = "Setwechsel-Verzögerung: %sms";
+L["(Increase if you experience issues with\n automated event switches)"]                                = "(Erhöhen, wenn Probleme mit event-\nautomatisierten Setwechseln auftreten)"

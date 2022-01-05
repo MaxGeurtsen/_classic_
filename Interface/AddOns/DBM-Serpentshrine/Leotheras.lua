@@ -1,11 +1,15 @@
 local mod	= DBM:NewMod("Leotheras", "DBM-Serpentshrine")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20210623162544")
+mod:SetRevision("20211102180215")
 mod:SetCreatureID(21215)
-mod:SetEncounterID(WOW_PROJECT_ID ~= (WOW_PROJECT_BURNING_CRUSADE_CLASSIC or 5) and 625 or 2460)
+mod:SetEncounterID(625, 2460)
 mod:SetModelID(20514)
 mod:SetUsedIcons(5, 6, 7, 8)
+mod:SetHotfixNoticeRev(20211102000000)--11-02-21
+mod:SetMinSyncRevision(20211102000000)--11-02-21
+mod:DisableRegenDetection()--Disable Player regen pull detection
+--mod:DisableESCombatDetection()--Disable ENCOUNTER_START
 
 mod:RegisterCombat("combat")
 
@@ -114,22 +118,9 @@ end
 
 function mod:CHAT_MSG_MONSTER_YELL(msg)
 	if msg == L.YellDemon or msg:find(L.YellDemon) then
-		warnPhase:Show(L.Demon)
-		timerWhirl:Cancel()
-		timerWhirlCD:Cancel()
-		timerPhase:Cancel()
-		timerDemonCD:Start()
-		timerPhase:Start(nil, L.Human)
-		self:Schedule(60, humanWarns, self)
+		self:SendSync("Demon")
 	elseif msg == L.YellPhase2 or msg:find(L.YellPhase2) then
-		self:SetStage(2)
-		self:Unschedule(humanWarns)
-		timerPhase:Cancel()
-		timerWhirl:Cancel()
-		timerWhirlCD:Cancel()
-		timerDemonCD:Cancel()
-		warnPhase2:Show()
-		timerWhirlCD:Start(22.5)
+		self:SendSync("Phase2")
 	end
 end
 
@@ -141,5 +132,27 @@ function mod:UNIT_DIED(args)
 		if self.vb.binderKill == 3 and not self:IsInCombat() then
 			DBM:StartCombat(self, 0)
 		end
+	end
+end
+
+function mod:OnSync(msg, playerName)
+	if not self:IsInCombat() then return end
+	if msg == "Demon" then
+		warnPhase:Show(L.Demon)
+		timerWhirl:Cancel()
+		timerWhirlCD:Cancel()
+		timerPhase:Cancel()
+		timerDemonCD:Start()
+		timerPhase:Start(nil, L.Human)
+		self:Schedule(60, humanWarns, self)
+	elseif msg == "Phase2" and self.vb.phase < 2 then
+		self:SetStage(2)
+		self:Unschedule(humanWarns)
+		timerPhase:Cancel()
+		timerWhirl:Cancel()
+		timerWhirlCD:Cancel()
+		timerDemonCD:Cancel()
+		warnPhase2:Show()
+		timerWhirlCD:Start(22.5)
 	end
 end

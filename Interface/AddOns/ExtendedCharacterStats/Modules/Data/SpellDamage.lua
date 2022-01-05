@@ -11,8 +11,8 @@ local _, _, classId = UnitClass("player")
 ---@return number
 function Data:GetSpellDamage(school)
     local spellDmg = GetSpellBonusDamage(school)
-    local modifier = _SpellDamage:GetGeneralTalentModifier()
-    spellDmg = spellDmg * (1 + (modifier / 100)) + _SpellDamage:GetTalentBonus()
+    local modifier = _SpellDamage:GetGeneralTalentModifier() + _SpellDamage:GetModifierFromBuffs(school)
+    spellDmg = spellDmg * (1 + (modifier / 100))
     return DataUtils:Round(spellDmg, 0)
 end
 
@@ -30,16 +30,23 @@ function _SpellDamage:GetGeneralTalentModifier()
 end
 
 ---@return number
-function _SpellDamage:GetTalentBonus()
-    local bonus = 0
+function _SpellDamage:GetModifierFromBuffs(school)
+    local mod = 0
 
-    if classId == Data.MAGE and ECS.IsTBC then
-        local _, intValue, _, _ = UnitStat("player", 4)
-        local _, _, _, _, mindMastery, _, _, _ = GetTalentInfo(1, 22)
-        bonus = intValue * (mindMastery * 5 / 100) -- 5-25% of Int from Mind Mastery
+    if classId == Data.WARLOCK and school == Data.SHADOW_SCHOOL then
+        for i = 1, 40 do
+            local _, _, _, _, _, _, _, _, _, spellId, _ = UnitAura("player", i, "HELPFUL")
+            if spellId == nil then
+                break
+            end
+
+            if spellId == 18791 then
+                mod = 15 -- 15% Shadow damage from Touch of Shadow
+            end
+        end
     end
 
-    return bonus
+    return mod
 end
 
 ---@return number

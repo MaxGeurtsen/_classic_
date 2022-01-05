@@ -56,7 +56,7 @@ function c:CreateQuickSlot(slotId, index)
 				-- item not in bag -> check in bank
 				local bagSpaceCache = c:GetBagSpace();
 				if c:GetItemFromBank(itemString, bagSpaceCache) then
-					C_Timer.After(0.6, function()
+					C_Timer.After(c:GetHomeLatency(100) / 1000, function()
 						EquipItemByName(itemString, slotId);
 					end);
 				end
@@ -124,6 +124,8 @@ function c:OpenQuickBar(slotId)
 
 			c:HighlightItemsInBags(itemStrings);
 			GameTooltip:Hide();
+
+			return quickBars[slotId];
 		end
 	end
 end
@@ -132,6 +134,12 @@ function c:CloseQuickBars()
 	if not c:IsInCombat() and quickBars then
 		for slotId, quickBar in pairs(quickBars) do
 			c:CloseQuickBar(slotId);
+
+			-- remove slot attached quickbars
+			local frame = _G["Character" .. c:GetSlotInfo(slotId)];
+			if frame and frame.quickbar then
+				frame.quickbar = nil;
+			end
 		end
 	end
 end

@@ -55,7 +55,7 @@ function _Melee:GetHitTalentBonus()
         mod = points * 1 -- 0-3% Precision
     end
 
-    if classId == Data.HUNTER then
+    if ECS.IsTBC and classId == Data.HUNTER then
         local _, _, _, _, points, _, _, _ = GetTalentInfo(3, 12)
         mod = points * 1 -- 0-3% Surefooted
     end
@@ -66,7 +66,7 @@ function _Melee:GetHitTalentBonus()
 
         if ECS.IsTBC and Data:GetMeleeAttackSpeedOffHand() > 0 then
             local _, _, _, _, dualWielding, _, _, _ = GetTalentInfo(2, 17)
-            mod = dualWielding * 2 -- 0-6% Dual Wielding Specialization
+            mod = mod + dualWielding * 2 -- 0-6% Dual Wielding Specialization
         end
     end
 
@@ -164,4 +164,10 @@ end
 function Data:GetExpertise()
     local expertise, _ = GetExpertise()
     return DataUtils:Round(expertise, 0)
+end
+
+---@return number
+function Data:GetExpertiseRating()
+    local expertiseRating = GetCombatRating(CR_EXPERTISE)
+    return DataUtils:Round(expertiseRating, 0)
 end

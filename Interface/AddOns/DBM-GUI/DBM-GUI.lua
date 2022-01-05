@@ -138,7 +138,7 @@ do
 	local popupFrame
 
 	local function createPopupFrame()
-		popupFrame = CreateFrame("Frame", nil, UIParent, DBM:IsShadowlands() and "BackdropTemplate")
+		popupFrame = CreateFrame("Frame", nil, UIParent, "BackdropTemplate")
 		popupFrame:SetFrameStrata("DIALOG")
 		popupFrame:SetFrameLevel(popupFrame:GetFrameLevel() + 10)
 		popupFrame:SetSize(512, 512)
@@ -151,11 +151,7 @@ do
 			edgeSize	= 32,
 			insets		= { left = 8, right = 8, top = 8, bottom = 8 }
 		}
-		if DBM:IsShadowlands() then
-			popupFrame:ApplyBackdrop()
-		else
-			popupFrame:SetBackdrop(popupFrame.backdropInfo)
-		end
+		popupFrame:ApplyBackdrop()
 		popupFrame:SetMovable(true)
 		popupFrame:EnableMouse(true)
 		popupFrame:RegisterForDrag("LeftButton")
@@ -164,7 +160,7 @@ do
 		popupFrame:Hide()
 		popupFrame.text = ""
 
-		local backdrop = CreateFrame("Frame", nil, popupFrame, DBM:IsShadowlands() and "BackdropTemplate")
+		local backdrop = CreateFrame("Frame", nil, popupFrame, "BackdropTemplate")
 		backdrop.backdropInfo = {
 			bgFile		= "Interface\\ChatFrame\\ChatFrameBackground",
 			edgeFile	= "Interface\\Tooltips\\UI-Tooltip-Border",
@@ -173,21 +169,17 @@ do
 			edgeSize	= 16,
 			insets		= { left = 3, right = 3, top = 5, bottom = 3 }
 		}
-		if DBM:IsShadowlands() then
-			backdrop:ApplyBackdrop()
-		else
-			backdrop:SetBackdrop(backdrop.backdropInfo)
-		end
+		backdrop:ApplyBackdrop()
 		backdrop:SetBackdropColor(0.1, 0.1, 0.1, 0.6)
 		backdrop:SetBackdropBorderColor(0.4, 0.4, 0.4)
 		backdrop:SetPoint("TOPLEFT", 15, -15)
 		backdrop:SetPoint("BOTTOMRIGHT", -40, 40)
 
-		local scrollFrame = CreateFrame("ScrollFrame", "TestScrollFrame", popupFrame, "UIPanelScrollFrameTemplate")
+		local scrollFrame = CreateFrame("ScrollFrame", nil, popupFrame, "UIPanelScrollFrameTemplate")
 		scrollFrame:SetPoint("TOPLEFT", 15, -22)
 		scrollFrame:SetPoint("BOTTOMRIGHT", -40, 45)
 
-		local input = CreateFrame("EditBox", "TestEditBox", scrollFrame)
+		local input = CreateFrame("EditBox", nil, scrollFrame)
 		input:SetTextInsets(7, 7, 3, 3)
 		input:SetFontObject(ChatFontNormal)
 		input:SetMultiLine(true)
@@ -377,31 +369,6 @@ function DBM_GUI:CreateBossModPanel(mod)
 						end)
 						catbutton:SetScript("OnClick", function(self)
 							mod.Options[v] = not mod.Options[v]
-							if mod.optionFuncs and mod.optionFuncs[v] then
-								mod.optionFuncs[v]()
-							end
-						end)
-					elseif mod.buttons and mod.buttons[v] then
-						local but = mod.buttons[v]
-						catbutton = catpanel:CreateButton(v, but.width, but.height, but.onClick, but.fontObject)
-					elseif mod.editboxes and mod.editboxes[v] then
-						local editBox = mod.editboxes[v]
-						catbutton = catpanel:CreateEditBox(mod.localization.options[v], "", editBox.width, editBox.height)
-						catbutton:SetScript("OnShow", function(self)
-							catbutton:SetText(mod.Options[v])
-						end)
-						catbutton:SetScript("OnEnterPressed", function(self)
-							if mod.optionFuncs and mod.optionFuncs[v] then
-								mod.optionFuncs[v]()
-							end
-						end)
-					elseif mod.sliders and mod.sliders[v] then
-						local slider = mod.sliders[v]
-						catbutton = catpanel:CreateSlider(mod.localization.options[v], slider.minValue, slider.maxValue, slider.valueStep)
-						catbutton:SetScript("OnShow", function(self)
-							self:SetValue(mod.Options[v])
-						end)
-						catbutton:HookScript("OnValueChanged", function(self)
 							if mod.optionFuncs and mod.optionFuncs[v] then
 								mod.optionFuncs[v]()
 							end

@@ -46,9 +46,9 @@ Bagnon_Sets = {
 			["columns"] = 10,
 			["reverseBags"] = false,
 			["money"] = true,
-			["itemScale"] = 1.01,
 			["hiddenRules"] = {
 			},
+			["itemScale"] = 1.01,
 			["y"] = 82.72373962402344,
 			["bagBreak"] = false,
 			["x"] = -112.0658518547975,
@@ -198,7 +198,7 @@ Bagnon_Sets = {
 	},
 	["leatherColor"] = {
 	},
-	["version"] = "9.1.0",
+	["version"] = "9.1.4",
 	["displayGems"] = false,
 	["enchantColor"] = {
 	},

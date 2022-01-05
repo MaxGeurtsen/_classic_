@@ -35,7 +35,6 @@ ccpCopyFrame:SetBackdropColor(0,0,0,.5);
 ccpCopyFrame.CharCount:Hide();
 ccpCopyFrame:SetFrameLevel(129);
 ccpCopyFrame:SetFrameStrata("TOOLTIP");
---Top bar for the title
 local ccpCopyFrameTopBar = CreateFrame("Frame", "ccpCopyFrameTopBar", ccpCopyFrame, "ThinGoldEdgeTemplate");
 ccpCopyFrameTopBar:SetPoint("TOP", -8, 22);
 ccpCopyFrameTopBar:SetWidth(100);
@@ -111,6 +110,13 @@ function CCP:OnInitialize()
 	CCP:loadUrlColor();
 end
 
+local f = CreateFrame("Frame");
+f:RegisterEvent("PLAYER_ENTERING_WORLD");
+f:SetScript("OnEvent", function(self, event, ...)
+	CCP:loadChatButtons();
+	f:UnregisterEvent("PLAYER_ENTERING_WORLD");
+end)
+
 function CCP.openCcpCopyFrame(window, url)
 	if (not window) then
 		window = 1;
@@ -128,7 +134,14 @@ function CCP.openCcpCopyFrame(window, url)
 		ccpCopyFrame.EditBox:HighlightText();
 		ccpCopyFrame.EditBox:SetFocus();
 	else
-		for i = 1, _G["ChatFrame" .. window]:GetNumMessages() do
+		local maxLines = _G["ChatFrame" .. window]:GetNumMessages() or 0;
+		--Line cap to avoid freezing.
+		--Start line count from the bottom.
+		local startLine = maxLines - CCP.db.global.maxLinesShown;
+		if (startLine < 1) then
+			startLine = 1;
+		end
+		for i = startLine, maxLines do
 			local currentMsg, r, g, b, chatTypeID = _G["ChatFrame" .. window]:GetMessageInfo(i);
 			--print(_G["ChatFrame" .. window]:GetMessageInfo(i));
 			local colorCode = false;
@@ -191,6 +204,9 @@ function CCP.removeChatJunk(currentMsg)
 	--Seems to be Arg1 is value is 1 or Arg2 is value is > 1.
 	--This escape sequence isn't parsed by ExitBox:Insert() in scroll frames so I have to fix it here.
 	--This should be fixed later and done in 1 regexp.
+	if (not currentMsg) then
+		return "";
+	end
 	local chatNumber = string.match(currentMsg, "(%d+) |4year:years;");
 	if (chatNumber) then
 		if (tonumber(number) == 0) then
@@ -278,21 +294,21 @@ function CCP.makeChatWindowButtons(i)
     obj.Tooltip:SetFrameStrata("TOOLTIP");
 	obj.Tooltip:Hide();
 	--Show/Hide the click box when moving mouse curson in and out of the chat window.
-	_G['ChatFrame'..i]:SetScript("OnEnter", function(self)
+	_G['ChatFrame'..i]:HookScript("OnEnter", function(self)
 		if (CCP.db.global.chat_copy) then
 			obj:Show();
 		end
 	end)
-	_G['ChatFrame'..i]:SetScript("OnLeave", function(self)
+	_G['ChatFrame'..i]:HookScript("OnLeave", function(self)
 		obj:Hide();
 		obj.Tooltip:Hide();
 	end)
-	_G['ChatFrame'..i].ScrollToBottomButton:SetScript("OnEnter", function(self)
+	_G['ChatFrame'..i].ScrollToBottomButton:HookScript("OnEnter", function(self)
 		if (CCP.db.global.chat_copy) then
 			obj:Show();
 		end
 	end)
-	_G['ChatFrame'..i].ScrollToBottomButton:SetScript("OnLeave", function(self)
+	_G['ChatFrame'..i].ScrollToBottomButton:HookScript("OnLeave", function(self)
 		obj:Hide();
 		obj.Tooltip:Hide();
 	end)
@@ -309,8 +325,10 @@ function CCP.makeChatWindowButtons(i)
 	obj:SetScript("OnLeave", obj.hide);
 end
 
-for i=1, NUM_CHAT_WINDOWS do
-	CCP.makeChatWindowButtons(i);
+function CCP:loadChatButtons()
+	for i = 1, NUM_CHAT_WINDOWS do
+		CCP.makeChatWindowButtons(i);
+	end
 end
 
 --Clickable website links.
@@ -449,6 +467,20 @@ CCP.options = {
 			func = "resetChatUrlColor",
 			order = 7,
 		},
+		maxLinesShown = {
+			type = "range",
+			name = "Max Lines Copied",
+			desc = "How many lines do you want to be shown in the copy window?",
+			order = 8,
+			get = "getMaxLinesShown",
+			set = "setMaxLinesShown",
+			min = 50,
+			max = 1000,
+			softMin = 50,
+			softMax = 1000,
+			step = 1,
+			--width = 1.5,
+		},
 	},
 };
 
@@ -462,6 +494,7 @@ CCP.optionDefaults = {
 		chat_url_color_r = 0, chat_url_color_g = 173, chat_url_color_b = 255,
 		chat_msg_color_r = 0, chat_msg_color_g = 255, chat_msg_color_b = 0,
 		chat_disable_fade = false,
+		maxLinesShown = 500,
 	},
 };
 
@@ -526,6 +559,15 @@ end
 
 function CCP:getChatDisableFade(info)
 	return self.db.global.chat_disable_fade;
+end
+
+--Max lines shown.
+function CCP:setMaxLinesShown(info, value)
+	self.db.global.maxLinesShown = value;
+end
+
+function CCP:getMaxLinesShown(info)
+	return self.db.global.maxLinesShown;
 end
 
 function CCP:RGBToHex(r, g, b)

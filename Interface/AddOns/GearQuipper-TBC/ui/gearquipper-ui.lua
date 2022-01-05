@@ -71,9 +71,12 @@ function c:InitUI(paperDollFrame)
                     local slotId = c:GetSlotId(ownerName:gsub("Character", ""));
                     if slotId then
                         local setName = c:LoadCurrentSetName();
-                        if setName and not (c:LoadPartialOption(setName) or c:LoadSlotState(slotId, setName)) and not c:IsSetItem(slotId, c:LoadSlot(slotId, setName)) then
+                        local itemString = c:LoadSlot(slotId, setName);
+                        if setName and not (c:LoadPartialOption(setName) or c:LoadSlotState(slotId, setName)) and
+                            not c:IsSetItem(slotId, itemString) then
                             GameTooltip:AddLine(" ");
-                            GameTooltip:AddDoubleLine(c:FormatTextWithColor(c:GetText("Expected Item:"), "ff0000"), c:GetItemLink(c:GetItemString(slotId)));
+                            GameTooltip:AddDoubleLine(c:FormatTextWithColor(c:GetText("Expected Item:"), "ff0000"),
+                                c:GetItemLink(itemString));
                         end
                     else
                         local name, itemLink = self:GetItem();
@@ -85,6 +88,39 @@ function c:InitUI(paperDollFrame)
                 end
             end
         end);
+
+        -- hook character slots for quickslots on empty slot
+        for slotId, slotName in pairs(c:GetSlotInfo()) do
+            local frame = _G["Character" .. slotName];
+            if frame then
+                frame:HookScript("OnClick", function (self, button)
+                    if button == "LeftButton" then
+                        if frame.quickbar then
+                            frame.quickbar:Hide();
+                            frame.quickbar = nil;
+                        elseif c:GetItemString(slotId) == c.VALUE_NONE then
+                            c:CloseQuickBars();
+                            frame.quickbar = c:OpenQuickBar(slotId);
+                        end
+                    end
+                end)
+            end
+        end
+
+        -- hook blizzard frame scripts for side-by-side display
+        local otherFrameNames = {"CraftFrame", "BankFrame"};
+        for _, frameName in ipairs(otherFrameNames) do
+            local frame = _G[frameName];
+            if frame and not c.isFrameHooked[frameName] then
+                frame:HookScript("OnShow", function()
+                    c:SetBlizzardFramePositions();
+                end);
+                frame:HookScript("OnHide", function()
+                    c:SetBlizzardFramePositions();
+                end);
+                c.isFrameHooked[frameName] = true;
+            end
+        end
 
         c:InitUiFrame();
 
@@ -510,7 +546,8 @@ local function GetContainersForItems(itemStrings)
                         if arkFrame then
                             local arkData = arkFrame.ARK_Data;
                             if arkData then
-                                local itemString = c:GetItemString(GetContainerItemLink(arkData.blizzard_id, arkData.slot_id));
+                                local itemString = c:GetItemString(
+                                    GetContainerItemLink(arkData.blizzard_id, arkData.slot_id));
                                 if c:IsEmpty(itemString) or not c:TableContains(itemStrings, itemString) then
                                     tinsert(result, arkFrame);
                                 end
@@ -582,6 +619,26 @@ end
 local function ResetFrameAlpha(frameName)
     if _G[frameName] then
         _G[frameName]:SetAlpha(1);
+    end
+end
+
+function c:HighlightItemsEquipped(itemStrings, setName)
+    if not itemStrings then
+        -- reset
+        for id, name in pairs(c:GetSlotInfo()) do
+            ResetFrameAlpha("Character" .. name);
+        end
+    else
+        -- set
+        for id, name in pairs(c:GetSlotInfo()) do
+            _G["Character" .. name]:SetAlpha(0.35);
+        end
+        for _, itemString in pairs(itemStrings) do
+            local slotId = c:IsItemEquipped(itemString);
+            if slotId and (not c:LoadPartialOption(setName) or c:LoadSlotState(slotId, setName)) then
+                ResetFrameAlpha("Character" .. c:GetSlotInfo()[slotId]);
+            end
+        end
     end
 end
 

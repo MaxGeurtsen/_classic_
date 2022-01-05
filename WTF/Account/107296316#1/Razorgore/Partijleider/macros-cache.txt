@@ -1,3 +1,11 @@
+VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast Reincarnation
+END
+VER 3 0000000001000009 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [harm]Chain Lightning; Chain Heal
+END
 VER 3 0000000001000008 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [harm]Lightning Bolt; Healing Wave
@@ -10,14 +18,6 @@ END
 VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [focus] Earth Shock
-END
-VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast Reincarnation
-END
-VER 3 0000000001000009 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast [harm]Chain Lightning; Chain Heal
 END
 VER 3 0000000001000005 " /castsequence r" "INV_MISC_QUESTIONMARK"
 /castsequence reset=combat/5   Grace of air Totem, Strength of Earth Totem, Mana Spring Totem,Searing Totem

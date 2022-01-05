@@ -8,12 +8,15 @@ local defaultYOffset = 22;
 local optionsPanel, scriptsPanel;
 
 local lblFeatures;
-local lblSaveChanges, lblHintActionSlots1, lblHintActionSlots2, chSaveAlways, chSaveCharMenu, chSaveGqMenu, chSaveNever;
+local lblSaveChanges, chSaveAlways, chSaveCharMenu, chSaveGqMenu, chSaveNever;
+local lblSaveChangesActionSlots, chSaveAlwaysActionSlots, chSaveCharMenuActionSlots, chSaveGqMenuActionSlots, chSaveNeverActionSlots;
 local chIgnoreManuallySwitchedItems, chUprankSpells, chUprankSpells_AllRanks;
 
 local lblVisualSettings;
 local chHighlightChanges, chConfirmChangesInChat, chShowCurrentSetLabel, chShowItemTooltip, chShowSlotBackgroundColors, chShowBrokerTooltip;
 local chNotifyQueues;
+
+local lblSwitchDelay, sldSwitchDelay, lblSwitchDelayHint;
 
 local lblExperimentalSettings;
 local chEnableScriptEditor;
@@ -24,17 +27,21 @@ function c:InitOptions()
 	c.OPT_VERSION = "OPT_VERSION";
 	c.OPT_ACTIONBARS = "OPT_ACTIONBARS";
 
+	c.OPT_MOUNTING_CRUSADER_AURA = "OPT_MOUNTING_CRUSADER_AURA";
 	c.OPT_IGNOREMANUALITEMS = "OPT_IGNOREMANUALITEMS";
 	c.OPT_AUTOUPRANKSPELLS = "OPT_AUTOUPRANKSPELLS";
 	c.OPT_AUTOUPRANKSPELLS_ALLRANKS = "OPT_AUTOUPRANKSPELLS_ALLRANKS";
+
+	c.OPT_SWITCHDELAY = "OPT_SWITCHDELAY";
 
 	c.OPT_NOTIFYCHANGES = "OPT_NOTIFYCHANGES";
 	c.OPT_NOTIFYQUEUES = "OPT_NOTIFYQUEUES";
 	c.OPT_HIGHLIGHTCHANGES = "OPT_HIGHLIGHTCHANGES";
 	c.OPT_SAVECHANGES = "OPT_SAVECHANGES";
+	c.OPT_SAVECHANGES_ACTIONSLOTS = "OPT_SAVECHANGES_ACTIONSLOTS";
 	c.OPT_SLOTSTATES = "OPT_SLOTSTATES";
 	c.OPT_SHOWCURRENTSET = "OPT_SHOWCURRENTSET";
-	c.OPT_SHOWITEMTOOLTIP = "OPT_SHOWITEMTOOLTIP";	
+	c.OPT_SHOWITEMTOOLTIP = "OPT_SHOWITEMTOOLTIP";
 	c.OPT_SHOWSLOTBACKDROPS = "OPT_SHOWSLOTBACKDROPS";
 
 	c.OPT_SHOWBROKERTOOLTIP = "OPT_SHOWBROKERTOOLTIP";
@@ -84,6 +91,10 @@ function c:InitOptions()
 		GQ_OPTIONS[c.OPT_SHOWBROKERTOOLTIP] = true;
 	end
 
+	if GQ_OPTIONS[c.OPT_MOUNTING_CRUSADER_AURA] == nil then
+		GQ_OPTIONS[c.OPT_MOUNTING_CRUSADER_AURA] = true;
+	end
+
 	if GQ_OPTIONS[c.OPT_IGNOREMANUALITEMS] == nil then
 		GQ_OPTIONS[c.OPT_IGNOREMANUALITEMS] = false;
 	end
@@ -101,6 +112,8 @@ function c:InitOptions()
 	end
 
 	GQ_OPTIONS[c.OPT_SAVECHANGES] = GQ_OPTIONS[c.OPT_SAVECHANGES] or c.OPTVALUE_SAVECHANGES_CHARMENU;
+	GQ_OPTIONS[c.OPT_SAVECHANGES_ACTIONSLOTS] = GQ_OPTIONS[c.OPT_SAVECHANGES_ACTIONSLOTS] or c.OPTVALUE_SAVECHANGES_ALWAYS;
+	GQ_OPTIONS[c.OPT_SWITCHDELAY] = GQ_OPTIONS[c.OPT_SWITCHDELAY] or 600;
 
 	-- main panel
 	optionsPanel = CreateFrame("Frame", "GearQuipper_Options_Main");
@@ -143,6 +156,8 @@ function c:InitOptions()
 end
 
 function c:ShowOptionsPanel()
+	optionsPanel.oldOptions = GQ_OPTIONS;
+
 	if not lblFeatures then
 		lblFeatures = CreateFrame("Frame", "GqUiOptionElement_lblFeatures", optionsPanel);
 		lblFeatures:SetPoint("TOPLEFT", optionsPanel.margin, -(optionsPanel.elementIndex - 1) * optionsPanel.checkboxYOffset - optionsPanel.margin);
@@ -154,7 +169,7 @@ function c:ShowOptionsPanel()
 		optionsPanel.elementIndex = optionsPanel.elementIndex + 1;
 	end
 
-	optionsPanel.elementIndex = optionsPanel.elementIndex + 1; -- spacing
+	--optionsPanel.elementIndex = optionsPanel.elementIndex + 1; -- spacing
 
 	if not lblSaveChanges then
 		lblSaveChanges = CreateFrame("Frame", "GqUiOptionElement_lblSaveChanges", optionsPanel);
@@ -163,11 +178,23 @@ function c:ShowOptionsPanel()
 		lblSaveChanges:SetHeight(23);
 		lblSaveChanges.fontString = lblSaveChanges:CreateFontString("GqUiOptionElement_lblSaveChanges_FontString", "ARTWORK", "GameFontNormal");
 		lblSaveChanges.fontString:SetPoint("LEFT", 3, 0);
-		lblSaveChanges.fontString:SetText(c:GetText("Automatically save gear changes:"));
+		lblSaveChanges.fontString:SetText(c:GetText("Save gear when:"));
 	end
 
+	if not lblSaveChangesActionSlots then
+		lblSaveChangesActionSlots = CreateFrame("Frame", "GqUiOptionElement_lblSaveChangesActionSlots", optionsPanel);
+		lblSaveChangesActionSlots:SetPoint("TOPLEFT", optionsPanel.margin, -(optionsPanel.elementIndex - 1) * optionsPanel.checkboxYOffset - optionsPanel.margin);
+		lblSaveChangesActionSlots:SetWidth(100);
+		lblSaveChangesActionSlots:SetHeight(23);
+		lblSaveChangesActionSlots.fontString = lblSaveChangesActionSlots:CreateFontString("GqUiOptionElement_lblSaveChangesActionSlots_FontString", "ARTWORK", "GameFontNormal");
+		lblSaveChangesActionSlots.fontString:SetPoint("LEFT", 280, 0);
+		lblSaveChangesActionSlots.fontString:SetText(c:GetText("Save action slots when:"));
+	end
+
+	optionsPanel.elementIndex = optionsPanel.elementIndex + 1; -- spacing
+
 	if not chSaveAlways then
-		chSaveAlways = c:CreateOptionCheckButton(c:GetText("Always"), 350);
+		chSaveAlways = c:CreateOptionCheckButton(c:GetText("Always"), optionsPanel.margin);
 		chSaveAlways:SetScript("OnClick", function(self)
 			if self:GetChecked() then
 				chSaveCharMenu:SetChecked(false);
@@ -177,23 +204,27 @@ function c:ShowOptionsPanel()
 				self:SetChecked(true);
 			end
 		end);
-		optionsPanel.elementIndex = optionsPanel.elementIndex + 1;
 	end
 	chSaveAlways:SetChecked(GQ_OPTIONS[c.OPT_SAVECHANGES] == c.OPTVALUE_SAVECHANGES_ALWAYS);
 
-	if not lblHintActionSlots1 then
-		lblHintActionSlots1 = CreateFrame("Frame", "GqUiOptionElement_lblHintActionSlots1", optionsPanel);
-		lblHintActionSlots1:SetPoint("TOPLEFT", optionsPanel.margin, -(optionsPanel.elementIndex - 1) * optionsPanel.checkboxYOffset - optionsPanel.margin);
-		lblHintActionSlots1:SetWidth(100);
-		lblHintActionSlots1:SetHeight(23);
-		lblHintActionSlots1.fontString = lblHintActionSlots1:CreateFontString("GqUiOptionElement_lblHintActionSlots1_FontString", "ARTWORK", "GameFontNormal");
-		lblHintActionSlots1.fontString:SetPoint("LEFT", 3, 0);
-		lblHintActionSlots1.fontString:SetText(c:GetText("(Hint: Does not affect action slots. Use the"));
-		lblHintActionSlots1.fontString:SetTextColor(1, 1, 1);
+	if not chSaveAlwaysActionSlots then
+		chSaveAlwaysActionSlots = c:CreateOptionCheckButton(c:GetText("Always"), 280 + optionsPanel.margin);
+		chSaveAlwaysActionSlots:SetScript("OnClick", function(self)
+			if self:GetChecked() then
+				chSaveCharMenuActionSlots:SetChecked(false);
+				chSaveGqMenuActionSlots:SetChecked(false);
+				chSaveNeverActionSlots:SetChecked(false);
+			else
+				self:SetChecked(true);
+			end
+		end);
 	end
+	chSaveAlwaysActionSlots:SetChecked(GQ_OPTIONS[c.OPT_SAVECHANGES_ACTIONSLOTS] == c.OPTVALUE_SAVECHANGES_ALWAYS);
+
+	optionsPanel.elementIndex = optionsPanel.elementIndex + 1; -- spacing
 
 	if not chSaveCharMenu then
-		chSaveCharMenu = c:CreateOptionCheckButton(c:GetText("Character menu open"), 350);
+		chSaveCharMenu = c:CreateOptionCheckButton(c:GetText("Character menu open"), optionsPanel.margin);
 		chSaveCharMenu:SetScript("OnClick", function(self)
 			if self:GetChecked() then
 				chSaveAlways:SetChecked(false);
@@ -203,23 +234,27 @@ function c:ShowOptionsPanel()
 				self:SetChecked(true);
 			end
 		end);
-		optionsPanel.elementIndex = optionsPanel.elementIndex + 1;
 	end
 	chSaveCharMenu:SetChecked(GQ_OPTIONS[c.OPT_SAVECHANGES] == c.OPTVALUE_SAVECHANGES_CHARMENU);
 
-	if not lblHintActionSlots2 then
-		lblHintActionSlots2 = CreateFrame("Frame", "GqUiOptionElement_lblHintActionSlots2", optionsPanel);
-		lblHintActionSlots2:SetPoint("TOPLEFT", optionsPanel.margin, -(optionsPanel.elementIndex - 1) * optionsPanel.checkboxYOffset - optionsPanel.margin);
-		lblHintActionSlots2:SetWidth(100);
-		lblHintActionSlots2:SetHeight(23);
-		lblHintActionSlots2.fontString = lblHintActionSlots2:CreateFontString("GqUiOptionElement_lblHintActionSlots2_FontString", "ARTWORK", "GameFontNormal");
-		lblHintActionSlots2.fontString:SetPoint("LEFT", 3, 0);
-		lblHintActionSlots2.fontString:SetText(c:GetText("\"Affects action slots\" option of your sets instead.)"));
-		lblHintActionSlots2.fontString:SetTextColor(1, 1, 1);
+	if not chSaveCharMenuActionSlots then
+		chSaveCharMenuActionSlots = c:CreateOptionCheckButton(c:GetText("Character menu open"), 280 + optionsPanel.margin);
+		chSaveCharMenuActionSlots:SetScript("OnClick", function(self)
+			if self:GetChecked() then
+				chSaveAlwaysActionSlots:SetChecked(false);
+				chSaveGqMenuActionSlots:SetChecked(false);
+				chSaveNeverActionSlots:SetChecked(false);
+			else
+				self:SetChecked(true);
+			end
+		end);
 	end
+	chSaveCharMenuActionSlots:SetChecked(GQ_OPTIONS[c.OPT_SAVECHANGES_ACTIONSLOTS] == c.OPTVALUE_SAVECHANGES_CHARMENU);
+
+	optionsPanel.elementIndex = optionsPanel.elementIndex + 1; -- spacing
 
 	if not chSaveGqMenu then
-		chSaveGqMenu = c:CreateOptionCheckButton(c:GetText("GearQuipper menu open"), 350);
+		chSaveGqMenu = c:CreateOptionCheckButton(c:GetText("GearQuipper menu open"), optionsPanel.margin);
 		chSaveGqMenu:SetScript("OnClick", function(self)
 			if self:GetChecked() then
 				chSaveAlways:SetChecked(false);
@@ -229,12 +264,27 @@ function c:ShowOptionsPanel()
 				self:SetChecked(true);
 			end
 		end);
-		optionsPanel.elementIndex = optionsPanel.elementIndex + 1;
 	end
 	chSaveGqMenu:SetChecked(GQ_OPTIONS[c.OPT_SAVECHANGES] == c.OPTVALUE_SAVECHANGES_GQMENU);
 
+	if not chSaveGqMenuActionSlots then
+		chSaveGqMenuActionSlots = c:CreateOptionCheckButton(c:GetText("GearQuipper menu open"), 280 + optionsPanel.margin);
+		chSaveGqMenuActionSlots:SetScript("OnClick", function(self)
+			if self:GetChecked() then
+				chSaveAlwaysActionSlots:SetChecked(false);
+				chSaveCharMenuActionSlots:SetChecked(false);
+				chSaveNeverActionSlots:SetChecked(false);
+			else
+				self:SetChecked(true);
+			end
+		end);
+	end
+	chSaveGqMenuActionSlots:SetChecked(GQ_OPTIONS[c.OPT_SAVECHANGES_ACTIONSLOTS] == c.OPTVALUE_SAVECHANGES_GQMENU);
+
+	optionsPanel.elementIndex = optionsPanel.elementIndex + 1; -- spacing
+
 	if not chSaveNever then
-		chSaveNever = c:CreateOptionCheckButton(c:GetText("Never"), 350);
+		chSaveNever = c:CreateOptionCheckButton(c:GetText("Never"), optionsPanel.margin);
 		chSaveNever:SetScript("OnClick", function(self)
 			if self:GetChecked() then
 				chSaveAlways:SetChecked(false);
@@ -244,9 +294,25 @@ function c:ShowOptionsPanel()
 				self:SetChecked(true);
 			end
 		end);
-		optionsPanel.elementIndex = optionsPanel.elementIndex + 1;
 	end
 	chSaveNever:SetChecked(GQ_OPTIONS[c.OPT_SAVECHANGES] == c.OPTVALUE_SAVECHANGES_NEVER);
+
+	if not chSaveNeverActionSlots then
+		chSaveNeverActionSlots = c:CreateOptionCheckButton(c:GetText("Never"), 280 + optionsPanel.margin);
+		chSaveNeverActionSlots:SetScript("OnClick", function(self)
+			if self:GetChecked() then
+				chSaveAlwaysActionSlots:SetChecked(false);
+				chSaveCharMenuActionSlots:SetChecked(false);
+				chSaveGqMenuActionSlots:SetChecked(false);
+			else
+				self:SetChecked(true);
+			end
+		end);
+	end
+	chSaveNeverActionSlots:SetChecked(GQ_OPTIONS[c.OPT_SAVECHANGES_ACTIONSLOTS] == c.OPTVALUE_SAVECHANGES_NEVER);
+
+	optionsPanel.elementIndex = optionsPanel.elementIndex + 1; -- spacing
+	optionsPanel.elementIndex = optionsPanel.elementIndex + 1; -- spacing
 
 	if not chIgnoreManuallySwitchedItems then
 		chIgnoreManuallySwitchedItems = c:CreateOptionCheckButton(c:GetText("Ignore manually switched items for the next event triggered set switch"));
@@ -276,9 +342,40 @@ function c:ShowOptionsPanel()
 	end
 	chUprankSpells_AllRanks:SetChecked(GQ_OPTIONS[c.OPT_AUTOUPRANKSPELLS_ALLRANKS]);
 
+	if not lblSwitchDelay then
+		lblSwitchDelay = CreateFrame("Frame", "GqUiOptionElement_lblSwitchDelay", optionsPanel);
+		lblSwitchDelay:SetPoint("TOPLEFT", optionsPanel.margin, -(optionsPanel.elementIndex - 1) * optionsPanel.checkboxYOffset - optionsPanel.margin - 10);
+		lblSwitchDelay:SetWidth(100);
+		lblSwitchDelay:SetHeight(23);
+		lblSwitchDelay.fontString = lblSwitchDelay:CreateFontString("GqUiOptionElement_lblSwitchDelay_FontString", "ARTWORK", "GameFontNormal");
+		lblSwitchDelay.fontString:SetPoint("LEFT", 3, 0);
+	end
+	lblSwitchDelay.fontString:SetText(c:GetText("Set switch delay: %sms", tostring(GQ_OPTIONS[c.OPT_SWITCHDELAY])));
+
+	if not sldSwitchDelay then
+		sldSwitchDelay = c:CreateOptionsSlider(0, 1000, function (self)
+			lblSwitchDelay.fontString:SetText(c:GetText("Set switch delay: %sms", tostring(self:GetValue())));
+		end, 205, 10, 150, 50, "0ms", "1000ms");
+	end
+	sldSwitchDelay:SetValue(GQ_OPTIONS[c.OPT_SWITCHDELAY]);
+
+	if not lblSwitchDelayHint then
+		lblSwitchDelayHint = CreateFrame("Frame", "GqUiOptionElement_lblSwitchDelayHint", optionsPanel);
+		lblSwitchDelayHint:SetPoint("TOPLEFT", 375, -(optionsPanel.elementIndex - 1) * optionsPanel.checkboxYOffset - optionsPanel.margin - 10);
+		lblSwitchDelayHint:SetWidth(100);
+		lblSwitchDelayHint:SetHeight(23);
+		lblSwitchDelayHint.fontString = lblSwitchDelayHint:CreateFontString("GqUiOptionElement_lblSwitchDelayHint_FontString", "ARTWORK", "GameFontNormal");
+		lblSwitchDelayHint.fontString:SetPoint("TOPLEFT", 3, 0);
+		lblSwitchDelayHint.fontString:SetJustifyH("LEFT");
+	end
+	lblSwitchDelayHint.fontString:SetText(c:GetText("(Increase if you experience issues with\n automated event switches)"));
+
 	optionsPanel.elementIndex = optionsPanel.elementIndex + 1; -- spacing
 
 	-- VISUAL SETTINGS
+
+	optionsPanel.elementIndex = optionsPanel.elementIndex + 1; -- spacing
+	optionsPanel.elementIndex = optionsPanel.elementIndex + 1; -- spacing
 
 	if not lblVisualSettings then
 		lblVisualSettings = CreateFrame("Frame", "GqUiOptionElement_lblVisualSettings", optionsPanel);
@@ -290,8 +387,6 @@ function c:ShowOptionsPanel()
 		lblVisualSettings.fontString:SetText(c:GetText("Visual Settings"));
 		optionsPanel.elementIndex = optionsPanel.elementIndex + 1;
 	end
-
-	optionsPanel.elementIndex = optionsPanel.elementIndex + 1; -- spacing
 
 	if not chNotifyQueues then
 		chNotifyQueues = c:CreateOptionCheckButton(c:GetText("Queue/combat chat notifications"));
@@ -336,29 +431,29 @@ function c:ShowOptionsPanel()
 	chShowBrokerTooltip:SetChecked(GQ_OPTIONS[c.OPT_SHOWBROKERTOOLTIP]);
 
 	optionsPanel.elementIndex = optionsPanel.elementIndex + 1; -- spacing
-
+	optionsPanel.elementIndex = optionsPanel.elementIndex + 1; -- spacing
+	
 	-- EXPERIMENTAL SETTINGS
 
-	if not lblExperimentalSettings then
-		lblExperimentalSettings = CreateFrame("Frame", "GqUiOptionElement_lblExperimentalSettings", optionsPanel);
-		lblExperimentalSettings:SetPoint("TOPLEFT", optionsPanel.margin, -(optionsPanel.elementIndex - 1) * optionsPanel.checkboxYOffset - optionsPanel.margin);
-		lblExperimentalSettings:SetWidth(550);
-		lblExperimentalSettings:SetHeight(23);
-		lblExperimentalSettings.fontString = lblExperimentalSettings:CreateFontString("GqUiOptionElement_lblExperimentalSettings_FontString", "ARTWORK", "GameFontNormalLarge");
-		lblExperimentalSettings.fontString:SetPoint("CENTER");
-		lblExperimentalSettings.fontString:SetText(c:GetText("Experimental Features"));
-		optionsPanel.elementIndex = optionsPanel.elementIndex + 1;
-	end
+	--if false and not lblExperimentalSettings then
+	--	lblExperimentalSettings = CreateFrame("Frame", "GqUiOptionElement_lblExperimentalSettings", optionsPanel);
+	--	lblExperimentalSettings:SetPoint("TOPLEFT", optionsPanel.margin, -(optionsPanel.elementIndex - 1) * optionsPanel.checkboxYOffset - optionsPanel.margin);
+	--	lblExperimentalSettings:SetWidth(550);
+	--	lblExperimentalSettings:SetHeight(23);
+	--	lblExperimentalSettings.fontString = lblExperimentalSettings:CreateFontString("GqUiOptionElement_lblExperimentalSettings_FontString", "ARTWORK", "GameFontNormalLarge");
+	--	lblExperimentalSettings.fontString:SetPoint("CENTER");
+	--	lblExperimentalSettings.fontString:SetText(c:GetText("Experimental Features"));
+	--	optionsPanel.elementIndex = optionsPanel.elementIndex + 1;
+	--end
 
-	optionsPanel.elementIndex = optionsPanel.elementIndex + 1; -- spacing
-
-	if not chEnableScriptEditor then
-		chEnableScriptEditor = c:CreateOptionCheckButton(c:GetText("Enable script editor (Beware: Might crash the addon or the game! Needs relog.)"));
-		optionsPanel.elementIndex = optionsPanel.elementIndex + 1;
-	end
-	chEnableScriptEditor:SetChecked(GQ_OPTIONS[c.OPT_SCRIPTEDITORENABLED]);
+	--if not chEnableScriptEditor then
+	--	chEnableScriptEditor = c:CreateOptionCheckButton(c:GetText("Enable script editor (Beware: Might crash the addon or the game! Needs relog.)"));
+	--	optionsPanel.elementIndex = optionsPanel.elementIndex + 1;
+	--end
+	--chEnableScriptEditor:SetChecked(GQ_OPTIONS[c.OPT_SCRIPTEDITORENABLED]);
 
 	-- RESET BUTTON
+	--optionsPanel.elementIndex = optionsPanel.elementIndex + 1; -- spacing
 
 	if not btnReset then
 		btnReset = CreateFrame("Button", "GqResetButton", optionsPanel, "GqButtonTemplate");
@@ -393,7 +488,49 @@ function c:CreateOptionCheckButton(text, xOffset)
 	return element;
 end
 
-function c:SaveOptions()
+function c:CreateOptionsSlider(min, max, func, xOffset, yOffset, width, valueStep, minText, maxText)
+    xOffset = xOffset or 0;
+    min = min or 0;
+    max = max or 100;
+    valueStep = valueStep or 1;
+    minText = minText or min;
+    maxText = maxText or max;
+    width = width or 160;
+
+    local element = CreateFrame("Slider", "GqUiOptionElement_" .. optionsPanel.elementIndex, optionsPanel, "OptionsSliderTemplate");
+    element.frameType = "Slider";
+    element:SetPoint("TOPLEFT", 10 + xOffset, -(optionsPanel.elementIndex - 1) * optionsPanel.checkboxYOffset - optionsPanel.margin - yOffset);
+    element:SetOrientation("HORIZONTAL");
+    element:SetWidth(width);
+    element:SetHeight(23);
+    element:SetScript("OnValueChanged", func);
+    element:SetMinMaxValues(min, max);
+    element:SetValueStep(valueStep);
+    element:SetObeyStepOnDrag(true);
+
+    -- min text
+	element.minText = getglobal(element:GetName() .. "Low");
+    element.SetMinText = function (self, text)
+        self.minText:SetText(text);
+    end
+    element:SetMinText(minText);
+
+    -- max text
+    element.maxText = getglobal(element:GetName() .. "High");
+    element.SetMaxText = function (self, text)
+        self.maxText:SetText(text);
+    end
+    element:SetMaxText(maxText);
+
+	local S = c:GetElvUiSkinModule();
+	if S then
+		S:HandleSliderFrame(element);
+	end
+
+    return element;
+end
+
+function c:SaveOptions(self)
 	if c.initFinished then
 		GQ_OPTIONS[c.OPT_NOTIFYQUEUES] = chNotifyQueues:GetChecked();
 		GQ_OPTIONS[c.OPT_NOTIFYCHANGES] = chConfirmChangesInChat:GetChecked();
@@ -408,7 +545,9 @@ function c:SaveOptions()
 		GQ_OPTIONS[c.OPT_AUTOUPRANKSPELLS] = chUprankSpells:GetChecked();
 		GQ_OPTIONS[c.OPT_AUTOUPRANKSPELLS_ALLRANKS] = chUprankSpells_AllRanks:GetChecked();
 
-		GQ_OPTIONS[c.OPT_SCRIPTEDITORENABLED] = chEnableScriptEditor:GetChecked();
+		GQ_OPTIONS[c.OPT_SWITCHDELAY] = sldSwitchDelay:GetValue();
+
+		--GQ_OPTIONS[c.OPT_SCRIPTEDITORENABLED] = chEnableScriptEditor:GetChecked();
 
 		if not GQ_OPTIONS[c.OPT_IGNOREMANUALITEMS] then
 			c:ResetIgnoredSlots();
@@ -422,6 +561,16 @@ function c:SaveOptions()
 			GQ_OPTIONS[c.OPT_SAVECHANGES] = c.OPTVALUE_SAVECHANGES_GQMENU;
 		else
 			GQ_OPTIONS[c.OPT_SAVECHANGES] = c.OPTVALUE_SAVECHANGES_NEVER;
+		end
+
+		if chSaveAlwaysActionSlots:GetChecked() then
+			GQ_OPTIONS[c.OPT_SAVECHANGES_ACTIONSLOTS] = c.OPTVALUE_SAVECHANGES_ALWAYS;
+		elseif chSaveCharMenuActionSlots:GetChecked() then
+			GQ_OPTIONS[c.OPT_SAVECHANGES_ACTIONSLOTS] = c.OPTVALUE_SAVECHANGES_CHARMENU;
+		elseif chSaveGqMenuActionSlots:GetChecked() then
+			GQ_OPTIONS[c.OPT_SAVECHANGES_ACTIONSLOTS] = c.OPTVALUE_SAVECHANGES_GQMENU;
+		else
+			GQ_OPTIONS[c.OPT_SAVECHANGES_ACTIONSLOTS] = c.OPTVALUE_SAVECHANGES_NEVER;
 		end
 	end
 end

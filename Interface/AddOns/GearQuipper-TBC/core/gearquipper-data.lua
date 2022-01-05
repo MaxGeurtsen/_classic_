@@ -21,6 +21,10 @@ local FIELD_SLOTS = "FIELD_SLOTS";
 local FIELD_SLOTSTATES = "FIELD_SLOTSTATES";
 local FIELD_ACTIONSLOTS = "FIELD_ACTIONSLOTS";
 
+-- additional set fields
+local FIELD_AFFECTS_HELMET = "FIELD_AFFECTS_HELMET";
+local FIELD_AFFECTS_CLOAK = "FIELD_AFFECTS_CLOAK";
+
 local FIELD_OPT_ACTIONSLOTS = "FIELD_OPT_ACTIONSLOTS";
 local FIELD_OPT_PARTIAL = "FIELD_OPT_PARTIAL";
 
@@ -254,6 +258,17 @@ function c:LevelUp(newLevel)
 	end
 end
 
+function c:ReplaceItemStringInAllSets(oldString, newString, notify)
+	c:DebugPrint("ReplaceItemStringInAllSets", oldString, newString, notify);
+	for _, setName in ipairs(c:LoadSetNames()) do
+		for slotId, itemString in pairs(c:LoadSet(setName)) do
+			if itemString == oldString then
+				c:SaveSlot(slotId, setName, notify, newString);
+			end
+		end
+	end
+end
+
 ----- [ actions ] -----
 
 function c:SaveActionConfiguration(setName, notify)
@@ -429,16 +444,22 @@ function c:UpdateMacro(oldName, newName, realmName, charName)
 	end
 end
 
-function c:UprankSpellOnActionSlots(spellName, targetSpellRank)
-	if GQ_OPTIONS[c.OPT_AUTOUPRANKSPELLS] and spellName and targetSpellRank then
-		local targetSpellId = c:GetSpellId(spellName, targetSpellRank);
+function c:UprankSpellOnActionSlots(targetSpellId)
+	if GQ_OPTIONS[c.OPT_AUTOUPRANKSPELLS] and targetSpellId then
+		--local targetSpellId = c:GetSpellId(spellName, targetSpellRank);
 		local upgradableSpellIds;
+		c:DebugPrint("SpellId:", targetSpellId);
 		if GQ_OPTIONS[c.OPT_AUTOUPRANKSPELLS_ALLRANKS] then
 			-- all lower ranks
 			upgradableSpellIds = c:GetUprankableSpellIds(targetSpellId);
 		else
 			-- only -1 rank
-			upgradableSpellIds = { c:GetLowerRankSpellId(targetSpellRank) };
+			upgradableSpellIds = { c:GetLowerRankSpellId(targetSpellId) };
+		end
+
+		c:DebugPrint("Upgradable ids:");
+		if c.debugMode then
+			c:DumpTable(upgradableSpellIds);
 		end
 
 		local currentSetName = c:LoadCurrentSetName();
@@ -536,7 +557,7 @@ function c:DeleteEventBinding(index)
 		if setName == c.KEYWORD_PREVIOUS then
 			setName = c:GetText("[Previous set]");
 		end
-		c:NotifyInChat(string.format("%s %s -> %s", c:GetText("Removed event:"), event, setName));
+		c:NotifyInChat(string.format("%s %s -> %s", c:GetText("Removed event:"), event or c:GetText("Deprecated event"), setName));
 	end
 end
 
@@ -609,12 +630,64 @@ end
 function c:LoadCloakAndHelmet(setName)
 	setName = setName or c:LoadCurrentSetName();
 	if setName and GQ_DATA[c:GetRealmName()][c:GetCharName()][FIELD_SETS][setName] then
-		if GQ_DATA[c:GetRealmName()][c:GetCharName()][FIELD_SETS][setName][FIELD_SHOWHELMET] ~= nil then
+		if c:GetAffectsHelmet(setName) and GQ_DATA[c:GetRealmName()][c:GetCharName()][FIELD_SETS][setName][FIELD_SHOWHELMET] ~= nil then
 			ShowHelm(GQ_DATA[c:GetRealmName()][c:GetCharName()][FIELD_SETS][setName][FIELD_SHOWHELMET]);
 		end
-		if GQ_DATA[c:GetRealmName()][c:GetCharName()][FIELD_SETS][setName][FIELD_SHOWCLOAK] ~= nil then
+		if c:GetAffectsCloak(setName) and GQ_DATA[c:GetRealmName()][c:GetCharName()][FIELD_SETS][setName][FIELD_SHOWCLOAK] ~= nil then
 			ShowCloak(GQ_DATA[c:GetRealmName()][c:GetCharName()][FIELD_SETS][setName][FIELD_SHOWCLOAK]);
 		end
+	end
+end
+
+function c:SetAffectsHelmet(value, setName, notify)
+	c:DebugPrint("SaveAffectsHelmet", value, setName, notify);
+	setName = setName or c:LoadCurrentSetName();
+	if notify == nil then
+		notify = true;
+	end
+
+	if setName and GQ_DATA[c:GetRealmName()][c:GetCharName()][FIELD_SETS][setName] then
+		GQ_DATA[c:GetRealmName()][c:GetCharName()][FIELD_SETS][setName][FIELD_AFFECTS_HELMET] = value;
+		if notify then
+			c:NotifyInChat(string.format("<%s> %s %s", setName, c:GetText("Affects helmet visibility:"), c:BoolToText(value, c:GetText("Yes"), c:GetText("No"))));
+		end
+	end
+end
+
+function c:GetAffectsHelmet(setName)
+	setName = setName or c:LoadCurrentSetName();
+	if setName and GQ_DATA[c:GetRealmName()][c:GetCharName()][FIELD_SETS][setName] then
+		-- weird syntax for backwards compatibility
+		if GQ_DATA[c:GetRealmName()][c:GetCharName()][FIELD_SETS][setName][FIELD_AFFECTS_HELMET] == false then
+			return false;
+		end
+		return true;
+	end
+end
+
+function c:SetAffectsCloak(value, setName, notify)
+	c:DebugPrint("SaveAffectsCloak", value, setName, notify);
+	setName = setName or c:LoadCurrentSetName();
+	if notify == nil then
+		notify = true;
+	end
+
+	if setName and GQ_DATA[c:GetRealmName()][c:GetCharName()][FIELD_SETS][setName] then
+		GQ_DATA[c:GetRealmName()][c:GetCharName()][FIELD_SETS][setName][FIELD_AFFECTS_CLOAK] = value;
+		if notify then
+			c:NotifyInChat(string.format("<%s> %s %s", setName, c:GetText("Affects cloak visibility:"), c:BoolToText(value, c:GetText("Yes"), c:GetText("No"))));
+		end
+	end
+end
+
+function c:GetAffectsCloak(setName)
+	setName = setName or c:LoadCurrentSetName();
+	if setName and GQ_DATA[c:GetRealmName()][c:GetCharName()][FIELD_SETS][setName] then
+		-- weird syntax for backwards compatibility
+		if GQ_DATA[c:GetRealmName()][c:GetCharName()][FIELD_SETS][setName][FIELD_AFFECTS_CLOAK] == false then
+			return false;
+		end
+		return true;
 	end
 end
 

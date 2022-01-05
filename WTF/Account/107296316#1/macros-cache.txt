@@ -14,15 +14,15 @@ VER 3 0000000000000008 "ad" "INV_MISC_QUESTIONMARK"
 END
 VER 3 000000000000000E "AutoHP" "INV_Misc_QuestionMark"
 #showtooltip
-/cast [combat] item:3928; item:27854
+/cast [combat] item:22829; item:27855
 END
 VER 3 000000000000000F "ConsumableHP" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:3928
+/cast item:22829
 END
 VER 3 0000000000000010 "ConsumableMP" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:6948
+/cast item:13444
 END
 VER 3 0000000000000001 "d" "132089"
 /2 Crafting [Small Silk Pack] 10 slots  with your mats! 12 silk cloth, 2 heavy leather, 3 fine thread
@@ -41,11 +41,11 @@ VER 3 000000000000000B "drink" "3867503"
 END
 VER 3 000000000000000C "DrinkOnlyMP" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:28399
+/cast item:27860
 END
 VER 3 000000000000000D "FoodOnlyHP" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:27854
+/cast item:27855
 END
 VER 3 0000000000000003 "p" "132156"
 /p follow me plz on: twitch.tv/firebreathereu

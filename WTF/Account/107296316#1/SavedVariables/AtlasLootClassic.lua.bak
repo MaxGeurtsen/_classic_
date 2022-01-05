@@ -38,12 +38,12 @@ AtlasLootClassicDB = {
 		["Cursedbreath - Firemaw"] = "Cursedbreath - Firemaw",
 		["Mírjam - Razorgore"] = "Mírjam - Razorgore",
 		["Helpsiebren - Razorgore"] = "Helpsiebren - Razorgore",
-		["Mírjam - Firemaw"] = "Mírjam - Firemaw",
 		["Mirjam - Firemaw"] = "Mirjam - Firemaw",
-		["Partijleider - Razorgore"] = "Partijleider - Razorgore",
+		["Mírjam - Firemaw"] = "Mírjam - Firemaw",
+		["Partijlijder - Razorgore"] = "Partijlijder - Razorgore",
 		["Eefjé - Razorgore"] = "Eefjé - Razorgore",
 		["Bankerinos - Firemaw"] = "Bankerinos - Firemaw",
-		["Partijlijder - Razorgore"] = "Partijlijder - Razorgore",
+		["Partijleider - Razorgore"] = "Partijleider - Razorgore",
 		["Kealthas - Razorgore"] = "Kealthas - Razorgore",
 	},
 	["profiles"] = {
@@ -118,8 +118,6 @@ AtlasLootClassicDB = {
 		},
 		["Helpsiebren - Razorgore"] = {
 		},
-		["Mírjam - Firemaw"] = {
-		},
 		["Mirjam - Firemaw"] = {
 			["GUI"] = {
 				["point"] = {
@@ -139,6 +137,35 @@ AtlasLootClassicDB = {
 			},
 			["minimap"] = {
 				["minimapPos"] = 140.500116826767,
+			},
+		},
+		["Mírjam - Firemaw"] = {
+		},
+		["Partijlijder - Razorgore"] = {
+			["GUI"] = {
+				["selected"] = {
+					nil, -- [1]
+					"HellfireRamparts", -- [2]
+					4, -- [3]
+					6, -- [4]
+					0, -- [5]
+				},
+			},
+		},
+		["Eefjé - Razorgore"] = {
+		},
+		["Bankerinos - Firemaw"] = {
+			["minimap"] = {
+				["minimapPos"] = 198.399252515843,
+			},
+			["GUI"] = {
+				["selected"] = {
+					nil, -- [1]
+					"MoltenCore", -- [2]
+					2, -- [3]
+					3, -- [4]
+					0, -- [5]
+				},
 			},
 		},
 		["Partijleider - Razorgore"] = {
@@ -248,33 +275,6 @@ AtlasLootClassicDB = {
 				},
 			},
 		},
-		["Eefjé - Razorgore"] = {
-		},
-		["Bankerinos - Firemaw"] = {
-			["minimap"] = {
-				["minimapPos"] = 198.399252515843,
-			},
-			["GUI"] = {
-				["selected"] = {
-					nil, -- [1]
-					"MoltenCore", -- [2]
-					2, -- [3]
-					3, -- [4]
-					0, -- [5]
-				},
-			},
-		},
-		["Partijlijder - Razorgore"] = {
-			["GUI"] = {
-				["selected"] = {
-					nil, -- [1]
-					"HellfireRamparts", -- [2]
-					4, -- [3]
-					6, -- [4]
-					0, -- [5]
-				},
-			},
-		},
 		["Kealthas - Razorgore"] = {
 			["GUI"] = {
 				["point"] = {
@@ -291,9 +291,6 @@ AtlasLootClassicDB = {
 					1, -- [4]
 					0, -- [5]
 				},
-			},
-			["minimap"] = {
-				["minimapPos"] = 237.8996868822576,
 			},
 			["Addons"] = {
 				["Favourites"] = {
@@ -330,14 +327,14 @@ AtlasLootClassicDB = {
 							[28285] = true,
 							[29252] = true,
 							["__name"] = "pre-raid",
-							[27672] = true,
+							[29253] = true,
 							[29176] = true,
-							[28262] = true,
+							[29254] = true,
 							[29184] = true,
 							[27891] = true,
 							[27535] = true,
-							[29254] = true,
-							[29253] = true,
+							[28262] = true,
+							[27672] = true,
 							[28203] = true,
 							[32082] = true,
 						},
@@ -378,10 +375,10 @@ AtlasLootClassicDB = {
 							[28597] = true,
 							[27527] = true,
 							[27535] = true,
-							[27529] = true,
+							[28285] = true,
 							[29757] = true,
 							[28518] = true,
-							[28285] = true,
+							[27529] = true,
 							[28793] = true,
 							[32385] = true,
 							[28606] = true,
@@ -400,6 +397,9 @@ AtlasLootClassicDB = {
 						},
 					},
 				},
+			},
+			["minimap"] = {
+				["minimapPos"] = 237.8996868822576,
 			},
 		},
 	},

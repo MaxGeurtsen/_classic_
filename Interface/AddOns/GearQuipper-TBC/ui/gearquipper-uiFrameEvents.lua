@@ -3,6 +3,15 @@ gearquipper = gearquipper or {};
 local c = gearquipper;
 local e;
 
+local function HasEventSubType(value)
+	return value == c.EVENT_ZONE_ENTER or
+		value == c.EVENT_ZONE_LEAVE or
+		value == c.EVENT_SHAPESHIFT_IN or
+		value == c.EVENT_SHAPESHIFT_OUT or
+		value == c.EVENT_SPELL_CAST_SUCCESS or
+		value == c.EVENT_CUSTOMSCRIPT
+end
+
 function GqUiFrameEvents_OnShow(self)
 	if not e then
 		e = self;
@@ -49,7 +58,7 @@ function GqUiFrameEvents_OnShow(self)
 			e:HideCbEventSubSubType();
 			e:HideSearchBoxEventSubType();
 
-			if self.value == c.EVENT_ZONE_ENTER or self.value == c.EVENT_ZONE_LEAVE or self.value == c.EVENT_CUSTOMSCRIPT then
+			if HasEventSubType(self.value) then
 				e:ShowCbEventSubType();
 			--elseif self.value == c.EVENT_SPELLCAST_START or self.value == c.EVENT_SPELLCAST_SUCCEED then
 			--	e:ShowSearchboxEventSubType();
@@ -84,6 +93,30 @@ function GqUiFrameEvents_OnShow(self)
 								info.value = script;
 								UIDropDownMenu_AddButton(info);
 							end
+						elseif e.newBindingValues[c.FIELD_TYPE] == c.EVENT_SPELL_CAST_SUCCESS then
+							-- paladin aura
+							for _, spellDisplayName in ipairs(c:GetPaladinAurasSorted()) do
+								info.text = spellDisplayName;
+								for spellId, spellName in pairs(c:GetPaladinAuras()) do
+									if spellName == spellDisplayName then
+										info.value = { name = spellDisplayName, spellId = spellId };
+										break;
+									end
+								end
+								UIDropDownMenu_AddButton(info);
+							end
+						elseif e.newBindingValues[c.FIELD_TYPE] == c.EVENT_SHAPESHIFT_IN or e.newBindingValues[c.FIELD_TYPE] == c.EVENT_SHAPESHIFT_OUT then
+							-- druid shapeshift
+							for _, spellDisplayName in ipairs(c:GetDruidFormsSorted()) do
+								info.text = spellDisplayName;
+								for spellId, spellName in pairs(c:GetDruidForms()) do
+									if spellName == spellDisplayName then
+										info.value = { name = spellDisplayName, spellId = spellId };
+										break;
+									end
+								end
+								UIDropDownMenu_AddButton(info);
+							end
 						else
 							-- zone enter/leave
 							for zoneId, zoneValues in ipairs(c:GetZoneChildrenSorted(947)) do
@@ -105,6 +138,12 @@ function GqUiFrameEvents_OnShow(self)
 			if e.newBindingValues[c.FIELD_TYPE] == c.EVENT_CUSTOMSCRIPT then
 				-- custom scripts
 				UIDropDownMenu_SetText(e.cbEventSubType, c:GetText("< choose script >"));
+			elseif e.newBindingValues[c.FIELD_TYPE] == c.EVENT_SPELL_CAST_SUCCESS then
+				-- paladin aura
+				UIDropDownMenu_SetText(e.cbEventSubType, c:GetText("< choose aura >"));
+			elseif e.newBindingValues[c.FIELD_TYPE] == c.EVENT_SHAPESHIFT_IN or e.newBindingValues[c.FIELD_TYPE] == c.EVENT_SHAPESHIFT_OUT then
+				-- druid form
+				UIDropDownMenu_SetText(e.cbEventSubType, c:GetText("< choose form >"));
 			else
 				-- zone enter/leave
 				UIDropDownMenu_SetText(e.cbEventSubType, c:GetText("< choose zone >"));
@@ -123,6 +162,12 @@ function GqUiFrameEvents_OnShow(self)
 			if e.newBindingValues[c.FIELD_TYPE] == c.EVENT_CUSTOMSCRIPT then
 				-- custom scripts
 				UIDropDownMenu_SetText(e.cbEventSubType, self.value[c.FIELD_NAME]);
+			elseif e.newBindingValues[c.FIELD_TYPE] == c.EVENT_SPELL_CAST_SUCCESS then
+				-- paladin aura
+				UIDropDownMenu_SetText(e.cbEventSubType, self.value["name"]);
+			elseif e.newBindingValues[c.FIELD_TYPE] == c.EVENT_SHAPESHIFT_IN or e.newBindingValues[c.FIELD_TYPE] == c.EVENT_SHAPESHIFT_OUT then
+				-- druid form
+				UIDropDownMenu_SetText(e.cbEventSubType, self.value["name"]);
 			else
 				-- zone enter/leave
 				UIDropDownMenu_SetText(e.cbEventSubType, self.value["name"]);
@@ -200,12 +245,12 @@ function GqUiFrameEvents_OnShow(self)
 								info.value = c:Deepcopy(zoneValues);
 								UIDropDownMenu_AddButton(info);
 							end
-						elseif e.newBindingValues[c.FIELD_TYPE] == c.EVENT_SPELLCAST_START or e.newBindingValues[c.FIELD_TYPE] == c.EVENT_SPELLCAST_SUCCEED and e.spellSearchResults then
-							for spellId, spell in pairs(e.spellSearchResults) do
-								info.text = spell["name"];
-								info.value = c:Deepcopy(spell);
-								UIDropDownMenu_AddButton(info);
-							end
+						--elseif e.newBindingValues[c.FIELD_TYPE] == c.EVENT_SPELLCAST_START or e.newBindingValues[c.FIELD_TYPE] == c.EVENT_SPELLCAST_SUCCEED and e.spellSearchResults then
+						--	for spellId, spell in pairs(e.spellSearchResults) do
+						--		info.text = spell["name"];
+						--		info.value = c:Deepcopy(spell);
+						--		UIDropDownMenu_AddButton(info);
+						--	end
 						end
 					end
 				end);
@@ -219,8 +264,14 @@ function GqUiFrameEvents_OnShow(self)
 			e.cbEventSubSubType:Show();
 			if e.newBindingValues[c.FIELD_TYPE] == c.EVENT_ZONE_ENTER or e.newBindingValues[c.FIELD_TYPE] == c.EVENT_ZONE_LEAVE then
 				UIDropDownMenu_SetText(e.cbEventSubSubType, c:GetText("< subzone (optional) >"));
-			elseif e.newBindingValues[c.FIELD_TYPE] == c.EVENT_SPELLCAST_START or e.newBindingValues[c.FIELD_TYPE] == c.EVENT_SPELLCAST_SUCCEED then
-				UIDropDownMenu_SetText(e.cbEventSubSubType, c:GetText("< select spell >"));
+			elseif e.newBindingValues[c.FIELD_TYPE] == c.EVENT_SPELL_CAST_SUCCESS then
+				-- paladin aura
+				UIDropDownMenu_SetText(e.cbEventSubSubType, c:GetText("< choose aura >"));
+			elseif e.newBindingValues[c.FIELD_TYPE] == c.EVENT_SHAPESHIFT_IN or e.newBindingValues[c.FIELD_TYPE] == c.EVENT_SHAPESHIFT_OUT then
+				-- druid form
+				UIDropDownMenu_SetText(e.cbEventSubSubType, c:GetText("< choose form >"));
+			--elseif e.newBindingValues[c.FIELD_TYPE] == c.EVENT_SPELLCAST_START or e.newBindingValues[c.FIELD_TYPE] == c.EVENT_SPELLCAST_SUCCEED then
+			--	UIDropDownMenu_SetText(e.cbEventSubSubType, c:GetText("< choose spell >"));
 			end
 		end
 
@@ -347,7 +398,12 @@ function GqUiFrameEvents_OnShow(self)
 			end
 			return (e.newBindingValues[c.FIELD_PVE] or e.newBindingValues[c.FIELD_PVP]) and
 					e.newBindingValues[c.FIELD_NAME] and e.newBindingValues[c.FIELD_TYPE] and
-					((e.newBindingValues[c.FIELD_TYPE] ~= c.EVENT_ZONE_ENTER and e.newBindingValues[c.FIELD_TYPE] ~= c.EVENT_ZONE_LEAVE and e.newBindingValues[c.FIELD_TYPE] ~= c.EVENT_CUSTOMSCRIPT) or e.newBindingValues[c.FIELD_SUBTYPE]);
+					((e.newBindingValues[c.FIELD_TYPE] ~= c.EVENT_ZONE_ENTER and
+						e.newBindingValues[c.FIELD_TYPE] ~= c.EVENT_ZONE_LEAVE and
+						e.newBindingValues[c.FIELD_TYPE] ~= c.EVENT_CUSTOMSCRIPT and
+						e.newBindingValues[c.FIELD_TYPE] ~= c.EVENT_SHAPESHIFT_IN and
+						e.newBindingValues[c.FIELD_TYPE] ~= c.EVENT_SHAPESHIFT_OUT and
+						e.newBindingValues[c.FIELD_TYPE] ~= c.EVENT_SPELL_CAST_SUCCESS) or e.newBindingValues[c.FIELD_SUBTYPE]);
 		end
 	end
 
@@ -357,7 +413,7 @@ function GqUiFrameEvents_OnShow(self)
 
 	function c:BindEvent(bindingValues)
 		if bindingValues[c.FIELD_TYPE] and bindingValues[c.FIELD_NAME] then
-			if not (bindingValues[c.FIELD_TYPE] == c.EVENT_ZONE_ENTER or bindingValues[c.FIELD_TYPE] == c.EVENT_ZONE_LEAVE) or bindingValues[c.FIELD_SUBTYPE] then
+			if not HasEventSubType(bindingValues[c.FIELD_TYPE]) or bindingValues[c.FIELD_SUBTYPE] then
 				if not c:BindingExists(bindingValues) then
 					c:SaveEventBinding(bindingValues);
 					return true;

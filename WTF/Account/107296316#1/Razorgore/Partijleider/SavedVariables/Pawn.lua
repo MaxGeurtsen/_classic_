@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.052,
+	["LastVersion"] = 2.0531,
 	["LastPlayerFullName"] = "Partijleider-Razorgore",
 	["AutoSelectScales"] = false,
 	["ItemLevels"] = {
@@ -31,10 +31,10 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:27936::::::::68::::::::|h[Greaves of Desolation]|h|r",
 		},
 		[14] = {
-			["ID"] = 29376,
-			["Level"] = 110,
+			["ID"] = 30841,
+			["Level"] = 115,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cffa335ee|Hitem:29376::::::::70::::::::|h[Essence of the Martyr]|h|r",
+			["Link"] = "|cff0070dd|Hitem:30841::::::::70:::::::::|h[Lower City Prayerbook]|h|r",
 		},
 		[15] = {
 			["ID"] = 28765,
@@ -78,10 +78,10 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:28567::::::::70::::::::|h[Belt of Gale Force]|h|r",
 		},
 		[12] = {
-			["ID"] = 25056,
-			["Level"] = 117,
+			["ID"] = 28790,
+			["Level"] = 125,
 			["AlsoFitsIn"] = 11,
-			["Link"] = "|cff1eff00|Hitem:25056::::::-36:822411295:70::::::::|h[Almandine Ring of the Sorcerer]|h|r",
+			["Link"] = "|cffa335ee|Hitem:28790::::::::70:::::::::|h[Naaru Lightwarden's Band]|h|r",
 		},
 		[17] = {
 			["ID"] = 25085,

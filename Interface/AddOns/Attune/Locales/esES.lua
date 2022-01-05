@@ -6,7 +6,7 @@ end
 
 
 -- INTERFACE
-Lang["Credits"] = "Muchas gracias a mi hermandad |cffffd100<Divine Heresy>|r por su apoyo y comprensión mientras probaba el addon y mi agradecimiento a |cffffd100Bushido @ Pyrewood Village|r por la ayuda con la TBC!\n\n También, muchas, muchas, gracias a los traductores :\n  - Traducción Alemana: |cffffd100Sumaya @ Razorfen DE|r\n  - Traducción Rusa: |cffffd100Greymarch Guild @ Flamegor RU|r\n  - Traducción Española: |cffffd100Coyu @ Pyrewood Village EU|r\n  - Traducción China: |cffffd100ly395842562|r y |cffffd100Icyblade|r\n  - Traducción coreana: |cffffd100Drix @ Azshara KR|r\n\n/Hug de Cixi/Gaya @ Remulos Horde"
+Lang["Credits"] = "Muchas gracias a mi hermandad |cffffd100<Divine Heresy>|r por su apoyo y comprensión mientras probaba el addon y mi agradecimiento a |cffffd100Bushido @ Pyrewood Village|r por la ayuda con la TBC!\n\n También, muchas, muchas, gracias a los traductores :\n  - Traducción Alemana: |cffffd100Sumaya @ Razorfen DE|r\n  - Traducción Rusa: |cffffd100Greymarch Guild @ Flamegor RU|r\n  - Traducción Española: |cffffd100Coyu @ Pyrewood Village EU|r\n  - Traducción China (simp.): |cffffd100ly395842562|r y |cffffd100Icyblade|r\n  - Traducción China (trad.): |cffffd100DayZ|r @ Ivus TW|r\n  - Traducción coreana: |cffffd100Drix @ Azshara KR|r\n\n/Hug de Cixi/Gaya @ Remulos Horde"
 Lang["Mini"] = "Mini"
 Lang["Maxi"] = "Maxi"
 Lang["Version"] = "Attune v##VERSION## de Cixi@Remulos"
@@ -130,6 +130,24 @@ Lang["Save"] = "Info Banda"
 Lang["Invite"] = "Invitar"
 Lang["Send raid invites to all listed players?"] = "¿Enviar invitaciones de incursión a todos los jugadores listados?"
 Lang["External link"] = "Enlace a una base de datos en línea"
+--v243
+Lang["Ogrila"] = "Ogri'la"
+Lang["Ogri'la Quest Hub"] = "Centro de misiones de Ogri'la"
+Lang["Ogrila_Desc"] = "Los iluminados habitantes de Ogri'la han creado su hogar en las Montañas Filospada occidentales."
+Lang["DelInactive_TEXT"] = "Eliminar inactivos"
+Lang["DelInactive_DESC"] = "Eliminar toda la información sobre los jugadores marcados como Inactivos"
+Lang["DelInactive_CONF"] = "¿Eliminar realmente todos los inactivos?"
+Lang["DelInactive_DONE"] = "Todos los inactivos eliminados"
+Lang["RAIDS"] = "BANDAS"
+Lang["KEYS"] = "TECLAS"
+Lang["MISC"] = "MISC"
+Lang["HEROICS"] = "HEROICAS"
+--v244
+Lang["Ally of the Netherwing"] = "Aliado del Ala Abisal"
+Lang["Netherwing_Desc"] = "El Ala Abisal es una facción de dragones ubicada en Terrallende."
+--v247
+Lang["Tirisfal Glades"] = "Claros de Tirisfal"
+Lang["Scholomance"] = "Scholomance"
 
 
 -- OPTIONS
@@ -399,6 +417,9 @@ Lang["I_29905"] = "Restos del vial de Kael"			-- https://es.tbc.wowhead.com/item
 Lang["I_29906"] = "Restos del vial de Vashj"			-- https://es.tbc.wowhead.com/item=29906
 Lang["I_31307"] = "Corazón de furia"			-- https://es.tbc.wowhead.com/item=31307
 Lang["I_32649"] = "Medallón de Karabor"			-- https://es.tbc.wowhead.com/item=32649
+--v247
+Lang["Shrine of Thaurissan"] = "Santuario de Thaurissan"
+Lang["I_14610"] = "El escarabajo de Araj"
 
 
 -- QUESTS - Classic
@@ -729,7 +750,82 @@ Lang["Q1_10949"] = "La entrada a El Templo Oscuro"			-- https://es.tbc.wowhead.c
 Lang["Q2_10949"] = "Viaja hasta la entrada del Templo Oscuro en el Valle Sombraluna y habla con Xi'ri."
 Lang["Q1_10985"] = "Una distracción para Akama"			-- https://es.tbc.wowhead.com/quest=10985
 Lang["Q2_10985"] = "Asegúrate de que Akama y Maiev entran en El Templo Oscuro, en el Valle Sombraluna, cuando las fuerzas de Xi'ri creen una distracción."
-	
+--v243
+Lang["Q1_10984"] = "Habla con el ogro"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10984
+Lang["Q2_10984"] = "Habla con Grok, el ogro, en el Bajo Arrabal de la Ciudad de Shattrath."
+Lang["Q1_10983"] = "Mog'dorg el Marchito"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10983
+Lang["Q2_10983"] = "Visita a Mog'dorg el Marchito en lo alto de una de las torres que hay justo fuera del Anillo de Sangre en las Montañas Filospada."
+Lang["Q1_10995"] = "Grulloc tiene dos calaveras"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10995
+Lang["Q2_10995"] = "Consigue la calavera de dragón de Grulloc y llévasela a Mog'dorg el Marchito, que se encuentra en lo alto de la torre del Anillo de Sangre en las Montañas Filospada."
+Lang["Q1_10996"] = "Cofre del tesoro de Maggoc"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10996
+Lang["Q2_10996"] = "Consigue el cofre del tesoro de Maggoc y llévaselo a Mog'dorg el Marchito, que se encuentra en lo alto de la torre del Anillo de Sangre de las Montañas Filospada."
+Lang["Q1_10997"] = "Incluso los gronn tienen confalones"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10997
+Lang["Q2_10997"] = "Consigue el confalón de Slaag y llévaselo a Mog'dorg el Marchito, que se encuentra en lo alto de la torre del Anillo de Sangre en las Montañas Filospada."
+Lang["Q1_10998"] = "Un asunto grimoso"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10998
+Lang["Q2_10998"] = "Debes conseguir el grimorio de Vim'gol el Vil. Llévaselo a Mog'dorg el Marchito, que se encuentra en lo alto de la torre del Anillo de Sangre, en las Montañas Filospada."
+Lang["Q1_11000"] = "Dentro del Moledor de Almas"			-- https://www.thegeekcrusade-serveur.com/db/?quest=11000
+Lang["Q2_11000"] = "Recupera el alma de Skulloc y llévasela a Mog'dorg el Marchito, que se encuentra en lo alto de la torre del Anillo de Sangre en las Montañas Filospada."
+Lang["Q1_11022"] = "Habla con Mog'dorg"			-- https://www.thegeekcrusade-serveur.com/db/?quest=11022
+Lang["Q2_11022"] = "Habla con Mog'dorg el Marchito. Se encuentra en lo alto de la torre al este del Anillo de Sangre, en las Montañas Filospada."
+Lang["Q1_11009"] = "El cielo de los Ogros"			-- https://www.thegeekcrusade-serveur.com/db/?quest=11009
+Lang["Q2_11009"] = "Mog'dorg el Marchito te ha pedido que hables con Chu'a'lor en Ogri'la, en las Montañas Filospada."
+--v244
+Lang["Q1_10804"] = "Bondad"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10804
+Lang["Q2_10804"] = "Mordenai, de los Campos del Ala Abisal, en el Valle Sombraluna, quiere que alimentes a ocho dracos Ala Abisal maduros."
+Lang["Q1_10811"] = "Buscar a Neltharaku"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10811
+Lang["Q2_10811"] = "Busca a Nelthakaru, patrón de los dracos Ala Abisal."
+Lang["Q1_10814"] = "La historia de Neltharaku"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10814
+Lang["Q2_10814"] = "Habla con Neltharaku y escucha su historia."
+Lang["Q1_10836"] = "Infiltrarse en la Fortaleza Faucedraco"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10836
+Lang["Q2_10836"] = "Neltharaku, que sobrevuela los Campos del Ala Abisal en el Valle Sombraluna, quiere que mates a quince orcos Faucedraco."
+Lang["Q1_10837"] = "¡Al Arrecife del Ala Abisal!"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10837
+Lang["Q2_10837"] = "Neltharaku, que sobrevuela los Campos del Ala Abisal en el Valle Sombraluna, quiere que recojas doce cristales de vid abisal del Arrecife del Ala Abisal."
+Lang["Q1_10854"] = "La fuerza de Neltharaku"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10854
+Lang["Q2_10854"] = "Neltharaku, que sobrevuela los Campos del Ala Abisal, en el Valle Sombraluna, quiere que liberes a 5 dracos Ala Abisal esclavizados."
+Lang["Q1_10858"] = "Karynaku"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10858
+Lang["Q2_10858"] = "Busca a Karynaku en la Fortaleza Faucedraco."
+Lang["Q1_10866"] = "Zuluhed el Demente"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10866
+Lang["Q2_10866"] = "Mata a Zuluhed el Demente y consigue la llave de Zuluhed. Utiliza la llave de Zuluhed en las cadenas de Zuluhed para liberar a Karynaku."
+Lang["Q1_10870"] = "Aliado del Ala Abisal"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10870
+Lang["Q2_10870"] = "Que Karynaku te devuelva a Mordenai en los Campos del Ala Abisal."
+--v247
+Lang["Q1_3801"] = "El legado de los Hierro Negro"			-- https://www.thegeekcrusade-serveur.com/db/?quest=3801
+Lang["Q2_3801"] = "Habla con Franclorn Forjafina si te interesa obtener una llave de la ciudad."
+Lang["Q1_3802"] = "El legado de los Hierro Negro"			-- https://www.thegeekcrusade-serveur.com/db/?quest=3802
+Lang["Q2_3802"] = "Mata a Finoso Virunegro y recupera el gran martillo, Ferrovil. Lleva a Ferrovil al Santuario de Thaurissan y coloca el martillo en la estatua de Franclorn Forjafina."
+Lang["Q1_5096"] = "Desvío Escarlata"
+Lang["Q2_5096"] = "Adéntrate en el campamento base de la Cruzada Escarlata entre el Campo de Piedra Mácula y el Llanto de Dalson y destruye su tienda de mando."
+Lang["Q1_5098"] = "Todas las torres"
+Lang["Q2_5098"] = "Con la Antorcha de aviso, marca las torres de Andorhal. Tendrás que estar en la entrada de la torre para poder marcarla."
+Lang["Q1_838"] = "Scholomance"
+Lang["Q2_838"] = "Habla con el boticario Dithers en el Baluarte, en las Tierras de la Peste del Oeste."
+Lang["Q1_964"] = "Fragmentos esqueléticos"
+Lang["Q2_964"] = "Lleva 15 fragmentos esqueléticos al boticario Dithers en El Baluarte, en las Tierras de la Peste del Oeste."
+Lang["Q1_5514"] = "Molde rima con... ¿oro?"
+Lang["Q2_5514"] = "Lleva los Fragmentos esqueléticos imbuidos y 15 piezas de oro a Krinkle Buenacero en Gadgetzan."
+Lang["Q1_5802"] = "La forja del Penacho en Llamas"
+Lang["Q2_5802"] = "Lleva el molde para llave esqueleto y 2 barras de torio a la cima de la Cresta del Penacho en Llamas en el Cráter de Un'Goro. Utiliza el molde para llave esqueleto en el lago de lava para forjar la llave esqueleto incompleta."
+Lang["Q1_5804"] = "El escarabajo de Araj"
+Lang["Q2_5804"] = "Destruye a Araj el Invocador y lleva el Escarabeo de Araj al boticario Dithers en El Baluarte, en las Tierras de la Peste del Oeste."
+Lang["Q1_5511"] = "La llave de Scholomance"
+Lang["Q2_5511"] = "Bien, aquí estás, Y has completado la llave esqueleto. No tengo dudas de que esta llave te permitirá acceder a los confines de Scholomance."
+Lang["Q1_5092"] = "Despejando el camino"
+Lang["Q2_5092"] = "Mata 10 despellejadores esqueléticos y 10 necrófagos esclavizantes en la Colina de las Penas."
+Lang["Q1_5097"] = "Todas las torres"
+Lang["Q2_5097"] = "Con la Antorcha de aviso, marca las torres de Andorhal. Tendrás que estar en la entrada de la torre para poder marcarla."
+Lang["Q1_5533"] = "Scholomance"
+Lang["Q2_5533"] = "Habla con el alquimista Arbington en el Alto del Orvallo, en las Tierras de la Peste del Oeste."
+Lang["Q1_5537"] = "Fragmentos esqueléticos"
+Lang["Q2_5537"] = "Lleva 15 fragmentos esqueléticos al alquimista Arbington, en el Alto del Orvallo, en las Tierras de la Peste del Oeste."
+Lang["Q1_5538"] = "Molde rima con... ¿oro?"
+Lang["Q2_5538"] = "Lleva los Fragmentos esqueléticos imbuidos y 15 piezas de oro a Krinkle Buenacero en Gadgetzan."
+Lang["Q1_5801"] = "La forja del Penacho en Llamas"
+Lang["Q2_5801"] = "Lleva el molde para llave esqueleto y 2 barras de torio a la cima de la Cresta del Penacho en Llamas en el Cráter de Un'Goro. Utiliza el molde para llave esqueleto en el lago de lava para forjar la llave esqueleto incompleta."
+Lang["Q1_5803"] = "El escarabajo de Araj"
+Lang["Q2_5803"] = "Destruye a Araj el Invocador y lleva el Escarabeo de Araj al alquimista Arbington en el Alto del Orvallo, en las Tierras de la Peste del Oeste."
+Lang["Q1_5505"] = "La llave de Scholomance"
+Lang["Q2_5505"] = "Bien, aquí estás, Y has completado la llave esqueleto. No tengo dudas de que esta llave te permitirá acceder a los confines de Scholomance."
+
 
 -- NPC
 Lang["N1_9196"] = "Alto Señor Omokk"	-- https://es.tbc.wowhead.com/npc=9196
@@ -884,8 +980,27 @@ Lang["N1_17767"] = "Ira Fríoinvierno"	-- https://es.tbc.wowhead.com/npc=17767
 Lang["N2_17767"] = "Ira Fríoinvierno es el primer jefe de la instancia de Banda Monte Hyjal."
 Lang["N1_18528"] = "Xi'ri"	-- https://es.tbc.wowhead.com/npc=18528
 Lang["N2_18528"] = "Xi'ri se encuentra localizado en la entrada del Templo Oscuro. La cosa esa grande brillante azul. No puedes no verlo, en serio."
+--v243
+Lang["N1_22497"] = "V'eru"	-- https://www.thegeekcrusade-serveur.com/db/?npc=22497
+Lang["N2_22497"] = "V'eru está en la misma habitación que A'dal, pero es azul. Está en el rellano superior."
+--v244
+Lang["N1_22113"] = "Mordenai"
+Lang["N2_22113"] = "Un elfo de sangre (alerta de spoiler, en realidad un dragón) que camina por los campos del Ala Abisal, al este del Sagrario de las Estrellas"
+--v247
+Lang["N1_8888"]  = "Franclorn Forjador"
+Lang["N2_8888"]  = "Un enano fantasma, de pie sobre su propia tumba FUERA de la mazmorra, en la estructura suspendida sobre la lava. Solo puedes interactuar con él si estás MUERTO."
+Lang["N1_9056"]  = "Finoso Virunegro"
+Lang["N2_9056"]  = "Está DENTRO de la mazmorra y patrulla el área de la cantera fuera de la cámara de Lord Incendius."
+Lang["N1_10837"] = "Sumo Ejecutor Derrington"
+Lang["N2_10837"] = "Se le puede encontrar en el Baluarte, cerca de la frontera de Tirisfal y las Tierras de la Peste del Oeste."
+Lang["N1_10838"] = "Comandante Ashlam Puñovalor"
+Lang["N2_10838"] = "Se le puede encontrar en el Campamento Viento Gélido, al sur de Andorhal en las Tierras de la Peste del Oeste."
+Lang["N1_1852"]  = "Araj el Invocador"
+Lang["N2_1852"]  = "El Lich, en medio de Andorhal"
 
 
 Lang["O_1"] = "Clicka en La marca de Drakkisath para completar la misión.\nLa orbe brillante detras del General Drakkisath."
 Lang["O_2"] = "Es un pequeño punto rojo en el suelo\nen frente las puertas de Ahn'Qiraj (28.7,89.2)."
+--v247
+Lang["O_3"] = "El santuario está ubicado al final de un corredor\nque comienza en el nivel superior del Anillo de la Ley."
 

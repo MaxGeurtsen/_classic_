@@ -34,7 +34,7 @@ function IT:GetInstanceInfo()
 
 	-- Apparently in TBC the heroics are difficulty ID 174 you can verify this by running:
 	-- /run for i = 1, 200 do local name = GetDifficultyInfo(i) if name then print(i, name) end end
-	if (instanceType == "party" and dungeonDifficultyId == 2) then -- heroic
+	if (instanceType == "party" and (dungeonDifficultyId == 2 or dungeonDifficultyId == 174)) then -- heroic
         instanceName = "[H] " .. instanceName
     end
 

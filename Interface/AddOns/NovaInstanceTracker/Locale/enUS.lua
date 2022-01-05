@@ -346,3 +346,8 @@ L["autoBlackMorassDesc"] = "Auto dialogue with the NPC at the start of black mor
 
 L["autoSfkDoorTitle"] = "Auto Sfk Door";
 L["autoSfkDoorDesc"] = "Auto dialogue with the NPC in shadowfang keep that opens the door?";
+
+L["honorGains"] = "Honor Gains";
+L["Honor"] = "Honor";
+L["Won"] = "Won";
+L["Lost"] = "Lost";

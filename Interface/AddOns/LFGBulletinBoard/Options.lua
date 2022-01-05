@@ -55,6 +55,12 @@ local function FixFilters()
 			end
 		end
 	end	
+
+	for eventName, eventData in pairs(GBB.Seasonal) do
+        if GBB.Tool.InDateRange(eventData.startDate, eventData.endDate) == false then
+			GBB.DBChar["FilterDungeon"..eventName]=false
+        end
+    end
 end
 
 local isChat=false
@@ -158,6 +164,10 @@ function GBB.OptionsInit ()
 	GBB.Options.AddSpace()
 	CheckBox("ShowTotalTime",false)
 	CheckBox("OrderNewTop",true)
+	GBB.Options.AddSpace()
+	GBB.Options.AddText(GBB.L["msgFontSize"],-20)
+	GBB.Options.AddDrop(GBB.DB,"FontSize", "GameFontNormal", {"GameFontNormalSmall", "GameFontNormal", "GameFontNormalLarge"}) 
+
 	CheckBox("CombineSubDungeons",false)
 	GBB.Options.AddSpace()
 	CheckBox("NotifySound",false)
@@ -217,9 +227,11 @@ function GBB.OptionsInit ()
 		GBB.Options.Indent(10)
 
 		TbcChkBox_FilterDungeon={}
+		
 		for index=GBB.TBCDUNGEONSTART,GBB.TBCDUNGEONBREAK do
 			TbcChkBox_FilterDungeon[index]=CheckBoxFilter(GBB.dungeonSort[index],true)
-		end	
+		end
+
 		GBB.Options.SetRightSide()
 		--GBB.Options.AddCategory("")
 		GBB.Options.Indent(10)	

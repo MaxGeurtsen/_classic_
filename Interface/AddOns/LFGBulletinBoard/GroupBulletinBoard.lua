@@ -34,7 +34,7 @@ GBB.AutoUpdateTimer=0
 GBB.Initalized = false
 GBB.LFG_Timer=0
 GBB.LFG_UPDATETIME=10
-GBB.TBCDUNGEONBREAK = 55
+GBB.TBCDUNGEONBREAK = 57
 GBB.DUNGEONBREAK = 25
 GBB.COMBINEMSGTIMER=10
 GBB.MAXCOMPACTWIDTH=350
@@ -395,11 +395,18 @@ function GBB.Init()
 	GBB.DB=GroupBulletinBoardDB
 	GBB.DBChar=GroupBulletinBoardDBChar
 	
+	-- Needed for the people who it got initialized as a table not a string
+	if (type(GBB.DB.FontSize) == "table") then
+    		GBB.DB.FontSize = nil
+	end
+	
 	if not GBB.DBChar.channel then GBB.DBChar.channel = {} end
 	if not GBB.DB.MinimapButton then GBB.DB.MinimapButton={} end
 	if not GBB.DB.Custom then GBB.DB.Custom={} end
 	if not GBB.DB.CustomLocales then GBB.DB.CustomLocales={} end
 	if not GBB.DB.CustomLocalesDungeon then GBB.DB.CustomLocalesDungeon={} end
+	if not GBB.DB.FontSize then GBB.DB.FontSize = "GameFontNormal" end
+	if not GBB.DB.DisplayLFG then GBB.DB.DisplayLFG = false end
 	GBB.DB.Server=nil -- old settings
 	
 	if GBB.DB.OnDebug == nil then GBB.DB.OnDebug=false end
@@ -498,7 +505,7 @@ function GBB.Init()
 		},
 	},
 		})
-	
+		
 	-- Create options and initalize!
 	GBB.OptionsInit()
 		
@@ -517,6 +524,7 @@ function GBB.Init()
 	)	
 	
 	GBB.FramePullDownChannel=CreateFrame("Frame", "GBB.PullDownMenu", UIParent, "UIDropDownMenuTemplate")
+	GroupBulletinBoardFrameTitle:SetFontObject(GBB.DB.FontSize)
 	if GBB.DB.AnnounceChannel == nil then
 		if GBB.L["lfg_channel"] ~= "" then
 			GBB.DB.AnnounceChannel = GBB.L["lfg_channel"]
@@ -524,6 +532,7 @@ function GBB.Init()
 			_, GBB.DB.AnnounceChannel = GetChannelList()
 		end
 	end
+
 	GroupBulletinBoardFrameSelectChannel:SetText(GBB.DB.AnnounceChannel)
 
 	GBB.ResizeFrameList()
@@ -553,7 +562,6 @@ function GBB.Init()
 	GBB.PopupDynamic=GBB.Tool.CreatePopup(GBB.OptionsUpdate)
 	
 	GBB.InitGroupList()
-	
 	GBB.Tool.AddTab(GroupBulletinBoardFrame,GBB.L.TabRequest,GroupBulletinBoardFrame_ScrollFrame)
 	GBB.Tool.AddTab(GroupBulletinBoardFrame,GBB.L.TabGroup,GroupBulletinBoardFrame_GroupFrame)
 	GBB.Tool.SelectTab(GroupBulletinBoardFrame,1)

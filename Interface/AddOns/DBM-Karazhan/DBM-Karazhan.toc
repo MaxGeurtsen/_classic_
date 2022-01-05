@@ -1,4 +1,4 @@
-## Interface: 20501
+## Interface: 20502
 ## X-Min-Interface: 20501
 ## Title:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Karazhan|r
 ## Title-koKR:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0카라잔|r
@@ -17,9 +17,6 @@
 ## X-DBM-Mod-Sort: 1007
 ## X-DBM-Mod-MinCoreRevision: 20200524142133
 ## X-DBM-Mod-MinExpansion: 1
-## X-Curse-Project-ID: 16442
-## X-WoWI-ID: 11700
-## Version: 2.5.8-23-gd5bfa91
 
 localization.en.lua
 localization.de.lua

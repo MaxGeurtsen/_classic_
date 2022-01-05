@@ -33,14 +33,14 @@ ExtendedCharacterStats = {
 					["text"] = "MISS_BOSS",
 					["refName"] = "RangedHitBossLevel",
 				},
-				["isSubGroup"] = true,
-				["display"] = true,
-				["text"] = "HIT",
 				["sameLevel"] = {
 					["display"] = true,
 					["text"] = "MISS",
 					["refName"] = "RangedHitSameLevel",
 				},
+				["isSubGroup"] = true,
+				["text"] = "HIT",
+				["display"] = true,
 				["rating"] = {
 					["display"] = true,
 					["isTbcOnly"] = true,
@@ -114,18 +114,6 @@ ExtendedCharacterStats = {
 			},
 		},
 		["spell"] = {
-			["crit"] = {
-				["display"] = true,
-				["text"] = "CRIT_CHANCE",
-				["refName"] = "SpellCritChance",
-			},
-			["penetration"] = {
-				["display"] = false,
-				["text"] = "SPELL_PENETRATION",
-				["refName"] = "SpellPenetration",
-			},
-			["display"] = true,
-			["text"] = "SPELL",
 			["refName"] = "SpellHeader",
 			["hit"] = {
 				["bossLevel"] = {
@@ -133,14 +121,14 @@ ExtendedCharacterStats = {
 					["text"] = "MISS_BOSS",
 					["refName"] = "SpellHitBossLevel",
 				},
-				["isSubGroup"] = true,
-				["display"] = true,
-				["text"] = "HIT",
 				["sameLevel"] = {
 					["display"] = true,
 					["text"] = "MISS",
 					["refName"] = "SpellHitSameLevel",
 				},
+				["isSubGroup"] = true,
+				["text"] = "HIT",
+				["display"] = true,
 				["rating"] = {
 					["display"] = true,
 					["isTbcOnly"] = true,
@@ -153,6 +141,18 @@ ExtendedCharacterStats = {
 					["text"] = "BONUS",
 					["refName"] = "SpellHitBonus",
 				},
+			},
+			["display"] = true,
+			["text"] = "SPELL",
+			["crit"] = {
+				["display"] = true,
+				["text"] = "CRIT_CHANCE",
+				["refName"] = "SpellCritChance",
+			},
+			["penetration"] = {
+				["display"] = false,
+				["text"] = "SPELL_PENETRATION",
+				["refName"] = "SpellPenetration",
 			},
 		},
 		["spellBonus"] = {
@@ -272,15 +272,15 @@ ExtendedCharacterStats = {
 					["text"] = "ATTACK_SPEED_OFF_HAND",
 					["refName"] = "MeleeAttackSpeedOffHand",
 				},
-				["isSubGroup"] = true,
 				["mainHand"] = {
 					["display"] = true,
 					["text"] = "ATTACK_SPEED_MAIN_HAND",
 					["refName"] = "MeleeAttackSpeedMainHand",
 				},
+				["display"] = true,
 				["text"] = "ATTACK_SPEED",
 				["refName"] = "MeleeAttackSpeedHeader",
-				["display"] = true,
+				["isSubGroup"] = true,
 			},
 			["hit"] = {
 				["bossLevel"] = {
@@ -288,14 +288,14 @@ ExtendedCharacterStats = {
 					["text"] = "MISS_BOSS",
 					["refName"] = "MeleeHitBossLevel",
 				},
-				["isSubGroup"] = true,
-				["display"] = true,
-				["text"] = "HIT",
 				["sameLevel"] = {
 					["display"] = true,
 					["text"] = "MISS",
 					["refName"] = "MeleeHitSameLevel",
 				},
+				["isSubGroup"] = true,
+				["text"] = "HIT",
+				["display"] = true,
 				["rating"] = {
 					["display"] = true,
 					["isTbcOnly"] = true,

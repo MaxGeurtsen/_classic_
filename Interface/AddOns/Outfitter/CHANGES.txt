@@ -1,24 +1,16 @@
-lightweight tag 868c99ee9ea4ac9311ac67a23c5c560d593958c0 2.0.4.TBCC
+lightweight tag 0a3aecea40807725715517873753933685074d59 2.0.6.TBCC
 Author:	GitHub <noreply@github.com>
-Date:	Fri Jun 4 08:42:40 2021 -0700
+Date:	Sun Oct 10 19:23:09 2021 -0700
 
-commit 868c99ee9ea4ac9311ac67a23c5c560d593958c0
-Author: cdmichaelb <broetjem@gmail.com>
-Date:   Fri Jun 4 08:42:40 2021 -0700
+commit 3a54a87d33034e4ca52408221678b2ce8740317f
+Author: Jens N <jens.n@godlike.biz>
+Date:   Sun Oct 3 20:00:03 2021 +0200
 
-    Update Outfitter.toc
+    Fixed issue with "Bank > Deposit other outfits to bank"
 
-commit e45e09d290b6d228555511b53cf96bb8e2e1eb52
-Author: cdmichaelb <broetjem@gmail.com>
-Date:   Fri Jun 4 08:42:09 2021 -0700
+commit 3a54a87d33034e4ca52408221678b2ce8740317f
+Author: Jens N <jens.n@godlike.biz>
+Date:   Sun Oct 3 20:00:03 2021 +0200
 
-    Update Outfitter.toc
-
-commit 1d21c55a6e17d9445e749fac8fa20fd988eb3019
-Author: cdmichaelb <broetjem@gmail.com>
-Date:   Fri Jun 4 08:41:26 2021 -0700
-
-    UI Fix
-    
-    Fix from @ChristopherNewbound Closes #63
+    Fixed issue with "Bank > Deposit other outfits to bank"
 

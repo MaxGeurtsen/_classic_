@@ -1,5 +1,9 @@
 ## Changes
 
-Updated for Classic Era and Burning Crusade Classic.
+### Classic
 
-Frame z-level issues are no longer a thing. Credits to enajork (#206).
+Updated for patch 1.14.1.
+
+### Burning Crusade Classic
+
+Updated for patch 2.5.2.

@@ -3,9 +3,9 @@
 # /run print((select(4, GetBuildInfo())));
 # /eventtrace
 
-## Version: 294
-## Notes: Commit 6e97b605
-## Interface: 20501
+## Version: 297
+## Notes: Commit 99bd88f5
+## Interface: 20502
 ## Title: Instance Tracker
 ## Author: Okrah - Skullflame EU
 

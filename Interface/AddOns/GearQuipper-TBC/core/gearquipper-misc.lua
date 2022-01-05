@@ -2,29 +2,30 @@
 gearquipper = gearquipper or {};
 local c = gearquipper;
 
-function c:SaveConditionsMet()
-	return GQ_OPTIONS[c.OPT_SAVECHANGES] == c.OPTVALUE_SAVECHANGES_ALWAYS or
-			(GQ_OPTIONS[c.OPT_SAVECHANGES] == c.OPTVALUE_SAVECHANGES_CHARMENU and c.paperDollFrame:IsVisible()) or
-			(GQ_OPTIONS[c.OPT_SAVECHANGES] == c.OPTVALUE_SAVECHANGES_GQMENU and GqUiFrame:IsVisible());
+function c:SaveConditionsMet(type)
+	type = type or c.OPT_SAVECHANGES;
+	return GQ_OPTIONS[type] == c.OPTVALUE_SAVECHANGES_ALWAYS or
+			(GQ_OPTIONS[type] == c.OPTVALUE_SAVECHANGES_CHARMENU and c.paperDollFrame:IsVisible()) or
+			(GQ_OPTIONS[type] == c.OPTVALUE_SAVECHANGES_GQMENU and GqUiFrame:IsVisible());
 end
 
-function c:test1()
-	for slotId = 0, 19 do
-		local itemLink = GetInventoryItemLink("player", slotId);
-		if itemLink then
-			local itemString = string.match(itemLink, "item[%-?%d:]+");
-			print(itemString);
-		end
-	end
-end
+--function c:test1()
+--	for slotId = 0, 19 do
+--		local itemLink = GetInventoryItemLink("player", slotId);
+--		if itemLink then
+--			local itemString = string.match(itemLink, "item[%-?%d:]+");
+--			print(itemString);
+--		end
+--	end
+--end
 
 ----- [ actions ] -----
-local actionBars = {"Action", "", "MultiBarRight", "MultiBarLeft", "MultiBarBottomRight", "MultiBarBottomLeft"};
+local actionBars = {"Action", "Action", "MultiBarRight", "MultiBarLeft", "MultiBarBottomRight", "MultiBarBottomLeft"};
 function c:GetActionButton(slotId)
 	slotId = tonumber(slotId);
 	if slotId then
 		local actionBar, buttonNo = math.floor((slotId - 1) / 12) + 1, ((slotId - 1) % 12) + 1;
-		if actionBar and actionBars[actionBar] and buttonNo then
+		if actionBar and (actionBar > 2 or actionBar == GetActionBarPage()) and actionBars[actionBar] and buttonNo then
 			local button = _G[actionBars[actionBar] .. "Button" .. buttonNo];
 			if button and button:IsVisible() then
 				return button;
@@ -84,7 +85,9 @@ c.EVENT_EMERGE = "EVENT_EMERGE";
 --c.EVENT_COMBAT_ENTER = "EVENT_COMBAT_ENTER";
 c.EVENT_COMBAT_LEAVE = "EVENT_COMBAT_LEAVE";
 --c.EVENT_SPELLCAST_START = "EVENT_SPELLCAST_START";
---c.EVENT_SPELLCAST_SUCCEED = "EVENT_SPELLCAST_SUCCEED";
+c.EVENT_SHAPESHIFT_IN = "EVENT_SHAPESHIFT_IN";
+c.EVENT_SHAPESHIFT_OUT = "EVENT_SHAPESHIFT_OUT";
+c.EVENT_SPELL_CAST_SUCCESS = "EVENT_SPELL_CAST_SUCCESS";	-- currently for paladin auras only
 
 c.EVENT_CUSTOMSCRIPT = "EVENT_CUSTOMSCRIPT";
 
@@ -113,8 +116,10 @@ function c:GetEvents()
 			--[c.EVENT_COMBAT_ENTER] = c:GetText("on enter combat"),
 			[c.EVENT_COMBAT_LEAVE] = c:GetText("on leave combat"),
 			--[c.EVENT_SPELLCAST_START] = c:GetText("on spell start"),
-			--[c.EVENT_SPELLCAST_SUCCEED] = c:GetText("on spell succeed")
 			--[c.EVENT_CUSTOMSCRIPT] = c:GetText("custom script")
+			[c.EVENT_SHAPESHIFT_IN] = c:GetText("on shapeshift (enter)"),
+			[c.EVENT_SHAPESHIFT_OUT] = c:GetText("on shapeshift (leave)"),
+			[c.EVENT_SPELL_CAST_SUCCESS] = c:GetText("on aura change")
 		};
 	end
 	return events;
@@ -146,6 +151,17 @@ function c:GetEventNamesSorted()
 end
 
 ----- [ inventory ] -----
+	---- [gear] ----
+
+function c:IsItemEquipped(itemString)
+	-- needed for checking swapped rings on sets
+	for _, slotId in ipairs(c:GetSlotSwitchOrder()) do
+		if c:GetItemString(GetInventoryItemLink("player", slotId)) == itemString then
+			return slotId;
+		end
+	end
+end
+
 	---- [bank] ----
 
 function c:IsAtBank()
@@ -285,7 +301,7 @@ function c:GetItemString(value)
 		if value == INVSLOT_AMMO then
 			-- ammo slot workaround
 			return GetInventoryItemID("player", INVSLOT_AMMO);
-		elseif c:GetSlotInfo()[value] then
+		elseif c:GetSlotInfo(value) then
 			-- slotId
 			return c:GetItemString(GetInventoryItemLink("player", value));
 		elseif c:StartsWith(value, "|c") then
@@ -332,8 +348,37 @@ function c:GetItemLink(itemString)
 	return c:GetText("Empty");
 end
 
-function c:GetItemEquipLoc(itemString)
-	return GetItemInfos(itemString, ITEMINFO_EQUIPLOC);
+local slotIdToEquipLocs = {
+	[INVSLOT_HEAD] = { "INVTYPE_HEAD" },																						--  1
+	[INVSLOT_NECK] = { "INVTYPE_NECK" },																						--  2
+	[INVSLOT_SHOULDER] = { "INVTYPE_SHOULDER" },																				--  3
+	[INVSLOT_BODY] = { "INVTYPE_BODY" },																						--  4
+	[INVSLOT_CHEST] = { "INVTYPE_CHEST", "INVTYPE_ROBE" },																		--  5
+	[INVSLOT_WAIST] = { "INVTYPE_WAIST" },																						--  6
+	[INVSLOT_LEGS] = { "INVTYPE_LEGS" },																						-- 	7
+	[INVSLOT_FEET] = { "INVTYPE_FEET" },																						--  8
+	[INVSLOT_WRIST] = { "INVTYPE_WRIST" },																						--  9
+	[INVSLOT_HAND] = { "INVTYPE_HAND" },																						-- 10
+	[INVSLOT_FINGER1] = { "INVTYPE_FINGER" },																					-- 11
+	[INVSLOT_FINGER2] = { "INVTYPE_FINGER" },																					-- 12
+	[INVSLOT_TRINKET1] = { "INVTYPE_TRINKET" },																					-- 13
+	[INVSLOT_TRINKET2] = { "INVTYPE_TRINKET" },																					-- 14
+	[INVSLOT_BACK] = { "INVTYPE_CLOAK" },																						-- 15
+	[INVSLOT_MAINHAND] = { "INVTYPE_WEAPON", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND" },									-- 16
+	[INVSLOT_OFFHAND] = { "INVTYPE_WEAPON", "INVTYPE_WEAPONOFFHAND", "INVTYPE_SHIELD", "INVTYPE_QUIVER", "INVTYPE_HOLDABLE" },	-- 17
+	[INVSLOT_RANGED] = { "INVTYPE_RANGED", "INVTYPE_THROWN", "INVTYPE_RANGEDRIGHT", "INVTYPE_RELIC" },
+	[INVSLOT_TABARD] = { "INVTYPE_TABARD" },																					-- 19
+	[INVSLOT_AMMO] = { "INVTYPE_AMMO" }
+}
+
+function c:GetItemEquipLoc(value)
+	if c:GetSlotInfo(value) then
+		-- slotId
+		return slotIdToEquipLocs[value];
+	else
+		-- itemString
+		return GetItemInfos(value, ITEMINFO_EQUIPLOC);
+	end
 end
 
 function c:GetItemRarity(itemString)
@@ -351,21 +396,20 @@ end
 c.ITEM_STRING = "ITEM_STRING";
 c.ITEM_SLOT_ID = "ITEM_SLOT_ID";
 c.ITEM_BAG_ID = "ITEM_BAG_ID";
+
 function c:GetMatchingItems(slotId)
 	local equipLocs, result = {}, {};
-	local equipLoc = c:GetItemEquipLoc(c:GetItemString(slotId));
 
-	if slotId == INVSLOT_MAINHAND then
-		table.insert(equipLocs, "INVTYPE_2HWEAPON");
-		table.insert(equipLocs, "INVTYPE_WEAPON");
-	elseif slotId == INVSLOT_OFFHAND then
-		table.insert(equipLocs, "INVTYPE_WEAPON");
-		table.insert(equipLocs, "INVTYPE_SHIELD");
-	end
-
-	if not tContains(equipLocs, equipLoc) then
-		table.insert(equipLocs, equipLoc);
-	end
+	-- get equiploc by item (reliable)
+	--local equipLoc = c:GetItemEquipLoc(c:GetItemString(slotId));
+	--if equipLoc then
+	--	table.insert(equipLocs, equipLoc);
+	--else
+		-- get equiplocs by slotId
+		for _, equipLoc in ipairs(c:GetItemEquipLoc(slotId)) do
+			table.insert(equipLocs, equipLoc);
+		end
+	--end
 
 	-- bags
 	for bagId = 0, NUM_BAG_SLOTS do
@@ -457,7 +501,7 @@ function c:IsSetAvailable(setName)
 		local missingItems = {};
 		for slotId, _ in ipairs(c:GetSlotInfo()) do
 			local itemString = c:LoadSlot(slotId, setName);
-			if (not c:LoadPartialOption(setName) or c:LoadSlotState(slotId, setName)) and (not c:IsSetItem(slotId, itemString) and not c:FindItemInBags(itemString)) then
+			if (not c:LoadPartialOption(setName) or c:LoadSlotState(slotId, setName)) and (itemString ~= c.VALUE_NONE and not c:IsItemEquipped(itemString) and not c:FindItemInBags(itemString) and not c:FindItemInBank(itemString)) then
 				missingItems[slotId] = itemString;
 			end
 		end
@@ -648,7 +692,7 @@ local spellCache;
 function c:GetSpellCache(refresh)
 	if not spellCache or refresh then
 		spellCache = {};
-		for i = 0, 30000 do
+		for i = 0, 99999 do
 			local name, rank, icon, castTime, minRange, maxRange, spellId = GetSpellInfo(i);
 			if name and spellId then
 				spellCache[spellId] = {
@@ -683,41 +727,55 @@ function c:SearchSpells(spellName, maxResults)
 	end
 end
 
-local learnedSpells;
-function c:GetLearnedSpellNameAndRank()
-	local newValues, result = {};
-	local bookTypes = { BOOKTYPE_SPELL, BOOKTYPE_PET };
+-- local learnedSpells;
+-- function c:GetLearnedSpells()
+-- 	return learnedSpells;
+-- end
 
-	for _, bookType in ipairs(bookTypes) do
-		newValues[bookType] = newValues[bookType] or {};
+-- function c:GetLearnedSpellNameAndRank()
+-- 	local newValues, result = {};
+-- 	local bookTypes = { BOOKTYPE_SPELL, BOOKTYPE_PET };
 
-		for i = 1, MAX_SKILLLINE_TABS do
-			local name, texture, offset, numSpells = GetSpellTabInfo(i);
-			if name then
+-- 	for _, bookType in ipairs(bookTypes) do
+-- 		newValues[bookType] = newValues[bookType] or {};
 
-				for s = offset + 1, offset + numSpells do
-					local spell, rank = GetSpellBookItemName(s, bookType);
-					local numericRank = c:GetNumericSpellRank(rank) or 0;
+-- 		for i = 1, MAX_SKILLLINE_TABS do
 
-					if spell then
-						if learnedSpells then
-							if not learnedSpells[bookType][spell] or learnedSpells[bookType][spell] < numericRank then
-								result = { spell = spell, rank = rank };
-							end
-						end
+-- 			local name, texture, offset, numSpells = GetSpellTabInfo(i);
+-- 			if name then
 
-						newValues[bookType][spell] = numericRank;
-					end
-				end
-			end
-		end
-	end
+-- 				for s = offset + 1, offset + numSpells do
+-- 					local spell, _, spellId = GetSpellBookItemName(s, bookType);
 
-	learnedSpells = newValues;
-	if result then
-		return result.spell, result.rank;
-	end
-end
+-- 					if spellId then
+-- 						local cachedSpell = c:GetSpellCache()[spellId];
+
+-- 						if cachedSpell then
+-- 							local rank, numericRank = cachedSpell["rank"], c:GetNumericSpellRank(cachedSpell["rank"]) or 0;
+-- 							--c:DebugPrint(spell, numericRank, spellId);
+
+-- 							if learnedSpells then
+-- 								if not learnedSpells[bookType][spell] or learnedSpells[bookType][spell] < numericRank then
+-- 									result = { spell = spell, rank = rank, bookType = bookType };
+-- 								end
+-- 							end
+
+-- 							newValues[bookType][spell] = numericRank;
+-- 						end
+-- 					end
+-- 				end
+-- 			end
+-- 		end
+-- 	end
+
+-- 	learnedSpells = newValues;
+-- 	if result then
+-- 		if c.debugMode then
+-- 			c:DumpTable(result);
+-- 		end
+-- 		return result.spell, result.rank;
+-- 	end
+-- end
 
 function c:GetSpellId(spellName, spellRank)
 	for spellId, spellInfo in pairs(c:GetSpellCache()) do
@@ -747,22 +805,36 @@ end
 
 local function GetOffsetRankSpellId(sourceSpellId, offset)
 	local name, rank = GetSpellInfo(sourceSpellId);
-	rank = GetSpellSubtext(sourceSpellId);
-
+	if not rank or rank == "" then
+		rank = GetSpellSubtext(sourceSpellId);
+	end
+	c:DebugPrint(name, rank) -- TODO: this is nil, nil for some reason..?
 	if name and rank and rank ~= "" then
 		local noStart, noEnd = string.find(rank, "%d+");
 		local len = string.len(rank);
 		local numericSpellRank = string.sub(rank, noStart, noEnd);
-		if numericSpellRank and numericSpellRank + offset > 0 then
-			local textBefore, textAfter = "", "";
+		c:DebugPrint("Numeric spell rank:", numericSpellRank);
+
+		if numericSpellRank then
+			numericSpellRank = tonumber(numericSpellRank);
+			local targetNumericRank = numericSpellRank + offset;
+
+			if targetNumericRank > 0 then
+				local textBefore, textAfter = "", "";
 			if noStart > 0 then
 				textBefore = string.sub(rank, 0, noStart - 1);
 			end
 			if noEnd < len - 1 then
 				textAfter = string.sub(noEnd, len - 1);
 			end
-			local targetRank = textBefore .. (numericSpellRank + offset) .. textAfter;
+			c:DebugPrint("textBefore: ", textBefore);
+			c:DebugPrint("targetNumericRank: ", targetNumericRank);
+			c:DebugPrint("textAfter: ", textAfter);
+			local targetRank = textBefore .. targetNumericRank .. textAfter;
+			c:DebugPrint("TargetRank: ", targetRank);
+
 			return c:GetSpellId(name, targetRank);
+			end
 		end
 	end
 end
@@ -787,6 +859,97 @@ function c:GetUprankableSpellIds(targetSpellId)
 		end
 	end
 	return result;
+end
+
+function c:DumpBuffs(unitId)
+	for i, spellId in pairs(c:GetCurrentBuffs(unitId)) do
+		print(i, c:GetSpellName(spellId), spellId);
+	end
+end
+
+c.SPELLID_DRUID_FORM_NORMAL = c.VALUE_NONE;
+c.SPELLID_DRUID_FORM_AQUATIC = 1066;
+c.SPELLID_DRUID_FORM_BEAR = 5487;
+c.SPELLID_DRUID_FORM_CAT = 768;
+c.SPELLID_DRUID_FORM_DIRE_BEAR = 9634;
+c.SPELLID_DRUID_FORM_FLIGHT = 33943;
+c.SPELLID_DRUID_FORM_FLIGHT_EPIC = 40120;
+c.SPELLID_DRUID_FORM_TRAVEL = 783;
+c.SPELLID_DRUID_FORM_TREE_OF_LIFE = 33891;
+
+local druidForms;
+function c:GetDruidForms()
+	if not druidForms then
+		druidForms = {
+			[c.SPELLID_DRUID_FORM_NORMAL] = c:GetText("< normal >"),
+			[c.SPELLID_DRUID_FORM_AQUATIC] = c:GetSpellName(c.SPELLID_DRUID_FORM_AQUATIC),
+			[c.SPELLID_DRUID_FORM_BEAR] = c:GetSpellName(c.SPELLID_DRUID_FORM_BEAR),
+			[c.SPELLID_DRUID_FORM_CAT] = c:GetSpellName(c.SPELLID_DRUID_FORM_CAT),
+			[c.SPELLID_DRUID_FORM_DIRE_BEAR] = c:GetSpellName(c.SPELLID_DRUID_FORM_DIRE_BEAR),
+			[c.SPELLID_DRUID_FORM_FLIGHT] = c:GetSpellName(c.SPELLID_DRUID_FORM_FLIGHT),
+			[c.SPELLID_DRUID_FORM_FLIGHT_EPIC] = c:GetSpellName(c.SPELLID_DRUID_FORM_FLIGHT_EPIC),
+			[c.SPELLID_DRUID_FORM_TRAVEL] = c:GetSpellName(c.SPELLID_DRUID_FORM_TRAVEL),
+			[c.SPELLID_DRUID_FORM_TREE_OF_LIFE] = c:GetSpellName(c.SPELLID_DRUID_FORM_TREE_OF_LIFE)
+		};
+	end
+	return druidForms;
+end
+
+local druidFormsSorted;
+function c:GetDruidFormsSorted()
+	if not druidFormsSorted then
+		druidFormsSorted = c:GetTableValuesSorted(c:GetDruidForms());
+	end
+	return druidFormsSorted;
+end
+
+c.SPELLID_PALADIN_AURA_NONE = c.VALUE_NONE;
+c.SPELLID_PALADIN_AURA_CONCENTRATION = 19746;
+c.SPELLID_PALADIN_AURA_CRUSADER = 32223;
+c.SPELLID_PALADIN_AURA_DEVOTION = 27149;
+c.SPELLID_PALADIN_AURA_FIRE_RES = 27153;
+c.SPELLID_PALADIN_AURA_FROST_RES = 27152;
+c.SPELLID_PALADIN_AURA_RETRIBUTION = 27150;
+c.SPELLID_PALADIN_AURA_SHADOW_RES = 27151;
+
+local paladinAuras;
+function c:GetPaladinAuras()
+	if not paladinAuras then
+		paladinAuras = {
+			[c.SPELLID_PALADIN_AURA_NONE] = c:GetText("< none >"),
+			[c.SPELLID_PALADIN_AURA_CONCENTRATION] = c:GetSpellName(c.SPELLID_PALADIN_AURA_CONCENTRATION),
+			[c.SPELLID_PALADIN_AURA_CRUSADER] = c:GetSpellName(c.SPELLID_PALADIN_AURA_CRUSADER),
+			[c.SPELLID_PALADIN_AURA_DEVOTION] = c:GetSpellName(c.SPELLID_PALADIN_AURA_DEVOTION),
+			[c.SPELLID_PALADIN_AURA_FIRE_RES] = c:GetSpellName(c.SPELLID_PALADIN_AURA_FIRE_RES),
+			[c.SPELLID_PALADIN_AURA_FROST_RES] = c:GetSpellName(c.SPELLID_PALADIN_AURA_FROST_RES),
+			[c.SPELLID_PALADIN_AURA_RETRIBUTION] = c:GetSpellName(c.SPELLID_PALADIN_AURA_RETRIBUTION),
+			[c.SPELLID_PALADIN_AURA_SHADOW_RES] = c:GetSpellName(c.SPELLID_PALADIN_AURA_SHADOW_RES)
+		};
+	end
+	return paladinAuras;
+end
+
+local paladinAurasSorted;
+function c:GetPaladinAurasSorted()
+	if not paladinAurasSorted then
+		paladinAurasSorted = c:GetTableValuesSorted(c:GetPaladinAuras());
+	end
+	return paladinAurasSorted;
+end
+
+function c:GetCurrentBuffs(unitId)
+	unitId = unitId or "player";
+	local i, buffsById, buffsBySpellId = 1, {}, {};
+	while true do
+		local name, buff, count, buffType, duration, expirationTime, isMine, isStealable, _, spellId = UnitBuff(unitId, i);
+		if not name then
+			break;
+		end
+		buffsById[i] = spellId;
+		buffsBySpellId[spellId] = name;
+		i = i + 1;
+	end
+	return buffsById, buffsBySpellId;
 end
 
 ----- [ zones ] -----
@@ -927,21 +1090,38 @@ end
 function c:TableContains(t, value, caseInsensitive)
 	if caseInsensitive then
 		value = string.upper(value);
+	else
+		value = tostring(value);
 	end
 
 	if c:TableIsArray(t) then
 		for k, v in ipairs(t) do
-			if (not caseInsensitive and v == value) or (caseInsensitive and string.upper(v) == value) then
+			if (not caseInsensitive and tostring(v) == value) or (caseInsensitive and string.upper(v) == value) then
 				return v;
 			end
 		end
 	else
 		for k, v in pairs(t) do
-			if (not caseInsensitive and v == value) or (caseInsensitive and string.upper(v) == value) then
+			if (not caseInsensitive and tostring(v) == value) or (caseInsensitive and string.upper(v) == value) then
 				return v;
 			end
 		end
 	end
+end
+
+function c:GetTableValuesSorted(t, descending)
+	local tmp = {};
+	for _, v in pairs(t) do
+		table.insert(tmp, v);
+	end
+
+	if descending then
+		table.sort(tmp, function(a, b) return a > b end); -- descending
+	else
+		table.sort(tmp);
+	end
+
+	return tmp;
 end
 
 function c:FormatTextWithColor(text, colorHex)

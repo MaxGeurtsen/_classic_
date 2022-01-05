@@ -9,9 +9,7 @@ PallyPowerDB = {
 		["Default"] = {
 			["freeassign"] = true,
 			["rfbuff"] = false,
-			["minimap"] = {
-				["minimapPos"] = 214.3417257850349,
-			},
+			["rf"] = false,
 			["display"] = {
 				["buffDuration"] = false,
 				["frameLocked"] = true,
@@ -20,7 +18,9 @@ PallyPowerDB = {
 			},
 			["ShowWhenSolo"] = false,
 			["enable"] = true,
-			["rf"] = false,
+			["minimap"] = {
+				["minimapPos"] = 214.3417257850349,
+			},
 		},
 		["Other"] = {
 			["enable"] = true,
@@ -42,14 +42,14 @@ PallyPower_Assignments = {
 	},
 	["Kealthas"] = {
 		3, -- [1]
-		4, -- [2]
-		1, -- [3]
-		4, -- [4]
-		1, -- [5]
-		4, -- [6]
-		4, -- [7]
-		4, -- [8]
-		4, -- [9]
+		3, -- [2]
+		3, -- [3]
+		3, -- [4]
+		3, -- [5]
+		3, -- [6]
+		3, -- [7]
+		3, -- [8]
+		3, -- [9]
 		3, -- [10]
 	},
 	["Donniehmoow"] = {
@@ -84,7 +84,7 @@ PallyPower_AuraAssignments = {
 	["Ebolas"] = 0,
 	["Perms"] = 0,
 	["Ogola"] = 0,
-	["Kealthas"] = 1,
+	["Kealthas"] = 2,
 	["Holykibb"] = 0,
 	["Cakmak"] = 0,
 	["Donniehmoow"] = 3,

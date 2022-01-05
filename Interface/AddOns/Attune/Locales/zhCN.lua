@@ -6,7 +6,7 @@ end
 
 
 -- INTERFACE
-Lang["Credits"] = "非常感谢我的行会|cffffd100<Divine Heresy>|r在我测试插件时给予的支持和理解，并感谢|cffffd100Bushido @ Pyrewood Village|r在TBC上的帮助！\n\n 另外，非常感谢翻译人员：\n  - 德语翻译: |cffffd100Sumaya @ Razorfen DE|r\n  - 俄语翻译: |cffffd100Greymarch Guild @ Flamegor RU|r\n  - 西班牙语翻译: |cffffd100Coyu @ Pyrewood Village EU|r\n  - 中文翻译: |cffffd100ly395842562|r 和 |cffffd100Icyblade|r\n  - 韩语翻译: |cffffd100Drix @ Azshara KR|r\n\n/Hug 来自 Cixi/Gaya @ Remulos Horde"
+Lang["Credits"] = "非常感谢我的行会|cffffd100<Divine Heresy>|r在我测试插件时给予的支持和理解，并感谢|cffffd100Bushido @ Pyrewood Village|r在TBC上的帮助！\n\n 另外，非常感谢翻译人员：\n  - 德语翻译: |cffffd100Sumaya @ Razorfen DE|r\n  - 俄语翻译: |cffffd100Greymarch Guild @ Flamegor RU|r\n  - 西班牙语翻译: |cffffd100Coyu @ Pyrewood Village EU|r\n  - 简体中文翻译: |cffffd100ly395842562|r 和 |cffffd100Icyblade|r\n  - 繁体中文翻译: |cffffd100DayZ 三指打天下|r 和 |cffffd100薇兒 @ Ivus TW|r\n  - 韩语翻译: |cffffd100Drix @ Azshara KR|r\n\n/Hug 来自 Cixi/Gaya @ Remulos Horde"
 Lang["Mini"] = "缩小"
 Lang["Maxi"] = "放大"
 Lang["Version"] = "Attune v##VERSION## by Cixi@Remulos"
@@ -130,6 +130,24 @@ Lang["Save"] = "保存"
 Lang["Invite"] = "邀请"
 Lang["Send raid invites to all listed players?"] = "向所有列出的玩家发送突袭邀请？"
 Lang["External link"] = "链接到在线数据库"
+--v243
+Lang["Ogrila"] = "奥格瑞拉"
+Lang["Ogri'la Quest Hub"] = "奥格瑞拉宣教中心"
+Lang["Ogrila_Desc"] = "聪明而开化的奥格瑞拉食人魔居住在刀锋山的西部区域。"
+Lang["DelInactive_TEXT"] = "删除不活动"
+Lang["DelInactive_DESC"] = "删除有关标记为非活动的玩家的所有信息"
+Lang["DelInactive_CONF"] = "真的删除所有非活动吗？"
+Lang["DelInactive_DONE"] = "已删除所有非活动"
+Lang["RAIDS"] = "团队"
+Lang["KEYS"] = "钥匙"
+Lang["MISC"] = "杂项"
+Lang["HEROICS"] = "英雄"
+--v244
+Lang["Ally of the Netherwing"] = "灵翼之盟"
+Lang["Netherwing_Desc"] = "虚空之翼是位于外域的一个龙派系。"
+--v247
+Lang["Tirisfal Glades"] = "提瑞斯法林地"
+Lang["Scholomance"] = "通灵学院"
 
 
 -- OPTIONS
@@ -399,6 +417,9 @@ Lang["I_29905"] = "凯尔萨斯的水瓶残余"			-- https://cn.tbc.wowhead.com/
 Lang["I_29906"] = "瓦丝琪的水瓶残余"			-- https://cn.tbc.wowhead.com/?item=29906
 Lang["I_31307"] = "愤怒之心"			-- https://cn.tbc.wowhead.com/?item=31307
 Lang["I_32649"] = "卡拉波勋章"			-- https://cn.tbc.wowhead.com/?item=32649
+--v247
+Lang["Shrine of Thaurissan"] = "索瑞森神殿"
+Lang["I_14610"] = "阿拉基的圣甲虫"
 
 
 -- QUESTS - Classic
@@ -729,6 +750,81 @@ Lang["Q1_10949"] = "进入黑暗神殿"			-- https://cn.tbc.wowhead.com/?quest=1
 Lang["Q2_10949"] = "转至影月谷的黑暗神殿入口处，与克希利谈一谈。"
 Lang["Q1_10985"] = "帮助阿卡玛"			-- https://cn.tbc.wowhead.com/?quest=10985
 Lang["Q2_10985"] = "在克希利的军队发动佯攻之后，保护阿卡玛和玛维进入影月谷内的黑暗神殿。"
+--v243
+Lang["Q1_10984"] = "援助食人魔"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10984
+Lang["Q2_10984"] = "与沙塔斯城贫民窟的食人魔格罗科尔谈一谈。"
+Lang["Q1_10983"] = "枯瘦的莫戈多格"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10983
+Lang["Q2_10983"] = "与枯瘦的莫戈多格谈一谈，他就在刀锋山鲜血之环外的某座塔顶上。"
+Lang["Q1_10995"] = "格鲁洛克的巨龙颅骨"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10995
+Lang["Q2_10995"] = "夺回格鲁洛克的巨龙颅骨，将其交给刀锋山鲜血之环塔顶上的枯瘦的莫戈多格。"
+Lang["Q1_10996"] = "玛古克的宝箱"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10996
+Lang["Q2_10996"] = "夺取玛古克的宝箱，将它交给刀锋山鲜血之环塔顶上的枯瘦的莫戈多格。"
+Lang["Q1_10997"] = "戈隆的军旗"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10997
+Lang["Q2_10997"] = "夺取斯莱格的军旗，将其交给刀锋山鲜血之环塔顶上的枯瘦的莫戈多格。"
+Lang["Q1_10998"] = "维姆高尔的魔典"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10998
+Lang["Q2_10998"] = "夺取维姆高尔的魔典，并将它带回刀锋山内鲜血之环的塔顶上，交给枯瘦的莫戈多格。"
+Lang["Q1_11000"] = "磨魂者"			-- https://www.thegeekcrusade-serveur.com/db/?quest=11000
+Lang["Q2_11000"] = "夺得斯古洛克的灵魂，然后返回刀锋山的鲜血之环，将它交给塔楼顶部的枯瘦的莫戈多格。"
+Lang["Q1_11022"] = "与莫戈多格会面"			-- https://www.thegeekcrusade-serveur.com/db/?quest=11022
+Lang["Q2_11022"] = "与枯瘦的莫戈多格谈一谈，他就在刀锋山鲜血之环东侧的塔楼顶部。"
+Lang["Q1_11009"] = "食人魔的天堂"			-- https://www.thegeekcrusade-serveur.com/db/?quest=11009
+Lang["Q2_11009"] = "枯瘦的莫戈多格要求你与刀锋山奥格瑞拉的库洛尔谈一谈。"
+--v244
+Lang["Q1_10804"] = "友善"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10804
+Lang["Q2_10804"] = "影月谷灵翼平原的莫德奈要你喂养8只成熟的灵翼幼龙。"
+Lang["Q1_10811"] = "寻找奈尔萨拉库"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10811
+Lang["Q2_10811"] = "寻找奈尔萨拉库，虚空龙族的领袖。"
+Lang["Q1_10814"] = "奈尔萨拉库的故事"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10814
+Lang["Q2_10814"] = "与奈尔萨拉库谈一谈，听听他的故事。"
+Lang["Q1_10836"] = "攻击龙喉要塞"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10836
+Lang["Q2_10836"] = "杀死15名龙喉兽人，然后向飞翔在影月谷灵翼平原上空的奈尔萨拉库复命。"
+Lang["Q1_10837"] = "前往灵翼浮岛！"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10837
+Lang["Q2_10837"] = "前往灵翼浮岛收集12枚灵藤水晶，然后向飞翔在影月谷灵翼平原上空的奈尔萨拉库复命。"
+Lang["Q1_10854"] = "奈尔萨拉库之力"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10854
+Lang["Q2_10854"] = "解救5只被奴役的灵翼幼龙，然后向飞翔在影月谷灵翼平原上空的奈尔萨拉库复命。"
+Lang["Q1_10858"] = "卡瑞纳库"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10858
+Lang["Q2_10858"] = "前往龙喉要塞，寻找卡瑞纳库。"
+Lang["Q1_10866"] = "疲惫的祖鲁希德"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10866
+Lang["Q2_10866"] = "杀死疲惫的祖鲁希德，取回祖鲁希德的钥匙，并用它打开祖鲁希德的锁链，释放卡瑞纳库。"
+Lang["Q1_10870"] = "灵翼之盟"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10870
+Lang["Q2_10870"] = "让卡瑞纳库把你送回灵翼平原的莫德奈身边。"
+--v247
+Lang["Q1_3801"] = "黑铁的遗产"			-- https://www.thegeekcrusade-serveur.com/db/?quest=3801
+Lang["Q2_3801"] = "如果你想要得到进入这座城市主城区的钥匙，就去和弗兰克罗恩·铸铁谈一谈。"
+Lang["Q1_3802"] = "黑铁的遗产"			-- https://www.thegeekcrusade-serveur.com/db/?quest=3802
+Lang["Q2_3802"] = "杀掉弗诺斯·达克维尔并拿回战锤铁胆。把铁胆之锤拿到索瑞森神殿去，将其放在弗兰克罗恩·铸铁的雕像上。"
+Lang["Q1_5096"] = "误导血色十字军"
+Lang["Q2_5096"] = "到血色十字军建在费尔斯通农场和达尔松之泪之间的营地去，摧毁他们的指挥帐篷。"
+Lang["Q1_5098"] = "标记哨塔"
+Lang["Q2_5098"] = "使用信号火炬为安多哈尔城中的四座哨塔做上标记，你必须站在哨塔门口才能成功地进行标记。"
+Lang["Q1_838"] = "通灵学院"
+Lang["Q2_838"] = "和西瘟疫之地亡灵壁垒的药剂师迪瑟斯谈一谈。"
+Lang["Q1_964"] = "骸骨碎片"
+Lang["Q2_964"] = "将15块骸骨碎片交给西瘟疫之地亡灵壁垒的药剂师迪瑟斯。"
+Lang["Q1_5514"] = "昂贵的模具"
+Lang["Q2_5514"] = "把灌魔的骸骨碎片和15枚金币交给加基森的克林科·古德斯迪尔。"
+Lang["Q1_5802"] = "火羽山"
+Lang["Q2_5802"] = "把骷髅钥匙模具和2块瑟银锭带到安戈洛尔环形山地区的火羽山顶部。在熔岩湖旁使用骷髅钥匙模具，铸造出一把未完工的骷髅钥匙。"
+Lang["Q1_5804"] = "阿拉基的圣甲虫"
+Lang["Q2_5804"] = "杀掉召唤者阿拉基，并将阿拉基的圣甲虫交给西瘟疫之地亡灵壁垒的药剂师迪瑟斯。"
+Lang["Q1_5511"] = "通灵学院的钥匙"
+Lang["Q2_5511"] = "好吧，你在这里 - 完成的万能钥匙。 我可以肯定，这把钥匙会让你在通灵学院的范围内。"
+Lang["Q1_5092"] = "扫清道路"
+Lang["Q2_5092"] = "杀掉悔恨岭中的10个骷髅剥皮者和10个被奴役的食尸鬼。"
+Lang["Q1_5097"] = "标记哨塔"
+Lang["Q2_5097"] = "使用信号火炬为安多哈尔城中的四座哨塔做上标记，你必须站在哨塔门口才能成功地进行标记。"
+Lang["Q1_5533"] = "通灵学院"
+Lang["Q2_5533"] = "和西瘟疫之地冰风岗的化学家阿尔比顿谈一谈。"
+Lang["Q1_5537"] = "骸骨碎片"
+Lang["Q2_5537"] = "将15块骷髅碎片交给西瘟疫之地冰风岗的化学家阿尔比顿。"
+Lang["Q1_5538"] = "昂贵的模具"
+Lang["Q2_5538"] = "把灌魔的骸骨碎片和15枚金币交给加基森的克林科·古德斯迪尔。"
+Lang["Q1_5801"] = "火羽山"
+Lang["Q2_5801"] = "把骷髅钥匙模具和2块瑟银锭带到安戈洛尔环形山地区的火羽山顶部。在熔岩湖旁使用骷髅钥匙模具，铸造出一把未完工的骷髅钥匙。"
+Lang["Q1_5803"] = "阿拉基的圣甲虫"
+Lang["Q2_5803"] = "杀掉召唤者阿拉基，并将阿拉基的圣甲虫交给西瘟疫之地冰风岗的化学家阿尔比顿。"
+Lang["Q1_5505"] = "通灵学院的钥匙"
+Lang["Q2_5505"] = "好吧，你在这里 - 完成的万能钥匙。 我可以肯定，这把钥匙会让你在通灵学院的范围内。"
 	
 
 -- NPC
@@ -884,7 +980,27 @@ Lang["N1_17767"] = "雷基·冬寒"	-- https://cn.tbc.wowhead.com/?npc=17767
 Lang["N2_17767"] = "雷基·冬寒是海加尔山的一号首领."
 Lang["N1_18528"] = "克希利"	-- https://cn.tbc.wowhead.com/?npc=18528
 Lang["N2_18528"] = "克希利位于黑暗神殿的门外."
+--v243
+Lang["N1_22497"] = "弗埃卢"	-- https://www.thegeekcrusade-serveur.com/db/?npc=22497
+Lang["N2_22497"] = "弗埃盧和阿達爾在同一個房間，但他是藍色的。 他在頂層著陸。"
+--v244
+Lang["N1_22113"] = "莫德奈"
+Lang["N2_22113"] = "一个血精灵（剧透警报，实际上是一条龙）走在星辰圣殿东边的虚空之翼领域"
+--v247
+Lang["N1_8888"]  = "弗兰克罗恩·铸铁"
+Lang["N2_8888"]  = "一个幽灵矮人，站在地牢外他自己的坟墓上，在悬浮在熔岩上方的结构中。 只有死了才能与他互动。"
+Lang["N1_9056"]  = "弗诺斯·达克维尔"
+Lang["N2_9056"]  = "他在地牢内，在伊森迪乌斯勋爵的房间外的采石场巡逻。"
+Lang["N1_10837"] = "高级执行官德灵顿"
+Lang["N2_10837"] = "他可以在壁垒中找到，靠近提瑞斯法和西瘟疫之地的边界"
+Lang["N1_10838"] = "指挥官阿什拉姆·瓦罗菲斯特"
+Lang["N2_10838"] = "他可以在西瘟疫之地安多哈尔以南的寒风营地找到"
+Lang["N1_1852"]  = "召唤者阿拉基"
+Lang["N2_1852"]  = "巫妖，在安多哈尔的中央"
 
 
 Lang["O_1"] = "击杀达基萨斯将军以完成任务。\n位于达基萨斯将军后面的发光球."
 Lang["O_2"] = "这是一个在地面上发光的小红点\n位于安其拉之门 (28.7,89.2)."
+--v247
+Lang["O_3"] = "神殿位于一条走廊的尽头，这条走廊从法则之环的上层开始。"
+

@@ -6,7 +6,7 @@ end
 
 
 -- INTERFACE
-Lang["Credits"] = "Ein großes DANKESCHÖN an meine Gilde |cffffd100<Divine Heresy>|r für Ihre Unterstützung bei der Entwicklung und dem Test des Addons, und danke an |cffffd100Bushido @ Pyrewood Village|r für die Hilfe bei TBC!\n\nVielen, vielen dank auch an die Übersetzer:\n  - Deutsche Übersetzung: |cffffd100Sumaya @ Razorfen DE|r\n  - Russische Übersetzung: |cffffd100Greymarch Gilde @ Flamegor RU|r\n  - Spanische Übersetzung: |cffffd100Coyu @ Pyrewood Village EU|r\n  - Chinesische Übersetzung: |cffffd100ly395842562|r und |cffffd100Icyblade|r\n  - Koreanische Übersetzung: |cffffd100Drix @ Azshara KR|r\n\n/Hug von Cixi/Gaya @ Remulos Horde"
+Lang["Credits"] = "Ein großes DANKESCHÖN an meine Gilde |cffffd100<Divine Heresy>|r für Ihre Unterstützung bei der Entwicklung und dem Test des Addons, und danke an |cffffd100Bushido @ Pyrewood Village|r für die Hilfe bei TBC!\n\nVielen, vielen dank auch an die Übersetzer:\n  - Deutsche Übersetzung: |cffffd100Sumaya @ Razorfen DE|r\n  - Russische Übersetzung: |cffffd100Greymarch Gilde @ Flamegor RU|r\n  - Spanische Übersetzung: |cffffd100Coyu @ Pyrewood Village EU|r\n  - Vereinfachte chinesische Übersetzung: |cffffd100ly395842562|r und |cffffd100Icyblade|r\n  - Traditionelle Chinesische Übersetzung: |cffffd100DayZ|r @ Ivus TW|r\n  - Koreanische Übersetzung: |cffffd100Drix @ Azshara KR|r\n\n/Hug von Cixi/Gaya @ Remulos Horde"
 Lang["Mini"] = "Mini"
 Lang["Maxi"] = "Maxi"
 Lang["Version"] = "Attune v##VERSION## von Cixi@Remulos"
@@ -69,8 +69,8 @@ Lang["Help6"] = "Daten können auf |cfffff700https://warcraftratings.com/attune/
 Lang["Survey_DESC"] = "Führt eine Statusumfrage aus (für Spieler mit dem Addon)"
 Lang["Export_DESC"] = "Exportiert deine Attune Daten für die Website"
 Lang["Toggle_DESC"] = "Umschalten zwischen Umfrageergebnissen und Zugangsquests"
---Lang["PreferredLocale_TEXT"] = "Preferred Language"
---Lang["PreferredLocale_DESC"] = "Select the language you want to see Attune in. Changes to this will require a reload to take effect."
+--Lang["PreferredLocale_TEXT"] = "Bervorzugte Sprache"
+--Lang["PreferredLocale_DESC"] = "Wähle die Sprache in der du Attune nutzen möchtest. Das Addon muss danach neu geladen werden."
 --v220
 Lang["My Toons"] = "Meine Twinks"
 Lang["No Target"] = "Sie haben kein Ziel"
@@ -93,7 +93,7 @@ Lang["Show Progress"] = "Fortschritt anzeigen"
 Lang["Status"] = "Status"
 Lang["Role"] = "Rolle"
 Lang["Last Surveyed"] = "Zuletzt befragt"
-Lang['Seconds ago'] = "##DURATION## vor"
+Lang['Seconds ago'] = "vor ##DURATION## Sekunden"
 Lang["Main"] = "Main"
 Lang["Alt"] = "Twink"
 Lang["Tank"] = "Tank"
@@ -130,6 +130,24 @@ Lang["Save"] = "Speichern"
 Lang["Invite"] = "Einladen"
 Lang["Send raid invites to all listed players?"] = "Raid-Einladungen an alle aufgelisteten Spieler senden?"
 Lang["External link"] = "Link zu einer Online-Datenbank"
+--v243
+Lang["Ogrila"] = "Ogri'la"
+Lang["Ogri'la Quest Hub"] = "Ogri'la Quest-Hub"
+Lang["Ogrila_Desc"] = "Die erleuchteten Bewohner von Ogri'la haben sich im Westen des Schergrats angesiedelt."
+Lang["DelInactive_TEXT"] = "Inaktiv löschen"
+Lang["DelInactive_DESC"] = "Löschen Sie alle Informationen über Spieler, die als inaktiv markiert sind"
+Lang["DelInactive_CONF"] = "Wirklich alle Inaktiven löschen?"
+Lang["DelInactive_DONE"] = "Alle Inaktiven gelöscht"
+Lang["RAIDS"] = "Schlachtzüge"
+Lang["KEYS"] = "Schlüssel"
+Lang["MISC"] = "Sonstiges"
+Lang["HEROICS"] = "Heroisch"
+--v244
+Lang["Ally of the Netherwing"] = "Verbündeter der Netherschwingen"
+Lang["Netherwing_Desc"] = "Die Netherwing ist eine Drachenfraktion in der Scherbenwelt."
+--v247
+Lang["Tirisfal Glades"] = "Tirisfal"
+Lang["Scholomance"] = "Scholomance"
 
 
 -- OPTIONS
@@ -235,17 +253,17 @@ Lang["Completion"] = "Abschluss"
 Lang["Quest information not found"] = "Quest Informationen nicht gefunden"
 Lang["Information not found"] = "Informationen nicht gefunden"
 Lang["Solo quest"] = "Solo Quest"
-Lang["Party quest"] = "Gruppen Quest (##NB##-man)"
-Lang["Raid quest"] = "Raid Quest (##NB##-man)"
+Lang["Party quest"] = "Gruppen Quest (##NB## Spieler)"
+Lang["Raid quest"] = "Raid Quest (##NB## Spieler)"
 Lang["HEROIC"] = "Heroisch"
 Lang["Elite"] = "Elite"
 Lang["Boss"] = "Boss"
-Lang["Rare Elite"] = "Rare Elite"
+Lang["Rare Elite"] = "Elite (Selten)"
 Lang["Dragonkin"] = "Drachkin"
 Lang["Troll"] = "Troll"
 Lang["Ogre"] = "Oger"
-Lang["Orc"] = "Orc"
-Lang["Half-Orc"] = "Halb-Orc"
+Lang["Orc"] = "Ork"
+Lang["Half-Orc"] = "Halb-Ork"
 Lang["Dragonkin (in Blood Elf form)"] = "Drachkin (in Blutelfenform)"
 Lang["Human"] = "Mensch"
 Lang["Dwarf"] = "Zwerg"
@@ -399,6 +417,9 @@ Lang["I_29905"] = "Überreste von Kaels Phiole"			-- https://de.tbc.wowhead.com/
 Lang["I_29906"] = "Überreste von Vashjs Phiole"			-- https://de.tbc.wowhead.com/item=29906
 Lang["I_31307"] = "Herz des Zorns"			-- https://de.tbc.wowhead.com/item=31307
 Lang["I_32649"] = "Medaillon von Karabor"			-- https://de.tbc.wowhead.com/item=32649
+--v247
+Lang["Shrine of Thaurissan"] = "Schrein von Thaurissan"
+Lang["I_14610"] = "Arajs Skarabäus"
 
 
 -- QUESTS - Classic
@@ -729,6 +750,81 @@ Lang["Q1_10949"] = "Zutritt zum schwarzen Tempel"			-- https://de.tbc.wowhead.co
 Lang["Q2_10949"] = "Reist zum Eingang des Schwarzen Tempels im Schattenmondtal und sprecht mit Xi'ri."
 Lang["Q1_10985"] = "Ein Ablenkungsmanöver für Akama"			-- https://de.tbc.wowhead.com/quest=10985
 Lang["Q2_10985"] = "Stellt sicher, dass Akama und Maiev den Schwarzen Tempel betreten, nachdem Xi'ris Streitkräfte ihr Ablenkungsmanöver durchgeführt haben."
+--v243
+Lang["Q1_10984"] = "Sprecht mit dem Oger"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10984
+Lang["Q2_10984"] = "Sprecht mit dem Oger Grok im unteren Viertel von Shattrath."
+Lang["Q1_10983"] = "Mog'dorg der Weise"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10983
+Lang["Q2_10983"] = "Besucht Mog'dorg den Weisen auf einem der Türme außerhalb des Zirkels des Blutes im Schergrat."
+Lang["Q1_10995"] = "Grulloc hat zwei Schädel"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10995
+Lang["Q2_10995"] = "Beschafft Grullocs Drachenschädel und bringt ihn zu Mog'dorg dem Weisen auf dem Turm beim Zirkel des Blutes im Schergrat."
+Lang["Q1_10996"] = "Maggocs Schatztruhe"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10996
+Lang["Q2_10996"] = "Beschafft Euch Maggocs Schatztruhe und bringt sie zu Mog'dorg dem Weisen auf dem Turm beim Zirkel des Blutes im Schergrat."
+Lang["Q1_10997"] = "Sogar ein Gronn hat Standards"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10997
+Lang["Q2_10997"] = "Besorgt Euch Slaags Standarte und bringt sie zu Mog'dorg dem Weisen auf dem Turm beim Zirkel des Blutes im Schergrat."
+Lang["Q1_10998"] = "In den übelsten Kreisen"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10998
+Lang["Q2_10998"] = "Ihr müsst Vim'gols üblen Zauberfolianten beschafften. Bringt ihn zu Mog'dorg dem Weisen auf dem Turm beim Zirkel des Blutes im Schergrat."
+Lang["Q1_11000"] = "Schänder der Seelen"			-- https://www.thegeekcrusade-serveur.com/db/?quest=11000
+Lang["Q2_11000"] = "Beschafft Euch Skullocs Seele und bringt ihn zu Mog'dorg dem Weisen auf dem Turm beim Zirkel des Blutes im Schergrat."
+Lang["Q1_11022"] = "Sprecht mit Mog'dorg"			-- https://www.thegeekcrusade-serveur.com/db/?quest=11022
+Lang["Q2_11022"] = "Sprecht mit Mog'dorg dem Weisen. Er steht oben auf dem Turm auf der Ostseite des Zirkels des Blutes im Schergrat."
+Lang["Q1_11009"] = "Ogerhimmel"			-- https://www.thegeekcrusade-serveur.com/db/?quest=11009
+Lang["Q2_11009"] = "Mog'dorg der Weise hat Euch gebeten, mit Chu'a'lor in Ogri'la im Schergrat zu sprechen."
+--v244
+Lang["Q1_10804"] = "Freundlichkeit"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10804
+Lang["Q2_10804"] = "Mordenai bei den Netherschwingenfeldern im Schattenmondtal möchte, dass Ihr 8 ausgewachsene Drachen der Netherschwingen füttert."
+Lang["Q1_10811"] = "Sucht Neltharaku auf"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10811
+Lang["Q2_10811"] = "Sucht Neltharaku, den Patron des Drachenschwarms der Netherschwingen auf."
+Lang["Q1_10814"] = "Neltharakus Geschichte"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10814
+Lang["Q2_10814"] = "Sprecht mit Neltharaku und hört Euch seine Geschichte an."
+Lang["Q1_10836"] = "Unterwanderung der Festung des Drachenmals"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10836
+Lang["Q2_10836"] = "Neltharaku, der hoch über den Netherschwingenfeldern im Schattenmondtal seine Kreise zieht, möchte, dass Ihr 15 Orcs des Drachenmals tötet."
+Lang["Q1_10837"] = "Zur Netherschwingenscherbe!"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10837
+Lang["Q2_10837"] = "Neltharaku, der hoch über den Netherschwingenfeldern im Schattenmondtal seine Kreise zieht, möchte, dass Ihr 12 Netherrankenkristalle auf der Netherschwingenscherbe sammelt."
+Lang["Q1_10854"] = "Die Macht Neltharakus"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10854
+Lang["Q2_10854"] = "Neltharaku, der hoch über den Netherschwingenfeldern im Schattenmondtal seine Kreise zieht, möchte, dass Ihr 5 versklavte Drachen der Netherschwingen befreit."
+Lang["Q1_10858"] = "Karynaku"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10858
+Lang["Q2_10858"] = "Sucht nach Karynaku in der Festung des Drachenmals."
+Lang["Q1_10866"] = "Zuluhed der Geschlagene"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10866
+Lang["Q2_10866"] = "Tötet Zuluhed den Geschlagenen und beschafft Euch Zuluheds Schlüssel. Benutzt Zuluheds Schlüssel, um Zuluheds Fesseln zu öffnen und Karynaku zu befreien."
+Lang["Q1_10870"] = "Verbündeter der Netherschwingen"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10870
+Lang["Q2_10870"] = "Lasst Euch von Karynaku zurück zu Mordenai in den Netherschwingenfeldern bringen."
+--v247
+Lang["Q1_3801"] = "Dunkeleisenerbe"			-- https://www.thegeekcrusade-serveur.com/db/?quest=3801
+Lang["Q2_3801"] = "Sprecht mit Franclorn Forgewright, wenn Ihr daran interessiert seid, einen Schlüssel für die Hauptstadt zu erhalten."
+Lang["Q1_3802"] = "Dunkeleisenerbe"			-- https://www.thegeekcrusade-serveur.com/db/?quest=3802
+Lang["Q2_3802"] = "Erschlagt Fineous Darkvire und bergt den großen Hammer Ironfel. Bringt Ironfel zum Schrein von Thaurissan und legt ihn auf die Statue von Franclorn Forgewright."
+Lang["Q1_5096"] = "Scharlachrote Ablenkung"
+Lang["Q2_5096"] = "Zieht zum Basislager des Scharlachroten Kreuzzugs zwischen dem Teufelssteinfeld und Dalsons Tränenfeld und zerstört sein Kommandozelt."
+Lang["Q1_5098"] = "Turm um Turm"
+Lang["Q2_5098"] = "Markiert mit der Signalfackel jeden Turm in Andorhal; Ihr müsst im Eingang jedes Turmes stehen, um ihn erfolgreich zu markieren."
+Lang["Q1_838"] = "Scholomance"
+Lang["Q2_838"] = "Sprecht mit Apotheker Dithers am Bollwerk, Westliche Pestländer."
+Lang["Q1_964"] = "Skelettfragmente"
+Lang["Q2_964"] = "Bringt 15 Skelettfragmente zu Apotheker Dithers am Bollwerk, Westliche Pestländer."
+Lang["Q1_5514"] = "Sold reimt sich auf..."
+Lang["Q2_5514"] = "Bringt die magieerfüllten Skelettfragmente sowie 15 Goldstücke zu Krinkle Goodsteel in Gadgetzan."
+Lang["Q1_5802"] = "Feuerfeder geschmiedet"
+Lang["Q2_5802"] = "Bringt die Skelettschlüsselform und 2 Barren Thorium zur Spitze des Feuerfedergrats im Un'Goro Krater. Benutzt die Skelettschlüsselform am Lavasee, um den unvollendeten Skelettschlüssel zu schmieden."
+Lang["Q1_5804"] = "Arajs Skarabäus"
+Lang["Q2_5804"] = "Vernichtet Araj den Beschwörer und bringt Arajs Skarabäus zum Apotheker Dithers im Bollwerk, in den westlichen Pestländern.	"
+Lang["Q1_5511"] = "Der Schlüssel zur Scholomance"
+Lang["Q2_5511"] = "Tja, da ist er, der fertige Skelettschlüssel. Ich bin eigentlich absolut sicher, dass dieser Schlüssel Euch Zutritt zur Scholomance verschaffen wird."
+Lang["Q1_5092"] = "Den Weg räumen"
+Lang["Q2_5092"] = "Tötet 10 Skelettschinder und 10 sabbernde Ghuls in Sorrow Hill."
+Lang["Q1_5097"] = "Turm um Turm"
+Lang["Q2_5097"] = "Markiert mit der Signalfackel jeden Turm in Andorhal; Ihr müsst im Eingang jedes Turmes stehen, um ihn erfolgreich zu markieren."
+Lang["Q1_5533"] = "Scholomance"
+Lang["Q2_5533"] = "Sprecht mit Alchimist Arbington an der Chillwindspitze, Westliche Pestländer."
+Lang["Q1_5537"] = "Skelettfragmente"
+Lang["Q2_5537"] = "Bringt 15 Skelettfragmente zu Alchimist Arbington an der Chillwindspitze, Westliche Pestländer.."
+Lang["Q1_5538"] = "Sold reimt sich auf..."
+Lang["Q2_5538"] = "Bringt die magieerfüllten Skelettfragmente sowie 15 Goldstücke zu Krinkle Goodsteel in Gadgetzan."
+Lang["Q1_5801"] = "Feuerfeder geschmiedet"
+Lang["Q2_5801"] = "Bringt die Skelettschlüsselform und 2 Barren Thorium zur Spitze des Feuerfedergrats im Un'Goro Krater. Benutzt die Skelettschlüsselform am Lavasee, um den unvollendeten Skelettschlüssel zu schmieden."
+Lang["Q1_5803"] = "Arajs Skarabäus"
+Lang["Q2_5803"] = "Zerstört Araj den Beschwörer und bringt Arajs Skarabäus zum Alchimisten Arbington an der Chillwindspitze in den westlichen Pestländern."
+Lang["Q1_5505"] = "Der Schlüssel zur Scholomance"
+Lang["Q2_5505"] = "Tja, da ist er, der fertige Skelettschlüssel. Ich bin eigentlich absolut sicher, dass dieser Schlüssel Euch Zutritt zur Scholomance verschaffen wird."
 	
 
 -- NPC
@@ -881,10 +977,30 @@ Lang["N2_21700"] = "Akama befindet sich im Kerker des Wächters (58.0,48.2)."
 Lang["N1_19514"] = "Al'ar"	-- https://de.tbc.wowhead.com/npc=19514
 Lang["N2_19514"] = "Al'ar ist der erste Boss des Auges. Der Vogel hat Feuer!"
 Lang["N1_17767"] = "Furor Winterfrost"	-- https://de.tbc.wowhead.com/npc=17767
-Lang["N2_17767"] = "Furor Winterfrots ist der erste Boss in der Schlacht um den Berg Hyjal."
+Lang["N2_17767"] = "Furor Winterfrost ist der erste Boss in der Schlacht um den Berg Hyjal."
 Lang["N1_18528"] = "Xi'ri"	-- https://de.tbc.wowhead.com/npc=18528
 Lang["N2_18528"] = "Xi'ri befindet sich am Eingagn des schwarzen Tempels. Großes, blaues, leuchtendes Ding. Was macht es? Es leuchtet blau!."
+--v243
+Lang["N1_22497"] = "V'eru"	-- https://www.thegeekcrusade-serveur.com/db/?npc=22497
+Lang["N2_22497"] = "V'eru ist im selben Raum wie A'dal, aber er ist blau. Er ist auf dem obersten Treppenabsatz."
+--v244
+Lang["N1_22113"] = "Mordenai"
+Lang["N2_22113"] = "Ein Blutelfen (Spoiler-Alarm, eigentlich ein Drache), der die Netherschwingenfelder östlich des Heiligtums der Sterne durchwandert"
+--v247
+Lang["N1_8888"]  = "Franclorn Forgewright"
+Lang["N2_8888"]  = "Ein Geisterzwerg, der auf seinem eigenen Grab AUSSERHALB des Verlieses steht, in der Struktur, die über der Lava hängt. Sie können nur mit ihm interagieren, wenn Sie tot sind."
+Lang["N1_9056"]  = "Fineous Darkvire"
+Lang["N2_9056"]  = "Er ist INNERHALB des Kerkers und patrouilliert im Steinbruchgebiet außerhalb von Lord Incendius' Kammer."
+Lang["N1_10837"] = "Hochexekutor Derrington"
+Lang["N2_10837"] = "Er befindet sich am Bollwerk, nahe der Grenze von Tirisfal und den Westlichen Pestländern"
+Lang["N1_10838"] = "Kommandant Ashlam Valorfist"
+Lang["N2_10838"] = "Er befindet sich im Chillwind Camp, südlich von Andorhal in den Westlichen Pestländern"
+Lang["N1_1852"]  = "Araj der Beschwörer"
+Lang["N2_1852"]  = "Der Lich, mitten in Andorhal"
 
 
 Lang["O_1"] = "Klicke auf Drakkisaths Brandzeichen um die Quest abzuschließen.\nEs ist der glühende Ball hinter General Drakkisath."
 Lang["O_2"] = "Es ist ein kleiner, rot glühender Punkt auf dem Boden\nVor den Toren von Ahn'Qiraj (28.7,89.2)."
+--v247
+Lang["O_3"] = "Der Schrein befindet sich am Ende eines Korridors,\nder auf der oberen Ebene des Ring of Law beginnt."
+

@@ -14,11 +14,11 @@ VER 3 0000000000000008 "ad" "INV_MISC_QUESTIONMARK"
 END
 VER 3 000000000000000E "AutoHP" "INV_Misc_QuestionMark"
 #showtooltip
-/cast [combat] item:22829; item:27855
+/cast [combat,mod:shift] item:22105; [combat] item:22829; item:34062
 END
 VER 3 000000000000000F "ConsumableHP" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:22829
+/cast [mod:shift] item:22105; item:22829
 END
 VER 3 0000000000000010 "ConsumableMP" "INV_Misc_QuestionMark"
 #showtooltip
@@ -41,11 +41,11 @@ VER 3 000000000000000B "drink" "3867503"
 END
 VER 3 000000000000000C "DrinkOnlyMP" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:27860
+/cast item:34062
 END
 VER 3 000000000000000D "FoodOnlyHP" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:27855
+/cast item:34062
 END
 VER 3 0000000000000003 "p" "132156"
 /p follow me plz on: twitch.tv/firebreathereu

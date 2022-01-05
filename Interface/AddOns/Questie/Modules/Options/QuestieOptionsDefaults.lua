@@ -98,7 +98,7 @@ function QuestieOptionsDefaults:Load()
 
         },
         char = {
-            minLevelFilter = (GetQuestGreenRange or UnitQuestTrivialLevelRange)("player"), -- Raised the default to allow more quests to be shown
+            minLevelFilter = GetQuestGreenRange("player"), -- Raised the default to allow more quests to be shown
             maxLevelFilter = 7,
             complete = {},
             hidden = {},
@@ -124,6 +124,7 @@ function QuestieOptionsDefaults:Load()
             questAnnounce = true,
             isTrackerExpanded = true,
             hideUnexploredMapIcons = false,
+            hideUntrackedQuestsMapIcons = false,
             showRepeatableQuests = true,
             showEventQuests = true,
             showDungeonQuests = true,

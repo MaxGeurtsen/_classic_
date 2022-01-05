@@ -8,19 +8,33 @@
 
 	<Frame name="GqUiFrame" inherits="BasicFrameTemplateWithInset" parent="PaperDollFrame" frameStrata="LOW" script="gearquipper-uiFrame" hidden="true">
 		<Size>
-			<AbsDimension x="340" y="220"/>
+			<AbsDimension x="340" y="235"/>
 		</Size>
 		<Anchors>
 			<Anchor point="TOPRIGHT">
 				<Offset>
-					<AbsDimension x="290" y="-44"/>
+					<AbsDimension x="290" y="-14"/>
 				</Offset>
 			</Anchor>
 		</Anchors>
 
 		<Frames>
+			<Button name="$parent_BtnOptions" inherits="GqButtonTemplate">
+				<Size>
+					<AbsDimension x="75" y="17"/>
+				</Size>
+				<Anchors>
+					<Anchor point="TOPRIGHT">
+						<Offset x="-26" y="-2"/>
+					</Anchor> 
+				</Anchors>
+				<Scripts>
+					<OnClick> BtnOptions_OnClick(); </OnClick>
+				</Scripts>
+			</Button>
+
 			<Frame name="GqUiScrollFrameBorder" inherits="BackdropTemplate">
-				<Size x="307" y="125"/>
+				<Size x="307" y="140"/>
 				<Anchors>
 					<Anchor point="TOPLEFT">
 						<Offset>
@@ -36,7 +50,7 @@
 
 				<Frames>
 					<ScrollFrame name="GqUiScrollFrame">
-						<Size x="290" y="115"/>
+						<Size x="290" y="130"/>
 						<Anchors>
 							<Anchor point="TOPLEFT">
 								<Offset>
@@ -47,7 +61,7 @@
 
 						<Frames>
 							<Slider name="$parentVSlider" orientation="VERTICAL" minValue="0" maxValue="90" defaultValue="0" valueStep="1" hidden="true" inherits="BackdropTemplate">
-								<Size x="20" y="115"/>
+								<Size x="20" y="130"/>
 								<Anchors>
 									<Anchor point="TOPRIGHT"/>
 								</Anchors>
@@ -107,19 +121,19 @@
 
 			<Frame name="GqEventBindingFrame" inherits="BasicFrameTemplateWithInset" frameStrata="BACKGROUND" frameLevel="2">
 				<Size>
-					<AbsDimension x="340" y="197"/>
+					<AbsDimension x="340" y="212"/>
 				</Size>
 				<Anchors>
 					<Anchor point="BOTTOMLEFT">
 						<Offset>
-							<AbsDimension x="0" y="-172"/>
+							<AbsDimension x="0" y="-187"/>
 						</Offset>
 					</Anchor>
 				</Anchors>
 
 				<Frames>
 					<Frame name="GqUiEventBindingsScrollFrameBorder" inherits="BackdropTemplate">
-						<Size x="307" y="135"/>
+						<Size x="307" y="150"/>
 						<Anchors>
 							<Anchor point="TOPLEFT">
 								<Offset>
@@ -135,7 +149,7 @@
 
 						<Frames>
 							<ScrollFrame name="GqUiEventBindingsScrollFrame">
-								<Size x="290" y="125"/>
+								<Size x="290" y="140"/>
 								<Anchors>
 									<Anchor point="TOPLEFT">
 										<Offset>
@@ -146,7 +160,7 @@
 
 								<Frames>
 									<Slider name="$parentVSlider" orientation="VERTICAL" minValue="0" maxValue="90" defaultValue="0" valueStep="1" hidden="true" inherits="BackdropTemplate">
-										<Size x="20" y="125"/>
+										<Size x="20" y="140"/>
 										<Anchors>
 											<Anchor point="TOPRIGHT"/>
 										</Anchors>

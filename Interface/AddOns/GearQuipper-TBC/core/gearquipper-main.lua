@@ -7,7 +7,18 @@ local inCombat, interruptedByCombat, interruptedBySpell;
 
 local lastRealmname, lastCharname;
 local lastMountState, lastStealthState, lastPvPState, lastAfkState, lastPartyState, lastRaidState, lastSubmergedState;
+local lastDruidForm, druidShapeshiftPending, lastPaladinAura;
 local lastRaidRoster, lastMapId;
+
+local timeoutHighlightButtons = 1;
+-- local timeoutCreateSpellbookCache = 3;
+-- local timeoutEquipItemFromBank = 0.6;
+-- local timeoutPushPullBank = 1;
+-- local timeoutRefreshSetList = 0.25;
+-- local timeoutUnitAura = 1;
+-- local timeoutDruidShapeshift = 0.6;
+-- local timeoutSpellcastEnd = 0.6;
+-- local timeoutFinishSwitch = 1;
 
 local BANKCONTAINER_BAGID_OFFSET = 47;
 
@@ -39,7 +50,7 @@ end
 local function HighlightButton(button)
     if button then
         ActionButton_ShowOverlayGlow(button);
-        C_Timer.After(1, function()
+        C_Timer.After(timeoutHighlightButtons, function()
             ActionButton_HideOverlayGlow(button);
         end);
     end
@@ -71,6 +82,9 @@ local CMD_SAVE = "save";
 local CMD_SWITCH = "switch";
 local CMD_SWITCHWAIT = "switchwait";
 local CMD_TOGGLEEVENTS = "toggleevents";
+
+local CMD_AFFECTSHELMET = "affectshelmet";
+local CMD_AFFECTSCLOAK = "affectscloak";
 
 SlashCmdList["GEARQUIPPER"] = function(msg)
     if msg then
@@ -186,9 +200,19 @@ SlashCmdList["GEARQUIPPER"] = function(msg)
                 end
                 c:Println(c:GetText("Event bindings %s.", text));
                 return;
+            elseif msg == CMD_AFFECTSHELMET then
+                local setName = c:LoadCurrentSetName();
+                c:SetAffectsHelmet(not c:GetAffectsHelmet(setName), setName);
+                return;
+            elseif msg == CMD_AFFECTSCLOAK then
+                local setName = c:LoadCurrentSetName();
+                c:SetAffectsCloak(not c:GetAffectsCloak(setName), setName);
+                return;
             end
 
             c:Println(c:GetText("Unknown command. Possible parameters are: /gq ..."));
+            c:Println(c:GetText("affectscloak -> Toggles whether your current set affects cloak visibility or not."));
+            c:Println(c:GetText("affectshelmet -> Toggles whether your current set affects helmet visibility or not."));
             c:Println(c:GetText("reset -> Resets the GearQuipper addon (e.g. in case of errors)."));
             c:Println(c:GetText("save [setname] -> Saves the specified set or the current set if omitted."));
             c:Println(c:GetText("switch [setname1] [setname2] ... -> Switches between specified sets. For macro use."));
@@ -247,7 +271,9 @@ end
 c.eventFrame:HookScript("OnEvent", function(self, event, arg1, arg2, arg3, ...)
     if event then
         if c.initFinished then
-            c:DebugPrint("Event: ", event, arg1, arg2);
+            if event ~= "COMBAT_LOG_EVENT_UNFILTERED" then
+                c:DebugPrint(event, arg1, arg2, arg3, ...);
+            end
         end
 
         if event == "ADDON_LOADED" and arg1 == "GearQuipper-TBC" and not c.initFinished then
@@ -274,6 +300,9 @@ c.eventFrame:HookScript("OnEvent", function(self, event, arg1, arg2, arg3, ...)
                 lastSubmergedState = IsSwimming();
                 lastMapId = C_Map.GetBestMapForUnit("player");
 
+                lastDruidForm = c:GetCurrentDruidForm();
+                druidShapeshiftPending = false;
+
                 c:GetMacros();
                 c:LoadCloakAndHelmet();
                 c.currentSession = {
@@ -281,21 +310,40 @@ c.eventFrame:HookScript("OnEvent", function(self, event, arg1, arg2, arg3, ...)
                     ["charName"] = currentCharName
                 };
 
-                C_Timer.After(2, function()
-                    c:GetLearnedSpellNameAndRank(); -- init spell book cache
-                    c:Println(c:GetText("Spell database updated."));
-                end);
+                -- C_Timer.After(timeoutCreateSpellbookCache, function()
+                --     c:GetSpellCache(); -- init spell id cache
+                --     c:GetLearnedSpellNameAndRank(); -- init learned spells cache
+                --     --c:Println(c:GetText("Spell database updated."));
+                -- end);
             else
+                local currentMountState = IsMounted() and not UnitOnTaxi("player");
+                if currentMountState ~= lastMountState then
+                    if currentMountState then
+                        c:Mounting();
+                    else
+                        c:Dismounting();
+                    end
+                    lastMountState = currentMountState;
+                end
+
                 c:NewZone();
             end
         elseif event == "SOCKET_INFO_UPDATE" then
             if c.socketingAction then
-                local currentSetName = c:LoadCurrentSetName();
-                if currentSetName then
-                    if c:SaveSlot(c.socketingAction, currentSetName) then
-                        c.eventFrame:UnregisterEvent("SOCKET_INFO_UPDATE");
+                -- needs timeout
+                C_Timer.After(c:GetHomeLatency(100 + GQ_OPTIONS[c.OPT_SWITCHDELAY]) / 1000, function ()
+                    -- updated sockets -> save item if it is in set(s)
+                    local newItemString;
+                    if c:GetSlotInfo(c.socketingAction.bagOrCharacterSlotId) and not c.socketingAction.bagSlotId then
+                        -- currently equipped item
+                        newItemString = c:GetItemString(GetInventoryItemLink("player", c.socketingAction.bagOrCharacterSlotId)); -- c:LoadSlot(c.socketingAction.bagOrCharacterSlotId);
+                    elseif c.socketingAction.bagSlotId then
+                        -- item in bag
+                        newItemString = c:GetItemString(GetContainerItemLink(c.socketingAction.bagOrCharacterSlotId, c.socketingAction.bagSlotId));
                     end
-                end
+                    c:ReplaceItemStringInAllSets(c.socketingAction.itemString, newItemString, true);
+                end);
+                c.eventFrame:UnregisterEvent("SOCKET_INFO_UPDATE");
             end
         elseif event == "SOCKET_INFO_SUCCESS" then
             c.eventFrame:RegisterEvent("SOCKET_INFO_UPDATE");
@@ -308,14 +356,16 @@ c.eventFrame:HookScript("OnEvent", function(self, event, arg1, arg2, arg3, ...)
         elseif event == "PLAYER_EQUIPMENT_CHANGED" and arg1 ~= INVSLOT_AMMO then
             c:EquipmentChanged(arg1);
         elseif event == "ACTIONBAR_SLOT_CHANGED" then
-            if not c:IsSwitching() and c:LoadActionSlotsOption() and arg1 and arg1 > 0 and arg1 < 121 then
+            if not c:IsSwitching() and c:LoadActionSlotsOption() and arg1 and arg1 > 0 and arg1 < 121 and c:SaveConditionsMet(c.OPT_SAVECHANGES_ACTIONSLOTS) then
                 c:SaveActionSlot(arg1);
             end
         elseif event == "PLAYER_LEVEL_UP" then
             c:LevelUp(arg1);
         elseif event == "LEARNED_SPELL_IN_TAB" then
-            local spell, rank = c:GetLearnedSpellNameAndRank();
-            c:UprankSpellOnActionSlots(spell, rank);
+            local spellId = arg1;
+            local spellName, spellRank = c:GetSpellName(spellId), c:GetSpellSubText(spellId);
+            c:DebugPrint("Learned:", spellName, spellRank);
+            c:UprankSpellOnActionSlots(spellId);
         elseif event == "UPDATE_MACROS" then
             if c.initFinished then
                 c:ProcessMacroUpdate();
@@ -332,22 +382,39 @@ c.eventFrame:HookScript("OnEvent", function(self, event, arg1, arg2, arg3, ...)
                 lastPvPState = currentPvPState;
             end
 
-            --
-            local timestamp, subevent, _, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName,
-                destFlags, destRaidFlags = CombatLogGetCurrentEventInfo();
-            if subevent == "SPELL_CAST_SUCCESS" or subevent == "SPELL_CAST_FAILED" or subevent == "SPELL_INTERRUPT" then
-                c:SpellCastEnd();
+            local timestamp, subevent, _, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, spellId, spellName, spellSchool = CombatLogGetCurrentEventInfo();
+            c:DebugPrint(event, subevent, spellName, spellId);
+
+            if sourceName == UnitName("player") then
+                if subevent == "SPELL_CAST_SUCCESS" then
+                    c:SpellCastSuccess(spellId);
+                elseif subevent == "SPELL_CAST_FAILED" or subevent == "SPELL_INTERRUPT" then
+                    c:SpellCastEnd();
+                elseif subevent == "SPELL_AURA_APPLIED" then
+                    c:SpellAuraApplied(spellId);
+                elseif subevent == "SPELL_AURA_REMOVED" then
+                    c:SpellAuraRemoved(spellId);
+                end
             end
-        elseif event == "ITEM_LOCKED" and not arg2 then
+        elseif event == "ITEM_LOCKED" then
             if not c:IsSwitching() and not bankAction then
-                local bagOrSlotId = tonumber(arg1);
-                if IsShiftKeyDown() then
+                local bagOrCharacterSlotId, bagSlotId = tonumber(arg1), tonumber(arg2);
+                if IsShiftKeyDown() and bagOrCharacterSlotId then
                     -- opened socketing frame
-                    c.socketingAction = bagOrSlotId;
-                else
-                    if bagOrSlotId >= 0 and bagOrSlotId <= 19 then
-                        c:OpenQuickBar(bagOrSlotId);
+                    local itemString;
+                    if c:GetSlotInfo(bagOrCharacterSlotId) and not bagSlotId then
+                        -- currently equipped item
+                        itemString = c:LoadSlot(bagOrCharacterSlotId);
+                    elseif bagSlotId then
+                        -- item in bag
+                        itemString = c:GetItemString(GetContainerItemLink(bagOrCharacterSlotId, bagSlotId));
                     end
+
+                    if itemString then
+                        c.socketingAction = { bagOrCharacterSlotId = bagOrCharacterSlotId, bagSlotId = bagSlotId, itemString = itemString };
+                    end
+                elseif not bagSlotId and c:GetSlotInfo(bagOrCharacterSlotId) then
+                    c:OpenQuickBar(bagOrCharacterSlotId);
                 end
             end
         elseif event == "ITEM_UNLOCKED" then
@@ -356,13 +423,13 @@ c.eventFrame:HookScript("OnEvent", function(self, event, arg1, arg2, arg3, ...)
                 c:RefreshSetList();
             end
         elseif event == "UNIT_AURA" then
-            C_Timer.After(1, function()
+            C_Timer.After(c:GetHomeLatency(GQ_OPTIONS[c.OPT_SWITCHDELAY]) / 1000, function()
                 local currentMountState, currentStealthState = IsMounted() and not UnitOnTaxi("player"), IsStealthed();
                 if currentMountState ~= lastMountState then
                     if currentMountState then
-                        c:HandleEvent(c.EVENT_MOUNT);
+                        c:Mounting();
                     else
-                        c:HandleEvent(c.EVENT_DISMOUNT);
+                        c:Dismounting();
                     end
                     lastMountState = currentMountState;
                 end
@@ -375,10 +442,13 @@ c.eventFrame:HookScript("OnEvent", function(self, event, arg1, arg2, arg3, ...)
                     lastStealthState = currentStealthState;
                 end
             end);
-        elseif event == "BANKFRAME_OPENED" or event == "BANKFRAME_CLOSED" and GqUiFrame:IsVisible() then
-            C_Timer.After(0.25, function()
-                c:RefreshSetList(true);
-            end);
+        elseif event == "BANKFRAME_OPENED" or event == "BANKFRAME_CLOSED" then
+            if GqUiFrame:IsVisible() then
+                -- timeout neccessary for closing event
+                C_Timer.After(c:GetLatency(GQ_OPTIONS[c.OPT_SWITCHDELAY]) / 1000, function()
+                    c:RefreshSetList(true);
+                end);
+            end
         elseif event == "PLAYER_REGEN_ENABLED" then
             c:LeaveCombat();
         elseif event == "PLAYER_REGEN_DISABLED" then
@@ -433,31 +503,33 @@ c.eventFrame:HookScript("OnEvent", function(self, event, arg1, arg2, arg3, ...)
 end);
 
 function c:EquipmentChanged(slotId)
-    if not slotId then
-        -- ammo slot workaround
-        local previousAmmo, currentAmmo = c:LoadSlot(INVSLOT_AMMO, c.KEYWORD_PREVIOUSEQUIPMENT),
-            c:GetItemString(INVSLOT_AMMO);
-        if previousAmmo ~= currentAmmo then
-            slotId = INVSLOT_AMMO;
-        end
-    end
-
-    if slotId and c:GetSlotInfo()[slotId] and not c:IsSwitching() and not bankAction then
-        local currentSetName = c:LoadCurrentSetName();
-        if currentSetName then
-            if c:SaveConditionsMet() and (not c:LoadPartialOption() or c:LoadSlotState(slotId)) and
-                (slotId == INVSLOT_AMMO or not c:IsSetItem(slotId, c:LoadSlot(slotId, currentSetName))) then
-                c:SaveSlot(slotId, currentSetName);
-            elseif GQ_OPTIONS[c.OPT_IGNOREMANUALITEMS] then
-                c:AddIgnoredSlot(slotId);
+    if not c:IsSwitching() then
+        if not slotId then
+            -- ammo slot workaround
+            local previousAmmo, currentAmmo = c:LoadSlot(INVSLOT_AMMO, c.KEYWORD_PREVIOUSEQUIPMENT),
+                c:GetItemString(INVSLOT_AMMO);
+            if previousAmmo ~= currentAmmo then
+                slotId = INVSLOT_AMMO;
             end
-
-            c:SetSlotInfo(slotId);
         end
-    end
 
-    if slotId == INVSLOT_AMMO or not c:IsSetItem(slotId, c:LoadSlot(slotId, c.KEYWORD_PREVIOUSEQUIPMENT)) then
-        c:SaveSlot(slotId, c.KEYWORD_PREVIOUSEQUIPMENT, false);
+        if slotId and c:GetSlotInfo()[slotId] and not c:IsSwitching() and not bankAction then
+            local currentSetName = c:LoadCurrentSetName();
+            if currentSetName then
+                if c:SaveConditionsMet() and (not c:LoadPartialOption() or c:LoadSlotState(slotId)) and
+                    (slotId == INVSLOT_AMMO or not c:IsSetItem(slotId, c:LoadSlot(slotId, currentSetName))) then
+                    c:SaveSlot(slotId, currentSetName);
+                elseif GQ_OPTIONS[c.OPT_IGNOREMANUALITEMS] then
+                    c:AddIgnoredSlot(slotId);
+                end
+
+                c:SetSlotInfo(slotId);
+            end
+        end
+
+        if slotId == INVSLOT_AMMO or not c:IsSetItem(slotId, c:LoadSlot(slotId, c.KEYWORD_PREVIOUSEQUIPMENT)) then
+            c:SaveSlot(slotId, c.KEYWORD_PREVIOUSEQUIPMENT, false);
+        end
     end
 end
 
@@ -473,28 +545,44 @@ function c:HandleEvent(eventType, eventSubType)
     end
 
     if c:IsEventsEnabled() then
-        local filter = {
-            [c.FIELD_TYPE] = eventType
-        };
+        local filter = { [c.FIELD_TYPE] = eventType };
         if eventType == c.EVENT_ZONE_ENTER or eventType == c.EVENT_ZONE_LEAVE then
             filter[c.FIELD_SUBTYPE] = c:GetZoneInfo(eventSubType);
-        else
-
+        elseif eventType == c.EVENT_SHAPESHIFT_IN or eventType == c.EVENT_SHAPESHIFT_OUT then
+            -- druid shapes
+            filter[c.FIELD_SUBTYPE] = { name = c:GetDruidForms()[eventSubType], spellId = eventSubType };
+        elseif eventType == c.EVENT_SPELL_CAST_SUCCESS then
+            -- paladin auras
+            filter[c.FIELD_SUBTYPE] = { name = c:GetPaladinAuras()[eventSubType], spellId = eventSubType };
         end
+
         local setBindings = c:LoadEventBindings(filter);
         if setBindings then
             local currentPvPState = UnitIsPVP("player");
             for index, binding in pairs(setBindings) do
                 if (binding[c.FIELD_ENABLED] == nil or binding[c.FIELD_ENABLED]) and
                     (binding[c.FIELD_PVE] and not currentPvPState) or (binding[c.FIELD_PVP] and currentPvPState) then
-                    c:QueueSwitch({
-                        [c.SWITCHARG_SETNAME] = binding[c.FIELD_NAME]
-                    });
+                    c:QueueSwitch({ [c.SWITCHARG_SETNAME] = binding[c.FIELD_NAME] });
                     return;
                 end
             end
         end
     end
+end
+
+function c:Mounting()
+    c:HandleEvent(c.EVENT_MOUNT);
+    --CastSpell(32223, "spell");
+    -- check for crusader aura
+    --if GQ_OPTIONS[c.OPT_MOUNTING_CRUSADER_AURA] and not select(2, c:GetCurrentBuffs())[32223] then
+        
+    --end
+
+    -- will probably not work :/
+end
+
+function c:Dismounting()
+    c:HandleEvent(c.EVENT_DISMOUNT);
 end
 
 function c:NewZone()
@@ -533,9 +621,18 @@ function c:NewZone()
     end
 end
 
+function c:GetCurrentDruidForm()
+    local druidForms = c:GetDruidForms();
+    for _, spellId in pairs(c:GetCurrentBuffs()) do
+        if druidForms[spellId] then
+            return spellId;
+        end
+    end
+    return c.VALUE_NONE;
+end
+
 function c:EnterCombat()
     inCombat = true;
-    -- c:HandleEvent(c.EVENT_COMBAT_ENTER);
     c:LockUI();
 end
 
@@ -544,10 +641,7 @@ function c:LeaveCombat()
     c:HandleEvent(c.EVENT_COMBAT_LEAVE);
 
     if table.getn(switchQueue) > 0 then
-        local nextSet = table.remove(switchQueue, 1);
-        --c:SwitchToSet(nextSet);
-        nextSet[c.SWITCHARG_FIRST] = true;
-        c:QueueSwitch(nextSet);
+        c:RequeueFirst();
     else
         c:UnlockUI();
     end
@@ -570,41 +664,78 @@ function c:IsCastingSpell()
     return name;
 end
 
+function c:SpellCastSuccess(spellId)
+    if c:GetPaladinAuras()[spellId] then
+        -- paladin aura
+        c:HandleEvent(c.EVENT_SPELL_CAST_SUCCESS, spellId);
+        lastPaladinAura = spellId;
+    end
+    c:SpellCastEnd();
+end
+
+function c:SpellAuraApplied(spellId)
+    c:CheckDruidFormChanged(c.EVENT_SHAPESHIFT_IN);
+end
+
+function c:SpellAuraRemoved(spellId)
+    if c:GetPaladinAuras()[spellId] then
+        -- workaround for "no paladin aura"
+        c:HandleEvent(c.EVENT_SPELL_CAST_SUCCESS, c.VALUE_NONE);
+        lastPaladinAura = nil;
+    elseif c:GetDruidForms()[spellId] then
+        -- druid shapeshift
+        c:CheckDruidFormChanged(c.EVENT_SHAPESHIFT_OUT);
+    end
+end
+
 function c:SpellCastEnd()
-    C_Timer.After(0.6, function()
-        if not c:IsSwitching() and not c:IsInCombat() and not c:IsCastingSpell() then
+    C_Timer.After(c:GetHomeLatency(100 + GQ_OPTIONS[c.OPT_SWITCHDELAY]) / 1000, function()
+        --if not c:IsSwitching() and not c:IsInCombat() and not c:IsCastingSpell() then
             if table.getn(switchQueue) > 0 then
-                local nextSet = table.remove(switchQueue, 1);
-                --if not c:SwitchToSet(nextSet) then
-                    -- in case something goes wrong...
-                    nextSet[c.SWITCHARG_FIRST] = true;
-                    c:QueueSwitch(nextSet);
-                --end
+                c:RequeueFirst();
             else
                 c:UnlockUI();
             end
-        end
+        --end
     end);
 end
 
-function c:FinishSwitch(switchArgs)
-    C_Timer.After(1, function()
-        if c:IsSetComplete(switchArgs[c.SWITCHARG_SETNAME]) and GQ_OPTIONS[c.OPT_NOTIFYQUEUES] then
-            if interruptedByCombat then
-                c:Println(c:GetText("Combat ended. Switch to set \"%s\" complete.", switchArgs[c.SWITCHARG_SETNAME]));
-            elseif interruptedBySpell then
-                c:Println(c:GetText("Action finished. Switch to set \"%s\" complete.", switchArgs[c.SWITCHARG_SETNAME]));
-            end
-        end
-        c:ResetIgnoredSlots();
-        interruptedByCombat = false;
-        interruptedBySpell = false;
-        switching = nil;
+function c:CheckDruidFormChanged(eventType)
+    c:DebugPrint("CheckDruidFormChanged", eventType);
 
-        if table.getn(switchQueue) > 0 then
-            local nextSet = table.remove(switchQueue, 1);
-            c:SwitchToSet(nextSet);
-        else
+    if not druidShapeshiftPending then
+        druidShapeshiftPending = true;
+
+        C_Timer.After(c:GetHomeLatency(GQ_OPTIONS[c.OPT_SWITCHDELAY]) / 1000, function ()
+            local currentFormSpellId = c:GetCurrentDruidForm();
+            if currentFormSpellId ~= lastDruidForm then
+                c:DebugPrint("lastform, currentform: ", lastDruidForm, currentFormSpellId);
+                c:HandleEvent(c.EVENT_SHAPESHIFT_OUT, lastDruidForm);
+                c:HandleEvent(c.EVENT_SHAPESHIFT_IN, currentFormSpellId);
+                lastDruidForm = currentFormSpellId;
+            end
+            druidShapeshiftPending = false;
+        end);
+    end
+end
+
+function c:FinishSwitch(switchArgs)
+    if c:IsSetComplete(switchArgs[c.SWITCHARG_SETNAME]) and GQ_OPTIONS[c.OPT_NOTIFYQUEUES] then
+        if interruptedByCombat then
+            c:Println(c:GetText("Combat ended. Switch to set \"%s\" complete.", switchArgs[c.SWITCHARG_SETNAME]));
+        elseif interruptedBySpell then
+            c:Println(c:GetText("Action finished. Switch to set \"%s\" complete.", switchArgs[c.SWITCHARG_SETNAME]));
+        end
+    end
+    c:ResetIgnoredSlots();
+    interruptedByCombat = false;
+    interruptedBySpell = false;
+
+    if table.getn(switchQueue) > 0 then
+        local nextSet = table.remove(switchQueue, 1);
+        c:SwitchToSet(nextSet);
+    else
+        C_Timer.After(c:GetHomeLatency(500 + GQ_OPTIONS[c.OPT_SWITCHDELAY]) / 1000, function()
             c:LoadCloakAndHelmet(switchArgs[c.SWITCHARG_SETNAME]);
             c:UpdateBroker();
             c:UnlockUI();
@@ -618,33 +749,44 @@ function c:FinishSwitch(switchArgs)
                     RunMacroText(switchArgs[c.SWITCHARG_ONFINISHED]);
                 end
             end
+
             CloseDropDownMenus();
             PlaySound(1264);
-        end
-    end);
+
+            switching = nil;
+        end);
+    end
 end
 
 function c:QueueSwitch(switchArgs)
+    -- for simple set name string call
+    if (type(switchArgs) == "string") then
+        switchArgs = { [c.SWITCHARG_SETNAME] = switchArgs };
+    end
+
+    -- complex call
     if switchArgs then
         switchArgs[c.SWITCHARG_ID] = GetNextSwitchId();
         if not c:IsSwitching() and not c:IsInCombat() and not c:IsCastingSpell() then
+            -- switch immediately
             c:SwitchToSet(switchArgs);
             return;
         end
 
+        -- queue switch
         if switchArgs[c.SWITCHARG_FIRST] and (not switchQueue[1] or switchQueue[1] ~= setName) then
+            -- as first (priority) switch
             local tmp = c:Deepcopy(switchQueue);
             switchQueue = {switchArgs};
             for _, set in ipairs(tmp) do
                 tinsert(switchQueue, set);
             end
+        elseif not c:IsSetLastQueued(switchArgs[c.SWITCHARG_SETNAME]) then
+            -- normal queue
+            tinsert(switchQueue, switchArgs);
         else
-            local lastQueuedSet = switchQueue[table.getn(switchQueue)];
-            if not lastQueuedSet or lastQueuedSet[c.SWITCHARG_ID] ~= switchArgs[c.SWITCHARG_ID] then
-                tinsert(switchQueue, switchArgs);
-            else
-                return;
-            end
+            -- dont queue if already queued last
+            return;
         end
 
         if switchArgs[c.SWITCHARG_NOTIFY] == nil or switchArgs[c.SWITCHARG_NOTIFY] then
@@ -665,8 +807,39 @@ function c:QueueSwitch(switchArgs)
     end
 end
 
+function c:RequeueFirst()
+    -- when combat ends etc.
+    -- essentially equals "start working on queue again"
+    local nextSet = table.remove(switchQueue, 1);
+    nextSet[c.SWITCHARG_FIRST] = true;
+    nextSet[c.SWITCHARG_NOTIFY] = false;
+    c:QueueSwitch(nextSet);
+end
+
+function c:IsSetQueued(setName)
+    if setName then
+        for _, switchArgs in ipairs(switchQueue) do
+            if switchArgs[c.SWITCHARG_SETNAME] == setName then
+                return true;
+            end
+        end
+    end
+end
+
+function c:IsSetLastQueued(setName)
+    if setName then
+        local queuedSets = table.getn(switchQueue);
+        if queuedSets > 0 then
+            local lastQueuedSet = switchQueue[queuedSets];
+            if lastQueuedSet and lastQueuedSet[c.SWITCHARG_SETNAME] == setName then
+                return true;
+            end
+        end
+    end
+end
+
 function c:SwitchToSet(switchArgs)
-    if not c:IsSwitching() and switchArgs then
+    if switchArgs then
         local setName = switchArgs[c.SWITCHARG_SETNAME];
         if setName == c.KEYWORD_PREVIOUS then
             setName = c:LoadPreviousSetName();
@@ -675,7 +848,7 @@ function c:SwitchToSet(switchArgs)
         setName = c:TableContains(c:LoadSetNames(true), setName, true); -- case insensitive
         if setName then
             local desiredSet = c:LoadSet(setName);
-            c:SaveSet(c.KEYWORD_PREVIOUSEQUIPMENT, false);
+            --c:SaveSet(c.KEYWORD_PREVIOUSEQUIPMENT, false); -- unneccessary?
 
             local freeSpace, neededSpace, bagSpaceCache = c:CheckNeccessaryBagSpace(setName);
             if neededSpace > freeSpace then
@@ -744,7 +917,7 @@ function c:SwitchToSet(switchArgs)
                                 if not bagId and c:IsAtBank() then
                                     -- item not in bag -> check in bank
                                     if c:GetItemFromBank(c:GetItemString(itemLink), bagSpaceCache) then
-                                        C_Timer.After(0.6, function()
+                                        C_Timer.After(c:GetHomeLatency(100 + GQ_OPTIONS[c.OPT_SWITCHDELAY]) / 1000, function()
                                             c:EquipItem(slotId, itemLink, bagSpaceCache);
                                         end);
                                     end
@@ -925,6 +1098,7 @@ end
 
 function c:PushSetToBank(setName)
     if setName and not bankAction then
+        local error = false;
         local freeSpace, items, bankSpaceCache = c:CheckNeccessaryPushSpace(setName);
         if freeSpace >= c:GetTableSize(items) then
             CloseMerchant();
@@ -945,16 +1119,21 @@ function c:PushSetToBank(setName)
                     if CursorHasItem() then
                         c:PutInBank(bankSpaceCache, itemString);
                     else
-                        c:Println(c:GetText("Error while pushing set to bank."));
+                        c:Println(c:GetText("%s could not be pushed to bank.", c:GetItemLink(itemString)));
+                        error = true;
                     end
                 end
             end
 
-            C_Timer.After(1, function()
+            C_Timer.After(c:GetLatency(1000 + GQ_OPTIONS[c.OPT_SWITCHDELAY]) / 1000, function()
                 c:SetSlotInfo();
                 bankAction = nil;
             end);
-            return true;
+
+            if error then
+                c:Println(c:GetText("Set \"%s\" was incompletely pushed to bank.", setName));
+            end
+            return not error;
         else
             c:Println(c:GetText("Not enough bank space to push \"%s\" to bank. Free: %s, needed: %s.", setName,
                 freeSpace, c:GetTableSize(items)));
@@ -964,6 +1143,7 @@ end
 
 function c:PullSetFromBank(setName)
     if setName and not bankAction then
+        local error = false;
         local freeSpace, items, bagSpaceCache = c:CheckNeccessaryPullSpace(setName);
         if freeSpace >= c:GetTableSize(items) then
             CloseMerchant();
@@ -971,17 +1151,21 @@ function c:PullSetFromBank(setName)
             for slotId, itemString in pairs(items) do
                 if not c:LoadPartialOption(setName) or c:LoadSlotState(slotId, setName) then
                     if not c:GetItemFromBank(itemString, bagSpaceCache) then
-                        c:Println(c:GetText("Error while pulling set from bank."));
-                        return;
+                        c:Println(c:GetText("%s could not be pulled from bank.", c:GetItemLink(itemString)));
+                        error = true;
                     end
                 end
             end
 
-            C_Timer.After(1, function()
+            C_Timer.After(c:GetLatency(1000 + GQ_OPTIONS[c.OPT_SWITCHDELAY]) / 1000, function()
                 c:SetSlotInfo();
                 bankAction = nil;
             end);
-            return true;
+
+            if error then
+                c:Println(c:GetText("Set \"%s\" was incompletely pulled from bank.", setName));
+            end
+            return not error;
         else
             c:Println(c:GetText("Not enough bag space to pull \"%s\" from bank. Free: %s, needed: %s.", setName,
                 freeSpace, c:GetTableSize(items)));

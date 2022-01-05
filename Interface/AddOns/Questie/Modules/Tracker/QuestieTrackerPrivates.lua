@@ -14,12 +14,18 @@ local mouselookTicker = {}
 local updateTimer
 local tempTrackerLocation
 
+local dragButton
+
 function _QuestieTracker:OnDragStart(button)
-    Questie:Debug(DEBUG_DEVELOP, "[_QuestieTracker:OnDragStart]", button)
+    Questie:Debug(Questie.DEBUG_DEVELOP, "[_QuestieTracker:OnDragStart]", button)
+    if InCombatLockdown() then
+        return
+    end
     local baseFrame = QuestieTracker:GetBaseFrame()
     if IsMouseButtonDown(button) then
         if (IsControlKeyDown() and Questie.db.global.trackerLocked and not ChatEdit_GetActiveWindow()) or not Questie.db.global.trackerLocked then
             _QuestieTracker.isMoving = true
+            dragButton = button
             startDragAnchor = {baseFrame:GetPoint()}
             preSetPoint = ({baseFrame:GetPoint()})[1]
             baseFrame:SetClampedToScreen(true)
@@ -44,15 +50,16 @@ function _QuestieTracker:OnDragStart(button)
     end
 end
 
-function _QuestieTracker:OnDragStop(button)
-    Questie:Debug(DEBUG_DEVELOP, "[_QuestieTracker:OnDragStop]", button)
+function _QuestieTracker:OnDragStop()
+    Questie:Debug(Questie.DEBUG_DEVELOP, "[_QuestieTracker:OnDragStop]")
 
-    if IsMouseButtonDown(button) or not startDragPos or not startDragPos[4] or not startDragPos[5] or not endDragPos or not startDragAnchor then
+    if not dragButton or IsMouseButtonDown(dragButton) or not startDragPos or not startDragPos[4] or not startDragPos[5] or not endDragPos or not startDragAnchor then
         return
     end
 
     local baseFrame = QuestieTracker:GetBaseFrame()
     _QuestieTracker.isMoving = false
+    dragButton = nil
     endDragPos = {baseFrame:GetPoint()}
     baseFrame:StopMovingOrSizing()
 
@@ -84,7 +91,7 @@ function _QuestieTracker:OnDragStop(button)
 end
 
 function _QuestieTracker:OnResizeStart(button)
-    Questie:Debug(DEBUG_DEVELOP, "[_QuestieTracker:OnResizeStart]", button)
+    Questie:Debug(Questie.DEBUG_DEVELOP, "[_QuestieTracker:OnResizeStart]", button)
     if InCombatLockdown() then
         return
     end
@@ -112,7 +119,7 @@ function _QuestieTracker:OnResizeStart(button)
 end
 
 function _QuestieTracker:OnResizeStop(button)
-    Questie:Debug(DEBUG_DEVELOP, "[_QuestieTracker:OnResizeStop]", button)
+    Questie:Debug(Questie.DEBUG_DEVELOP, "[_QuestieTracker:OnResizeStop]", button)
     local baseFrame = QuestieTracker:GetBaseFrame()
     if button == "RightButton" or _QuestieTracker.isSizing ~= true then
         return

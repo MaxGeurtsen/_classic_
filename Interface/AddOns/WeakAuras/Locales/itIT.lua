@@ -151,6 +151,8 @@ L["Array"] = "Array"
 L["Ascending"] = "Crescente"
 --[[Translation missing --]]
 L["Assigned Role"] = "Assigned Role"
+--[[Translation missing --]]
+L["Assigned Role Icon"] = "Assigned Role Icon"
 L["At Least One Enemy"] = "Almeno un nemico"
 --[[Translation missing --]]
 L["At missing Value"] = "At missing Value"
@@ -240,6 +242,8 @@ L["Block"] = "Bloccare"
 L["Block (%)"] = "Block (%)"
 --[[Translation missing --]]
 L["Block against Target (%)"] = "Block against Target (%)"
+--[[Translation missing --]]
+L["Block Value"] = "Block Value"
 L["Blocked"] = "Bloccato"
 --[[Translation missing --]]
 L["Bloodlord Mandokir"] = "Bloodlord Mandokir"
@@ -297,7 +301,21 @@ L["Character Type"] = "Tipo di carattere"
 --[[Translation missing --]]
 L["Charge gained/lost"] = "Charge gained/lost"
 --[[Translation missing --]]
-L["Charged Combo Point"] = "Charged Combo Point"
+L["Charged Combo Point (1)"] = "Charged Combo Point (1)"
+--[[Translation missing --]]
+L["Charged Combo Point (2)"] = "Charged Combo Point (2)"
+--[[Translation missing --]]
+L["Charged Combo Point (3)"] = "Charged Combo Point (3)"
+--[[Translation missing --]]
+L["Charged Combo Point (4)"] = "Charged Combo Point (4)"
+--[[Translation missing --]]
+L["Charged Combo Point 1"] = "Charged Combo Point 1"
+--[[Translation missing --]]
+L["Charged Combo Point 2"] = "Charged Combo Point 2"
+--[[Translation missing --]]
+L["Charged Combo Point 3"] = "Charged Combo Point 3"
+--[[Translation missing --]]
+L["Charged Combo Point 4"] = "Charged Combo Point 4"
 L["Charges"] = "Cariche"
 --[[Translation missing --]]
 L["Charges Changed Event"] = "Charges Changed Event"
@@ -459,8 +477,6 @@ L["Dodge"] = "Dodge"
 L["Dodge (%)"] = "Dodge (%)"
 --[[Translation missing --]]
 L["Dodge Rating"] = "Dodge Rating"
---[[Translation missing --]]
-L["Done"] = "Done"
 --[[Translation missing --]]
 L["Down"] = "Down"
 --[[Translation missing --]]
@@ -747,6 +763,8 @@ L["Health"] = "Health"
 --[[Translation missing --]]
 L["Health (%)"] = "Health (%)"
 --[[Translation missing --]]
+L["Health Deficit"] = "Health Deficit"
+--[[Translation missing --]]
 L["Heigan the Unclean"] = "Heigan the Unclean"
 --[[Translation missing --]]
 L["Height"] = "Height"
@@ -776,6 +794,10 @@ L["High Priestess Mar'li"] = "High Priestess Mar'li"
 L["High Warlord Naj'entus"] = "High Warlord Naj'entus"
 --[[Translation missing --]]
 L["Higher Than Tank"] = "Higher Than Tank"
+--[[Translation missing --]]
+L["Hit (%)"] = "Hit (%)"
+--[[Translation missing --]]
+L["Hit Rating"] = "Hit Rating"
 --[[Translation missing --]]
 L["Holy Resistance"] = "Holy Resistance"
 --[[Translation missing --]]
@@ -838,6 +860,8 @@ L["In Vehicle"] = "In Vehicle"
 L["Include Bank"] = "Include Bank"
 --[[Translation missing --]]
 L["Include Charges"] = "Include Charges"
+--[[Translation missing --]]
+L["Include Pets"] = "Include Pets"
 --[[Translation missing --]]
 L["Incoming Heal"] = "Incoming Heal"
 --[[Translation missing --]]
@@ -1161,8 +1185,6 @@ L["Neutral"] = "Neutral"
 --[[Translation missing --]]
 L["Never"] = "Never"
 --[[Translation missing --]]
-L["Next"] = "Next"
---[[Translation missing --]]
 L["Next Combat"] = "Next Combat"
 --[[Translation missing --]]
 L["Next Encounter"] = "Next Encounter"
@@ -1190,6 +1212,8 @@ L["Not on Cooldown"] = "Not on Cooldown"
 L["Not On Threat Table"] = "Not On Threat Table"
 --[[Translation missing --]]
 L["Note, that cross realm transmission is possible if you are on the same group"] = "Note, that cross realm transmission is possible if you are on the same group"
+--[[Translation missing --]]
+L["Note: Due to how complicated the swing timer behaviour is and the lack of APIs from Blizzard, results are inaccurate in edge cases."] = "Note: Due to how complicated the swing timer behaviour is and the lack of APIs from Blizzard, results are inaccurate in edge cases."
 --[[Translation missing --]]
 L["Note: 'Hide Alone' is not available in the new aura tracking system. A load option can be used instead."] = "Note: 'Hide Alone' is not available in the new aura tracking system. A load option can be used instead."
 --[[Translation missing --]]
@@ -1307,6 +1331,8 @@ L["Pet Specialization"] = "Pet Specialization"
 --[[Translation missing --]]
 L["Pet Spell"] = "Pet Spell"
 --[[Translation missing --]]
+L["Pets only"] = "Pets only"
+--[[Translation missing --]]
 L["Phase"] = "Phase"
 --[[Translation missing --]]
 L["Pixel Glow"] = "Pixel Glow"
@@ -1343,11 +1369,15 @@ L["Player(s) Not Affected"] = "Player(s) Not Affected"
 --[[Translation missing --]]
 L["Player/Unit Info"] = "Player/Unit Info"
 --[[Translation missing --]]
+L["Players and Pets"] = "Players and Pets"
+--[[Translation missing --]]
 L["Poison"] = "Poison"
 --[[Translation missing --]]
 L["Power"] = "Power"
 --[[Translation missing --]]
 L["Power (%)"] = "Power (%)"
+--[[Translation missing --]]
+L["Power Deficit"] = "Power Deficit"
 --[[Translation missing --]]
 L["Power Type"] = "Power Type"
 --[[Translation missing --]]
@@ -1408,6 +1438,8 @@ L["Raid (Mythic)"] = "Raid (Mythic)"
 L["Raid (Normal)"] = "Raid (Normal)"
 --[[Translation missing --]]
 L["Raid (Timewalking)"] = "Raid (Timewalking)"
+--[[Translation missing --]]
+L["Raid Mark"] = "Raid Mark"
 --[[Translation missing --]]
 L["Raid Role"] = "Raid Role"
 --[[Translation missing --]]
@@ -1476,14 +1508,6 @@ L["Require Valid Target"] = "Require Valid Target"
 L["Resist"] = "Resist"
 --[[Translation missing --]]
 L["Resisted"] = "Resisted"
---[[Translation missing --]]
-L["Resolve collisions dialog"] = "Resolve collisions dialog"
---[[Translation missing --]]
-L["Resolve collisions dialog singular"] = "Resolve collisions dialog singular"
---[[Translation missing --]]
-L["Resolve collisions dialog startup"] = "Resolve collisions dialog startup"
---[[Translation missing --]]
-L["Resolve collisions dialog startup singular"] = "Resolve collisions dialog startup singular"
 --[[Translation missing --]]
 L["Rested"] = "Rested"
 --[[Translation missing --]]
@@ -1715,6 +1739,8 @@ L["Spiral"] = "Spiral"
 --[[Translation missing --]]
 L["Spiral In And Out"] = "Spiral In And Out"
 --[[Translation missing --]]
+L["Spirit"] = "Spirit"
+--[[Translation missing --]]
 L["Stack Count"] = "Stack Count"
 --[[Translation missing --]]
 L["Stacks"] = "Stacks"
@@ -1848,6 +1874,8 @@ L["This aura was created with a newer version of WeakAuras."] = "This aura was c
 L["This aura was created with the Classic version of World of Warcraft."] = "This aura was created with the Classic version of World of Warcraft."
 --[[Translation missing --]]
 L["This aura was created with the retail version of World of Warcraft."] = "This aura was created with the retail version of World of Warcraft."
+--[[Translation missing --]]
+L["This import requires a newer WeakAuras version."] = "This import requires a newer WeakAuras version."
 --[[Translation missing --]]
 L["This is a modified version of your aura, |cff9900FF%s.|r"] = "This is a modified version of your aura, |cff9900FF%s.|r"
 --[[Translation missing --]]

@@ -20,13 +20,6 @@ X: 145
 Y: -95
 W: 128
 H: 64
-Frame: GroupBulletinBoardFrame
-FrameLevel: 1
-Anchor: RIGHT
-X: -23
-Y: -176
-W: 495
-H: 312
 Frame: AtlasLoot_GUI-Frame
 FrameLevel: 1
 Anchor: CENTER
@@ -34,3 +27,10 @@ X: 140
 Y: -38
 W: 920
 H: 600
+Frame: GroupBulletinBoardFrame
+FrameLevel: 1
+Anchor: RIGHT
+X: -23
+Y: -176
+W: 495
+H: 312

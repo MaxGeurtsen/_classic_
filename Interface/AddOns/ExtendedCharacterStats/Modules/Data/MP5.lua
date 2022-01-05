@@ -78,9 +78,8 @@ end
 function Data:GetMP5WhileCasting()
     local _, casting = GetManaRegen() -- Returns mana reg per 1 second
     if casting < 1 then
-        casting = lastManaReg
+        casting = 0
     end
-    lastManaReg = casting
 
     if ECS.IsTBC then
         casting = (casting * 5) + _MP5:GetTalentBonus()
@@ -110,7 +109,8 @@ function _MP5:GetTalentModifier()
     local mod = 0
 
     if classId == Data.PRIEST then
-        local _, _, _, _, points, _, _, _ = GetTalentInfo(1, 8)
+        local meditationTalentSlot = ECS.IsTBC and 9 or 8
+        local _, _, _, _, points, _, _, _ = GetTalentInfo(1, meditationTalentSlot)
         mod = points * 0.05 -- 0-15% from Meditation
     elseif classId == Data.MAGE then
         local _, _, _, _, points, _, _, _ = GetTalentInfo(1, 12)
