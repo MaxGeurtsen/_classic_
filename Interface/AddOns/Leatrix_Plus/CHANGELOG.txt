@@ -1,5 +1,47 @@
+2.5.93 - 2nd March 2022
+- Added lots of flight times.  There are now 1980 flight times stored in Leatrix Plus for BCC.
+
+2.5.92 - 23rd February 2022
+- Added lots of flight times.  There are now 1971 flight times stored in Leatrix Plus for BCC.
+
+2.5.91 - 16th February 2022
+- For 'Enhance minimap' ('Interface'), added a new setting 'Show who pinged'.  It's enabled by default.  Note that this does not apply to your own pings.
+- For 'Mute game sounds' ('System'), added 'A'dal'.  This will mute A'dal in Shattrath City.
+- Added lots of flight times.  There are now 1952 flight times stored in Leatrix Plus for BCC.
+
+2.5.90 - 9th February 2022
+- Added lots of flight times.  There are now 1932 flight times stored in Leatrix Plus for BCC.
+- Added 'Screech' to 'Mute game sounds' ('System').  This is a spell used by some flying pets.
+- Added 'Striders' to 'Mute game sounds' ('System').  This will mute mechanostrider mounts.
+
+2.5.89 - 3rd February 2022
+- Added lots of flight times.  There are now 1908 flight times stored in Leatrix Plus for BCC.
+
+2.5.88 - 26th January 2022
+- If 'Automate quests' ('Automation') is enabled, you can now set the override key to be shift, alt or control.  Repeatable battlemaster and cloth quartermaster quests no longer require the alt key to be held.
+- For 'Mute game sounds' ('System'), the 'Chimes' setting will now mute the Ironforge hourly horn sound.
+- Added lots of flight times.  Keep reporting.  Every little helps.  There are now 1868 flight times stored in Leatrix Plus for BCC.
+- If you use ItemRack alongside 'Enhance minimap' with 'Combine addon buttons' enabled, the ItemRack minimap button flyout menu will remain visible as long as the mouse pointer is over it.
+
+2.5.87 - 19th January 2022
+- Fixed the textures for 'Enhance professions' ('Interface').
+
+2.5.86 - 19th January 2022
+- Updated for game version 2.5.3.
+- Added lots more flight times.  Keep reporting until there's none left to report.  Some minor tweaks to flight point tooltips.
+- The 'Faster auto loot' option ('System') will now work with TSM Destroy.  You no longer need to disable faster auto loot when using TSM Destroy.
+
+2.5.85 - 13th January 2022
+- Added lots of flight times.  Keep reporting.
+
+2.5.84 - 9th January 2022
+- For 'Show flight times' ('Interface'), added support for odd flight points (such as Altar of Sha'tar).
+
+2.5.83 - 9th January 2022
+- The 'Show flight times' option ('Interface') now supports multiple flight routes to the same destination.  So it will work regardless of how many flight points you have unlocked.  Due to the code changes to include multiple routes, some of the submitted flight times could not be added.  Please report them again when you see the report window again.
+
 2.5.82 - 5th January 2022
-- The 'Show flight times' setting ('Interface') now works with any locale without the need for translations.  Added lots of missing flight times.  After landing from a flight, if the saved flight time is missing or incorrect (greater than 5 second difference), you will see a copy-friendly window with the flight details making it very easy for you to report the missing or incorrect flight time.
+- The 'Show flight times' option ('Interface') now works with any locale without the need for translations.  Added lots of missing flight times.  After landing from a flight, if the saved flight time is missing or incorrect (greater than 5 second difference), you will see a copy-friendly window with the flight details making it very easy for you to report the missing or incorrect flight time.
 
 2.5.81 - 29th December 2021
 - You need to restart your game client after installing this update.

@@ -1,14 +1,8 @@
-VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast [@mouseover,harm,nodead][] Hammer of Justice
-END
-VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast [@mouseover,help,nodead][] Righteous Defense
-END
-VER 3 000000000100000B " " "INV_MISC_QUESTIONMARK"
+VER 3 000000000100000B " judge" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /start attack
+/cancelaura Blessing of salvation
+/cancelaura greater Blessing of salvation
 /cast judgement
 END
 VER 3 0000000001000005 " might" "INV_MISC_QUESTIONMARK"
@@ -20,6 +14,14 @@ VER 3 0000000001000003 " Seal" "INV_MISC_QUESTIONMARK"
 /cast Judgement
 /stopcasting
 /cast Seal of Righteousness
+END
+VER 3 0000000001000004 " stun" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,harm,nodead][] Hammer of Justice
+END
+VER 3 0000000001000002 " taunt" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,help,nodead][] Righteous Defense
 END
 VER 3 0000000001000006 " wisdom" "INV_MISC_QUESTIONMARK"
 #showtooltip

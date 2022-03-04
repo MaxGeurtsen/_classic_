@@ -4,6 +4,18 @@
 local L = LibStub("AceLocale-3.0"):NewLocale("RCLootCouncil_Classic", "ruRU")
 if not L then return end
 
+--[[Translation missing --]]
+L["ALWAYS_AUTO_AWARD_OPTION"] = "Always Auto Award"
+--[[Translation missing --]]
+L["ALWAYS_AUTO_AWARD_OPTION_DESC"] = "List of items that should always be auto awarded, regardless of other settings."
+--[[Translation missing --]]
+L["ALWAYS_AUTO_AWARD_OPTION_INPUT_DESC"] = "Enter the link, name or id of the item you want to add to the always auto award list."
+--[[Translation missing --]]
+L["ALWAYS_AUTO_AWARD_OPTION_LIST"] = "Always auto award list"
+--[[Translation missing --]]
+L["ALWAYS_AUTO_AWARD_OPTION_LIST_DESC"] = "Items that are always auto awarded. Click to remove an item."
+--[[Translation missing --]]
+L["ALWAYS_AUTO_AWARD_OPTION_LIST_NONE"] = "No items in list."
 L["Auto Award Reputation Items"] = "Авто-вручение предметов на репутацию"
 L["Instance"] = "Подземелье"
 L["leaderUsage_desc"] = "Использовать те же настройки при входе в подземелье в качестве лидера?"

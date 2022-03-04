@@ -107,24 +107,32 @@ function c:InitUI(paperDollFrame)
             end
         end
 
-        -- hook blizzard frame scripts for side-by-side display
-        local otherFrameNames = {"CraftFrame", "BankFrame"};
-        for _, frameName in ipairs(otherFrameNames) do
-            local frame = _G[frameName];
-            if frame and not c.isFrameHooked[frameName] then
-                frame:HookScript("OnShow", function()
-                    c:SetBlizzardFramePositions();
-                end);
-                frame:HookScript("OnHide", function()
-                    c:SetBlizzardFramePositions();
-                end);
-                c.isFrameHooked[frameName] = true;
-            end
-        end
-
+        c:HookBlizzardFrameScripts();
         c:InitUiFrame();
 
         c:CreateSecureActionButtons();
+    end
+end
+
+function c:HookBlizzardFrameScripts()
+    -- hook blizzard frame scripts for side-by-side display
+    local otherFrameNames, newFrameHasBeenHooked = {"CraftFrame", "TradeSkillFrame", "BankFrame"};
+    for _, frameName in ipairs(otherFrameNames) do
+        local frame = _G[frameName];
+        if frame and not c.isFrameHooked[frameName] then
+            frame:HookScript("OnShow", function(self)
+                c:SetBlizzardFramePositions();
+            end);
+            frame:HookScript("OnHide", function(self)
+                c:SetBlizzardFramePositions();
+            end);
+            c.isFrameHooked[frameName] = true;
+            newFrameHasBeenHooked = true;
+        end
+    end
+
+    if newFrameHasBeenHooked then
+        c:SetBlizzardFramePositions();
     end
 end
 
@@ -584,7 +592,7 @@ local function GetContainersForItems(itemStrings)
 
             if c:IsAtBank() then
                 -- default bank container
-                for invId = 48, 71 do
+                for invId = 48, 75 do
                     local frameName = "BankFrameItem" .. (invId - 47);
                     if _G[frameName] then
                         local itemString = c:GetItemString(GetContainerItemLink(-1, invId - 47));
@@ -667,14 +675,14 @@ function c:HighlightItemsInBags(itemStrings)
     else
         -- default / bagnon frames
         -- reset alpha
-        for bagId = 0, 11 do
+        for bagId = 0, 24 do
             for slotId = 1, MAX_CONTAINER_ITEMS do
                 ResetFrameAlpha("ContainerFrame" .. bagId .. "Item" .. slotId);
             end
         end
 
         if c:IsAtBank() then
-            for invId = 48, 71 do
+            for invId = 48, 75 do
                 ResetFrameAlpha("BankFrameItem" .. (invId - 47));
             end
         end

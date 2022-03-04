@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.052,
+	["LastVersion"] = 2.0531,
 	["LastPlayerFullName"] = "Partijleider-Razorgore",
 	["AutoSelectScales"] = false,
 	["ItemLevels"] = {
@@ -10,14 +10,14 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:29028::::::::70::::::::|h[Cyclone Headdress]|h|r",
 		}, -- [1]
 		{
-			["ID"] = 29335,
-			["Level"] = 115,
-			["Link"] = "|cff0070dd|Hitem:29335::::::::66::::::::|h[Talon Lord's Collar]|h|r",
+			["ID"] = 32649,
+			["Level"] = 141,
+			["Link"] = "|cffa335ee|Hitem:32649::::::::70:::::::::|h[Medallion of Karabor]|h|r",
 		}, -- [2]
 		{
-			["ID"] = 29031,
-			["Level"] = 120,
-			["Link"] = "|cffa335ee|Hitem:29031::::::::70::::::::|h[Cyclone Shoulderpads]|h|r",
+			["ID"] = 30168,
+			["Level"] = 133,
+			["Link"] = "|cffa335ee|Hitem:30168::23094:23094:::::70:::::::::|h[Cataclysm Shoulderguards]|h|r",
 		}, -- [3]
 		[13] = {
 			["ID"] = 30841,
@@ -26,15 +26,15 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:30841::::::::70::::::::|h[Lower City Prayerbook]|h|r",
 		},
 		[7] = {
-			["ID"] = 27936,
-			["Level"] = 115,
-			["Link"] = "|cff0070dd|Hitem:27936::::::::68::::::::|h[Greaves of Desolation]|h|r",
+			["ID"] = 30893,
+			["Level"] = 141,
+			["Link"] = "|cffa335ee|Hitem:30893::::::::70:::::::::|h[Sun-touched Chain Leggings]|h|r",
 		},
 		[14] = {
-			["ID"] = 29376,
-			["Level"] = 110,
+			["ID"] = 30841,
+			["Level"] = 115,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cffa335ee|Hitem:29376::::::::70::::::::|h[Essence of the Martyr]|h|r",
+			["Link"] = "|cff0070dd|Hitem:30841::::::::70:::::::::|h[Lower City Prayerbook]|h|r",
 		},
 		[15] = {
 			["ID"] = 28765,
@@ -42,46 +42,46 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:28765::::::::70::::::::|h[Stainless Cloak of the Pure Hearted]|h|r",
 		},
 		[8] = {
-			["ID"] = 28179,
-			["Level"] = 115,
-			["Link"] = "|cff0070dd|Hitem:28179::::::::70::::::::|h[Shattrath Jumpers]|h|r",
+			["ID"] = 32609,
+			["Level"] = 141,
+			["Link"] = "|cffa335ee|Hitem:32609::23094:23094:::::70:::::::::|h[Boots of the Divine Light]|h|r",
 		},
 		[16] = {
-			["ID"] = 28771,
-			["Level"] = 125,
-			["Link"] = "|cffa335ee|Hitem:28771::::::::70::::::::|h[Light's Justice]|h|r",
+			["ID"] = 30313,
+			["Level"] = 175,
+			["Link"] = "|cffff8000|Hitem:30313::::::::70:::::::::|h[Staff of Disintegration]|h|r",
 		},
 		[9] = {
-			["ID"] = 28174,
-			["Level"] = 115,
-			["Link"] = "|cff0070dd|Hitem:28174::::::::70::::::::|h[Shattrath Wraps]|h|r",
+			["ID"] = 32516,
+			["Level"] = 128,
+			["Link"] = "|cffa335ee|Hitem:32516::::::::70:::::::::|h[Wraps of Purification]|h|r",
 		},
 		[5] = {
-			["ID"] = 28231,
-			["Level"] = 115,
-			["Link"] = "|cff0070dd|Hitem:28231::::::::70::::::::|h[Tidefury Chestpiece]|h|r",
+			["ID"] = 30887,
+			["Level"] = 141,
+			["Link"] = "|cffa335ee|Hitem:30887::::::::70:::::::::|h[Golden Links of Restoration]|h|r",
 		},
 		[10] = {
-			["ID"] = 29032,
-			["Level"] = 120,
-			["Link"] = "|cffa335ee|Hitem:29032::::::::70::::::::|h[Cyclone Gloves]|h|r",
+			["ID"] = 31007,
+			["Level"] = 146,
+			["Link"] = "|cffa335ee|Hitem:31007::::::::70:::::::::|h[Skyshatter Gloves]|h|r",
 		},
 		[11] = {
-			["ID"] = 28790,
-			["Level"] = 125,
+			["ID"] = 29309,
+			["Level"] = 152,
 			["AlsoFitsIn"] = 12,
-			["Link"] = "|cffa335ee|Hitem:28790::::::::70::::::::|h[Naaru Lightwarden's Band]|h|r",
+			["Link"] = "|cffa335ee|Hitem:29309::::::::70:::::::::|h[Band of the Eternal Restorer]|h|r",
 		},
 		[6] = {
-			["ID"] = 28567,
-			["Level"] = 115,
-			["Link"] = "|cffa335ee|Hitem:28567::::::::70::::::::|h[Belt of Gale Force]|h|r",
+			["ID"] = 30030,
+			["Level"] = 128,
+			["Link"] = "|cffa335ee|Hitem:30030::::::::70:::::::::|h[Girdle of Fallen Stars]|h|r",
 		},
 		[12] = {
-			["ID"] = 25056,
-			["Level"] = 117,
+			["ID"] = 29283,
+			["Level"] = 130,
 			["AlsoFitsIn"] = 11,
-			["Link"] = "|cff1eff00|Hitem:25056::::::-36:822411295:70::::::::|h[Almandine Ring of the Sorcerer]|h|r",
+			["Link"] = "|cffa335ee|Hitem:29283::::::::70:::::::::|h[Violet Signet of the Master Assassin]|h|r",
 		},
 		[17] = {
 			["ID"] = 25085,

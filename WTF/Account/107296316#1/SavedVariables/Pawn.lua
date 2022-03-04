@@ -98,6 +98,9 @@ PawnCommon = {
 				["Kealthas-Razorgore"] = {
 					["Visible"] = true,
 				},
+				["Rinque-Gehennas"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "f48cba",
 			["LocalizedName"] = "Paladin: Protection",
@@ -129,6 +132,12 @@ PawnCommon = {
 		},
 		["\"Classic\":PRIEST1"] = {
 			["PerCharacterOptions"] = {
+				["Partijlijder-Gehennas"] = {
+					["Visible"] = true,
+				},
+				["Awwaa-Gehennas"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "ffffff",
 			["LocalizedName"] = "Priest: Discipline",
@@ -172,6 +181,12 @@ PawnCommon = {
 		},
 		["\"Classic\":PRIEST3"] = {
 			["PerCharacterOptions"] = {
+				["Partijlijder-Gehennas"] = {
+					["Visible"] = true,
+				},
+				["Awwaa-Gehennas"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "ffffff",
 			["LocalizedName"] = "Priest: Shadow",
@@ -186,6 +201,9 @@ PawnCommon = {
 		},
 		["\"Classic\":SHAMAN2"] = {
 			["PerCharacterOptions"] = {
+				["Partijleider-Razorgore"] = {
+					["Visible"] = true,
+				},
 				["Eefjé-Razorgore"] = {
 					["Visible"] = true,
 				},
@@ -238,6 +256,9 @@ PawnCommon = {
 		["\"Classic\":SHAMAN3"] = {
 			["PerCharacterOptions"] = {
 				["Eefjé-Razorgore"] = {
+					["Visible"] = true,
+				},
+				["Partijleider-Gehennas"] = {
 					["Visible"] = true,
 				},
 				["Partijleider-Razorgore"] = {
@@ -301,6 +322,12 @@ PawnCommon = {
 		},
 		["\"Classic\":PRIEST"] = {
 			["PerCharacterOptions"] = {
+				["Partijlijder-Gehennas"] = {
+					["Visible"] = true,
+				},
+				["Awwaa-Gehennas"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "ffffff",
 			["ClassID"] = 5,
@@ -451,6 +478,9 @@ PawnCommon = {
 				["Kealthas-Razorgore"] = {
 					["Visible"] = true,
 				},
+				["Rinque-Gehennas"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "f48cba",
 			["ClassID"] = 2,
@@ -551,6 +581,9 @@ PawnCommon = {
 				["Partijleider-Razorgore"] = {
 					["Visible"] = true,
 				},
+				["Partijleider-Gehennas"] = {
+					["Visible"] = true,
+				},
 				["Eefjé-Razorgore"] = {
 					["Visible"] = true,
 				},
@@ -594,6 +627,12 @@ PawnCommon = {
 		},
 		["\"Classic\":PRIEST2"] = {
 			["PerCharacterOptions"] = {
+				["Partijlijder-Gehennas"] = {
+					["Visible"] = true,
+				},
+				["Awwaa-Gehennas"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "ffffff",
 			["LocalizedName"] = "Priest: Holy",

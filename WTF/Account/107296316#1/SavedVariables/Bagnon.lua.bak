@@ -25,6 +25,7 @@ Bagnon_Sets = {
 			["point"] = "BOTTOMRIGHT",
 			["hiddenBags"] = {
 				[-2] = true,
+				[4] = false,
 			},
 			["scale"] = 0.86,
 			["sort"] = true,
@@ -35,12 +36,27 @@ Bagnon_Sets = {
 				1, -- [4]
 			},
 			["bagToggle"] = true,
-			["spacing"] = 0,
 			["enabled"] = true,
 			["brokerObject"] = "BagnonLauncher",
 			["columns"] = 10,
-			["options"] = true,
+			["reverseBags"] = false,
 			["money"] = true,
+			["spacing"] = 0,
+			["itemScale"] = 1.01,
+			["alpha"] = 1,
+			["y"] = 82.72373962402344,
+			["x"] = -112.0669731352464,
+			["bagBreak"] = false,
+			["options"] = true,
+			["reverseSlots"] = false,
+			["hiddenRules"] = {
+			},
+			["color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
 			["rules"] = {
 				"all", -- [1]
 				"all/normal", -- [2]
@@ -64,22 +80,6 @@ Bagnon_Sets = {
 				"misc", -- [20]
 				"all/souls", -- [21]
 				"equip/ammo", -- [22]
-			},
-			["itemScale"] = 1.01,
-			["bagBreak"] = false,
-			["y"] = 82.72373962402344,
-			["x"] = -112.0658518547975,
-			["alpha"] = 1,
-			["showBags"] = true,
-			["reverseSlots"] = false,
-			["hiddenRules"] = {
-			},
-			["reverseBags"] = false,
-			["color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
 			},
 		},
 		["vault"] = {
@@ -115,6 +115,7 @@ Bagnon_Sets = {
 			},
 		},
 		["guild"] = {
+			["y"] = -364.0711059570313,
 			["rules"] = {
 				"all", -- [1]
 				"all/normal", -- [2]
@@ -136,15 +137,19 @@ Bagnon_Sets = {
 				"trade/recipe", -- [18]
 				"quest", -- [19]
 				"misc", -- [20]
+				"all/souls", -- [21]
+				"equip/ammo", -- [22]
 			},
+			["point"] = "TOPLEFT",
 			["borderColor"] = {
 			},
 			["color"] = {
 			},
-			["hiddenRules"] = {
-			},
 			["hiddenBags"] = {
 			},
+			["hiddenRules"] = {
+			},
+			["x"] = 695.2380981445312,
 		},
 		["bank"] = {
 			["rules"] = {
@@ -178,11 +183,10 @@ Bagnon_Sets = {
 			},
 			["hiddenRules"] = {
 			},
-			["y"] = -177.1726684570313,
+			["y"] = -177.1727294921875,
 			["x"] = 504.2839965820313,
 			["borderColor"] = {
 			},
-			["showBags"] = true,
 			["itemScale"] = 1,
 			["scale"] = 1,
 			["alpha"] = 1,
@@ -197,7 +201,7 @@ Bagnon_Sets = {
 	["mineColor"] = {
 	},
 	["glowUnusable"] = true,
-	["version"] = "9.1.0",
+	["version"] = "9.1.4",
 	["displayGems"] = false,
 	["glowPoor"] = false,
 	["herbColor"] = {

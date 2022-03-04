@@ -49,10 +49,13 @@ function module:SetIcon(mod, target, icon, timer)
 		DBM:Debug("|cffff0000SetIcon is being used impropperly. Check icon/target order|r")
 		return--Fail silently instead of spamming icon lua errors if we screw up
 	end
-	icon = icon and icon >= 0 and icon <= 8 and icon or 8
-	local uId = DBM:GetRaidUnitId(target)
+	if not icon or icon > 8 or icon < 0 then
+		DBM:Debug("|cffff0000SetIcon is being used impropperly. Icon value must be between 0 and 8 (16 if extended)|r")
+		return
+	end
+	local uId = DBM:GetRaidUnitId(target) or UnitExists(target) and target
 	if uId and UnitIsUnit(uId, "player") and DBM:GetNumRealGroupMembers() < 2 then return end--Solo raid, no reason to put icon on yourself.
-	if uId or UnitExists(target) then--target accepts uid, unitname both.
+	if uId then--target accepts uid, unitname both.
 		uId = uId or target
 		--save previous icon into a table.
 		local oldIcon = self:GetIcon(uId) or 0

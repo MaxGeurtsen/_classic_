@@ -25,6 +25,7 @@ Bagnon_Sets = {
 			["point"] = "BOTTOMRIGHT",
 			["hiddenBags"] = {
 				[-2] = true,
+				[4] = false,
 			},
 			["scale"] = 0.86,
 			["sort"] = true,
@@ -35,26 +36,9 @@ Bagnon_Sets = {
 				1, -- [4]
 			},
 			["bagToggle"] = true,
-			["color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
 			["enabled"] = true,
 			["brokerObject"] = "BagnonLauncher",
 			["columns"] = 10,
-			["reverseBags"] = false,
-			["money"] = true,
-			["hiddenRules"] = {
-			},
-			["itemScale"] = 1.01,
-			["y"] = 82.72373962402344,
-			["bagBreak"] = false,
-			["x"] = -112.0658518547975,
-			["alpha"] = 1,
-			["showBags"] = true,
-			["reverseSlots"] = false,
 			["rules"] = {
 				"all", -- [1]
 				"all/normal", -- [2]
@@ -79,8 +63,24 @@ Bagnon_Sets = {
 				"all/souls", -- [21]
 				"equip/ammo", -- [22]
 			},
+			["money"] = true,
+			["color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
+			["itemScale"] = 1.01,
+			["hiddenRules"] = {
+			},
+			["y"] = 82.72373962402344,
+			["x"] = -112.0669731352464,
+			["bagBreak"] = false,
 			["options"] = true,
+			["reverseSlots"] = false,
+			["alpha"] = 1,
 			["spacing"] = 0,
+			["reverseBags"] = false,
 		},
 		["vault"] = {
 			["rules"] = {
@@ -115,6 +115,7 @@ Bagnon_Sets = {
 			},
 		},
 		["guild"] = {
+			["y"] = -364.0711059570313,
 			["rules"] = {
 				"all", -- [1]
 				"all/normal", -- [2]
@@ -136,11 +137,15 @@ Bagnon_Sets = {
 				"trade/recipe", -- [18]
 				"quest", -- [19]
 				"misc", -- [20]
+				"all/souls", -- [21]
+				"equip/ammo", -- [22]
 			},
+			["point"] = "TOPLEFT",
 			["borderColor"] = {
 			},
 			["color"] = {
 			},
+			["x"] = 695.2380981445312,
 			["hiddenRules"] = {
 			},
 			["hiddenBags"] = {
@@ -178,14 +183,13 @@ Bagnon_Sets = {
 			},
 			["hiddenRules"] = {
 			},
-			["y"] = -177.1726684570313,
+			["y"] = -177.1727294921875,
 			["x"] = 504.2839965820313,
 			["borderColor"] = {
 			},
 			["alpha"] = 1,
 			["scale"] = 1,
 			["itemScale"] = 1,
-			["showBags"] = true,
 		},
 	},
 	["keyColor"] = {

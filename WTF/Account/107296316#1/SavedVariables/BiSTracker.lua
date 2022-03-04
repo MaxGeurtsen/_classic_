@@ -1,14 +1,18 @@
 
 BiSTrackerDB = {
 	["profileKeys"] = {
+		["Partijleider - Gehennas"] = "Default",
+		["Partijlijder - Gehennas"] = "Default",
 		["Mírjam - Razorgore"] = "Default",
 		["Cursedbreath - Firemaw"] = "Default",
+		["Awwaa - Gehennas"] = "Default",
 		["Helpsiebren - Razorgore"] = "Default",
+		["Eefjé - Razorgore"] = "Default",
 		["Mirjam - Firemaw"] = "Default",
 		["Partijlijder - Razorgore"] = "Default",
-		["Eefjé - Razorgore"] = "Default",
-		["Partijleider - Razorgore"] = "Default",
+		["Rinque - Gehennas"] = "Default",
 		["Firebreather - Firemaw"] = "Default",
+		["Partijleider - Razorgore"] = "Default",
 		["Kealthas - Razorgore"] = "Default",
 	},
 	["profiles"] = {

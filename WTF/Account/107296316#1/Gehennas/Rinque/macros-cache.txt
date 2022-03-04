@@ -1,0 +1,57 @@
+VER 3 000000000100000B " judge" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/start attack
+/cancelaura Blessing of salvation
+/cancelaura greater Blessing of salvation
+/cast judgement
+END
+VER 3 0000000001000005 " might" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod:ctrl] greater Blessing of might; blessing of might
+END
+VER 3 0000000001000003 " Seal" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast Judgement
+/stopcasting
+/cast Seal of Righteousness
+END
+VER 3 0000000001000004 " stun" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,harm,nodead][] Hammer of Justice
+END
+VER 3 0000000001000002 " taunt" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,help,nodead][] Righteous Defense
+END
+VER 3 0000000001000006 " wisdom" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod:ctrl] greater Blessing of wisdom; blessing of wisdom
+END
+VER 3 0000000001000001 "check" "132110"
+/script DEFAULT_CHAT_FRAME:AddMessage("Need 102.4 combined avoidance. Currently at:",0.8,0.8,1)
+/script DEFAULT_CHAT_FRAME:AddMessage(GetDodgeChance()+GetBlockChance()+GetParryChance()+5+(GetCombatRating(CR_DEFENSE_SKILL)*150/355 + 20)*0.04,1,0.5,0)
+END
+VER 3 000000000100000C "DS" "INV_MISC_QUESTIONMARK"
+#showtooltip Divine Shield
+/cancelaura Divine Shield
+/cast Divine Shield
+END
+VER 3 000000000100000D "FROST" "135988"
+/gq switch FROST
+END
+VER 3 0000000001000007 "kings" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod:ctrl] greater Blessing of kings; blessing of kings
+END
+VER 3 000000000100000A "light" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod:ctrl] greater Blessing of light; blessing of light
+END
+VER 3 0000000001000009 "salvation" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod:ctrl] greater Blessing of salvation; blessing of salvation
+END
+VER 3 0000000001000008 "sanctuary" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod:ctrl] greater Blessing of sanctuary; blessing of sanctuary
+END

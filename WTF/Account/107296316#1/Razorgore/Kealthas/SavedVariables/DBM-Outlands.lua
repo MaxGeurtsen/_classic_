@@ -1,6 +1,6 @@
 
 DBMOutlands_SavedStats = {
-	["Quest"] = {
+	["Kazzak"] = {
 		["normalPulls"] = 0,
 		["challengeKills"] = 0,
 		["challengeBestRank"] = 0,
@@ -38,7 +38,7 @@ DBMOutlands_SavedStats = {
 		["mythicPulls"] = 0,
 		["challengePulls"] = 0,
 	},
-	["Kazzak"] = {
+	["Gruul"] = {
 		["normalPulls"] = 0,
 		["challengeKills"] = 0,
 		["challengeBestRank"] = 0,
@@ -76,7 +76,7 @@ DBMOutlands_SavedStats = {
 		["mythicPulls"] = 0,
 		["challengePulls"] = 0,
 	},
-	["Gruul"] = {
+	["Quest"] = {
 		["normalPulls"] = 0,
 		["challengeKills"] = 0,
 		["challengeBestRank"] = 0,

@@ -1,0 +1,4 @@
+
+BuffetDB = {
+	["hearthstone"] = false,
+}

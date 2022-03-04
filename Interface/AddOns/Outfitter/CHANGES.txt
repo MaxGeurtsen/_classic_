@@ -1,16 +1,36 @@
-lightweight tag 0a3aecea40807725715517873753933685074d59 2.0.6.TBCC
+lightweight tag 1b83c9b7828a3c4afe1950aae43c38e7a94abed3 2.0.63.TBCC
 Author:	GitHub <noreply@github.com>
-Date:	Sun Oct 10 19:23:09 2021 -0700
+Date:	Thu Jan 20 03:00:39 2022 -0800
 
-commit 3a54a87d33034e4ca52408221678b2ce8740317f
-Author: Jens N <jens.n@godlike.biz>
-Date:   Sun Oct 3 20:00:03 2021 +0200
+commit 5c76a140a4c1a7515e693edf4ddf733e5ebf8051
+Author: MotherGinger <29235654+MotherGinger@users.noreply.github.com>
+Date:   Thu Jan 20 04:54:02 2022 -0500
 
-    Fixed issue with "Bank > Deposit other outfits to bank"
+    Remove deprecated backdrop templates, and add defaults
 
-commit 3a54a87d33034e4ca52408221678b2ce8740317f
-Author: Jens N <jens.n@godlike.biz>
-Date:   Sun Oct 3 20:00:03 2021 +0200
+commit 5c76a140a4c1a7515e693edf4ddf733e5ebf8051
+Author: MotherGinger <29235654+MotherGinger@users.noreply.github.com>
+Date:   Thu Jan 20 04:54:02 2022 -0500
 
-    Fixed issue with "Bank > Deposit other outfits to bank"
+    Remove deprecated backdrop templates, and add defaults
+
+commit 7e8e304756a78c3563735190bd6f708b2b80681b
+Author: MotherGinger <29235654+MotherGinger@users.noreply.github.com>
+Date:   Thu Jan 20 02:33:14 2022 -0500
+
+    Respect the NineSlicePanelTemplate settings
+
+commit 83b7e3e4ffe62867097a7b225a8ececa10a47933
+Author: MotherGinger <29235654+MotherGinger@users.noreply.github.com>
+Date:   Thu Jan 20 01:47:53 2022 -0500
+
+    Fix #87 - Add backdrop mixin to GameTooltip
+
+commit d40810f52cc486473ef47be41a10bdb738e92953
+Author: balder89 <balder89@users.noreply.github.com>
+Date:   Thu Jan 20 01:00:01 2022 +0100
+
+    Update LibDropdown-1.0.lua
+    
+    Fix the dropdown menus
 

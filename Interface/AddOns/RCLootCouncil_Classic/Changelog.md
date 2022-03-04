@@ -1,9 +1,4 @@
-## Changes
+### Bugfixes
 
-### Classic
-
-Updated for patch 1.14.1.
-
-### Burning Crusade Classic
-
-Updated for patch 2.5.2.
+* *Heart of Darkness should now actually be autolootable.*
+* *Selected round robin candidate is now truly random.*

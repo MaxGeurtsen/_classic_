@@ -1,0 +1,9 @@
+[0215/225117.057:ERROR:cache_util_win.cc(21)] Unable to move the cache: Toegang geweigerd. (0x5)
+[0215/225117.058:ERROR:cache_util.cc(139)] Unable to move cache folder GPUCache to old_GPUCache_000
+[0215/225117.058:ERROR:disk_cache.cc(184)] Unable to create cache
+[0215/225117.058:ERROR:shader_disk_cache.cc(606)] Shader Cache Creation failed: -2
+[0215/225117.352:ERROR:browser_host_impl.cc(1794)] Invalid URL passed to CefBrowserHostImpl::LoadMainFrameURL: #0
+[0215/225117.352:ERROR:browser_host_impl.cc(1794)] Invalid URL passed to CefBrowserHostImpl::LoadMainFrameURL: #1
+[0215/225123.956:WARNING:browser_info.cc(270)] Returning a speculative frame for frame id 21474836486
+[0215/225224.667:WARNING:spdy_session.cc(3365)] Received HEADERS for invalid stream 7
+[0215/225230.023:WARNING:browser_info.cc(270)] Returning a speculative frame for frame id 25769803782

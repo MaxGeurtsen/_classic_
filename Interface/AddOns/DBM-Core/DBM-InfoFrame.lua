@@ -353,10 +353,10 @@ local function updateIcons()
 	for uId in DBM:GetGroupMembers() do
 		local icon = GetRaidTargetIndex(uId)
 		local icon2 = GetRaidTargetIndex(uId .. "target")
-		if icon then
+		if icon and icon <= 8 then
 			icons[DBM:GetUnitFullName(uId)] = ("|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_%d:0|t"):format(icon)
 		end
-		if icon2 then
+		if icon2 and icon2 <= 8 then
 			icons[DBM:GetUnitFullName(uId .. "target")] = ("|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_%d:0|t"):format(icon2)
 		end
 	end
@@ -772,9 +772,9 @@ local function updatePlayerDebuffStacks()
 	twipe(lines)
 	local spellInput = value[1]
 	for uId in DBM:GetGroupMembers() do
-		local spellName, _, count = DBM:UnitDebuff(uId, spellInput)
-		if spellName and count then
-			lines[DBM:GetUnitFullName(uId)] = count
+		local spellName, _, count, _, _, _, _, _, _, _, _, _, _, _, _, count2 = DBM:UnitDebuff(uId, spellInput)
+		if spellName and (count or count2) then
+			lines[DBM:GetUnitFullName(uId)] = count2 or count
 		end
 	end
 	updateIcons()

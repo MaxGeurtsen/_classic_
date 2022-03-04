@@ -8,9 +8,8 @@
 --
 -------------------------------------------------------------------------
 
--- Done in 247
---	Added the BRD and Scholo key chains
---  Updated some French translations
+-- Done in 250
+--	Added the Chain for the Aqual Quintessence
 
 
 -------------------------------------------------------------------------
@@ -31,7 +30,7 @@ local attunelocal_minimapicon = LibStub("LibDBIcon-1.0")
 local attunelocal_brokervalue = nil
 local attunelocal_brokerlabel = nil
 
-local attunelocal_version = "247"  					-- change here, and in TOC x2
+local attunelocal_version = "250"  					-- change here, and in TOC x2
 local attunelocal_prefix = "Attune_Channel"			-- used for addon chat communications
 local attunelocal_versionprefix = "Attune_Version"	-- used for addon version check
 local attunelocal_syncprefix = "Attune_Sync"		-- used for addon version check
@@ -1379,6 +1378,7 @@ function Attune_CheckComplete(newComplete)
 	if att.done["6-40"] and att.attuned["6"] ~= 100 	then att.done["6-90"] = 1; 	Attune_SendPushInfo("6-90"); 	att.attuned["6"] = 100; Attune_UpdateTreeGroup("6"); newComplete = true;  end	-- Naxx
 	if att.done["6-50"] and att.attuned["6"] ~= 100 	then att.done["6-90"] = 1; 	Attune_SendPushInfo("6-90"); 	att.attuned["6"] = 100; Attune_UpdateTreeGroup("6"); newComplete = true;  end	-- Naxx
 	if att.done["6-60"] and att.attuned["6"] ~= 100 	then att.done["6-90"] = 1; 	Attune_SendPushInfo("6-90"); 	att.attuned["6"] = 100; Attune_UpdateTreeGroup("6"); newComplete = true;  end	-- Naxx
+	if att.done["8-200"] and att.attuned["8"] ~= 100 	then att.done["8-210"] = 1; Attune_SendPushInfo("8-210"); 	att.attuned["8"] = 100;	 Attune_UpdateTreeGroup("8"); newComplete = true;  end	-- MC Quintessence
 	if att.done["10-960"] and att.attuned["10"] ~= 100 	then att.done["10-970"] = 1;Attune_SendPushInfo("10-970"); 	att.attuned["10"] = 100; Attune_UpdateTreeGroup("10"); newComplete = true;  end	-- scarab
 
 	if att.done["12-65"] and att.attuned["12"] ~= 100 	then att.done["12-70"] = 1; Attune_SendPushInfo("12-70"); 	att.attuned["12"] = 100; Attune_UpdateTreeGroup("12"); newComplete = true;  end	-- brd key
@@ -1651,6 +1651,8 @@ function Attune_Frame()
 	attunelocal_frame:SetTitle("  Attune")
 	attunelocal_frame:SetStatusText(attunelocal_statusText)
 
+	--print(attunelocal_frame.frame:GetAlpha())
+	--attunelocal_raidspotIcon[found].frame:SetAlpha(0.25)
 	attunelocal_frame:SetStatusText(attunelocal_statusText)
 
 	attunelocal_frame:SetHeight(Attune_DB.height)
@@ -1714,6 +1716,14 @@ function Attune_Frame()
 		attunelocal_survey_frame:SetWidth(160)
 		attunelocal_survey_frame:SetPoint("TOPLEFT", surveybutton,"BOTTOMLEFT", 0, 10)
 		attunelocal_survey_frame.frame:Hide()
+
+		local surveyTarget = AceGUI:Create("Button")
+		surveyTarget:SetText(Lang["Target"])
+		surveyTarget:SetCallback("OnClick", function()
+			attunelocal_survey_frame.frame:Hide()
+			Attune_SendRequest("Target|" .. UnitName("target"))
+		end)
+		attunelocal_survey_frame:AddChild(surveyTarget)
 
 		local surveyGuild = AceGUI:Create("Button")
 		surveyGuild:SetText(Lang["Guild"])
@@ -3561,9 +3571,18 @@ end
 -------------------------------------------------------------------------
 
 function Attune_SendRequest(what)
+
+	local IsTarget = Attune_split(what, "|")
+
 	Attune_DB.survey = {}
-	if Attune_DB.showOtherChat then print("|cffff00ff[Attune]|r "..Lang["SendingSurveyWhat"]:gsub("##WHAT##", Lang[what])) end
-	Attune:SendCommMessage(attunelocal_prefix, "SURVEY", string.upper(what), "");
+	if IsTarget[1] == "Target" then 
+		local tar = IsTarget[2] .. "-" .. attunelocal_realm
+		if Attune_DB.showOtherChat then print("|cffff00ff[Attune]|r "..Lang["SendingSurveyTo"]:gsub("##TO##", tar)) end
+		Attune:SendCommMessage(attunelocal_prefix, "SILENTSURVEY", "WHISPER", tar);
+	else
+		if Attune_DB.showOtherChat then print("|cffff00ff[Attune]|r "..Lang["SendingSurveyWhat"]:gsub("##WHAT##", Lang[what])) end
+		Attune:SendCommMessage(attunelocal_prefix, "SURVEY", string.upper(what), "");
+	end
 
 end
 
@@ -4525,6 +4544,9 @@ function Attune_SlashCommandHandler( msg )
 		else 
 			Attune_RaidPlannerFrame()
 		end
+
+	elseif (msg ~= '') then 
+		Attune_SendRequest("Target|"..msg);
 
 	elseif attunelocal_initial == false and attunelocal_frame:IsShown() then
 		attunelocal_frame:Hide()

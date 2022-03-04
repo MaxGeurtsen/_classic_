@@ -205,3 +205,6 @@ L["Set \"%s\" was incompletely pulled from bank."]                              
 
 L["Set switch delay: %sms"]                                                                             = "Setwechsel-Verzögerung: %sms";
 L["(Increase if you experience issues with\n automated event switches)"]                                = "(Erhöhen, wenn Probleme mit event-\nautomatisierten Setwechseln auftreten)"
+
+L["on stance change"]                                                                                   = "Haltungsswechsel";
+L["< choose stance >"]                                                                                  = "< Haltung wählen >";

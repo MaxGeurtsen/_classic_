@@ -1,1 +1,8 @@
 Version: 1
+Frame: GroupBulletinBoardFrame
+FrameLevel: 1
+Anchor: TOPRIGHT
+X: -247
+Y: -15
+W: 849
+H: 1019

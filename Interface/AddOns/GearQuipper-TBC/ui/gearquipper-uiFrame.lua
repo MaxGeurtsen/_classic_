@@ -148,7 +148,7 @@ end
 
 function c:ToggleEvents(value)
     if c.initFinished and btnAddBinding then
-        btnAddBinding:SetEnabled(value);
+        btnAddBinding:SetEnabled(value and not c:IsInCombat());
         if eventEntries then
             for index, entry in ipairs(eventEntries) do
                 if entry.cbSet then
@@ -633,6 +633,7 @@ end
 
 function GqUiFrame_OnShow(gqFrame)
     SetGqUiFramePosition();
+    c:HookBlizzardFrameScripts();
     c:SetBlizzardFramePositions();
 
     -- hook ecs frame scripts
@@ -799,10 +800,13 @@ function c:SetBlizzardFramePositions()
         xOffset = xOffset + ecsFrame:GetWidth();
     end
 
-    local craftFrame = _G["CraftFrame"];
+    local craftFrame, tradeSkillFrame = _G["CraftFrame"], _G["TradeSkillFrame"];
     if craftFrame and craftFrame:IsVisible() then
         craftFrame:SetPoint("TOPLEFT", UIParent, "TOPLEFT", xOffset, -104);
         xOffset = xOffset + craftFrame:GetWidth() - 20;
+    elseif tradeSkillFrame and tradeSkillFrame:IsVisible() and tradeSkillFrame:GetLeft() > characterFrame:GetLeft() then
+        tradeSkillFrame:SetPoint("TOPLEFT", UIParent, "TOPLEFT", xOffset, -104);
+        xOffset = xOffset + tradeSkillFrame:GetWidth() - 20;
     end
 
     local bankFrame = _G["BankFrame"];

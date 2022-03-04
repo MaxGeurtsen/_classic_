@@ -1,0 +1,77 @@
+
+FLogGlobalVars = {
+	["track"] = {
+		["deaths"] = true,
+		["misc"] = false,
+		["ranks"] = true,
+		["drops"] = true,
+		["hks"] = true,
+		["levelup"] = true,
+		["xp"] = true,
+		["consumes"] = true,
+		["dks"] = true,
+		["kills"] = true,
+		["money"] = true,
+		["skill"] = false,
+		["rep"] = true,
+		["resets"] = true,
+		["honor"] = true,
+		["bgs"] = true,
+	},
+	["blt"] = {
+		["Gehennas"] = {
+		},
+	},
+	["pauseOnLogin"] = true,
+	["ahMinQuality"] = 3,
+	["ignoredItems"] = {
+	},
+	["blp"] = {
+	},
+	["ahScan"] = {
+		["Gehennas"] = {
+		},
+	},
+	["instances"] = {
+		["Gehennas"] = {
+			{
+				["enter"] = 1646413992,
+				["player"] = "Rinque",
+				["name"] = "The Battle for Mount Hyjal",
+				["leave"] = 1646417931,
+			}, -- [1]
+		},
+	},
+	["blackLotusTimeSeconds"] = 3600,
+	["autoResumeBGs"] = true,
+	["groupByMobName"] = true,
+	["minQuantitySold"] = false,
+	["showHonorPercentOnTooltip"] = true,
+	["debug"] = false,
+	["resumeSessionOnSwitch"] = true,
+	["autoSwitchInstances"] = false,
+	["ver"] = 1.2,
+	["showBlackLotusTimer"] = true,
+	["honorDRinBGs"] = true,
+	["ahPrice"] = {
+		["Gehennas"] = {
+		},
+	},
+	["hud"] = {
+		["fontSize"] = 12,
+		["paddingX"] = 8,
+		["fontName"] = "Fonts\\FRIZQT__.TTF",
+		["alpha"] = 0.7,
+		["paddingY"] = 5,
+	},
+	["reportTo"] = {
+	},
+	["dismissLootWindowOnEsc"] = false,
+	["showHonorFrenzyCounter"] = true,
+	["sortBy"] = "A",
+	["sortSessionBy"] = "$",
+	["bls"] = {
+		["Gehennas"] = {
+		},
+	},
+}

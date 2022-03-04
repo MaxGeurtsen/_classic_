@@ -1,8 +1,8 @@
-## Interface: 20502
+## Interface: 20503
 ## Title: GearQuipper |c0000ff00TBC|r
 ## Notes: Quick switch your gear sets and action slots.
 ## Author: Benjamin Bober
-## Version: 27
+## Version: 30
 ## SavedVariables: GQ_DATA, GQ_OPTIONS, GQ_AUX
 ## OptionalDeps: GW2_UI, LibStub, LibDataBroker-1.1, CallbackHandler-1.0
 

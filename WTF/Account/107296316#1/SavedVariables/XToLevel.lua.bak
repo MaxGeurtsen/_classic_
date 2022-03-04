@@ -11,6 +11,38 @@ XToLevelDB = {
 				},
 			},
 		},
+		["Partijlijder - Gehennas"] = {
+			["data"] = {
+				["total"] = {
+					["quests"] = 1,
+					["mobKills"] = 1,
+				},
+				["killAverage"] = 50,
+				["killList"] = {
+					{
+						["mob"] = "Duskbat",
+						["xp"] = 50,
+					}, -- [1]
+				},
+				["timer"] = {
+					["start"] = 40399.052,
+					["total"] = 90,
+					["lastUpdated"] = 41191.056,
+					["xpPerSec"] = 0.1136357897182336,
+				},
+				["npcXP"] = {
+					{
+						["level"] = 1,
+						["name"] = "Duskbat",
+						["xp"] = 50,
+					}, -- [1]
+				},
+				["questAverage"] = 40,
+				["questList"] = {
+					40, -- [1]
+				},
+			},
+		},
 		["Mírjam - Razorgore"] = {
 			["data"] = {
 				["total"] = {
@@ -449,483 +481,11 @@ XToLevelDB = {
 				},
 			},
 		},
-		["Cursedbreath - Firemaw"] = {
-			["data"] = {
-				["total"] = {
-					["quests"] = 52,
-					["mobKills"] = 438,
-				},
-				["killAverage"] = 110.6,
-				["killList"] = {
-					{
-						["mob"] = "Darkshore Thresher",
-						["xp"] = 115,
-					}, -- [1]
-					{
-						["mob"] = "Darkshore Thresher",
-						["xp"] = 96,
-					}, -- [2]
-					{
-						["mob"] = "Darkshore Thresher",
-						["xp"] = 110,
-					}, -- [3]
-					{
-						["mob"] = "Darkshore Thresher",
-						["xp"] = 115,
-					}, -- [4]
-					{
-						["mob"] = "Darkshore Thresher",
-						["xp"] = 110,
-					}, -- [5]
-					{
-						["mob"] = "Darkshore Thresher",
-						["xp"] = 115,
-					}, -- [6]
-					{
-						["mob"] = "Darkshore Thresher",
-						["xp"] = 110,
-					}, -- [7]
-					{
-						["mob"] = "Darkshore Thresher",
-						["xp"] = 115,
-					}, -- [8]
-					{
-						["mob"] = "Darkshore Thresher",
-						["xp"] = 110,
-					}, -- [9]
-					{
-						["mob"] = "Darkshore Thresher",
-						["xp"] = 110,
-					}, -- [10]
-					{
-						["mob"] = "Pygmy Tide Crawler",
-						["xp"] = 69,
-					}, -- [11]
-					{
-						["mob"] = "Pygmy Tide Crawler",
-						["xp"] = 55,
-					}, -- [12]
-					{
-						["mob"] = "Pygmy Tide Crawler",
-						["xp"] = 69,
-					}, -- [13]
-					{
-						["mob"] = "Pygmy Tide Crawler",
-						["xp"] = 55,
-					}, -- [14]
-					{
-						["mob"] = "Pygmy Tide Crawler",
-						["xp"] = 55,
-					}, -- [15]
-					{
-						["mob"] = "Pygmy Tide Crawler",
-						["xp"] = 69,
-					}, -- [16]
-					{
-						["mob"] = "Pygmy Tide Crawler",
-						["xp"] = 69,
-					}, -- [17]
-					{
-						["mob"] = "Pygmy Tide Crawler",
-						["xp"] = 55,
-					}, -- [18]
-					{
-						["mob"] = "Pygmy Tide Crawler",
-						["xp"] = 55,
-					}, -- [19]
-					{
-						["mob"] = "Pygmy Tide Crawler",
-						["xp"] = 69,
-					}, -- [20]
-					{
-						["mob"] = "Pygmy Tide Crawler",
-						["xp"] = 55,
-					}, -- [21]
-					{
-						["mob"] = "Pygmy Tide Crawler",
-						["xp"] = 55,
-					}, -- [22]
-					{
-						["mob"] = "Pygmy Tide Crawler",
-						["xp"] = 69,
-					}, -- [23]
-					{
-						["mob"] = "Pygmy Tide Crawler",
-						["xp"] = 55,
-					}, -- [24]
-					{
-						["mob"] = "Pygmy Tide Crawler",
-						["xp"] = 55,
-					}, -- [25]
-					{
-						["mob"] = "Pygmy Tide Crawler",
-						["xp"] = 69,
-					}, -- [26]
-					{
-						["mob"] = "Stonesplinter Trogg",
-						["xp"] = 82,
-					}, -- [27]
-					{
-						["mob"] = "Stonesplinter Trogg",
-						["xp"] = 105,
-					}, -- [28]
-					{
-						["mob"] = "Stonesplinter Scout",
-						["xp"] = 92,
-					}, -- [29]
-					{
-						["mob"] = "Stonesplinter Trogg",
-						["xp"] = 92,
-					}, -- [30]
-					{
-						["mob"] = "Stonesplinter Skullthumper",
-						["xp"] = 110,
-					}, -- [31]
-					{
-						["mob"] = "Stonesplinter Seer",
-						["xp"] = 116,
-					}, -- [32]
-					{
-						["mob"] = "Stonesplinter Skullthumper",
-						["xp"] = 116,
-					}, -- [33]
-					{
-						["mob"] = "Stonesplinter Skullthumper",
-						["xp"] = 116,
-					}, -- [34]
-					{
-						["mob"] = "Stonesplinter Skullthumper",
-						["xp"] = 110,
-					}, -- [35]
-					{
-						["mob"] = "Stonesplinter Skullthumper",
-						["xp"] = 116,
-					}, -- [36]
-					{
-						["mob"] = "Stonesplinter Skullthumper",
-						["xp"] = 116,
-					}, -- [37]
-					{
-						["mob"] = "Stonesplinter Seer",
-						["xp"] = 110,
-					}, -- [38]
-					{
-						["mob"] = "Stonesplinter Seer",
-						["xp"] = 42,
-					}, -- [39]
-					{
-						["mob"] = "Stonesplinter Seer",
-						["xp"] = 116,
-					}, -- [40]
-					{
-						["mob"] = "Stonesplinter Scout",
-						["xp"] = 105,
-					}, -- [41]
-					{
-						["mob"] = "Stonesplinter Seer",
-						["xp"] = 36,
-					}, -- [42]
-					{
-						["mob"] = "Stonesplinter Seer",
-						["xp"] = 32,
-					}, -- [43]
-					{
-						["mob"] = "Brawler",
-						["xp"] = 40,
-					}, -- [44]
-					{
-						["mob"] = "Grawmug",
-						["xp"] = 41,
-					}, -- [45]
-					{
-						["mob"] = "Stonesplinter Seer",
-						["xp"] = 32,
-					}, -- [46]
-					{
-						["mob"] = "Gnasher",
-						["xp"] = 40,
-					}, -- [47]
-					{
-						["mob"] = "Stonesplinter Skullthumper",
-						["xp"] = 32,
-					}, -- [48]
-					{
-						["mob"] = "Stonesplinter Bonesnapper",
-						["xp"] = 38,
-					}, -- [49]
-					{
-						["mob"] = "Stonesplinter Bonesnapper",
-						["xp"] = 38,
-					}, -- [50]
-					{
-						["mob"] = "Stonesplinter Bonesnapper",
-						["xp"] = 38,
-					}, -- [51]
-					{
-						["mob"] = "Stonesplinter Shaman",
-						["xp"] = 38,
-					}, -- [52]
-					{
-						["mob"] = "Stonesplinter Seer",
-						["xp"] = 32,
-					}, -- [53]
-					{
-						["mob"] = "Stonesplinter Skullthumper",
-						["xp"] = 36,
-					}, -- [54]
-					{
-						["mob"] = "Stonesplinter Seer",
-						["xp"] = 36,
-					}, -- [55]
-					{
-						["mob"] = "Stonesplinter Seer",
-						["xp"] = 36,
-					}, -- [56]
-					{
-						["mob"] = "Stonesplinter Seer",
-						["xp"] = 36,
-					}, -- [57]
-					{
-						["mob"] = "Stonesplinter Skullthumper",
-						["xp"] = 36,
-					}, -- [58]
-					{
-						["mob"] = "Stonesplinter Skullthumper",
-						["xp"] = 110,
-					}, -- [59]
-					{
-						["mob"] = "Stonesplinter Seer",
-						["xp"] = 110,
-					}, -- [60]
-					{
-						["mob"] = "Stonesplinter Seer",
-						["xp"] = 116,
-					}, -- [61]
-					{
-						["mob"] = "Stonesplinter Seer",
-						["xp"] = 116,
-					}, -- [62]
-					{
-						["mob"] = "Mountain Boar",
-						["xp"] = 92,
-					}, -- [63]
-					{
-						["mob"] = "Mountain Boar",
-						["xp"] = 79,
-					}, -- [64]
-					{
-						["mob"] = "Mountain Boar",
-						["xp"] = 92,
-					}, -- [65]
-					{
-						["mob"] = "Forest Lurker",
-						["xp"] = 79,
-					}, -- [66]
-					{
-						["mob"] = "Mountain Boar",
-						["xp"] = 79,
-					}, -- [67]
-					{
-						["mob"] = "Mountain Boar",
-						["xp"] = 92,
-					}, -- [68]
-					{
-						["mob"] = "Elder Black Bear",
-						["xp"] = 105,
-					}, -- [69]
-					{
-						["mob"] = "Mountain Boar",
-						["xp"] = 79,
-					}, -- [70]
-					{
-						["mob"] = "Mountain Boar",
-						["xp"] = 92,
-					}, -- [71]
-					{
-						["mob"] = "Mountain Boar",
-						["xp"] = 92,
-					}, -- [72]
-					{
-						["mob"] = "Elder Black Bear",
-						["xp"] = 105,
-					}, -- [73]
-					{
-						["mob"] = "Mangy Mountain Boar",
-						["xp"] = 121,
-					}, -- [74]
-					{
-						["mob"] = "Elder Black Bear",
-						["xp"] = 105,
-					}, -- [75]
-					{
-						["mob"] = "Forest Lurker",
-						["xp"] = 79,
-					}, -- [76]
-					{
-						["mob"] = "Mountain Boar",
-						["xp"] = 79,
-					}, -- [77]
-					{
-						["mob"] = "Forest Lurker",
-						["xp"] = 92,
-					}, -- [78]
-					{
-						["mob"] = "Forest Lurker",
-						["xp"] = 79,
-					}, -- [79]
-					{
-						["mob"] = "Forest Lurker",
-						["xp"] = 92,
-					}, -- [80]
-					{
-						["mob"] = "Forest Lurker",
-						["xp"] = 92,
-					}, -- [81]
-					{
-						["mob"] = "Forest Lurker",
-						["xp"] = 92,
-					}, -- [82]
-					{
-						["mob"] = "Forest Lurker",
-						["xp"] = 79,
-					}, -- [83]
-					{
-						["mob"] = "Elder Black Bear",
-						["xp"] = 92,
-					}, -- [84]
-					{
-						["mob"] = "Elder Black Bear",
-						["xp"] = 92,
-					}, -- [85]
-					{
-						["mob"] = "Elder Black Bear",
-						["xp"] = 105,
-					}, -- [86]
-					{
-						["mob"] = "Mountain Boar",
-						["xp"] = 92,
-					}, -- [87]
-					{
-						["mob"] = "Elder Black Bear",
-						["xp"] = 92,
-					}, -- [88]
-					{
-						["mob"] = "Elder Black Bear",
-						["xp"] = 92,
-					}, -- [89]
-					{
-						["mob"] = "Tunnel Rat Kobold",
-						["xp"] = 92,
-					}, -- [90]
-					{
-						["mob"] = "Tunnel Rat Vermin",
-						["xp"] = 92,
-					}, -- [91]
-					{
-						["mob"] = "Tunnel Rat Kobold",
-						["xp"] = 105,
-					}, -- [92]
-					{
-						["mob"] = "Tunnel Rat Forager",
-						["xp"] = 105,
-					}, -- [93]
-					{
-						["mob"] = "Tunnel Rat Vermin",
-						["xp"] = 79,
-					}, -- [94]
-					{
-						["mob"] = "Tunnel Rat Forager",
-						["xp"] = 92,
-					}, -- [95]
-					{
-						["mob"] = "Tunnel Rat Vermin",
-						["xp"] = 92,
-					}, -- [96]
-					{
-						["mob"] = "Tunnel Rat Vermin",
-						["xp"] = 92,
-					}, -- [97]
-					{
-						["mob"] = "Tunnel Rat Scout",
-						["xp"] = 92,
-					}, -- [98]
-					{
-						["mob"] = "Tunnel Rat Vermin",
-						["xp"] = 92,
-					}, -- [99]
-					{
-						["mob"] = "Tunnel Rat Geomancer",
-						["xp"] = 48,
-					}, -- [100]
-				},
-				["timer"] = {
-					["start"] = 828.747,
-					["total"] = 5162,
-					["lastUpdated"] = 1834.75,
-					["xpPerSec"] = 5.13119742187648,
-				},
-				["questAverage"] = 803.5,
-				["questList"] = {
-					975, -- [1]
-					850, -- [2]
-					675, -- [3]
-					1050, -- [4]
-					210, -- [5]
-					875, -- [6]
-					875, -- [7]
-					1350, -- [8]
-					550, -- [9]
-					625, -- [10]
-					900, -- [11]
-					900, -- [12]
-					420, -- [13]
-					650, -- [14]
-					420, -- [15]
-					900, -- [16]
-					625, -- [17]
-					625, -- [18]
-					420, -- [19]
-					900, -- [20]
-					420, -- [21]
-					600, -- [22]
-					650, -- [23]
-					775, -- [24]
-					900, -- [25]
-					875, -- [26]
-					850, -- [27]
-					600, -- [28]
-					525, -- [29]
-					625, -- [30]
-					140, -- [31]
-					625, -- [32]
-					160, -- [33]
-					625, -- [34]
-					675, -- [35]
-					550, -- [36]
-					110, -- [37]
-					110, -- [38]
-					340, -- [39]
-					340, -- [40]
-					360, -- [41]
-					550, -- [42]
-					450, -- [43]
-					230, -- [44]
-					250, -- [45]
-					360, -- [46]
-					270, -- [47]
-					250, -- [48]
-					190, -- [49]
-					170, -- [50]
-					40, -- [51]
-					80, -- [52]
-				},
-			},
-		},
 		["Firebreather - Firemaw"] = {
 			["data"] = {
 				["total"] = {
-					["quests"] = 113,
 					["dungeonKills"] = 16379,
+					["quests"] = 113,
 					["mobKills"] = 18333,
 				},
 				["killAverage"] = 282.8,
@@ -1332,9 +892,9 @@ XToLevelDB = {
 					}, -- [100]
 				},
 				["timer"] = {
-					["start"] = 5707.864000000001,
+					["start"] = 25102.217,
 					["total"] = 0,
-					["lastUpdated"] = 5797.898,
+					["lastUpdated"] = 25376.219,
 					["xpPerSec"] = 1.9148694013516,
 				},
 				["dungeonList"] = {
@@ -2344,436 +1904,475 @@ XToLevelDB = {
 				},
 			},
 		},
-		["Helpsiebren - Razorgore"] = {
+		["Cursedbreath - Firemaw"] = {
 			["data"] = {
 				["total"] = {
-					["quests"] = 13,
-					["mobKills"] = 131,
+					["quests"] = 52,
+					["mobKills"] = 438,
 				},
-				["killAverage"] = 34.9,
+				["killAverage"] = 110.6,
 				["killList"] = {
 					{
-						["mob"] = "Kolkar Drudge",
-						["xp"] = 33,
+						["mob"] = "Darkshore Thresher",
+						["xp"] = 115,
 					}, -- [1]
 					{
-						["mob"] = "Kolkar Drudge",
-						["xp"] = 33,
+						["mob"] = "Darkshore Thresher",
+						["xp"] = 96,
 					}, -- [2]
 					{
-						["mob"] = "Kolkar Outrunner",
-						["xp"] = 37,
+						["mob"] = "Darkshore Thresher",
+						["xp"] = 110,
 					}, -- [3]
 					{
-						["mob"] = "Kolkar Outrunner",
-						["xp"] = 37,
+						["mob"] = "Darkshore Thresher",
+						["xp"] = 115,
 					}, -- [4]
 					{
-						["mob"] = "Kolkar Drudge",
-						["xp"] = 35,
+						["mob"] = "Darkshore Thresher",
+						["xp"] = 110,
 					}, -- [5]
 					{
-						["mob"] = "Kolkar Drudge",
-						["xp"] = 33,
+						["mob"] = "Darkshore Thresher",
+						["xp"] = 115,
 					}, -- [6]
 					{
-						["mob"] = "Kolkar Drudge",
-						["xp"] = 35,
+						["mob"] = "Darkshore Thresher",
+						["xp"] = 110,
 					}, -- [7]
 					{
-						["mob"] = "Kolkar Drudge",
-						["xp"] = 33,
+						["mob"] = "Darkshore Thresher",
+						["xp"] = 115,
 					}, -- [8]
 					{
-						["mob"] = "Kolkar Outrunner",
-						["xp"] = 35,
+						["mob"] = "Darkshore Thresher",
+						["xp"] = 110,
 					}, -- [9]
 					{
-						["mob"] = "Warlord Kolkanis",
-						["xp"] = 38,
+						["mob"] = "Darkshore Thresher",
+						["xp"] = 110,
 					}, -- [10]
 					{
-						["mob"] = "Kolkar Outrunner",
-						["xp"] = 35,
+						["mob"] = "Pygmy Tide Crawler",
+						["xp"] = 69,
 					}, -- [11]
 					{
-						["mob"] = "Kolkar Outrunner",
-						["xp"] = 37,
+						["mob"] = "Pygmy Tide Crawler",
+						["xp"] = 55,
 					}, -- [12]
 					{
-						["mob"] = "Kolkar Drudge",
-						["xp"] = 33,
+						["mob"] = "Pygmy Tide Crawler",
+						["xp"] = 69,
 					}, -- [13]
 					{
-						["mob"] = "Kolkar Drudge",
-						["xp"] = 35,
+						["mob"] = "Pygmy Tide Crawler",
+						["xp"] = 55,
 					}, -- [14]
 					{
-						["mob"] = "Kolkar Drudge",
-						["xp"] = 33,
+						["mob"] = "Pygmy Tide Crawler",
+						["xp"] = 55,
 					}, -- [15]
 					{
-						["mob"] = "Kolkar Drudge",
-						["xp"] = 33,
+						["mob"] = "Pygmy Tide Crawler",
+						["xp"] = 69,
 					}, -- [16]
 					{
-						["mob"] = "Kolkar Outrunner",
-						["xp"] = 37,
+						["mob"] = "Pygmy Tide Crawler",
+						["xp"] = 69,
 					}, -- [17]
 					{
-						["mob"] = "Kolkar Drudge",
-						["xp"] = 35,
+						["mob"] = "Pygmy Tide Crawler",
+						["xp"] = 55,
 					}, -- [18]
 					{
-						["mob"] = "Kolkar Outrunner",
-						["xp"] = 37,
+						["mob"] = "Pygmy Tide Crawler",
+						["xp"] = 55,
 					}, -- [19]
 					{
-						["mob"] = "Kolkar Drudge",
-						["xp"] = 33,
+						["mob"] = "Pygmy Tide Crawler",
+						["xp"] = 69,
 					}, -- [20]
 					{
-						["mob"] = "Kolkar Drudge",
-						["xp"] = 35,
+						["mob"] = "Pygmy Tide Crawler",
+						["xp"] = 55,
 					}, -- [21]
 					{
-						["mob"] = "Kolkar Drudge",
-						["xp"] = 33,
+						["mob"] = "Pygmy Tide Crawler",
+						["xp"] = 55,
 					}, -- [22]
 					{
-						["mob"] = "Kolkar Drudge",
-						["xp"] = 35,
+						["mob"] = "Pygmy Tide Crawler",
+						["xp"] = 69,
 					}, -- [23]
 					{
-						["mob"] = "Mottled Boar",
-						["xp"] = 7,
+						["mob"] = "Pygmy Tide Crawler",
+						["xp"] = 55,
 					}, -- [24]
 					{
-						["mob"] = "Vile Familiar",
-						["xp"] = 21,
+						["mob"] = "Pygmy Tide Crawler",
+						["xp"] = 55,
 					}, -- [25]
 					{
-						["mob"] = "Vile Familiar",
-						["xp"] = 28,
+						["mob"] = "Pygmy Tide Crawler",
+						["xp"] = 69,
 					}, -- [26]
 					{
-						["mob"] = "Felstalker",
-						["xp"] = 28,
+						["mob"] = "Stonesplinter Trogg",
+						["xp"] = 82,
 					}, -- [27]
 					{
-						["mob"] = "Vile Familiar",
-						["xp"] = 28,
+						["mob"] = "Stonesplinter Trogg",
+						["xp"] = 105,
 					}, -- [28]
 					{
-						["mob"] = "Felstalker",
-						["xp"] = 28,
+						["mob"] = "Stonesplinter Scout",
+						["xp"] = 92,
 					}, -- [29]
 					{
-						["mob"] = "Vile Familiar",
-						["xp"] = 28,
+						["mob"] = "Stonesplinter Trogg",
+						["xp"] = 92,
 					}, -- [30]
 					{
-						["mob"] = "Felstalker",
-						["xp"] = 28,
+						["mob"] = "Stonesplinter Skullthumper",
+						["xp"] = 110,
 					}, -- [31]
 					{
-						["mob"] = "Vile Familiar",
-						["xp"] = 28,
+						["mob"] = "Stonesplinter Seer",
+						["xp"] = 116,
 					}, -- [32]
 					{
-						["mob"] = "Felstalker",
-						["xp"] = 21,
+						["mob"] = "Stonesplinter Skullthumper",
+						["xp"] = 116,
 					}, -- [33]
 					{
-						["mob"] = "Felstalker",
-						["xp"] = 21,
+						["mob"] = "Stonesplinter Skullthumper",
+						["xp"] = 116,
 					}, -- [34]
 					{
-						["mob"] = "Vile Familiar",
-						["xp"] = 21,
+						["mob"] = "Stonesplinter Skullthumper",
+						["xp"] = 110,
 					}, -- [35]
 					{
-						["mob"] = "Vile Familiar",
-						["xp"] = 21,
+						["mob"] = "Stonesplinter Skullthumper",
+						["xp"] = 116,
 					}, -- [36]
 					{
-						["mob"] = "Vile Familiar",
-						["xp"] = 28,
+						["mob"] = "Stonesplinter Skullthumper",
+						["xp"] = 116,
 					}, -- [37]
 					{
-						["mob"] = "Vile Familiar",
-						["xp"] = 28,
+						["mob"] = "Stonesplinter Seer",
+						["xp"] = 110,
 					}, -- [38]
 					{
-						["mob"] = "Mottled Boar",
-						["xp"] = 14,
+						["mob"] = "Stonesplinter Seer",
+						["xp"] = 42,
 					}, -- [39]
 					{
-						["mob"] = "Mottled Boar",
-						["xp"] = 7,
+						["mob"] = "Stonesplinter Seer",
+						["xp"] = 116,
 					}, -- [40]
 					{
-						["mob"] = "Mottled Boar",
-						["xp"] = 14,
+						["mob"] = "Stonesplinter Scout",
+						["xp"] = 105,
 					}, -- [41]
 					{
-						["mob"] = "Mottled Boar",
-						["xp"] = 7,
+						["mob"] = "Stonesplinter Seer",
+						["xp"] = 36,
 					}, -- [42]
 					{
-						["mob"] = "Mottled Boar",
-						["xp"] = 14,
+						["mob"] = "Stonesplinter Seer",
+						["xp"] = 32,
 					}, -- [43]
 					{
-						["mob"] = "Mottled Boar",
-						["xp"] = 14,
+						["mob"] = "Brawler",
+						["xp"] = 40,
 					}, -- [44]
 					{
-						["mob"] = "Mottled Boar",
-						["xp"] = 13,
+						["mob"] = "Grawmug",
+						["xp"] = 41,
 					}, -- [45]
 					{
-						["mob"] = "Mottled Boar",
-						["xp"] = 20,
+						["mob"] = "Stonesplinter Seer",
+						["xp"] = 32,
 					}, -- [46]
 					{
-						["mob"] = "Scorpid Worker",
-						["xp"] = 26,
+						["mob"] = "Gnasher",
+						["xp"] = 40,
 					}, -- [47]
 					{
-						["mob"] = "Vile Familiar",
-						["xp"] = 26,
+						["mob"] = "Stonesplinter Skullthumper",
+						["xp"] = 32,
 					}, -- [48]
 					{
-						["mob"] = "Vile Familiar",
-						["xp"] = 26,
+						["mob"] = "Stonesplinter Bonesnapper",
+						["xp"] = 38,
 					}, -- [49]
 					{
-						["mob"] = "Vile Familiar",
-						["xp"] = 26,
+						["mob"] = "Stonesplinter Bonesnapper",
+						["xp"] = 38,
 					}, -- [50]
 					{
-						["mob"] = "Felstalker",
-						["xp"] = 32,
+						["mob"] = "Stonesplinter Bonesnapper",
+						["xp"] = 38,
 					}, -- [51]
 					{
-						["mob"] = "Yarrog Baneshadow",
-						["xp"] = 24,
+						["mob"] = "Stonesplinter Shaman",
+						["xp"] = 38,
 					}, -- [52]
 					{
-						["mob"] = "Vile Familiar",
-						["xp"] = 22,
+						["mob"] = "Stonesplinter Seer",
+						["xp"] = 32,
 					}, -- [53]
 					{
-						["mob"] = "Vile Familiar",
-						["xp"] = 22,
+						["mob"] = "Stonesplinter Skullthumper",
+						["xp"] = 36,
 					}, -- [54]
 					{
-						["mob"] = "Vile Familiar",
-						["xp"] = 22,
+						["mob"] = "Stonesplinter Seer",
+						["xp"] = 36,
 					}, -- [55]
 					{
-						["mob"] = "Felstalker",
-						["xp"] = 22,
+						["mob"] = "Stonesplinter Seer",
+						["xp"] = 36,
 					}, -- [56]
 					{
-						["mob"] = "Felstalker",
-						["xp"] = 22,
+						["mob"] = "Stonesplinter Seer",
+						["xp"] = 36,
 					}, -- [57]
 					{
-						["mob"] = "Vile Familiar",
-						["xp"] = 22,
+						["mob"] = "Stonesplinter Skullthumper",
+						["xp"] = 36,
 					}, -- [58]
 					{
-						["mob"] = "Felstalker",
-						["xp"] = 22,
+						["mob"] = "Stonesplinter Skullthumper",
+						["xp"] = 110,
 					}, -- [59]
 					{
-						["mob"] = "Felstalker",
-						["xp"] = 17,
+						["mob"] = "Stonesplinter Seer",
+						["xp"] = 110,
 					}, -- [60]
 					{
-						["mob"] = "Vile Familiar",
-						["xp"] = 17,
+						["mob"] = "Stonesplinter Seer",
+						["xp"] = 116,
 					}, -- [61]
 					{
-						["mob"] = "Felstalker",
-						["xp"] = 22,
+						["mob"] = "Stonesplinter Seer",
+						["xp"] = 116,
 					}, -- [62]
 					{
-						["mob"] = "Vile Familiar",
-						["xp"] = 22,
+						["mob"] = "Mountain Boar",
+						["xp"] = 92,
 					}, -- [63]
 					{
-						["mob"] = "Felstalker",
-						["xp"] = 17,
+						["mob"] = "Mountain Boar",
+						["xp"] = 79,
 					}, -- [64]
 					{
-						["mob"] = "Scorpid Worker",
-						["xp"] = 26,
+						["mob"] = "Mountain Boar",
+						["xp"] = 92,
 					}, -- [65]
 					{
-						["mob"] = "Mottled Boar",
-						["xp"] = 20,
+						["mob"] = "Forest Lurker",
+						["xp"] = 79,
 					}, -- [66]
 					{
-						["mob"] = "Mottled Boar",
-						["xp"] = 20,
+						["mob"] = "Mountain Boar",
+						["xp"] = 79,
 					}, -- [67]
 					{
-						["mob"] = "Mottled Boar",
-						["xp"] = 13,
+						["mob"] = "Mountain Boar",
+						["xp"] = 92,
 					}, -- [68]
 					{
-						["mob"] = "Mottled Boar",
-						["xp"] = 20,
+						["mob"] = "Elder Black Bear",
+						["xp"] = 105,
 					}, -- [69]
 					{
-						["mob"] = "Scorpid Worker",
-						["xp"] = 30,
+						["mob"] = "Mountain Boar",
+						["xp"] = 79,
 					}, -- [70]
 					{
-						["mob"] = "Scorpid Worker",
-						["xp"] = 30,
+						["mob"] = "Mountain Boar",
+						["xp"] = 92,
 					}, -- [71]
 					{
-						["mob"] = "Scorpid Worker",
-						["xp"] = 30,
+						["mob"] = "Mountain Boar",
+						["xp"] = 92,
 					}, -- [72]
 					{
-						["mob"] = "Scorpid Worker",
-						["xp"] = 30,
+						["mob"] = "Elder Black Bear",
+						["xp"] = 105,
 					}, -- [73]
 					{
-						["mob"] = "Scorpid Worker",
-						["xp"] = 30,
+						["mob"] = "Mangy Mountain Boar",
+						["xp"] = 121,
 					}, -- [74]
 					{
-						["mob"] = "Scorpid Worker",
-						["xp"] = 30,
+						["mob"] = "Elder Black Bear",
+						["xp"] = 105,
 					}, -- [75]
 					{
-						["mob"] = "Scorpid Worker",
-						["xp"] = 30,
+						["mob"] = "Forest Lurker",
+						["xp"] = 79,
 					}, -- [76]
 					{
-						["mob"] = "Scorpid Worker",
-						["xp"] = 30,
+						["mob"] = "Mountain Boar",
+						["xp"] = 79,
 					}, -- [77]
 					{
-						["mob"] = "Sarkoth",
-						["xp"] = 31,
+						["mob"] = "Forest Lurker",
+						["xp"] = 92,
 					}, -- [78]
 					{
-						["mob"] = "Scorpid Worker",
-						["xp"] = 30,
+						["mob"] = "Forest Lurker",
+						["xp"] = 79,
 					}, -- [79]
 					{
-						["mob"] = "Scorpid Worker",
-						["xp"] = 30,
+						["mob"] = "Forest Lurker",
+						["xp"] = 92,
 					}, -- [80]
 					{
-						["mob"] = "Scorpid Worker",
-						["xp"] = 30,
+						["mob"] = "Forest Lurker",
+						["xp"] = 92,
 					}, -- [81]
 					{
-						["mob"] = "Scorpid Worker",
-						["xp"] = 30,
+						["mob"] = "Forest Lurker",
+						["xp"] = 92,
 					}, -- [82]
 					{
-						["mob"] = "Scorpid Worker",
-						["xp"] = 30,
+						["mob"] = "Forest Lurker",
+						["xp"] = 79,
 					}, -- [83]
 					{
-						["mob"] = "Scorpid Worker",
-						["xp"] = 30,
+						["mob"] = "Elder Black Bear",
+						["xp"] = 92,
 					}, -- [84]
 					{
-						["mob"] = "Scorpid Worker",
-						["xp"] = 30,
+						["mob"] = "Elder Black Bear",
+						["xp"] = 92,
 					}, -- [85]
 					{
-						["mob"] = "Scorpid Worker",
-						["xp"] = 30,
+						["mob"] = "Elder Black Bear",
+						["xp"] = 105,
 					}, -- [86]
 					{
-						["mob"] = "Scorpid Worker",
-						["xp"] = 30,
+						["mob"] = "Mountain Boar",
+						["xp"] = 92,
 					}, -- [87]
 					{
-						["mob"] = "Scorpid Worker",
-						["xp"] = 30,
+						["mob"] = "Elder Black Bear",
+						["xp"] = 92,
 					}, -- [88]
 					{
-						["mob"] = "Scorpid Worker",
-						["xp"] = 30,
+						["mob"] = "Elder Black Bear",
+						["xp"] = 92,
 					}, -- [89]
 					{
-						["mob"] = "Scorpid Worker",
-						["xp"] = 30,
+						["mob"] = "Tunnel Rat Kobold",
+						["xp"] = 92,
 					}, -- [90]
 					{
-						["mob"] = "Scorpid Worker",
-						["xp"] = 30,
+						["mob"] = "Tunnel Rat Vermin",
+						["xp"] = 92,
 					}, -- [91]
 					{
-						["mob"] = "Scorpid Worker",
-						["xp"] = 30,
+						["mob"] = "Tunnel Rat Kobold",
+						["xp"] = 105,
 					}, -- [92]
 					{
-						["mob"] = "Scorpid Worker",
-						["xp"] = 30,
+						["mob"] = "Tunnel Rat Forager",
+						["xp"] = 105,
 					}, -- [93]
 					{
-						["mob"] = "Scorpid Worker",
-						["xp"] = 30,
+						["mob"] = "Tunnel Rat Vermin",
+						["xp"] = 79,
 					}, -- [94]
 					{
-						["mob"] = "Scorpid Worker",
-						["xp"] = 30,
+						["mob"] = "Tunnel Rat Forager",
+						["xp"] = 92,
 					}, -- [95]
 					{
-						["mob"] = "Scorpid Worker",
-						["xp"] = 30,
+						["mob"] = "Tunnel Rat Vermin",
+						["xp"] = 92,
 					}, -- [96]
 					{
-						["mob"] = "Scorpid Worker",
-						["xp"] = 25,
+						["mob"] = "Tunnel Rat Vermin",
+						["xp"] = 92,
 					}, -- [97]
 					{
-						["mob"] = "Scorpid Worker",
-						["xp"] = 25,
+						["mob"] = "Tunnel Rat Scout",
+						["xp"] = 92,
 					}, -- [98]
 					{
-						["mob"] = "Vile Familiar",
-						["xp"] = 25,
+						["mob"] = "Tunnel Rat Vermin",
+						["xp"] = 92,
 					}, -- [99]
 					{
-						["mob"] = "Vile Familiar",
-						["xp"] = 26,
+						["mob"] = "Tunnel Rat Geomancer",
+						["xp"] = 48,
 					}, -- [100]
 				},
 				["timer"] = {
-					["start"] = 1984.861,
-					["total"] = 0,
-					["lastUpdated"] = 2012.867,
-					["xpPerSec"] = 1.57414576961842,
+					["start"] = 828.747,
+					["total"] = 5162,
+					["lastUpdated"] = 1834.75,
+					["xpPerSec"] = 5.13119742187648,
 				},
-				["questAverage"] = 339,
+				["questAverage"] = 803.5,
 				["questList"] = {
-					230, -- [1]
-					450, -- [2]
+					975, -- [1]
+					850, -- [2]
 					675, -- [3]
-					450, -- [4]
-					35, -- [5]
-					110, -- [6]
-					250, -- [7]
-					360, -- [8]
-					380, -- [9]
-					450, -- [10]
-					40, -- [11]
-					170, -- [12]
-					40, -- [13]
+					1050, -- [4]
+					210, -- [5]
+					875, -- [6]
+					875, -- [7]
+					1350, -- [8]
+					550, -- [9]
+					625, -- [10]
+					900, -- [11]
+					900, -- [12]
+					420, -- [13]
+					650, -- [14]
+					420, -- [15]
+					900, -- [16]
+					625, -- [17]
+					625, -- [18]
+					420, -- [19]
+					900, -- [20]
+					420, -- [21]
+					600, -- [22]
+					650, -- [23]
+					775, -- [24]
+					900, -- [25]
+					875, -- [26]
+					850, -- [27]
+					600, -- [28]
+					525, -- [29]
+					625, -- [30]
+					140, -- [31]
+					625, -- [32]
+					160, -- [33]
+					625, -- [34]
+					675, -- [35]
+					550, -- [36]
+					110, -- [37]
+					110, -- [38]
+					340, -- [39]
+					340, -- [40]
+					360, -- [41]
+					550, -- [42]
+					450, -- [43]
+					230, -- [44]
+					250, -- [45]
+					360, -- [46]
+					270, -- [47]
+					250, -- [48]
+					190, -- [49]
+					170, -- [50]
+					40, -- [51]
+					80, -- [52]
 				},
 			},
 		},
@@ -3691,6 +3290,504 @@ XToLevelDB = {
 				},
 			},
 		},
+		["Awwaa - Gehennas"] = {
+			["data"] = {
+				["timer"] = {
+					["start"] = 25720.134,
+					["total"] = 0,
+					["lastUpdated"] = 25800.133,
+					["xpPerSec"] = 0,
+				},
+			},
+		},
+		["Helpsiebren - Razorgore"] = {
+			["data"] = {
+				["total"] = {
+					["quests"] = 13,
+					["mobKills"] = 131,
+				},
+				["killAverage"] = 34.9,
+				["killList"] = {
+					{
+						["mob"] = "Kolkar Drudge",
+						["xp"] = 33,
+					}, -- [1]
+					{
+						["mob"] = "Kolkar Drudge",
+						["xp"] = 33,
+					}, -- [2]
+					{
+						["mob"] = "Kolkar Outrunner",
+						["xp"] = 37,
+					}, -- [3]
+					{
+						["mob"] = "Kolkar Outrunner",
+						["xp"] = 37,
+					}, -- [4]
+					{
+						["mob"] = "Kolkar Drudge",
+						["xp"] = 35,
+					}, -- [5]
+					{
+						["mob"] = "Kolkar Drudge",
+						["xp"] = 33,
+					}, -- [6]
+					{
+						["mob"] = "Kolkar Drudge",
+						["xp"] = 35,
+					}, -- [7]
+					{
+						["mob"] = "Kolkar Drudge",
+						["xp"] = 33,
+					}, -- [8]
+					{
+						["mob"] = "Kolkar Outrunner",
+						["xp"] = 35,
+					}, -- [9]
+					{
+						["mob"] = "Warlord Kolkanis",
+						["xp"] = 38,
+					}, -- [10]
+					{
+						["mob"] = "Kolkar Outrunner",
+						["xp"] = 35,
+					}, -- [11]
+					{
+						["mob"] = "Kolkar Outrunner",
+						["xp"] = 37,
+					}, -- [12]
+					{
+						["mob"] = "Kolkar Drudge",
+						["xp"] = 33,
+					}, -- [13]
+					{
+						["mob"] = "Kolkar Drudge",
+						["xp"] = 35,
+					}, -- [14]
+					{
+						["mob"] = "Kolkar Drudge",
+						["xp"] = 33,
+					}, -- [15]
+					{
+						["mob"] = "Kolkar Drudge",
+						["xp"] = 33,
+					}, -- [16]
+					{
+						["mob"] = "Kolkar Outrunner",
+						["xp"] = 37,
+					}, -- [17]
+					{
+						["mob"] = "Kolkar Drudge",
+						["xp"] = 35,
+					}, -- [18]
+					{
+						["mob"] = "Kolkar Outrunner",
+						["xp"] = 37,
+					}, -- [19]
+					{
+						["mob"] = "Kolkar Drudge",
+						["xp"] = 33,
+					}, -- [20]
+					{
+						["mob"] = "Kolkar Drudge",
+						["xp"] = 35,
+					}, -- [21]
+					{
+						["mob"] = "Kolkar Drudge",
+						["xp"] = 33,
+					}, -- [22]
+					{
+						["mob"] = "Kolkar Drudge",
+						["xp"] = 35,
+					}, -- [23]
+					{
+						["mob"] = "Mottled Boar",
+						["xp"] = 7,
+					}, -- [24]
+					{
+						["mob"] = "Vile Familiar",
+						["xp"] = 21,
+					}, -- [25]
+					{
+						["mob"] = "Vile Familiar",
+						["xp"] = 28,
+					}, -- [26]
+					{
+						["mob"] = "Felstalker",
+						["xp"] = 28,
+					}, -- [27]
+					{
+						["mob"] = "Vile Familiar",
+						["xp"] = 28,
+					}, -- [28]
+					{
+						["mob"] = "Felstalker",
+						["xp"] = 28,
+					}, -- [29]
+					{
+						["mob"] = "Vile Familiar",
+						["xp"] = 28,
+					}, -- [30]
+					{
+						["mob"] = "Felstalker",
+						["xp"] = 28,
+					}, -- [31]
+					{
+						["mob"] = "Vile Familiar",
+						["xp"] = 28,
+					}, -- [32]
+					{
+						["mob"] = "Felstalker",
+						["xp"] = 21,
+					}, -- [33]
+					{
+						["mob"] = "Felstalker",
+						["xp"] = 21,
+					}, -- [34]
+					{
+						["mob"] = "Vile Familiar",
+						["xp"] = 21,
+					}, -- [35]
+					{
+						["mob"] = "Vile Familiar",
+						["xp"] = 21,
+					}, -- [36]
+					{
+						["mob"] = "Vile Familiar",
+						["xp"] = 28,
+					}, -- [37]
+					{
+						["mob"] = "Vile Familiar",
+						["xp"] = 28,
+					}, -- [38]
+					{
+						["mob"] = "Mottled Boar",
+						["xp"] = 14,
+					}, -- [39]
+					{
+						["mob"] = "Mottled Boar",
+						["xp"] = 7,
+					}, -- [40]
+					{
+						["mob"] = "Mottled Boar",
+						["xp"] = 14,
+					}, -- [41]
+					{
+						["mob"] = "Mottled Boar",
+						["xp"] = 7,
+					}, -- [42]
+					{
+						["mob"] = "Mottled Boar",
+						["xp"] = 14,
+					}, -- [43]
+					{
+						["mob"] = "Mottled Boar",
+						["xp"] = 14,
+					}, -- [44]
+					{
+						["mob"] = "Mottled Boar",
+						["xp"] = 13,
+					}, -- [45]
+					{
+						["mob"] = "Mottled Boar",
+						["xp"] = 20,
+					}, -- [46]
+					{
+						["mob"] = "Scorpid Worker",
+						["xp"] = 26,
+					}, -- [47]
+					{
+						["mob"] = "Vile Familiar",
+						["xp"] = 26,
+					}, -- [48]
+					{
+						["mob"] = "Vile Familiar",
+						["xp"] = 26,
+					}, -- [49]
+					{
+						["mob"] = "Vile Familiar",
+						["xp"] = 26,
+					}, -- [50]
+					{
+						["mob"] = "Felstalker",
+						["xp"] = 32,
+					}, -- [51]
+					{
+						["mob"] = "Yarrog Baneshadow",
+						["xp"] = 24,
+					}, -- [52]
+					{
+						["mob"] = "Vile Familiar",
+						["xp"] = 22,
+					}, -- [53]
+					{
+						["mob"] = "Vile Familiar",
+						["xp"] = 22,
+					}, -- [54]
+					{
+						["mob"] = "Vile Familiar",
+						["xp"] = 22,
+					}, -- [55]
+					{
+						["mob"] = "Felstalker",
+						["xp"] = 22,
+					}, -- [56]
+					{
+						["mob"] = "Felstalker",
+						["xp"] = 22,
+					}, -- [57]
+					{
+						["mob"] = "Vile Familiar",
+						["xp"] = 22,
+					}, -- [58]
+					{
+						["mob"] = "Felstalker",
+						["xp"] = 22,
+					}, -- [59]
+					{
+						["mob"] = "Felstalker",
+						["xp"] = 17,
+					}, -- [60]
+					{
+						["mob"] = "Vile Familiar",
+						["xp"] = 17,
+					}, -- [61]
+					{
+						["mob"] = "Felstalker",
+						["xp"] = 22,
+					}, -- [62]
+					{
+						["mob"] = "Vile Familiar",
+						["xp"] = 22,
+					}, -- [63]
+					{
+						["mob"] = "Felstalker",
+						["xp"] = 17,
+					}, -- [64]
+					{
+						["mob"] = "Scorpid Worker",
+						["xp"] = 26,
+					}, -- [65]
+					{
+						["mob"] = "Mottled Boar",
+						["xp"] = 20,
+					}, -- [66]
+					{
+						["mob"] = "Mottled Boar",
+						["xp"] = 20,
+					}, -- [67]
+					{
+						["mob"] = "Mottled Boar",
+						["xp"] = 13,
+					}, -- [68]
+					{
+						["mob"] = "Mottled Boar",
+						["xp"] = 20,
+					}, -- [69]
+					{
+						["mob"] = "Scorpid Worker",
+						["xp"] = 30,
+					}, -- [70]
+					{
+						["mob"] = "Scorpid Worker",
+						["xp"] = 30,
+					}, -- [71]
+					{
+						["mob"] = "Scorpid Worker",
+						["xp"] = 30,
+					}, -- [72]
+					{
+						["mob"] = "Scorpid Worker",
+						["xp"] = 30,
+					}, -- [73]
+					{
+						["mob"] = "Scorpid Worker",
+						["xp"] = 30,
+					}, -- [74]
+					{
+						["mob"] = "Scorpid Worker",
+						["xp"] = 30,
+					}, -- [75]
+					{
+						["mob"] = "Scorpid Worker",
+						["xp"] = 30,
+					}, -- [76]
+					{
+						["mob"] = "Scorpid Worker",
+						["xp"] = 30,
+					}, -- [77]
+					{
+						["mob"] = "Sarkoth",
+						["xp"] = 31,
+					}, -- [78]
+					{
+						["mob"] = "Scorpid Worker",
+						["xp"] = 30,
+					}, -- [79]
+					{
+						["mob"] = "Scorpid Worker",
+						["xp"] = 30,
+					}, -- [80]
+					{
+						["mob"] = "Scorpid Worker",
+						["xp"] = 30,
+					}, -- [81]
+					{
+						["mob"] = "Scorpid Worker",
+						["xp"] = 30,
+					}, -- [82]
+					{
+						["mob"] = "Scorpid Worker",
+						["xp"] = 30,
+					}, -- [83]
+					{
+						["mob"] = "Scorpid Worker",
+						["xp"] = 30,
+					}, -- [84]
+					{
+						["mob"] = "Scorpid Worker",
+						["xp"] = 30,
+					}, -- [85]
+					{
+						["mob"] = "Scorpid Worker",
+						["xp"] = 30,
+					}, -- [86]
+					{
+						["mob"] = "Scorpid Worker",
+						["xp"] = 30,
+					}, -- [87]
+					{
+						["mob"] = "Scorpid Worker",
+						["xp"] = 30,
+					}, -- [88]
+					{
+						["mob"] = "Scorpid Worker",
+						["xp"] = 30,
+					}, -- [89]
+					{
+						["mob"] = "Scorpid Worker",
+						["xp"] = 30,
+					}, -- [90]
+					{
+						["mob"] = "Scorpid Worker",
+						["xp"] = 30,
+					}, -- [91]
+					{
+						["mob"] = "Scorpid Worker",
+						["xp"] = 30,
+					}, -- [92]
+					{
+						["mob"] = "Scorpid Worker",
+						["xp"] = 30,
+					}, -- [93]
+					{
+						["mob"] = "Scorpid Worker",
+						["xp"] = 30,
+					}, -- [94]
+					{
+						["mob"] = "Scorpid Worker",
+						["xp"] = 30,
+					}, -- [95]
+					{
+						["mob"] = "Scorpid Worker",
+						["xp"] = 30,
+					}, -- [96]
+					{
+						["mob"] = "Scorpid Worker",
+						["xp"] = 25,
+					}, -- [97]
+					{
+						["mob"] = "Scorpid Worker",
+						["xp"] = 25,
+					}, -- [98]
+					{
+						["mob"] = "Vile Familiar",
+						["xp"] = 25,
+					}, -- [99]
+					{
+						["mob"] = "Vile Familiar",
+						["xp"] = 26,
+					}, -- [100]
+				},
+				["timer"] = {
+					["start"] = 1984.861,
+					["total"] = 0,
+					["lastUpdated"] = 2012.867,
+					["xpPerSec"] = 1.57414576961842,
+				},
+				["questAverage"] = 339,
+				["questList"] = {
+					230, -- [1]
+					450, -- [2]
+					675, -- [3]
+					450, -- [4]
+					35, -- [5]
+					110, -- [6]
+					250, -- [7]
+					360, -- [8]
+					380, -- [9]
+					450, -- [10]
+					40, -- [11]
+					170, -- [12]
+					40, -- [13]
+				},
+			},
+		},
+		["Rinque - Gehennas"] = {
+			["data"] = {
+				["total"] = {
+					["dungeonKills"] = 311,
+					["quests"] = 4,
+					["mobKills"] = 311,
+				},
+				["killAverage"] = 289.1,
+				["timer"] = {
+					["start"] = 440.358,
+					["total"] = 84310,
+					["lastUpdated"] = 6296.424,
+					["xpPerSec"] = 14.39703719186225,
+				},
+				["dungeonList"] = {
+					{
+						["name"] = "Auchenai Crypts",
+						["totalXP"] = 38462,
+						["rested"] = 38462,
+						["killTotal"] = 38462,
+						["level"] = 69,
+						["inProgress"] = false,
+						["killCount"] = 134,
+					}, -- [1]
+					{
+						["name"] = "Auchenai Crypts",
+						["totalXP"] = 1668,
+						["rested"] = 1668,
+						["killTotal"] = 1668,
+						["level"] = 69,
+						["inProgress"] = false,
+						["killCount"] = 4,
+					}, -- [2]
+					{
+						["killCount"] = 85,
+						["name"] = "Shadow Labyrinth",
+						["inProgress"] = false,
+						["killTotal"] = 59803,
+						["level"] = 69,
+						["rested"] = 59803,
+						["totalXP"] = 59803,
+					}, -- [3]
+					{
+						["totalXP"] = 61034,
+						["name"] = "Shadow Labyrinth",
+						["rested"] = 61034,
+						["killTotal"] = 61034,
+						["level"] = 69,
+						["killCount"] = 88,
+						["inProgress"] = false,
+					}, -- [4]
+				},
+				["questAverage"] = 17250,
+			},
+		},
 		["Mirjam - Firemaw"] = {
 			["data"] = {
 				["total"] = {
@@ -4225,52 +4322,10 @@ XToLevelDB = {
 		},
 		["Partijlijder - Razorgore"] = {
 			["data"] = {
-				["dungeonList"] = {
-					{
-						["inProgress"] = false,
-						["totalXP"] = 61487,
-						["killCount"] = 106,
-						["killTotal"] = 61487,
-						["level"] = 60,
-						["rested"] = 2282,
-						["name"] = "Hellfire Ramparts",
-					}, -- [1]
-					{
-						["name"] = "Hellfire Ramparts",
-						["totalXP"] = 54900,
-						["rested"] = 0,
-						["killTotal"] = 54900,
-						["level"] = 59,
-						["inProgress"] = false,
-						["killCount"] = 95,
-					}, -- [2]
-					{
-						["name"] = "Hellfire Ramparts",
-						["totalXP"] = 50712,
-						["rested"] = 0,
-						["killTotal"] = 50712,
-						["level"] = 59,
-						["inProgress"] = false,
-						["killCount"] = 89,
-					}, -- [3]
-					{
-						["name"] = "Hellfire Ramparts",
-						["totalXP"] = 51622,
-						["rested"] = 0,
-						["killTotal"] = 51622,
-						["level"] = 59,
-						["inProgress"] = false,
-						["killCount"] = 93,
-					}, -- [4]
-					{
-						["totalXP"] = 48121,
-						["name"] = "Hellfire Ramparts",
-						["rested"] = 48121,
-						["killTotal"] = 48121,
-						["level"] = 58,
-						["killCount"] = 84,
-						["inProgress"] = false,
-					}, -- [5]
+				["total"] = {
+					["dungeonKills"] = 467,
+					["quests"] = 9,
+					["mobKills"] = 517,
 				},
 				["questList"] = {
 					2400, -- [1]
@@ -4681,11 +4736,59 @@ XToLevelDB = {
 					}, -- [100]
 				},
 				["timer"] = {
-					["start"] = 18805.345,
-					["total"] = 71622,
-					["lastUpdated"] = 21925.346,
+					["start"] = 23630.005,
+					["total"] = 0,
+					["lastUpdated"] = 23656.006,
 					["xpPerSec"] = 22.95576187315324,
 				},
+				["dungeonList"] = {
+					{
+						["inProgress"] = false,
+						["totalXP"] = 61487,
+						["killCount"] = 106,
+						["killTotal"] = 61487,
+						["level"] = 60,
+						["rested"] = 2282,
+						["name"] = "Hellfire Ramparts",
+					}, -- [1]
+					{
+						["name"] = "Hellfire Ramparts",
+						["totalXP"] = 54900,
+						["rested"] = 0,
+						["killTotal"] = 54900,
+						["level"] = 59,
+						["inProgress"] = false,
+						["killCount"] = 95,
+					}, -- [2]
+					{
+						["name"] = "Hellfire Ramparts",
+						["totalXP"] = 50712,
+						["rested"] = 0,
+						["killTotal"] = 50712,
+						["level"] = 59,
+						["inProgress"] = false,
+						["killCount"] = 89,
+					}, -- [3]
+					{
+						["name"] = "Hellfire Ramparts",
+						["totalXP"] = 51622,
+						["rested"] = 0,
+						["killTotal"] = 51622,
+						["level"] = 59,
+						["inProgress"] = false,
+						["killCount"] = 93,
+					}, -- [4]
+					{
+						["totalXP"] = 48121,
+						["name"] = "Hellfire Ramparts",
+						["rested"] = 48121,
+						["killTotal"] = 48121,
+						["level"] = 58,
+						["killCount"] = 84,
+						["inProgress"] = false,
+					}, -- [5]
+				},
+				["questAverage"] = 1925,
 				["npcXP"] = {
 					{
 						["level"] = 60,
@@ -4792,12 +4895,6 @@ XToLevelDB = {
 						["name"] = "Hellfire Sentry",
 						["xp"] = 577,
 					}, -- [21]
-				},
-				["questAverage"] = 1925,
-				["total"] = {
-					["quests"] = 9,
-					["dungeonKills"] = 467,
-					["mobKills"] = 517,
 				},
 			},
 		},
@@ -5419,733 +5516,1054 @@ XToLevelDB = {
 		},
 		["Kealthas - Razorgore"] = {
 			["data"] = {
-				["npcXP"] = {
-					{
-						["level"] = 61,
-						["name"] = "Bleeding Hollow Grunt",
-						["xp"] = 540,
-					}, -- [1]
-					{
-						["level"] = 60,
-						["name"] = "Bleeding Hollow Grunt",
-						["xp"] = 508,
-					}, -- [2]
-					{
-						["level"] = 60,
-						["name"] = "Worg Master Kruush",
-						["xp"] = 559,
-					}, -- [3]
-					{
-						["level"] = 60,
-						["name"] = "Bleeding Hollow Necrolyte",
-						["xp"] = 508,
-					}, -- [4]
-					{
-						["level"] = 61,
-						["name"] = "Bleeding Hollow Tormentor",
-						["xp"] = 540,
-					}, -- [5]
-					{
-						["level"] = 58,
-						["name"] = "Ripp",
-						["xp"] = 244,
-					}, -- [6]
-					{
-						["level"] = 60,
-						["name"] = "Bleeding Hollow Tormentor",
-						["xp"] = 557,
-					}, -- [7]
-					{
-						["level"] = 60,
-						["name"] = "Bleeding Hollow Dark Shaman",
-						["xp"] = 508,
-					}, -- [8]
-					{
-						["level"] = 60,
-						["name"] = "Bleeding Hollow Riding Worg",
-						["xp"] = 279,
-					}, -- [9]
-					{
-						["level"] = 59,
-						["name"] = "Bleeding Hollow Peon",
-						["xp"] = 476,
-					}, -- [10]
-					{
-						["level"] = 61,
-						["name"] = "Bleeding Hollow Necrolyte",
-						["xp"] = 540,
-					}, -- [11]
-					{
-						["level"] = 61,
-						["name"] = "Bleeding Hollow Riding Worg",
-						["xp"] = 297,
-					}, -- [12]
-					{
-						["level"] = 61,
-						["name"] = "Bleeding Hollow Dark Shaman",
-						["xp"] = 540,
-					}, -- [13]
-					{
-						["level"] = 60,
-						["name"] = "Bleeding Hollow Skeleton",
-						["xp"] = 25,
-					}, -- [14]
-					{
-						["level"] = 61,
-						["name"] = "Bleeding Hollow Skeleton",
-						["xp"] = 27,
-					}, -- [15]
-					{
-						["level"] = 61,
-						["name"] = "Grillok \"Darkeye\"",
-						["xp"] = 810,
-					}, -- [16]
-					{
-						["level"] = 60,
-						["name"] = "Unyielding Footman",
-						["xp"] = 557,
-					}, -- [17]
-					{
-						["level"] = 59,
-						["name"] = "Unyielding Footman",
-						["xp"] = 521,
-					}, -- [18]
-					{
-						["level"] = 60,
-						["name"] = "Unyielding Knight",
-						["xp"] = 553,
-					}, -- [19]
-					{
-						["level"] = 59,
-						["name"] = "Unyielding Sorcerer",
-						["xp"] = 524,
-					}, -- [20]
-					{
-						["level"] = 60,
-						["name"] = "Unyielding Sorcerer",
-						["xp"] = 559,
-					}, -- [21]
-					{
-						["level"] = 59,
-						["name"] = "Unyielding Knight",
-						["xp"] = 514,
-					}, -- [22]
-					{
-						["level"] = 61,
-						["name"] = "Uncontrolled Voidwalker",
-						["xp"] = 594,
-					}, -- [23]
-					{
-						["level"] = 59,
-						["name"] = "Razorfang Hatchling",
-						["xp"] = 476,
-					}, -- [24]
-					{
-						["level"] = 60,
-						["name"] = "Razorfang Hatchling",
-						["xp"] = 508,
-					}, -- [25]
-					{
-						["level"] = 61,
-						["name"] = "Razorfang Ravager",
-						["xp"] = 540,
-					}, -- [26]
-					{
-						["level"] = 61,
-						["name"] = "Lieutenant Commander Thalvos",
-						["xp"] = 592,
-					}, -- [27]
-					{
-						["level"] = 61,
-						["name"] = "Deranged Helboar",
-						["xp"] = 540,
-					}, -- [28]
-					{
-						["level"] = 60,
-						["name"] = "Deranged Helboar",
-						["xp"] = 557,
-					}, -- [29]
-					{
-						["level"] = 59,
-						["name"] = "Starving Helboar",
-						["xp"] = 524,
-					}, -- [30]
-					{
-						["level"] = 58,
-						["name"] = "Starving Helboar",
-						["xp"] = 490,
-					}, -- [31]
-					{
-						["level"] = 61,
-						["name"] = "Urtrak",
-						["xp"] = 340,
-					}, -- [32]
-					{
-						["level"] = 60,
-						["name"] = "Rogue Voidwalker",
-						["xp"] = 559,
-					}, -- [33]
-					{
-						["level"] = 60,
-						["name"] = "Uncontrolled Voidwalker",
-						["xp"] = 559,
-					}, -- [34]
-					{
-						["level"] = 61,
-						["name"] = "Rogue Voidwalker",
-						["xp"] = 591,
-					}, -- [35]
-					{
-						["level"] = 58,
-						["name"] = "Bonestripper Buzzard",
-						["xp"] = 490,
-					}, -- [36]
-					{
-						["level"] = 59,
-						["name"] = "Bonestripper Buzzard",
-						["xp"] = 524,
-					}, -- [37]
-					{
-						["level"] = 60,
-						["name"] = "Gan'arg Servant",
-						["xp"] = 559,
-					}, -- [38]
-					{
-						["level"] = 62,
-						["name"] = "Razorsaw",
-						["xp"] = 624,
-					}, -- [39]
-					{
-						["level"] = 62,
-						["name"] = "Mo'arg Forgefiend",
-						["xp"] = 624,
-					}, -- [40]
-					{
-						["level"] = 60,
-						["name"] = "Fel Cannon MKI",
-						["xp"] = 594,
-					}, -- [41]
-					{
-						["level"] = 61,
-						["name"] = "Gan'arg Servant",
-						["xp"] = 559,
-					}, -- [42]
-					{
-						["level"] = 60,
-						["name"] = "Bonechewer Hungerer",
-						["xp"] = 708,
-					}, -- [43]
-					{
-						["level"] = 61,
-						["name"] = "Bonechewer Hungerer",
-						["xp"] = 754,
-					}, -- [44]
-					{
-						["level"] = 61,
-						["name"] = "Bonechewer Ravener",
-						["xp"] = 147,
-					}, -- [45]
-					{
-						["level"] = 59,
-						["name"] = "Shattered Hand Warhound",
-						["xp"] = 147,
-					}, -- [46]
-					{
-						["level"] = 60,
-						["name"] = "Bonechewer Ravener",
-						["xp"] = 710,
-					}, -- [47]
-					{
-						["level"] = 61,
-						["name"] = "Bonechewer Destroyer",
-						["xp"] = 754,
-					}, -- [48]
-					{
-						["level"] = 61,
-						["name"] = "Bleeding Hollow Archer",
-						["xp"] = 754,
-					}, -- [49]
-					{
-						["level"] = 60,
-						["name"] = "Bleeding Hollow Archer",
-						["xp"] = 710,
-					}, -- [50]
-					{
-						["level"] = 61,
-						["name"] = "Bleeding Hollow Darkcaster",
-						["xp"] = 751,
-					}, -- [51]
-					{
-						["level"] = 61,
-						["name"] = "Bleeding Hollow Scryer",
-						["xp"] = 751,
-					}, -- [52]
-					{
-						["level"] = 61,
-						["name"] = "Bonechewer Ripper",
-						["xp"] = 751,
-					}, -- [53]
-					{
-						["level"] = 60,
-						["name"] = "Bonechewer Beastmaster",
-						["xp"] = 708,
-					}, -- [54]
-					{
-						["level"] = 59,
-						["name"] = "Hellfire Watcher",
-						["xp"] = 663,
-					}, -- [55]
-					{
-						["level"] = 62,
-						["name"] = "Watchkeeper Gargolmar",
-						["xp"] = 754,
-					}, -- [56]
-					{
-						["level"] = 62,
-						["name"] = "Omor the Unscarred",
-						["xp"] = 2391,
-					}, -- [57]
-					{
-						["level"] = 58,
-						["name"] = "Hellfire Sentry",
-						["xp"] = 620,
-					}, -- [58]
-					{
-						["level"] = 62,
-						["name"] = "Vazruden",
-						["xp"] = 681,
-					}, -- [59]
-					{
-						["level"] = 62,
-						["name"] = "Nazan",
-						["xp"] = 920,
-					}, -- [60]
-					{
-						["level"] = 61,
-						["name"] = "Shattered Hand Berserker",
-						["xp"] = 195,
-					}, -- [61]
-					{
-						["level"] = 62,
-						["name"] = "Shattered Hand Berserker",
-						["xp"] = 619,
-					}, -- [62]
+				["questList"] = {
+					25300, -- [1]
+					12000, -- [2]
+					3050, -- [3]
+					15800, -- [4]
+					12000, -- [5]
+					12300, -- [6]
+					12300, -- [7]
 				},
 				["total"] = {
-					["quests"] = 202,
-					["dungeonKills"] = 15725,
-					["mobKills"] = 17289,
+					["dungeonKills"] = 17796,
+					["quests"] = 295,
+					["mobKills"] = 19877,
 				},
-				["killAverage"] = 658.1,
+				["killAverage"] = 877.8,
 				["killList"] = {
 					{
-						["mob"] = "Shattered Hand Berserker",
-						["xp"] = 619,
+						["mob"] = "Warlord Kalithresh",
+						["xp"] = 1938,
 					}, -- [1]
 					{
-						["mob"] = "Shattered Hand Berserker",
-						["xp"] = 195,
+						["mob"] = "Coilfang Myrmidon",
+						["xp"] = 760,
 					}, -- [2]
 					{
-						["mob"] = "Nazan",
-						["xp"] = 920,
+						["mob"] = "Coilfang Siren",
+						["xp"] = 760,
 					}, -- [3]
 					{
-						["mob"] = "Vazruden",
-						["xp"] = 681,
+						["mob"] = "Coilfang Sorceress",
+						["xp"] = 760,
 					}, -- [4]
 					{
-						["mob"] = "Hellfire Sentry",
-						["xp"] = 620,
+						["mob"] = "Coilfang Oracle",
+						["xp"] = 760,
 					}, -- [5]
 					{
-						["mob"] = "Hellfire Sentry",
-						["xp"] = 618,
+						["mob"] = "Coilfang Myrmidon",
+						["xp"] = 760,
 					}, -- [6]
 					{
-						["mob"] = "Bonechewer Hungerer",
-						["xp"] = 754,
+						["mob"] = "Coilfang Sorceress",
+						["xp"] = 760,
 					}, -- [7]
 					{
-						["mob"] = "Bonechewer Hungerer",
-						["xp"] = 754,
+						["mob"] = "Coilfang Oracle",
+						["xp"] = 760,
 					}, -- [8]
 					{
-						["mob"] = "Bleeding Hollow Archer",
-						["xp"] = 710,
+						["mob"] = "Coilfang Siren",
+						["xp"] = 760,
 					}, -- [9]
 					{
-						["mob"] = "Bleeding Hollow Archer",
-						["xp"] = 710,
+						["mob"] = "Coilfang Myrmidon",
+						["xp"] = 760,
 					}, -- [10]
 					{
-						["mob"] = "Bonechewer Destroyer",
-						["xp"] = 754,
+						["mob"] = "Coilfang Myrmidon",
+						["xp"] = 760,
 					}, -- [11]
 					{
-						["mob"] = "Omor the Unscarred",
-						["xp"] = 2391,
+						["mob"] = "Coilfang Oracle",
+						["xp"] = 760,
 					}, -- [12]
 					{
-						["mob"] = "Bleeding Hollow Darkcaster",
-						["xp"] = 751,
+						["mob"] = "Coilfang Siren",
+						["xp"] = 760,
 					}, -- [13]
 					{
-						["mob"] = "Bleeding Hollow Darkcaster",
-						["xp"] = 754,
+						["mob"] = "Coilfang Myrmidon",
+						["xp"] = 760,
 					}, -- [14]
 					{
-						["mob"] = "Bonechewer Hungerer",
-						["xp"] = 708,
+						["mob"] = "Coilfang Myrmidon",
+						["xp"] = 760,
 					}, -- [15]
 					{
-						["mob"] = "Bonechewer Hungerer",
-						["xp"] = 710,
+						["mob"] = "Coilfang Oracle",
+						["xp"] = 760,
 					}, -- [16]
 					{
-						["mob"] = "Bonechewer Hungerer",
-						["xp"] = 708,
+						["mob"] = "Coilfang Sorceress",
+						["xp"] = 760,
 					}, -- [17]
 					{
-						["mob"] = "Shattered Hand Warhound",
-						["xp"] = 147,
+						["mob"] = "Coilfang Myrmidon",
+						["xp"] = 760,
 					}, -- [18]
 					{
-						["mob"] = "Bleeding Hollow Darkcaster",
-						["xp"] = 754,
+						["mob"] = "Coilfang Myrmidon",
+						["xp"] = 760,
 					}, -- [19]
 					{
-						["mob"] = "Shattered Hand Warhound",
-						["xp"] = 146,
+						["mob"] = "Coilfang Sorceress",
+						["xp"] = 760,
 					}, -- [20]
 					{
-						["mob"] = "Bleeding Hollow Darkcaster",
-						["xp"] = 754,
+						["mob"] = "Coilfang Myrmidon",
+						["xp"] = 760,
 					}, -- [21]
 					{
-						["mob"] = "Bonechewer Ravener",
-						["xp"] = 754,
+						["mob"] = "Coilfang Myrmidon",
+						["xp"] = 760,
 					}, -- [22]
 					{
-						["mob"] = "Shattered Hand Warhound",
-						["xp"] = 147,
+						["mob"] = "Coilfang Siren",
+						["xp"] = 760,
 					}, -- [23]
 					{
-						["mob"] = "Shattered Hand Warhound",
-						["xp"] = 147,
+						["mob"] = "Coilfang Sorceress",
+						["xp"] = 760,
 					}, -- [24]
 					{
-						["mob"] = "Bonechewer Destroyer",
-						["xp"] = 751,
+						["mob"] = "Coilfang Myrmidon",
+						["xp"] = 760,
 					}, -- [25]
 					{
-						["mob"] = "Bonechewer Hungerer",
-						["xp"] = 752,
+						["mob"] = "Coilfang Myrmidon",
+						["xp"] = 760,
 					}, -- [26]
 					{
-						["mob"] = "Shattered Hand Warhound",
-						["xp"] = 146,
+						["mob"] = "Steamrigger Mechanic",
+						["xp"] = 168,
 					}, -- [27]
 					{
-						["mob"] = "Shattered Hand Warhound",
-						["xp"] = 145,
+						["mob"] = "Steamrigger Mechanic",
+						["xp"] = 168,
 					}, -- [28]
 					{
-						["mob"] = "Bleeding Hollow Darkcaster",
-						["xp"] = 751,
+						["mob"] = "Steamrigger Mechanic",
+						["xp"] = 168,
 					}, -- [29]
 					{
-						["mob"] = "Bonechewer Destroyer",
-						["xp"] = 754,
+						["mob"] = "Steamrigger Mechanic",
+						["xp"] = 168,
 					}, -- [30]
 					{
-						["mob"] = "Bleeding Hollow Archer",
-						["xp"] = 754,
+						["mob"] = "Mekgineer Steamrigger",
+						["xp"] = 1279,
 					}, -- [31]
 					{
-						["mob"] = "Bleeding Hollow Archer",
-						["xp"] = 710,
+						["mob"] = "Steamrigger Mechanic",
+						["xp"] = 168,
 					}, -- [32]
 					{
-						["mob"] = "Bonechewer Destroyer",
-						["xp"] = 754,
+						["mob"] = "Steamrigger Mechanic",
+						["xp"] = 168,
 					}, -- [33]
 					{
-						["mob"] = "Bonechewer Destroyer",
-						["xp"] = 754,
+						["mob"] = "Steamrigger Mechanic",
+						["xp"] = 168,
 					}, -- [34]
 					{
-						["mob"] = "Bonechewer Ripper",
-						["xp"] = 751,
+						["mob"] = "Steamrigger Mechanic",
+						["xp"] = 168,
 					}, -- [35]
 					{
-						["mob"] = "Bleeding Hollow Scryer",
-						["xp"] = 754,
+						["mob"] = "Steamrigger Mechanic",
+						["xp"] = 168,
 					}, -- [36]
 					{
-						["mob"] = "Bleeding Hollow Scryer",
-						["xp"] = 751,
+						["mob"] = "Steamrigger Mechanic",
+						["xp"] = 168,
 					}, -- [37]
 					{
-						["mob"] = "Bleeding Hollow Scryer",
-						["xp"] = 751,
+						["mob"] = "Steamrigger Mechanic",
+						["xp"] = 168,
 					}, -- [38]
 					{
-						["mob"] = "Bleeding Hollow Scryer",
-						["xp"] = 754,
+						["mob"] = "Steamrigger Mechanic",
+						["xp"] = 168,
 					}, -- [39]
 					{
-						["mob"] = "Bonechewer Hungerer",
-						["xp"] = 710,
+						["mob"] = "Coilfang Leper",
+						["xp"] = 168,
 					}, -- [40]
 					{
-						["mob"] = "Bonechewer Hungerer",
-						["xp"] = 754,
+						["mob"] = "Coilfang Leper",
+						["xp"] = 168,
 					}, -- [41]
 					{
-						["mob"] = "Bonechewer Destroyer",
-						["xp"] = 752,
+						["mob"] = "Coilfang Leper",
+						["xp"] = 168,
 					}, -- [42]
 					{
-						["mob"] = "Shattered Hand Warhound",
-						["xp"] = 145,
+						["mob"] = "Coilfang Leper",
+						["xp"] = 168,
 					}, -- [43]
 					{
-						["mob"] = "Shattered Hand Warhound",
-						["xp"] = 146,
+						["mob"] = "Coilfang Leper",
+						["xp"] = 168,
 					}, -- [44]
 					{
-						["mob"] = "Bleeding Hollow Archer",
-						["xp"] = 754,
+						["mob"] = "Coilfang Leper",
+						["xp"] = 168,
 					}, -- [45]
 					{
-						["mob"] = "Bleeding Hollow Archer",
-						["xp"] = 752,
+						["mob"] = "Coilfang Leper",
+						["xp"] = 168,
 					}, -- [46]
 					{
-						["mob"] = "Bonechewer Destroyer",
-						["xp"] = 750,
+						["mob"] = "Coilfang Leper",
+						["xp"] = 168,
 					}, -- [47]
 					{
-						["mob"] = "Bleeding Hollow Darkcaster",
-						["xp"] = 754,
+						["mob"] = "Coilfang Leper",
+						["xp"] = 168,
 					}, -- [48]
 					{
-						["mob"] = "Bleeding Hollow Darkcaster",
-						["xp"] = 754,
+						["mob"] = "Coilfang Leper",
+						["xp"] = 168,
 					}, -- [49]
 					{
-						["mob"] = "Watchkeeper Gargolmar",
-						["xp"] = 1213,
+						["mob"] = "Coilfang Leper",
+						["xp"] = 168,
 					}, -- [50]
 					{
-						["mob"] = "Bonechewer Destroyer",
-						["xp"] = 754,
+						["mob"] = "Coilfang Leper",
+						["xp"] = 168,
 					}, -- [51]
 					{
-						["mob"] = "Bonechewer Ravener",
-						["xp"] = 707,
+						["mob"] = "Coilfang Leper",
+						["xp"] = 168,
 					}, -- [52]
 					{
-						["mob"] = "Bonechewer Destroyer",
-						["xp"] = 752,
+						["mob"] = "Coilfang Leper",
+						["xp"] = 168,
 					}, -- [53]
 					{
-						["mob"] = "Hellfire Watcher",
-						["xp"] = 663,
+						["mob"] = "Coilfang Leper",
+						["xp"] = 168,
 					}, -- [54]
 					{
-						["mob"] = "Hellfire Watcher",
-						["xp"] = 664,
+						["mob"] = "Coilfang Leper",
+						["xp"] = 168,
 					}, -- [55]
 					{
-						["mob"] = "Bonechewer Ravener",
-						["xp"] = 754,
+						["mob"] = "Dreghood Slave",
+						["xp"] = 760,
 					}, -- [56]
 					{
-						["mob"] = "Shattered Hand Warhound",
-						["xp"] = 146,
+						["mob"] = "Coilfang Slavemaster",
+						["xp"] = 760,
 					}, -- [57]
 					{
-						["mob"] = "Shattered Hand Warhound",
-						["xp"] = 147,
+						["mob"] = "Coilfang Slavemaster",
+						["xp"] = 760,
 					}, -- [58]
 					{
-						["mob"] = "Bonechewer Destroyer",
-						["xp"] = 752,
+						["mob"] = "Coilfang Slavemaster",
+						["xp"] = 760,
 					}, -- [59]
 					{
-						["mob"] = "Bonechewer Hungerer",
-						["xp"] = 710,
+						["mob"] = "Coilfang Slavemaster",
+						["xp"] = 760,
 					}, -- [60]
 					{
-						["mob"] = "Shattered Hand Warhound",
-						["xp"] = 146,
+						["mob"] = "Hydromancer Thespia",
+						["xp"] = 1279,
 					}, -- [61]
 					{
-						["mob"] = "Shattered Hand Warhound",
-						["xp"] = 146,
+						["mob"] = "Coilfang Water Elemental",
+						["xp"] = 168,
 					}, -- [62]
 					{
-						["mob"] = "Bleeding Hollow Darkcaster",
-						["xp"] = 754,
+						["mob"] = "Coilfang Water Elemental",
+						["xp"] = 168,
 					}, -- [63]
 					{
-						["mob"] = "Bonechewer Ravener",
-						["xp"] = 710,
+						["mob"] = "Coilfang Warrior",
+						["xp"] = 760,
 					}, -- [64]
 					{
-						["mob"] = "Bonechewer Hungerer",
-						["xp"] = 710,
+						["mob"] = "Coilfang Siren",
+						["xp"] = 760,
 					}, -- [65]
 					{
-						["mob"] = "Bonechewer Hungerer",
-						["xp"] = 754,
+						["mob"] = "Coilfang Siren",
+						["xp"] = 760,
 					}, -- [66]
 					{
-						["mob"] = "Shattered Hand Warhound",
-						["xp"] = 147,
+						["mob"] = "Coilfang Warrior",
+						["xp"] = 760,
 					}, -- [67]
 					{
-						["mob"] = "Shattered Hand Warhound",
-						["xp"] = 147,
+						["mob"] = "Coilfang Oracle",
+						["xp"] = 760,
 					}, -- [68]
 					{
-						["mob"] = "Bonechewer Hungerer",
-						["xp"] = 751,
+						["mob"] = "Coilfang Warrior",
+						["xp"] = 760,
 					}, -- [69]
 					{
-						["mob"] = "Bonechewer Destroyer",
-						["xp"] = 752,
+						["mob"] = "Coilfang Siren",
+						["xp"] = 760,
 					}, -- [70]
 					{
-						["mob"] = "Bleeding Hollow Darkcaster",
-						["xp"] = 751,
+						["mob"] = "Coilfang Oracle",
+						["xp"] = 760,
 					}, -- [71]
 					{
-						["mob"] = "Bleeding Hollow Darkcaster",
-						["xp"] = 751,
+						["mob"] = "Coilfang Warrior",
+						["xp"] = 760,
 					}, -- [72]
 					{
-						["mob"] = "Bonechewer Destroyer",
-						["xp"] = 754,
+						["mob"] = "Coilfang Warrior",
+						["xp"] = 760,
 					}, -- [73]
 					{
-						["mob"] = "Bonechewer Destroyer",
-						["xp"] = 754,
+						["mob"] = "Coilfang Sorceress",
+						["xp"] = 760,
 					}, -- [74]
 					{
-						["mob"] = "Bonechewer Beastmaster",
-						["xp"] = 708,
+						["mob"] = "Coilfang Myrmidon",
+						["xp"] = 760,
 					}, -- [75]
 					{
-						["mob"] = "Shattered Hand Warhound",
-						["xp"] = 147,
+						["mob"] = "Coilfang Myrmidon",
+						["xp"] = 760,
 					}, -- [76]
 					{
-						["mob"] = "Shattered Hand Warhound",
-						["xp"] = 147,
+						["mob"] = "Coilfang Warrior",
+						["xp"] = 760,
 					}, -- [77]
 					{
-						["mob"] = "Shattered Hand Warhound",
-						["xp"] = 147,
+						["mob"] = "Coilfang Engineer",
+						["xp"] = 760,
 					}, -- [78]
 					{
-						["mob"] = "Bonechewer Ravener",
-						["xp"] = 710,
+						["mob"] = "Coilfang Engineer",
+						["xp"] = 760,
 					}, -- [79]
 					{
-						["mob"] = "Shattered Hand Warhound",
-						["xp"] = 146,
+						["mob"] = "Coilfang Oracle",
+						["xp"] = 760,
 					}, -- [80]
 					{
-						["mob"] = "Shattered Hand Warhound",
-						["xp"] = 147,
+						["mob"] = "Bog Overlord",
+						["xp"] = 760,
 					}, -- [81]
 					{
-						["mob"] = "Bonechewer Ripper",
-						["xp"] = 751,
+						["mob"] = "Coilfang Warrior",
+						["xp"] = 760,
 					}, -- [82]
 					{
-						["mob"] = "Bleeding Hollow Scryer",
-						["xp"] = 752,
+						["mob"] = "Coilfang Siren",
+						["xp"] = 760,
 					}, -- [83]
 					{
-						["mob"] = "Bleeding Hollow Scryer",
-						["xp"] = 754,
+						["mob"] = "Coilfang Warrior",
+						["xp"] = 760,
 					}, -- [84]
 					{
-						["mob"] = "Bleeding Hollow Scryer",
-						["xp"] = 754,
+						["mob"] = "Coilfang Warrior",
+						["xp"] = 760,
 					}, -- [85]
 					{
-						["mob"] = "Bonechewer Hungerer",
-						["xp"] = 751,
+						["mob"] = "Epoch Hunter",
+						["xp"] = 2104,
 					}, -- [86]
 					{
-						["mob"] = "Bonechewer Hungerer",
-						["xp"] = 754,
+						["mob"] = "Infinite Defiler",
+						["xp"] = 696,
 					}, -- [87]
 					{
-						["mob"] = "Shattered Hand Warhound",
-						["xp"] = 147,
+						["mob"] = "Infinite Saboteur",
+						["xp"] = 696,
 					}, -- [88]
 					{
-						["mob"] = "Shattered Hand Warhound",
-						["xp"] = 146,
+						["mob"] = "Infinite Slayer",
+						["xp"] = 696,
 					}, -- [89]
 					{
-						["mob"] = "Bonechewer Destroyer",
-						["xp"] = 752,
+						["mob"] = "Infinite Slayer",
+						["xp"] = 696,
 					}, -- [90]
 					{
-						["mob"] = "Bleeding Hollow Darkcaster",
-						["xp"] = 751,
+						["mob"] = "Infinite Saboteur",
+						["xp"] = 696,
 					}, -- [91]
 					{
-						["mob"] = "Bleeding Hollow Darkcaster",
-						["xp"] = 754,
+						["mob"] = "Infinite Defiler",
+						["xp"] = 696,
 					}, -- [92]
 					{
-						["mob"] = "Bleeding Hollow Archer",
-						["xp"] = 754,
+						["mob"] = "Infinite Slayer",
+						["xp"] = 696,
 					}, -- [93]
 					{
-						["mob"] = "Bleeding Hollow Archer",
-						["xp"] = 710,
+						["mob"] = "Infinite Slayer",
+						["xp"] = 652,
 					}, -- [94]
 					{
-						["mob"] = "Bonechewer Destroyer",
-						["xp"] = 754,
+						["mob"] = "Infinite Saboteur",
+						["xp"] = 652,
 					}, -- [95]
 					{
-						["mob"] = "Bleeding Hollow Archer",
-						["xp"] = 707,
+						["mob"] = "Infinite Defiler",
+						["xp"] = 696,
 					}, -- [96]
 					{
-						["mob"] = "Bleeding Hollow Archer",
-						["xp"] = 752,
+						["mob"] = "Tarren Mill Lookout",
+						["xp"] = 652,
 					}, -- [97]
 					{
-						["mob"] = "Bonechewer Destroyer",
-						["xp"] = 754,
+						["mob"] = "Tarren Mill Protector",
+						["xp"] = 652,
 					}, -- [98]
 					{
-						["mob"] = "Bonechewer Ravener",
-						["xp"] = 710,
+						["mob"] = "Tarren Mill Guardsman",
+						["xp"] = 696,
 					}, -- [99]
 					{
-						["mob"] = "Shattered Hand Warhound",
-						["xp"] = 146,
+						["mob"] = "Tarren Mill Lookout",
+						["xp"] = 652,
 					}, -- [100]
 				},
 				["timer"] = {
-					["start"] = 354891.03,
-					["total"] = 171000,
-					["lastUpdated"] = 357825.031,
-					["xpPerSec"] = 58.28218872454394,
+					["start"] = 2186.773,
+					["total"] = 250380,
+					["lastUpdated"] = 11452.775,
+					["xpPerSec"] = 27.02136261140457,
 				},
+				["npcXP"] = {
+					{
+						["level"] = 68,
+						["name"] = "Artifact Seeker",
+						["xp"] = 546,
+					}, -- [1]
+					{
+						["level"] = 69,
+						["name"] = "Pentatharon",
+						["xp"] = 580,
+					}, -- [2]
+					{
+						["level"] = 67,
+						["name"] = "Artifact Seeker",
+						["xp"] = 512,
+					}, -- [3]
+					{
+						["level"] = 68,
+						["name"] = "Blackfang Tarantula",
+						["xp"] = 150,
+					}, -- [4]
+					{
+						["level"] = 67,
+						["name"] = "Blackfang Tarantula",
+						["xp"] = 141,
+					}, -- [5]
+					{
+						["level"] = 67,
+						["name"] = "Sable Jaguar",
+						["xp"] = 141,
+					}, -- [6]
+					{
+						["level"] = 71,
+						["name"] = "Rift Keeper",
+						["xp"] = 964,
+					}, -- [7]
+					{
+						["level"] = 71,
+						["name"] = "Rift Lord",
+						["xp"] = 964,
+					}, -- [8]
+					{
+						["level"] = 72,
+						["name"] = "Chrono Lord Deja",
+						["xp"] = 1268,
+					}, -- [9]
+					{
+						["level"] = 68,
+						["name"] = "Darkwater Crocolisk",
+						["xp"] = 150,
+					}, -- [10]
+					{
+						["level"] = 67,
+						["name"] = "Darkwater Crocolisk",
+						["xp"] = 141,
+					}, -- [11]
+					{
+						["level"] = 72,
+						["name"] = "Temporus",
+						["xp"] = 1268,
+					}, -- [12]
+					{
+						["level"] = 66,
+						["name"] = "Gan'arg Tinkerer",
+						["xp"] = 273,
+					}, -- [13]
+					{
+						["level"] = 68,
+						["name"] = "Gan'arg Tinkerer",
+						["xp"] = 256,
+					}, -- [14]
+					{
+						["level"] = 67,
+						["name"] = "Gan'arg Tinkerer",
+						["xp"] = 256,
+					}, -- [15]
+					{
+						["level"] = 67,
+						["name"] = "Mo'arg Engineer",
+						["xp"] = 1048,
+					}, -- [16]
+					{
+						["level"] = 68,
+						["name"] = "Mo'arg Engineer",
+						["xp"] = 1118,
+					}, -- [17]
+					{
+						["level"] = 68,
+						["name"] = "Felguard Legionnaire",
+						["xp"] = 1118,
+					}, -- [18]
+					{
+						["level"] = 67,
+						["name"] = "Durnholde Sentry",
+						["xp"] = 652,
+					}, -- [19]
+					{
+						["level"] = 65,
+						["name"] = "Durnholde Tracking Hound",
+						["xp"] = 263,
+					}, -- [20]
+					{
+						["level"] = 67,
+						["name"] = "Durnholde Rifleman",
+						["xp"] = 652,
+					}, -- [21]
+					{
+						["level"] = 67,
+						["name"] = "Durnholde Warden",
+						["xp"] = 652,
+					}, -- [22]
+					{
+						["level"] = 66,
+						["name"] = "Durnholde Sentry",
+						["xp"] = 609,
+					}, -- [23]
+					{
+						["level"] = 68,
+						["name"] = "Lieutenant Drake",
+						["xp"] = 1068,
+					}, -- [24]
+					{
+						["level"] = 67,
+						["name"] = "Durnholde Veteran",
+						["xp"] = 652,
+					}, -- [25]
+					{
+						["level"] = 67,
+						["name"] = "Durnholde Mage",
+						["xp"] = 652,
+					}, -- [26]
+					{
+						["level"] = 68,
+						["name"] = "Captain Skarloc",
+						["xp"] = 1068,
+					}, -- [27]
+					{
+						["level"] = 65,
+						["name"] = "Lordaeron Watchman",
+						["xp"] = 565,
+					}, -- [28]
+					{
+						["level"] = 65,
+						["name"] = "Lordaeron Sentry",
+						["xp"] = 565,
+					}, -- [29]
+					{
+						["level"] = 68,
+						["name"] = "Tarren Mill Lookout",
+						["xp"] = 696,
+					}, -- [30]
+					{
+						["level"] = 67,
+						["name"] = "Tarren Mill Protector",
+						["xp"] = 652,
+					}, -- [31]
+					{
+						["level"] = 67,
+						["name"] = "Tarren Mill Guardsman",
+						["xp"] = 652,
+					}, -- [32]
+					{
+						["level"] = 67,
+						["name"] = "Tarren Mill Lookout",
+						["xp"] = 652,
+					}, -- [33]
+					{
+						["level"] = 68,
+						["name"] = "Tarren Mill Guardsman",
+						["xp"] = 696,
+					}, -- [34]
+					{
+						["level"] = 68,
+						["name"] = "Infinite Defiler",
+						["xp"] = 696,
+					}, -- [35]
+					{
+						["level"] = 67,
+						["name"] = "Infinite Slayer",
+						["xp"] = 652,
+					}, -- [36]
+					{
+						["level"] = 68,
+						["name"] = "Infinite Slayer",
+						["xp"] = 696,
+					}, -- [37]
+					{
+						["level"] = 68,
+						["name"] = "Infinite Saboteur",
+						["xp"] = 696,
+					}, -- [38]
+					{
+						["level"] = 68,
+						["name"] = "Epoch Hunter",
+						["xp"] = 2104,
+					}, -- [39]
+					{
+						["level"] = 70,
+						["name"] = "Coilfang Warrior",
+						["xp"] = 760,
+					}, -- [40]
+					{
+						["level"] = 70,
+						["name"] = "Coilfang Siren",
+						["xp"] = 760,
+					}, -- [41]
+					{
+						["level"] = 70,
+						["name"] = "Bog Overlord",
+						["xp"] = 760,
+					}, -- [42]
+					{
+						["level"] = 70,
+						["name"] = "Coilfang Oracle",
+						["xp"] = 760,
+					}, -- [43]
+					{
+						["level"] = 70,
+						["name"] = "Coilfang Engineer",
+						["xp"] = 760,
+					}, -- [44]
+					{
+						["level"] = 70,
+						["name"] = "Coilfang Myrmidon",
+						["xp"] = 760,
+					}, -- [45]
+					{
+						["level"] = 70,
+						["name"] = "Coilfang Sorceress",
+						["xp"] = 760,
+					}, -- [46]
+					{
+						["level"] = 70,
+						["name"] = "Coilfang Water Elemental",
+						["xp"] = 168,
+					}, -- [47]
+					{
+						["level"] = 72,
+						["name"] = "Hydromancer Thespia",
+						["xp"] = 1279,
+					}, -- [48]
+					{
+						["level"] = 70,
+						["name"] = "Coilfang Slavemaster",
+						["xp"] = 760,
+					}, -- [49]
+					{
+						["level"] = 70,
+						["name"] = "Dreghood Slave",
+						["xp"] = 760,
+					}, -- [50]
+					{
+						["level"] = 70,
+						["name"] = "Coilfang Leper",
+						["xp"] = 168,
+					}, -- [51]
+					{
+						["level"] = 70,
+						["name"] = "Steamrigger Mechanic",
+						["xp"] = 168,
+					}, -- [52]
+					{
+						["level"] = 72,
+						["name"] = "Mekgineer Steamrigger",
+						["xp"] = 1279,
+					}, -- [53]
+					{
+						["level"] = 72,
+						["name"] = "Warlord Kalithresh",
+						["xp"] = 1938,
+					}, -- [54]
+				},
+				["questAverage"] = 13250,
 				["dungeonList"] = {
+					{
+						["totalXP"] = 49056,
+						["name"] = "The Steamvault",
+						["rested"] = 49056,
+						["killTotal"] = 49056,
+						["level"] = 69,
+						["killCount"] = 85,
+						["inProgress"] = false,
+					}, -- [1]
+					{
+						["totalXP"] = 63484,
+						["name"] = "Old Hillsbrad Foothills",
+						["rested"] = 63484,
+						["killTotal"] = 63484,
+						["level"] = 69,
+						["killCount"] = 93,
+						["inProgress"] = false,
+					}, -- [2]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 19701,
+						["killCount"] = 28,
+						["killTotal"] = 19701,
+						["level"] = 69,
+						["rested"] = 19701,
+						["name"] = "The Black Morass",
+					}, -- [3]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 12336,
+						["killCount"] = 21,
+						["killTotal"] = 12336,
+						["level"] = 69,
+						["rested"] = 12336,
+						["name"] = "The Black Morass",
+					}, -- [4]
+					{
+						["killCount"] = 120,
+						["name"] = "Sethekk Halls",
+						["inProgress"] = false,
+						["killTotal"] = 61680,
+						["level"] = 68,
+						["rested"] = 61680,
+						["totalXP"] = 61680,
+					}, -- [5]
+					{
+						["killCount"] = 29,
+						["name"] = "The Black Morass",
+						["inProgress"] = false,
+						["killTotal"] = 18714,
+						["level"] = 68,
+						["rested"] = 18714,
+						["totalXP"] = 18714,
+					}, -- [6]
+					{
+						["totalXP"] = 11882,
+						["name"] = "The Black Morass",
+						["rested"] = 11882,
+						["killTotal"] = 11882,
+						["level"] = 68,
+						["killCount"] = 27,
+						["inProgress"] = false,
+					}, -- [7]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 28710,
+						["killCount"] = 37,
+						["killTotal"] = 28710,
+						["level"] = 68,
+						["rested"] = 28710,
+						["name"] = "Shadow Labyrinth",
+					}, -- [8]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 20705,
+						["killCount"] = 33,
+						["killTotal"] = 20705,
+						["level"] = 68,
+						["rested"] = 20705,
+						["name"] = "The Black Morass",
+					}, -- [9]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 19967,
+						["killCount"] = 42,
+						["killTotal"] = 19967,
+						["level"] = 68,
+						["rested"] = 19967,
+						["name"] = "The Black Morass",
+					}, -- [10]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 55671,
+						["killCount"] = 92,
+						["killTotal"] = 55671,
+						["level"] = 68,
+						["rested"] = 55671,
+						["name"] = "Old Hillsbrad Foothills",
+					}, -- [11]
+					{
+						["totalXP"] = 83614,
+						["name"] = "Mana-Tombs",
+						["rested"] = 83614,
+						["killTotal"] = 83614,
+						["level"] = 67,
+						["killCount"] = 149,
+						["inProgress"] = false,
+					}, -- [12]
+					{
+						["totalXP"] = 75356,
+						["name"] = "Sethekk Halls",
+						["rested"] = 75356,
+						["killTotal"] = 75356,
+						["level"] = 67,
+						["killCount"] = 130,
+						["inProgress"] = false,
+					}, -- [13]
+					{
+						["name"] = "Sethekk Halls",
+						["totalXP"] = 53742,
+						["rested"] = 10177,
+						["killTotal"] = 53742,
+						["level"] = 67,
+						["inProgress"] = false,
+						["killCount"] = 103,
+					}, -- [14]
+					{
+						["totalXP"] = 29062,
+						["name"] = "Shadow Labyrinth",
+						["rested"] = 0,
+						["killTotal"] = 29062,
+						["level"] = 67,
+						["killCount"] = 38,
+						["inProgress"] = false,
+					}, -- [15]
+					{
+						["totalXP"] = 32725,
+						["name"] = "Shadow Labyrinth",
+						["rested"] = 17092,
+						["killTotal"] = 32725,
+						["level"] = 67,
+						["killCount"] = 43,
+						["inProgress"] = false,
+					}, -- [16]
+					{
+						["totalXP"] = 32184,
+						["name"] = "Shadow Labyrinth",
+						["rested"] = 32184,
+						["killTotal"] = 32184,
+						["level"] = 66,
+						["killCount"] = 42,
+						["inProgress"] = false,
+					}, -- [17]
+					{
+						["totalXP"] = 27454,
+						["name"] = "Shadow Labyrinth",
+						["rested"] = 27454,
+						["killTotal"] = 27454,
+						["level"] = 66,
+						["killCount"] = 43,
+						["inProgress"] = false,
+					}, -- [18]
+					{
+						["totalXP"] = 27819,
+						["name"] = "Shadow Labyrinth",
+						["rested"] = 27819,
+						["killTotal"] = 27819,
+						["level"] = 66,
+						["killCount"] = 43,
+						["inProgress"] = false,
+					}, -- [19]
+					{
+						["totalXP"] = 31164,
+						["name"] = "Shadow Labyrinth",
+						["rested"] = 31164,
+						["killTotal"] = 31164,
+						["level"] = 66,
+						["killCount"] = 42,
+						["inProgress"] = false,
+					}, -- [20]
+					{
+						["totalXP"] = 28409,
+						["name"] = "Shadow Labyrinth",
+						["rested"] = 28409,
+						["killTotal"] = 28409,
+						["level"] = 66,
+						["killCount"] = 39,
+						["inProgress"] = false,
+					}, -- [21]
+					{
+						["totalXP"] = 27559,
+						["name"] = "Shadow Labyrinth",
+						["rested"] = 27559,
+						["killTotal"] = 27559,
+						["level"] = 66,
+						["killCount"] = 41,
+						["inProgress"] = false,
+					}, -- [22]
+					{
+						["totalXP"] = 27559,
+						["name"] = "Shadow Labyrinth",
+						["rested"] = 27559,
+						["killTotal"] = 27559,
+						["level"] = 66,
+						["killCount"] = 41,
+						["inProgress"] = false,
+					}, -- [23]
+					{
+						["totalXP"] = 29443,
+						["name"] = "Shadow Labyrinth",
+						["rested"] = 29443,
+						["killTotal"] = 29443,
+						["level"] = 65,
+						["killCount"] = 40,
+						["inProgress"] = false,
+					}, -- [24]
+					{
+						["name"] = "Shadow Labyrinth",
+						["totalXP"] = 6713,
+						["rested"] = 0,
+						["killTotal"] = 6713,
+						["level"] = 65,
+						["inProgress"] = false,
+						["killCount"] = 9,
+					}, -- [25]
+					{
+						["name"] = "Shadow Labyrinth",
+						["totalXP"] = 19733,
+						["rested"] = 0,
+						["killTotal"] = 19733,
+						["level"] = 65,
+						["inProgress"] = false,
+						["killCount"] = 33,
+					}, -- [26]
+					{
+						["name"] = "Shadow Labyrinth",
+						["totalXP"] = 26306,
+						["rested"] = 6447,
+						["killTotal"] = 26306,
+						["level"] = 65,
+						["inProgress"] = false,
+						["killCount"] = 42,
+					}, -- [27]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 30994,
+						["killCount"] = 41,
+						["killTotal"] = 30994,
+						["level"] = 65,
+						["rested"] = 15909,
+						["name"] = "Shadow Labyrinth",
+					}, -- [28]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 31115,
+						["killCount"] = 42,
+						["killTotal"] = 31115,
+						["level"] = 65,
+						["rested"] = 31115,
+						["name"] = "Shadow Labyrinth",
+					}, -- [29]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 30924,
+						["killCount"] = 41,
+						["killTotal"] = 30924,
+						["level"] = 65,
+						["rested"] = 30924,
+						["name"] = "Shadow Labyrinth",
+					}, -- [30]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 28561,
+						["killCount"] = 39,
+						["killTotal"] = 28561,
+						["level"] = 65,
+						["rested"] = 28561,
+						["name"] = "Shadow Labyrinth",
+					}, -- [31]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 31010,
+						["killCount"] = 42,
+						["killTotal"] = 31010,
+						["level"] = 65,
+						["rested"] = 31010,
+						["name"] = "Shadow Labyrinth",
+					}, -- [32]
+					{
+						["totalXP"] = 44008,
+						["name"] = "The Underbog",
+						["rested"] = 44008,
+						["killTotal"] = 44008,
+						["level"] = 65,
+						["killCount"] = 67,
+						["inProgress"] = false,
+					}, -- [33]
+					{
+						["totalXP"] = 19709,
+						["name"] = "The Underbog",
+						["rested"] = 19709,
+						["killTotal"] = 19709,
+						["level"] = 65,
+						["killCount"] = 29,
+						["inProgress"] = false,
+					}, -- [34]
+					{
+						["totalXP"] = 643,
+						["name"] = "The Slave Pens",
+						["rested"] = 643,
+						["killTotal"] = 643,
+						["level"] = 64,
+						["killCount"] = 1,
+						["inProgress"] = false,
+					}, -- [35]
+					{
+						["name"] = "The Slave Pens",
+						["totalXP"] = 64460,
+						["rested"] = 64460,
+						["killTotal"] = 64460,
+						["level"] = 64,
+						["inProgress"] = false,
+						["killCount"] = 109,
+					}, -- [36]
+					{
+						["name"] = "The Underbog",
+						["totalXP"] = 20638,
+						["rested"] = 20638,
+						["killTotal"] = 20638,
+						["level"] = 64,
+						["inProgress"] = false,
+						["killCount"] = 33,
+					}, -- [37]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 53364,
+						["killCount"] = 100,
+						["killTotal"] = 53364,
+						["level"] = 63,
+						["rested"] = 53364,
+						["name"] = "Hellfire Ramparts",
+					}, -- [38]
+					{
+						["killCount"] = 42,
+						["name"] = "Hellfire Ramparts",
+						["inProgress"] = false,
+						["killTotal"] = 20545,
+						["level"] = 63,
+						["rested"] = 20545,
+						["totalXP"] = 20545,
+					}, -- [39]
 					{
 						["killCount"] = 104,
 						["name"] = "Hellfire Ramparts",
@@ -6154,7 +6572,7 @@ XToLevelDB = {
 						["level"] = 61,
 						["rested"] = 65313,
 						["totalXP"] = 65313,
-					}, -- [1]
+					}, -- [40]
 					{
 						["killCount"] = 138,
 						["name"] = "The Blood Furnace",
@@ -6163,7 +6581,7 @@ XToLevelDB = {
 						["level"] = 60,
 						["rested"] = 0,
 						["totalXP"] = 69598,
-					}, -- [2]
+					}, -- [41]
 					{
 						["killCount"] = 30,
 						["name"] = "Hellfire Ramparts",
@@ -6172,7 +6590,7 @@ XToLevelDB = {
 						["level"] = 60,
 						["rested"] = 166,
 						["totalXP"] = 18579,
-					}, -- [3]
+					}, -- [42]
 					{
 						["totalXP"] = 36234,
 						["name"] = "Hellfire Ramparts",
@@ -6181,7 +6599,7 @@ XToLevelDB = {
 						["level"] = 60,
 						["killCount"] = 56,
 						["inProgress"] = false,
-					}, -- [4]
+					}, -- [43]
 					{
 						["name"] = "Hellfire Ramparts",
 						["totalXP"] = 57919,
@@ -6190,7 +6608,7 @@ XToLevelDB = {
 						["level"] = 60,
 						["inProgress"] = false,
 						["killCount"] = 96,
-					}, -- [5]
+					}, -- [44]
 					{
 						["totalXP"] = 58654,
 						["name"] = "The Blood Furnace",
@@ -6199,7 +6617,7 @@ XToLevelDB = {
 						["level"] = 60,
 						["killCount"] = 138,
 						["inProgress"] = false,
-					}, -- [6]
+					}, -- [45]
 					{
 						["totalXP"] = 34891,
 						["name"] = "Hellfire Ramparts",
@@ -6208,7 +6626,7 @@ XToLevelDB = {
 						["level"] = 60,
 						["killCount"] = 93,
 						["inProgress"] = false,
-					}, -- [7]
+					}, -- [46]
 					{
 						["name"] = "Hellfire Ramparts",
 						["totalXP"] = 47713,
@@ -6217,7 +6635,7 @@ XToLevelDB = {
 						["level"] = 59,
 						["inProgress"] = false,
 						["killCount"] = 86,
-					}, -- [8]
+					}, -- [47]
 					{
 						["name"] = "Hellfire Ramparts",
 						["totalXP"] = 50433,
@@ -6226,7 +6644,7 @@ XToLevelDB = {
 						["level"] = 59,
 						["inProgress"] = false,
 						["killCount"] = 96,
-					}, -- [9]
+					}, -- [48]
 					{
 						["name"] = "Hellfire Ramparts",
 						["totalXP"] = 50325,
@@ -6235,7 +6653,7 @@ XToLevelDB = {
 						["level"] = 59,
 						["inProgress"] = false,
 						["killCount"] = 96,
-					}, -- [10]
+					}, -- [49]
 					{
 						["name"] = "Hellfire Ramparts",
 						["totalXP"] = 51777,
@@ -6244,7 +6662,7 @@ XToLevelDB = {
 						["level"] = 58,
 						["inProgress"] = false,
 						["killCount"] = 103,
-					}, -- [11]
+					}, -- [50]
 					{
 						["killCount"] = 7,
 						["name"] = "Hellfire Ramparts",
@@ -6253,7 +6671,7 @@ XToLevelDB = {
 						["level"] = 58,
 						["rested"] = 3622,
 						["totalXP"] = 3622,
-					}, -- [12]
+					}, -- [51]
 					{
 						["inProgress"] = false,
 						["totalXP"] = 12001,
@@ -6262,7 +6680,7 @@ XToLevelDB = {
 						["level"] = 57,
 						["rested"] = 0,
 						["name"] = "Stratholme",
-					}, -- [13]
+					}, -- [52]
 					{
 						["inProgress"] = false,
 						["totalXP"] = 12490,
@@ -6271,7 +6689,7 @@ XToLevelDB = {
 						["level"] = 57,
 						["rested"] = 0,
 						["name"] = "Stratholme",
-					}, -- [14]
+					}, -- [53]
 					{
 						["inProgress"] = false,
 						["totalXP"] = 10840,
@@ -6280,7 +6698,7 @@ XToLevelDB = {
 						["level"] = 57,
 						["rested"] = 0,
 						["name"] = "Stratholme",
-					}, -- [15]
+					}, -- [54]
 					{
 						["inProgress"] = false,
 						["totalXP"] = 10743,
@@ -6289,7 +6707,7 @@ XToLevelDB = {
 						["level"] = 57,
 						["rested"] = 10743,
 						["name"] = "Stratholme",
-					}, -- [16]
+					}, -- [55]
 					{
 						["killCount"] = 60,
 						["name"] = "Stratholme",
@@ -6298,7 +6716,7 @@ XToLevelDB = {
 						["level"] = 56,
 						["rested"] = 0,
 						["totalXP"] = 9638,
-					}, -- [17]
+					}, -- [56]
 					{
 						["killCount"] = 63,
 						["name"] = "Stratholme",
@@ -6307,7 +6725,7 @@ XToLevelDB = {
 						["level"] = 56,
 						["rested"] = 0,
 						["totalXP"] = 8846,
-					}, -- [18]
+					}, -- [57]
 					{
 						["killCount"] = 68,
 						["name"] = "Stratholme",
@@ -6316,7 +6734,7 @@ XToLevelDB = {
 						["level"] = 56,
 						["rested"] = 0,
 						["totalXP"] = 11295,
-					}, -- [19]
+					}, -- [58]
 					{
 						["killCount"] = 47,
 						["name"] = "Stratholme",
@@ -6325,7 +6743,7 @@ XToLevelDB = {
 						["level"] = 56,
 						["rested"] = 0,
 						["totalXP"] = 8215,
-					}, -- [20]
+					}, -- [59]
 					{
 						["killCount"] = 63,
 						["name"] = "Stratholme",
@@ -6334,7 +6752,7 @@ XToLevelDB = {
 						["level"] = 55,
 						["rested"] = 0,
 						["totalXP"] = 9601,
-					}, -- [21]
+					}, -- [60]
 					{
 						["killCount"] = 64,
 						["name"] = "Stratholme",
@@ -6343,7 +6761,7 @@ XToLevelDB = {
 						["level"] = 55,
 						["rested"] = 0,
 						["totalXP"] = 9846,
-					}, -- [22]
+					}, -- [61]
 					{
 						["killCount"] = 54,
 						["name"] = "Stratholme",
@@ -6352,7 +6770,7 @@ XToLevelDB = {
 						["level"] = 55,
 						["rested"] = 8915,
 						["totalXP"] = 11374,
-					}, -- [23]
+					}, -- [62]
 					{
 						["inProgress"] = false,
 						["totalXP"] = 10370,
@@ -6361,7 +6779,7 @@ XToLevelDB = {
 						["level"] = 55,
 						["rested"] = 0,
 						["name"] = "Stratholme",
-					}, -- [24]
+					}, -- [63]
 					{
 						["inProgress"] = false,
 						["totalXP"] = 9968,
@@ -6370,7 +6788,7 @@ XToLevelDB = {
 						["level"] = 55,
 						["rested"] = 0,
 						["name"] = "Stratholme",
-					}, -- [25]
+					}, -- [64]
 					{
 						["inProgress"] = false,
 						["totalXP"] = 9190,
@@ -6379,7 +6797,7 @@ XToLevelDB = {
 						["level"] = 54,
 						["rested"] = 0,
 						["name"] = "Stratholme",
-					}, -- [26]
+					}, -- [65]
 					{
 						["inProgress"] = false,
 						["totalXP"] = 8502,
@@ -6388,7 +6806,7 @@ XToLevelDB = {
 						["level"] = 54,
 						["rested"] = 0,
 						["name"] = "Stratholme",
-					}, -- [27]
+					}, -- [66]
 					{
 						["inProgress"] = false,
 						["totalXP"] = 12037,
@@ -6397,7 +6815,7 @@ XToLevelDB = {
 						["level"] = 54,
 						["rested"] = 0,
 						["name"] = "Stratholme",
-					}, -- [28]
+					}, -- [67]
 					{
 						["inProgress"] = false,
 						["totalXP"] = 15061,
@@ -6406,7 +6824,7 @@ XToLevelDB = {
 						["level"] = 54,
 						["rested"] = 0,
 						["name"] = "Stratholme",
-					}, -- [29]
+					}, -- [68]
 					{
 						["inProgress"] = false,
 						["totalXP"] = 13634,
@@ -6415,7 +6833,7 @@ XToLevelDB = {
 						["level"] = 54,
 						["rested"] = 0,
 						["name"] = "Stratholme",
-					}, -- [30]
+					}, -- [69]
 					{
 						["inProgress"] = false,
 						["totalXP"] = 14079,
@@ -6424,7 +6842,7 @@ XToLevelDB = {
 						["level"] = 54,
 						["rested"] = 0,
 						["name"] = "Stratholme",
-					}, -- [31]
+					}, -- [70]
 					{
 						["inProgress"] = false,
 						["totalXP"] = 9463,
@@ -6433,7 +6851,7 @@ XToLevelDB = {
 						["level"] = 53,
 						["rested"] = 0,
 						["name"] = "Stratholme",
-					}, -- [32]
+					}, -- [71]
 					{
 						["inProgress"] = false,
 						["totalXP"] = 14149,
@@ -6442,7 +6860,7 @@ XToLevelDB = {
 						["level"] = 53,
 						["rested"] = 0,
 						["name"] = "Stratholme",
-					}, -- [33]
+					}, -- [72]
 					{
 						["inProgress"] = false,
 						["totalXP"] = 12811,
@@ -6451,7 +6869,7 @@ XToLevelDB = {
 						["level"] = 53,
 						["rested"] = 0,
 						["name"] = "Stratholme",
-					}, -- [34]
+					}, -- [73]
 					{
 						["inProgress"] = false,
 						["totalXP"] = 10236,
@@ -6460,7 +6878,7 @@ XToLevelDB = {
 						["level"] = 53,
 						["rested"] = 0,
 						["name"] = "Stratholme",
-					}, -- [35]
+					}, -- [74]
 					{
 						["inProgress"] = false,
 						["totalXP"] = 10555,
@@ -6469,7 +6887,7 @@ XToLevelDB = {
 						["level"] = 53,
 						["rested"] = 85,
 						["name"] = "Stratholme",
-					}, -- [36]
+					}, -- [75]
 					{
 						["inProgress"] = false,
 						["totalXP"] = 10823,
@@ -6478,7 +6896,7 @@ XToLevelDB = {
 						["level"] = 52,
 						["rested"] = 0,
 						["name"] = "Stratholme",
-					}, -- [37]
+					}, -- [76]
 					{
 						["inProgress"] = false,
 						["totalXP"] = 13075,
@@ -6487,7 +6905,7 @@ XToLevelDB = {
 						["level"] = 52,
 						["rested"] = 0,
 						["name"] = "Stratholme",
-					}, -- [38]
+					}, -- [77]
 					{
 						["inProgress"] = false,
 						["totalXP"] = 12118,
@@ -6496,7 +6914,7 @@ XToLevelDB = {
 						["level"] = 52,
 						["rested"] = 0,
 						["name"] = "Stratholme",
-					}, -- [39]
+					}, -- [78]
 					{
 						["inProgress"] = false,
 						["totalXP"] = 14027,
@@ -6505,7 +6923,7 @@ XToLevelDB = {
 						["level"] = 52,
 						["rested"] = 0,
 						["name"] = "Stratholme",
-					}, -- [40]
+					}, -- [79]
 					{
 						["name"] = "Stratholme",
 						["totalXP"] = 9805,
@@ -6514,7 +6932,7 @@ XToLevelDB = {
 						["level"] = 51,
 						["inProgress"] = false,
 						["killCount"] = 66,
-					}, -- [41]
+					}, -- [80]
 					{
 						["name"] = "Stratholme",
 						["totalXP"] = 9453,
@@ -6523,7 +6941,7 @@ XToLevelDB = {
 						["level"] = 51,
 						["inProgress"] = false,
 						["killCount"] = 63,
-					}, -- [42]
+					}, -- [81]
 					{
 						["name"] = "Stratholme",
 						["totalXP"] = 10003,
@@ -6532,7 +6950,7 @@ XToLevelDB = {
 						["level"] = 51,
 						["inProgress"] = false,
 						["killCount"] = 65,
-					}, -- [43]
+					}, -- [82]
 					{
 						["killCount"] = 45,
 						["name"] = "Stratholme",
@@ -6541,7 +6959,7 @@ XToLevelDB = {
 						["level"] = 51,
 						["rested"] = 0,
 						["totalXP"] = 8676,
-					}, -- [44]
+					}, -- [83]
 					{
 						["killCount"] = 68,
 						["name"] = "Stratholme",
@@ -6550,7 +6968,7 @@ XToLevelDB = {
 						["level"] = 51,
 						["rested"] = 0,
 						["totalXP"] = 10482,
-					}, -- [45]
+					}, -- [84]
 					{
 						["killCount"] = 72,
 						["name"] = "Stratholme",
@@ -6559,7 +6977,7 @@ XToLevelDB = {
 						["level"] = 50,
 						["rested"] = 0,
 						["totalXP"] = 11995,
-					}, -- [46]
+					}, -- [85]
 					{
 						["killCount"] = 68,
 						["name"] = "Stratholme",
@@ -6568,7 +6986,7 @@ XToLevelDB = {
 						["level"] = 50,
 						["rested"] = 0,
 						["totalXP"] = 11258,
-					}, -- [47]
+					}, -- [86]
 					{
 						["killCount"] = 78,
 						["name"] = "Stratholme",
@@ -6577,7 +6995,7 @@ XToLevelDB = {
 						["level"] = 50,
 						["rested"] = 0,
 						["totalXP"] = 12045,
-					}, -- [48]
+					}, -- [87]
 					{
 						["killCount"] = 62,
 						["name"] = "Stratholme",
@@ -6586,7 +7004,7 @@ XToLevelDB = {
 						["level"] = 50,
 						["rested"] = 9397,
 						["totalXP"] = 9668,
-					}, -- [49]
+					}, -- [88]
 					{
 						["totalXP"] = 35378,
 						["name"] = "Maraudon",
@@ -6595,7 +7013,7 @@ XToLevelDB = {
 						["level"] = 49,
 						["killCount"] = 349,
 						["inProgress"] = false,
-					}, -- [50]
+					}, -- [89]
 					{
 						["totalXP"] = 30823,
 						["name"] = "Maraudon",
@@ -6604,7 +7022,7 @@ XToLevelDB = {
 						["level"] = 49,
 						["killCount"] = 265,
 						["inProgress"] = false,
-					}, -- [51]
+					}, -- [90]
 					{
 						["totalXP"] = 36168,
 						["name"] = "Maraudon",
@@ -6613,7 +7031,7 @@ XToLevelDB = {
 						["level"] = 49,
 						["killCount"] = 353,
 						["inProgress"] = false,
-					}, -- [52]
+					}, -- [91]
 					{
 						["totalXP"] = 37358,
 						["name"] = "Maraudon",
@@ -6622,7 +7040,7 @@ XToLevelDB = {
 						["level"] = 48,
 						["killCount"] = 349,
 						["inProgress"] = false,
-					}, -- [53]
+					}, -- [92]
 					{
 						["inProgress"] = false,
 						["totalXP"] = 10120,
@@ -6631,7 +7049,7 @@ XToLevelDB = {
 						["level"] = 48,
 						["rested"] = 0,
 						["name"] = "Maraudon",
-					}, -- [54]
+					}, -- [93]
 					{
 						["inProgress"] = false,
 						["totalXP"] = 11547,
@@ -6640,7 +7058,7 @@ XToLevelDB = {
 						["level"] = 48,
 						["rested"] = 0,
 						["name"] = "Maraudon",
-					}, -- [55]
+					}, -- [94]
 					{
 						["inProgress"] = false,
 						["totalXP"] = 12896,
@@ -6649,7 +7067,7 @@ XToLevelDB = {
 						["level"] = 47,
 						["rested"] = 0,
 						["name"] = "Maraudon",
-					}, -- [56]
+					}, -- [95]
 					{
 						["inProgress"] = false,
 						["totalXP"] = 14586,
@@ -6658,7 +7076,7 @@ XToLevelDB = {
 						["level"] = 47,
 						["rested"] = 0,
 						["name"] = "Maraudon",
-					}, -- [57]
+					}, -- [96]
 					{
 						["inProgress"] = false,
 						["totalXP"] = 36060,
@@ -6667,7 +7085,7 @@ XToLevelDB = {
 						["level"] = 47,
 						["rested"] = 0,
 						["name"] = "Maraudon",
-					}, -- [58]
+					}, -- [97]
 					{
 						["inProgress"] = false,
 						["totalXP"] = 11759,
@@ -6676,7 +7094,7 @@ XToLevelDB = {
 						["level"] = 46,
 						["rested"] = 0,
 						["name"] = "Maraudon",
-					}, -- [59]
+					}, -- [98]
 					{
 						["inProgress"] = false,
 						["totalXP"] = 10441,
@@ -6685,7 +7103,7 @@ XToLevelDB = {
 						["level"] = 46,
 						["rested"] = 0,
 						["name"] = "Maraudon",
-					}, -- [60]
+					}, -- [99]
 					{
 						["inProgress"] = false,
 						["totalXP"] = 6464,
@@ -6694,392 +7112,21 @@ XToLevelDB = {
 						["level"] = 46,
 						["rested"] = 0,
 						["name"] = "Maraudon",
-					}, -- [61]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 8476,
-						["killCount"] = 83,
-						["killTotal"] = 8476,
-						["level"] = 45,
-						["rested"] = 0,
-						["name"] = "Maraudon",
-					}, -- [62]
-					{
-						["inProgress"] = false,
-						["totalXP"] = 33490,
-						["killCount"] = 341,
-						["killTotal"] = 33490,
-						["level"] = 45,
-						["rested"] = 318,
-						["name"] = "Maraudon",
-					}, -- [63]
-					{
-						["totalXP"] = 34111,
-						["name"] = "Maraudon",
-						["rested"] = 0,
-						["killTotal"] = 34111,
-						["level"] = 44,
-						["killCount"] = 341,
-						["inProgress"] = false,
-					}, -- [64]
-					{
-						["totalXP"] = 34291,
-						["name"] = "Maraudon",
-						["rested"] = 0,
-						["killTotal"] = 34291,
-						["level"] = 44,
-						["killCount"] = 341,
-						["inProgress"] = false,
-					}, -- [65]
-					{
-						["totalXP"] = 31217,
-						["name"] = "Maraudon",
-						["rested"] = 0,
-						["killTotal"] = 31217,
-						["level"] = 44,
-						["killCount"] = 355,
-						["inProgress"] = false,
-					}, -- [66]
-					{
-						["totalXP"] = 30576,
-						["name"] = "Maraudon",
-						["rested"] = 0,
-						["killTotal"] = 30576,
-						["level"] = 43,
-						["killCount"] = 353,
-						["inProgress"] = false,
-					}, -- [67]
-					{
-						["totalXP"] = 33698,
-						["name"] = "Maraudon",
-						["rested"] = 946,
-						["killTotal"] = 33698,
-						["level"] = 43,
-						["killCount"] = 356,
-						["inProgress"] = false,
-					}, -- [68]
-					{
-						["killCount"] = 334,
-						["name"] = "Maraudon",
-						["inProgress"] = false,
-						["killTotal"] = 37273,
-						["level"] = 42,
-						["rested"] = 0,
-						["totalXP"] = 37273,
-					}, -- [69]
-					{
-						["killCount"] = 319,
-						["name"] = "Maraudon",
-						["inProgress"] = false,
-						["killTotal"] = 32784,
-						["level"] = 42,
-						["rested"] = 0,
-						["totalXP"] = 32784,
-					}, -- [70]
-					{
-						["killCount"] = 334,
-						["name"] = "Maraudon",
-						["inProgress"] = false,
-						["killTotal"] = 35008,
-						["level"] = 41,
-						["rested"] = 0,
-						["totalXP"] = 35008,
-					}, -- [71]
-					{
-						["killCount"] = 324,
-						["name"] = "Maraudon",
-						["inProgress"] = false,
-						["killTotal"] = 34214,
-						["level"] = 41,
-						["rested"] = 0,
-						["totalXP"] = 34214,
-					}, -- [72]
-					{
-						["killCount"] = 325,
-						["name"] = "Maraudon",
-						["inProgress"] = false,
-						["killTotal"] = 36001,
-						["level"] = 40,
-						["rested"] = 4696,
-						["totalXP"] = 36001,
-					}, -- [73]
-					{
-						["killCount"] = 1,
-						["name"] = "Scarlet Monastery",
-						["inProgress"] = false,
-						["killTotal"] = 133,
-						["level"] = 40,
-						["rested"] = 0,
-						["totalXP"] = 133,
-					}, -- [74]
-					{
-						["killCount"] = 66,
-						["name"] = "Scarlet Monastery",
-						["inProgress"] = false,
-						["killTotal"] = 8010,
-						["level"] = 40,
-						["rested"] = 0,
-						["totalXP"] = 8010,
-					}, -- [75]
-					{
-						["killCount"] = 92,
-						["name"] = "Scarlet Monastery",
-						["inProgress"] = false,
-						["killTotal"] = 13859,
-						["level"] = 40,
-						["rested"] = 0,
-						["totalXP"] = 13859,
-					}, -- [76]
-					{
-						["killCount"] = 66,
-						["name"] = "Scarlet Monastery",
-						["inProgress"] = false,
-						["killTotal"] = 8141,
-						["level"] = 40,
-						["rested"] = 0,
-						["totalXP"] = 8141,
-					}, -- [77]
-					{
-						["killCount"] = 95,
-						["name"] = "Scarlet Monastery",
-						["inProgress"] = false,
-						["killTotal"] = 15297,
-						["level"] = 40,
-						["rested"] = 0,
-						["totalXP"] = 15297,
-					}, -- [78]
-					{
-						["killCount"] = 65,
-						["name"] = "Scarlet Monastery",
-						["inProgress"] = false,
-						["killTotal"] = 8444,
-						["level"] = 40,
-						["rested"] = 0,
-						["totalXP"] = 8444,
-					}, -- [79]
-					{
-						["killCount"] = 94,
-						["name"] = "Scarlet Monastery",
-						["inProgress"] = false,
-						["killTotal"] = 15050,
-						["level"] = 39,
-						["rested"] = 0,
-						["totalXP"] = 15050,
-					}, -- [80]
-					{
-						["killCount"] = 66,
-						["name"] = "Scarlet Monastery",
-						["inProgress"] = false,
-						["killTotal"] = 9079,
-						["level"] = 39,
-						["rested"] = 0,
-						["totalXP"] = 9079,
-					}, -- [81]
-					{
-						["killCount"] = 94,
-						["name"] = "Scarlet Monastery",
-						["inProgress"] = false,
-						["killTotal"] = 14953,
-						["level"] = 39,
-						["rested"] = 0,
-						["totalXP"] = 14953,
-					}, -- [82]
-					{
-						["killCount"] = 1,
-						["name"] = "Scarlet Monastery",
-						["inProgress"] = false,
-						["killTotal"] = 168,
-						["level"] = 39,
-						["rested"] = 0,
-						["totalXP"] = 168,
-					}, -- [83]
-					{
-						["killCount"] = 66,
-						["name"] = "Scarlet Monastery",
-						["inProgress"] = false,
-						["killTotal"] = 9165,
-						["level"] = 39,
-						["rested"] = 0,
-						["totalXP"] = 9165,
-					}, -- [84]
-					{
-						["killCount"] = 95,
-						["name"] = "Scarlet Monastery",
-						["inProgress"] = false,
-						["killTotal"] = 15252,
-						["level"] = 39,
-						["rested"] = 145,
-						["totalXP"] = 15252,
-					}, -- [85]
-					{
-						["name"] = "Scarlet Monastery",
-						["totalXP"] = 8802,
-						["rested"] = 0,
-						["killTotal"] = 8802,
-						["level"] = 38,
-						["inProgress"] = false,
-						["killCount"] = 66,
-					}, -- [86]
-					{
-						["name"] = "Scarlet Monastery",
-						["totalXP"] = 11677,
-						["rested"] = 0,
-						["killTotal"] = 11677,
-						["level"] = 38,
-						["inProgress"] = false,
-						["killCount"] = 80,
-					}, -- [87]
-					{
-						["name"] = "Scarlet Monastery",
-						["totalXP"] = 722,
-						["rested"] = 0,
-						["killTotal"] = 722,
-						["level"] = 38,
-						["inProgress"] = false,
-						["killCount"] = 5,
-					}, -- [88]
-					{
-						["name"] = "Scarlet Monastery",
-						["totalXP"] = 8755,
-						["rested"] = 0,
-						["killTotal"] = 8755,
-						["level"] = 38,
-						["inProgress"] = false,
-						["killCount"] = 66,
-					}, -- [89]
-					{
-						["name"] = "Scarlet Monastery",
-						["totalXP"] = 13277,
-						["rested"] = 0,
-						["killTotal"] = 13277,
-						["level"] = 38,
-						["inProgress"] = false,
-						["killCount"] = 91,
-					}, -- [90]
-					{
-						["name"] = "Scarlet Monastery",
-						["totalXP"] = 8478,
-						["rested"] = 0,
-						["killTotal"] = 8478,
-						["level"] = 37,
-						["inProgress"] = false,
-						["killCount"] = 62,
-					}, -- [91]
-					{
-						["name"] = "Scarlet Monastery",
-						["totalXP"] = 12742,
-						["rested"] = 0,
-						["killTotal"] = 12742,
-						["level"] = 37,
-						["inProgress"] = false,
-						["killCount"] = 86,
-					}, -- [92]
-					{
-						["name"] = "Scarlet Monastery",
-						["totalXP"] = 8743,
-						["rested"] = 0,
-						["killTotal"] = 8743,
-						["level"] = 37,
-						["inProgress"] = false,
-						["killCount"] = 64,
-					}, -- [93]
-					{
-						["name"] = "Scarlet Monastery",
-						["totalXP"] = 13414,
-						["rested"] = 0,
-						["killTotal"] = 13414,
-						["level"] = 37,
-						["inProgress"] = false,
-						["killCount"] = 91,
-					}, -- [94]
-					{
-						["name"] = "Scarlet Monastery",
-						["totalXP"] = 11193,
-						["rested"] = 8130,
-						["killTotal"] = 11193,
-						["level"] = 37,
-						["inProgress"] = false,
-						["killCount"] = 78,
-					}, -- [95]
-					{
-						["name"] = "Scarlet Monastery",
-						["totalXP"] = 9816,
-						["rested"] = 0,
-						["killTotal"] = 9816,
-						["level"] = 36,
-						["inProgress"] = false,
-						["killCount"] = 67,
-					}, -- [96]
-					{
-						["name"] = "Scarlet Monastery",
-						["totalXP"] = 15626,
-						["rested"] = 0,
-						["killTotal"] = 15626,
-						["level"] = 36,
-						["inProgress"] = false,
-						["killCount"] = 95,
-					}, -- [97]
-					{
-						["name"] = "Scarlet Monastery",
-						["totalXP"] = 11663,
-						["rested"] = 0,
-						["killTotal"] = 11663,
-						["level"] = 36,
-						["inProgress"] = false,
-						["killCount"] = 71,
-					}, -- [98]
-					{
-						["name"] = "Scarlet Monastery",
-						["totalXP"] = 15186,
-						["rested"] = 0,
-						["killTotal"] = 15186,
-						["level"] = 36,
-						["inProgress"] = false,
-						["killCount"] = 91,
-					}, -- [99]
-					{
-						["name"] = "Scarlet Monastery",
-						["totalXP"] = 8708,
-						["rested"] = 0,
-						["killTotal"] = 8708,
-						["level"] = 35,
-						["inProgress"] = false,
-						["killCount"] = 69,
 					}, -- [100]
-				},
-				["questAverage"] = 9452.5,
-				["questList"] = {
-					20100, -- [1]
-					4850, -- [2]
-					9800, -- [3]
-					9800, -- [4]
-					9800, -- [5]
-					9800, -- [6]
-					9800, -- [7]
-					9800, -- [8]
-					9800, -- [9]
-					975, -- [10]
-					9800, -- [11]
-					9800, -- [12]
-					9800, -- [13]
-					2400, -- [14]
-					2400, -- [15]
-					12600, -- [16]
-					9550, -- [17]
-					9800, -- [18]
-					5000, -- [19]
-					9550, -- [20]
 				},
 			},
 		},
 	},
 	["profileKeys"] = {
 		["Ikzoektom - Razorgore"] = "Ikzoektom - Razorgore",
+		["Partijlijder - Gehennas"] = "Partijlijder - Gehennas",
 		["Mírjam - Razorgore"] = "Mírjam - Razorgore",
-		["Cursedbreath - Firemaw"] = "Cursedbreath - Firemaw",
 		["Firebreather - Firemaw"] = "Firebreather - Firemaw",
-		["Helpsiebren - Razorgore"] = "Helpsiebren - Razorgore",
+		["Cursedbreath - Firemaw"] = "Cursedbreath - Firemaw",
 		["Partijleider - Razorgore"] = "Partijleider - Razorgore",
+		["Awwaa - Gehennas"] = "Awwaa - Gehennas",
+		["Helpsiebren - Razorgore"] = "Helpsiebren - Razorgore",
+		["Rinque - Gehennas"] = "Rinque - Gehennas",
 		["Mirjam - Firemaw"] = "Mirjam - Firemaw",
 		["Partijlijder - Razorgore"] = "Partijlijder - Razorgore",
 		["Eefjé - Razorgore"] = "Eefjé - Razorgore",
@@ -7090,9 +7137,27 @@ XToLevelDB = {
 	["profiles"] = {
 		["Ikzoektom - Razorgore"] = {
 		},
+		["Partijlijder - Gehennas"] = {
+			["averageDisplay"] = {
+				["orientation"] = "h",
+			},
+		},
 		["Mírjam - Razorgore"] = {
 			["averageDisplay"] = {
 				["orientation"] = "h",
+			},
+		},
+		["Firebreather - Firemaw"] = {
+			["messages"] = {
+				["bgObjectives"] = false,
+			},
+			["averageDisplay"] = {
+				["playerGathering"] = false,
+				["scale"] = 1.3,
+				["orientation"] = "h",
+				["playerBGs"] = false,
+				["playerDigs"] = false,
+				["playerQuests"] = false,
 			},
 		},
 		["Cursedbreath - Firemaw"] = {
@@ -7106,25 +7171,19 @@ XToLevelDB = {
 				["orientation"] = "h",
 			},
 		},
-		["Firebreather - Firemaw"] = {
-			["messages"] = {
-				["bgObjectives"] = false,
-			},
+		["Partijleider - Razorgore"] = {
 			["averageDisplay"] = {
-				["playerGathering"] = false,
 				["orientation"] = "h",
-				["scale"] = 1.3,
-				["playerBGs"] = false,
-				["playerDigs"] = false,
-				["playerQuests"] = false,
 			},
+		},
+		["Awwaa - Gehennas"] = {
 		},
 		["Helpsiebren - Razorgore"] = {
 			["averageDisplay"] = {
 				["orientation"] = "h",
 			},
 		},
-		["Partijleider - Razorgore"] = {
+		["Rinque - Gehennas"] = {
 			["averageDisplay"] = {
 				["orientation"] = "h",
 			},

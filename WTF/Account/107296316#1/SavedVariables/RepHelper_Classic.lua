@@ -26,5 +26,5 @@ RPH_Data = {
 	["ShowGeneral_inited"] = true,
 	["ShowPreviewRep"] = true,
 	["ChatFrame"] = 0,
-	["SortByStanding"] = false,
+	["SortByStanding"] = true,
 }

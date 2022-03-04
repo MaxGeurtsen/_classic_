@@ -1,11 +1,28 @@
 
 SavedPayments = {
+	["Heatherzbank"] = 4250000,
 }
 SavedHistoricalPayments = nil
 SavedHistoricalPaymentsV2 = {
+	["Heatherzbank"] = {
+		["Sum"] = 4250000,
+		["Transactions"] = {
+			{
+				["Amount"] = 4250000,
+				["PaymentDateTime"] = {
+					["year"] = "2022",
+					["month"] = "01",
+					["day"] = "30",
+					["minute"] = "17",
+					["hour"] = "16",
+					["second"] = "55",
+				},
+			}, -- [1]
+		},
+	},
 }
 SavedWindowSettings = {
-	["y"] = 180,
+	["y"] = 174.3180084228516,
 	["x"] = 0,
 	["point"] = "CENTER",
 	["relativePoint"] = "CENTER",
@@ -17,7 +34,7 @@ SavedSettings = {
 	["LOCKOUT_LOGOFFWARNING"] = true,
 	["FEATURE_Payment"] = true,
 	["REPORT_ELEMENTAL_EARTH"] = false,
-	["LOCKOUT_RESETONGROUPCHANGE"] = true,
+	["AUTO_FOLLOW"] = false,
 	["FEATURE_LockoutStatistics"] = true,
 	["SPEEDY_AUTO_LOOT"] = false,
 	["PAYMENT_REPORTCHAT"] = true,
@@ -25,7 +42,7 @@ SavedSettings = {
 	["PAYMENT_REPORTMAIN"] = true,
 	["LOCKOUT_REPORTRESET"] = false,
 	["STATISTICS_REPORT"] = true,
-	["AUTO_FOLLOW"] = false,
+	["LOCKOUT_RESETONGROUPCHANGE"] = true,
 }
 SavedAntiReloadUISettings = {
 	["IsEnteringFirstInstanceAfterLogin"] = true,

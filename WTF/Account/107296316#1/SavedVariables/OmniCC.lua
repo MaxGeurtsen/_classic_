@@ -1,15 +1,19 @@
 
 OmniCCDB = {
 	["profileKeys"] = {
+		["Partijleider - Gehennas"] = "Default",
+		["Partijlijder - Gehennas"] = "Default",
 		["Mírjam - Razorgore"] = "Default",
 		["Cursedbreath - Firemaw"] = "Default",
-		["Helpsiebren - Razorgore"] = "Default",
-		["Partijlijder - Razorgore"] = "Default",
-		["Mirjam - Firemaw"] = "Default",
-		["Partijleider - Razorgore"] = "Default",
-		["Eefjé - Razorgore"] = "Default",
 		["Firebreather - Firemaw"] = "Default",
+		["Awwaa - Gehennas"] = "Default",
+		["Helpsiebren - Razorgore"] = "Default",
+		["Partijleider - Razorgore"] = "Default",
+		["Mirjam - Firemaw"] = "Default",
+		["Partijlijder - Razorgore"] = "Default",
+		["Eefjé - Razorgore"] = "Default",
 		["Mírjam - Firemaw"] = "Default",
+		["Rinque - Gehennas"] = "Default",
 		["Kealthas - Razorgore"] = "Default",
 	},
 	["global"] = {
@@ -18,6 +22,18 @@ OmniCCDB = {
 	},
 	["profiles"] = {
 		["Default"] = {
+			["rules"] = {
+				{
+					["patterns"] = {
+						"PlaterMainAuraIcon", -- [1]
+						"PlaterSecondaryAuraIcon", -- [2]
+						"ExtraIconRowIcon", -- [3]
+					},
+					["id"] = "Plater Nameplates Rule",
+					["priority"] = 1,
+					["theme"] = "Plater Nameplates Theme",
+				}, -- [1]
+			},
 			["themes"] = {
 				["Default"] = {
 					["textStyles"] = {
@@ -29,12 +45,21 @@ OmniCCDB = {
 						},
 					},
 				},
+				["Plater Nameplates Theme"] = {
+					["textStyles"] = {
+						["seconds"] = {
+						},
+						["soon"] = {
+						},
+						["minutes"] = {
+						},
+					},
+				},
 			},
 		},
 	},
 }
 OmniCC4Config = {
-	["version"] = "8.2.5",
 	["groupSettings"] = {
 		["base"] = {
 			["fontSize"] = 18,
@@ -71,4 +96,5 @@ OmniCC4Config = {
 	},
 	["groups"] = {
 	},
+	["version"] = "8.2.5",
 }

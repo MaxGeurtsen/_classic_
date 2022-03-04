@@ -1408,19 +1408,47 @@ function NWB:loadSpecificOptions()
 			set = "setDisableLogonAllLevels",
 			width = 1.5,
 		};
-		NWB.options.args["tbcNote"] = {
-			type = "description",
-			name = "|cFF50D050" .. L["tbcNoteText"],
-			fontSize = "medium",
-			order = 25,
-		};
 		NWB.options.args["showShatWorldmapMarkers"] = {
 			type = "toggle",
 			name = L["showShatWorldmapMarkersTitle"],
 			desc = L["showShatWorldmapMarkersDesc"],
-			order = 133,
+			order = 25,
+			width = 1.5,
 			get = "getShowShatWorldmapMarkers",
 			set = "setShowShatWorldmapMarkers",
+		};
+		NWB.options.args["showShatWorldmapMarkersTerok"] = {
+			type = "toggle",
+			name = L["showShatWorldmapMarkersTerokTitle"],
+			desc = L["showShatWorldmapMarkersTerokDesc"],
+			order = 26,
+			width = 1.5,
+			get = "getShowShatWorldmapMarkersTerok",
+			set = "setShowShatWorldmapMarkersTerok",
+		};
+		NWB.options.args["hideMinimapBuffTimers"] = {
+			type = "toggle",
+			name = L["hideMinimapBuffTimersTitle"],
+			desc = L["hideMinimapBuffTimersDesc"],
+			order = 27,
+			width = 1.5,
+			get = "getHideMinimapBuffTimers",
+			set = "setHideMinimapBuffTimers",
+		};
+		--[[NWB.options.args["guildTerok10"] = {
+			type = "toggle",
+			name = L["guildTerok10Title"],
+			desc = L["guildTerok10Desc"],
+			order = 28,
+			width = 1.5,
+			get = "getGuildTerok10",
+			set = "setGuildTerok10",
+		};]]
+		NWB.options.args["tbcNote"] = {
+			type = "description",
+			name = "|cFF50D050" .. L["tbcNoteText"],
+			fontSize = "medium",
+			order = 29,
 		};
 	end
 	if (NWB.isTBC or NWB.realmsTBC) then
@@ -1649,8 +1677,10 @@ NWB.optionDefaults = {
 		guildL = true,
 		terokkarChat10 = true,
 		terokkarMiddle10 = false,
-		wipeTerokkarData = true,
+		wipeTerokkarData4 = true,
 		showShatWorldmapMarkers = true,
+		showShatWorldmapMarkersTerok = true,
+		hideMinimapBuffTimers = false,
 		
 		--TBC options
 		disableSoundsAboveMaxBuffLevel = true,
@@ -1663,6 +1693,7 @@ NWB.optionDefaults = {
 		disableFlashAllLevels = false,
 		disableLogonAboveMaxBuffLevel = true,
 		disableLogonAllLevels = false,
+		guildTerok10 = 0,
 	},
 };
 
@@ -1706,6 +1737,9 @@ function NWB:buildRealmFactionData()
 		dragon3 = 0,
 		dragon4 = 0,
 	};
+	--if (NWB.isTBC) then
+	--	defaults.terokTowersTime = 0;
+	--end
 	--Create realm and faction tables if they don't exist.
 	if (not self.db.global[NWB.realm]) then
 		self.db.global[NWB.realm] = {};
@@ -2332,6 +2366,24 @@ end
 
 function NWB:getDisableAllGuildMsgs(info)
 	if (self.db.global.disableAllGuildMsgs == 1) then
+		return true;
+	else
+		return false;
+	end
+end
+
+--Guild 10 minute Terokarr Towers warning.
+function NWB:setGuildTerok10(info, value)
+	if (value) then
+		self.db.global.guildTerok10 = 1;
+	else
+		self.db.global.guildTerok10 = 0;
+	end
+	NWB:sendSettings("GUILD");
+end
+
+function NWB:getGuildTerok10(info)
+	if (self.db.global.guildTerok10 == 1) then
 		return true;
 	else
 		return false;
@@ -3382,6 +3434,24 @@ function NWB:getShowShatWorldmapMarkers(info)
 	return self.db.global.showShatWorldmapMarkers;
 end
 
+--Show world map Shat Terok dailies marker.
+function NWB:setShowShatWorldmapMarkersTerok(info, value)
+	self.db.global.showShatWorldmapMarkersTerok = value;
+	NWB:refreshTerokkarMarkers();
+end
+
+function NWB:getShowShatWorldmapMarkersTerok(info)
+	return self.db.global.showShatWorldmapMarkersTerok;
+end
+
+--Hide minimap buff timers.
+function NWB:setHideMinimapBuffTimers(info, value)
+	self.db.global.hideMinimapBuffTimers = value;
+end
+
+function NWB:getHideMinimapBuffTimers(info)
+	return self.db.global.hideMinimapBuffTimers;
+end
 --Bigwigs support.
 function NWB:setBigWigsSupport(info, value)
 	self.db.global.bigWigsSupport = value;

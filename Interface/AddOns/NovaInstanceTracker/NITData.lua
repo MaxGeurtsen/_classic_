@@ -626,14 +626,14 @@ function NIT:recordBgStats()
 			local name, kb, hk, deaths, honor, faction, rank, race, class, classEnglish, damage, healing = GetBattlefieldScore(i);
 			--Record all players.
 			local me = UnitName("player");
-			local t = {};
 			if (name) then
 				local t = {
-					kb = kb;
-					faction = faction;
-					class = classEnglish;
-					damage = damage;
-					healing = healing;
+					kb = kb,
+					faction = faction,
+					class = classEnglish,
+					damage = damage,
+					healing = healing,
+					race = race,
 				};
 				local teamName, teamRating, newTeamRating, teamMMR = GetBattlefieldTeamInfo(faction);
 				if (teamName) then
@@ -697,13 +697,13 @@ function NIT:enteredInstance(isReload, isLogon)
 	doGUID = true;
 	local instance, instanceType = IsInInstance();
 	local type;
-	if (NIT.isTBC) then
+	--if (NIT.isTBC) then
 		if (NIT:isInArena()) then
 			type = "arena";
 		elseif (UnitInBattleground("player")) then
 			type = "bg";
 		end
-	end
+	--end
 	if (instance == true and ((instanceType == "party") or (instanceType == "raid")
 			or (type == "bg") or (type == "arena"))) then
 		local instanceName, instanceType, difficultyID, difficultyName, maxPlayers, dynamicDifficulty,
@@ -1948,8 +1948,6 @@ end
 
 --Big thanks to this comment https://github.com/Stanzilla/WoWUIBugs/issues/47#issuecomment-710698976
 local function GetCooldownLeft(start, duration)
-	-- Before restarting the GetTime() will always be grater than [start]
-	-- After the restart it is technically always bigger because of the 2^32 offset thing
 	if (start < GetTime()) then
 		local cdEndTime = start + duration;
 		local cdLeftDuration = cdEndTime - GetTime();
@@ -1957,7 +1955,6 @@ local function GetCooldownLeft(start, duration)
 	end
 	local time = time();
 	local startupTime = time - GetTime();
-	-- just a simplification of: ((2^32) - (start * 1000)) / 1000
 	local cdTime = (2 ^ 32) / 1000 - start;
 	local cdStartTime = startupTime - cdTime;
 	local cdEndTime = cdStartTime + duration;
@@ -2063,7 +2060,7 @@ function NIT:fixCooldowns()
 				if (v.cooldowns) then
 					for skill, vv in pairs(v.cooldowns) do
 						count[vv.time] = (count[vv.time] or 0) + 1;
-						if (count[vv.time] > 12) then
+						if (count[vv.time] > 30) then
 							local time = vv.time;
 							for skill, data in pairs(v.cooldowns) do
 								--Remove all duplicate timestamp entries.

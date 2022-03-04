@@ -242,7 +242,7 @@ function QuestieQuest:Reset()
 
     Questie.db.char.complete = GetQuestsCompleted()
     QuestieProfessions:Update()
-    QuestieReputation:Update(false)
+    QuestieReputation:Update(true)
 
 
     QuestieMenu:OnLogin()
@@ -257,8 +257,7 @@ function QuestieQuest:SmoothReset()
     end
     QuestieQuest._isResetting = true
     QuestieQuest._resetNeedsAvailables = false
-    QuestieQuest._nextRestQuest = next(QuestiePlayer.currentQuestlog)
-    
+
     -- bit of a hack (there has to be a better way to do logic like this
     QuestieDBMIntegration:ClearAll()
     local stepTable = {
@@ -285,10 +284,11 @@ function QuestieQuest:SmoothReset()
             -- make sure complete db is correct
             Questie.db.char.complete = GetQuestsCompleted()
             QuestieProfessions:Update()
-            QuestieReputation:Update(false)
+            QuestieReputation:Update(true)
 
             -- draw available quests
             QuestieQuest:GetAllQuestIdsNoObjectives()
+            QuestieQuest._nextRestQuest = next(QuestiePlayer.currentQuestlog)
             return true
         end,
         function()

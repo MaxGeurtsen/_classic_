@@ -16,19 +16,23 @@ SavedComments = {
 SavedSettings = {
 	["LOCKOUT_LOGOFFWARNING"] = true,
 	["FEATURE_Payment"] = true,
-	["PAYMENT_REPORTMAIN"] = true,
+	["LOCKOUT_RESETONGROUPCHANGE"] = true,
 	["AUTO_FOLLOW"] = false,
 	["FEATURE_LockoutStatistics"] = true,
-	["REPORT_ELEMENTAL_EARTH"] = false,
+	["SPEEDY_AUTO_LOOT"] = false,
 	["PAYMENT_REPORTCHAT"] = true,
 	["FEATURE_LockoutTracker"] = true,
-	["SPEEDY_AUTO_LOOT"] = false,
 	["LOCKOUT_REPORTRESET"] = false,
+	["PAYMENT_REPORTMAIN"] = true,
 	["STATISTICS_REPORT"] = true,
-	["LOCKOUT_RESETONGROUPCHANGE"] = true,
+	["REPORT_ELEMENTAL_EARTH"] = false,
 }
 SavedAntiReloadUISettings = {
 	["IsEnteringFirstInstanceAfterLogin"] = true,
 	["SavedCharacterLockouts"] = {
+		["Firebreather"] = {
+		},
+		["Kalashi"] = {
+		},
 	},
 }

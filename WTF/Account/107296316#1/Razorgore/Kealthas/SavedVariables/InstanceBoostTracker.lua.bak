@@ -1,11 +1,28 @@
 
 SavedPayments = {
+	["Rolexanteri"] = 400000,
 }
 SavedHistoricalPayments = nil
 SavedHistoricalPaymentsV2 = {
+	["Rolexanteri"] = {
+		["Sum"] = 400000,
+		["Transactions"] = {
+			{
+				["Amount"] = 400000,
+				["PaymentDateTime"] = {
+					["year"] = "2022",
+					["month"] = "01",
+					["day"] = "20",
+					["minute"] = "09",
+					["hour"] = "00",
+					["second"] = "58",
+				},
+			}, -- [1]
+		},
+	},
 }
 SavedWindowSettings = {
-	["y"] = -2.762292385101318,
+	["y"] = -8.444395065307617,
 	["x"] = -3.332909107208252,
 	["point"] = "BOTTOMLEFT",
 	["relativePoint"] = "BOTTOMLEFT",
@@ -30,5 +47,7 @@ SavedSettings = {
 SavedAntiReloadUISettings = {
 	["IsEnteringFirstInstanceAfterLogin"] = true,
 	["SavedCharacterLockouts"] = {
+		["Kealthas"] = {
+		},
 	},
 }

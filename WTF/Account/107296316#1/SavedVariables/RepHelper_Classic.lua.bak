@@ -26,5 +26,5 @@ RPH_Data = {
 	["SilentSwitch"] = true,
 	["ShowPreviewRep"] = true,
 	["ShowGeneral"] = true,
-	["SortByStanding"] = false,
+	["SortByStanding"] = true,
 }

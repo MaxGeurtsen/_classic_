@@ -6,7 +6,7 @@ PawnCommon = {
 	["ShowItemID"] = false,
 	["ShowRelicUpgrades"] = false,
 	["ShowValuesForUpgradesOnly"] = true,
-	["LastVersion"] = 2.052,
+	["LastVersion"] = 2.0531,
 	["ShowItemLevelUpgrades"] = false,
 	["ShownGettingStarted"] = true,
 	["Debug"] = false,
@@ -97,6 +97,9 @@ PawnCommon = {
 		},
 		["\"Classic\":PALADIN2"] = {
 			["PerCharacterOptions"] = {
+				["Rinque-Gehennas"] = {
+					["Visible"] = true,
+				},
 				["Kealthas-Razorgore"] = {
 					["Visible"] = true,
 				},
@@ -131,6 +134,12 @@ PawnCommon = {
 		},
 		["\"Classic\":PRIEST1"] = {
 			["PerCharacterOptions"] = {
+				["Partijlijder-Gehennas"] = {
+					["Visible"] = true,
+				},
+				["Awwaa-Gehennas"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "ffffff",
 			["LocalizedName"] = "Priest: Discipline",
@@ -174,6 +183,12 @@ PawnCommon = {
 		},
 		["\"Classic\":PRIEST3"] = {
 			["PerCharacterOptions"] = {
+				["Partijlijder-Gehennas"] = {
+					["Visible"] = true,
+				},
+				["Awwaa-Gehennas"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "ffffff",
 			["LocalizedName"] = "Priest: Shadow",
@@ -189,6 +204,9 @@ PawnCommon = {
 		["\"Classic\":SHAMAN2"] = {
 			["PerCharacterOptions"] = {
 				["Eefjé-Razorgore"] = {
+					["Visible"] = true,
+				},
+				["Partijleider-Razorgore"] = {
 					["Visible"] = true,
 				},
 			},
@@ -240,6 +258,9 @@ PawnCommon = {
 		["\"Classic\":SHAMAN3"] = {
 			["PerCharacterOptions"] = {
 				["Partijleider-Razorgore"] = {
+					["Visible"] = true,
+				},
+				["Partijleider-Gehennas"] = {
 					["Visible"] = true,
 				},
 				["Eefjé-Razorgore"] = {
@@ -303,6 +324,12 @@ PawnCommon = {
 		},
 		["\"Classic\":PRIEST"] = {
 			["PerCharacterOptions"] = {
+				["Partijlijder-Gehennas"] = {
+					["Visible"] = true,
+				},
+				["Awwaa-Gehennas"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "ffffff",
 			["LocalizedName"] = "Priest",
@@ -501,6 +528,9 @@ PawnCommon = {
 				["Eefjé-Razorgore"] = {
 					["Visible"] = true,
 				},
+				["Partijleider-Gehennas"] = {
+					["Visible"] = true,
+				},
 				["Partijleider-Razorgore"] = {
 					["Visible"] = true,
 				},
@@ -581,6 +611,9 @@ PawnCommon = {
 		},
 		["\"Classic\":PALADIN"] = {
 			["PerCharacterOptions"] = {
+				["Rinque-Gehennas"] = {
+					["Visible"] = true,
+				},
 				["Kealthas-Razorgore"] = {
 					["Visible"] = true,
 				},
@@ -596,6 +629,12 @@ PawnCommon = {
 		},
 		["\"Classic\":PRIEST2"] = {
 			["PerCharacterOptions"] = {
+				["Partijlijder-Gehennas"] = {
+					["Visible"] = true,
+				},
+				["Awwaa-Gehennas"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "ffffff",
 			["LocalizedName"] = "Priest: Holy",

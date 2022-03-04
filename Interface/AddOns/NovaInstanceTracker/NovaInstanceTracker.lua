@@ -1618,7 +1618,19 @@ function NIT:buildInstanceLineFrameString(v, count)
 	end
 	if (v.type == "arena") then
 		timeColor = "|cFFFFA500";
-		lockoutTimeString = instance .. " (Arena)";
+		local ratingChange = NIT:getRatingChange(v);
+		if (ratingChange) then
+			lockoutTimeString = instance .. " (" .. ratingChange .. " Arena Rating)";
+		else
+			lockoutTimeString = instance .. " (Arena)";
+		end
+		if (count == 1 and NIT.inInstance) then
+			if (LOCALE_koKR or LOCALE_zhCN or LOCALE_zhTW or LOCALE_ruRU) then
+				lockoutTimeString = lockoutTimeString .. " (" .. L["stillInDungeon"] .. ")";
+			else
+				lockoutTimeString = lockoutTimeString .. " (" .. L["stillInArena"] .. ")";
+			end
+		end
 		if (v.faction and v.winningFaction and v.faction == v.winningFaction) then
 			lockoutTimeString = lockoutTimeString .. " |cFF00C800" .. L["Won"] .. "|r";
 		elseif (v.faction and v.winningFaction) then
@@ -1626,7 +1638,18 @@ function NIT:buildInstanceLineFrameString(v, count)
 		end
 	elseif (v.type == "bg") then
 		timeColor = "|cFFFFA500";
-		lockoutTimeString = instance .. " (Battleground)";
+		if (v.honor) then
+			lockoutTimeString = instance .. " (+" .. v.honor .. " Honor)";
+		else
+			lockoutTimeString = instance .. " (Battleground)";
+		end
+		if (count == 1 and NIT.inInstance) then
+			if (LOCALE_koKR or LOCALE_zhCN or LOCALE_zhTW or LOCALE_ruRU) then
+				lockoutTimeString = lockoutTimeString .. " (" .. L["stillInDungeon"] .. ")";
+			else
+				lockoutTimeString = lockoutTimeString .. " (" .. L["stillInBattleground"] .. ")";
+			end
+		end
 		if (v.faction and v.winningFaction and v.faction == v.winningFaction) then
 			lockoutTimeString = lockoutTimeString .. " |cFF00C800" .. L["Won"] .. "|r";
 		elseif (v.faction and v.winningFaction) then
@@ -1649,6 +1672,35 @@ function NIT:buildInstanceLineFrameString(v, count)
 			.. "|r |cFF9CD6DE" .. instance .. " (" .. L["entered"] .. " " .. NIT:getTimeString(timeAgo, true, NIT.db.global.timeStringType) .. " " .. L["ago"] .. ")";
 	end
 	return line;
+end
+
+function NIT:getRatingChange(data)
+	--Find which team we were on.
+	local team;
+	if (data.purpleTeam) then
+		for k, v in pairs(data.purpleTeam) do
+			if (k == data.playerName) then
+				team = data.purpleTeam;
+			end
+		end
+	end
+	if (data.goldTeam) then
+		for k, v in pairs(data.goldTeam) do
+			if (k == data.playerName) then
+				team = data.goldTeam;
+			end
+		end
+	end
+	if (team) then
+		local _, first = next(team);
+		if (first and first.newTeamRating and first.teamRating) then
+			local delta = first.newTeamRating - first.teamRating;
+			if (delta > 0) then
+				delta = "+" .. delta;
+			end
+			return delta;
+		end
+	end
 end
 
 function NIT:hideAllLineFrames()

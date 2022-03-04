@@ -1,3 +1,6 @@
+VER 3 0000000000000013 " aap" "132165"
+/aap skip
+END
 VER 3 0000000000000007 " dwa" "132166"
 /cast enchant cloak - superior defense
 /use Cloak of Scintillating Auras
@@ -6,23 +9,37 @@ END
 VER 3 0000000000000002 "4" "132156"
 https://www.twitch.tv/firebreathereu
 END
+VER 3 0000000000000019 "5" "132090"
+/pull 5
+END
 VER 3 000000000000000A "aaaa" "INV_MISC_QUESTIONMARK"
 /run local a,b="Formula: Enchant Shield - Greater Stamina"; for i=30,33 do b=GetMerchantItemInfo(i) if b==a then BuyMerchantItem(i,1) else end end CloseMerchant()
 END
 VER 3 0000000000000008 "ad" "INV_MISC_QUESTIONMARK"
 /run for i=1,GetMerchantNumItems() do local l=GetMerchantItemLink(i) if l then if l:find("Formula: Enchant Shield - Greater Stamina") then BuyMerchantItem(i, 1)end end end
 END
+VER 3 000000000000001C "ADDS" "135922"
+/gq switch ADDS
+END
+VER 3 0000000000000015 "adw" "INV_MISC_QUESTIONMARK"
+/click CraftCreateButton
+/run GetMouseFocus():Click()
+/click StaticPopup1Button1
+END
 VER 3 000000000000000E "AutoHP" "INV_Misc_QuestionMark"
 #showtooltip
-/cast [combat] item:22829; item:27855
+/cast [combat] item:28100; item:34062
+END
+VER 3 000000000000001B "BOSS" "135874"
+/gq switch boss
 END
 VER 3 000000000000000F "ConsumableHP" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:22829
+/cast item:28100
 END
 VER 3 0000000000000010 "ConsumableMP" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:13444
+/cast item:6948
 END
 VER 3 0000000000000001 "d" "132089"
 /2 Crafting [Small Silk Pack] 10 slots  with your mats! 12 silk cloth, 2 heavy leather, 3 fine thread
@@ -41,11 +58,25 @@ VER 3 000000000000000B "drink" "3867503"
 END
 VER 3 000000000000000C "DrinkOnlyMP" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:27860
+/cast item:34062
+END
+VER 3 0000000000000017 "DUNG" "132110"
+/1 LFM Hyjal REP FARM NEED ALL! (Hammer of Judgement and every other HoD RESS)
+/5 LFM Hyjal REP FARM NEED ALL! (Hammer of Judgement and every other HoD RESS)
+/6 LFM Hyjal REP FARM NEED ALL! (Hammer of Judgement and every other HoD RESS)
 END
 VER 3 000000000000000D "FoodOnlyHP" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:27855
+/cast item:34062
+END
+VER 3 000000000000001A "HS" "132137"
+/run InviteUnit("a");(C_Timer.After(1, LeaveParty)
+END
+VER 3 0000000000000014 "ORB" "132108"
+/use Tainted Core
+/y <------ TAINTED CORE TO: %t ! ! !
+/s <------ TAINTED CORE TO: %t ! ! !
+/script SendChatMessage("!!! YOU HAVE CORE FRIEND", "WHISPER", nil, UnitName("target"));
 END
 VER 3 0000000000000003 "p" "132156"
 /p follow me plz on: twitch.tv/firebreathereu
@@ -53,11 +84,28 @@ END
 VER 3 0000000000000004 "part" "132089"
 /leave party
 END
+VER 3 0000000000000016 "PET" "132114"
+/click PetActionButton5 
+/click PetActionButton4
+/click PetActionButton3
+END
+VER 3 000000000000001F "RC" "136155"
+/readycheck
+END
 VER 3 0000000000000006 "ROLL" "INV_MISC_QUESTIONMARK"
 /ROLL
 END
+VER 3 000000000000001E "T1" "INV_MISC_QUESTIONMARK"
+/use 13
+END
+VER 3 000000000000001D "T2" "INV_MISC_QUESTIONMARK"
+/use 14
+END
 VER 3 0000000000000011 "trade" "INV_MISC_QUESTIONMARK"
 /2 WTS |cffa335ee|Hitem:31332::::::::70::::::::|h[Blinkstrike]|h|r, wisp me an offer
+END
+VER 3 0000000000000018 "trade" "INV_MISC_QUESTIONMARK"
+/trade
 END
 VER 3 0000000000000012 "world" "INV_MISC_QUESTIONMARK"
 /4 WTS |cffa335ee|Hitem:31332::::::::70::::::::|h[Blinkstrike]|h|r, wisp me an offer

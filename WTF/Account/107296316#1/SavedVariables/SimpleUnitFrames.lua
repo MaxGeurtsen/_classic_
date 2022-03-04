@@ -1,43 +1,35 @@
 
 SimpleUnitFramesDB = {
 	["profileKeys"] = {
-		["Ikzoektom - Razorgore"] = "Ikzoektom - Razorgore",
-		["Maximaal - Firemaw"] = "Maximaal - Firemaw",
+		["Partijlijder - Gehennas"] = "Partijlijder - Gehennas",
 		["Firebreather - Firemaw"] = "Firebreather - Firemaw",
 		["Cursedbreath - Firemaw"] = "Cursedbreath - Firemaw",
-		["Mírjam - Razorgore"] = "Mírjam - Razorgore",
-		["Mírjam - Firemaw"] = "Mírjam - Firemaw",
-		["Helpsiebren - Razorgore"] = "Helpsiebren - Razorgore",
-		["Partijlijder - Razorgore"] = "Partijlijder - Razorgore",
-		["Mirjam - Firemaw"] = "Mirjam - Firemaw",
+		["Awwaa - Gehennas"] = "Awwaa - Gehennas",
 		["Partijleider - Razorgore"] = "Partijleider - Razorgore",
-		["Eefjé - Razorgore"] = "Eefjé - Razorgore",
 		["Bankerinos - Firemaw"] = "Bankerinos - Firemaw",
 		["Max - Razorfen"] = "Max - Razorfen",
 		["Kealthas - Razorgore"] = "Kealthas - Razorgore",
+		["Ikzoektom - Razorgore"] = "Ikzoektom - Razorgore",
+		["Maximaal - Firemaw"] = "Maximaal - Firemaw",
+		["Mírjam - Razorgore"] = "Mírjam - Razorgore",
+		["Helpsiebren - Razorgore"] = "Helpsiebren - Razorgore",
+		["Mirjam - Firemaw"] = "Mirjam - Firemaw",
+		["Partijleider - Gehennas"] = "Partijleider - Gehennas",
+		["Eefjé - Razorgore"] = "Eefjé - Razorgore",
+		["Mírjam - Firemaw"] = "Mírjam - Firemaw",
+		["Partijlijder - Razorgore"] = "Partijlijder - Razorgore",
+		["Rinque - Gehennas"] = "Rinque - Gehennas",
 	},
 	["profiles"] = {
-		["Ikzoektom - Razorgore"] = {
-		},
-		["Maximaal - Firemaw"] = {
+		["Partijlijder - Gehennas"] = {
 		},
 		["Firebreather - Firemaw"] = {
 		},
 		["Cursedbreath - Firemaw"] = {
 		},
-		["Mírjam - Razorgore"] = {
-		},
-		["Mírjam - Firemaw"] = {
-		},
-		["Helpsiebren - Razorgore"] = {
-		},
-		["Partijlijder - Razorgore"] = {
-		},
-		["Mirjam - Firemaw"] = {
+		["Awwaa - Gehennas"] = {
 		},
 		["Partijleider - Razorgore"] = {
-		},
-		["Eefjé - Razorgore"] = {
 		},
 		["Bankerinos - Firemaw"] = {
 		},
@@ -52,6 +44,26 @@ SimpleUnitFramesDB = {
 			},
 		},
 		["Kealthas - Razorgore"] = {
+		},
+		["Ikzoektom - Razorgore"] = {
+		},
+		["Maximaal - Firemaw"] = {
+		},
+		["Mírjam - Razorgore"] = {
+		},
+		["Helpsiebren - Razorgore"] = {
+		},
+		["Mirjam - Firemaw"] = {
+		},
+		["Partijleider - Gehennas"] = {
+		},
+		["Eefjé - Razorgore"] = {
+		},
+		["Mírjam - Firemaw"] = {
+		},
+		["Partijlijder - Razorgore"] = {
+		},
+		["Rinque - Gehennas"] = {
 		},
 	},
 }

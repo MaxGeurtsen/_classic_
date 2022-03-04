@@ -8,7 +8,8 @@ local function HasEventSubType(value)
 		value == c.EVENT_ZONE_LEAVE or
 		value == c.EVENT_SHAPESHIFT_IN or
 		value == c.EVENT_SHAPESHIFT_OUT or
-		value == c.EVENT_SPELL_CAST_SUCCESS or
+		value == c.EVENT_AURA_CHANGED or
+		value == c.EVENT_STANCE_CHANGED or
 		value == c.EVENT_CUSTOMSCRIPT
 end
 
@@ -93,11 +94,23 @@ function GqUiFrameEvents_OnShow(self)
 								info.value = script;
 								UIDropDownMenu_AddButton(info);
 							end
-						elseif e.newBindingValues[c.FIELD_TYPE] == c.EVENT_SPELL_CAST_SUCCESS then
+						elseif e.newBindingValues[c.FIELD_TYPE] == c.EVENT_AURA_CHANGED then
 							-- paladin aura
 							for _, spellDisplayName in ipairs(c:GetPaladinAurasSorted()) do
 								info.text = spellDisplayName;
 								for spellId, spellName in pairs(c:GetPaladinAuras()) do
+									if spellName == spellDisplayName then
+										info.value = { name = spellDisplayName, spellId = spellId };
+										break;
+									end
+								end
+								UIDropDownMenu_AddButton(info);
+							end
+						elseif e.newBindingValues[c.FIELD_TYPE] == c.EVENT_STANCE_CHANGED then
+							-- warrior stance
+							for _, spellDisplayName in ipairs(c:GetWarriorStancesSorted()) do
+								info.text = spellDisplayName;
+								for spellId, spellName in pairs(c:GetWarriorStances()) do
 									if spellName == spellDisplayName then
 										info.value = { name = spellDisplayName, spellId = spellId };
 										break;
@@ -138,9 +151,12 @@ function GqUiFrameEvents_OnShow(self)
 			if e.newBindingValues[c.FIELD_TYPE] == c.EVENT_CUSTOMSCRIPT then
 				-- custom scripts
 				UIDropDownMenu_SetText(e.cbEventSubType, c:GetText("< choose script >"));
-			elseif e.newBindingValues[c.FIELD_TYPE] == c.EVENT_SPELL_CAST_SUCCESS then
+			elseif e.newBindingValues[c.FIELD_TYPE] == c.EVENT_AURA_CHANGED then
 				-- paladin aura
 				UIDropDownMenu_SetText(e.cbEventSubType, c:GetText("< choose aura >"));
+			elseif e.newBindingValues[c.FIELD_TYPE] == c.EVENT_STANCE_CHANGED then
+				-- warrior stance
+				UIDropDownMenu_SetText(e.cbEventSubType, c:GetText("< choose stance >"));
 			elseif e.newBindingValues[c.FIELD_TYPE] == c.EVENT_SHAPESHIFT_IN or e.newBindingValues[c.FIELD_TYPE] == c.EVENT_SHAPESHIFT_OUT then
 				-- druid form
 				UIDropDownMenu_SetText(e.cbEventSubType, c:GetText("< choose form >"));
@@ -162,8 +178,11 @@ function GqUiFrameEvents_OnShow(self)
 			if e.newBindingValues[c.FIELD_TYPE] == c.EVENT_CUSTOMSCRIPT then
 				-- custom scripts
 				UIDropDownMenu_SetText(e.cbEventSubType, self.value[c.FIELD_NAME]);
-			elseif e.newBindingValues[c.FIELD_TYPE] == c.EVENT_SPELL_CAST_SUCCESS then
+			elseif e.newBindingValues[c.FIELD_TYPE] == c.EVENT_AURA_CHANGED then
 				-- paladin aura
+				UIDropDownMenu_SetText(e.cbEventSubType, self.value["name"]);
+			elseif e.newBindingValues[c.FIELD_TYPE] == c.EVENT_STANCE_CHANGED then
+				-- warrior stance
 				UIDropDownMenu_SetText(e.cbEventSubType, self.value["name"]);
 			elseif e.newBindingValues[c.FIELD_TYPE] == c.EVENT_SHAPESHIFT_IN or e.newBindingValues[c.FIELD_TYPE] == c.EVENT_SHAPESHIFT_OUT then
 				-- druid form
@@ -264,9 +283,12 @@ function GqUiFrameEvents_OnShow(self)
 			e.cbEventSubSubType:Show();
 			if e.newBindingValues[c.FIELD_TYPE] == c.EVENT_ZONE_ENTER or e.newBindingValues[c.FIELD_TYPE] == c.EVENT_ZONE_LEAVE then
 				UIDropDownMenu_SetText(e.cbEventSubSubType, c:GetText("< subzone (optional) >"));
-			elseif e.newBindingValues[c.FIELD_TYPE] == c.EVENT_SPELL_CAST_SUCCESS then
+			elseif e.newBindingValues[c.FIELD_TYPE] == c.EVENT_AURA_CHANGED then
 				-- paladin aura
 				UIDropDownMenu_SetText(e.cbEventSubSubType, c:GetText("< choose aura >"));
+			elseif e.newBindingValues[c.FIELD_TYPE] == c.EVENT_STANCE_CHANGED then
+				-- warrior stance
+				UIDropDownMenu_SetText(e.cbEventSubSubType, c:GetText("< choose stance >"));
 			elseif e.newBindingValues[c.FIELD_TYPE] == c.EVENT_SHAPESHIFT_IN or e.newBindingValues[c.FIELD_TYPE] == c.EVENT_SHAPESHIFT_OUT then
 				-- druid form
 				UIDropDownMenu_SetText(e.cbEventSubSubType, c:GetText("< choose form >"));
@@ -403,7 +425,8 @@ function GqUiFrameEvents_OnShow(self)
 						e.newBindingValues[c.FIELD_TYPE] ~= c.EVENT_CUSTOMSCRIPT and
 						e.newBindingValues[c.FIELD_TYPE] ~= c.EVENT_SHAPESHIFT_IN and
 						e.newBindingValues[c.FIELD_TYPE] ~= c.EVENT_SHAPESHIFT_OUT and
-						e.newBindingValues[c.FIELD_TYPE] ~= c.EVENT_SPELL_CAST_SUCCESS) or e.newBindingValues[c.FIELD_SUBTYPE]);
+						e.newBindingValues[c.FIELD_TYPE] ~= c.EVENT_AURA_CHANGED and
+						e.newBindingValues[c.FIELD_TYPE] ~= c.EVENT_STANCE_CHANGED) or e.newBindingValues[c.FIELD_SUBTYPE]);
 		end
 	end
 

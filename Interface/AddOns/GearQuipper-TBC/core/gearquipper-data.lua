@@ -114,8 +114,11 @@ function c:SaveSet(setName, notify)
 			end
 
 			c:SaveCloakAndHelmet(setName, notify);
-			c:SaveActionConfiguration(setName, notify);
 			c:SaveCurrentSetName(setName);
+
+			if c:LoadActionSlotsOption(setName) then
+				c:SaveActionConfiguration(setName, notify);
+			end
 
 			c:RefreshSetList(setName);
 			c:SetPaperDollLabelText();
@@ -262,7 +265,7 @@ function c:ReplaceItemStringInAllSets(oldString, newString, notify)
 	c:DebugPrint("ReplaceItemStringInAllSets", oldString, newString, notify);
 	for _, setName in ipairs(c:LoadSetNames()) do
 		for slotId, itemString in pairs(c:LoadSet(setName)) do
-			if itemString == oldString then
+			if itemString == oldString and (not c:LoadPartialOption(setName) or c:LoadSlotState(slotId, setName)) then
 				c:SaveSlot(slotId, setName, notify, newString);
 			end
 		end

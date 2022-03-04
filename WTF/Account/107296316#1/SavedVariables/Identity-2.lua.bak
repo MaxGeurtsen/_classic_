@@ -1,9 +1,14 @@
 
 IdentityDB = {
 	["profileKeys"] = {
+		["Partijleider - Gehennas"] = "Partijleider - Razorgore",
+		["Kealthas - Razorgore"] = "Default",
+		["Partijlijder - Gehennas"] = "Default",
+		["Partijlijder - Razorgore"] = "Default",
+		["Rinque - Gehennas"] = "Default",
 		["Firebreather - Firemaw"] = "Default",
 		["Partijleider - Razorgore"] = "Partijleider - Razorgore",
-		["Kealthas - Razorgore"] = "Default",
+		["Awwaa - Gehennas"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

@@ -1,0 +1,54 @@
+
+GDKPd_DB = {
+	["profileKeys"] = {
+		["Rinque - Gehennas"] = "Rinque - Gehennas",
+		["Partijlijder - Gehennas"] = "Partijlijder - Gehennas",
+		["Partijleider - Gehennas"] = "Partijleider - Gehennas",
+	},
+	["global"] = {
+		["shownPopupAddonMsg4_2"] = true,
+	},
+	["profiles"] = {
+		["Rinque - Gehennas"] = {
+			["movable"] = false,
+			["point"] = {
+				["y"] = -235.4869537353516,
+				["relative"] = "RIGHT",
+				["point"] = "RIGHT",
+				["x"] = -227.4358673095703,
+			},
+		},
+		["Partijlijder - Gehennas"] = {
+			["movable"] = false,
+		},
+		["Partijleider - Gehennas"] = {
+			["movable"] = false,
+			["point"] = {
+				["y"] = -69.38462829589844,
+				["relative"] = "RIGHT",
+				["point"] = "RIGHT",
+				["x"] = -235.0258178710938,
+			},
+			["shareThirdAmount"] = 0.01,
+			["startBid"] = 300,
+			["increment"] = 50,
+			["minQuality"] = 4,
+			["shareSecondAmount"] = 0.01,
+			["hideChatMessages"] = {
+				["auctionAnnounce"] = true,
+				["auctionCancel"] = true,
+			},
+		},
+	},
+}
+GDKPd_PotData = {
+	["playerBalance"] = {
+	},
+	["history"] = {
+	},
+	["potAmount"] = 0,
+	["curPotHistory"] = {
+	},
+}
+GDKPd_BalanceData = {
+}

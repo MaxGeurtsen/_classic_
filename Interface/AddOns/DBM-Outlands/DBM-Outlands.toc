@@ -1,6 +1,6 @@
-## Interface: 20502
+## Interface: 20503
 ## X-Min-Interface: 20501
-## Version: 2.5.22-15-gf003b0c
+## Version: 2.5.29-12-g503d7ea
 ## Title:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Outlands|r
 ## Title-koKR:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0아웃랜드|r
 ## Title-deDE:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Scherbenwelt|r

@@ -1,7 +1,7 @@
 WeakAurasCompanion: enabled
 WeakAurasArchive: enabled
 TradeSkillMaster: enabled
-GearQuipper-TBC: enabled
+GearQuipper-TBC: disabled
 AtlasLootClassic_Options: enabled
 AtlasLootClassic_Collections: enabled
 AtlasLootClassic_Crafting: enabled

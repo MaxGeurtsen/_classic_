@@ -1,8 +1,8 @@
-## Interface: 20502
+## Interface: 20503
 ## Notes: Instance lockout tracking with mob count/xp/gold/trade logs, battleground/arena logs, and much more.
 ## Title: Nova Instance Tracker
 ## Author: Novaspark-Arugal OCE
-## Version: 1.26
+## Version: 1.27
 ## SavedVariables: NITdatabase
 
 embeds.xml

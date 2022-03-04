@@ -1,6 +1,6 @@
 ﻿
 	----------------------------------------------------------------------
-	-- 	Leatrix Maps 2.5.82 (5th January 2022)
+	-- 	Leatrix Maps 2.5.93 (2nd March 2022)
 	----------------------------------------------------------------------
 
 	-- 10:Func, 20:Comm, 30:Evnt, 40:Panl
@@ -12,7 +12,7 @@
 	local LeaMapsLC, LeaMapsCB, LeaDropList, LeaConfigList = {}, {}, {}, {}
 
 	-- Version
-	LeaMapsLC["AddonVer"] = "2.5.82"
+	LeaMapsLC["AddonVer"] = "2.5.93"
 
 	-- Get locale table
 	local void, Leatrix_Maps = ...
@@ -312,7 +312,8 @@
 				-- Function to update map
 				local function cUpdate(self, elapsed)
 					if cTime > 2 or cTime == -1 then
-						if BattlefieldMapFrame.ScrollContainer:IsPanning() or IsShiftKeyDown() then return end
+						if BattlefieldMapFrame.ScrollContainer:IsPanning() then return end
+						if IsShiftKeyDown() then cTime = -2000 return end
 						local position = C_Map.GetPlayerMapPosition(BattlefieldMapFrame.mapID, "player")
 						if position then
 							local x, y = position.x, position.y
@@ -363,8 +364,16 @@
 				end)
 
 				-- Update location immediately or after a very short delay
-				local function SetCenterNow() if LeaMapsLC["BattleCenterOnPlayer"] == "On" then cTime = -1 end	end
-				local function SetCenterSoon() if LeaMapsLC["BattleCenterOnPlayer"] == "On" then cTime = 1.7 end end
+				local function SetCenterNow()
+					if LeaMapsLC["BattleCenterOnPlayer"] == "On" then
+						if IsShiftKeyDown() then cTime = -2000 else	cTime = -1 end
+					end
+				end
+				local function SetCenterSoon()
+					if LeaMapsLC["BattleCenterOnPlayer"] == "On" then
+						if IsShiftKeyDown() then cTime = -2000 else cTime = 1.7 end
+					end
+				end
 
 				BattlefieldMapFrame.ScrollContainer:HookScript("OnMouseUp", SetCenterSoon)
 				BattlefieldMapFrame:HookScript("OnShow", SetCenterNow)
@@ -569,7 +578,8 @@
 			-- Function to update map
 			local function cUpdate(self, elapsed)
 				if cTime > 2 or cTime == -1 then
-					if WorldMapFrame.ScrollContainer:IsPanning() or IsShiftKeyDown() then return end
+					if WorldMapFrame.ScrollContainer:IsPanning() then return end
+					if IsShiftKeyDown() then cTime = -2000 return end
 					local position = C_Map.GetPlayerMapPosition(WorldMapFrame.mapID, "player")
 					if position then
 						local x, y = position.x, position.y
@@ -603,8 +613,16 @@
 			SetUpdateFunc()
 
 			-- Update location immediately or after a very short delay
-			local function SetCenterNow() if LeaMapsLC["CenterMapOnPlayer"] == "On" then cTime = -1 end	end
-			local function SetCenterSoon() if LeaMapsLC["CenterMapOnPlayer"] == "On" then cTime = 1.7 end end
+			local function SetCenterNow()
+				if LeaMapsLC["CenterMapOnPlayer"] == "On" then
+					if IsShiftKeyDown() then cTime = -2000 else	cTime = -1 end
+				end
+			end
+			local function SetCenterSoon()
+				if LeaMapsLC["CenterMapOnPlayer"] == "On" then
+					if IsShiftKeyDown() then cTime = -2000 else cTime = 1.7 end
+				end
+			end
 
 			WorldMapFrame.ScrollContainer:HookScript("OnMouseUp", SetCenterSoon)
 			WorldMapFrame:HookScript("OnShow", SetCenterNow)
@@ -1774,6 +1792,7 @@
 					{"FlightH", 63.3, 48.5, L["Trade Quarter"] .. ", " .. L["Undercity"], nil, tHTex, nil, nil},
 					{"Spirit", 67.9, 14.0, L["Spirit Healer"], nil, spTex, nil, nil},
 					{"Arrow", 66.2, 5.2, L["Tirisfal Glades"], nil, arTex, nil, nil, nil, nil, nil, 0, 1420},
+					{"TravelH", 54.9, 11.3, L["Silvermoon City"], L["Orb of Translocation"]},
 				},
 				--[[Isle of Quel'Danas]] [1957] = {
 					{"Spirit", 46.6, 32.7, L["Spirit Healer"], nil, spTex, nil, nil},
@@ -1787,6 +1806,7 @@
 					{"Spirit", 44.3, 71.2, L["Spirit Healer"], nil, spTex, nil, nil},
 					{"Spirit", 60.0, 64.0, L["Spirit Healer"], nil, spTex, nil, nil},
 					{"Arrow", 48.7, 91.0, L["Ghostlands"], nil, arTex, nil, nil, nil, nil, nil, 3, 1942},
+					{"Arrow", 56.7, 49.7, L["Silvermoon City"], nil, arTex, nil, nil, nil, nil, nil, 0.0, 1954},
 				},
 				--[[Ghostlands]] [1942] = {
 					{"FlightH", 45.4, 30.5, L["Tranquillien"] .. ", " .. L["Ghostlands"], nil, tHTex, nil, nil},
@@ -1797,6 +1817,10 @@
 					{"Spirit", 80.5, 69.1, L["Spirit Healer"], nil, spTex, nil, nil},
 					{"Arrow", 47.5, 84.0, L["Eastern Plaguelands"], nil, arTex, nil, nil, nil, nil, nil, 3, 1423},
 					{"Arrow", 48.4, 13.2, L["Eversong Woods"], nil, arTex, nil, nil, nil, nil, nil, 0, 1941},
+				},
+				--[[Silvermoon City]] [1954] = {
+					{"TravelH", 49.5, 14.8, L["Undercity"], L["Orb of Translocation"]},
+					{"Arrow", 72.6, 85.9, L["Eversong Woods"], nil, arTex, nil, nil, nil, nil, nil, 3.2, 1941},
 				},
 
 				----------------------------------------------------------------------
