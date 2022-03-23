@@ -1,281 +1,49 @@
 
 PlaterDB = {
 	["captured_spells"] = {
-		[31620] = {
-			["source"] = "Skeleton Mage",
+		[25530] = {
+			["encounterName"] = "Void Reaver",
+			["source"] = "Searing Totem VII",
+			["npcID"] = 15480,
 			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 17903,
+			["encounterID"] = 731,
 		},
-		[31624] = {
-			["source"] = "Shadowy Necromancer",
+		[34172] = {
+			["encounterName"] = "Void Reaver",
+			["source"] = "Void Reaver",
+			["npcID"] = 19516,
 			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 17899,
+			["encounterID"] = 731,
 		},
-		[12021] = {
-			["encounterName"] = "Blackheart the Inciter",
+		[4511] = {
+			["event"] = "SPELL_AURA_APPLIED",
 			["type"] = "BUFF",
-			["source"] = "Cabal Fanatic",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 18830,
+			["source"] = "Unknown",
+			["npcID"] = 416,
 		},
-		[27050] = {
-			["source"] = "Peltok",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 19189,
-		},
-		[12039] = {
-			["source"] = "Cabal Acolyte",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 18633,
-		},
-		[32863] = {
-			["source"] = "Cabal Warlock",
-			["type"] = "DEBUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 18640,
-		},
-		[16380] = {
-			["source"] = "Eye of Naxxramas",
+		[22888] = {
+			["source"] = "Overlord Runthak",
 			["type"] = "BUFF",
 			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 10411,
+			["npcID"] = 173758,
 		},
-		[12557] = {
-			["source"] = "Skeletal Guardian",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 10390,
-		},
-		[33923] = {
-			["encounterName"] = "Murmur",
-			["source"] = "Murmur",
-			["encounterID"] = 1910,
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 18708,
-		},
-		[33676] = {
-			["encounterName"] = "Blackheart the Inciter",
-			["source"] = "Blackheart the Inciter",
-			["encounterID"] = 1909,
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 18667,
-		},
-		[33684] = {
-			["encounterName"] = "Blackheart the Inciter",
-			["type"] = "DEBUFF",
-			["source"] = "Blackheart the Inciter",
-			["encounterID"] = 1909,
+		[6307] = {
 			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 19300,
-		},
-		[17165] = {
-			["source"] = "Cabal Shadow Priest",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 18637,
-		},
-		[24313] = {
-			["source"] = "Levixus",
 			["type"] = "BUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 19847,
+			["source"] = "Yazjub",
+			["npcID"] = 416,
 		},
-		[16143] = {
-			["source"] = "Mangled Cadaver",
-			["type"] = "DEBUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 10382,
-		},
-		[19480] = {
+		[24529] = {
 			["source"] = "Unknown",
 			["type"] = "BUFF",
 			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 417,
+			["npcID"] = 731,
 		},
-		[33493] = {
-			["source"] = "Malicious Instructor",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 18848,
-		},
-		[33501] = {
-			["source"] = "Malicious Instructor",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 18848,
-		},
-		[36824] = {
-			["source"] = "Tobias the Filth Gorger",
-			["type"] = "DEBUFF",
+		[35696] = {
 			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 21411,
-		},
-		[34027] = {
-			["source"] = "Luna",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 16932,
-		},
-		[23839] = {
+			["type"] = "BUFF",
 			["source"] = "Unknown",
-			["type"] = "BUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 417,
-		},
-		[16448] = {
-			["source"] = "Plagued Rat",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 10441,
-		},
-		[30991] = {
-			["source"] = "Cabal Assassin",
-			["type"] = "BUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 18636,
-		},
-		[20795] = {
-			["source"] = "Cabal Ritualist",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 18794,
-		},
-		[29979] = {
-			["encounterName"] = "Shade of Aran",
-			["source"] = "Shade of Aran",
-			["encounterID"] = 658,
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 16524,
-		},
-		[29991] = {
-			["encounterName"] = "Shade of Aran",
-			["type"] = "DEBUFF",
-			["source"] = "Shade of Aran",
-			["encounterID"] = 658,
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 16524,
-		},
-		[23110] = {
-			["source"] = "Luna",
-			["type"] = "BUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 16932,
-		},
-		[31537] = {
-			["source"] = "Ghoul",
-			["type"] = "BUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 17895,
-		},
-		[30035] = {
-			["encounterName"] = "Shade of Aran",
-			["source"] = "Shade of Aran",
-			["encounterID"] = 658,
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 16524,
-		},
-		[33709] = {
-			["encounterName"] = "Blackheart the Inciter",
-			["source"] = "Blackheart the Inciter",
-			["encounterID"] = 1909,
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 18667,
-		},
-		[32103] = {
-			["source"] = "Alliance Rifleman",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 17921,
-		},
-		[33502] = {
-			["encounterName"] = "Grandmaster Vorpil",
-			["source"] = "Cabal Spellbinder",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 18639,
-		},
-		[8314] = {
-			["source"] = "Kranal Fiss",
-			["type"] = "BUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 5907,
-		},
-		[10101] = {
-			["source"] = "Patchwork Horror",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 10414,
-		},
-		[31617] = {
-			["source"] = "Shadowy Necromancer",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 17899,
-		},
-		[31625] = {
-			["source"] = "Shadowy Necromancer",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 17899,
-		},
-		[19134] = {
-			["source"] = "Fel Overseer",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 18796,
-		},
-		[16592] = {
-			["source"] = "Cabal Shadow Priest",
-			["type"] = "BUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 18637,
-		},
-		[33335] = {
-			["encounterName"] = "Grandmaster Vorpil",
-			["source"] = "Cabal Spellbinder",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 18639,
-		},
-		[16867] = {
-			["source"] = "Baroness Anastari",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 10436,
-		},
-		[8599] = {
-			["source"] = "Plague Ghoul",
-			["type"] = "BUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 10405,
-		},
-		[13446] = {
-			["source"] = "Ravaged Cadaver",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 10381,
-		},
-		[15496] = {
-			["source"] = "Skeletal Berserker",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 10391,
-		},
-		[12187] = {
-			["source"] = "Undercity Guardian",
-			["type"] = "BUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 5624,
-		},
-		[29924] = {
-			["source"] = "Sorcerous Shade",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 16526,
-		},
-		[11428] = {
-			["source"] = "Cabal Deathsworn",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 18635,
-		},
-		[33487] = {
-			["source"] = "Cabal Ritualist",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 18794,
-		},
-		[7] = {
-			["source"] = "Ash'ari Crystal",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 10415,
-		},
-		[29956] = {
-			["encounterName"] = "Shade of Aran",
-			["source"] = "Shade of Aran",
-			["encounterID"] = 658,
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 16524,
+			["npcID"] = 17252,
 		},
 		[23840] = {
 			["source"] = "Unknown",
@@ -283,736 +51,74 @@ PlaterDB = {
 			["event"] = "SPELL_AURA_APPLIED",
 			["npcID"] = 417,
 		},
-		[33551] = {
-			["encounterName"] = "Ambassador Hellmaw",
-			["source"] = "Ambassador Hellmaw",
-			["encounterID"] = 1908,
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 18731,
-		},
-		[30231] = {
-			["source"] = "Ambassador Hellmaw",
-			["type"] = "BUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 18731,
-		},
-		[17238] = {
-			["source"] = "Maleki the Pallid",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 10438,
-		},
-		[7804] = {
-			["type"] = "BUFF",
-			["source"] = "Unknown",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 416,
-		},
-		[3391] = {
-			["source"] = "Cabal Cultist",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 18631,
-		},
-		[23843] = {
-			["type"] = "BUFF",
-			["source"] = "Unknown",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 1860,
-		},
-		[30004] = {
-			["encounterName"] = "Shade of Aran",
-			["source"] = "Shade of Aran",
-			["encounterID"] = 658,
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 16524,
-		},
-		[11976] = {
-			["source"] = "Skeletal Berserker",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 10391,
-		},
-		[6307] = {
-			["type"] = "BUFF",
-			["source"] = "Unknown",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 416,
-		},
-		[13444] = {
-			["source"] = "Rockwing Gargoyle",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 10408,
-		},
-		[4962] = {
-			["source"] = "Crypt Beast",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 10413,
-		},
-		[40505] = {
-			["source"] = "Plague Ghoul",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 10405,
-		},
-		[22888] = {
-			["type"] = "BUFF",
-			["source"] = "Overlord Runthak",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 173758,
-		},
-		[31622] = {
-			["source"] = "Skeleton Mage",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 17903,
-		},
-		[34699] = {
-			["source"] = "Time Watcher",
-			["type"] = "BUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 19918,
-		},
-		[14032] = {
-			["source"] = "Cabal Shadow Priest",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 18637,
-		},
-		[14034] = {
-			["encounterName"] = "Grandmaster Vorpil",
-			["source"] = "Cabal Summoner",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 18634,
-		},
-		[33958] = {
-			["encounterName"] = "Blackheart the Inciter",
-			["type"] = "BUFF",
-			["source"] = "Cabal Zealot",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 18638,
-		},
-		[33711] = {
-			["encounterName"] = "Murmur",
-			["source"] = "Murmur",
-			["encounterID"] = 1910,
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 18708,
-		},
-		[6016] = {
-			["source"] = "Nerub'enkan",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 10437,
-		},
-		[13787] = {
-			["source"] = "Skeletal Guardian",
-			["type"] = "BUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 10390,
-		},
-		[33480] = {
-			["source"] = "Cabal Deathsworn",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 18635,
-		},
-		[16553] = {
-			["source"] = "Ghoul Ravener",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 10406,
-		},
-		[15578] = {
-			["encounterName"] = "Grandmaster Vorpil",
-			["source"] = "Cabal Executioner",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 18632,
-		},
-		[16345] = {
-			["source"] = "Patchwork Horror",
-			["type"] = "BUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 10414,
-		},
-		[16565] = {
-			["source"] = "Baroness Anastari",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 10436,
-		},
-		[30849] = {
-			["source"] = "Fel Guardhound",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 18642,
-		},
-		[31618] = {
-			["source"] = "Skeleton Mage",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 17903,
-		},
-		[37361] = {
-			["source"] = "Skeletal Guardian",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 10390,
-		},
-		[16100] = {
-			["source"] = "Hearthsinger Forresten",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 10558,
-		},
-		[11767] = {
-			["event"] = "SPELL_AURA_APPLIED",
-			["type"] = "BUFF",
-			["source"] = "Unknown",
-			["npcID"] = 416,
-		},
-		[31266] = {
-			["source"] = "Lady Jaina Proudmoore",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 17772,
-		},
-		[31732] = {
-			["source"] = "Alliance Knight",
-			["type"] = "BUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 17920,
-		},
-		[27269] = {
-			["source"] = "Unknown",
-			["type"] = "BUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 416,
-		},
-		[8715] = {
-			["source"] = "Rockwing Screecher",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 10409,
-		},
-		[25530] = {
-			["encounterName"] = "Shade of Aran",
-			["source"] = "Searing Totem VII",
-			["encounterID"] = 658,
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 15480,
-		},
-		[31741] = {
-			["source"] = "Alliance Sorceress",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 17922,
-		},
-		[16868] = {
-			["source"] = "Shrieking Banshee",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 10463,
-		},
-		[3589] = {
-			["source"] = "Shrieking Banshee",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 10463,
-		},
-		[24394] = {
-			["source"] = "Hopeanuoli",
-			["type"] = "DEBUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 731,
-		},
-		[10767] = {
-			["type"] = "BUFF",
-			["source"] = "Mangletooth",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 3430,
-		},
-		[16577] = {
-			["source"] = "Blighthound",
-			["type"] = "BUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 11885,
-		},
-		[20615] = {
-			["source"] = "Fel Overseer",
-			["type"] = "DEBUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 18796,
-		},
-		[35696] = {
-			["source"] = "Unknown",
-			["type"] = "BUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 417,
-		},
-		[4511] = {
-			["source"] = "Unknown",
-			["type"] = "BUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 416,
-		},
-		[29953] = {
-			["encounterName"] = "Shade of Aran",
-			["source"] = "Shade of Aran",
-			["encounterID"] = 658,
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 16524,
-		},
-		[34456] = {
-			["source"] = "Luna",
-			["type"] = "BUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 16932,
-		},
-		[1460] = {
-			["source"] = "Dalar Dawnweaver",
-			["type"] = "BUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 1938,
-		},
-		[25058] = {
-			["source"] = "Cabal Acolyte",
-			["type"] = "BUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 18633,
-		},
-		[29921] = {
-			["encounterName"] = "Shade of Aran",
-			["type"] = "BUFF",
-			["source"] = "Spell Shade",
-			["encounterID"] = 658,
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 16525,
-		},
-		[29925] = {
-			["source"] = "Spell Shade",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 16525,
-		},
-		[12540] = {
-			["source"] = "Cabal Ritualist",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 18794,
-		},
-		[7870] = {
-			["source"] = "Helva",
-			["type"] = "BUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 1863,
-		},
-		[37051] = {
-			["encounterName"] = "Shade of Aran",
-			["source"] = "Shade of Aran",
-			["encounterID"] = 658,
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 16524,
-		},
-		[3600] = {
-			["source"] = "Earthbind Totem",
-			["type"] = "DEBUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 2630,
-		},
-		[16430] = {
-			["source"] = "Thuzadin Necromancer",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 10400,
-		},
-		[35291] = {
-			["source"] = "Luna",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 16932,
-		},
-		[35298] = {
-			["source"] = "Peltok",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 19189,
-		},
-		[12555] = {
-			["source"] = "Skeletal Berserker",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 10391,
-		},
-		[29961] = {
-			["encounterName"] = "Shade of Aran",
-			["source"] = "Shade of Aran",
-			["encounterID"] = 658,
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 16524,
-		},
-		[14887] = {
-			["source"] = "Soulless Ghoul",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 1794,
-		},
-		[29969] = {
-			["encounterName"] = "Shade of Aran",
-			["source"] = "Shade of Aran",
-			["encounterID"] = 658,
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 16524,
-		},
-		[16458] = {
-			["source"] = "Plague Ghoul",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 10405,
-		},
-		[14921] = {
-			["source"] = "Hopeanuoli",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 731,
-		},
-		[20801] = {
-			["source"] = "Cabal Familiar",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 18641,
-		},
-		[16172] = {
-			["source"] = "Ghoul Ravener",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 10406,
-		},
-		[31264] = {
-			["source"] = "Lady Jaina Proudmoore",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 17772,
-		},
-		[17243] = {
-			["source"] = "Maleki the Pallid",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 10438,
-		},
-		[17235] = {
-			["source"] = "Nerub'enkan",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 10437,
-		},
-		[29920] = {
-			["encounterName"] = "Shade of Aran",
-			["type"] = "BUFF",
-			["source"] = "Spell Shade",
-			["encounterID"] = 658,
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 16525,
-		},
-		[14907] = {
-			["source"] = "The Unforgiven",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 10516,
-		},
-		[1604] = {
-			["source"] = "Scarlet Hunter",
-			["type"] = "DEBUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 1831,
-		},
-		[29962] = {
-			["encounterName"] = "Shade of Aran",
-			["source"] = "Shade of Aran",
-			["encounterID"] = 658,
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 16524,
-		},
-		[9672] = {
-			["source"] = "Skeletal Guardian",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 10390,
-		},
 		[35076] = {
-			["source"] = "A'dal",
-			["type"] = "BUFF",
 			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "BUFF",
+			["source"] = "A'dal",
 			["npcID"] = 18481,
 		},
-		[33506] = {
-			["encounterName"] = "Grandmaster Vorpil",
-			["source"] = "Cabal Summoner",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 18634,
-		},
-		[33563] = {
-			["encounterName"] = "Grandmaster Vorpil",
+		[11767] = {
+			["encounterName"] = "Void Reaver",
 			["type"] = "BUFF",
-			["source"] = "Grandmaster Vorpil",
-			["encounterID"] = 1911,
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 18732,
-		},
-		[31308] = {
-			["source"] = "Lady Jaina Proudmoore",
-			["type"] = "BUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 17772,
-		},
-		[16460] = {
-			["source"] = "Plagued Insect",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 10461,
-		},
-		[33689] = {
-			["encounterName"] = "Murmur",
-			["source"] = "Murmur",
-			["encounterID"] = 1910,
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 18708,
-		},
-		[33617] = {
-			["encounterName"] = "Grandmaster Vorpil",
-			["source"] = "Grandmaster Vorpil",
-			["encounterID"] = 1911,
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 18732,
-		},
-		[9574] = {
-			["source"] = "Cabal Ritualist",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 18794,
-		},
-		[14443] = {
-			["source"] = "Hearthsinger Forresten",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 10558,
-		},
-		[18327] = {
-			["source"] = "Baroness Anastari",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 10436,
-		},
-		[11443] = {
-			["source"] = "Thuzadin Shadowcaster",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 10398,
-		},
-		[37052] = {
-			["encounterName"] = "Shade of Aran",
-			["source"] = "Shade of Aran",
-			["encounterID"] = 658,
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 16524,
-		},
-		[29927] = {
-			["source"] = "Spell Shade",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 16525,
-		},
-		[27268] = {
-			["source"] = "Unknown",
-			["type"] = "BUFF",
-			["event"] = "SPELL_AURA_APPLIED",
+			["source"] = "Quzbis",
 			["npcID"] = 416,
-		},
-		[31607] = {
-			["source"] = "Abomination",
-			["type"] = "BUFF",
 			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 17898,
+			["encounterID"] = 731,
 		},
-		[9080] = {
-			["source"] = "Skeletal Berserker",
+		[9532] = {
 			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 10391,
+			["source"] = "Kolkar Stormer",
+			["npcID"] = 3273,
 		},
-		[31739] = {
-			["source"] = "Alliance Priest",
+		[12024] = {
 			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 17928,
+			["source"] = "Kolkar Wrangler",
+			["npcID"] = 3272,
 		},
-		[30471] = {
-			["source"] = "Fel Overseer",
+		[3716] = {
 			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 18796,
+			["source"] = "Zangvhug",
+			["npcID"] = 1860,
 		},
-		[31731] = {
-			["source"] = "Alliance Footman",
-			["type"] = "BUFF",
+		[8014] = {
+			["type"] = "DEBUFF",
+			["source"] = "Kolkar Invader",
 			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 17919,
+			["npcID"] = 9524,
 		},
-		[31627] = {
-			["source"] = "Shadowy Necromancer",
+		[6660] = {
 			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 17899,
+			["source"] = "Southsea Cannoneer",
+			["npcID"] = 3382,
 		},
-		[33499] = {
-			["encounterName"] = "Blackheart the Inciter",
-			["type"] = "BUFF",
-			["source"] = "Cabal Zealot",
+		[10767] = {
 			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 18638,
-		},
-		[13737] = {
-			["source"] = "Scourge Champion",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 8529,
-		},
-		[32123] = {
-			["source"] = "Alliance Footman",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 17919,
-		},
-		[15471] = {
-			["source"] = "Crypt Crawler",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 10412,
-		},
-		[33841] = {
-			["encounterName"] = "Grandmaster Vorpil",
-			["source"] = "Grandmaster Vorpil",
-			["encounterID"] = 1911,
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 18732,
-		},
-		[27577] = {
-			["source"] = "Fel Overseer",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 18796,
-		},
-		[7896] = {
-			["source"] = "Alliance Rifleman",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 17921,
-		},
-		[16869] = {
-			["source"] = "Maleki the Pallid",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 10438,
-		},
-		[16618] = {
 			["type"] = "BUFF",
 			["source"] = "Mangletooth",
-			["event"] = "SPELL_AURA_APPLIED",
 			["npcID"] = 3430,
 		},
-		[16429] = {
-			["source"] = "Thuzadin Shadowcaster",
+		[6535] = {
 			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 10398,
+			["source"] = "Kolkar Stormer",
+			["npcID"] = 3273,
 		},
-		[23511] = {
-			["source"] = "Dun Baldar North Marshal",
-			["type"] = "DEBUFF",
+		[7764] = {
 			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 14762,
-		},
-		[15232] = {
-			["source"] = "Thuzadin Shadowcaster",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 10398,
-		},
-		[52970] = {
-			["source"] = "Miniwing",
 			["type"] = "BUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 22445,
+			["source"] = "Mangletooth",
+			["npcID"] = 3430,
 		},
-		[35706] = {
-			["source"] = "Unknown",
-			["type"] = "BUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 17252,
-		},
-		[33666] = {
-			["encounterName"] = "Murmur",
-			["type"] = "DEBUFF",
-			["source"] = "Murmur",
-			["encounterID"] = 1910,
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 18708,
-		},
-		[24529] = {
-			["source"] = "Unknown",
-			["type"] = "BUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 16934,
-		},
-		[34702] = {
-			["source"] = "Time Watcher",
-			["type"] = "BUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 19918,
-		},
-		[9613] = {
-			["source"] = "Skeletal Guardian",
+		[6253] = {
 			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 10390,
+			["source"] = "Southsea Brigand",
+			["npcID"] = 3381,
 		},
-		[32691] = {
-			["encounterName"] = "Grandmaster Vorpil",
-			["source"] = "Cabal Spellbinder",
+		[11763] = {
+			["encounterName"] = "Void Reaver",
+			["source"] = "Quzbis",
+			["npcID"] = 416,
 			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 18639,
-		},
-		[29922] = {
-			["source"] = "Sorcerous Shade",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 16526,
-		},
-		[29926] = {
-			["source"] = "Spell Shade",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 16525,
-		},
-		[33833] = {
-			["source"] = "Cabal Ritualist",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 18794,
-		},
-		[16244] = {
-			["source"] = "Hearthsinger Forresten",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 10558,
-		},
-		[37053] = {
-			["encounterName"] = "Shade of Aran",
-			["source"] = "Shade of Aran",
-			["encounterID"] = 658,
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 16524,
-		},
-		[29908] = {
-			["source"] = "Mana Feeder",
-			["type"] = "BUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 16491,
-		},
-		[13730] = {
-			["source"] = "Skeletal Berserker",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 10391,
-		},
-		[33507] = {
-			["encounterName"] = "Grandmaster Vorpil",
-			["source"] = "Cabal Summoner",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 18634,
-		},
-		[29954] = {
-			["encounterName"] = "Shade of Aran",
-			["source"] = "Shade of Aran",
-			["encounterID"] = 658,
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 16524,
-		},
-		[31743] = {
-			["source"] = "Alliance Sorceress",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 17922,
-		},
-		[13738] = {
-			["source"] = "Fleshflayer Ghoul",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 10407,
-		},
-		[29946] = {
-			["encounterName"] = "Shade of Aran",
-			["type"] = "DEBUFF",
-			["source"] = "Shade of Aran",
-			["encounterID"] = 658,
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 16524,
-		},
-		[33547] = {
-			["encounterName"] = "Ambassador Hellmaw",
-			["source"] = "Ambassador Hellmaw",
-			["encounterID"] = 1908,
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 18731,
-		},
-		[32117] = {
-			["source"] = "Alliance Rifleman",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 17921,
-		},
-		[12471] = {
-			["source"] = "Cabal Warlock",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 18640,
+			["encounterID"] = 731,
 		},
 		[25228] = {
 			["source"] = "Unknown",
@@ -1020,157 +126,84 @@ PlaterDB = {
 			["event"] = "SPELL_AURA_APPLIED",
 			["npcID"] = 417,
 		},
-		[30485] = {
-			["encounterName"] = "Grandmaster Vorpil",
-			["type"] = "BUFF",
-			["source"] = "Cabal Executioner",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 18632,
+		[7098] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Witchwing Harpy",
+			["npcID"] = 3276,
 		},
-		[29990] = {
-			["encounterName"] = "Shade of Aran",
+		[6728] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Witchwing Windcaller",
+			["npcID"] = 3280,
+		},
+		[18070] = {
+			["event"] = "SPELL_AURA_APPLIED",
 			["type"] = "DEBUFF",
-			["source"] = "Shade of Aran",
-			["encounterID"] = 658,
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 16524,
+			["source"] = "Earthborer",
+			["npcID"] = 11320,
 		},
-		[23109] = {
-			["source"] = "Hopeanuoli",
+		[12544] = {
+			["event"] = "SPELL_AURA_APPLIED",
 			["type"] = "BUFF",
+			["source"] = "Razormane Geomancer",
+			["npcID"] = 3269,
+		},
+		[7165] = {
 			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 731,
-		},
-		[17503] = {
-			["source"] = "Maleki the Pallid",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 10438,
-		},
-		[16997] = {
-			["source"] = "Rockwing Screecher",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 10409,
-		},
-		[11975] = {
-			["source"] = "Skeletal Guardian",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 10390,
-		},
-		[31540] = {
-			["source"] = "Ghoul",
 			["type"] = "BUFF",
+			["source"] = "Razormane Defender",
+			["npcID"] = 3266,
+		},
+		[1604] = {
 			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 17895,
-		},
-		[31740] = {
-			["source"] = "Alliance Priest",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 17928,
-		},
-		[17013] = {
-			["type"] = "BUFF",
-			["source"] = "Mangletooth",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 3430,
-		},
-		[29923] = {
-			["source"] = "Sorcerous Shade",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 16526,
-		},
-		[6136] = {
-			["source"] = "Maleki the Pallid",
 			["type"] = "DEBUFF",
+			["source"] = "Southsea Cannoneer",
+			["npcID"] = 3382,
+		},
+		[35706] = {
 			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 10438,
+			["type"] = "BUFF",
+			["source"] = "Unknown",
+			["npcID"] = 17252,
 		},
-		[17255] = {
-			["source"] = "Luna",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 16932,
-		},
-		[16324] = {
-			["source"] = "Ravaged Cadaver",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 10381,
-		},
-		[29973] = {
-			["encounterName"] = "Shade of Aran",
-			["source"] = "Shade of Aran",
-			["encounterID"] = 658,
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 16524,
-		},
-		[7160] = {
-			["encounterName"] = "Grandmaster Vorpil",
-			["source"] = "Cabal Executioner",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 18632,
-		},
-		[16431] = {
-			["source"] = "Thuzadin Necromancer",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 10400,
-		},
-		[33707] = {
-			["encounterName"] = "Blackheart the Inciter",
-			["source"] = "Blackheart the Inciter",
-			["encounterID"] = 1909,
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 18667,
-		},
-		[29544] = {
-			["source"] = "Fel Overseer",
-			["type"] = "DEBUFF",
+		[7804] = {
 			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 18796,
+			["type"] = "BUFF",
+			["source"] = "Yazjub",
+			["npcID"] = 416,
 		},
-		[15061] = {
-			["source"] = "Plague Ghoul",
+		[34410] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "BUFF",
+			["source"] = "Garrosh's Buff Bots",
+			["npcID"] = 19660,
+		},
+		[25778] = {
+			["encounterName"] = "Void Reaver",
+			["source"] = "Void Reaver",
+			["npcID"] = 19516,
+			["event"] = "SPELL_CAST_SUCCESS",
+			["encounterID"] = 731,
+		},
+		[34162] = {
+			["encounterName"] = "Void Reaver",
+			["type"] = "BUFF",
+			["source"] = "Void Reaver",
+			["npcID"] = 19516,
+			["event"] = "SPELL_AURA_APPLIED",
+			["encounterID"] = 731,
+		},
+		[19480] = {
+			["source"] = "Unknown",
 			["type"] = "BUFF",
 			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 10405,
+			["npcID"] = 417,
 		},
-		[17175] = {
-			["source"] = "Scarlet Medic",
-			["type"] = "BUFF",
+		[27268] = {
 			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 10605,
-		},
-		[37054] = {
-			["encounterName"] = "Shade of Aran",
-			["source"] = "Conjured Elemental",
-			["encounterID"] = 658,
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 17167,
-		},
-		[19615] = {
-			["source"] = "Luna",
 			["type"] = "BUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 16932,
-		},
-		[33500] = {
-			["encounterName"] = "Grandmaster Vorpil",
-			["type"] = "BUFF",
-			["source"] = "Cabal Executioner",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 18632,
-		},
-		[16832] = {
-			["source"] = "Hopeanuoli",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 731,
-		},
-		[31610] = {
-			["source"] = "Abomination",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 17898,
-		},
-		[31263] = {
-			["source"] = "Lady Jaina Proudmoore",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 17772,
+			["source"] = "Unknown",
+			["npcID"] = 416,
 		},
 	},
 	["captured_casts"] = {
@@ -1190,6 +223,9 @@ PlaterDB = {
 		},
 		[31617] = {
 			["npcID"] = 17899,
+		},
+		[38810] = {
+			["npcID"] = 20864,
 		},
 		[31729] = {
 			["npcID"] = 17916,
@@ -1247,6 +283,9 @@ PlaterDB = {
 		},
 		[7289] = {
 			["npcID"] = 20115,
+		},
+		[6278] = {
+			["npcID"] = 3267,
 		},
 		[38939] = {
 			["npcID"] = 19847,
@@ -1307,6 +346,9 @@ PlaterDB = {
 			["encounterID"] = 1892,
 			["npcID"] = 17307,
 		},
+		[38940] = {
+			["npcID"] = 20901,
+		},
 		[36990] = {
 			["encounterName"] = "Kael'thas Sunstrider",
 			["npcID"] = 21274,
@@ -1332,6 +374,9 @@ PlaterDB = {
 		},
 		[29924] = {
 			["npcID"] = 16526,
+		},
+		[35328] = {
+			["npcID"] = 20197,
 		},
 		[30004] = {
 			["encounterName"] = "Shade of Aran",
@@ -1521,6 +566,9 @@ PlaterDB = {
 		[25530] = {
 			["npcID"] = 15480,
 		},
+		[36738] = {
+			["npcID"] = 20875,
+		},
 		[29670] = {
 			["npcID"] = 16471,
 		},
@@ -1532,6 +580,9 @@ PlaterDB = {
 		},
 		[41150] = {
 			["npcID"] = 22855,
+		},
+		[6950] = {
+			["npcID"] = 3113,
 		},
 		[38145] = {
 			["encounterName"] = "Lady Vashj",
@@ -1690,6 +741,9 @@ PlaterDB = {
 		[40066] = {
 			["npcID"] = 22877,
 		},
+		[5280] = {
+			["npcID"] = 3111,
+		},
 		[22127] = {
 			["npcID"] = 19508,
 		},
@@ -1697,6 +751,9 @@ PlaterDB = {
 			["encounterName"] = "High Priest Thekal",
 			["npcID"] = 14509,
 			["encounterID"] = 789,
+		},
+		[332] = {
+			["npcID"] = 3206,
 		},
 		[17140] = {
 			["npcID"] = 16994,
@@ -1772,6 +829,9 @@ PlaterDB = {
 		},
 		[11975] = {
 			["npcID"] = 10390,
+		},
+		[172] = {
+			["npcID"] = 3204,
 		},
 		[44863] = {
 			["encounterName"] = "Kael'thas Sunstrider",
@@ -2207,6 +1267,9 @@ PlaterDB = {
 		[40331] = {
 			["npcID"] = 17721,
 		},
+		[11921] = {
+			["npcID"] = 3101,
+		},
 		[38445] = {
 			["encounterName"] = "Fathom-Lord Karathress",
 			["encounterID"] = 626,
@@ -2312,6 +1375,9 @@ PlaterDB = {
 			["npcID"] = 23524,
 			["encounterID"] = 603,
 		},
+		[37967] = {
+			["npcID"] = 17871,
+		},
 		[34930] = {
 			["npcID"] = 18331,
 		},
@@ -2320,6 +1386,9 @@ PlaterDB = {
 		},
 		[34163] = {
 			["npcID"] = 17871,
+		},
+		[6728] = {
+			["npcID"] = 3280,
 		},
 		[32011] = {
 			["npcID"] = 20089,
@@ -2334,6 +1403,9 @@ PlaterDB = {
 		},
 		[29054] = {
 			["npcID"] = 18864,
+		},
+		[7799] = {
+			["npcID"] = 416,
 		},
 		[40877] = {
 			["npcID"] = 23330,
@@ -2361,11 +1433,31 @@ PlaterDB = {
 		[11642] = {
 			["npcID"] = 21285,
 		},
+		[41372] = {
+			["npcID"] = 23400,
+		},
 		[37361] = {
 			["npcID"] = 10390,
 		},
+		[15241] = {
+			["npcID"] = 17269,
+		},
 		[17194] = {
 			["npcID"] = 19633,
+		},
+		[31473] = {
+			["encounterName"] = "Aeonus",
+			["encounterID"] = 1919,
+			["npcID"] = 17881,
+		},
+		[6535] = {
+			["npcID"] = 3273,
+		},
+		[38815] = {
+			["npcID"] = 21346,
+		},
+		[17235] = {
+			["npcID"] = 10437,
 		},
 		[33493] = {
 			["npcID"] = 18848,
@@ -2378,40 +1470,71 @@ PlaterDB = {
 		[29582] = {
 			["npcID"] = 16409,
 		},
-		[25602] = {
-			["npcID"] = 19306,
+		[33551] = {
+			["encounterName"] = "Ambassador Hellmaw",
+			["npcID"] = 18731,
+			["encounterID"] = 1908,
 		},
-		[17235] = {
-			["npcID"] = 10437,
+		[37254] = {
+			["npcID"] = 20036,
 		},
-		[15241] = {
-			["npcID"] = 17269,
+		[36604] = {
+			["npcID"] = 20774,
 		},
-		[40079] = {
-			["npcID"] = 22884,
+		[40317] = {
+			["npcID"] = 17729,
 		},
-		[31473] = {
-			["encounterName"] = "Aeonus",
-			["encounterID"] = 1919,
-			["npcID"] = 17881,
+		[34642] = {
+			["npcID"] = 19507,
 		},
 		[16565] = {
 			["npcID"] = 10436,
 		},
-		[37106] = {
-			["npcID"] = 20041,
+		[25602] = {
+			["npcID"] = 19306,
 		},
 		[14443] = {
 			["npcID"] = 10558,
 		},
+		[21067] = {
+			["npcID"] = 17154,
+		},
+		[48208] = {
+			["npcID"] = 27169,
+		},
+		[33923] = {
+			["encounterName"] = "Murmur",
+			["encounterID"] = 1910,
+			["npcID"] = 18708,
+		},
+		[40079] = {
+			["npcID"] = 22884,
+		},
+		[39133] = {
+			["encounterName"] = "Warp Splinter",
+			["npcID"] = 17977,
+			["encounterID"] = 1929,
+		},
+		[38539] = {
+			["encounterName"] = "Chrono Lord Deja",
+			["encounterID"] = 1920,
+			["npcID"] = 17879,
+		},
+		[37106] = {
+			["npcID"] = 20041,
+		},
+		[38051] = {
+			["npcID"] = 21520,
+		},
 		[35124] = {
 			["npcID"] = 18420,
 		},
-		[41448] = {
-			["npcID"] = 23434,
+		[41374] = {
+			["npcID"] = 23400,
 		},
-		[17503] = {
-			["npcID"] = 10438,
+		[33506] = {
+			["encounterName"] = "Grandmaster Vorpil",
+			["npcID"] = 18634,
 		},
 		[31948] = {
 			["encounterName"] = "Rokmar the Crackler",
@@ -2424,37 +1547,31 @@ PlaterDB = {
 		[13952] = {
 			["npcID"] = 22861,
 		},
-		[18327] = {
-			["npcID"] = 10436,
+		[4962] = {
+			["npcID"] = 10413,
 		},
 		[11922] = {
 			["encounterName"] = "Archimonde",
 			["npcID"] = 18487,
 			["encounterID"] = 622,
 		},
-		[39133] = {
-			["encounterName"] = "Warp Splinter",
-			["npcID"] = 17977,
-			["encounterID"] = 1929,
+		[18327] = {
+			["npcID"] = 10436,
 		},
-		[11962] = {
-			["npcID"] = 22081,
+		[20791] = {
+			["npcID"] = 3198,
 		},
-		[38539] = {
-			["encounterName"] = "Chrono Lord Deja",
-			["encounterID"] = 1920,
-			["npcID"] = 17879,
+		[9672] = {
+			["npcID"] = 18087,
 		},
 		[20823] = {
 			["npcID"] = 20159,
 		},
-		[4962] = {
-			["npcID"] = 10413,
+		[11962] = {
+			["npcID"] = 22081,
 		},
-		[33923] = {
-			["encounterName"] = "Murmur",
-			["encounterID"] = 1910,
-			["npcID"] = 18708,
+		[37851] = {
+			["npcID"] = 21909,
 		},
 		[33526] = {
 			["encounterName"] = "Darkweaver Syth",
@@ -2464,66 +1581,62 @@ PlaterDB = {
 		[36627] = {
 			["npcID"] = 20775,
 		},
-		[33551] = {
-			["encounterName"] = "Ambassador Hellmaw",
-			["npcID"] = 18731,
-			["encounterID"] = 1908,
+		[7645] = {
+			["npcID"] = 19847,
 		},
-		[21067] = {
-			["npcID"] = 17154,
+		[17287] = {
+			["npcID"] = 19633,
 		},
 		[33654] = {
 			["encounterName"] = "Gruul the Dragonkiller",
 			["npcID"] = 19044,
 			["encounterID"] = 650,
 		},
-		[48208] = {
-			["npcID"] = 27169,
+		[38045] = {
+			["npcID"] = 21802,
 		},
-		[19816] = {
-			["npcID"] = 19657,
+		[37262] = {
+			["npcID"] = 20047,
 		},
 		[36819] = {
 			["encounterName"] = "Kael'thas Sunstrider",
 			["npcID"] = 19622,
 			["encounterID"] = 733,
 		},
-		[36705] = {
-			["encounterName"] = "Warp Splinter",
-			["npcID"] = 17977,
-			["encounterID"] = 1929,
+		[11829] = {
+			["npcID"] = 20139,
 		},
-		[38045] = {
-			["npcID"] = 21802,
+		[36645] = {
+			["npcID"] = 19779,
 		},
-		[12058] = {
-			["npcID"] = 21060,
+		[36915] = {
+			["npcID"] = 20908,
 		},
-		[33711] = {
-			["encounterName"] = "Murmur",
-			["encounterID"] = 1910,
-			["npcID"] = 18708,
+		[39121] = {
+			["npcID"] = 18419,
 		},
 		[36979] = {
 			["encounterName"] = "Kael'thas Sunstrider",
 			["npcID"] = 21268,
 			["encounterID"] = 733,
 		},
-		[39121] = {
-			["npcID"] = 18419,
+		[34761] = {
+			["encounterName"] = "High Botanist Freywinn",
+			["npcID"] = 17975,
+			["encounterID"] = 1926,
 		},
-		[17287] = {
-			["npcID"] = 19633,
+		[31516] = {
+			["npcID"] = 21285,
 		},
 		[12098] = {
 			["encounterName"] = "Azgalor",
 			["npcID"] = 22988,
 		},
-		[9672] = {
-			["npcID"] = 18087,
+		[30741] = {
+			["npcID"] = 16807,
 		},
-		[29304] = {
-			["npcID"] = 16176,
+		[11986] = {
+			["npcID"] = 18077,
 		},
 		[9053] = {
 			["npcID"] = 19701,
@@ -2531,53 +1644,52 @@ PlaterDB = {
 		[31405] = {
 			["npcID"] = 17771,
 		},
-		[34759] = {
-			["encounterName"] = "High Botanist Freywinn",
-			["npcID"] = 17975,
-			["encounterID"] = 1926,
+		[40508] = {
+			["encounterName"] = "Gurtogg Bloodboil",
+			["npcID"] = 22948,
+			["encounterID"] = 605,
 		},
-		[30741] = {
-			["npcID"] = 16807,
+		[40832] = {
+			["encounterName"] = "Illidan Stormrage",
+			["npcID"] = 22917,
+			["encounterID"] = 609,
 		},
-		[37262] = {
-			["npcID"] = 20047,
+		[17195] = {
+			["npcID"] = 19168,
 		},
-		[11986] = {
-			["npcID"] = 18077,
+		[31705] = {
+			["npcID"] = 16945,
 		},
 		[41455] = {
 			["encounterName"] = "The Illidari Council",
 			["npcID"] = 22951,
 			["encounterID"] = 608,
 		},
-		[34358] = {
-			["npcID"] = 19486,
+		[34661] = {
+			["encounterName"] = "Thorngrin the Tender",
+			["npcID"] = 17978,
+			["encounterID"] = 1928,
 		},
-		[17195] = {
-			["npcID"] = 19168,
+		[33335] = {
+			["encounterName"] = "Grandmaster Vorpil",
+			["npcID"] = 18639,
 		},
 		[30510] = {
 			["encounterName"] = "Magtheridon",
 			["encounterID"] = 651,
 			["npcID"] = 17256,
 		},
-		[29383] = {
-			["encounterName"] = "Moroes",
-			["encounterID"] = 653,
-			["npcID"] = 17007,
+		[38914] = {
+			["npcID"] = 20901,
 		},
-		[36645] = {
-			["npcID"] = 19779,
+		[40091] = {
+			["npcID"] = 22875,
 		},
-		[34761] = {
-			["encounterName"] = "High Botanist Freywinn",
-			["npcID"] = 17975,
-			["encounterID"] = 1926,
+		[31730] = {
+			["npcID"] = 17803,
 		},
-		[40832] = {
-			["encounterName"] = "Illidan Stormrage",
-			["npcID"] = 22917,
-			["encounterID"] = 609,
+		[34798] = {
+			["npcID"] = 18419,
 		},
 		[33527] = {
 			["encounterName"] = "Darkweaver Syth",
@@ -2587,19 +1699,19 @@ PlaterDB = {
 		[29583] = {
 			["npcID"] = 16409,
 		},
-		[40536] = {
-			["encounterName"] = "Illidan Stormrage",
-			["npcID"] = 23089,
-			["encounterID"] = 609,
+		[29492] = {
+			["npcID"] = 16409,
 		},
 		[33623] = {
 			["npcID"] = 17892,
 		},
-		[31730] = {
-			["npcID"] = 17803,
+		[30358] = {
+			["npcID"] = 16460,
 		},
-		[34798] = {
-			["npcID"] = 18419,
+		[36922] = {
+			["encounterName"] = "Nightbane",
+			["encounterID"] = 662,
+			["npcID"] = 17225,
 		},
 		[30686] = {
 			["encounterName"] = "Omor the Unscarred",
@@ -2615,31 +1727,33 @@ PlaterDB = {
 		[38930] = {
 			["npcID"] = 19168,
 		},
-		[29492] = {
-			["npcID"] = 16409,
+		[39068] = {
+			["npcID"] = 22375,
 		},
-		[31705] = {
-			["npcID"] = 16945,
+		[33144] = {
+			["encounterName"] = "High King Maulgar",
+			["npcID"] = 18836,
+			["encounterID"] = 649,
 		},
 		[36980] = {
 			["encounterName"] = "Kael'thas Sunstrider",
 			["npcID"] = 21268,
 			["encounterID"] = 733,
 		},
-		[34791] = {
-			["npcID"] = 18405,
+		[9734] = {
+			["npcID"] = 4296,
 		},
 		[33975] = {
 			["npcID"] = 19191,
 		},
-		[38914] = {
-			["npcID"] = 20901,
-		},
-		[29935] = {
-			["npcID"] = 16595,
-		},
 		[34934] = {
 			["npcID"] = 18394,
+		},
+		[36200] = {
+			["npcID"] = 16944,
+		},
+		[32938] = {
+			["npcID"] = 12377,
 		},
 		[30878] = {
 			["encounterName"] = "Opera Hall",
@@ -2663,8 +1777,8 @@ PlaterDB = {
 		[39378] = {
 			["npcID"] = 21126,
 		},
-		[30358] = {
-			["npcID"] = 16460,
+		[38205] = {
+			["npcID"] = 17870,
 		},
 		[30990] = {
 			["encounterName"] = "Blood Guard Porung",
@@ -2674,13 +1788,13 @@ PlaterDB = {
 		[34359] = {
 			["npcID"] = 19486,
 		},
-		[33144] = {
-			["encounterName"] = "High King Maulgar",
-			["npcID"] = 18836,
-			["encounterID"] = 649,
+		[39849] = {
+			["encounterName"] = "Illidan Stormrage",
+			["npcID"] = 22917,
+			["encounterID"] = 609,
 		},
-		[30604] = {
-			["npcID"] = 17503,
+		[38372] = {
+			["npcID"] = 22113,
 		},
 		[12466] = {
 			["npcID"] = 18499,
@@ -2696,11 +1810,11 @@ PlaterDB = {
 			["npcID"] = 19204,
 			["encounterID"] = 1903,
 		},
-		[29885] = {
-			["npcID"] = 16488,
+		[29576] = {
+			["npcID"] = 16424,
 		},
-		[38110] = {
-			["npcID"] = 19428,
+		[12739] = {
+			["npcID"] = 21139,
 		},
 		[33624] = {
 			["npcID"] = 18971,
@@ -2712,71 +1826,75 @@ PlaterDB = {
 		[17883] = {
 			["npcID"] = 17938,
 		},
-		[29576] = {
-			["npcID"] = 16424,
+		[30604] = {
+			["npcID"] = 17503,
 		},
-		[36922] = {
-			["encounterName"] = "Nightbane",
-			["encounterID"] = 662,
-			["npcID"] = 17225,
+		[29522] = {
+			["encounterName"] = "Maiden of Virtue",
+			["npcID"] = 16457,
+			["encounterID"] = 654,
 		},
 		[38899] = {
 			["npcID"] = 21702,
 		},
-		[32938] = {
-			["npcID"] = 12377,
+		[5262] = {
+			["npcID"] = 3197,
 		},
 		[34871] = {
 			["npcID"] = 20115,
 		},
-		[36200] = {
-			["npcID"] = 16944,
+		[36127] = {
+			["encounterName"] = "Zereketh the Unbound",
+			["encounterID"] = 1916,
+			["npcID"] = 20870,
 		},
-		[9734] = {
-			["npcID"] = 4296,
+		[29885] = {
+			["npcID"] = 16488,
 		},
 		[40082] = {
 			["npcID"] = 22874,
+		},
+		[15254] = {
+			["encounterName"] = "Nexus-Prince Shaffar",
+			["npcID"] = 18431,
+			["encounterID"] = 1899,
+		},
+		[41169] = {
+			["npcID"] = 23339,
 		},
 		[31258] = {
 			["encounterName"] = "Rage Winterchill",
 			["npcID"] = 17767,
 			["encounterID"] = 618,
 		},
-		[41169] = {
-			["npcID"] = 23339,
+		[41245] = {
+			["npcID"] = 23399,
 		},
-		[39849] = {
-			["encounterName"] = "Illidan Stormrage",
-			["npcID"] = 22917,
-			["encounterID"] = 609,
-		},
-		[38372] = {
-			["npcID"] = 22113,
-		},
-		[38366] = {
-			["encounterName"] = "Fathom-Lord Karathress",
-			["encounterID"] = 626,
-			["npcID"] = 21966,
+		[31472] = {
+			["encounterName"] = "Chrono Lord Deja",
+			["encounterID"] = 1920,
+			["npcID"] = 17879,
 		},
 		[35159] = {
 			["encounterName"] = "Mechano-Lord Capacitus",
 			["npcID"] = 19219,
 			["encounterID"] = 1932,
 		},
-		[40873] = {
-			["npcID"] = 23030,
+		[32325] = {
+			["encounterName"] = "Pandemonius",
+			["npcID"] = 18341,
+			["encounterID"] = 1900,
 		},
 		[36246] = {
 			["npcID"] = 19541,
 		},
-		[39347] = {
-			["npcID"] = 19507,
+		[35255] = {
+			["npcID"] = 20478,
 		},
-		[15254] = {
-			["encounterName"] = "Nexus-Prince Shaffar",
-			["npcID"] = 18431,
-			["encounterID"] = 1899,
+		[38366] = {
+			["encounterName"] = "Fathom-Lord Karathress",
+			["encounterID"] = 626,
+			["npcID"] = 21966,
 		},
 		[31486] = {
 			["encounterName"] = "Mekgineer Steamrigger",
@@ -2791,32 +1909,32 @@ PlaterDB = {
 		[36406] = {
 			["npcID"] = 20141,
 		},
-		[12739] = {
-			["npcID"] = 21139,
-		},
 		[31299] = {
 			["encounterName"] = "Anetheron",
 			["npcID"] = 17808,
 			["encounterID"] = 619,
-		},
-		[29522] = {
-			["encounterName"] = "Maiden of Virtue",
-			["npcID"] = 16457,
-			["encounterID"] = 654,
-		},
-		[35511] = {
-			["npcID"] = 18501,
-		},
-		[39667] = {
-			["npcID"] = 23403,
 		},
 		[33529] = {
 			["encounterName"] = "Darkweaver Syth",
 			["npcID"] = 19206,
 			["encounterID"] = 1903,
 		},
-		[17290] = {
-			["npcID"] = 18499,
+		[33910] = {
+			["npcID"] = 21058,
+		},
+		[35511] = {
+			["npcID"] = 18501,
+		},
+		[39013] = {
+			["encounterName"] = "Dalliah the Doomsayer",
+			["encounterID"] = 1913,
+			["npcID"] = 20885,
+		},
+		[39667] = {
+			["npcID"] = 23403,
+		},
+		[35035] = {
+			["npcID"] = 20040,
 		},
 		[34616] = {
 			["npcID"] = 19511,
@@ -2824,28 +1942,26 @@ PlaterDB = {
 		[31662] = {
 			["npcID"] = 17905,
 		},
-		[32325] = {
-			["encounterName"] = "Pandemonius",
-			["npcID"] = 18341,
-			["encounterID"] = 1900,
+		[30951] = {
+			["encounterName"] = "Opera Hall",
+			["npcID"] = 17534,
+			["encounterID"] = 655,
 		},
 		[11763] = {
 			["encounterName"] = "Opera Hall",
 			["npcID"] = 416,
 			["encounterID"] = 655,
 		},
-		[31012] = {
-			["encounterName"] = "Opera Hall",
-			["encounterID"] = 655,
-			["npcID"] = 17535,
+		[17290] = {
+			["npcID"] = 18499,
 		},
-		[36879] = {
-			["npcID"] = 20977,
+		[32888] = {
+			["npcID"] = 18506,
 		},
-		[31472] = {
-			["encounterName"] = "Chrono Lord Deja",
-			["encounterID"] = 1920,
-			["npcID"] = 17879,
+		[41410] = {
+			["encounterName"] = "Reliquary of Souls",
+			["npcID"] = 23419,
+			["encounterID"] = 606,
 		},
 		[31758] = {
 			["npcID"] = 17934,
@@ -2859,35 +1975,37 @@ PlaterDB = {
 		[39028] = {
 			["npcID"] = 20908,
 		},
-		[39013] = {
-			["encounterName"] = "Dalliah the Doomsayer",
-			["encounterID"] = 1913,
-			["npcID"] = 20885,
+		[31264] = {
+			["npcID"] = 17772,
 		},
-		[29840] = {
-			["npcID"] = 16504,
+		[35096] = {
+			["npcID"] = 22862,
 		},
 		[37078] = {
 			["npcID"] = 16529,
 		},
-		[29487] = {
-			["npcID"] = 16460,
+		[38310] = {
+			["encounterName"] = "Lady Vashj",
+			["encounterID"] = 628,
+			["npcID"] = 21212,
 		},
-		[35096] = {
-			["npcID"] = 22862,
+		[29840] = {
+			["npcID"] = 16504,
 		},
 		[38197] = {
 			["encounterName"] = "Talon King Ikiss",
 			["npcID"] = 18473,
 			["encounterID"] = 1902,
 		},
-		[40938] = {
-			["npcID"] = 22954,
-		},
-		[30951] = {
+		[32337] = {
 			["encounterName"] = "Opera Hall",
-			["npcID"] = 17534,
 			["encounterID"] = 655,
+			["npcID"] = 18168,
+		},
+		[32053] = {
+			["encounterName"] = "Archimonde",
+			["npcID"] = 17968,
+			["encounterID"] = 622,
 		},
 		[36247] = {
 			["encounterName"] = "Azgalor",
@@ -2901,8 +2019,8 @@ PlaterDB = {
 			["npcID"] = 23419,
 			["encounterID"] = 606,
 		},
-		[32888] = {
-			["npcID"] = 18506,
+		[20825] = {
+			["npcID"] = 12378,
 		},
 		[32014] = {
 			["encounterName"] = "Archimonde",
@@ -2926,58 +2044,54 @@ PlaterDB = {
 		[22887] = {
 			["npcID"] = 17729,
 		},
-		[33417] = {
-			["npcID"] = 18949,
+		[32370] = {
+			["encounterName"] = "Nexus-Prince Shaffar",
+			["npcID"] = 18430,
+			["encounterID"] = 1899,
 		},
-		[35035] = {
-			["npcID"] = 20040,
+		[50066] = {
+			["encounterName"] = "High King Maulgar",
+			["npcID"] = 27936,
+			["encounterID"] = 649,
 		},
-		[41410] = {
-			["encounterName"] = "Reliquary of Souls",
-			["npcID"] = 23419,
-			["encounterID"] = 606,
+		[41072] = {
+			["npcID"] = 22945,
 		},
-		[38876] = {
-			["npcID"] = 11980,
+		[32173] = {
+			["npcID"] = 17961,
 		},
 		[30128] = {
 			["encounterName"] = "Nightbane",
 			["npcID"] = 17225,
 			["encounterID"] = 662,
 		},
-		[32337] = {
-			["encounterName"] = "Opera Hall",
-			["encounterID"] = 655,
-			["npcID"] = 18168,
+		[35943] = {
+			["npcID"] = 16594,
 		},
-		[31970] = {
-			["encounterName"] = "Archimonde",
-			["npcID"] = 17968,
-			["encounterID"] = 622,
+		[29919] = {
+			["npcID"] = 16530,
 		},
 		[34745] = {
 			["encounterName"] = "High Botanist Freywinn",
 			["npcID"] = 19953,
 			["encounterID"] = 1926,
 		},
-		[31264] = {
-			["npcID"] = 17772,
+		[36987] = {
+			["npcID"] = 20909,
 		},
-		[32053] = {
-			["encounterName"] = "Archimonde",
-			["npcID"] = 17968,
-			["encounterID"] = 622,
+		[32330] = {
+			["npcID"] = 17732,
 		},
-		[29919] = {
-			["npcID"] = 16530,
+		[27267] = {
+			["npcID"] = 416,
 		},
 		[31263] = {
 			["npcID"] = 17772,
 		},
-		[32370] = {
-			["encounterName"] = "Nexus-Prince Shaffar",
-			["npcID"] = 18430,
-			["encounterID"] = 1899,
+		[36173] = {
+			["encounterName"] = "Dalliah the Doomsayer",
+			["encounterID"] = 1913,
+			["npcID"] = 20885,
 		},
 		[36983] = {
 			["encounterName"] = "Kael'thas Sunstrider",
@@ -2987,14 +2101,14 @@ PlaterDB = {
 		[39061] = {
 			["npcID"] = 21227,
 		},
-		[37111] = {
-			["npcID"] = 20044,
+		[11443] = {
+			["npcID"] = 19744,
 		},
 		[39125] = {
 			["npcID"] = 18422,
 		},
-		[27267] = {
-			["npcID"] = 416,
+		[37111] = {
+			["npcID"] = 20044,
 		},
 		[33051] = {
 			["encounterName"] = "High King Maulgar",
@@ -3012,8 +2126,10 @@ PlaterDB = {
 		[34170] = {
 			["npcID"] = 18420,
 		},
-		[32330] = {
-			["npcID"] = 17732,
+		[31707] = {
+			["encounterName"] = "Mennu the Betrayer",
+			["encounterID"] = 1939,
+			["npcID"] = 510,
 		},
 		[39349] = {
 			["encounterName"] = "Archimonde",
@@ -3023,16 +2139,14 @@ PlaterDB = {
 		[15232] = {
 			["npcID"] = 17694,
 		},
-		[35943] = {
-			["npcID"] = 16594,
+		[39413] = {
+			["npcID"] = 17729,
 		},
-		[32173] = {
-			["npcID"] = 17961,
+		[38391] = {
+			["npcID"] = 19643,
 		},
-		[36970] = {
-			["encounterName"] = "Kael'thas Sunstrider",
-			["npcID"] = 20062,
-			["encounterID"] = 733,
+		[16561] = {
+			["npcID"] = 18453,
 		},
 		[41587] = {
 			["encounterName"] = "Kael'thas Sunstrider",
@@ -3044,41 +2158,41 @@ PlaterDB = {
 			["encounterID"] = 651,
 			["npcID"] = 17256,
 		},
-		[31707] = {
-			["encounterName"] = "Mennu the Betrayer",
-			["encounterID"] = 1939,
-			["npcID"] = 510,
-		},
-		[9613] = {
-			["npcID"] = 19411,
-		},
-		[38580] = {
-			["npcID"] = 21220,
-		},
-		[36173] = {
-			["encounterName"] = "Dalliah the Doomsayer",
-			["encounterID"] = 1913,
-			["npcID"] = 20885,
-		},
-		[11443] = {
-			["npcID"] = 19744,
-		},
-		[16561] = {
-			["npcID"] = 18453,
+		[15472] = {
+			["npcID"] = 21139,
 		},
 		[29579] = {
 			["npcID"] = 16409,
 		},
-		[35058] = {
-			["npcID"] = 19716,
-		},
-		[38391] = {
-			["npcID"] = 19643,
+		[30615] = {
+			["npcID"] = 17478,
 		},
 		[35008] = {
 			["encounterName"] = "Rokmar the Crackler",
 			["encounterID"] = 1941,
 			["npcID"] = 17991,
+		},
+		[32364] = {
+			["encounterName"] = "Nexus-Prince Shaffar",
+			["npcID"] = 18344,
+			["encounterID"] = 1899,
+		},
+		[36846] = {
+			["npcID"] = 20285,
+		},
+		[29953] = {
+			["encounterName"] = "Shade of Aran",
+			["npcID"] = 16524,
+			["encounterID"] = 658,
+		},
+		[34931] = {
+			["npcID"] = 18331,
+		},
+		[36345] = {
+			["npcID"] = 20988,
+		},
+		[38838] = {
+			["npcID"] = 20875,
 		},
 		[37847] = {
 			["npcID"] = 20207,
@@ -3101,28 +2215,28 @@ PlaterDB = {
 		[17501] = {
 			["npcID"] = 11199,
 		},
-		[15472] = {
-			["npcID"] = 21139,
+		[35058] = {
+			["npcID"] = 19716,
 		},
 		[39126] = {
 			["npcID"] = 18422,
 		},
-		[32364] = {
-			["encounterName"] = "Nexus-Prince Shaffar",
-			["npcID"] = 18344,
-			["encounterID"] = 1899,
+		[20801] = {
+			["npcID"] = 12922,
 		},
-		[36846] = {
-			["npcID"] = 20285,
+		[31740] = {
+			["npcID"] = 17928,
 		},
-		[36604] = {
-			["npcID"] = 20774,
+		[38892] = {
+			["npcID"] = 20883,
 		},
-		[36345] = {
-			["npcID"] = 20988,
+		[29505] = {
+			["npcID"] = 16459,
 		},
-		[34931] = {
-			["npcID"] = 18331,
+		[30055] = {
+			["encounterName"] = "Terestian Illhoof",
+			["npcID"] = 15688,
+			["encounterID"] = 657,
 		},
 		[38295] = {
 			["encounterName"] = "Lady Vashj",
@@ -3132,10 +2246,8 @@ PlaterDB = {
 		[41396] = {
 			["npcID"] = 22959,
 		},
-		[29953] = {
-			["encounterName"] = "Shade of Aran",
-			["npcID"] = 16524,
-			["encounterID"] = 658,
+		[9613] = {
+			["npcID"] = 19411,
 		},
 		[35322] = {
 			["encounterName"] = "Gatewatcher Gyro-Kill",
@@ -3147,22 +2259,24 @@ PlaterDB = {
 			["npcID"] = 16524,
 			["encounterID"] = 658,
 		},
-		[31740] = {
-			["npcID"] = 17928,
+		[41171] = {
+			["npcID"] = 23339,
 		},
-		[20801] = {
-			["npcID"] = 12922,
+		[38580] = {
+			["npcID"] = 21220,
 		},
-		[30615] = {
-			["npcID"] = 17478,
+		[31914] = {
+			["encounterName"] = "Epoch Hunter",
+			["npcID"] = 18096,
+			["encounterID"] = 1906,
 		},
-		[30055] = {
-			["encounterName"] = "Terestian Illhoof",
-			["npcID"] = 15688,
-			["encounterID"] = 657,
+		[36970] = {
+			["encounterName"] = "Kael'thas Sunstrider",
+			["npcID"] = 20062,
+			["encounterID"] = 733,
 		},
-		[38892] = {
-			["npcID"] = 20883,
+		[29928] = {
+			["npcID"] = 16540,
 		},
 		[32111] = {
 			["encounterName"] = "Archimonde",
@@ -3172,83 +2286,79 @@ PlaterDB = {
 		[39670] = {
 			["npcID"] = 22853,
 		},
-		[29505] = {
-			["npcID"] = 16459,
-		},
-		[36987] = {
-			["npcID"] = 20909,
-		},
-		[31914] = {
-			["encounterName"] = "Epoch Hunter",
-			["npcID"] = 18096,
-			["encounterID"] = 1906,
-		},
-		[15659] = {
-			["encounterName"] = "Darkweaver Syth",
-			["npcID"] = 18472,
-			["encounterID"] = 1903,
-		},
-		[38807] = {
-			["npcID"] = 20859,
-		},
-		[29928] = {
-			["npcID"] = 16540,
-		},
-		[41171] = {
-			["npcID"] = 23339,
-		},
-		[38903] = {
-			["npcID"] = 20898,
-		},
-		[50066] = {
-			["encounterName"] = "High King Maulgar",
-			["npcID"] = 27936,
-			["encounterID"] = 649,
-		},
-		[32829] = {
-			["npcID"] = 18501,
-		},
 		[38918] = {
 			["npcID"] = 20902,
-		},
-		[38380] = {
-			["npcID"] = 18506,
-		},
-		[40086] = {
-			["npcID"] = 22885,
-		},
-		[41072] = {
-			["npcID"] = 22945,
-		},
-		[39127] = {
-			["npcID"] = 19486,
 		},
 		[39079] = {
 			["npcID"] = 20037,
 		},
-		[20825] = {
-			["npcID"] = 12378,
+		[38380] = {
+			["npcID"] = 18506,
+		},
+		[38876] = {
+			["npcID"] = 11980,
+		},
+		[38807] = {
+			["npcID"] = 20859,
+		},
+		[31970] = {
+			["encounterName"] = "Archimonde",
+			["npcID"] = 17968,
+			["encounterID"] = 622,
+		},
+		[40938] = {
+			["npcID"] = 22954,
+		},
+		[38903] = {
+			["npcID"] = 20898,
 		},
 		[30600] = {
 			["encounterName"] = "Warbringer O'mrogg",
 			["encounterID"] = 1937,
 			["npcID"] = 16809,
 		},
+		[32829] = {
+			["npcID"] = 18501,
+		},
+		[29487] = {
+			["npcID"] = 16460,
+		},
+		[31012] = {
+			["encounterName"] = "Opera Hall",
+			["encounterID"] = 655,
+			["npcID"] = 17535,
+		},
+		[40086] = {
+			["npcID"] = 22885,
+		},
+		[36879] = {
+			["npcID"] = 20977,
+		},
+		[39127] = {
+			["npcID"] = 19486,
+		},
+		[37113] = {
+			["npcID"] = 17771,
+		},
+		[6660] = {
+			["npcID"] = 4288,
+		},
+		[37479] = {
+			["npcID"] = 21702,
+		},
 		[9574] = {
 			["npcID"] = 18794,
 		},
-		[33910] = {
-			["npcID"] = 21058,
+		[39347] = {
+			["npcID"] = 19507,
 		},
 		[38296] = {
 			["encounterName"] = "Fathom-Lord Karathress",
 			["encounterID"] = 626,
 			["npcID"] = 22091,
 		},
-		[38310] = {
-			["encounterName"] = "Lady Vashj",
-			["encounterID"] = 628,
-			["npcID"] = 21212,
+		[36487] = {
+			["npcID"] = 20803,
 		},
 		[12675] = {
 			["npcID"] = 17963,
@@ -3261,8 +2371,8 @@ PlaterDB = {
 		[30481] = {
 			["npcID"] = 16704,
 		},
-		[6660] = {
-			["npcID"] = 4288,
+		[40873] = {
+			["npcID"] = 23030,
 		},
 		[29490] = {
 			["npcID"] = 16461,
@@ -3284,20 +2394,20 @@ PlaterDB = {
 		[12747] = {
 			["npcID"] = 20774,
 		},
-		[37479] = {
-			["npcID"] = 21702,
+		[38110] = {
+			["npcID"] = 19428,
 		},
-		[35255] = {
-			["npcID"] = 20478,
+		[33152] = {
+			["npcID"] = 18836,
 		},
 		[31664] = {
 			["npcID"] = 17906,
 		},
-		[36487] = {
-			["npcID"] = 20803,
+		[29935] = {
+			["npcID"] = 16595,
 		},
-		[41245] = {
-			["npcID"] = 23399,
+		[34791] = {
+			["npcID"] = 18405,
 		},
 		[38840] = {
 			["npcID"] = 20875,
@@ -3305,13 +2415,13 @@ PlaterDB = {
 		[6917] = {
 			["npcID"] = 19350,
 		},
-		[36127] = {
-			["encounterName"] = "Zereketh the Unbound",
-			["encounterID"] = 1916,
-			["npcID"] = 20870,
+		[40904] = {
+			["encounterName"] = "Illidan Stormrage",
+			["npcID"] = 22917,
+			["encounterID"] = 609,
 		},
-		[37254] = {
-			["npcID"] = 20036,
+		[12542] = {
+			["npcID"] = 21104,
 		},
 		[37945] = {
 			["npcID"] = 21462,
@@ -3335,25 +2445,27 @@ PlaterDB = {
 		[39128] = {
 			["npcID"] = 19486,
 		},
-		[38205] = {
-			["npcID"] = 17870,
+		[39674] = {
+			["npcID"] = 22853,
 		},
-		[33152] = {
-			["npcID"] = 18836,
+		[34358] = {
+			["npcID"] = 19486,
 		},
-		[39068] = {
-			["npcID"] = 22375,
+		[34879] = {
+			["npcID"] = 17994,
 		},
-		[40904] = {
+		[40536] = {
 			["encounterName"] = "Illidan Stormrage",
-			["npcID"] = 22917,
+			["npcID"] = 23089,
 			["encounterID"] = 609,
 		},
 		[41334] = {
 			["npcID"] = 22939,
 		},
-		[12542] = {
-			["npcID"] = 21104,
+		[29383] = {
+			["encounterName"] = "Moroes",
+			["encounterID"] = 653,
+			["npcID"] = 17007,
 		},
 		[29922] = {
 			["npcID"] = 16526,
@@ -3368,24 +2480,24 @@ PlaterDB = {
 			["npcID"] = 16524,
 			["encounterID"] = 658,
 		},
-		[40091] = {
-			["npcID"] = 22875,
+		[29304] = {
+			["npcID"] = 16176,
 		},
-		[34661] = {
-			["encounterName"] = "Thorngrin the Tender",
-			["npcID"] = 17978,
-			["encounterID"] = 1928,
+		[34759] = {
+			["encounterName"] = "High Botanist Freywinn",
+			["npcID"] = 17975,
+			["encounterID"] = 1926,
 		},
-		[40508] = {
-			["encounterName"] = "Gurtogg Bloodboil",
-			["npcID"] = 22948,
-			["encounterID"] = 605,
+		[12058] = {
+			["npcID"] = 21060,
 		},
-		[34879] = {
-			["npcID"] = 17994,
+		[34254] = {
+			["npcID"] = 18422,
 		},
-		[39674] = {
-			["npcID"] = 22853,
+		[33711] = {
+			["encounterName"] = "Murmur",
+			["encounterID"] = 1910,
+			["npcID"] = 18708,
 		},
 		[30050] = {
 			["encounterName"] = "Terestian Illhoof",
@@ -3396,29 +2508,32 @@ PlaterDB = {
 			["encounterName"] = "Grandmaster Vorpil",
 			["npcID"] = 18639,
 		},
-		[33335] = {
-			["encounterName"] = "Grandmaster Vorpil",
-			["npcID"] = 18639,
+		[26192] = {
+			["encounterName"] = "The Prophet Skeram",
+			["encounterID"] = 709,
+			["npcID"] = 15263,
 		},
 		[14034] = {
 			["npcID"] = 22273,
 		},
-		[31516] = {
-			["npcID"] = 21285,
+		[19816] = {
+			["npcID"] = 19657,
 		},
 		[30130] = {
 			["encounterName"] = "Nightbane",
 			["npcID"] = 17225,
 			["encounterID"] = 662,
 		},
-		[11829] = {
-			["npcID"] = 20139,
+		[36705] = {
+			["encounterName"] = "Warp Splinter",
+			["npcID"] = 17977,
+			["encounterID"] = 1929,
 		},
-		[34254] = {
-			["npcID"] = 18422,
+		[12470] = {
+			["npcID"] = 15438,
 		},
-		[7645] = {
-			["npcID"] = 19847,
+		[17503] = {
+			["npcID"] = 10438,
 		},
 		[36827] = {
 			["npcID"] = 20901,
@@ -3428,13 +2543,13 @@ PlaterDB = {
 			["npcID"] = 17225,
 			["encounterID"] = 662,
 		},
-		[26192] = {
-			["encounterName"] = "The Prophet Skeram",
-			["encounterID"] = 709,
-			["npcID"] = 15263,
+		[39297] = {
+			["encounterName"] = "Omor the Unscarred",
+			["encounterID"] = 1891,
+			["npcID"] = 17308,
 		},
-		[37851] = {
-			["npcID"] = 21909,
+		[41448] = {
+			["npcID"] = 23434,
 		},
 		[35932] = {
 			["npcID"] = 20901,
@@ -3445,15 +2560,16 @@ PlaterDB = {
 		[40088] = {
 			["npcID"] = 22875,
 		},
-		[12470] = {
-			["npcID"] = 15438,
+		[33417] = {
+			["npcID"] = 18949,
 		},
-		[33506] = {
-			["encounterName"] = "Grandmaster Vorpil",
-			["npcID"] = 18634,
+		[15659] = {
+			["encounterName"] = "Darkweaver Syth",
+			["npcID"] = 18472,
+			["encounterID"] = 1903,
 		},
-		[41374] = {
-			["npcID"] = 23400,
+		[3110] = {
+			["npcID"] = 416,
 		},
 		[39193] = {
 			["encounterName"] = "Gatewatcher Gyro-Kill",
@@ -3468,13 +2584,11 @@ PlaterDB = {
 			["npcID"] = 23418,
 			["encounterID"] = 606,
 		},
-		[38051] = {
-			["npcID"] = 21520,
+		[348] = {
+			["npcID"] = 3183,
 		},
-		[39297] = {
-			["encounterName"] = "Omor the Unscarred",
-			["encounterID"] = 1891,
-			["npcID"] = 17308,
+		[5401] = {
+			["npcID"] = 3131,
 		},
 		[38330] = {
 			["encounterName"] = "Fathom-Lord Karathress",
@@ -3487,18 +2601,19 @@ PlaterDB = {
 		[35325] = {
 			["npcID"] = 18132,
 		},
-		[34642] = {
-			["npcID"] = 19507,
+		[7098] = {
+			["npcID"] = 3276,
 		},
 	},
 	["profileKeys"] = {
 		["Partijleider - Gehennas"] = "Default",
-		["Awwaa - Gehennas"] = "Default",
 		["Partijlijder - Gehennas"] = "Default",
-		["Partijlijder - Razorgore"] = "Default",
-		["Rinque - Gehennas"] = "Default",
-		["Partijleider - Razorgore"] = "Default",
 		["Firebreather - Firemaw"] = "Default",
+		["Partijcurses - Gehennas"] = "Default",
+		["Awwaa - Gehennas"] = "Default",
+		["Partijleider - Razorgore"] = "Default",
+		["Rinque - Gehennas"] = "Default",
+		["Partijlijder - Razorgore"] = "Default",
 		["Kealthas - Razorgore"] = "Default",
 	},
 	["profiles"] = {
@@ -7243,6 +6358,10 @@ PlaterDB = {
 					"Heathen Guard", -- [1]
 					"Hellfire Citadel: The Shattered Halls", -- [2]
 				},
+				[15484] = {
+					"Magma Totem V", -- [1]
+					"Black Temple", -- [2]
+				},
 				[17669] = {
 					"Rabid Warhound", -- [1]
 					"Hellfire Citadel: The Shattered Halls", -- [2]
@@ -7515,6 +6634,10 @@ PlaterDB = {
 					"Fleshflayer Ghoul", -- [1]
 					"Stratholme", -- [2]
 				},
+				[10558] = {
+					"Hearthsinger Forresten", -- [1]
+					"Stratholme", -- [2]
+				},
 				[19781] = {
 					"Astral Flare", -- [1]
 					"Karazhan", -- [2]
@@ -7547,9 +6670,9 @@ PlaterDB = {
 					"Mistress of Woe", -- [1]
 					"Black Temple", -- [2]
 				},
-				[10409] = {
-					"Rockwing Screecher", -- [1]
-					"Stratholme", -- [2]
+				[21227] = {
+					"Tidewalker Harpooner", -- [1]
+					"Coilfang: Serpentshrine Cavern", -- [2]
 				},
 				[17879] = {
 					"Chrono Lord Deja", -- [1]
@@ -7583,10 +6706,6 @@ PlaterDB = {
 					"Tempest Falconer", -- [1]
 					"Tempest Keep", -- [2]
 				},
-				[21227] = {
-					"Tidewalker Harpooner", -- [1]
-					"Coilfang: Serpentshrine Cavern", -- [2]
-				},
 				[10464] = {
 					"Wailing Banshee", -- [1]
 					"Stratholme", -- [2]
@@ -7599,33 +6718,37 @@ PlaterDB = {
 					"Coilskar Soothsayer", -- [1]
 					"Black Temple", -- [2]
 				},
+				[19598] = {
+					"Mutate Fleshlasher", -- [1]
+					"Tempest Keep: The Botanica", -- [2]
+				},
 				[21140] = {
 					"Rift Lord", -- [1]
 					"Opening of the Dark Portal", -- [2]
 				},
-				[21857] = {
-					"Inner Demon", -- [1]
-					"Coilfang: Serpentshrine Cavern", -- [2]
-				},
 				[10406] = {
 					"Ghoul Ravener", -- [1]
+					"Stratholme", -- [2]
+				},
+				[10408] = {
+					"Rockwing Gargoyle", -- [1]
 					"Stratholme", -- [2]
 				},
 				[17096] = {
 					"Astral Flare", -- [1]
 					"Karazhan", -- [2]
 				},
-				[18708] = {
-					"Murmur", -- [1]
-					"Auchindoun: Shadow Labyrinth", -- [2]
+				[19920] = {
+					"Thorn Flayer", -- [1]
+					"Tempest Keep: The Botanica", -- [2]
 				},
 				[21220] = {
 					"Coilfang Priestess", -- [1]
 					"Coilfang: Serpentshrine Cavern", -- [2]
 				},
-				[19920] = {
-					"Thorn Flayer", -- [1]
-					"Tempest Keep: The Botanica", -- [2]
+				[10382] = {
+					"Mangled Cadaver", -- [1]
+					"Stratholme", -- [2]
 				},
 				[19206] = {
 					"Syth Shadow Elemental", -- [1]
@@ -7639,17 +6762,17 @@ PlaterDB = {
 					"Dragonmaw Wind Reaver", -- [1]
 					"Black Temple", -- [2]
 				},
-				[18639] = {
-					"Cabal Spellbinder", -- [1]
-					"Auchindoun: Shadow Labyrinth", -- [2]
-				},
 				[16176] = {
 					"Shadowbeast", -- [1]
 					"Karazhan", -- [2]
 				},
-				[20078] = {
-					"Summoned Bloodwarder Reservist", -- [1]
-					"Tempest Keep: The Botanica", -- [2]
+				[18639] = {
+					"Cabal Spellbinder", -- [1]
+					"Auchindoun: Shadow Labyrinth", -- [2]
+				},
+				[510] = {
+					"Water Elemental", -- [1]
+					"Auchindoun: Shadow Labyrinth", -- [2]
 				},
 				[17256] = {
 					"Hellfire Channeler", -- [1]
@@ -7671,25 +6794,25 @@ PlaterDB = {
 					"Tavarok", -- [1]
 					"Auchindoun: Mana-Tombs", -- [2]
 				},
-				[510] = {
-					"Water Elemental", -- [1]
-					"Auchindoun: Shadow Labyrinth", -- [2]
-				},
-				[19843] = {
-					"Nethervine Trickster", -- [1]
-					"Tempest Keep: The Botanica", -- [2]
+				[15962] = {
+					"Vekniss Hatchling", -- [1]
+					"Ahn'Qiraj Temple", -- [2]
 				},
 				[22846] = {
 					"Ashtongue Stormcaller", -- [1]
 					"Black Temple", -- [2]
 				},
+				[15229] = {
+					"Vekniss Soldier", -- [1]
+					"Ahn'Qiraj Temple", -- [2]
+				},
 				[18638] = {
 					"Cabal Zealot", -- [1]
 					"Auchindoun: Shadow Labyrinth", -- [2]
 				},
-				[19508] = {
-					"Sunseeker Herbalist", -- [1]
-					"Tempest Keep: The Botanica", -- [2]
+				[17902] = {
+					"Skeleton Invader", -- [1]
+					"The Battle for Mount Hyjal", -- [2]
 				},
 				[21508] = {
 					"Coilfang Frenzy", -- [1]
@@ -7719,10 +6842,6 @@ PlaterDB = {
 					"Chaotic Sentience", -- [1]
 					"Karazhan", -- [2]
 				},
-				[17902] = {
-					"Skeleton Invader", -- [1]
-					"The Battle for Mount Hyjal", -- [2]
-				},
 				[23180] = {
 					"Tarren Mill Protector", -- [1]
 					"The Escape From Durnholde", -- [2]
@@ -7731,37 +6850,37 @@ PlaterDB = {
 					"Sharpshooter Guard", -- [1]
 					"Hellfire Citadel: The Shattered Halls", -- [2]
 				},
+				[23402] = {
+					"Illidari Battle-mage", -- [1]
+					"Black Temple", -- [2]
+				},
 				[19622] = {
 					"Kael'thas Sunstrider", -- [1]
 					"Tempest Keep", -- [2]
-				},
-				[10390] = {
-					"Skeletal Guardian", -- [1]
-					"Stratholme", -- [2]
-				},
-				[18631] = {
-					"Cabal Cultist", -- [1]
-					"Auchindoun: Shadow Labyrinth", -- [2]
 				},
 				[22953] = {
 					"Wrathbone Flayer", -- [1]
 					"Black Temple", -- [2]
 				},
+				[18631] = {
+					"Cabal Cultist", -- [1]
+					"Auchindoun: Shadow Labyrinth", -- [2]
+				},
+				[2350] = {
+					"Forest Moss Creeper", -- [1]
+					"The Escape From Durnholde", -- [2]
+				},
 				[18663] = {
 					"Maiden of Discipline", -- [1]
 					"Auchindoun: Shadow Labyrinth", -- [2]
-				},
-				[16809] = {
-					"Warbringer O'mrogg", -- [1]
-					"Hellfire Citadel: The Shattered Halls", -- [2]
 				},
 				[18829] = {
 					"Hellfire Warder", -- [1]
 					"Magtheridon's Lair", -- [2]
 				},
-				[2350] = {
-					"Forest Moss Creeper", -- [1]
-					"The Escape From Durnholde", -- [2]
+				[22882] = {
+					"Shadowmoon Deathshaper", -- [1]
+					"Black Temple", -- [2]
 				},
 				[22894] = {
 					"Cyclone Totem", -- [1]
@@ -7771,21 +6890,25 @@ PlaterDB = {
 					"Fathom-Lord Karathress", -- [1]
 					"Coilfang: Serpentshrine Cavern", -- [2]
 				},
+				[19949] = {
+					"Sapling", -- [1]
+					"Tempest Keep: The Botanica", -- [2]
+				},
 				[19782] = {
 					"Astral Flare", -- [1]
 					"Karazhan", -- [2]
 				},
-				[16808] = {
-					"Warchief Kargath Bladefist", -- [1]
-					"Hellfire Citadel: The Shattered Halls", -- [2]
+				[22841] = {
+					"Shade of Akama", -- [1]
+					"Black Temple", -- [2]
 				},
 				[22883] = {
 					"Aqueous Spawn", -- [1]
 					"Black Temple", -- [2]
 				},
-				[22841] = {
-					"Shade of Akama", -- [1]
-					"Black Temple", -- [2]
+				[20901] = {
+					"Sargeron Archer", -- [1]
+					"Tempest Keep: The Arcatraz", -- [2]
 				},
 				[20869] = {
 					"Arcatraz Sentinel", -- [1]
@@ -7795,9 +6918,9 @@ PlaterDB = {
 					"Bogstrok", -- [1]
 					"Coilfang: The Slave Pens", -- [2]
 				},
-				[20901] = {
-					"Sargeron Archer", -- [1]
-					"Tempest Keep: The Arcatraz", -- [2]
+				[22947] = {
+					"Mother Shahraz", -- [1]
+					"Black Temple", -- [2]
 				},
 				[17848] = {
 					"Lieutenant Drake", -- [1]
@@ -7811,8 +6934,8 @@ PlaterDB = {
 					"Temporus", -- [1]
 					"Opening of the Dark Portal", -- [2]
 				},
-				[19949] = {
-					"Sapling", -- [1]
+				[19953] = {
+					"Frayer Protector", -- [1]
 					"Tempest Keep: The Botanica", -- [2]
 				},
 				[19958] = {
@@ -7847,17 +6970,13 @@ PlaterDB = {
 					"Rokad the Ravager", -- [1]
 					"Karazhan", -- [2]
 				},
-				[7402] = {
-					"Searing Totem VI", -- [1]
-					"Ahn'Qiraj Temple", -- [2]
-				},
-				[21301] = {
-					"Coilfang Shatterer", -- [1]
-					"Coilfang: Serpentshrine Cavern", -- [2]
-				},
 				[17461] = {
 					"Shattered Hand Blood Guard", -- [1]
 					"Hellfire Citadel: The Shattered Halls", -- [2]
+				},
+				[20881] = {
+					"Unbound Devastator", -- [1]
+					"Tempest Keep: The Arcatraz", -- [2]
 				},
 				[23178] = {
 					"Tarren Mill Lookout", -- [1]
@@ -7867,13 +6986,17 @@ PlaterDB = {
 					"Greater Frayer", -- [1]
 					"Tempest Keep: The Botanica", -- [2]
 				},
+				[23421] = {
+					"Ashtongue Channeler", -- [1]
+					"Black Temple", -- [2]
+				},
 				[23235] = {
 					"Bonechewer Blade Fury", -- [1]
 					"Black Temple", -- [2]
 				},
-				[16934] = {
-					"Enrage", -- [1]
-					"Tempest Keep", -- [2]
+				[17796] = {
+					"Mekgineer Steamrigger", -- [1]
+					"Coilfang: The Steamvault", -- [2]
 				},
 				[21221] = {
 					"Coilfang Beast-Tamer", -- [1]
@@ -7891,9 +7014,9 @@ PlaterDB = {
 					"Devastation", -- [1]
 					"Tempest Keep", -- [2]
 				},
-				[23421] = {
-					"Ashtongue Channeler", -- [1]
-					"Black Temple", -- [2]
+				[15230] = {
+					"Vekniss Warrior", -- [1]
+					"Ahn'Qiraj Temple", -- [2]
 				},
 				[15262] = {
 					"Obsidian Eradicator", -- [1]
@@ -7903,16 +7026,16 @@ PlaterDB = {
 					"Nightbane", -- [1]
 					"Karazhan", -- [2]
 				},
-				[15230] = {
-					"Vekniss Warrior", -- [1]
-					"Ahn'Qiraj Temple", -- [2]
+				[15548] = {
+					"Spectral Stallion", -- [1]
+					"Karazhan", -- [2]
 				},
 				[17257] = {
 					"Magtheridon", -- [1]
 					"Magtheridon's Lair", -- [2]
 				},
-				[15548] = {
-					"Spectral Stallion", -- [1]
+				[17534] = {
+					"Julianne", -- [1]
 					"Karazhan", -- [2]
 				},
 				[18312] = {
@@ -7927,10 +7050,6 @@ PlaterDB = {
 					"Nexus-Prince Shaffar", -- [1]
 					"Auchindoun: Mana-Tombs", -- [2]
 				},
-				[17534] = {
-					"Julianne", -- [1]
-					"Karazhan", -- [2]
-				},
 				[22955] = {
 					"Charming Patron", -- [1]
 					"Black Temple", -- [2]
@@ -7939,17 +7058,21 @@ PlaterDB = {
 					"Ravager", -- [1]
 					"Tempest Keep", -- [2]
 				},
-				[417] = {
-					"Pryygrom", -- [1]
-					"Tempest Keep: The Arcatraz", -- [2]
-				},
 				[18642] = {
 					"Fel Guardhound", -- [1]
 					"Auchindoun: Shadow Labyrinth", -- [2]
 				},
+				[417] = {
+					"Pryygrom", -- [1]
+					"Tempest Keep: The Arcatraz", -- [2]
+				},
 				[18493] = {
 					"Auchenai Soulpriest", -- [1]
 					"Auchindoun: Auchenai Crypts", -- [2]
+				},
+				[19511] = {
+					"Nethervine Inciter", -- [1]
+					"Tempest Keep: The Botanica", -- [2]
 				},
 				[16410] = {
 					"Spectral Retainer", -- [1]
@@ -7959,41 +7082,41 @@ PlaterDB = {
 					"Darkweaver Syth", -- [1]
 					"Auchindoun: Sethekk Halls", -- [2]
 				},
-				[19511] = {
-					"Nethervine Inciter", -- [1]
-					"Tempest Keep: The Botanica", -- [2]
+				[17465] = {
+					"Shattered Hand Centurion", -- [1]
+					"Hellfire Citadel: The Shattered Halls", -- [2]
 				},
 				[16170] = {
 					"Coldmist Stalker", -- [1]
 					"Karazhan", -- [2]
 				},
-				[22939] = {
-					"Temple Acolyte", -- [1]
-					"Black Temple", -- [2]
-				},
 				[18405] = {
 					"Tempest-Forge Peacekeeper", -- [1]
 					"Tempest Keep: The Botanica", -- [2]
 				},
-				[17800] = {
-					"Coilfang Myrmidon", -- [1]
+				[17798] = {
+					"Warlord Kalithresh", -- [1]
 					"Coilfang: The Steamvault", -- [2]
 				},
-				[17801] = {
-					"Coilfang Siren", -- [1]
-					"Coilfang: The Steamvault", -- [2]
+				[22957] = {
+					"Mistress of Dementia", -- [1]
+					"Black Temple", -- [2]
+				},
+				[18640] = {
+					"Cabal Warlock", -- [1]
+					"Auchindoun: Shadow Labyrinth", -- [2]
 				},
 				[15438] = {
 					"Greater Fire Elemental", -- [1]
 					"Tempest Keep", -- [2]
 				},
-				[19735] = {
-					"Tempest-Forge Destroyer", -- [1]
-					"Tempest Keep: The Mechanar", -- [2]
+				[23418] = {
+					"Essence of Suffering", -- [1]
+					"Black Temple", -- [2]
 				},
-				[17961] = {
-					"Coilfang Enchantress", -- [1]
-					"Coilfang: The Slave Pens", -- [2]
+				[16178] = {
+					"Phase Hound", -- [1]
+					"Karazhan", -- [2]
 				},
 				[18632] = {
 					"Cabal Executioner", -- [1]
@@ -8003,9 +7126,9 @@ PlaterDB = {
 					"Stoneskin Totem VII", -- [1]
 					"Tempest Keep", -- [2]
 				},
-				[20039] = {
-					"Phoenix-Hawk", -- [1]
-					"Tempest Keep", -- [2]
+				[10387] = {
+					"Vengeful Phantom", -- [1]
+					"Stratholme", -- [2]
 				},
 				[15486] = {
 					"Frost Resistance Totem IV", -- [1]
@@ -8015,9 +7138,9 @@ PlaterDB = {
 					"Attumen the Huntsman", -- [1]
 					"Karazhan", -- [2]
 				},
-				[10387] = {
-					"Vengeful Phantom", -- [1]
-					"Stratholme", -- [2]
+				[19735] = {
+					"Tempest-Forge Destroyer", -- [1]
+					"Tempest Keep: The Mechanar", -- [2]
 				},
 				[15510] = {
 					"Fankriss the Unyielding", -- [1]
@@ -8027,13 +7150,13 @@ PlaterDB = {
 					"Coilfang Engineer", -- [1]
 					"Coilfang: The Steamvault", -- [2]
 				},
-				[19783] = {
-					"Astral Flare", -- [1]
-					"Karazhan", -- [2]
+				[10411] = {
+					"Eye of Naxxramas", -- [1]
+					"Stratholme", -- [2]
 				},
-				[23172] = {
-					"Hand of Gorefiend", -- [1]
-					"Black Temple", -- [2]
+				[17801] = {
+					"Coilfang Siren", -- [1]
+					"Coilfang: The Steamvault", -- [2]
 				},
 				[22884] = {
 					"Leviathan", -- [1]
@@ -8059,9 +7182,9 @@ PlaterDB = {
 					"Priestess of Delight", -- [1]
 					"Black Temple", -- [2]
 				},
-				[22898] = {
-					"Supremus", -- [1]
-					"Black Temple", -- [2]
+				[20039] = {
+					"Phoenix-Hawk", -- [1]
+					"Tempest Keep", -- [2]
 				},
 				[17881] = {
 					"Aeonus", -- [1]
@@ -8079,45 +7202,45 @@ PlaterDB = {
 					"Vekniss Borer", -- [1]
 					"Ahn'Qiraj Temple", -- [2]
 				},
-				[23436] = {
-					"Image of Dementia", -- [1]
-					"Black Temple", -- [2]
+				[17993] = {
+					"Bloodwarder Protector", -- [1]
+					"Tempest Keep: The Botanica", -- [2]
 				},
-				[8477] = {
-					"Skeletal Servant", -- [1]
-					"Stratholme", -- [2]
+				[17961] = {
+					"Coilfang Enchantress", -- [1]
+					"Coilfang: The Slave Pens", -- [2]
 				},
 				[17977] = {
 					"Warp Splinter", -- [1]
 					"Tempest Keep: The Botanica", -- [2]
 				},
-				[17993] = {
-					"Bloodwarder Protector", -- [1]
-					"Tempest Keep: The Botanica", -- [2]
+				[21062] = {
+					"Nether Wraith", -- [1]
+					"Tempest Keep: The Mechanar", -- [2]
 				},
 				[2385] = {
 					"Feral Mountain Lion", -- [1]
 					"The Escape From Durnholde", -- [2]
 				},
-				[16178] = {
-					"Phase Hound", -- [1]
-					"Karazhan", -- [2]
-				},
 				[17726] = {
 					"Wrathfin Myrmidon", -- [1]
 					"Coilfang: The Underbog", -- [2]
-				},
-				[21126] = {
-					"Coilfang Scale-Healer", -- [1]
-					"Coilfang: The Slave Pens", -- [2]
 				},
 				[16807] = {
 					"Grand Warlock Nethekurse", -- [1]
 					"Hellfire Citadel: The Shattered Halls", -- [2]
 				},
+				[21126] = {
+					"Coilfang Scale-Healer", -- [1]
+					"Coilfang: The Slave Pens", -- [2]
+				},
 				[17281] = {
 					"Bonechewer Ripper", -- [1]
 					"Hellfire Citadel: Ramparts", -- [2]
+				},
+				[17797] = {
+					"Hydromancer Thespia", -- [1]
+					"Coilfang: The Steamvault", -- [2]
 				},
 				[18105] = {
 					"Ghaz'an", -- [1]
@@ -8127,17 +7250,17 @@ PlaterDB = {
 					"Bonechewer Shield Disciple", -- [1]
 					"Black Temple", -- [2]
 				},
-				[17797] = {
-					"Hydromancer Thespia", -- [1]
-					"Coilfang: The Steamvault", -- [2]
-				},
-				[23394] = {
-					"Promenade Sentinel", -- [1]
+				[22847] = {
+					"Ashtongue Primalist", -- [1]
 					"Black Temple", -- [2]
 				},
 				[20036] = {
 					"Bloodwarder Squire", -- [1]
 					"Tempest Keep", -- [2]
+				},
+				[22959] = {
+					"Ardent Host", -- [1]
+					"Black Temple", -- [2]
 				},
 				[19208] = {
 					"Summoned Cabal Acolyte", -- [1]
@@ -8147,13 +7270,9 @@ PlaterDB = {
 					"Cosmic Infuser", -- [1]
 					"Tempest Keep", -- [2]
 				},
-				[22959] = {
-					"Ardent Host", -- [1]
-					"Black Temple", -- [2]
-				},
-				[17827] = {
-					"Claw", -- [1]
-					"Coilfang: The Underbog", -- [2]
+				[17833] = {
+					"Durnholde Warden", -- [1]
+					"The Escape From Durnholde", -- [2]
 				},
 				[17799] = {
 					"Dreghood Slave", -- [1]
@@ -8162,6 +7281,10 @@ PlaterDB = {
 				[20208] = {
 					"Mennu's Healing Ward", -- [1]
 					"Coilfang: The Slave Pens", -- [2]
+				},
+				[17814] = {
+					"Lordaeron Watchman", -- [1]
+					"The Escape From Durnholde", -- [2]
 				},
 				[21350] = {
 					"Gronn-Priest", -- [1]
@@ -8179,37 +7302,37 @@ PlaterDB = {
 					"Watchkeeper Gargolmar", -- [1]
 					"Hellfire Citadel: Ramparts", -- [2]
 				},
-				[16507] = {
-					"Shattered Hand Sentry", -- [1]
-					"Hellfire Citadel: The Shattered Halls", -- [2]
+				[22091] = {
+					"Spitfire Totem", -- [1]
+					"Coilfang: Serpentshrine Cavern", -- [2]
 				},
-				[16539] = {
-					"Homunculus", -- [1]
-					"Karazhan", -- [2]
-				},
-				[16523] = {
-					"Shattered Hand Savage", -- [1]
-					"Hellfire Citadel: The Shattered Halls", -- [2]
+				[19716] = {
+					"Mechanar Tinkerer", -- [1]
+					"Tempest Keep: The Mechanar", -- [2]
 				},
 				[15688] = {
 					"Terestian Illhoof", -- [1]
 					"Karazhan", -- [2]
 				},
+				[5925] = {
+					"Grounding Totem", -- [1]
+					"Black Temple", -- [2]
+				},
 				[23524] = {
 					"Ashtongue Spiritbinder", -- [1]
 					"Black Temple", -- [2]
 				},
-				[17814] = {
-					"Lordaeron Watchman", -- [1]
-					"The Escape From Durnholde", -- [2]
+				[17546] = {
+					"Roar", -- [1]
+					"Karazhan", -- [2]
 				},
 				[18441] = {
 					"Stolen Soul", -- [1]
 					"Auchindoun: Auchenai Crypts", -- [2]
 				},
-				[21215] = {
-					"Leotheras the Blind", -- [1]
-					"Coilfang: Serpentshrine Cavern", -- [2]
+				[19608] = {
+					"Frayer Wildling", -- [1]
+					"Tempest Keep: The Botanica", -- [2]
 				},
 				[18473] = {
 					"Talon King Ikiss", -- [1]
@@ -8231,57 +7354,57 @@ PlaterDB = {
 					"Mana Feeder", -- [1]
 					"Karazhan", -- [2]
 				},
-				[5925] = {
-					"Grounding Totem", -- [1]
-					"Black Temple", -- [2]
+				[16507] = {
+					"Shattered Hand Sentry", -- [1]
+					"Hellfire Citadel: The Shattered Halls", -- [2]
 				},
-				[17546] = {
-					"Roar", -- [1]
+				[16523] = {
+					"Shattered Hand Savage", -- [1]
+					"Hellfire Citadel: The Shattered Halls", -- [2]
+				},
+				[16539] = {
+					"Homunculus", -- [1]
 					"Karazhan", -- [2]
-				},
-				[19608] = {
-					"Frayer Wildling", -- [1]
-					"Tempest Keep: The Botanica", -- [2]
-				},
-				[19716] = {
-					"Mechanar Tinkerer", -- [1]
-					"Tempest Keep: The Mechanar", -- [2]
 				},
 				[4306] = {
 					"Scarlet Torturer", -- [1]
 					"Scarlet Monastery", -- [2]
 				},
-				[21702] = {
-					"Ethereum Life-Binder", -- [1]
-					"Tempest Keep: The Arcatraz", -- [2]
-				},
-				[17770] = {
-					"Hungarfen", -- [1]
-					"Coilfang: The Underbog", -- [2]
-				},
 				[17991] = {
 					"Rokmar the Crackler", -- [1]
 					"Coilfang: The Slave Pens", -- [2]
 				},
-				[17882] = {
-					"The Black Stalker", -- [1]
-					"Coilfang: The Underbog", -- [2]
+				[18633] = {
+					"Cabal Acolyte", -- [1]
+					"Auchindoun: Shadow Labyrinth", -- [2]
 				},
 				[17826] = {
 					"Swamplord Musel'ek", -- [1]
 					"Coilfang: The Underbog", -- [2]
 				},
+				[17839] = {
+					"Rift Lord", -- [1]
+					"Opening of the Dark Portal", -- [2]
+				},
+				[22948] = {
+					"Gurtogg Bloodboil", -- [1]
+					"Black Temple", -- [2]
+				},
 				[22009] = {
 					"Tainted Elemental", -- [1]
 					"Coilfang: Serpentshrine Cavern", -- [2]
 				},
-				[17994] = {
-					"Bloodwarder Falconer", -- [1]
-					"Tempest Keep: The Botanica", -- [2]
+				[23083] = {
+					"Shadowmoon Riding Hound", -- [1]
+					"Black Temple", -- [2]
 				},
 				[17722] = {
 					"Coilfang Sorceress", -- [1]
 					"Coilfang: The Steamvault", -- [2]
+				},
+				[16699] = {
+					"Shattered Hand Reaver", -- [1]
+					"Hellfire Citadel: The Shattered Halls", -- [2]
 				},
 				[22853] = {
 					"Illidari Defiler", -- [1]
@@ -8295,13 +7418,13 @@ PlaterDB = {
 					"Dragon Turtle", -- [1]
 					"Black Temple", -- [2]
 				},
-				[22948] = {
-					"Gurtogg Bloodboil", -- [1]
+				[22997] = {
+					"Flame of Azzinoth", -- [1]
 					"Black Temple", -- [2]
 				},
-				[22917] = {
-					"Illidan Stormrage", -- [1]
-					"Black Temple", -- [2]
+				[17802] = {
+					"Coilfang Warrior", -- [1]
+					"Coilfang: The Steamvault", -- [2]
 				},
 				[17818] = {
 					"Towering Infernal", -- [1]
@@ -8319,25 +7442,25 @@ PlaterDB = {
 					"Enchanted Elemental", -- [1]
 					"Coilfang: Serpentshrine Cavern", -- [2]
 				},
-				[22997] = {
-					"Flame of Azzinoth", -- [1]
-					"Black Temple", -- [2]
+				[17882] = {
+					"The Black Stalker", -- [1]
+					"Coilfang: The Underbog", -- [2]
 				},
 				[17898] = {
 					"Abomination", -- [1]
 					"The Battle for Mount Hyjal", -- [2]
 				},
-				[19166] = {
-					"Tempest-Forge Patroller", -- [1]
-					"Tempest Keep: The Mechanar", -- [2]
-				},
-				[23083] = {
-					"Shadowmoon Riding Hound", -- [1]
-					"Black Temple", -- [2]
+				[17535] = {
+					"Dorothee", -- [1]
+					"Karazhan", -- [2]
 				},
 				[20906] = {
 					"Phase-Hunter", -- [1]
 					"Tempest Keep: The Arcatraz", -- [2]
+				},
+				[20040] = {
+					"Crystalcore Devastator", -- [1]
+					"Tempest Keep", -- [2]
 				},
 				[17962] = {
 					"Coilfang Collaborator", -- [1]
@@ -8347,29 +7470,29 @@ PlaterDB = {
 					"Thorngrin the Tender", -- [1]
 					"Tempest Keep: The Botanica", -- [2]
 				},
-				[20040] = {
-					"Crystalcore Devastator", -- [1]
-					"Tempest Keep", -- [2]
+				[23109] = {
+					"Vengeful Spirit", -- [1]
+					"Black Temple", -- [2]
 				},
 				[16174] = {
 					"Greater Shadowbat", -- [1]
 					"Karazhan", -- [2]
 				},
-				[21271] = {
-					"Infinity Blades", -- [1]
-					"Tempest Keep", -- [2]
-				},
-				[17535] = {
-					"Dorothee", -- [1]
+				[16482] = {
+					"Trapped Soul", -- [1]
 					"Karazhan", -- [2]
+				},
+				[22849] = {
+					"Ashtongue Feral Spirit", -- [1]
+					"Black Temple", -- [2]
 				},
 				[21127] = {
 					"Coilfang Tempest", -- [1]
 					"Coilfang: The Slave Pens", -- [2]
 				},
-				[22849] = {
-					"Ashtongue Feral Spirit", -- [1]
-					"Black Temple", -- [2]
+				[15544] = {
+					"Vem", -- [1]
+					"Ahn'Qiraj Temple", -- [2]
 				},
 				[17067] = {
 					"Phantom Hound", -- [1]
@@ -8383,13 +7506,13 @@ PlaterDB = {
 					"Bonechewer Blood Prophet", -- [1]
 					"Black Temple", -- [2]
 				},
-				[15544] = {
-					"Vem", -- [1]
-					"Ahn'Qiraj Temple", -- [2]
+				[22946] = {
+					"Shadowmoon War Hound", -- [1]
+					"Black Temple", -- [2]
 				},
-				[3983] = {
-					"Interrogator Vishas", -- [1]
-					"Scarlet Monastery", -- [2]
+				[15247] = {
+					"Qiraji Brainwasher", -- [1]
+					"Ahn'Qiraj Temple", -- [2]
 				},
 				[18170] = {
 					"Infinite Slayer", -- [1]
@@ -8399,33 +7522,33 @@ PlaterDB = {
 					"Summoned Cabal Deathsworn", -- [1]
 					"Auchindoun: Shadow Labyrinth", -- [2]
 				},
-				[15247] = {
-					"Qiraji Brainwasher", -- [1]
+				[21271] = {
+					"Infinity Blades", -- [1]
+					"Tempest Keep", -- [2]
+				},
+				[10405] = {
+					"Plague Ghoul", -- [1]
+					"Stratholme", -- [2]
+				},
+				[15263] = {
+					"The Prophet Skeram", -- [1]
 					"Ahn'Qiraj Temple", -- [2]
 				},
 				[22844] = {
 					"Ashtongue Battlelord", -- [1]
 					"Black Temple", -- [2]
 				},
-				[15263] = {
-					"The Prophet Skeram", -- [1]
-					"Ahn'Qiraj Temple", -- [2]
-				},
-				[10405] = {
-					"Plague Ghoul", -- [1]
-					"Stratholme", -- [2]
-				},
-				[23397] = {
-					"Illidari Blood Lord", -- [1]
+				[23523] = {
+					"Ashtongue Elementalist", -- [1]
 					"Black Temple", -- [2]
 				},
 				[17259] = {
 					"Bonechewer Hungerer", -- [1]
 					"Hellfire Citadel: Ramparts", -- [2]
 				},
-				[23523] = {
-					"Ashtongue Elementalist", -- [1]
-					"Black Temple", -- [2]
+				[10381] = {
+					"Ravaged Cadaver", -- [1]
+					"Stratholme", -- [2]
 				},
 				[18314] = {
 					"Nexus Stalker", -- [1]
@@ -8435,121 +7558,121 @@ PlaterDB = {
 					"Vazruden the Herald", -- [1]
 					"Hellfire Citadel: Ramparts", -- [2]
 				},
-				[10381] = {
-					"Ravaged Cadaver", -- [1]
-					"Stratholme", -- [2]
-				},
-				[15543] = {
-					"Princess Yauj", -- [1]
-					"Ahn'Qiraj Temple", -- [2]
+				[21904] = {
+					"Avian Warhawk", -- [1]
+					"Auchindoun: Sethekk Halls", -- [2]
 				},
 				[19167] = {
 					"Bloodwarder Slayer", -- [1]
 					"Tempest Keep: The Mechanar", -- [2]
 				},
+				[4293] = {
+					"Scarlet Scryer", -- [1]
+					"Scarlet Monastery", -- [2]
+				},
 				[18394] = {
 					"Ethereal Wraith", -- [1]
 					"Auchindoun: Mana-Tombs", -- [2]
-				},
-				[18506] = {
-					"Raging Soul", -- [1]
-					"Auchindoun: Auchenai Crypts", -- [2]
 				},
 				[15464] = {
 					"Strength of Earth Totem V", -- [1]
 					"Ahn'Qiraj Temple", -- [2]
 				},
-				[20911] = {
-					"Blackwing Drakonaar", -- [1]
+				[20908] = {
+					"Akkiris Lightning-Waker", -- [1]
 					"Tempest Keep: The Arcatraz", -- [2]
-				},
-				[16524] = {
-					"Shade of Aran", -- [1]
-					"Karazhan", -- [2]
-				},
-				[4293] = {
-					"Scarlet Scryer", -- [1]
-					"Scarlet Monastery", -- [2]
-				},
-				[19513] = {
-					"Mutate Fear-Shrieker", -- [1]
-					"Tempest Keep: The Botanica", -- [2]
 				},
 				[16460] = {
 					"Night Mistress", -- [1]
 					"Karazhan", -- [2]
 				},
-				[15463] = {
-					"Grace of Air Totem III", -- [1]
-					"Tempest Keep", -- [2]
-				},
-				[16492] = {
-					"Syphoner", -- [1]
-					"Karazhan", -- [2]
-				},
-				[17533] = {
-					"Romulo", -- [1]
-					"Karazhan", -- [2]
-				},
-				[17547] = {
-					"Tinhead", -- [1]
+				[16524] = {
+					"Shade of Aran", -- [1]
 					"Karazhan", -- [2]
 				},
 				[16540] = {
 					"Shadow Pillager", -- [1]
 					"Karazhan", -- [2]
 				},
+				[19513] = {
+					"Mutate Fear-Shrieker", -- [1]
+					"Tempest Keep: The Botanica", -- [2]
+				},
+				[18506] = {
+					"Raging Soul", -- [1]
+					"Auchindoun: Auchenai Crypts", -- [2]
+				},
+				[17533] = {
+					"Romulo", -- [1]
+					"Karazhan", -- [2]
+				},
+				[16492] = {
+					"Syphoner", -- [1]
+					"Karazhan", -- [2]
+				},
+				[15463] = {
+					"Grace of Air Totem III", -- [1]
+					"Tempest Keep", -- [2]
+				},
+				[17547] = {
+					"Tinhead", -- [1]
+					"Karazhan", -- [2]
+				},
+				[15439] = {
+					"Fire Elemental Totem", -- [1]
+					"Tempest Keep", -- [2]
+				},
 				[15447] = {
 					"Wrath of Air Totem", -- [1]
 					"Tempest Keep: The Arcatraz", -- [2]
-				},
-				[15496] = {
-					"Windfury Totem IV", -- [1]
-					"Ahn'Qiraj Temple", -- [2]
 				},
 				[11371] = {
 					"Razzashi Serpent", -- [1]
 					"Zul'Gurub", -- [2]
 				},
-				[20908] = {
-					"Akkiris Lightning-Waker", -- [1]
-					"Tempest Keep: The Arcatraz", -- [2]
-				},
-				[15479] = {
-					"Strength of Earth Totem VI", -- [1]
-					"Tempest Keep", -- [2]
-				},
-				[17771] = {
-					"Murkblood Oracle", -- [1]
-					"Coilfang: The Underbog", -- [2]
-				},
-				[19833] = {
-					"Venomous Snake", -- [1]
+				[18634] = {
+					"Cabal Summoner", -- [1]
 					"Auchindoun: Shadow Labyrinth", -- [2]
-				},
-				[22950] = {
-					"High Nethermancer Zerevor", -- [1]
-					"Black Temple", -- [2]
-				},
-				[15511] = {
-					"Lord Kri", -- [1]
-					"Ahn'Qiraj Temple", -- [2]
-				},
-				[17723] = {
-					"Bog Giant", -- [1]
-					"Coilfang: The Underbog", -- [2]
-				},
-				[10412] = {
-					"Crypt Crawler", -- [1]
-					"Stratholme", -- [2]
 				},
 				[16704] = {
 					"Shattered Hand Sharpshooter", -- [1]
 					"Hellfire Citadel: The Shattered Halls", -- [2]
 				},
+				[15479] = {
+					"Strength of Earth Totem VI", -- [1]
+					"Tempest Keep", -- [2]
+				},
 				[18794] = {
 					"Cabal Ritualist", -- [1]
 					"Auchindoun: Shadow Labyrinth", -- [2]
+				},
+				[15551] = {
+					"Spectral Stable Hand", -- [1]
+					"Karazhan", -- [2]
+				},
+				[15543] = {
+					"Princess Yauj", -- [1]
+					"Ahn'Qiraj Temple", -- [2]
+				},
+				[15511] = {
+					"Lord Kri", -- [1]
+					"Ahn'Qiraj Temple", -- [2]
+				},
+				[16700] = {
+					"Shattered Hand Legionnaire", -- [1]
+					"Hellfire Citadel: The Shattered Halls", -- [2]
+				},
+				[10412] = {
+					"Crypt Crawler", -- [1]
+					"Stratholme", -- [2]
+				},
+				[19833] = {
+					"Venomous Snake", -- [1]
+					"Auchindoun: Shadow Labyrinth", -- [2]
+				},
+				[17771] = {
+					"Murkblood Oracle", -- [1]
+					"Coilfang: The Underbog", -- [2]
 				},
 				[10436] = {
 					"Baroness Anastari", -- [1]
@@ -8567,10 +7690,6 @@ PlaterDB = {
 					"Infinite Assassin", -- [1]
 					"Opening of the Dark Portal", -- [2]
 				},
-				[15551] = {
-					"Spectral Stable Hand", -- [1]
-					"Karazhan", -- [2]
-				},
 				[16457] = {
 					"Maiden of Virtue", -- [1]
 					"Karazhan", -- [2]
@@ -8578,6 +7697,10 @@ PlaterDB = {
 				[17960] = {
 					"Coilfang Soothsayer", -- [1]
 					"Coilfang: The Slave Pens", -- [2]
+				},
+				[22845] = {
+					"Ashtongue Mystic", -- [1]
+					"Black Temple", -- [2]
 				},
 				[17899] = {
 					"Shadowy Necromancer", -- [1]
@@ -8587,49 +7710,49 @@ PlaterDB = {
 					"Dragonmaw Sky Stalker", -- [1]
 					"Black Temple", -- [2]
 				},
-				[22055] = {
-					"Coilfang Elite", -- [1]
-					"Coilfang: Serpentshrine Cavern", -- [2]
+				[17963] = {
+					"Wastewalker Slave", -- [1]
+					"Coilfang: The Slave Pens", -- [2]
 				},
 				[10516] = {
 					"The Unforgiven", -- [1]
 					"Stratholme", -- [2]
 				},
-				[17963] = {
-					"Wastewalker Slave", -- [1]
-					"Coilfang: The Slave Pens", -- [2]
-				},
-				[22486] = {
-					"Greater Earthbind Totem", -- [1]
+				[22055] = {
+					"Coilfang Elite", -- [1]
 					"Coilfang: Serpentshrine Cavern", -- [2]
-				},
-				[20041] = {
-					"Crystalcore Sentinel", -- [1]
-					"Tempest Keep", -- [2]
 				},
 				[17478] = {
 					"Bleeding Hollow Scryer", -- [1]
 					"Hellfire Citadel: Ramparts", -- [2]
 				},
-				[22119] = {
-					"Fathom Lurker", -- [1]
-					"Coilfang: Serpentshrine Cavern", -- [2]
+				[20041] = {
+					"Crystalcore Sentinel", -- [1]
+					"Tempest Keep", -- [2]
 				},
 				[20868] = {
 					"Entropic Eye", -- [1]
 					"Tempest Keep: The Arcatraz", -- [2]
 				},
+				[22119] = {
+					"Fathom Lurker", -- [1]
+					"Coilfang: Serpentshrine Cavern", -- [2]
+				},
 				[21128] = {
 					"Coilfang Ray", -- [1]
 					"Coilfang: The Slave Pens", -- [2]
 				},
-				[19875] = {
-					"Baroness Dorothea Millstipe", -- [1]
+				[15687] = {
+					"Moroes", -- [1]
 					"Karazhan", -- [2]
 				},
-				[18155] = {
-					"Bloodfalcon", -- [1]
-					"Tempest Keep: The Botanica", -- [2]
+				[17270] = {
+					"Bleeding Hollow Archer", -- [1]
+					"Hellfire Citadel: Ramparts", -- [2]
+				},
+				[21224] = {
+					"Tidewalker Depth-Seer", -- [1]
+					"Coilfang: Serpentshrine Cavern", -- [2]
 				},
 				[23222] = {
 					"Bonechewer Brawler", -- [1]
@@ -8643,57 +7766,53 @@ PlaterDB = {
 					"Scarlet Gallant", -- [1]
 					"Scarlet Monastery", -- [2]
 				},
-				[21224] = {
-					"Tidewalker Depth-Seer", -- [1]
-					"Coilfang: Serpentshrine Cavern", -- [2]
+				[18155] = {
+					"Bloodfalcon", -- [1]
+					"Tempest Keep: The Botanica", -- [2]
 				},
 				[18171] = {
 					"Infinite Defiler", -- [1]
 					"The Escape From Durnholde", -- [2]
 				},
-				[17270] = {
-					"Bleeding Hollow Archer", -- [1]
-					"Hellfire Citadel: Ramparts", -- [2]
-				},
-				[21272] = {
-					"Warp Slicer", -- [1]
-					"Tempest Keep", -- [2]
-				},
 				[19307] = {
 					"Nexus Terror", -- [1]
 					"Auchindoun: Mana-Tombs", -- [2]
+				},
+				[19226] = {
+					"Void Traveler", -- [1]
+					"Auchindoun: Shadow Labyrinth", -- [2]
 				},
 				[19205] = {
 					"Syth Arcane Elemental", -- [1]
 					"Auchindoun: Sethekk Halls", -- [2]
 				},
-				[19306] = {
-					"Mana Leech", -- [1]
-					"Auchindoun: Mana-Tombs", -- [2]
+				[21865] = {
+					"Coilfang Ambusher", -- [1]
+					"Coilfang: Serpentshrine Cavern", -- [2]
 				},
 				[20977] = {
 					"Millhouse Manastorm", -- [1]
 					"Tempest Keep: The Arcatraz", -- [2]
 				},
-				[23398] = {
-					"Angered Soul Fragment", -- [1]
-					"Black Temple", -- [2]
-				},
 				[23318] = {
 					"Ashtongue Rogue", -- [1]
 					"Black Temple", -- [2]
 				},
-				[18315] = {
-					"Ethereal Theurgist", -- [1]
-					"Auchindoun: Mana-Tombs", -- [2]
+				[23398] = {
+					"Angered Soul Fragment", -- [1]
+					"Black Temple", -- [2]
 				},
 				[17308] = {
 					"Omor the Unscarred", -- [1]
 					"Hellfire Citadel: Ramparts", -- [2]
 				},
-				[17261] = {
-					"Restless Skeleton", -- [1]
-					"Karazhan", -- [2]
+				[18315] = {
+					"Ethereal Theurgist", -- [1]
+					"Auchindoun: Mana-Tombs", -- [2]
+				},
+				[18331] = {
+					"Ethereal Darkcaster", -- [1]
+					"Auchindoun: Mana-Tombs", -- [2]
 				},
 				[19873] = {
 					"Lord Crispin Ference", -- [1]
@@ -8703,6 +7822,10 @@ PlaterDB = {
 					"Mana Spring Totem IV", -- [1]
 					"Ahn'Qiraj Temple", -- [2]
 				},
+				[17356] = {
+					"Creeping Ooze", -- [1]
+					"Hellfire Citadel: The Shattered Halls", -- [2]
+				},
 				[22487] = {
 					"Greater Poison Cleansing Totem", -- [1]
 					"Coilfang: Serpentshrine Cavern", -- [2]
@@ -8711,17 +7834,17 @@ PlaterDB = {
 					"Tremor Totem", -- [1]
 					"Tempest Keep: The Arcatraz", -- [2]
 				},
-				[18925] = {
-					"Solarium Agent", -- [1]
-					"Tempest Keep", -- [2]
+				[19865] = {
+					"Mutate Horror", -- [1]
+					"Tempest Keep: The Botanica", -- [2]
 				},
 				[17420] = {
 					"Shattered Hand Heathen", -- [1]
 					"Hellfire Citadel: The Shattered Halls", -- [2]
 				},
-				[19865] = {
-					"Mutate Horror", -- [1]
-					"Tempest Keep: The Botanica", -- [2]
+				[18326] = {
+					"Sethekk Shaman", -- [1]
+					"Auchindoun: Sethekk Halls", -- [2]
 				},
 				[20897] = {
 					"Ethereum Wave-Caster", -- [1]
@@ -8743,9 +7866,9 @@ PlaterDB = {
 					"Borpa", -- [1]
 					"Tempest Keep", -- [2]
 				},
-				[16525] = {
-					"Spell Shade", -- [1]
-					"Karazhan", -- [2]
+				[1964] = {
+					"Treant", -- [1]
+					"Tempest Keep", -- [2]
 				},
 				[17548] = {
 					"Tito", -- [1]
@@ -8755,37 +7878,37 @@ PlaterDB = {
 					"Frayer", -- [1]
 					"Tempest Keep: The Botanica", -- [2]
 				},
-				[1964] = {
-					"Treant", -- [1]
-					"Tempest Keep", -- [2]
+				[22896] = {
+					"Ashtongue Searing Totem", -- [1]
+					"Black Temple", -- [2]
 				},
-				[4288] = {
-					"Scarlet Beastmaster", -- [1]
-					"Scarlet Monastery", -- [2]
+				[20904] = {
+					"Warden Mellichar", -- [1]
+					"Tempest Keep: The Arcatraz", -- [2]
 				},
 				[18635] = {
 					"Cabal Deathsworn", -- [1]
-					"Auchindoun: Shadow Labyrinth", -- [2]
-				},
-				[18667] = {
-					"Blackheart the Inciter", -- [1]
 					"Auchindoun: Shadow Labyrinth", -- [2]
 				},
 				[10876] = {
 					"Undead Scarab", -- [1]
 					"Stratholme", -- [2]
 				},
+				[18667] = {
+					"Blackheart the Inciter", -- [1]
+					"Auchindoun: Shadow Labyrinth", -- [2]
+				},
 				[18636] = {
 					"Cabal Assassin", -- [1]
 					"Auchindoun: Shadow Labyrinth", -- [2]
 				},
-				[17959] = {
-					"Coilfang Slavehandler", -- [1]
-					"Coilfang: The Slave Pens", -- [2]
-				},
 				[23111] = {
 					"Shadowy Construct", -- [1]
 					"Black Temple", -- [2]
+				},
+				[17959] = {
+					"Coilfang Slavehandler", -- [1]
+					"Coilfang: The Slave Pens", -- [2]
 				},
 				[18731] = {
 					"Ambassador Hellmaw", -- [1]
@@ -8823,10 +7946,6 @@ PlaterDB = {
 					"Lady Malande", -- [1]
 					"Black Temple", -- [2]
 				},
-				[16151] = {
-					"Midnight", -- [1]
-					"Karazhan", -- [2]
-				},
 				[17964] = {
 					"Wastewalker Worker", -- [1]
 					"Coilfang: The Slave Pens", -- [2]
@@ -8834,6 +7953,10 @@ PlaterDB = {
 				[18806] = {
 					"Solarium Priest", -- [1]
 					"Tempest Keep", -- [2]
+				},
+				[20885] = {
+					"Dalliah the Doomsayer", -- [1]
+					"Tempest Keep: The Arcatraz", -- [2]
 				},
 				[17916] = {
 					"Fel Stalker", -- [1]
@@ -8847,9 +7970,9 @@ PlaterDB = {
 					"Shadowmoon Soldier", -- [1]
 					"Black Temple", -- [2]
 				},
-				[20885] = {
-					"Dalliah the Doomsayer", -- [1]
-					"Tempest Keep: The Arcatraz", -- [2]
+				[16151] = {
+					"Midnight", -- [1]
+					"Karazhan", -- [2]
 				},
 				[22056] = {
 					"Coilfang Strider", -- [1]
@@ -8871,17 +7994,17 @@ PlaterDB = {
 					"Fathom Sporebat", -- [1]
 					"Coilfang: Serpentshrine Cavern", -- [2]
 				},
-				[20904] = {
-					"Warden Mellichar", -- [1]
-					"Tempest Keep: The Arcatraz", -- [2]
+				[4288] = {
+					"Scarlet Beastmaster", -- [1]
+					"Scarlet Monastery", -- [2]
 				},
 				[23175] = {
 					"Tarren Mill Guardsman", -- [1]
 					"The Escape From Durnholde", -- [2]
 				},
-				[22896] = {
-					"Ashtongue Searing Totem", -- [1]
-					"Black Temple", -- [2]
+				[16525] = {
+					"Spell Shade", -- [1]
+					"Karazhan", -- [2]
 				},
 				[18092] = {
 					"Tarren Mill Guardsman", -- [1]
@@ -8895,9 +8018,9 @@ PlaterDB = {
 					"Bonechewer Combatant", -- [1]
 					"Black Temple", -- [2]
 				},
-				[18326] = {
-					"Sethekk Shaman", -- [1]
-					"Auchindoun: Sethekk Halls", -- [2]
+				[18925] = {
+					"Solarium Agent", -- [1]
+					"Tempest Keep", -- [2]
 				},
 				[21225] = {
 					"Tidewalker Warrior", -- [1]
@@ -8907,16 +8030,16 @@ PlaterDB = {
 					"Infinite Saboteur", -- [1]
 					"The Escape From Durnholde", -- [2]
 				},
-				[17356] = {
-					"Creeping Ooze", -- [1]
-					"Hellfire Citadel: The Shattered Halls", -- [2]
+				[17261] = {
+					"Restless Skeleton", -- [1]
+					"Karazhan", -- [2]
 				},
 				[21273] = {
 					"Phaseshift Bulwark", -- [1]
 					"Tempest Keep", -- [2]
 				},
-				[18331] = {
-					"Ethereal Darkcaster", -- [1]
+				[19306] = {
+					"Mana Leech", -- [1]
 					"Auchindoun: Mana-Tombs", -- [2]
 				},
 				[15264] = {
@@ -8927,21 +8050,21 @@ PlaterDB = {
 					"Kil'rek", -- [1]
 					"Karazhan", -- [2]
 				},
-				[21865] = {
-					"Coilfang Ambusher", -- [1]
-					"Coilfang: Serpentshrine Cavern", -- [2]
+				[21272] = {
+					"Warp Slicer", -- [1]
+					"Tempest Keep", -- [2]
 				},
 				[23399] = {
 					"Suffering Soul Fragment", -- [1]
 					"Black Temple", -- [2]
 				},
-				[19226] = {
-					"Void Traveler", -- [1]
-					"Auchindoun: Shadow Labyrinth", -- [2]
-				},
 				[18805] = {
 					"High Astromancer Solarian", -- [1]
 					"Tempest Keep", -- [2]
+				},
+				[19875] = {
+					"Baroness Dorothea Millstipe", -- [1]
+					"Karazhan", -- [2]
 				},
 				[17309] = {
 					"Hellfire Watcher", -- [1]
@@ -8951,17 +8074,13 @@ PlaterDB = {
 					"Bonechewer Beastmaster", -- [1]
 					"Hellfire Citadel: Ramparts", -- [2]
 				},
-				[15687] = {
-					"Moroes", -- [1]
-					"Karazhan", -- [2]
+				[22486] = {
+					"Greater Earthbind Totem", -- [1]
+					"Coilfang: Serpentshrine Cavern", -- [2]
 				},
 				[17357] = {
 					"Creeping Oozeling", -- [1]
 					"Hellfire Citadel: The Shattered Halls", -- [2]
-				},
-				[22845] = {
-					"Ashtongue Mystic", -- [1]
-					"Black Temple", -- [2]
 				},
 				[20886] = {
 					"Wrath-Scryer Soccothrates", -- [1]
@@ -8975,17 +8094,21 @@ PlaterDB = {
 					"Shattered Hand Gladiator", -- [1]
 					"Hellfire Citadel: The Shattered Halls", -- [2]
 				},
+				[22950] = {
+					"High Nethermancer Zerevor", -- [1]
+					"Black Temple", -- [2]
+				},
 				[16414] = {
 					"Ghostly Steward", -- [1]
 					"Karazhan", -- [2]
 				},
+				[17723] = {
+					"Bog Giant", -- [1]
+					"Coilfang: The Underbog", -- [2]
+				},
 				[21863] = {
 					"Serpentshrine Lurker", -- [1]
 					"Coilfang: Serpentshrine Cavern", -- [2]
-				},
-				[16700] = {
-					"Shattered Hand Legionnaire", -- [1]
-					"Hellfire Citadel: The Shattered Halls", -- [2]
 				},
 				[16488] = {
 					"Arcane Anomaly", -- [1]
@@ -9015,17 +8138,17 @@ PlaterDB = {
 					"Zealot Lor'Khan", -- [1]
 					"Zul'Gurub", -- [2]
 				},
-				[18634] = {
-					"Cabal Summoner", -- [1]
-					"Auchindoun: Shadow Labyrinth", -- [2]
+				[15496] = {
+					"Windfury Totem IV", -- [1]
+					"Ahn'Qiraj Temple", -- [2]
 				},
 				[11372] = {
 					"Razzashi Adder", -- [1]
 					"Zul'Gurub", -- [2]
 				},
-				[15439] = {
-					"Fire Elemental Totem", -- [1]
-					"Tempest Keep", -- [2]
+				[20911] = {
+					"Blackwing Drakonaar", -- [1]
+					"Tempest Keep: The Arcatraz", -- [2]
 				},
 				[15480] = {
 					"Searing Totem VII", -- [1]
@@ -9039,9 +8162,9 @@ PlaterDB = {
 					"Reanimated Bones", -- [1]
 					"Auchindoun: Auchenai Crypts", -- [2]
 				},
-				[21904] = {
-					"Avian Warhawk", -- [1]
-					"Auchindoun: Sethekk Halls", -- [2]
+				[23397] = {
+					"Illidari Blood Lord", -- [1]
+					"Black Temple", -- [2]
 				},
 				[18732] = {
 					"Grandmaster Vorpil", -- [1]
@@ -9055,9 +8178,9 @@ PlaterDB = {
 					"Crypt Beast", -- [1]
 					"Stratholme", -- [2]
 				},
-				[22946] = {
-					"Shadowmoon War Hound", -- [1]
-					"Black Temple", -- [2]
+				[3983] = {
+					"Interrogator Vishas", -- [1]
+					"Scarlet Monastery", -- [2]
 				},
 				[18796] = {
 					"Fel Overseer", -- [1]
@@ -9071,29 +8194,29 @@ PlaterDB = {
 					"Coilfang Slavemaster", -- [1]
 					"Coilfang: The Steamvault", -- [2]
 				},
-				[16482] = {
-					"Trapped Soul", -- [1]
-					"Karazhan", -- [2]
+				[17994] = {
+					"Bloodwarder Falconer", -- [1]
+					"Tempest Keep: The Botanica", -- [2]
 				},
 				[22952] = {
 					"Veras Darkshadow", -- [1]
-					"Black Temple", -- [2]
-				},
-				[23109] = {
-					"Vengeful Spirit", -- [1]
 					"Black Temple", -- [2]
 				},
 				[15497] = {
 					"Windfury Totem V", -- [1]
 					"Tempest Keep", -- [2]
 				},
-				[17839] = {
-					"Rift Lord", -- [1]
-					"Opening of the Dark Portal", -- [2]
+				[22917] = {
+					"Illidan Stormrage", -- [1]
+					"Black Temple", -- [2]
 				},
-				[17802] = {
-					"Coilfang Warrior", -- [1]
-					"Coilfang: The Steamvault", -- [2]
+				[17770] = {
+					"Hungarfen", -- [1]
+					"Coilfang: The Underbog", -- [2]
+				},
+				[19166] = {
+					"Tempest-Forge Patroller", -- [1]
+					"Tempest Keep: The Mechanar", -- [2]
 				},
 				[17917] = {
 					"Coilfang Water Elemental", -- [1]
@@ -9103,10 +8226,6 @@ PlaterDB = {
 					"Guerrero", -- [1]
 					"The Escape From Durnholde", -- [2]
 				},
-				[16699] = {
-					"Shattered Hand Reaver", -- [1]
-					"Hellfire Citadel: The Shattered Halls", -- [2]
-				},
 				[22236] = {
 					"Water Elemental Totem", -- [1]
 					"Coilfang: Serpentshrine Cavern", -- [2]
@@ -9114,6 +8233,10 @@ PlaterDB = {
 				[17735] = {
 					"Wrathfin Warrior", -- [1]
 					"Coilfang: The Underbog", -- [2]
+				},
+				[21702] = {
+					"Ethereum Life-Binder", -- [1]
+					"Tempest Keep: The Arcatraz", -- [2]
 				},
 				[20043] = {
 					"Apprentice Star Scryer", -- [1]
@@ -9127,25 +8250,21 @@ PlaterDB = {
 					"Raging Flames", -- [1]
 					"Tempest Keep: The Mechanar", -- [2]
 				},
-				[18633] = {
-					"Cabal Acolyte", -- [1]
+				[18641] = {
+					"Cabal Familiar", -- [1]
 					"Auchindoun: Shadow Labyrinth", -- [2]
 				},
 				[23176] = {
 					"Tarren Mill Guardsman", -- [1]
 					"The Escape From Durnholde", -- [2]
 				},
-				[18641] = {
-					"Cabal Familiar", -- [1]
-					"Auchindoun: Shadow Labyrinth", -- [2]
+				[21215] = {
+					"Leotheras the Blind", -- [1]
+					"Coilfang: Serpentshrine Cavern", -- [2]
 				},
 				[18093] = {
 					"Tarren Mill Protector", -- [1]
 					"The Escape From Durnholde", -- [2]
-				},
-				[22091] = {
-					"Spitfire Totem", -- [1]
-					"Coilfang: Serpentshrine Cavern", -- [2]
 				},
 				[20882] = {
 					"Skulking Witch", -- [1]
@@ -9155,25 +8274,25 @@ PlaterDB = {
 					"Shadowmoon Houndmaster", -- [1]
 					"Black Temple", -- [2]
 				},
+				[17827] = {
+					"Claw", -- [1]
+					"Coilfang: The Underbog", -- [2]
+				},
 				[21226] = {
 					"Tidewalker Shaman", -- [1]
 					"Coilfang: Serpentshrine Cavern", -- [2]
-				},
-				[17833] = {
-					"Durnholde Warden", -- [1]
-					"The Escape From Durnholde", -- [2]
 				},
 				[21246] = {
 					"Serpentshrine Sporebat", -- [1]
 					"Coilfang: Serpentshrine Cavern", -- [2]
 				},
+				[23394] = {
+					"Promenade Sentinel", -- [1]
+					"Black Temple", -- [2]
+				},
 				[21274] = {
 					"Staff of Disintegration", -- [1]
 					"Tempest Keep", -- [2]
-				},
-				[22847] = {
-					"Ashtongue Primalist", -- [1]
-					"Black Temple", -- [2]
 				},
 				[22945] = {
 					"Shadowmoon Blood Mage", -- [1]
@@ -9183,6 +8302,10 @@ PlaterDB = {
 					"Baron Rafe Dreuger", -- [1]
 					"Karazhan", -- [2]
 				},
+				[23172] = {
+					"Hand of Gorefiend", -- [1]
+					"Black Temple", -- [2]
+				},
 				[21338] = {
 					"Coilfang Leper", -- [1]
 					"Coilfang: The Steamvault", -- [2]
@@ -9191,45 +8314,45 @@ PlaterDB = {
 					"Illidari Archon", -- [1]
 					"Black Temple", -- [2]
 				},
-				[21062] = {
-					"Nether Wraith", -- [1]
-					"Tempest Keep: The Mechanar", -- [2]
+				[8477] = {
+					"Skeletal Servant", -- [1]
+					"Stratholme", -- [2]
 				},
 				[18317] = {
 					"Ethereal Priest", -- [1]
 					"Auchindoun: Mana-Tombs", -- [2]
 				},
-				[23418] = {
-					"Essence of Suffering", -- [1]
-					"Black Temple", -- [2]
+				[19783] = {
+					"Astral Flare", -- [1]
+					"Karazhan", -- [2]
 				},
 				[184259] = {
 					"Night Lord", -- [1]
 					"Karazhan", -- [2]
 				},
-				[22957] = {
-					"Mistress of Dementia", -- [1]
+				[23436] = {
+					"Image of Dementia", -- [1]
 					"Black Temple", -- [2]
 				},
-				[10411] = {
-					"Eye of Naxxramas", -- [1]
-					"Stratholme", -- [2]
+				[22898] = {
+					"Supremus", -- [1]
+					"Black Temple", -- [2]
 				},
 				[21466] = {
 					"Harbinger Skyriss", -- [1]
 					"Tempest Keep: The Arcatraz", -- [2]
 				},
-				[18640] = {
-					"Cabal Warlock", -- [1]
-					"Auchindoun: Shadow Labyrinth", -- [2]
+				[17800] = {
+					"Coilfang Myrmidon", -- [1]
+					"Coilfang: The Steamvault", -- [2]
 				},
 				[18429] = {
 					"Arcane Fiend", -- [1]
 					"Auchindoun: Mana-Tombs", -- [2]
 				},
-				[17798] = {
-					"Warlord Kalithresh", -- [1]
-					"Coilfang: The Steamvault", -- [2]
+				[22939] = {
+					"Temple Acolyte", -- [1]
+					"Black Temple", -- [2]
 				},
 				[16415] = {
 					"Skeletal Waiter", -- [1]
@@ -9251,29 +8374,29 @@ PlaterDB = {
 					"Spiteful Temptress", -- [1]
 					"Tempest Keep: The Arcatraz", -- [2]
 				},
-				[17465] = {
-					"Shattered Hand Centurion", -- [1]
-					"Hellfire Citadel: The Shattered Halls", -- [2]
+				[16171] = {
+					"Coldmist Widow", -- [1]
+					"Karazhan", -- [2]
 				},
 				[18557] = {
 					"Phasing Cleric", -- [1]
 					"Auchindoun: Auchenai Crypts", -- [2]
 				},
-				[16171] = {
-					"Coldmist Widow", -- [1]
-					"Karazhan", -- [2]
-				},
 				[17808] = {
 					"Anetheron", -- [1]
 					"The Battle for Mount Hyjal", -- [2]
+				},
+				[21301] = {
+					"Coilfang Shatterer", -- [1]
+					"Coilfang: Serpentshrine Cavern", -- [2]
 				},
 				[184261] = {
 					"Wanton Host", -- [1]
 					"Karazhan", -- [2]
 				},
-				[17796] = {
-					"Mekgineer Steamrigger", -- [1]
-					"Coilfang: The Steamvault", -- [2]
+				[16934] = {
+					"Enrage", -- [1]
+					"Tempest Keep", -- [2]
 				},
 				[18637] = {
 					"Cabal Shadow Priest", -- [1]
@@ -9287,9 +8410,9 @@ PlaterDB = {
 					"Zulian Tiger", -- [1]
 					"Zul'Gurub", -- [2]
 				},
-				[20881] = {
-					"Unbound Devastator", -- [1]
-					"Tempest Keep: The Arcatraz", -- [2]
+				[7402] = {
+					"Searing Totem VI", -- [1]
+					"Ahn'Qiraj Temple", -- [2]
 				},
 				[18701] = {
 					"Dark Vortex", -- [1]
@@ -9299,17 +8422,17 @@ PlaterDB = {
 					"Shadowmoon Darkcaster", -- [1]
 					"Hellfire Citadel: The Shattered Halls", -- [2]
 				},
-				[19953] = {
-					"Frayer Protector", -- [1]
-					"Tempest Keep: The Botanica", -- [2]
+				[16809] = {
+					"Warbringer O'mrogg", -- [1]
+					"Hellfire Citadel: The Shattered Halls", -- [2]
 				},
 				[21818] = {
 					"Infinite Whelp", -- [1]
 					"Opening of the Dark Portal", -- [2]
 				},
-				[22947] = {
-					"Mother Shahraz", -- [1]
-					"Black Temple", -- [2]
+				[16808] = {
+					"Warchief Kargath Bladefist", -- [1]
+					"Hellfire Citadel: The Shattered Halls", -- [2]
 				},
 				[22873] = {
 					"Coilskar General", -- [1]
@@ -9327,9 +8450,9 @@ PlaterDB = {
 					"Negaton Screamer", -- [1]
 					"Tempest Keep: The Arcatraz", -- [2]
 				},
-				[22882] = {
-					"Shadowmoon Deathshaper", -- [1]
-					"Black Temple", -- [2]
+				[10390] = {
+					"Skeletal Guardian", -- [1]
+					"Stratholme", -- [2]
 				},
 				[184263] = {
 					"Zealous Consort", -- [1]
@@ -9339,13 +8462,13 @@ PlaterDB = {
 					"Blood Guard Porung", -- [1]
 					"Hellfire Citadel: The Shattered Halls", -- [2]
 				},
-				[23402] = {
-					"Illidari Battle-mage", -- [1]
-					"Black Temple", -- [2]
-				},
 				[16177] = {
 					"Dreadbeast", -- [1]
 					"Karazhan", -- [2]
+				},
+				[19508] = {
+					"Sunseeker Herbalist", -- [1]
+					"Tempest Keep: The Botanica", -- [2]
 				},
 				[28132] = {
 					"Don Carlos", -- [1]
@@ -9359,17 +8482,17 @@ PlaterDB = {
 					"Shadowmoon Weapon Master", -- [1]
 					"Black Temple", -- [2]
 				},
-				[15229] = {
-					"Vekniss Soldier", -- [1]
-					"Ahn'Qiraj Temple", -- [2]
+				[19843] = {
+					"Nethervine Trickster", -- [1]
+					"Tempest Keep: The Botanica", -- [2]
 				},
 				[16152] = {
 					"Attumen the Huntsman", -- [1]
 					"Karazhan", -- [2]
 				},
-				[15962] = {
-					"Vekniss Hatchling", -- [1]
-					"Ahn'Qiraj Temple", -- [2]
+				[20078] = {
+					"Summoned Bloodwarder Reservist", -- [1]
+					"Tempest Keep: The Botanica", -- [2]
 				},
 				[20044] = {
 					"Novice Astromancer", -- [1]
@@ -9383,25 +8506,21 @@ PlaterDB = {
 					"Lady Keira Berrybuck", -- [1]
 					"Karazhan", -- [2]
 				},
-				[10382] = {
-					"Mangled Cadaver", -- [1]
-					"Stratholme", -- [2]
+				[18708] = {
+					"Murmur", -- [1]
+					"Auchindoun: Shadow Labyrinth", -- [2]
 				},
 				[23177] = {
 					"Tarren Mill Lookout", -- [1]
 					"The Escape From Durnholde", -- [2]
 				},
-				[10408] = {
-					"Rockwing Gargoyle", -- [1]
-					"Stratholme", -- [2]
+				[21857] = {
+					"Inner Demon", -- [1]
+					"Coilfang: Serpentshrine Cavern", -- [2]
 				},
 				[18094] = {
 					"Tarren Mill Lookout", -- [1]
 					"The Escape From Durnholde", -- [2]
-				},
-				[19598] = {
-					"Mutate Fleshlasher", -- [1]
-					"Tempest Keep: The Botanica", -- [2]
 				},
 				[25354] = {
 					"Mutate Fleshlasher", -- [1]
@@ -9410,6 +8529,10 @@ PlaterDB = {
 				[19919] = {
 					"Thorn Lasher", -- [1]
 					"Tempest Keep: The Botanica", -- [2]
+				},
+				[10409] = {
+					"Rockwing Screecher", -- [1]
+					"Stratholme", -- [2]
 				},
 				[22250] = {
 					"Rancid Mushroom", -- [1]
@@ -9423,9 +8546,9 @@ PlaterDB = {
 					"Conjured Elemental", -- [1]
 					"Karazhan", -- [2]
 				},
-				[10558] = {
-					"Hearthsinger Forresten", -- [1]
-					"Stratholme", -- [2]
+				[20465] = {
+					"Underbog Frenzy", -- [1]
+					"Coilfang: The Underbog", -- [2]
 				},
 			},
 			["hook_auto_imported"] = {
@@ -9433,14 +8556,14 @@ PlaterDB = {
 				["Dont Have Aura"] = 1,
 				["Players Targetting Amount"] = 4,
 				["Color Automation"] = 1,
-				["Hide Neutral Units"] = 1,
+				["Extra Border"] = 2,
 				["Cast Bar Icon Config"] = 2,
 				["Aura Reorder"] = 3,
-				["Extra Border"] = 2,
+				["Combo Points"] = 6,
 				["Execute Range"] = 1,
 				["Target Color"] = 3,
 				["Attacking Specific Unit"] = 2,
-				["Combo Points"] = 6,
+				["Hide Neutral Units"] = 1,
 			},
 			["aura2_x_offset"] = 0,
 			["saved_cvars"] = {
@@ -9463,15 +8586,15 @@ PlaterDB = {
 				["nameplateMaxDistance"] = "20",
 				["nameplateShowFriendlyMinions"] = "0",
 				["nameplatePersonalHideDelaySeconds"] = "0.2",
-				["nameplateTargetBehindMaxDistance"] = "30",
-				["nameplateShowFriendlyGuardians"] = "0",
 				["NamePlateHorizontalScale"] = "1",
+				["nameplateShowFriendlyGuardians"] = "0",
+				["nameplateTargetBehindMaxDistance"] = "30",
 				["nameplateOtherTopInset"] = "0.085",
 				["nameplateShowEnemies"] = "1",
 				["nameplateShowAll"] = "1",
 				["NamePlateVerticalScale"] = "1",
 			},
-			["login_counter"] = 1258,
+			["login_counter"] = 1393,
 			["plate_config"] = {
 				["global_health_height"] = 12,
 				["global_health_width"] = 112,
@@ -10234,12 +9357,12 @@ PlaterDB = {
 					["Desc"] = "Player an animation when the cast start. Start a timer when the cast finishes. Set the time in the options.",
 					["NpcNames"] = {
 					},
-					["Name"] = "Cast - Alert + Timer [P]",
 					["SpellIds"] = {
 						350421, -- [1]
 						355787, -- [2]
 						348513, -- [3]
 					},
+					["Name"] = "Cast - Alert + Timer [P]",
 					["PlaterCore"] = 1,
 					["version"] = -1,
 					["Options"] = {

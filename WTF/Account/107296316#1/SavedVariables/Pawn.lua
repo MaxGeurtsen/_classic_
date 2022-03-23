@@ -6,10 +6,10 @@ PawnCommon = {
 	["ShowItemID"] = false,
 	["ShowRelicUpgrades"] = false,
 	["ShowValuesForUpgradesOnly"] = true,
-	["ShowEnchanted"] = false,
+	["Debug"] = false,
 	["ShowItemLevelUpgrades"] = false,
 	["Digits"] = 1,
-	["Debug"] = false,
+	["ShowEnchanted"] = false,
 	["ColorTooltipBorder"] = true,
 	["ShowTooltipIcons"] = true,
 	["Scales"] = {
@@ -284,6 +284,9 @@ PawnCommon = {
 				["Cursedbreath-Firemaw"] = {
 					["Visible"] = true,
 				},
+				["Partijcurses-Gehennas"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "8787ed",
 			["ClassID"] = 9,
@@ -344,6 +347,9 @@ PawnCommon = {
 					["Visible"] = true,
 				},
 				["Cursedbreath-Firemaw"] = {
+					["Visible"] = true,
+				},
+				["Partijcurses-Gehennas"] = {
 					["Visible"] = true,
 				},
 			},
@@ -410,6 +416,9 @@ PawnCommon = {
 					["Visible"] = true,
 				},
 				["Cursedbreath-Firemaw"] = {
+					["Visible"] = true,
+				},
+				["Partijcurses-Gehennas"] = {
 					["Visible"] = true,
 				},
 			},
@@ -511,6 +520,9 @@ PawnCommon = {
 					["Visible"] = true,
 				},
 				["Cursedbreath-Firemaw"] = {
+					["Visible"] = true,
+				},
+				["Partijcurses-Gehennas"] = {
 					["Visible"] = true,
 				},
 			},
@@ -652,6 +664,6 @@ PawnCommon = {
 	["ButtonPosition"] = 2,
 	["ShowLootUpgradeAdvisor"] = true,
 	["ShowQuestUpgradeAdvisor"] = true,
+	["LastVersion"] = 2.0533,
 	["ShownGettingStarted"] = true,
-	["LastVersion"] = 2.0531,
 }

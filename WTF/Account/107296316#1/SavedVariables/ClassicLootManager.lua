@@ -2,21 +2,24 @@
 CLM_DB = {
 	["horde razorgore knokploeg"] = {
 		["personal"] = {
-			["rosterManager"] = {
-				["raidsForFullAttendance"] = 2,
-				["attendanceWeeksWindow"] = 10,
-			},
-			["auction"] = {
-				["autoAward"] = true,
-				["autoTrade"] = true,
-			},
 			["global"] = {
 				["announce_loot_to_raid"] = false,
-				["chat_commands"] = false,
-				["announce_award_to_guild"] = true,
-				["announce_loot_to_raid_level"] = 3,
+				["suppress_outgoing_chat_commands"] = false,
 				["wowdkpbot_integration"] = false,
 				["tracked_loot_level"] = 4,
+				["alerts"] = true,
+				["raid_warnings"] = {
+					["countdown"] = true,
+					["auction"] = true,
+					["loot"] = true,
+					["raid"] = true,
+					["commands"] = false,
+					["bids"] = true,
+				},
+				["announce_loot_to_raid_level"] = 3,
+				["announce_award_to_guild"] = true,
+				["chat_commands"] = false,
+				["suppress_incoming_chat_commands"] = false,
 			},
 			["profileInfo"] = {
 				["Kealthas"] = {
@@ -34,9 +37,9 @@ CLM_DB = {
 				},
 				["Partijlijder"] = {
 					["version"] = {
-						["minor"] = 3,
-						["patch"] = 1,
+						["minor"] = 5,
 						["major"] = 1,
+						["patch"] = 3,
 						["changeset"] = "",
 					},
 					["spec"] = {
@@ -46,17 +49,35 @@ CLM_DB = {
 					},
 				},
 			},
-			["bidding"] = {
-				["autoOpen"] = true,
-				["autoUpdateBidValue"] = false,
-			},
 			["lootQueue"] = {
+				["ignoredClasses"] = {
+				},
 				["queue"] = {
 				},
+				["tracked_loot_level"] = 4,
 			},
 			["profileManager"] = {
 				["pruneLog"] = {
 				},
+			},
+			["rosterManager"] = {
+				["raidsForFullAttendance"] = 2,
+				["attendanceWeeksWindow"] = 10,
+			},
+			["bidding"] = {
+				["autoOpen"] = true,
+				["autoUpdateBidValue"] = false,
+			},
+			["auctionHistory"] = {
+				["enable"] = true,
+				["stack"] = {
+				},
+				["post_bids_channel"] = 5,
+				["post_bids"] = true,
+			},
+			["auction"] = {
+				["autoAward"] = true,
+				["autoTrade"] = true,
 			},
 			["gui"] = {
 				["point"] = {
@@ -65,13 +86,6 @@ CLM_DB = {
 						{
 							["variablesLoaded"] = true,
 							["firstTimeLoaded"] = 1,
-							["fadeInfo"] = {
-								["startAlpha"] = 1,
-								["endAlpha"] = 1,
-								["mode"] = "IN",
-								["fadeTimer"] = 0.5030000093393028,
-								["timeToFade"] = 0.5,
-							},
 						}, -- [2]
 						"CENTER", -- [3]
 						0, -- [4]
@@ -84,13 +98,6 @@ CLM_DB = {
 						{
 							["variablesLoaded"] = true,
 							["firstTimeLoaded"] = 1,
-							["fadeInfo"] = {
-								["startAlpha"] = 1,
-								["endAlpha"] = 1,
-								["mode"] = "IN",
-								["fadeTimer"] = 0.5030000093393028,
-								["timeToFade"] = 0.5,
-							},
 						}, -- [2]
 						"CENTER", -- [3]
 						0, -- [4]
@@ -99,9 +106,9 @@ CLM_DB = {
 				},
 				["changelog"] = {
 					["lastVersion"] = {
-						["minor"] = 3,
-						["patch"] = 1,
+						["minor"] = 5,
 						["major"] = 1,
+						["patch"] = 3,
 						["changeset"] = "",
 					},
 					["location"] = {
@@ -118,13 +125,6 @@ CLM_DB = {
 						{
 							["variablesLoaded"] = true,
 							["firstTimeLoaded"] = 1,
-							["fadeInfo"] = {
-								["startAlpha"] = 1,
-								["endAlpha"] = 1,
-								["mode"] = "IN",
-								["fadeTimer"] = 0.5030000093393028,
-								["timeToFade"] = 0.5,
-							},
 						}, -- [2]
 						"CENTER", -- [3]
 						0, -- [4]
@@ -137,13 +137,6 @@ CLM_DB = {
 						{
 							["variablesLoaded"] = true,
 							["firstTimeLoaded"] = 1,
-							["fadeInfo"] = {
-								["startAlpha"] = 1,
-								["endAlpha"] = 1,
-								["mode"] = "IN",
-								["fadeTimer"] = 0.5030000093393028,
-								["timeToFade"] = 0.5,
-							},
 						}, -- [2]
 						"CENTER", -- [3]
 						0, -- [4]
@@ -158,13 +151,6 @@ CLM_DB = {
 						{
 							["variablesLoaded"] = true,
 							["firstTimeLoaded"] = 1,
-							["fadeInfo"] = {
-								["startAlpha"] = 1,
-								["endAlpha"] = 1,
-								["mode"] = "IN",
-								["fadeTimer"] = 0.5030000093393028,
-								["timeToFade"] = 0.5,
-							},
 						}, -- [2]
 						"CENTER", -- [3]
 						0, -- [4]
@@ -177,13 +163,6 @@ CLM_DB = {
 						{
 							["variablesLoaded"] = true,
 							["firstTimeLoaded"] = 1,
-							["fadeInfo"] = {
-								["startAlpha"] = 1,
-								["endAlpha"] = 1,
-								["mode"] = "IN",
-								["fadeTimer"] = 0.5030000093393028,
-								["timeToFade"] = 0.5,
-							},
 						}, -- [2]
 						"CENTER", -- [3]
 						0, -- [4]
@@ -196,13 +175,6 @@ CLM_DB = {
 						{
 							["variablesLoaded"] = true,
 							["firstTimeLoaded"] = 1,
-							["fadeInfo"] = {
-								["startAlpha"] = 1,
-								["endAlpha"] = 1,
-								["mode"] = "IN",
-								["fadeTimer"] = 0.5030000093393028,
-								["timeToFade"] = 0.5,
-							},
 						}, -- [2]
 						"CENTER", -- [3]
 						0, -- [4]
@@ -215,13 +187,6 @@ CLM_DB = {
 						{
 							["variablesLoaded"] = true,
 							["firstTimeLoaded"] = 1,
-							["fadeInfo"] = {
-								["startAlpha"] = 1,
-								["endAlpha"] = 1,
-								["mode"] = "IN",
-								["fadeTimer"] = 0.5030000093393028,
-								["timeToFade"] = 0.5,
-							},
 						}, -- [2]
 						"CENTER", -- [3]
 						0, -- [4]
@@ -10503,7 +10468,7 @@ CLM_DB = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.503000006545335,
+								["fadeTimer"] = 0.5000000088475645,
 								["timeToFade"] = 0.5,
 							},
 						}, -- [2]
@@ -10522,7 +10487,7 @@ CLM_DB = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.503000006545335,
+								["fadeTimer"] = 0.5000000088475645,
 								["timeToFade"] = 0.5,
 							},
 						}, -- [2]
@@ -10541,8 +10506,8 @@ CLM_DB = {
 					["do_not_show"] = true,
 					["lastVersion"] = {
 						["minor"] = 5,
-						["patch"] = 3,
 						["major"] = 1,
+						["patch"] = 3,
 						["changeset"] = "",
 					},
 				},
@@ -10556,7 +10521,7 @@ CLM_DB = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.503000006545335,
+								["fadeTimer"] = 0.5000000088475645,
 								["timeToFade"] = 0.5,
 							},
 						}, -- [2]
@@ -10575,7 +10540,7 @@ CLM_DB = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.503000006545335,
+								["fadeTimer"] = 0.5000000088475645,
 								["timeToFade"] = 0.5,
 							},
 						}, -- [2]
@@ -10596,7 +10561,7 @@ CLM_DB = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.503000006545335,
+								["fadeTimer"] = 0.5000000088475645,
 								["timeToFade"] = 0.5,
 							},
 						}, -- [2]
@@ -10615,7 +10580,7 @@ CLM_DB = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.503000006545335,
+								["fadeTimer"] = 0.5000000088475645,
 								["timeToFade"] = 0.5,
 							},
 						}, -- [2]
@@ -10634,7 +10599,7 @@ CLM_DB = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.503000006545335,
+								["fadeTimer"] = 0.5000000088475645,
 								["timeToFade"] = 0.5,
 							},
 						}, -- [2]
@@ -10653,7 +10618,7 @@ CLM_DB = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.503000006545335,
+								["fadeTimer"] = 0.5000000088475645,
 								["timeToFade"] = 0.5,
 							},
 						}, -- [2]
@@ -10700,8 +10665,8 @@ CLM_DB = {
 				["Rinque"] = {
 					["version"] = {
 						["minor"] = 5,
-						["patch"] = 3,
 						["major"] = 1,
+						["patch"] = 3,
 						["changeset"] = "",
 					},
 					["spec"] = {
@@ -10716,17 +10681,9 @@ CLM_DB = {
 				},
 				["queue"] = {
 					{
-						["id"] = 30642,
-						["link"] = "|cffa335ee|Hitem:30642::::::::70:::::::::|h[Drape of the Righteous]|h|r",
+						["id"] = 184865,
+						["link"] = "|cffa335ee|Hitem:184865::::::::14:::::::::|h[Reawakened Phase-Hunter]|h|r",
 					}, -- [1]
-					{
-						["id"] = 31371,
-						["link"] = "|cffa335ee|Hitem:31371::::::::70:::::::::|h[Iceguard Helm]|h|r",
-					}, -- [2]
-					{
-						["id"] = 31369,
-						["link"] = "|cffa335ee|Hitem:31369::::::::70:::::::::|h[Iceguard Breastplate]|h|r",
-					}, -- [3]
 				},
 				["tracked_loot_level"] = 4,
 			},
@@ -10765,7 +10722,7 @@ CLM_DB = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.5020000236108899,
+								["fadeTimer"] = 0.5040000062435865,
 								["timeToFade"] = 0.5,
 							},
 							["firstTimeLoaded"] = 1,
@@ -10785,7 +10742,7 @@ CLM_DB = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.5020000236108899,
+								["fadeTimer"] = 0.5040000062435865,
 								["timeToFade"] = 0.5,
 							},
 							["firstTimeLoaded"] = 1,
@@ -10820,7 +10777,7 @@ CLM_DB = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.5020000236108899,
+								["fadeTimer"] = 0.5040000062435865,
 								["timeToFade"] = 0.5,
 							},
 							["firstTimeLoaded"] = 1,
@@ -10840,7 +10797,7 @@ CLM_DB = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.5020000236108899,
+								["fadeTimer"] = 0.5040000062435865,
 								["timeToFade"] = 0.5,
 							},
 							["firstTimeLoaded"] = 1,
@@ -10862,7 +10819,7 @@ CLM_DB = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.5020000236108899,
+								["fadeTimer"] = 0.5040000062435865,
 								["timeToFade"] = 0.5,
 							},
 							["firstTimeLoaded"] = 1,
@@ -10882,7 +10839,7 @@ CLM_DB = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.5020000236108899,
+								["fadeTimer"] = 0.5040000062435865,
 								["timeToFade"] = 0.5,
 							},
 							["firstTimeLoaded"] = 1,
@@ -10902,7 +10859,7 @@ CLM_DB = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.5020000236108899,
+								["fadeTimer"] = 0.5040000062435865,
 								["timeToFade"] = 0.5,
 							},
 							["firstTimeLoaded"] = 1,
@@ -10926,7 +10883,7 @@ CLM_DB = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.5020000236108899,
+								["fadeTimer"] = 0.5040000062435865,
 								["timeToFade"] = 0.5,
 							},
 							["firstTimeLoaded"] = 1,
@@ -21952,17 +21909,17 @@ CLM_DB = {
 				["_b"] = 2,
 			}, -- [854]
 			{
-				["_d"] = "P1",
-				["_a"] = 41717713,
-				["_c"] = 1642413622,
 				["g"] = 53450716,
+				["_a"] = 41717713,
+				["_d"] = "P1",
+				["_c"] = 1642413622,
 				["_b"] = 0,
 			}, -- [855]
 			{
-				["_d"] = "P1",
-				["_a"] = 41717713,
-				["_c"] = 1642413622,
 				["g"] = 53253150,
+				["_a"] = 41717713,
+				["_d"] = "P1",
+				["_c"] = 1642413622,
 				["_b"] = 1,
 			}, -- [856]
 			{

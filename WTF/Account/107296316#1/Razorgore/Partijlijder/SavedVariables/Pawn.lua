@@ -1,6 +1,8 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0531,
+	["LastVersion"] = 2.0533,
+	["LastPlayerFullName"] = "Partijlijder-Razorgore",
+	["AutoSelectScales"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 186026,
@@ -83,8 +85,6 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:24155::::::::60::::::::|h[Ursol's Claw]|h|r",
 		}, -- [16]
 	},
-	["AutoSelectScales"] = false,
-	["LastPlayerFullName"] = "Partijlijder-Razorgore",
 }
 PawnMrRobotScaleProviderOptions = nil
 PawnClassicScaleProviderOptions = {

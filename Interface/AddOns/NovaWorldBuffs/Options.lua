@@ -1408,11 +1408,29 @@ function NWB:loadSpecificOptions()
 			set = "setDisableLogonAllLevels",
 			width = 1.5,
 		};
+		NWB.options.args["disableBuffTimersMaxBuffLevel"] = {
+			type = "toggle",
+			name = L["disableBuffTimersMaxBuffLevelTitle"],
+			desc = L["disableBuffTimersMaxBuffLevelDesc"],
+			order = 25,
+			width = 1.5,
+			get = "getDisableBuffTimersMaxBuffLevel",
+			set = "setDisableBuffTimersMaxBuffLevel",
+		};
+		NWB.options.args["disableBuffTimersAllLevels"] = {
+			type = "toggle",
+			name = L["hideMinimapBuffTimersTitle"],
+			desc = L["hideMinimapBuffTimersDesc"],
+			order = 26,
+			width = 1.5,
+			get = "getHideMinimapBuffTimers",
+			set = "setHideMinimapBuffTimers",
+		};
 		NWB.options.args["showShatWorldmapMarkers"] = {
 			type = "toggle",
 			name = L["showShatWorldmapMarkersTitle"],
 			desc = L["showShatWorldmapMarkersDesc"],
-			order = 25,
+			order = 27,
 			width = 1.5,
 			get = "getShowShatWorldmapMarkers",
 			set = "setShowShatWorldmapMarkers",
@@ -1421,34 +1439,25 @@ function NWB:loadSpecificOptions()
 			type = "toggle",
 			name = L["showShatWorldmapMarkersTerokTitle"],
 			desc = L["showShatWorldmapMarkersTerokDesc"],
-			order = 26,
+			order = 28,
 			width = 1.5,
 			get = "getShowShatWorldmapMarkersTerok",
 			set = "setShowShatWorldmapMarkersTerok",
 		};
-		NWB.options.args["hideMinimapBuffTimers"] = {
-			type = "toggle",
-			name = L["hideMinimapBuffTimersTitle"],
-			desc = L["hideMinimapBuffTimersDesc"],
-			order = 27,
-			width = 1.5,
-			get = "getHideMinimapBuffTimers",
-			set = "setHideMinimapBuffTimers",
-		};
-		--[[NWB.options.args["guildTerok10"] = {
+		NWB.options.args["guildTerok10"] = {
 			type = "toggle",
 			name = L["guildTerok10Title"],
 			desc = L["guildTerok10Desc"],
-			order = 28,
+			order = 29,
 			width = 1.5,
 			get = "getGuildTerok10",
 			set = "setGuildTerok10",
-		};]]
+		};
 		NWB.options.args["tbcNote"] = {
 			type = "description",
 			name = "|cFF50D050" .. L["tbcNoteText"],
 			fontSize = "medium",
-			order = 29,
+			order = 30,
 		};
 	end
 	if (NWB.isTBC or NWB.realmsTBC) then
@@ -1681,6 +1690,7 @@ NWB.optionDefaults = {
 		showShatWorldmapMarkers = true,
 		showShatWorldmapMarkersTerok = true,
 		hideMinimapBuffTimers = false,
+		disableBuffTimersMaxBuffLevel = true,
 		
 		--TBC options
 		disableSoundsAboveMaxBuffLevel = true,
@@ -1693,7 +1703,7 @@ NWB.optionDefaults = {
 		disableFlashAllLevels = false,
 		disableLogonAboveMaxBuffLevel = true,
 		disableLogonAllLevels = false,
-		guildTerok10 = 0,
+		guildTerok10 = 1,
 	},
 };
 
@@ -3642,4 +3652,13 @@ end
 
 function NWB:getTerokkarMiddle10(info)
 	return self.db.global.terokkarMiddle10;
+end
+
+--Hide buff timers above lvel 64.
+function NWB:setDisableBuffTimersMaxBuffLevel(info, value)
+	self.db.global.disableBuffTimersMaxBuffLevel = value;
+end
+
+function NWB:getDisableBuffTimersMaxBuffLevel(info)
+	return self.db.global.disableBuffTimersMaxBuffLevel;
 end

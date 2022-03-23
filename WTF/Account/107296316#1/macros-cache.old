@@ -28,17 +28,18 @@ VER 3 0000000000000015 "adw" "INV_MISC_QUESTIONMARK"
 END
 VER 3 000000000000000E "AutoHP" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:27855
+/cast [mod:ctrl,target=player] item:2581; [combat] item:118; item:2287
 END
 VER 3 000000000000001B "BOSS" "135874"
 /gq switch boss
 END
 VER 3 000000000000000F "ConsumableHP" "INV_Misc_QuestionMark"
 #showtooltip
+/cast [mod:ctrl,target=player] item:2581; item:118
 END
 VER 3 0000000000000010 "ConsumableMP" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:22832
+/cast item:2455
 END
 VER 3 0000000000000001 "d" "132089"
 /2 Crafting [Small Silk Pack] 10 slots  with your mats! 12 silk cloth, 2 heavy leather, 3 fine thread
@@ -57,7 +58,7 @@ VER 3 000000000000000B "drink" "3867503"
 END
 VER 3 000000000000000C "DrinkOnlyMP" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:27860
+/cast item:1179
 END
 VER 3 0000000000000017 "DUNG" "132110"
 /1 LFM Hyjal REP FARM NEED ALL! (Hammer of Judgement and every other HoD RESS)
@@ -66,7 +67,7 @@ VER 3 0000000000000017 "DUNG" "132110"
 END
 VER 3 000000000000000D "FoodOnlyHP" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:27855
+/cast item:2287
 END
 VER 3 000000000000001A "HS" "132137"
 /run InviteUnit("a");(C_Timer.After(1, LeaveParty)
@@ -94,6 +95,10 @@ END
 VER 3 0000000000000006 "ROLL" "INV_MISC_QUESTIONMARK"
 /ROLL
 END
+VER 3 0000000000000020 "shoot" "INV_MISC_QUESTIONMARK"
+#showtooltip shoot
+/castsequence reset=2 !Shoot, null
+END
 VER 3 000000000000001E "T1" "INV_MISC_QUESTIONMARK"
 /use 13
 END
@@ -102,9 +107,6 @@ VER 3 000000000000001D "T2" "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000000000018 "trade" "INV_MISC_QUESTIONMARK"
 /trade
-END
-VER 3 0000000000000011 "trade" "INV_MISC_QUESTIONMARK"
-/2 WTS |cffa335ee|Hitem:31332::::::::70::::::::|h[Blinkstrike]|h|r, wisp me an offer
 END
 VER 3 0000000000000012 "world" "INV_MISC_QUESTIONMARK"
 /4 WTS |cffa335ee|Hitem:31332::::::::70::::::::|h[Blinkstrike]|h|r, wisp me an offer

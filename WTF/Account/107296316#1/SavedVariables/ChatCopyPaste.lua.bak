@@ -4,6 +4,7 @@ CCPOptions = {
 		["Partijleider - Gehennas"] = "Default",
 		["Partijlijder - Gehennas"] = "Default",
 		["Firebreather - Firemaw"] = "Default",
+		["Partijcurses - Gehennas"] = "Default",
 		["Awwaa - Gehennas"] = "Default",
 		["Helpsiebren - Razorgore"] = "Default",
 		["Partijleider - Razorgore"] = "Default",

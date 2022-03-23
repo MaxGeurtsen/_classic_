@@ -88,7 +88,7 @@ ClassicCastbarsDB = {
 		["textPositionX"] = 0,
 		["showSpark"] = true,
 		["autoPosition"] = true,
-		["ignoreParentAlpha"] = false,
+		["hideIconBorder"] = false,
 		["showIcon"] = true,
 		["castStatusBar"] = "Interface\\RaidFrame\\Raid-Bar-Hp-Fill",
 		["borderColor"] = {
@@ -117,8 +117,8 @@ ClassicCastbarsDB = {
 		["textPositionY"] = 1,
 		["castFont"] = "Fonts\\FRIZQT__.TTF",
 		["iconPositionY"] = 0,
-		["width"] = 190,
 		["textOutline"] = "",
+		["width"] = 190,
 		["statusColor"] = {
 			1, -- [1]
 			0.7, -- [2]
@@ -148,7 +148,7 @@ ClassicCastbarsDB = {
 			0, -- [3]
 			0.535, -- [4]
 		},
-		["hideIconBorder"] = false,
+		["ignoreParentAlpha"] = false,
 		["textColor"] = {
 			1, -- [1]
 			1, -- [2]
@@ -165,7 +165,7 @@ ClassicCastbarsDB = {
 		["textPositionX"] = 0,
 		["showSpark"] = true,
 		["autoPosition"] = false,
-		["ignoreParentAlpha"] = true,
+		["hideIconBorder"] = false,
 		["showIcon"] = true,
 		["castStatusBar"] = "Interface\\TargetingFrame\\UI-StatusBar",
 		["borderColor"] = {
@@ -194,8 +194,8 @@ ClassicCastbarsDB = {
 		["textPositionY"] = 0,
 		["castFont"] = "Fonts\\FRIZQT__.TTF",
 		["iconPositionY"] = 0,
-		["width"] = 181,
 		["textOutline"] = "",
+		["width"] = 181,
 		["statusColor"] = {
 			1, -- [1]
 			0.7, -- [2]
@@ -225,7 +225,7 @@ ClassicCastbarsDB = {
 			0, -- [3]
 			0.535, -- [4]
 		},
-		["hideIconBorder"] = false,
+		["ignoreParentAlpha"] = true,
 		["textColor"] = {
 			1, -- [1]
 			1, -- [2]
@@ -336,8 +336,8 @@ ClassicCastbarsDB = {
 		["4278Holy Light"] = true,
 		["11981Wing Buffet"] = true,
 		["12397Shadow Bolt Volley"] = true,
-		["22951Empowered Smite"] = true,
 		["22885Water Spit"] = true,
+		["22951Empowered Smite"] = true,
 		["16594Rain of Fire"] = true,
 		["12201Boulder"] = true,
 		["14601Wing Buffet"] = true,
@@ -396,8 +396,8 @@ ClassicCastbarsDB = {
 		["iconPositionX"] = -5,
 		["textPositionX"] = 0,
 		["showSpark"] = true,
-		["ignoreParentAlpha"] = false,
 		["hideIconBorder"] = false,
+		["ignoreParentAlpha"] = false,
 		["castStatusBar"] = "Interface\\TargetingFrame\\UI-StatusBar",
 		["showIcon"] = true,
 		["borderColor"] = {
@@ -430,8 +430,8 @@ ClassicCastbarsDB = {
 		["castBorder"] = "Interface\\CastingBar\\UI-CastingBar-Border-Small",
 		["castFont"] = "Fonts\\FRIZQT__.TTF",
 		["iconPositionY"] = 0,
-		["width"] = 150,
 		["textOutline"] = "",
+		["width"] = 150,
 		["statusColorFailed"] = {
 			1, -- [1]
 			0, -- [2]
@@ -473,7 +473,7 @@ ClassicCastbarsDB = {
 		["textPositionX"] = 0,
 		["showSpark"] = true,
 		["autoPosition"] = true,
-		["ignoreParentAlpha"] = false,
+		["hideIconBorder"] = false,
 		["showIcon"] = true,
 		["castStatusBar"] = "Interface\\TargetingFrame\\UI-StatusBar",
 		["borderColor"] = {
@@ -502,8 +502,8 @@ ClassicCastbarsDB = {
 		["textPositionY"] = 0,
 		["castFont"] = "Fonts\\FRIZQT__.TTF",
 		["iconPositionY"] = 0,
-		["width"] = 150,
 		["textOutline"] = "",
+		["width"] = 150,
 		["statusColor"] = {
 			1, -- [1]
 			0.7, -- [2]
@@ -533,7 +533,7 @@ ClassicCastbarsDB = {
 			0, -- [3]
 			0.535, -- [4]
 		},
-		["hideIconBorder"] = false,
+		["ignoreParentAlpha"] = false,
 		["textColor"] = {
 			1, -- [1]
 			1, -- [2]
@@ -549,7 +549,7 @@ ClassicCastbarsDB = {
 		["textPositionX"] = 0,
 		["showSpark"] = true,
 		["autoPosition"] = false,
-		["ignoreParentAlpha"] = false,
+		["hideIconBorder"] = false,
 		["showIcon"] = true,
 		["castStatusBar"] = "Interface\\TargetingFrame\\UI-StatusBar",
 		["borderColor"] = {
@@ -578,8 +578,8 @@ ClassicCastbarsDB = {
 		["textPositionY"] = 0,
 		["castFont"] = "Fonts\\FRIZQT__.TTF",
 		["iconPositionY"] = 0,
-		["width"] = 120,
 		["textOutline"] = "",
+		["width"] = 120,
 		["statusColor"] = {
 			1, -- [1]
 			0.7, -- [2]
@@ -609,7 +609,7 @@ ClassicCastbarsDB = {
 			0, -- [3]
 			0.535, -- [4]
 		},
-		["hideIconBorder"] = false,
+		["ignoreParentAlpha"] = false,
 		["textColor"] = {
 			1, -- [1]
 			1, -- [2]

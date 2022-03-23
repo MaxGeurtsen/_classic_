@@ -623,7 +623,7 @@ function NWB:ticker()
 							if (NWB.db.global.guildTerok10) then
 								NWB:sendGuildMsg(msg, "guildTerok10", nil, "[NWB]");
 							end
-							NWB:debug("terok10", secondsLeft);
+							--NWB:debug("terok10", secondsLeft);
 						end
 						if (secondsLeft < 0) then
 							NWB.data.layers[layer]["terokTowers"] = nil;
@@ -4707,7 +4707,8 @@ function NWB:updateMinimapButton(tooltip, usingPanel)
 			for k, v in NWB:pairsByKeys(NWB.data.layers) do
 				count = count + 1;
 				tooltip:AddLine("|cff00ff00[Layer " .. count .. "]|r  |cFF989898(zone " .. k .. ")|r");
-				if (NWB.isClassic or not NWB.db.global.hideMinimapBuffTimers) then
+				if (NWB.isClassic or (not NWB.db.global.hideMinimapBuffTimers
+						and not (NWB.db.global.disableBuffTimersMaxBuffLevel and UnitLevel("player") > 64))) then
 					if (NWB.faction == "Horde" or NWB.db.global.allianceEnableRend) then
 						if (v.rendTimer > (GetServerTime() - NWB.db.global.rendRespawnTime)) then
 							msg = msg .. L["rend"] .. ": " .. NWB:getTimeString(NWB.db.global.rendRespawnTime - (GetServerTime() - v.rendTimer), true) .. ".";
@@ -4826,7 +4827,8 @@ function NWB:updateMinimapButton(tooltip, usingPanel)
 			end
 		else
 			local msg = "";
-			if (NWB.isClassic or not NWB.db.global.hideMinimapBuffTimers) then
+			if (NWB.isClassic or (not NWB.db.global.hideMinimapBuffTimers
+					and not (NWB.db.global.disableBuffTimersMaxBuffLevel and UnitLevel("player") > 64))) then
 				if (NWB.faction == "Horde" or NWB.db.global.allianceEnableRend) then
 					if (NWB.data.rendTimer > (GetServerTime() - NWB.db.global.rendRespawnTime)) then
 						msg = L["rend"] .. ": " .. NWB:getTimeString(NWB.db.global.rendRespawnTime - (GetServerTime() - NWB.data.rendTimer), true) .. ".";

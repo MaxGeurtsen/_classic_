@@ -55,13 +55,6 @@ X: -235
 Y: -69
 W: 300
 H: 60
-Frame: GroupBulletinBoardFrame
-FrameLevel: 1
-Anchor: CENTER
-X: 80
-Y: 7
-W: 786
-H: 378
 Frame: PawnUIFrame
 FrameLevel: 1
 Anchor: CENTER
@@ -76,3 +69,10 @@ X: 0
 Y: 100
 W: 250
 H: 100
+Frame: GroupBulletinBoardFrame
+FrameLevel: 1
+Anchor: CENTER
+X: 5
+Y: 132
+W: 1013
+H: 559

@@ -3,22 +3,23 @@ OmniCCDB = {
 	["profileKeys"] = {
 		["Partijleider - Gehennas"] = "Default",
 		["Partijlijder - Gehennas"] = "Default",
-		["Mírjam - Razorgore"] = "Default",
 		["Cursedbreath - Firemaw"] = "Default",
-		["Firebreather - Firemaw"] = "Default",
+		["Mírjam - Razorgore"] = "Default",
+		["Partijcurses - Gehennas"] = "Default",
+		["Mírjam - Firemaw"] = "Default",
 		["Awwaa - Gehennas"] = "Default",
 		["Helpsiebren - Razorgore"] = "Default",
-		["Partijleider - Razorgore"] = "Default",
-		["Mirjam - Firemaw"] = "Default",
 		["Partijlijder - Razorgore"] = "Default",
-		["Eefjé - Razorgore"] = "Default",
-		["Mírjam - Firemaw"] = "Default",
+		["Mirjam - Firemaw"] = "Default",
+		["Partijleider - Razorgore"] = "Default",
 		["Rinque - Gehennas"] = "Default",
+		["Eefjé - Razorgore"] = "Default",
+		["Firebreather - Firemaw"] = "Default",
 		["Kealthas - Razorgore"] = "Default",
 	},
 	["global"] = {
 		["dbVersion"] = 6,
-		["addonVersion"] = "9.1.6",
+		["addonVersion"] = "9.2.0",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -60,18 +61,21 @@ OmniCCDB = {
 	},
 }
 OmniCC4Config = {
+	["groups"] = {
+	},
+	["version"] = "8.2.5",
 	["groupSettings"] = {
 		["base"] = {
 			["fontSize"] = 18,
-			["minDuration"] = 2,
-			["minSize"] = 0.5,
 			["yOff"] = 0,
+			["anchor"] = "CENTER",
+			["minDuration"] = 2,
 			["xOff"] = 0,
 			["tenthsDuration"] = 0,
 			["fontOutline"] = "OUTLINE",
-			["anchor"] = "CENTER",
-			["minEffectDuration"] = 30,
+			["minSize"] = 0.5,
 			["mmSSDuration"] = 0,
+			["minEffectDuration"] = 30,
 			["styles"] = {
 				["seconds"] = {
 					["scale"] = 1,
@@ -94,7 +98,4 @@ OmniCC4Config = {
 			},
 		},
 	},
-	["groups"] = {
-	},
-	["version"] = "8.2.5",
 }

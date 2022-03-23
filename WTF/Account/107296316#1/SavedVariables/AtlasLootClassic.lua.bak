@@ -43,6 +43,7 @@ AtlasLootClassicDB = {
 		["Maximaal - Firemaw"] = "Maximaal - Firemaw",
 		["Mírjam - Razorgore"] = "Mírjam - Razorgore",
 		["Helpsiebren - Razorgore"] = "Helpsiebren - Razorgore",
+		["Partijcurses - Gehennas"] = "Partijcurses - Gehennas",
 		["Mirjam - Firemaw"] = "Mirjam - Firemaw",
 		["Mírjam - Firemaw"] = "Mírjam - Firemaw",
 		["Rinque - Gehennas"] = "Rinque - Gehennas",
@@ -191,9 +192,9 @@ AtlasLootClassicDB = {
 							[28767] = true,
 							[29760] = true,
 							[28288] = true,
-							[27995] = true,
-							["__name"] = "Enhancement",
 							[32087] = true,
+							[28599] = true,
+							[27995] = true,
 							[28755] = true,
 							["mainItems"] = {
 								[8] = 28746,
@@ -202,12 +203,12 @@ AtlasLootClassicDB = {
 							},
 							[29247] = true,
 							[28741] = true,
-							[28509] = true,
+							[28757] = true,
 							[28649] = true,
 							[27797] = true,
-							[28757] = true,
+							[28509] = true,
 							[28584] = true,
-							[28599] = true,
+							["__name"] = "Enhancement",
 							[28545] = true,
 							[27815] = true,
 							[29040] = true,
@@ -319,14 +320,14 @@ AtlasLootClassicDB = {
 							[28285] = true,
 							[29252] = true,
 							["__name"] = "pre-raid",
-							[29253] = true,
+							[27672] = true,
 							[29176] = true,
-							[29254] = true,
+							[28262] = true,
 							[29184] = true,
 							[27891] = true,
 							[27535] = true,
-							[28262] = true,
-							[27672] = true,
+							[29254] = true,
+							[29253] = true,
 							[28203] = true,
 							[32082] = true,
 						},
@@ -407,8 +408,8 @@ AtlasLootClassicDB = {
 				},
 				["selected"] = {
 					nil, -- [1]
-					"BlackTemple", -- [2]
-					11, -- [3]
+					"SerpentshrineCavern", -- [2]
+					6, -- [3]
 					1, -- [4]
 					0, -- [5]
 				},
@@ -431,6 +432,18 @@ AtlasLootClassicDB = {
 		["Mírjam - Razorgore"] = {
 		},
 		["Helpsiebren - Razorgore"] = {
+		},
+		["Partijcurses - Gehennas"] = {
+			["GUI"] = {
+				["selectedGameVersion"] = 1,
+				["selected"] = {
+					nil, -- [1]
+					"Ragefire", -- [2]
+					nil, -- [3]
+					1, -- [4]
+					0, -- [5]
+				},
+			},
 		},
 		["Mirjam - Firemaw"] = {
 			["GUI"] = {
@@ -458,19 +471,22 @@ AtlasLootClassicDB = {
 		["Rinque - Gehennas"] = {
 			["GUI"] = {
 				["point"] = {
-					"TOP", -- [1]
+					nil, -- [1]
 					nil, -- [2]
-					"TOP", -- [3]
-					170.8972778320313, -- [4]
-					-99.4872055053711, -- [5]
+					"CENTER", -- [3]
+					34.99990081787109, -- [4]
+					111, -- [5]
 				},
 				["selected"] = {
-					"AtlasLootClassic_Factions", -- [1]
-					"TheScaleOfTheSands", -- [2]
-					nil, -- [3]
-					2, -- [4]
+					nil, -- [1]
+					"TempestKeep", -- [2]
+					4, -- [3]
+					6, -- [4]
 					0, -- [5]
 				},
+			},
+			["minimap"] = {
+				["minimapPos"] = 244.5908526173764,
 			},
 			["Addons"] = {
 				["Favourites"] = {
@@ -481,18 +497,18 @@ AtlasLootClassicDB = {
 							[30995] = true,
 							[32375] = true,
 							[31089] = true,
-							[30998] = true,
-							[30889] = true,
 							[32331] = true,
-							[32521] = true,
+							[32501] = true,
+							[30998] = true,
+							[34010] = true,
 							[32279] = true,
 							[32263] = true,
 							[32333] = true,
 							[30985] = true,
-							[30987] = true,
-							[34009] = true,
-							[34010] = true,
 							[30894] = true,
+							[34009] = true,
+							[32521] = true,
+							[30987] = true,
 							[30910] = true,
 							[32245] = true,
 							[31097] = true,
@@ -512,13 +528,10 @@ AtlasLootClassicDB = {
 								[5] = 30991,
 								[10] = 30985,
 							},
-							[32501] = true,
+							[30889] = true,
 						},
 					},
 				},
-			},
-			["minimap"] = {
-				["minimapPos"] = 244.5908526173764,
 			},
 		},
 		["Eefjé - Razorgore"] = {

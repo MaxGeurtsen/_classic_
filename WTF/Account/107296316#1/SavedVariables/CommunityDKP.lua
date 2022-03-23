@@ -86,6 +86,14 @@ CommDKP_DB = {
 				["DecayPercentage"] = 20,
 				["GiveRaidStart"] = false,
 			},
+			["bossargs"] = {
+				["CurrentRaidZone"] = "Molten Core",
+				["LastKilledBoss"] = "Void Reaver",
+				["LastKilledNPC"] = {
+				},
+				["RecentZones"] = {
+				},
+			},
 			["modes"] = {
 				["rolls"] = {
 					["min"] = 1,
@@ -112,14 +120,6 @@ CommDKP_DB = {
 				["AntiSnipe"] = 0,
 				["AnnounceRaidWarning"] = false,
 			},
-			["bossargs"] = {
-				["CurrentRaidZone"] = "Molten Core",
-				["LastKilledBoss"] = "Shade of Aran",
-				["LastKilledNPC"] = {
-				},
-				["RecentZones"] = {
-				},
-			},
 			["raiders"] = {
 			},
 			["pendingLoot"] = {
@@ -142,9 +142,9 @@ CommDKP_DB = {
 				["SuppressNotifications"] = false,
 				["ChatFrames"] = {
 					["LookingForGroup"] = true,
-					["General"] = true,
 					["Guild"] = true,
 					["Combat Log"] = true,
+					["General"] = true,
 				},
 				["HideChangeLogs"] = 30209,
 				["TooltipHistoryCount"] = 15,
@@ -319,6 +319,14 @@ CommDKP_DB = {
 			},
 			["raiders"] = {
 			},
+			["bossargs"] = {
+				["CurrentRaidZone"] = "Molten Core",
+				["LastKilledBoss"] = "Lucifron",
+				["RecentZones"] = {
+				},
+				["LastKilledNPC"] = {
+				},
+			},
 			["modes"] = {
 				["rolls"] = {
 					["min"] = 1,
@@ -344,14 +352,6 @@ CommDKP_DB = {
 				["mode"] = "Minimum Bid Values",
 				["AllowNegativeBidders"] = false,
 				["AnnounceRaidWarning"] = false,
-			},
-			["bossargs"] = {
-				["CurrentRaidZone"] = "Molten Core",
-				["LastKilledBoss"] = "Lucifron",
-				["RecentZones"] = {
-				},
-				["LastKilledNPC"] = {
-				},
 			},
 			["DKPBonus"] = {
 				["IncStandby"] = false,
@@ -381,9 +381,9 @@ CommDKP_DB = {
 			["SuppressNotifications"] = false,
 			["ChatFrames"] = {
 				["LookingForGroup"] = true,
-				["General"] = true,
 				["Guild"] = true,
 				["Combat Log"] = true,
+				["General"] = true,
 			},
 			["HideChangeLogs"] = 30209,
 			["TooltipHistoryCount"] = 15,
@@ -444,14 +444,6 @@ CommDKP_DB = {
 			["DecayPercentage"] = 20,
 			["GiveRaidStart"] = false,
 		},
-		["bossargs"] = {
-			["CurrentRaidZone"] = "Molten Core",
-			["LastKilledBoss"] = "Magtheridon",
-			["LastKilledNPC"] = {
-			},
-			["RecentZones"] = {
-			},
-		},
 		["modes"] = {
 			["rolls"] = {
 				["min"] = 1,
@@ -477,6 +469,14 @@ CommDKP_DB = {
 			["costvalue"] = "Integer",
 			["AntiSnipe"] = 0,
 			["AnnounceRaidWarning"] = false,
+		},
+		["bossargs"] = {
+			["CurrentRaidZone"] = "Molten Core",
+			["LastKilledBoss"] = "Magtheridon",
+			["LastKilledNPC"] = {
+			},
+			["RecentZones"] = {
+			},
 		},
 		["raiders"] = {
 		},

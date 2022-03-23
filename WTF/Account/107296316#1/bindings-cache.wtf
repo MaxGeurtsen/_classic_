@@ -24,6 +24,7 @@ bind SHIFT-F2 CLICK BT4Button68:LeftButton
 bind SHIFT-F3 CLICK BT4Button67:LeftButton
 bind SHIFT-F4 CLICK BT4Button54:LeftButton
 bind SHIFT-F5 CLICK BT4Button69:LeftButton
+bind G ACTIONBUTTON11
 bind F CLICK DejaMark:LeftButton
 bind SHIFT-T NONE
 bind F8 CLICK BT4Button64:LeftButton

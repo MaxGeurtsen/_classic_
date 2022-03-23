@@ -8,11 +8,11 @@ FLogVars = {
 	["viewTotal"] = true,
 	["enableMinimapButton"] = true,
 	["inInstance"] = false,
-	["itemTooltip"] = true,
 	["hud"] = {
 		["show"] = false,
 		["locked"] = false,
 	},
+	["itemTooltip"] = true,
 	["farms"] = {
 		["default"] = {
 			["current"] = {
@@ -27,7 +27,7 @@ FLogVars = {
 				["drops"] = {
 				},
 				["hks"] = 0,
-				["resets"] = 7,
+				["resets"] = 13,
 				["rep"] = {
 				},
 				["ranks"] = {

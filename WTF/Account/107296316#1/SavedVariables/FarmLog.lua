@@ -3,22 +3,24 @@ FLogGlobalVars = {
 	["track"] = {
 		["misc"] = false,
 		["deaths"] = true,
-		["honor"] = true,
 		["drops"] = true,
+		["honor"] = true,
 		["hks"] = true,
 		["levelup"] = true,
 		["xp"] = true,
-		["ranks"] = true,
+		["consumes"] = true,
 		["dks"] = true,
 		["kills"] = true,
 		["resets"] = true,
 		["rep"] = true,
 		["skill"] = false,
 		["money"] = true,
-		["consumes"] = true,
+		["ranks"] = true,
 		["bgs"] = true,
 	},
 	["blt"] = {
+		["Razorgore"] = {
+		},
 		["Gehennas"] = {
 		},
 	},
@@ -29,23 +31,15 @@ FLogGlobalVars = {
 	["blp"] = {
 	},
 	["ahScan"] = {
+		["Razorgore"] = {
+		},
 		["Gehennas"] = {
 		},
 	},
 	["instances"] = {
+		["Razorgore"] = {
+		},
 		["Gehennas"] = {
-			{
-				["enter"] = 1646421314,
-				["player"] = "Rinque",
-				["name"] = "Ragefire Chasm",
-				["leave"] = 1646421385,
-			}, -- [1]
-			{
-				["enter"] = 1646413992,
-				["player"] = "Rinque",
-				["name"] = "The Battle for Mount Hyjal",
-				["leave"] = 1646417931,
-			}, -- [2]
 		},
 	},
 	["blackLotusTimeSeconds"] = 3600,
@@ -55,12 +49,14 @@ FLogGlobalVars = {
 	["showHonorPercentOnTooltip"] = true,
 	["debug"] = false,
 	["bls"] = {
+		["Razorgore"] = {
+		},
 		["Gehennas"] = {
 		},
 	},
 	["autoSwitchInstances"] = false,
-	["sortSessionBy"] = "$",
 	["sortBy"] = "A",
+	["sortSessionBy"] = "$",
 	["hud"] = {
 		["fontSize"] = 12,
 		["paddingX"] = 8,
@@ -68,16 +64,18 @@ FLogGlobalVars = {
 		["fontName"] = "Fonts\\FRIZQT__.TTF",
 		["paddingY"] = 5,
 	},
-	["ver"] = 1.2,
+	["ahPrice"] = {
+		["Razorgore"] = {
+		},
+		["Gehennas"] = {
+		},
+	},
 	["honorDRinBGs"] = true,
 	["reportTo"] = {
 	},
 	["dismissLootWindowOnEsc"] = false,
 	["showHonorFrenzyCounter"] = true,
 	["showBlackLotusTimer"] = true,
-	["ahPrice"] = {
-		["Gehennas"] = {
-		},
-	},
+	["ver"] = 1.2,
 	["resumeSessionOnSwitch"] = true,
 }

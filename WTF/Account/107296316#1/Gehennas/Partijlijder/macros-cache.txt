@@ -1,0 +1,4 @@
+VER 3 0000000001000001 "shoot" "INV_MISC_QUESTIONMARK"
+#showtooltip shoot
+/castsequence reset=2 !Shoot, null
+END

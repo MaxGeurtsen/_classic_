@@ -8,11 +8,11 @@ FLogVars = {
 	["lockMinimapButton"] = false,
 	["currentFarm"] = "default",
 	["ver"] = 1.2,
-	["itemTooltip"] = true,
 	["hud"] = {
 		["show"] = false,
 		["locked"] = false,
 	},
+	["itemTooltip"] = true,
 	["farms"] = {
 		["default"] = {
 			["current"] = {
@@ -27,7 +27,7 @@ FLogVars = {
 				["drops"] = {
 				},
 				["hks"] = 0,
-				["resets"] = 13,
+				["resets"] = 23,
 				["rep"] = {
 					["Argent Dawn"] = 1000,
 					["Undercity"] = 7150,

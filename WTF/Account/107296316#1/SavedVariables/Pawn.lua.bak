@@ -6,10 +6,10 @@ PawnCommon = {
 	["ShowItemID"] = false,
 	["ShowRelicUpgrades"] = false,
 	["ShowValuesForUpgradesOnly"] = true,
-	["LastVersion"] = 2.0531,
-	["ShowItemLevelUpgrades"] = false,
 	["ShownGettingStarted"] = true,
-	["Debug"] = false,
+	["ShowItemLevelUpgrades"] = false,
+	["LastVersion"] = 2.0533,
+	["ShowEnchanted"] = false,
 	["ColorTooltipBorder"] = true,
 	["ShowTooltipIcons"] = true,
 	["ShowSpecIcons"] = true,
@@ -286,6 +286,9 @@ PawnCommon = {
 				["Cursedbreath-Firemaw"] = {
 					["Visible"] = true,
 				},
+				["Partijcurses-Gehennas"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "8787ed",
 			["LocalizedName"] = "Warlock",
@@ -346,6 +349,9 @@ PawnCommon = {
 					["Visible"] = true,
 				},
 				["Cursedbreath-Firemaw"] = {
+					["Visible"] = true,
+				},
+				["Partijcurses-Gehennas"] = {
 					["Visible"] = true,
 				},
 			},
@@ -412,6 +418,9 @@ PawnCommon = {
 					["Visible"] = true,
 				},
 				["Cursedbreath-Firemaw"] = {
+					["Visible"] = true,
+				},
+				["Partijcurses-Gehennas"] = {
 					["Visible"] = true,
 				},
 			},
@@ -509,6 +518,9 @@ PawnCommon = {
 					["Visible"] = true,
 				},
 				["Cursedbreath-Firemaw"] = {
+					["Visible"] = true,
+				},
+				["Partijcurses-Gehennas"] = {
 					["Visible"] = true,
 				},
 			},
@@ -652,6 +664,6 @@ PawnCommon = {
 	["ButtonPosition"] = 2,
 	["IgnoreGemsWhileLeveling"] = true,
 	["ShowQuestUpgradeAdvisor"] = true,
-	["ShowEnchanted"] = false,
+	["Debug"] = false,
 	["Digits"] = 1,
 }

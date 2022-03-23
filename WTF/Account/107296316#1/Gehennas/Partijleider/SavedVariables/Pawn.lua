@@ -1,13 +1,13 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0531,
+	["LastVersion"] = 2.0533,
 	["LastPlayerFullName"] = "Partijleider-Gehennas",
 	["AutoSelectScales"] = false,
 	["ItemLevels"] = {
 		{
-			["ID"] = 32241,
-			["Level"] = 141,
-			["Link"] = "|cffa335ee|Hitem:32241::24057:25901:::::70:::::::::|h[Helm of Soothing Currents]|h|r",
+			["ID"] = 31012,
+			["Level"] = 146,
+			["Link"] = "|cffa335ee|Hitem:31012::::::::70:::::::::|h[Skyshatter Helmet]|h|r",
 		}, -- [1]
 		{
 			["ID"] = 32649,
@@ -15,9 +15,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:32649::::::::70:::::::::|h[Medallion of Karabor]|h|r",
 		}, -- [2]
 		{
-			["ID"] = 30168,
-			["Level"] = 133,
-			["Link"] = "|cffa335ee|Hitem:30168::23094:23094:::::70:::::::::|h[Cataclysm Shoulderguards]|h|r",
+			["ID"] = 30917,
+			["Level"] = 141,
+			["Link"] = "|cffa335ee|Hitem:30917::::::::70:::::::::|h[Razorfury Mantle]|h|r",
 		}, -- [3]
 		[13] = {
 			["ID"] = 30841,
@@ -26,9 +26,9 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:30841::::::::70::::::::|h[Lower City Prayerbook]|h|r",
 		},
 		[7] = {
-			["ID"] = 30893,
-			["Level"] = 141,
-			["Link"] = "|cffa335ee|Hitem:30893::::::::70:::::::::|h[Sun-touched Chain Leggings]|h|r",
+			["ID"] = 31019,
+			["Level"] = 146,
+			["Link"] = "|cffa335ee|Hitem:31019::::::::70:::::::::|h[Skyshatter Leggings]|h|r",
 		},
 		[14] = {
 			["ID"] = 30841,
@@ -73,9 +73,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:29309::::::::70:::::::::|h[Band of the Eternal Restorer]|h|r",
 		},
 		[6] = {
-			["ID"] = 30030,
-			["Level"] = 128,
-			["Link"] = "|cffa335ee|Hitem:30030::::::::70:::::::::|h[Girdle of Fallen Stars]|h|r",
+			["ID"] = 32258,
+			["Level"] = 141,
+			["Link"] = "|cffa335ee|Hitem:32258::::::::70:::::::::|h[Naturalist's Preserving Cinch]|h|r",
 		},
 		[12] = {
 			["ID"] = 29283,

@@ -1,11 +1,11 @@
 
-AttuneLastViewed = "The Burning CrusadeRAIDS190"
+AttuneLastViewed = "The Burning CrusadeRAIDS115"
 TreeExpandStatus = {
 	["The Burning CrusadeRAIDS116"] = 1,
 	["The Burning CrusadeMISC"] = 1,
 	["The Burning CrusadeRAIDS190"] = 1,
-	["The Burning CrusadeHEROICS108"] = 1,
 	["The Burning Crusade"] = 1,
+	["The Burning CrusadeHEROICS108"] = 1,
 	["World of WarcraftKEYS"] = 1,
 	["The Burning CrusadeRAIDS"] = 1,
 	["The Burning CrusadeRAIDS115"] = 1,

@@ -1,8 +1,26 @@
 # <DBM> Outlands
 
-## [2.5.29-12-g503d7ea](https://github.com/DeadlyBossMods/DBM-TBC-Classic/tree/503d7eafd3a9aaddd593030be23d0805f8f6a854) (2022-03-04)
-[Full Changelog](https://github.com/DeadlyBossMods/DBM-TBC-Classic/compare/2.5.29...503d7eafd3a9aaddd593030be23d0805f8f6a854) [Previous Releases](https://github.com/DeadlyBossMods/DBM-TBC-Classic/releases)
+## [2.5.29-30-g560c52e](https://github.com/DeadlyBossMods/DBM-TBC-Classic/tree/560c52ef7d784817b0868ba9a87349ace09c7747) (2022-03-15)
+[Full Changelog](https://github.com/DeadlyBossMods/DBM-TBC-Classic/compare/2.5.29...560c52ef7d784817b0868ba9a87349ace09c7747) [Previous Releases](https://github.com/DeadlyBossMods/DBM-TBC-Classic/releases)
 
+- Update commonlocal.cn.lua (#88)  
+- Update localization.tw.lua (#87)  
+- Update commonlocal.tw.lua (#86)  
+- Update alpha revision  
+- prep new tag for retail  
+- Find and report duplicate entries (usually typos in objects that cause problems)  
+- Update commonlocal.ru.lua (#83) Add one phrase. Small cleaning.  
+- Update koKR (#84)  
+- Add count variant of tank combo  
+- swear i copy/pasted that  
+- set new alpha revision  
+- prep fresh retail tag  
+- Closing out another feature request. It's now possible to set pull timer countdown voice seperately from regular countdown options.  
+- bump alpha  
+- ready new release now that LFR updated, changed bosses updated, and last 3 updated. :)  
+- Update localization.fr.lua (#79)  
+- support up to 8 boss unit ids, apparently 6-8 were added in 9.2?  
+- Update localization.cn.lua (#82)  
 - bump alpha, again  
 - prep new tag, no revision update  
 - bumped alpha version (aka tomorrows release with fridays hotfixes probably :D)  

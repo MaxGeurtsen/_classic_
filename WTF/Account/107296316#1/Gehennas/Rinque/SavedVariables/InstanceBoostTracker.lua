@@ -1,6 +1,9 @@
 
 SavedPayments = {
 	["Tipsyftw"] = 2000000,
+	["Hellwhisper"] = 8960000,
+	["Humaan"] = 3050000,
+	["Syperpvz"] = 1500000,
 }
 SavedHistoricalPayments = nil
 SavedHistoricalPaymentsV2 = {
@@ -20,9 +23,57 @@ SavedHistoricalPaymentsV2 = {
 			}, -- [1]
 		},
 	},
+	["Hellwhisper"] = {
+		["Sum"] = 8960000,
+		["Transactions"] = {
+			{
+				["Amount"] = 8960000,
+				["PaymentDateTime"] = {
+					["year"] = "2022",
+					["month"] = "03",
+					["day"] = "14",
+					["minute"] = "10",
+					["hour"] = "17",
+					["second"] = "31",
+				},
+			}, -- [1]
+		},
+	},
+	["Humaan"] = {
+		["Sum"] = 3050000,
+		["Transactions"] = {
+			{
+				["PaymentDateTime"] = {
+					["year"] = "2022",
+					["month"] = "03",
+					["day"] = "14",
+					["minute"] = "53",
+					["hour"] = "21",
+					["second"] = "47",
+				},
+				["Amount"] = 3050000,
+			}, -- [1]
+		},
+	},
+	["Syperpvz"] = {
+		["Sum"] = 1500000,
+		["Transactions"] = {
+			{
+				["Amount"] = 1500000,
+				["PaymentDateTime"] = {
+					["year"] = "2022",
+					["month"] = "03",
+					["day"] = "16",
+					["minute"] = "48",
+					["hour"] = "16",
+					["second"] = "00",
+				},
+			}, -- [1]
+		},
+	},
 }
 SavedWindowSettings = {
-	["y"] = 174.3515167236328,
+	["y"] = 157.4060516357422,
 	["x"] = 0,
 	["point"] = "CENTER",
 	["relativePoint"] = "CENTER",
@@ -34,7 +85,7 @@ SavedSettings = {
 	["LOCKOUT_LOGOFFWARNING"] = true,
 	["FEATURE_Payment"] = true,
 	["REPORT_ELEMENTAL_EARTH"] = false,
-	["AUTO_FOLLOW"] = false,
+	["LOCKOUT_RESETONGROUPCHANGE"] = true,
 	["FEATURE_LockoutStatistics"] = true,
 	["SPEEDY_AUTO_LOOT"] = false,
 	["PAYMENT_REPORTCHAT"] = true,
@@ -42,82 +93,34 @@ SavedSettings = {
 	["PAYMENT_REPORTMAIN"] = true,
 	["LOCKOUT_REPORTRESET"] = false,
 	["STATISTICS_REPORT"] = true,
-	["LOCKOUT_RESETONGROUPCHANGE"] = true,
+	["AUTO_FOLLOW"] = false,
 }
 SavedAntiReloadUISettings = {
 	["IsEnteringFirstInstanceAfterLogin"] = false,
 	["SavedCharacterLockouts"] = {
-		["Deathjockey"] = {
+		["Nonâ"] = {
 		},
-		["Kakarotssj"] = {
+		["Alycía"] = {
 		},
-		["Ventrilø"] = {
+		["Frsc"] = {
 		},
-		["Hoitotäti"] = {
+		["Cantresist"] = {
 		},
-		["Krill"] = {
+		["Freezebite"] = {
 		},
-		["Sarasazz"] = {
+		["Myacalifa"] = {
 		},
-		["Shadowbow"] = {
+		["Bängst"] = {
 		},
-		["Wørstmage"] = {
+		["Zenmastr"] = {
 		},
-		["Ietok"] = {
-		},
-		["Morgarion"] = {
-		},
-		["Cptpro"] = {
-		},
-		["Sarmast"] = {
-		},
-		["Olen"] = {
-		},
-		["Heeva"] = {
-		},
-		["Kasraa"] = {
-		},
-		["Naxxzz"] = {
-		},
-		["Bobosänka"] = {
-		},
-		["Çonstantine"] = {
-		},
-		["Brentshaman"] = {
-		},
-		["Minialope"] = {
-		},
-		["Topspala"] = {
-		},
-		["Vizir"] = {
-		},
-		["Grålök"] = {
-		},
-		["Archmageddon"] = {
+		["Walkingsteak"] = {
 		},
 		["Rinque"] = {
 		},
-		["Minigraan"] = {
+		["Valai"] = {
 		},
-		["Hydraulîc"] = {
-		},
-		["Zitzitzaroo"] = {
-		},
-		["Zorf"] = {
-		},
-		["Nmsyoo"] = {
-		},
-		["Mommymilkérs"] = {
-		},
-		["Pjanky"] = {
-		},
-		["Lanner"] = {
-		},
-		["Elementaljoe"] = {
-		},
-		["Tensór"] = {
-		},
-		["Nodiggityy"] = {
+		["Xodlie"] = {
 		},
 	},
 }

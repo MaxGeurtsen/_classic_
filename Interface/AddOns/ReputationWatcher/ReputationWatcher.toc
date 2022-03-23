@@ -1,7 +1,7 @@
-## Interface: 20502
+## Interface: 20503
 ## Title: Reputation Watcher
 ## Author: Atair
-## Version: 1.1.4
+## Version: 1.1.5
 ## Notes: automatically switches the WoW reputation progress bar to the faction you increase reputation with
 ## DefaultState: Enabled
 ## LoadOnDemand: 0

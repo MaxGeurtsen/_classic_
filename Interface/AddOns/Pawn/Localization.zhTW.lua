@@ -1,6 +1,6 @@
 ﻿-- Pawn by Vger-Azjol-Nerub
 -- www.vgermods.com
--- © 2006-2021 Travis Spomer.  This mod is released under the Creative Commons Attribution-NonCommercial-NoDerivs 3.0 license.
+-- © 2006-2022 Travis Spomer.  This mod is released under the Creative Commons Attribution-NonCommercial-NoDerivs 3.0 license.
 -- See Readme.htm for more information.
 
 -- 
@@ -369,7 +369,6 @@ PawnLocal =
 		["Mp5"] = "^裝備： 每5秒恢復#點法力。$",
 		["Mp52"] = "^每5秒恢復#點法力。$",
 		["Mp53"] = "^UNUSED$",
-		["Mp54"] = "^UNUSED$",
 		["Mp54"] = "^裝備: 每5秒恢復#點法力。$",
 		["Mp55"] = "^UNUSED$",
 		["MultiStatHeading"] = "^多項統計$",

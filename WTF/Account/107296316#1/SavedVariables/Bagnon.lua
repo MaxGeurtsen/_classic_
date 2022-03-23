@@ -36,9 +36,6 @@ Bagnon_Sets = {
 				1, -- [4]
 			},
 			["bagToggle"] = true,
-			["enabled"] = true,
-			["brokerObject"] = "BagnonLauncher",
-			["columns"] = 10,
 			["rules"] = {
 				"all", -- [1]
 				"all/normal", -- [2]
@@ -63,24 +60,28 @@ Bagnon_Sets = {
 				"all/souls", -- [21]
 				"equip/ammo", -- [22]
 			},
-			["money"] = true,
+			["enabled"] = true,
+			["brokerObject"] = "BagnonLauncher",
+			["columns"] = 10,
 			["color"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				0.5, -- [4]
 			},
+			["money"] = true,
 			["itemScale"] = 1.01,
 			["hiddenRules"] = {
 			},
+			["alpha"] = 1,
 			["y"] = 82.72373962402344,
 			["x"] = -112.0669731352464,
 			["bagBreak"] = false,
-			["options"] = true,
+			["showBags"] = true,
 			["reverseSlots"] = false,
-			["alpha"] = 1,
 			["spacing"] = 0,
 			["reverseBags"] = false,
+			["options"] = true,
 		},
 		["vault"] = {
 			["rules"] = {

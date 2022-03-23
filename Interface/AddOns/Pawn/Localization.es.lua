@@ -1,6 +1,6 @@
 ﻿-- Pawn by Vger-Azjol-Nerub
 -- www.vgermods.com
--- © 2006-2021 Travis Spomer.  This mod is released under the Creative Commons Attribution-NonCommercial-NoDerivs 3.0 license.
+-- © 2006-2022 Travis Spomer.  This mod is released under the Creative Commons Attribution-NonCommercial-NoDerivs 3.0 license.
 -- See Readme.htm for more information.
 
 -- 
@@ -913,7 +913,6 @@ if GetLocale() == "esES" then
 			["FireSpellDamage"] = "^%+?# daño con hechizos de Fuego$",
 			["FrostSpellDamage"] = "^%+?# daño con hechizos de Escarcha$",
 			["NatureSpellDamage"] = "^%+?# daño con hechizos de Naturaleza$",
-			["ShadowSpellDamage"] = "^%+?# daño con hechizos de Sombras$",
 			["ShadowSpellDamage"] = "^%+?# daño con hechizos de las Sombras$",
 			["ShadowSpellDamage2"] = "^Equipar: Aumenta el daño causado por los hechizos de las Sombras y los efectos hasta en # p%.$",
 		}

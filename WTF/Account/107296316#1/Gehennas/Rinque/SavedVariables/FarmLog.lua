@@ -27,7 +27,7 @@ FLogVars = {
 				["drops"] = {
 				},
 				["hks"] = 0,
-				["resets"] = 14,
+				["resets"] = 25,
 				["rep"] = {
 					["Undercity"] = 7150,
 					["Argent Dawn"] = 1000,

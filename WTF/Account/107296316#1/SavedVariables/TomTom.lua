@@ -4,6 +4,7 @@ TomTomDB = {
 		["Partijleider - Gehennas"] = "Default",
 		["Partijlijder - Gehennas"] = "Default",
 		["Firebreather - Firemaw"] = "Default",
+		["Partijcurses - Gehennas"] = "Default",
 		["Awwaa - Gehennas"] = "Default",
 		["Helpsiebren - Razorgore"] = "Default",
 		["Partijleider - Razorgore"] = "Default",
@@ -41,6 +42,7 @@ TomTomWaypointsM = {
 		["Partijleider - Gehennas"] = "Partijleider - Gehennas",
 		["Partijlijder - Gehennas"] = "Partijlijder - Gehennas",
 		["Firebreather - Firemaw"] = "Firebreather - Firemaw",
+		["Partijcurses - Gehennas"] = "Partijcurses - Gehennas",
 		["Awwaa - Gehennas"] = "Awwaa - Gehennas",
 		["Helpsiebren - Razorgore"] = "Helpsiebren - Razorgore",
 		["Partijleider - Razorgore"] = "Partijleider - Razorgore",
@@ -55,6 +57,8 @@ TomTomWaypointsM = {
 		["Partijlijder - Gehennas"] = {
 		},
 		["Firebreather - Firemaw"] = {
+		},
+		["Partijcurses - Gehennas"] = {
 		},
 		["Awwaa - Gehennas"] = {
 		},

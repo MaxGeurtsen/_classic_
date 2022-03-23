@@ -2,192 +2,24 @@
 CLM_DB = {
 	["horde razorgore knokploeg"] = {
 		["personal"] = {
-			["gui"] = {
-				["point"] = {
-					["location"] = {
-						"CENTER", -- [1]
-						{
-							["variablesLoaded"] = true,
-							["firstTimeLoaded"] = 1,
-							["fadeInfo"] = {
-								["startAlpha"] = 1,
-								["endAlpha"] = 1,
-								["mode"] = "IN",
-								["fadeTimer"] = 0.5030000093393028,
-								["timeToFade"] = 0.5,
-							},
-						}, -- [2]
-						"CENTER", -- [3]
-						0, -- [4]
-						0, -- [5]
-					},
-				},
-				["lootQueue"] = {
-					["location"] = {
-						"CENTER", -- [1]
-						{
-							["variablesLoaded"] = true,
-							["firstTimeLoaded"] = 1,
-							["fadeInfo"] = {
-								["startAlpha"] = 1,
-								["endAlpha"] = 1,
-								["mode"] = "IN",
-								["fadeTimer"] = 0.5030000093393028,
-								["timeToFade"] = 0.5,
-							},
-						}, -- [2]
-						"CENTER", -- [3]
-						0, -- [4]
-						0, -- [5]
-					},
-				},
-				["changelog"] = {
-					["lastVersion"] = {
-						["minor"] = 3,
-						["major"] = 1,
-						["patch"] = 1,
-						["changeset"] = "",
-					},
-					["do_not_show"] = true,
-					["never_show"] = false,
-					["location"] = {
-						[3] = "CENTER",
-						[4] = 0,
-						[5] = 0,
-					},
-				},
-				["profile"] = {
-					["location"] = {
-						"CENTER", -- [1]
-						{
-							["variablesLoaded"] = true,
-							["firstTimeLoaded"] = 1,
-							["fadeInfo"] = {
-								["startAlpha"] = 1,
-								["endAlpha"] = 1,
-								["mode"] = "IN",
-								["fadeTimer"] = 0.5030000093393028,
-								["timeToFade"] = 0.5,
-							},
-						}, -- [2]
-						"CENTER", -- [3]
-						0, -- [4]
-						0, -- [5]
-					},
-				},
-				["auction"] = {
-					["location"] = {
-						"CENTER", -- [1]
-						{
-							["variablesLoaded"] = true,
-							["firstTimeLoaded"] = 1,
-							["fadeInfo"] = {
-								["startAlpha"] = 1,
-								["endAlpha"] = 1,
-								["mode"] = "IN",
-								["fadeTimer"] = 0.5030000093393028,
-								["timeToFade"] = 0.5,
-							},
-						}, -- [2]
-						"CENTER", -- [3]
-						0, -- [4]
-						0, -- [5]
-					},
-					["notes"] = {
-					},
-				},
-				["standings"] = {
-					["location"] = {
-						"CENTER", -- [1]
-						{
-							["variablesLoaded"] = true,
-							["firstTimeLoaded"] = 1,
-							["fadeInfo"] = {
-								["startAlpha"] = 1,
-								["endAlpha"] = 1,
-								["mode"] = "IN",
-								["fadeTimer"] = 0.5030000093393028,
-								["timeToFade"] = 0.5,
-							},
-						}, -- [2]
-						"CENTER", -- [3]
-						0, -- [4]
-						0, -- [5]
-					},
-				},
-				["raid"] = {
-					["location"] = {
-						"CENTER", -- [1]
-						{
-							["variablesLoaded"] = true,
-							["firstTimeLoaded"] = 1,
-							["fadeInfo"] = {
-								["startAlpha"] = 1,
-								["endAlpha"] = 1,
-								["mode"] = "IN",
-								["fadeTimer"] = 0.5030000093393028,
-								["timeToFade"] = 0.5,
-							},
-						}, -- [2]
-						"CENTER", -- [3]
-						0, -- [4]
-						0, -- [5]
-					},
-				},
-				["bidding"] = {
-					["location"] = {
-						"CENTER", -- [1]
-						{
-							["variablesLoaded"] = true,
-							["firstTimeLoaded"] = 1,
-							["fadeInfo"] = {
-								["startAlpha"] = 1,
-								["endAlpha"] = 1,
-								["mode"] = "IN",
-								["fadeTimer"] = 0.5030000093393028,
-								["timeToFade"] = 0.5,
-							},
-						}, -- [2]
-						"CENTER", -- [3]
-						0, -- [4]
-						0, -- [5]
-					},
-					["customButton"] = {
-						["value"] = 1,
-						["mode"] = 1,
-					},
-				},
-				["loot"] = {
-					["location"] = {
-						"CENTER", -- [1]
-						{
-							["variablesLoaded"] = true,
-							["firstTimeLoaded"] = 1,
-							["fadeInfo"] = {
-								["startAlpha"] = 1,
-								["endAlpha"] = 1,
-								["mode"] = "IN",
-								["fadeTimer"] = 0.5030000093393028,
-								["timeToFade"] = 0.5,
-							},
-						}, -- [2]
-						"CENTER", -- [3]
-						0, -- [4]
-						0, -- [5]
-					},
-				},
-			},
-			["auction"] = {
-				["autoAward"] = true,
-				["autoTrade"] = true,
-			},
 			["global"] = {
 				["announce_loot_to_raid"] = false,
-				["chat_commands"] = false,
-				["announce_award_to_guild"] = true,
-				["announce_loot_to_raid_level"] = 3,
+				["suppress_outgoing_chat_commands"] = false,
 				["wowdkpbot_integration"] = false,
 				["tracked_loot_level"] = 4,
+				["alerts"] = true,
+				["raid_warnings"] = {
+					["countdown"] = true,
+					["auction"] = true,
+					["loot"] = true,
+					["raid"] = true,
+					["bids"] = true,
+					["commands"] = false,
+				},
+				["announce_loot_to_raid_level"] = 3,
+				["suppress_incoming_chat_commands"] = false,
+				["chat_commands"] = false,
+				["announce_award_to_guild"] = true,
 			},
 			["profileInfo"] = {
 				["Kealthas"] = {
@@ -205,9 +37,9 @@ CLM_DB = {
 				},
 				["Partijlijder"] = {
 					["version"] = {
-						["minor"] = 3,
+						["minor"] = 5,
+						["patch"] = 3,
 						["major"] = 1,
-						["patch"] = 1,
 						["changeset"] = "",
 					},
 					["spec"] = {
@@ -217,11 +49,10 @@ CLM_DB = {
 					},
 				},
 			},
-			["bidding"] = {
-				["autoOpen"] = true,
-				["autoUpdateBidValue"] = false,
-			},
 			["lootQueue"] = {
+				["ignoredClasses"] = {
+				},
+				["tracked_loot_level"] = 4,
 				["queue"] = {
 				},
 			},
@@ -232,6 +63,140 @@ CLM_DB = {
 			["rosterManager"] = {
 				["raidsForFullAttendance"] = 2,
 				["attendanceWeeksWindow"] = 10,
+			},
+			["bidding"] = {
+				["autoOpen"] = true,
+				["autoUpdateBidValue"] = false,
+			},
+			["auctionHistory"] = {
+				["enable"] = true,
+				["stack"] = {
+				},
+				["post_bids"] = true,
+				["post_bids_channel"] = 5,
+			},
+			["auction"] = {
+				["autoAward"] = true,
+				["autoTrade"] = true,
+			},
+			["gui"] = {
+				["point"] = {
+					["location"] = {
+						"CENTER", -- [1]
+						{
+							["variablesLoaded"] = true,
+							["firstTimeLoaded"] = 1,
+						}, -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+				},
+				["lootQueue"] = {
+					["location"] = {
+						"CENTER", -- [1]
+						{
+							["variablesLoaded"] = true,
+							["firstTimeLoaded"] = 1,
+						}, -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+				},
+				["changelog"] = {
+					["lastVersion"] = {
+						["minor"] = 5,
+						["patch"] = 3,
+						["major"] = 1,
+						["changeset"] = "",
+					},
+					["do_not_show"] = true,
+					["never_show"] = false,
+					["location"] = {
+						[3] = "CENTER",
+						[4] = 0,
+						[5] = 0,
+					},
+				},
+				["profile"] = {
+					["location"] = {
+						"CENTER", -- [1]
+						{
+							["variablesLoaded"] = true,
+							["firstTimeLoaded"] = 1,
+						}, -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+				},
+				["auction"] = {
+					["location"] = {
+						"CENTER", -- [1]
+						{
+							["variablesLoaded"] = true,
+							["firstTimeLoaded"] = 1,
+						}, -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+					["notes"] = {
+					},
+				},
+				["standings"] = {
+					["location"] = {
+						"CENTER", -- [1]
+						{
+							["variablesLoaded"] = true,
+							["firstTimeLoaded"] = 1,
+						}, -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+				},
+				["raid"] = {
+					["location"] = {
+						"CENTER", -- [1]
+						{
+							["variablesLoaded"] = true,
+							["firstTimeLoaded"] = 1,
+						}, -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+				},
+				["bidding"] = {
+					["location"] = {
+						"CENTER", -- [1]
+						{
+							["variablesLoaded"] = true,
+							["firstTimeLoaded"] = 1,
+						}, -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+					["customButton"] = {
+						["value"] = 1,
+						["mode"] = 1,
+					},
+				},
+				["loot"] = {
+					["location"] = {
+						"CENTER", -- [1]
+						{
+							["variablesLoaded"] = true,
+							["firstTimeLoaded"] = 1,
+						}, -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+				},
 			},
 		},
 		["raid"] = {
@@ -10503,7 +10468,7 @@ CLM_DB = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.503000006545335,
+								["fadeTimer"] = 0.5000000088475645,
 								["timeToFade"] = 0.5,
 							},
 						}, -- [2]
@@ -10522,7 +10487,7 @@ CLM_DB = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.503000006545335,
+								["fadeTimer"] = 0.5000000088475645,
 								["timeToFade"] = 0.5,
 							},
 						}, -- [2]
@@ -10539,8 +10504,8 @@ CLM_DB = {
 					},
 					["lastVersion"] = {
 						["minor"] = 5,
-						["major"] = 1,
 						["patch"] = 3,
+						["major"] = 1,
 						["changeset"] = "",
 					},
 					["do_not_show"] = true,
@@ -10556,7 +10521,7 @@ CLM_DB = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.503000006545335,
+								["fadeTimer"] = 0.5000000088475645,
 								["timeToFade"] = 0.5,
 							},
 						}, -- [2]
@@ -10575,7 +10540,7 @@ CLM_DB = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.503000006545335,
+								["fadeTimer"] = 0.5000000088475645,
 								["timeToFade"] = 0.5,
 							},
 						}, -- [2]
@@ -10596,7 +10561,7 @@ CLM_DB = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.503000006545335,
+								["fadeTimer"] = 0.5000000088475645,
 								["timeToFade"] = 0.5,
 							},
 						}, -- [2]
@@ -10615,7 +10580,7 @@ CLM_DB = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.503000006545335,
+								["fadeTimer"] = 0.5000000088475645,
 								["timeToFade"] = 0.5,
 							},
 						}, -- [2]
@@ -10634,7 +10599,7 @@ CLM_DB = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.503000006545335,
+								["fadeTimer"] = 0.5000000088475645,
 								["timeToFade"] = 0.5,
 							},
 						}, -- [2]
@@ -10657,7 +10622,7 @@ CLM_DB = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.503000006545335,
+								["fadeTimer"] = 0.5000000088475645,
 								["timeToFade"] = 0.5,
 							},
 						}, -- [2]
@@ -21681,17 +21646,17 @@ CLM_DB = {
 				["_b"] = 2,
 			}, -- [854]
 			{
-				["g"] = 53450716,
-				["_a"] = 41717713,
-				["_d"] = "P1",
 				["_c"] = 1642413622,
+				["_a"] = 41717713,
+				["g"] = 53450716,
+				["_d"] = "P1",
 				["_b"] = 0,
 			}, -- [855]
 			{
-				["g"] = 53253150,
-				["_a"] = 41717713,
-				["_d"] = "P1",
 				["_c"] = 1642413622,
+				["_a"] = 41717713,
+				["g"] = 53253150,
+				["_d"] = "P1",
 				["_b"] = 1,
 			}, -- [856]
 			{
@@ -29779,9 +29744,33 @@ CLM_DB = {
 				["tracked_loot_level"] = 4,
 				["queue"] = {
 					{
-						["id"] = 30642,
-						["link"] = "|cffa335ee|Hitem:30642::::::::70:::::::::|h[Drape of the Righteous]|h|r",
+						["id"] = 30109,
+						["link"] = "|cffa335ee|Hitem:30109::::::::70:::::::::|h[Ring of Endless Coils]|h|r",
 					}, -- [1]
+					{
+						["id"] = 30083,
+						["link"] = "|cffa335ee|Hitem:30083::::::::70:::::::::|h[Ring of Sundered Souls]|h|r",
+					}, -- [2]
+					{
+						["id"] = 30101,
+						["link"] = "|cffa335ee|Hitem:30101::::::::70:::::::::|h[Bloodsea Brigand's Vest]|h|r",
+					}, -- [3]
+					{
+						["id"] = 29950,
+						["link"] = "|cffa335ee|Hitem:29950::::::::70:::::::::|h[Greaves of the Bloodwarder]|h|r",
+					}, -- [4]
+					{
+						["id"] = 30314,
+						["link"] = "|cffff8000|Hitem:30314::::::::70:::::::::|h[Phaseshift Bulwark]|h|r",
+					}, -- [5]
+					{
+						["id"] = 30314,
+						["link"] = "|cffff8000|Hitem:30314::::::::70:::::::::|h[Phaseshift Bulwark]|h|r",
+					}, -- [6]
+					{
+						["id"] = 29983,
+						["link"] = "|cffa335ee|Hitem:29983::::::::70:::::::::|h[Fel-Steel Warhelm]|h|r",
+					}, -- [7]
 				},
 			},
 			["profileManager"] = {
@@ -29814,16 +29803,16 @@ CLM_DB = {
 					["location"] = {
 						"CENTER", -- [1]
 						{
-							[0] = nil --[[ skipped userdata ]],
+							["variablesLoaded"] = true,
 							["fadeInfo"] = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.5000000139698386,
+								["fadeTimer"] = 0.5010000318288803,
 								["timeToFade"] = 0.5,
 							},
 							["firstTimeLoaded"] = 1,
-							["variablesLoaded"] = true,
+							[0] = nil --[[ skipped userdata ]],
 						}, -- [2]
 						"CENTER", -- [3]
 						0, -- [4]
@@ -29834,16 +29823,16 @@ CLM_DB = {
 					["location"] = {
 						"CENTER", -- [1]
 						{
-							[0] = nil --[[ skipped userdata ]],
+							["variablesLoaded"] = true,
 							["fadeInfo"] = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.5000000139698386,
+								["fadeTimer"] = 0.5010000318288803,
 								["timeToFade"] = 0.5,
 							},
 							["firstTimeLoaded"] = 1,
-							["variablesLoaded"] = true,
+							[0] = nil --[[ skipped userdata ]],
 						}, -- [2]
 						"CENTER", -- [3]
 						0, -- [4]
@@ -29869,16 +29858,16 @@ CLM_DB = {
 					["location"] = {
 						"CENTER", -- [1]
 						{
-							[0] = nil --[[ skipped userdata ]],
+							["variablesLoaded"] = true,
 							["fadeInfo"] = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.5000000139698386,
+								["fadeTimer"] = 0.5010000318288803,
 								["timeToFade"] = 0.5,
 							},
 							["firstTimeLoaded"] = 1,
-							["variablesLoaded"] = true,
+							[0] = nil --[[ skipped userdata ]],
 						}, -- [2]
 						"CENTER", -- [3]
 						0, -- [4]
@@ -29889,16 +29878,16 @@ CLM_DB = {
 					["location"] = {
 						"CENTER", -- [1]
 						{
-							[0] = nil --[[ skipped userdata ]],
+							["variablesLoaded"] = true,
 							["fadeInfo"] = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.5000000139698386,
+								["fadeTimer"] = 0.5010000318288803,
 								["timeToFade"] = 0.5,
 							},
 							["firstTimeLoaded"] = 1,
-							["variablesLoaded"] = true,
+							[0] = nil --[[ skipped userdata ]],
 						}, -- [2]
 						"CENTER", -- [3]
 						0, -- [4]
@@ -29911,16 +29900,16 @@ CLM_DB = {
 					["location"] = {
 						"CENTER", -- [1]
 						{
-							[0] = nil --[[ skipped userdata ]],
+							["variablesLoaded"] = true,
 							["fadeInfo"] = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.5000000139698386,
+								["fadeTimer"] = 0.5010000318288803,
 								["timeToFade"] = 0.5,
 							},
 							["firstTimeLoaded"] = 1,
-							["variablesLoaded"] = true,
+							[0] = nil --[[ skipped userdata ]],
 						}, -- [2]
 						"CENTER", -- [3]
 						0, -- [4]
@@ -29931,16 +29920,16 @@ CLM_DB = {
 					["location"] = {
 						"CENTER", -- [1]
 						{
-							[0] = nil --[[ skipped userdata ]],
+							["variablesLoaded"] = true,
 							["fadeInfo"] = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.5000000139698386,
+								["fadeTimer"] = 0.5010000318288803,
 								["timeToFade"] = 0.5,
 							},
 							["firstTimeLoaded"] = 1,
-							["variablesLoaded"] = true,
+							[0] = nil --[[ skipped userdata ]],
 						}, -- [2]
 						"CENTER", -- [3]
 						0, -- [4]
@@ -29951,16 +29940,16 @@ CLM_DB = {
 					["location"] = {
 						"CENTER", -- [1]
 						{
-							[0] = nil --[[ skipped userdata ]],
+							["variablesLoaded"] = true,
 							["fadeInfo"] = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.5000000139698386,
+								["fadeTimer"] = 0.5010000318288803,
 								["timeToFade"] = 0.5,
 							},
 							["firstTimeLoaded"] = 1,
-							["variablesLoaded"] = true,
+							[0] = nil --[[ skipped userdata ]],
 						}, -- [2]
 						"CENTER", -- [3]
 						0, -- [4]
@@ -29971,16 +29960,16 @@ CLM_DB = {
 					["location"] = {
 						"CENTER", -- [1]
 						{
-							[0] = nil --[[ skipped userdata ]],
+							["variablesLoaded"] = true,
 							["fadeInfo"] = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.5000000139698386,
+								["fadeTimer"] = 0.5010000318288803,
 								["timeToFade"] = 0.5,
 							},
 							["firstTimeLoaded"] = 1,
-							["variablesLoaded"] = true,
+							[0] = nil --[[ skipped userdata ]],
 						}, -- [2]
 						"CENTER", -- [3]
 						0, -- [4]

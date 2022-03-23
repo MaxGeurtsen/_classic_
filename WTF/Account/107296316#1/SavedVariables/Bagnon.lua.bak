@@ -36,21 +36,22 @@ Bagnon_Sets = {
 				1, -- [4]
 			},
 			["bagToggle"] = true,
+			["columns"] = 10,
 			["enabled"] = true,
 			["brokerObject"] = "BagnonLauncher",
-			["columns"] = 10,
+			["options"] = true,
 			["reverseBags"] = false,
 			["money"] = true,
 			["spacing"] = 0,
-			["itemScale"] = 1.01,
+			["hiddenRules"] = {
+			},
 			["alpha"] = 1,
 			["y"] = 82.72373962402344,
 			["x"] = -112.0669731352464,
 			["bagBreak"] = false,
-			["options"] = true,
+			["showBags"] = true,
 			["reverseSlots"] = false,
-			["hiddenRules"] = {
-			},
+			["itemScale"] = 1.01,
 			["color"] = {
 				0, -- [1]
 				0, -- [2]

@@ -1,0 +1,10 @@
+## Interface: 20503
+## Title: Titan Panel Classic [|cffeda55fBag|r] |cff00aa001.5.0.20503|r
+## Notes: Adds bag and free slot information to Titan Panel
+## Author: Titan Panel Development Team (http://www.titanpanel.org)
+## SavedVariables: 
+## OptionalDeps: 
+## Dependencies: TitanClassic
+## Version: 1.5.0.20503
+## X-Child-Of: TitanClassic
+TitanClassicBag.xml
