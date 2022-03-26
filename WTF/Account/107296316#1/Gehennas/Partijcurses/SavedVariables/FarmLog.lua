@@ -2,11 +2,16 @@
 FLogVars = {
 	["enabled"] = false,
 	["inInstance"] = false,
+	["itemTooltip"] = true,
 	["todayKills"] = {
 	},
-	["itemTooltip"] = true,
-	["lockMinimapButton"] = false,
 	["currentFarm"] = "default",
+	["lockMinimapButton"] = false,
+	["minimapButtonPosition"] = {
+		["y"] = -127,
+		["x"] = -165,
+		["point"] = "TOPRIGHT",
+	},
 	["ver"] = 1.2,
 	["hud"] = {
 		["show"] = false,
@@ -27,7 +32,7 @@ FLogVars = {
 				["drops"] = {
 				},
 				["hks"] = 0,
-				["resets"] = 1,
+				["resets"] = 2,
 				["rep"] = {
 				},
 				["ranks"] = {
@@ -80,11 +85,6 @@ FLogVars = {
 			["goldPerHourTotal"] = 0,
 			["honorTotal"] = 0,
 		},
-	},
-	["minimapButtonPosition"] = {
-		["y"] = -127,
-		["x"] = -165,
-		["point"] = "TOPRIGHT",
 	},
 	["enableMinimapButton"] = true,
 	["frameRect"] = {

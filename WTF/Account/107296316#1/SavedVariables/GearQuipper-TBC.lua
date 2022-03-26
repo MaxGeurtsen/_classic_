@@ -371,28 +371,28 @@ GQ_DATA = {
 			},
 			["FIELD_IGNOREDSLOTS"] = {
 			},
-			["FIELD_LASTSET"] = "shadowRESTO",
+			["FIELD_LASTSET"] = "Resto",
 			["FIELD_SETS"] = {
 				["$PREVIOUSEQUIPMENT"] = {
 					["FIELD_SLOTS"] = {
-						"item:31012:3001:25901:24060:::::70:::::::::", -- [1]
+						"item:33479::::::::70:::::::::", -- [1]
 						"item:28609::::::::70:::::::::", -- [2]
-						"item:30917::::::::70:::::::::", -- [3]
+						"item:31022:2980:24057:24060:::::70:::::::::", -- [3]
 						"item:154::::::::70:::::::::", -- [4]
-						"item:30185::23095:23111:23098::::70:::::::::", -- [5]
+						"item:33328::::::::70:::::::::", -- [5]
 						"item:30919::::::::70:::::::::", -- [6]
 						"item:31019:2746:24057::::::70:::::::::", -- [7]
 						"item:28746::23095:23095:::::70:::::::::", -- [8]
 						"item:32584:2617:::::::70:::::::::", -- [9]
-						"item:32275:2322:::::::70:::::::::", -- [10]
+						"item:31007:2322:24057::::::70:::::::::", -- [10]
 						"item:28730::::::::70:::::::::", -- [11]
 						"item:29283::::::::70:::::::::", -- [12]
 						"item:28190::::::::70:::::::::", -- [13]
-						"item:29376::::::::70:::::::::", -- [14]
+						"item:32491::::::::70:::::::::", -- [14]
 						"item:32420:1441:::::::70:::::::::", -- [15]
-						"item:30908:2343:::::::70:::::::::", -- [16]
-						"VALUE_NONE", -- [17]
-						"item:28523::::::::70:::::::::", -- [18]
+						"item:33495::::::::70:::::::::", -- [16]
+						"item:28657::23095::::::70:::::::::", -- [17]
+						"item:33507::::::::70:::::::::", -- [18]
 						"item:28788::::::::70:::::::::", -- [19]
 						[0] = 0,
 					},
@@ -847,11 +847,11 @@ GQ_DATA = {
 				},
 				["Enhancement"] = {
 					["FIELD_SLOTS"] = {
-						"item:31281::::::::70:::::::::", -- [1]
+						"item:33479:3003:23095:23095:23095::::70:::::::::", -- [1]
 						"item:28674::::::::70:::::::::", -- [2]
-						"item:30917::::::::70:::::::::", -- [3]
+						"item:30917:2986:::::::70:::::::::", -- [3]
 						"item:154::::::::70:::::::::", -- [4]
-						"item:30185::23095:23111:23098::::70:::::::::", -- [5]
+						"item:33328::::::::70:::::::::", -- [5]
 						"item:30919::::::::70:::::::::", -- [6]
 						"item:30014::::::::70:::::::::", -- [7]
 						"item:28746::23095:23095:::::70:::::::::", -- [8]
@@ -860,11 +860,11 @@ GQ_DATA = {
 						"item:28730::::::::70:::::::::", -- [11]
 						"item:29283::::::::70:::::::::", -- [12]
 						"item:30663::::::::70:::::::::", -- [13]
-						"item:29376::::::::70:::::::::", -- [14]
+						"item:32491::::::::70:::::::::", -- [14]
 						"item:28764::::::::70:::::::::", -- [15]
-						"item:28657::23095::::::70:::::::::", -- [16]
-						"VALUE_NONE", -- [17]
-						"item:28523::::::::70:::::::::", -- [18]
+						"item:33495::23095::::::70:::::::::", -- [16]
+						"item:28657::23095::::::70:::::::::", -- [17]
+						"item:33507::::::::70:::::::::", -- [18]
 						"item:28788::::::::70:::::::::", -- [19]
 						[0] = 0,
 					},
@@ -875,22 +875,23 @@ GQ_DATA = {
 					["FIELD_OPT_ACTIONSLOTS"] = true,
 					["FIELD_ACTIONSLOTS"] = {
 						{
-							["FIELD_ID"] = 32594,
-							["FIELD_TYPE"] = "spell",
-							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_ID"] = "Stormstrike",
+							["FIELD_TYPE"] = "macro",
 						}, -- [1]
 						{
-							["FIELD_ID"] = " wave",
-							["FIELD_TYPE"] = "macro",
+							["FIELD_ID"] = 25454,
+							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [2]
 						{
-							["FIELD_ID"] = 25420,
-							["FIELD_TYPE"] = "spell",
+							["FIELD_ID"] = 25457,
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [3]
 						{
-							["FIELD_ID"] = " Chain",
-							["FIELD_TYPE"] = "macro",
+							["FIELD_ID"] = 25464,
+							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [4]
 						{
 							["FIELD_ID"] = 25533,
@@ -898,14 +899,14 @@ GQ_DATA = {
 							["FIELD_SUBTYPE"] = "spell",
 						}, -- [5]
 						{
-							["FIELD_ID"] = 10467,
-							["FIELD_TYPE"] = "spell",
+							["FIELD_ID"] = 25552,
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [6]
 						{
-							["FIELD_ID"] = 8005,
-							["FIELD_TYPE"] = "spell",
+							["FIELD_ID"] = 25547,
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [7]
 						{
 							["FIELD_ID"] = 10623,
@@ -918,18 +919,18 @@ GQ_DATA = {
 							["FIELD_SUBTYPE"] = "spell",
 						}, -- [9]
 						{
-							["FIELD_ID"] = 332,
-							["FIELD_TYPE"] = "spell",
+							["FIELD_ID"] = 25396,
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [10]
 						{
 							["FIELD_ID"] = "DrinkOnlyMP",
 							["FIELD_TYPE"] = "macro",
 						}, -- [11]
 						{
-							["FIELD_ID"] = 16190,
-							["FIELD_TYPE"] = "spell",
+							["FIELD_ID"] = 3738,
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [12]
 						{
 							["FIELD_ID"] = " dwa",
@@ -984,9 +985,9 @@ GQ_DATA = {
 							["FIELD_SUBTYPE"] = "spell",
 						}, -- [30]
 						{
-							["FIELD_ID"] = 25449,
-							["FIELD_TYPE"] = "spell",
+							["FIELD_ID"] = 25505,
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [31]
 						{
 							["FIELD_ID"] = 25442,
@@ -994,9 +995,8 @@ GQ_DATA = {
 							["FIELD_SUBTYPE"] = "spell",
 						}, -- [32]
 						{
-							["FIELD_ID"] = 25359,
-							["FIELD_TYPE"] = "spell",
-							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_ID"] = "TT Cast",
+							["FIELD_TYPE"] = "macro",
 						}, -- [33]
 						{
 							["FIELD_ID"] = "PET",
@@ -1069,9 +1069,9 @@ GQ_DATA = {
 							["FIELD_SUBTYPE"] = "spell",
 						}, -- [48]
 						{
-							["FIELD_ID"] = 25528,
-							["FIELD_TYPE"] = "spell",
+							["FIELD_ID"] = 8143,
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [49]
 						{
 							["FIELD_ID"] = 2870,
@@ -1089,14 +1089,13 @@ GQ_DATA = {
 							["FIELD_SUBTYPE"] = "spell",
 						}, -- [52]
 						{
-							["FIELD_ID"] = 33697,
-							["FIELD_TYPE"] = "spell",
-							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_ID"] = "trink",
+							["FIELD_TYPE"] = "macro",
 						}, -- [53]
 						{
-							["FIELD_ID"] = 25552,
-							["FIELD_TYPE"] = "spell",
+							["FIELD_ID"] = 25449,
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [54]
 						{
 							["FIELD_ID"] = 8170,
@@ -1128,9 +1127,9 @@ GQ_DATA = {
 							["FIELD_TYPE"] = "item",
 						}, -- [60]
 						{
-							["FIELD_ID"] = 8143,
-							["FIELD_TYPE"] = "spell",
+							["FIELD_ID"] = 25528,
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [61]
 						{
 							["FIELD_ID"] = " focus",
@@ -1138,17 +1137,18 @@ GQ_DATA = {
 						}, -- [62]
 						{
 							["FIELD_ID"] = 25570,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [63]
 						{
-							["FIELD_ID"] = 3738,
-							["FIELD_TYPE"] = "spell",
+							["FIELD_ID"] = 25359,
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [64]
 						{
-							["FIELD_ID"] = "trink",
-							["FIELD_TYPE"] = "macro",
+							["FIELD_ID"] = 33697,
+							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [65]
 						{
 							["FIELD_ID"] = 2484,
@@ -1156,9 +1156,9 @@ GQ_DATA = {
 							["FIELD_SUBTYPE"] = "spell",
 						}, -- [66]
 						{
-							["FIELD_ID"] = 16188,
-							["FIELD_TYPE"] = "spell",
+							["FIELD_ID"] = 30823,
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [67]
 						{
 							["FIELD_ID"] = "focus",
@@ -1171,8 +1171,8 @@ GQ_DATA = {
 						}, -- [69]
 						{
 							["FIELD_ID"] = 25587,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [70]
 						{
 							["FIELD_ID"] = "ORB",
@@ -1230,9 +1230,9 @@ GQ_DATA = {
 							["FIELD_SUBTYPE"] = "spell",
 						}, -- [91]
 						{
-							["FIELD_ID"] = 25547,
-							["FIELD_TYPE"] = "spell",
+							["FIELD_ID"] = 25442,
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [92]
 						{
 							["FIELD_ID"] = 25908,
@@ -1323,7 +1323,7 @@ GQ_DATA = {
 					["FIELD_SLOTS"] = {
 						"item:32241:3009:24057:25901:::::70:::::::::", -- [1]
 						"item:32757::::::::70:::::::::", -- [2]
-						"item:30168:2980:24029:24029:::::70:::::::::", -- [3]
+						"item:31022:2980:24057:24060:::::70:::::::::", -- [3]
 						"item:154::::::::70:::::::::", -- [4]
 						"item:30887:3150:::::::70:::::::::", -- [5]
 						"item:32258::::::::70:::::::::", -- [6]
@@ -1609,14 +1609,14 @@ GQ_DATA = {
 							["FIELD_TYPE"] = "macro",
 						}, -- [62]
 						{
-							["FIELD_ID"] = 25570,
-							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_ID"] = 25567,
 							["FIELD_TYPE"] = "spell",
+							["FIELD_SUBTYPE"] = "spell",
 						}, -- [63]
 						{
-							["FIELD_ID"] = 3738,
-							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_ID"] = 25908,
 							["FIELD_TYPE"] = "spell",
+							["FIELD_SUBTYPE"] = "spell",
 						}, -- [64]
 						{
 							["FIELD_ID"] = "trink",
@@ -1637,9 +1637,9 @@ GQ_DATA = {
 							["FIELD_TYPE"] = "macro",
 						}, -- [68]
 						{
-							["FIELD_ID"] = 25567,
-							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_ID"] = 25570,
 							["FIELD_TYPE"] = "spell",
+							["FIELD_SUBTYPE"] = "spell",
 						}, -- [69]
 						{
 							["FIELD_ID"] = "TT Cast",
@@ -1707,7 +1707,7 @@ GQ_DATA = {
 							["FIELD_SUBTYPE"] = "spell",
 						}, -- [92]
 						{
-							["FIELD_ID"] = 25908,
+							["FIELD_ID"] = 3738,
 							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
 						}, -- [93]
@@ -1799,14 +1799,14 @@ GQ_DATA = {
 					["FIELD_SLOTS"] = {
 						"item:31012:3001:25901:24060:::::70:::::::::", -- [1]
 						"item:28609::::::::70:::::::::", -- [2]
-						"item:30168:2980:24029:24029:::::70:::::::::", -- [3]
+						"item:31022:2980:24057:24060:::::70:::::::::", -- [3]
 						"item:154::::::::70:::::::::", -- [4]
 						"item:30887:3150:::::::70:::::::::", -- [5]
 						"item:32258::::::::70:::::::::", -- [6]
 						"item:31019:2746:24057::::::70:::::::::", -- [7]
 						"item:32609:911:24060:24057:::::70:::::::::", -- [8]
 						"item:32584:2617:::::::70:::::::::", -- [9]
-						"item:32275:2322:::::::70:::::::::", -- [10]
+						"item:31007:2322:24057::::::70:::::::::", -- [10]
 						"item:29309::::::::70:::::::::", -- [11]
 						"item:29920::::::::70:::::::::", -- [12]
 						"item:28190::::::::70:::::::::", -- [13]
@@ -1942,13 +1942,13 @@ GQ_DATA = {
 							["FIELD_TYPE"] = "spell",
 						}, -- [32]
 						{
-							["FIELD_ID"] = 25908,
-							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_ID"] = 25359,
 							["FIELD_TYPE"] = "spell",
+							["FIELD_SUBTYPE"] = "spell",
 						}, -- [33]
 						{
-							["FIELD_ID"] = 24494,
-							["FIELD_TYPE"] = "item",
+							["FIELD_ID"] = "ORB",
+							["FIELD_TYPE"] = "macro",
 						}, -- [34]
 						{
 							["FIELD_ID"] = 31252,
@@ -2090,9 +2090,8 @@ GQ_DATA = {
 							["FIELD_SUBTYPE"] = "spell",
 						}, -- [63]
 						{
-							["FIELD_ID"] = 3738,
-							["FIELD_TYPE"] = "spell",
-							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_ID"] = "TT Cast",
+							["FIELD_TYPE"] = "macro",
 						}, -- [64]
 						{
 							["FIELD_ID"] = "T2",
@@ -2118,12 +2117,12 @@ GQ_DATA = {
 							["FIELD_SUBTYPE"] = "spell",
 						}, -- [69]
 						{
-							["FIELD_ID"] = 25359,
+							["FIELD_ID"] = 3738,
 							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
 						}, -- [70]
 						{
-							["FIELD_ID"] = "ORB",
+							["FIELD_ID"] = "PET",
 							["FIELD_TYPE"] = "macro",
 						}, -- [71]
 						{
@@ -2169,8 +2168,8 @@ GQ_DATA = {
 							["FIELD_TYPE"] = "spell",
 						}, -- [89]
 						{
-							["FIELD_ID"] = "PET",
-							["FIELD_TYPE"] = "macro",
+							["FIELD_ID"] = 24494,
+							["FIELD_TYPE"] = "item",
 						}, -- [90]
 						{
 							["FIELD_ID"] = 25457,
@@ -2183,8 +2182,9 @@ GQ_DATA = {
 							["FIELD_TYPE"] = "spell",
 						}, -- [92]
 						{
-							["FIELD_ID"] = "TT Cast",
-							["FIELD_TYPE"] = "macro",
+							["FIELD_ID"] = 25908,
+							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [93]
 						{
 							["FIELD_ID"] = 8166,
@@ -2272,31 +2272,23 @@ GQ_DATA = {
 					},
 				},
 			},
-			["FIELD_CURRENTSET"] = "Resto",
+			["FIELD_CURRENTSET"] = "Enhancement",
 			["FIELD_INVENTORY"] = {
-				["item:30644::::::::70:::::::::"] = {
-					["ITEM_BAG_ID"] = 1,
-					["ITEM_SLOT_ID"] = 6,
-				},
-				["item:32241:3001:24057:25901:::::70:::::::::"] = {
-					["ITEM_BAG_ID"] = 1,
-					["ITEM_SLOT_ID"] = 6,
-				},
-				["item:32584:2617:::::::70:::::::::"] = {
-					["ITEM_BAG_ID"] = 1,
-					["ITEM_SLOT_ID"] = 11,
-				},
-				["item:32757::::::::70:::::::::"] = {
+				["item:33507::::::::70:::::::::"] = {
 					["ITEM_BAG_ID"] = 0,
+					["ITEM_SLOT_ID"] = 18,
+				},
+				["item:30168:2980:24029:24029:::::70:::::::::"] = {
+					["ITEM_BAG_ID"] = 1,
 					["ITEM_SLOT_ID"] = 12,
 				},
 				["item:32609:911:24060:24057:::::70:::::::::"] = {
 					["ITEM_BAG_ID"] = 1,
-					["ITEM_SLOT_ID"] = 9,
+					["ITEM_SLOT_ID"] = 15,
 				},
-				["item:28765::::::::70:::::::::"] = {
+				["item:32082::::::::70:::::::::"] = {
 					["ITEM_BAG_ID"] = 1,
-					["ITEM_SLOT_ID"] = 16,
+					["ITEM_SLOT_ID"] = 9,
 				},
 				["item:29274::::::::70:::::::::"] = {
 					["ITEM_BAG_ID"] = 4,
@@ -2304,31 +2296,19 @@ GQ_DATA = {
 				},
 				["item:32258::::::::70:::::::::"] = {
 					["ITEM_BAG_ID"] = 1,
-					["ITEM_SLOT_ID"] = 6,
+					["ITEM_SLOT_ID"] = 3,
 				},
 				["item:32420::::::::70:::::::::"] = {
 					["ITEM_BAG_ID"] = 2,
 					["ITEM_SLOT_ID"] = 5,
 				},
-				["item:30014::::::::70:::::::::"] = {
-					["ITEM_BAG_ID"] = 1,
-					["ITEM_SLOT_ID"] = 13,
-				},
-				["item:28771:2343:::::::70:::::::::"] = {
-					["ITEM_BAG_ID"] = 2,
-					["ITEM_SLOT_ID"] = 12,
-				},
-				["item:30030::23094:23094:::::70:::::::::"] = {
-					["ITEM_BAG_ID"] = 1,
-					["ITEM_SLOT_ID"] = 9,
-				},
-				["item:28674::::::::70:::::::::"] = {
-					["ITEM_BAG_ID"] = 2,
+				["item:30030::24029:24029:::::70:::::::::"] = {
+					["ITEM_BAG_ID"] = 3,
 					["ITEM_SLOT_ID"] = 2,
 				},
-				["item:32649::::::::70:::::::::"] = {
-					["ITEM_BAG_ID"] = 0,
-					["ITEM_SLOT_ID"] = 12,
+				["item:29309::::::::70:::::::::"] = {
+					["ITEM_BAG_ID"] = 2,
+					["ITEM_SLOT_ID"] = 4,
 				},
 				["item:32241::24057:25901:::::70:::::::::"] = {
 					["ITEM_BAG_ID"] = 4,
@@ -2338,93 +2318,173 @@ GQ_DATA = {
 					["ITEM_BAG_ID"] = 1,
 					["ITEM_SLOT_ID"] = 10,
 				},
-				["item:29028:3009:25901:24057:::::70:::::::::"] = {
-					["ITEM_BAG_ID"] = 1,
-					["ITEM_SLOT_ID"] = 6,
-				},
-				["item:30168:2980:23094:23094:::::70:::::::::"] = {
-					["ITEM_BAG_ID"] = 1,
-					["ITEM_SLOT_ID"] = 5,
-				},
-				["item:31012::25901:24060:::::70:::::::::"] = {
+				["item:32275:2322:::::::70:::::::::"] = {
 					["ITEM_BAG_ID"] = 1,
 					["ITEM_SLOT_ID"] = 7,
 				},
-				["item:32395::::::::70:::::::::"] = {
-					["ITEM_BAG_ID"] = 1,
-					["ITEM_SLOT_ID"] = 11,
-				},
-				["item:32275:2322:::::::70:::::::::"] = {
-					["ITEM_BAG_ID"] = 1,
-					["ITEM_SLOT_ID"] = 15,
-				},
-				["item:29283::::::::70:::::::::"] = {
-					["ITEM_BAG_ID"] = 2,
-					["ITEM_SLOT_ID"] = 4,
-				},
-				["item:28746::23095:23095:::::70:::::::::"] = {
+				["item:28828::23098:23098:::::70:::::::::"] = {
 					["ITEM_BAG_ID"] = 1,
 					["ITEM_SLOT_ID"] = 9,
 				},
-				["item:30030::24029:24029:::::70:::::::::"] = {
-					["ITEM_BAG_ID"] = 3,
-					["ITEM_SLOT_ID"] = 2,
-				},
-				["item:30168:2980:24029:24029:::::70:::::::::"] = {
-					["ITEM_BAG_ID"] = 1,
-					["ITEM_SLOT_ID"] = 12,
-				},
-				["item:31281::::::::70:::::::::"] = {
-					["ITEM_BAG_ID"] = 1,
-					["ITEM_SLOT_ID"] = 14,
-				},
-				["item:31007::23109::::::70:::::::::"] = {
-					["ITEM_BAG_ID"] = 1,
-					["ITEM_SLOT_ID"] = 6,
-				},
-				["item:28190::::::::70:::::::::"] = {
-					["ITEM_BAG_ID"] = 1,
-					["ITEM_SLOT_ID"] = 18,
-				},
-				["item:32609:911:24060:23109:::::70:::::::::"] = {
-					["ITEM_BAG_ID"] = 1,
-					["ITEM_SLOT_ID"] = 7,
-				},
-				["item:35393:3009:::::::70:::::::::"] = {
-					["ITEM_BAG_ID"] = 1,
-					["ITEM_SLOT_ID"] = 13,
-				},
-				["item:29028:3001:25901:24057:::::70:::::::::"] = {
-					["ITEM_BAG_ID"] = 1,
-					["ITEM_SLOT_ID"] = 13,
+				["item:28523::::::::70:::::::::"] = {
+					["ITEM_BAG_ID"] = 0,
+					["ITEM_SLOT_ID"] = 20,
 				},
 				["item:31007:2322:24057::::::70:::::::::"] = {
-					["ITEM_BAG_ID"] = 4,
-					["ITEM_SLOT_ID"] = 17,
+					["ITEM_BAG_ID"] = 1,
+					["ITEM_SLOT_ID"] = 8,
 				},
 				["item:30047:2617:24060::::::70:::::::::"] = {
 					["ITEM_BAG_ID"] = 1,
 					["ITEM_SLOT_ID"] = 11,
 				},
-				["item:28764::::::::70:::::::::"] = {
-					["ITEM_BAG_ID"] = 1,
-					["ITEM_SLOT_ID"] = 17,
-				},
 				["item:30085::::::::70:::::::::"] = {
 					["ITEM_BAG_ID"] = 1,
 					["ITEM_SLOT_ID"] = 5,
 				},
-				["item:28657::23095::::::70:::::::::"] = {
-					["ITEM_BAG_ID"] = 2,
+				["item:31022:2980:24057:24060:::::70:::::::::"] = {
+					["ITEM_BAG_ID"] = 1,
+					["ITEM_SLOT_ID"] = 4,
+				},
+				["item:30047::24060::::::70:::::::::"] = {
+					["ITEM_BAG_ID"] = 1,
+					["ITEM_SLOT_ID"] = 11,
+				},
+				["item:30887:3150:::::::70:::::::::"] = {
+					["ITEM_BAG_ID"] = 1,
+					["ITEM_SLOT_ID"] = 10,
+				},
+				["item:30644::::::::70:::::::::"] = {
+					["ITEM_BAG_ID"] = 1,
 					["ITEM_SLOT_ID"] = 6,
+				},
+				["item:32241:3001:24057:25901:::::70:::::::::"] = {
+					["ITEM_BAG_ID"] = 1,
+					["ITEM_SLOT_ID"] = 6,
+				},
+				["item:32757::::::::70:::::::::"] = {
+					["ITEM_BAG_ID"] = 0,
+					["ITEM_SLOT_ID"] = 11,
+				},
+				["item:28765::::::::70:::::::::"] = {
+					["ITEM_BAG_ID"] = 1,
+					["ITEM_SLOT_ID"] = 18,
+				},
+				["item:32350::::::::70:::::::::"] = {
+					["ITEM_BAG_ID"] = 2,
+					["ITEM_SLOT_ID"] = 7,
+				},
+				["item:30014::::::::70:::::::::"] = {
+					["ITEM_BAG_ID"] = 1,
+					["ITEM_SLOT_ID"] = 10,
+				},
+				["item:30917::::::::70:::::::::"] = {
+					["ITEM_BAG_ID"] = 1,
+					["ITEM_SLOT_ID"] = 9,
+				},
+				["item:33479::::::::70:::::::::"] = {
+					["ITEM_BAG_ID"] = 1,
+					["ITEM_SLOT_ID"] = 13,
+				},
+				["item:28674::::::::70:::::::::"] = {
+					["ITEM_BAG_ID"] = 1,
+					["ITEM_SLOT_ID"] = 19,
+				},
+				["item:32649::::::::70:::::::::"] = {
+					["ITEM_BAG_ID"] = 0,
+					["ITEM_SLOT_ID"] = 12,
+				},
+				["item:31019:2746:24057::::::70:::::::::"] = {
+					["ITEM_BAG_ID"] = 1,
+					["ITEM_SLOT_ID"] = 5,
+				},
+				["item:29028:3009:25901:24057:::::70:::::::::"] = {
+					["ITEM_BAG_ID"] = 1,
+					["ITEM_SLOT_ID"] = 6,
+				},
+				["item:33479::23095:23095:23095::::70:::::::::"] = {
+					["ITEM_BAG_ID"] = 1,
+					["ITEM_SLOT_ID"] = 11,
+				},
+				["item:32584:2617:::::::70:::::::::"] = {
+					["ITEM_BAG_ID"] = 1,
+					["ITEM_SLOT_ID"] = 13,
+				},
+				["item:33495::23095::::::70:::::::::"] = {
+					["ITEM_BAG_ID"] = 2,
+					["ITEM_SLOT_ID"] = 3,
+				},
+				["item:32241:3009:24057:25901:::::70:::::::::"] = {
+					["ITEM_BAG_ID"] = 1,
+					["ITEM_SLOT_ID"] = 6,
+				},
+				["item:29283::::::::70:::::::::"] = {
+					["ITEM_BAG_ID"] = 2,
+					["ITEM_SLOT_ID"] = 1,
+				},
+				["item:28746::23095:23095:::::70:::::::::"] = {
+					["ITEM_BAG_ID"] = 1,
+					["ITEM_SLOT_ID"] = 5,
+				},
+				["item:30091::23095::::::70:::::::::"] = {
+					["ITEM_BAG_ID"] = 1,
+					["ITEM_SLOT_ID"] = 1,
+				},
+				["item:31012::25901:24060:::::70:::::::::"] = {
+					["ITEM_BAG_ID"] = 1,
+					["ITEM_SLOT_ID"] = 7,
 				},
 				["item:29920::::::::70:::::::::"] = {
 					["ITEM_BAG_ID"] = 2,
-					["ITEM_SLOT_ID"] = 4,
+					["ITEM_SLOT_ID"] = 5,
+				},
+				["item:31012:3001:25901:24060:::::70:::::::::"] = {
+					["ITEM_BAG_ID"] = 1,
+					["ITEM_SLOT_ID"] = 6,
 				},
 				["item:28609::::::::70:::::::::"] = {
-					["ITEM_BAG_ID"] = 0,
+					["ITEM_BAG_ID"] = 2,
+					["ITEM_SLOT_ID"] = 2,
+				},
+				["item:32609:911:24060:23109:::::70:::::::::"] = {
+					["ITEM_BAG_ID"] = 1,
+					["ITEM_SLOT_ID"] = 7,
+				},
+				["item:28771:2343:::::::70:::::::::"] = {
+					["ITEM_BAG_ID"] = 2,
 					["ITEM_SLOT_ID"] = 12,
+				},
+				["item:28730::::::::70:::::::::"] = {
+					["ITEM_BAG_ID"] = 2,
+					["ITEM_SLOT_ID"] = 2,
+				},
+				["item:35393:3009:::::::70:::::::::"] = {
+					["ITEM_BAG_ID"] = 1,
+					["ITEM_SLOT_ID"] = 13,
+				},
+				["item:28657::23095::::::70:::::::::"] = {
+					["ITEM_BAG_ID"] = 2,
+					["ITEM_SLOT_ID"] = 5,
+				},
+				["item:30185::23095:23111:23098::::70:::::::::"] = {
+					["ITEM_BAG_ID"] = 1,
+					["ITEM_SLOT_ID"] = 9,
+				},
+				["item:33328::::::::70:::::::::"] = {
+					["ITEM_BAG_ID"] = 1,
+					["ITEM_SLOT_ID"] = 6,
+				},
+				["item:30030::23094:23094:::::70:::::::::"] = {
+					["ITEM_BAG_ID"] = 1,
+					["ITEM_SLOT_ID"] = 9,
+				},
+				["item:32347::::::::70:::::::::"] = {
+					["ITEM_BAG_ID"] = 1,
+					["ITEM_SLOT_ID"] = 12,
+				},
+				["item:32491::::::::70:::::::::"] = {
+					["ITEM_BAG_ID"] = 1,
+					["ITEM_SLOT_ID"] = 17,
 				},
 				["item:30908:2343:::::::70:::::::::"] = {
 					["ITEM_BAG_ID"] = 2,
@@ -2432,47 +2492,47 @@ GQ_DATA = {
 				},
 				["item:32420:1441:::::::70:::::::::"] = {
 					["ITEM_BAG_ID"] = 1,
-					["ITEM_SLOT_ID"] = 16,
+					["ITEM_SLOT_ID"] = 15,
 				},
-				["item:29309::::::::70:::::::::"] = {
-					["ITEM_BAG_ID"] = 2,
-					["ITEM_SLOT_ID"] = 5,
-				},
-				["item:28730::::::::70:::::::::"] = {
-					["ITEM_BAG_ID"] = 2,
-					["ITEM_SLOT_ID"] = 5,
-				},
-				["item:28828::23098:23098:::::70:::::::::"] = {
+				["item:31007::23109::::::70:::::::::"] = {
 					["ITEM_BAG_ID"] = 1,
-					["ITEM_SLOT_ID"] = 9,
+					["ITEM_SLOT_ID"] = 6,
 				},
-				["item:32082::::::::70:::::::::"] = {
+				["item:30919::::::::70:::::::::"] = {
 					["ITEM_BAG_ID"] = 1,
-					["ITEM_SLOT_ID"] = 9,
+					["ITEM_SLOT_ID"] = 2,
 				},
-				["item:30091::23095::::::70:::::::::"] = {
+				["item:31281::::::::70:::::::::"] = {
 					["ITEM_BAG_ID"] = 1,
-					["ITEM_SLOT_ID"] = 5,
+					["ITEM_SLOT_ID"] = 13,
 				},
-				["item:30185::23095:23111:23098::::70:::::::::"] = {
+				["item:29376::::::::70:::::::::"] = {
+					["ITEM_BAG_ID"] = 1,
+					["ITEM_SLOT_ID"] = 19,
+				},
+				["item:28764::::::::70:::::::::"] = {
+					["ITEM_BAG_ID"] = 1,
+					["ITEM_SLOT_ID"] = 14,
+				},
+				["item:29028:3001:25901:24057:::::70:::::::::"] = {
+					["ITEM_BAG_ID"] = 1,
+					["ITEM_SLOT_ID"] = 13,
+				},
+				["item:28190::::::::70:::::::::"] = {
+					["ITEM_BAG_ID"] = 1,
+					["ITEM_SLOT_ID"] = 20,
+				},
+				["item:32395::::::::70:::::::::"] = {
 					["ITEM_BAG_ID"] = 1,
 					["ITEM_SLOT_ID"] = 10,
-				},
-				["item:32350::::::::70:::::::::"] = {
-					["ITEM_BAG_ID"] = 2,
-					["ITEM_SLOT_ID"] = 7,
-				},
-				["item:30047::24060::::::70:::::::::"] = {
-					["ITEM_BAG_ID"] = 1,
-					["ITEM_SLOT_ID"] = 11,
 				},
 				["item:30663::::::::70:::::::::"] = {
 					["ITEM_BAG_ID"] = 1,
-					["ITEM_SLOT_ID"] = 18,
+					["ITEM_SLOT_ID"] = 16,
 				},
-				["item:30887:3150:::::::70:::::::::"] = {
+				["item:30168:2980:23094:23094:::::70:::::::::"] = {
 					["ITEM_BAG_ID"] = 1,
-					["ITEM_SLOT_ID"] = 10,
+					["ITEM_SLOT_ID"] = 5,
 				},
 			},
 			["FIELD_EVENTS"] = {
@@ -4483,20 +4543,20 @@ GQ_DATA = {
 						"VALUE_NONE", -- [2]
 						"VALUE_NONE", -- [3]
 						"VALUE_NONE", -- [4]
-						"item:4916::::::::14:::::::::", -- [5]
-						"item:14093::::::::14:::::::::", -- [6]
-						"item:1431::::::::14:::::::::", -- [7]
-						"item:3289::::::::14:::::::::", -- [8]
-						"item:6062::::::::14:::::::::", -- [9]
-						"item:1430::::::::14:::::::::", -- [10]
-						"item:21931::::::::14:::::::::", -- [11]
+						"item:4916::::::::15:::::::::", -- [5]
+						"item:14093::::::::15:::::::::", -- [6]
+						"item:1431::::::::15:::::::::", -- [7]
+						"item:14129::::::1015:528268800:15:::::::::", -- [8]
+						"item:14366::::::::15:::::::::", -- [9]
+						"item:1430::::::::15:::::::::", -- [10]
+						"item:21931::::::::15:::::::::", -- [11]
 						"VALUE_NONE", -- [12]
 						"VALUE_NONE", -- [13]
 						"VALUE_NONE", -- [14]
-						"item:4944::::::::14:::::::::", -- [15]
-						"item:4938::::::::14:::::::::", -- [16]
+						"item:4944::::::::15:::::::::", -- [15]
+						"item:4938::::::::15:::::::::", -- [16]
 						"VALUE_NONE", -- [17]
-						"item:5071::::::::14:::::::::", -- [18]
+						"item:5243::::::::15:::::::::", -- [18]
 						"VALUE_NONE", -- [19]
 						[0] = 0,
 					},
@@ -4718,20 +4778,20 @@ GQ_DATA = {
 						"VALUE_NONE", -- [2]
 						"VALUE_NONE", -- [3]
 						"VALUE_NONE", -- [4]
-						"item:4916::::::::14:::::::::", -- [5]
-						"item:14093::::::::14:::::::::", -- [6]
-						"item:1431::::::::14:::::::::", -- [7]
-						"item:3289::::::::14:::::::::", -- [8]
-						"item:6062::::::::14:::::::::", -- [9]
-						"item:1430::::::::14:::::::::", -- [10]
-						"item:21931::::::::14:::::::::", -- [11]
+						"item:4916::::::::15:::::::::", -- [5]
+						"item:14093::::::::15:::::::::", -- [6]
+						"item:1431::::::::15:::::::::", -- [7]
+						"item:14129::::::1015:528268800:15:::::::::", -- [8]
+						"item:14366::::::::15:::::::::", -- [9]
+						"item:1430::::::::15:::::::::", -- [10]
+						"item:21931::::::::15:::::::::", -- [11]
 						"VALUE_NONE", -- [12]
 						"VALUE_NONE", -- [13]
 						"VALUE_NONE", -- [14]
-						"item:4944::::::::14:::::::::", -- [15]
-						"item:4938::::::::14:::::::::", -- [16]
+						"item:4944::::::::15:::::::::", -- [15]
+						"item:4938::::::::15:::::::::", -- [16]
 						"VALUE_NONE", -- [17]
-						"item:5071::::::::14:::::::::", -- [18]
+						"item:5243::::::::15:::::::::", -- [18]
 						"VALUE_NONE", -- [19]
 						[0] = 0,
 					},
@@ -5166,17 +5226,17 @@ GQ_DATA = {
 			["FIELD_BANK"] = {
 			},
 			["FIELD_INVENTORY"] = {
-				["item:25075::::::-45:1928134679:68:::::::::"] = {
-					["ITEM_BAG_ID"] = 1,
-					["ITEM_SLOT_ID"] = 6,
+				["item:6633::::::::68::::::::"] = {
+					["ITEM_BAG_ID"] = 0,
+					["ITEM_SLOT_ID"] = 17,
 				},
 				["item:6641::::::::68::::::::"] = {
 					["ITEM_BAG_ID"] = 0,
 					["ITEM_SLOT_ID"] = 17,
 				},
-				["item:6633::::::::68::::::::"] = {
-					["ITEM_BAG_ID"] = 0,
-					["ITEM_SLOT_ID"] = 17,
+				["item:24094::::::::68:::::::::"] = {
+					["ITEM_BAG_ID"] = 1,
+					["ITEM_SLOT_ID"] = 4,
 				},
 				["item:15494::::::585:696257792:68::::::::"] = {
 					["ITEM_BAG_ID"] = 2,
@@ -5186,9 +5246,9 @@ GQ_DATA = {
 					["ITEM_BAG_ID"] = 1,
 					["ITEM_SLOT_ID"] = 4,
 				},
-				["item:24094::::::::68:::::::::"] = {
+				["item:25075::::::-45:1928134679:68:::::::::"] = {
 					["ITEM_BAG_ID"] = 1,
-					["ITEM_SLOT_ID"] = 4,
+					["ITEM_SLOT_ID"] = 6,
 				},
 			},
 			["FIELD_EVENTS"] = {
@@ -9192,20 +9252,20 @@ GQ_DATA = {
 	},
 }
 GQ_OPTIONS = {
-	["OPT_MOUNTING_CRUSADER_AURA"] = true,
+	["OPT_SHOWITEMTOOLTIP"] = true,
 	["OPT_SLOTSTATES"] = false,
 	["OPT_SHOWCURRENTSET"] = false,
-	["OPT_SCRIPTEDITORENABLED"] = false,
+	["OPT_ACTIONBARS"] = true,
 	["OPT_SWITCHDELAY"] = 600,
 	["OPT_AUTOUPRANKSPELLS_ALLRANKS"] = false,
-	["OPT_SHOWITEMTOOLTIP"] = true,
+	["OPT_MOUNTING_CRUSADER_AURA"] = true,
+	["OPT_SCRIPTEDITORENABLED"] = false,
+	["OPT_SHOWBROKERTOOLTIP"] = true,
 	["OPT_SHOWSLOTBACKDROPS"] = true,
 	["OPT_IGNOREMANUALITEMS"] = false,
 	["OPT_NOTIFYQUEUES"] = true,
-	["OPT_SHOWBROKERTOOLTIP"] = true,
-	["OPT_AUTOUPRANKSPELLS"] = true,
 	["OPT_SAVECHANGES_ACTIONSLOTS"] = "OPTVALUE_SAVECHANGES_ALWAYS",
-	["OPT_ACTIONBARS"] = true,
+	["OPT_AUTOUPRANKSPELLS"] = true,
 	["OPT_HIGHLIGHTCHANGES"] = true,
 	["OPT_SAVECHANGES"] = "OPTVALUE_SAVECHANGES_ALWAYS",
 	["OPT_VERSION"] = 30,

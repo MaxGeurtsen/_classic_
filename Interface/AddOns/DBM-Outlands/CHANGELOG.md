@@ -1,35 +1,20 @@
 # <DBM> Outlands
 
-## [2.5.29-30-g560c52e](https://github.com/DeadlyBossMods/DBM-TBC-Classic/tree/560c52ef7d784817b0868ba9a87349ace09c7747) (2022-03-15)
-[Full Changelog](https://github.com/DeadlyBossMods/DBM-TBC-Classic/compare/2.5.29...560c52ef7d784817b0868ba9a87349ace09c7747) [Previous Releases](https://github.com/DeadlyBossMods/DBM-TBC-Classic/releases)
+## [2.5.30-15-g825359b](https://github.com/DeadlyBossMods/DBM-TBC-Classic/tree/825359be69ed12c91b4448700a233a7f29ed243e) (2022-03-25)
+[Full Changelog](https://github.com/DeadlyBossMods/DBM-TBC-Classic/compare/2.5.30...825359be69ed12c91b4448700a233a7f29ed243e) [Previous Releases](https://github.com/DeadlyBossMods/DBM-TBC-Classic/releases)
 
-- Update commonlocal.cn.lua (#88)  
-- Update localization.tw.lua (#87)  
-- Update commonlocal.tw.lua (#86)  
-- Update alpha revision  
+- Fix https://github.com/DeadlyBossMods/DBM-TBC-Classic/issues/111  
+- This is hacky, but it won't throw errors setting a custom name.  
+- This should revert it to last stable point  
+- fuck it, i'm going to bed  
+- make luachec happy  
+- Fix bad copy paste  
+- not sure why this check is here, so remove it  
+- Update koKR (BCC) (DeadlyBossMods#107) (#110)  
+- Fix up Luacheck  
+- Fix logic  
+- no idea what spell is, since mods were lazy typed and poorly documented back then. it doesn't exist in classic tbc though so just remove it for now  
+- bump alpha  
 - prep new tag for retail  
-- Find and report duplicate entries (usually typos in objects that cause problems)  
-- Update commonlocal.ru.lua (#83) Add one phrase. Small cleaning.  
-- Update koKR (#84)  
-- Add count variant of tank combo  
-- swear i copy/pasted that  
-- set new alpha revision  
-- prep fresh retail tag  
-- Closing out another feature request. It's now possible to set pull timer countdown voice seperately from regular countdown options.  
-- bump alpha  
-- ready new release now that LFR updated, changed bosses updated, and last 3 updated. :)  
-- Update localization.fr.lua (#79)  
-- support up to 8 boss unit ids, apparently 6-8 were added in 9.2?  
-- Update localization.cn.lua (#82)  
-- bump alpha, again  
-- prep new tag, no revision update  
-- bumped alpha version (aka tomorrows release with fridays hotfixes probably :D)  
-- prep new retail tag  
-- bump alpha  
-- Bump version and ready new retail tag  
-- prep next cycle  
-- Fix missing comma on shadowlands outdoor addition  
-- Fix up sounds for BCC/Classic based on accurate SoundKitID's  
-- Update localization.ru.lua (#80) So correct.  
-- Kill off extended raid icons feature, blizzard broke it in recent builds (predicted they would, but hoped they'd actually finish feature instead, was wishful thinking I suppose)  
+- Fixed a bug with timer text on kagath  
 - bump alphas  

@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0533,
+	["LastVersion"] = 2.0534,
 	["ItemLevels"] = {
 		[7] = {
 			["ID"] = 1431,
@@ -13,9 +13,9 @@ PawnOptions = {
 			["Link"] = "|cffffffff|Hitem:4944::::::::11:::::::::|h[Handsewn Cloak]|h|r",
 		},
 		[8] = {
-			["ID"] = 3289,
-			["Level"] = 11,
-			["Link"] = "|cffffffff|Hitem:3289::::::::10:::::::::|h[Ancestral Boots]|h|r",
+			["ID"] = 14129,
+			["Level"] = 20,
+			["Link"] = "|cff1eff00|Hitem:14129::::::1015:528268800:15:::::::::|h[Ritual Sandals of the Whale]|h|r",
 		},
 		[16] = {
 			["ID"] = 4938,

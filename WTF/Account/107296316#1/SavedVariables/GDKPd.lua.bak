@@ -12,15 +12,11 @@ GDKPd_DB = {
 	},
 	["profiles"] = {
 		["Partijleider - Gehennas"] = {
-			["shareSecondAmount"] = 0.01,
-			["minQuality"] = 4,
-			["movable"] = false,
 			["hideChatMessages"] = {
 				["auctionAnnounce"] = true,
 				["auctionCancel"] = true,
 			},
-			["startBid"] = 300,
-			["increment"] = 50,
+			["movable"] = false,
 			["point"] = {
 				["y"] = -69.38462829589844,
 				["relative"] = "RIGHT",
@@ -28,6 +24,10 @@ GDKPd_DB = {
 				["x"] = -235.0258178710938,
 			},
 			["shareThirdAmount"] = 0.01,
+			["startBid"] = 300,
+			["increment"] = 50,
+			["minQuality"] = 4,
+			["shareSecondAmount"] = 0.01,
 		},
 		["Partijlijder - Gehennas"] = {
 			["movable"] = false,

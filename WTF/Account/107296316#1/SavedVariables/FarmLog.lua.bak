@@ -40,6 +40,12 @@ FLogGlobalVars = {
 		["Razorgore"] = {
 		},
 		["Gehennas"] = {
+			{
+				["enter"] = 1648245373,
+				["player"] = "Partijleider",
+				["name"] = "Karazhan",
+				["leave"] = 1648249898,
+			}, -- [1]
 		},
 	},
 	["blackLotusTimeSeconds"] = 3600,

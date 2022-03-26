@@ -208,3 +208,5 @@ L["(Increase if you experience issues with\n automated event switches)"]        
 
 L["on stance change"]                                                                                   = "Haltungsswechsel";
 L["< choose stance >"]                                                                                  = "< Haltung wählen >";
+
+L["AddOn reset complete."]                                                                              = "AddOn-Reset abgeschlossen.";

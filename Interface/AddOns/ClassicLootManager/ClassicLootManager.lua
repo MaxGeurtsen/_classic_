@@ -14,7 +14,7 @@ CLM.GUI = {}
 CLM.OPTIONS = {}
 CLM.ALERTS = {}
 
-CLM.AUTOVERSION = "v1.5.3"
+CLM.AUTOVERSION = "v1.6.0"
 
 CLM.LOG = LibStub("LibLogger"):New()
 
@@ -249,18 +249,5 @@ function CORE:GUILD_ROSTER_UPDATE(...)
     end
 end
 
--- Globals: Keybinds
+CLM.PAW = ((GetServerTime() >= 1648512000) and (GetServerTime() <= 1649116800)) and not CLM_DB.DisableFun
 
-BINDING_HEADER_CLM = "Classic Loot Manager"
-BINDING_NAME_CLM_UNDO = CLM.L["Undo action"]
-BINDING_NAME_CLM_REDO = CLM.L["Redo action"]
-
-function CLM_Undo()
-    -- LOG:Message("Executing Undo. Skiping confirmation prompt. Please wait.")
-    -- MODULES.LedgerManager:CancelLastEntry()
-    LOG:Warning("Undo not implemented.")
-end
-
-function CLM_Redo()
-    LOG:Warning("Redo not implemented.")
-end

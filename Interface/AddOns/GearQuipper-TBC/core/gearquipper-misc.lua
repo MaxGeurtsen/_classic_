@@ -121,7 +121,7 @@ function c:GetEvents()
             [c.EVENT_SHAPESHIFT_IN] = c:GetText("on shapeshift (enter)"),
             [c.EVENT_SHAPESHIFT_OUT] = c:GetText("on shapeshift (leave)"),
             [c.EVENT_AURA_CHANGED] = c:GetText("on aura change"),
-            [c.EVENT_STANCE_CHANGED] = c:GetText("on stance change"),
+            [c.EVENT_STANCE_CHANGED] = c:GetText("on stance change")
         };
     end
     return events;
@@ -373,6 +373,17 @@ local slotIdToEquipLocs = {
     [INVSLOT_AMMO] = {"INVTYPE_AMMO"}
 }
 
+local allInventoryTypes = {INVTYPE_HEAD, INVTYPE_NECK, INVTYPE_NECK, INVTYPE_SHOULDER, INVTYPE_BODY, INVTYPE_CHEST,
+                           INVTYPE_ROBE, INVTYPE_WAIST, INVTYPE_LEGS, INVTYPE_FEET, INVTYPE_WRIST, INVTYPE_HAND,
+                           INVTYPE_FINGER, INVTYPE_TRINKET, INVTYPE_CLOAK, INVTYPE_WEAPON, INVTYPE_2HWEAPON,
+                           INVTYPE_WEAPONMAINHAND, INVTYPE_WEAPONOFFHAND, INVTYPE_SHIELD, INVTYPE_QUIVER,
+                           INVTYPE_HOLDABLE, INVTYPE_RANGED, INVTYPE_THROWN, INVTYPE_RANGEDRIGHT, INVTYPE_RELIC,
+                           INVTYPE_TABARD, INVTYPE_AMMO};
+
+function c:GetAllInventoryTypes()
+    return allInventoryTypes;
+end
+
 function c:GetItemEquipLoc(value)
     if c:GetSlotInfo(value) then
         -- slotId
@@ -508,6 +519,39 @@ function c:GetFirstChangedItem(lastGearAndBagsCache)
                 end
             end
         end
+    end
+end
+
+function c:GetItemSlots(itemString)
+    if itemString then
+        local result = {};
+        local itemType = c:GetItemEquipLoc(itemString);
+        for slotId, itemTypes in pairs(slotIdToEquipLocs) do
+            if tContains(itemTypes, itemType) then
+                tinsert(result, slotId);
+            end
+        end
+        return result;
+    end
+end
+
+function c:CompareItemStats(itemLink1, itemLink2)
+    if itemLink1 and itemLink2 then
+        local itemStats1, itemStats2 = GetItemStats(itemLink1), GetItemStats(itemLink2);
+        local result = {};
+        for name, value in pairs(itemStats1) do
+            if itemStats2[name] then
+                result[name] = itemStats2[name] - value;
+            else
+                result[name] = value;
+            end
+        end
+        for name, value in pairs(itemStats2) do
+            if not itemStats1[name] then
+                result[name] = value;
+            end
+        end
+        return result, itemStats1, itemStats2;
     end
 end
 
@@ -757,9 +801,11 @@ function c:GetSpellCache(refresh)
         for i = 0, 99999 do
             local name, rank, icon, castTime, minRange, maxRange, spellId = GetSpellInfo(i);
             if name and spellId then
+                local rank = GetSpellSubtext(spellId);
                 spellCache[spellId] = {
                     ["name"] = name,
-                    ["rank"] = GetSpellSubtext(spellId),
+                    ["rank"] = rank,
+                    ["numericRank"] = c:GetNumericSpellRank(rank),
                     ["icon"] = icon,
                     ["castTime"] = castTime,
                     ["minRange"] = minRange,
@@ -772,6 +818,7 @@ function c:GetSpellCache(refresh)
     return spellCache;
 end
 
+-- /dump gearquipper:SearchSpells(gearquipper:GetSpellName(8836))
 function c:SearchSpells(spellName, maxResults)
     if spellName and spellName ~= "" then
         maxResults = maxResults or 20;
@@ -786,6 +833,115 @@ function c:SearchSpells(spellName, maxResults)
             end
         end
         return result;
+    end
+end
+
+-- /dump gearquipper:GetSpellId("Verteidigungshaltung")
+function c:GetSpellId(spellName, spellRank)
+    for spellId, spellInfo in pairs(c:GetSpellCache()) do
+        if spellInfo["name"] == spellName and spellInfo["rank"] == spellRank then
+            return spellId;
+        end
+    end
+end
+
+function c:GetNumericSpellRank(spellRankText)
+    if spellRankText then
+        local noStart, noEnd = string.find(spellRankText, "%d+");
+        if noStart and noEnd then
+            local rank = string.sub(spellRankText, noStart, noEnd);
+            if c:IsNumeric(rank) then
+                return tonumber(rank);
+            end
+        end
+    end
+end
+
+-- /dump gearquipper:GetMaxRankSpellId(8835)
+function c:GetMaxRankSpellId(spellId)
+    local spellName = c:GetSpellName(spellId);
+    if spellName then
+        local maxRank = 0;
+        local maxRankSpellId;
+        for _, spell in ipairs(c:SearchSpells(spellName)) do
+            if spell["numericRank"] and (not maxRank or maxRank < spell["numericRank"]) then
+                maxRank = spell["numericRank"];
+                maxRankSpellId = spell["spellId"];
+            end
+        end
+        return maxRankSpellId;
+    end
+end
+
+-- /run GetSpellInfo(gearquipper:GetHigherRankSpellId(gearquipper:GetSpellId("Frostblitz", "Rang 2")))
+-- /run GetSpellInfo(gearquipper:GetHigherRankSpellId(gearquipper:GetSpellId("Frostblitz")))
+-- /run GetSpellInfo(gearquipper:GetLowerRankSpellId(gearquipper:GetSpellId("Frostblitz", "Rang 3")))
+-- /run PickupSpell(gearquipper:GetHigherRankSpellId(gearquipper:GetSpellId("Frostblitz", "Rang 9")))
+-- /run gearquipper:GetUprankableSpellIds(gearquipper:GetSpellId("Frostblitz", "Rang 9"))
+local function GetOffsetRankSpellId(sourceSpellId, offset)
+    local name, rank = GetSpellInfo(sourceSpellId);
+    if not rank or rank == "" then
+        rank = GetSpellSubtext(sourceSpellId);
+    end
+    c:DebugPrint(name, rank) -- TODO: this is nil, nil for some reason..?
+    if name and rank and rank ~= "" then
+        local noStart, noEnd = string.find(rank, "%d+");
+        local len = string.len(rank);
+
+        if rank and noStart then
+            local numericSpellRank = string.sub(rank, noStart, noEnd);
+            c:DebugPrint("Numeric spell rank:", numericSpellRank);
+
+            if numericSpellRank then
+                numericSpellRank = tonumber(numericSpellRank);
+                local targetNumericRank = numericSpellRank + offset;
+
+                if targetNumericRank > 0 then
+                    local textBefore, textAfter = "", "";
+                    if noStart > 0 then
+                        textBefore = string.sub(rank, 0, noStart - 1);
+                    end
+                    if noEnd < len - 1 then
+                        textAfter = string.sub(noEnd, len - 1);
+                    end
+                    c:DebugPrint("textBefore: ", textBefore);
+                    c:DebugPrint("targetNumericRank: ", targetNumericRank);
+                    c:DebugPrint("textAfter: ", textAfter);
+                    local targetRank = textBefore .. targetNumericRank .. textAfter;
+                    c:DebugPrint("TargetRank: ", targetRank);
+
+                    return c:GetSpellId(name, targetRank);
+                end
+            end
+        end
+    end
+end
+
+function c:GetHigherRankSpellId(sourceSpellId)
+    return GetOffsetRankSpellId(sourceSpellId, 1);
+end
+
+function c:GetLowerRankSpellId(sourceSpellId)
+    return GetOffsetRankSpellId(sourceSpellId, -1);
+end
+
+function c:GetUprankableSpellIds(targetSpellId)
+    local result, breaker = {}, 30;
+    local spellId = c:GetLowerRankSpellId(targetSpellId);
+    while spellId ~= nil do
+        tinsert(result, spellId);
+        spellId = c:GetLowerRankSpellId(spellId);
+        breaker = breaker - 1;
+        if breaker <= 0 then
+            return;
+        end
+    end
+    return result;
+end
+
+function c:DumpBuffs(unitId)
+    for i, spellId in pairs(c:GetCurrentBuffs(unitId)) do
+        print(i, c:GetSpellName(spellId), spellId);
     end
 end
 
@@ -838,98 +994,6 @@ end
 -- 		return result.spell, result.rank;
 -- 	end
 -- end
-
--- /dump gearquipper:GetSpellId("Verteidigungshaltung")
-
-function c:GetSpellId(spellName, spellRank)
-    for spellId, spellInfo in pairs(c:GetSpellCache()) do
-        if spellInfo["name"] == spellName and spellInfo["rank"] == spellRank then
-            return spellId;
-        end
-    end
-end
-
-function c:GetNumericSpellRank(spellRankText)
-    if spellRankText then
-        local noStart, noEnd = string.find(spellRankText, "%d+");
-        if noStart and noEnd then
-            local rank = string.sub(spellRankText, noStart, noEnd);
-            if c:IsNumeric(rank) then
-                return tonumber(rank);
-            end
-        end
-    end
-end
-
--- /run GetSpellInfo(gearquipper:GetHigherRankSpellId(gearquipper:GetSpellId("Frostblitz", "Rang 2")))
--- /run GetSpellInfo(gearquipper:GetHigherRankSpellId(gearquipper:GetSpellId("Frostblitz")))
--- /run GetSpellInfo(gearquipper:GetLowerRankSpellId(gearquipper:GetSpellId("Frostblitz", "Rang 3")))
--- /run PickupSpell(gearquipper:GetHigherRankSpellId(gearquipper:GetSpellId("Frostblitz", "Rang 9")))
--- /run gearquipper:GetUprankableSpellIds(gearquipper:GetSpellId("Frostblitz", "Rang 9"))
-
-local function GetOffsetRankSpellId(sourceSpellId, offset)
-    local name, rank = GetSpellInfo(sourceSpellId);
-    if not rank or rank == "" then
-        rank = GetSpellSubtext(sourceSpellId);
-    end
-    c:DebugPrint(name, rank) -- TODO: this is nil, nil for some reason..?
-    if name and rank and rank ~= "" then
-        local noStart, noEnd = string.find(rank, "%d+");
-        local len = string.len(rank);
-        local numericSpellRank = string.sub(rank, noStart, noEnd);
-        c:DebugPrint("Numeric spell rank:", numericSpellRank);
-
-        if numericSpellRank then
-            numericSpellRank = tonumber(numericSpellRank);
-            local targetNumericRank = numericSpellRank + offset;
-
-            if targetNumericRank > 0 then
-                local textBefore, textAfter = "", "";
-                if noStart > 0 then
-                    textBefore = string.sub(rank, 0, noStart - 1);
-                end
-                if noEnd < len - 1 then
-                    textAfter = string.sub(noEnd, len - 1);
-                end
-                c:DebugPrint("textBefore: ", textBefore);
-                c:DebugPrint("targetNumericRank: ", targetNumericRank);
-                c:DebugPrint("textAfter: ", textAfter);
-                local targetRank = textBefore .. targetNumericRank .. textAfter;
-                c:DebugPrint("TargetRank: ", targetRank);
-
-                return c:GetSpellId(name, targetRank);
-            end
-        end
-    end
-end
-
-function c:GetHigherRankSpellId(sourceSpellId)
-    return GetOffsetRankSpellId(sourceSpellId, 1);
-end
-
-function c:GetLowerRankSpellId(sourceSpellId)
-    return GetOffsetRankSpellId(sourceSpellId, -1);
-end
-
-function c:GetUprankableSpellIds(targetSpellId)
-    local result, breaker = {}, 30;
-    local spellId = c:GetLowerRankSpellId(targetSpellId);
-    while spellId ~= nil do
-        tinsert(result, spellId);
-        spellId = c:GetLowerRankSpellId(spellId);
-        breaker = breaker - 1;
-        if breaker <= 0 then
-            return;
-        end
-    end
-    return result;
-end
-
-function c:DumpBuffs(unitId)
-    for i, spellId in pairs(c:GetCurrentBuffs(unitId)) do
-        print(i, c:GetSpellName(spellId), spellId);
-    end
-end
 
 c.SPELLID_DRUID_FORM_NORMAL = c.VALUE_NONE;
 c.SPELLID_DRUID_FORM_AQUATIC = 1066;
@@ -1118,21 +1182,36 @@ function c:Println(str)
 end
 
 function c:StartsWith(str, substr, caseInsensitive)
-    if caseInsensitive then
-        str = string.upper(str);
-        substr = string.upper(substr);
-    end
+    if str then
+        if substr and caseInsensitive then
+            str = string.upper(str);
+            substr = string.upper(substr);
+        end
 
-    return string.sub(str, 1, string.len(substr)) == substr;
+        return string.sub(str, 1, string.len(substr)) == substr;
+    end
+end
+
+function c:EndsWith(str, substr, caseInsensitive)
+    if str then
+        if substr and caseInsensitive then
+            str = string.upper(str);
+            substr = string.upper(substr);
+        end
+
+        return substr == "" or str:sub(-#substr) == substr;
+    end
 end
 
 function c:StringContains(str, match, caseInsensitive)
-    if caseInsensitive then
-        str = string.upper(str);
-        match = string.upper(match);
-    end
+    if str then
+        if match and caseInsensitive then
+            str = string.upper(str);
+            match = string.upper(match);
+        end
 
-    return string.find(str, "%" .. match);
+        return string.find(str, "%" .. match);
+    end
 end
 
 function c:StringReplace(str, find, replace)
@@ -1312,9 +1391,33 @@ function c:IsNumeric(value)
     return value and value == tostring(tonumber(value));
 end
 
+function c:MathRound(x, decimals)
+    if decimals and decimals > 0 then
+        local mult = 10 ^ decimals
+        return math.floor(x * mult + 0.5) / mult
+    end
+    return math.floor(x + 0.5);
+end
+
 function c:IsAddonEnabled(addonName)
     local name, title, notes, enabled, loadable, reason, security = GetAddOnInfo(addonName);
     return title and enabled;
+end
+
+function c:RegisterDoubleClick(frame, func, button)
+    frame.clicks = 0;
+    frame:SetScript("OnMouseDown", function(self, btn)
+        if not button or button == btn then
+            self.clicks = self.clicks + 1;
+            C_Timer.After(0.35, function()
+                self.clicks = 0;
+            end);
+            if self.clicks == 2 then
+                func();
+                self.clicks = 0;
+            end
+        end
+    end);
 end
 
 function c:ExperimentalCanUseStuff()

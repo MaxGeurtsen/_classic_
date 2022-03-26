@@ -1,3 +1,28 @@
+
+# Classic Loot Manager v1.6.0
+## Features
+### Bindings
+You can now keybind various CLM related actions: bidding (base, max, current), auctioning when hovering over item (start, quick auction), awarding when hovering over item (base, free) and toggling (all GUIs).
+## Fixes
+### Various
+Various internal fixes related to upcoming patch.
+# Classic Loot Manager v1.5.5
+## Changes
+### Zul'Aman & Ahn'Qiraj
+Update in preparation for Zul'Aman and Ahn'Qiraj (SoM) releases.
+# Classic Loot Manager v1.5.4
+## Fixes & Changes
+### Bid posting
+Bids will now be posted only after a successful (timed) auction.
+### Alt-click auction
+Alt-click will now work only during CLM raid.
+### Loot posting
+Fixed posted loot numbering. Message should now appear only once per mob. You can now configure to post it only when being ML/RL.
+### Auto-trade
+Addon should now properly add all items to the trade window. Removed loot should not get traded.
+### Player recent information
+When hovering you will now see player DKP statistics in addition to recent point and loot changes.
+
 # Classic Loot Manager v1.5.3
 ## Retroactive Fix
 `v1.5.2` release was a retroactive fix, which means that **all existing standby auto-awards should be calculated properly**. Please double check your DKP standings and awards and fix them accordingly.

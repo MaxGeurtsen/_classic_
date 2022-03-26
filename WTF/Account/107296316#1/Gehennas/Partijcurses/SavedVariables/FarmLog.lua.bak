@@ -1,6 +1,7 @@
 
 FLogVars = {
 	["enabled"] = false,
+	["instanceName"] = "Wailing Caverns",
 	["ver"] = 1.2,
 	["todayKills"] = {
 	},
@@ -10,7 +11,7 @@ FLogVars = {
 	},
 	["lockMinimapButton"] = false,
 	["enableMinimapButton"] = true,
-	["inInstance"] = false,
+	["inInstance"] = true,
 	["itemTooltip"] = true,
 	["viewTotal"] = true,
 	["farms"] = {
@@ -27,7 +28,7 @@ FLogVars = {
 				["drops"] = {
 				},
 				["hks"] = 0,
-				["resets"] = 1,
+				["resets"] = 2,
 				["rep"] = {
 				},
 				["ranks"] = {

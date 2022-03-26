@@ -21,6 +21,7 @@ function c:Init()
     c:InitOptions();
     c:InitDatabase();
     c:InitBroker();
+    -- c:InitTooltips();
     c:InitUI(PaperDollFrame);
 
     -- updates

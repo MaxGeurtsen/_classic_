@@ -1,3 +1,3 @@
 WeakAurasCompanion: enabled
 WeakAurasArchive: enabled
-AAP-TBC-Classic: enabled
+AAP-TBC-Classic: disabled

@@ -93,7 +93,7 @@ function c:InitUI(paperDollFrame)
         for slotId, slotName in pairs(c:GetSlotInfo()) do
             local frame = _G["Character" .. slotName];
             if frame then
-                frame:HookScript("OnClick", function (self, button)
+                frame:HookScript("OnClick", function(self, button)
                     if button == "LeftButton" then
                         if frame.quickbar then
                             frame.quickbar:Hide();
@@ -516,6 +516,10 @@ end
 function c:ShowItemToolTip(itemString)
     local sets = c:GetItemSets(itemString);
     if sets and table.getn(sets) > 0 then
+        -- if _G["GameTooltipTextRight1"] then
+        --     GameTooltipTextRight1:SetText("hi");
+        -- end
+        
         GameTooltip:AddLine(" ");
         GameTooltip:AddDoubleLine(c:GetText("GearQuipper set(s):"), table.concat(sets, ", "));
     end
@@ -560,6 +564,34 @@ local function GetContainersForItems(itemStrings)
                                     tinsert(result, arkFrame);
                                 end
                             end
+                        end
+                    end
+                end
+            end
+        elseif c:IsAddonEnabled("TBag") and TInvItm and TInvItm[TInvFrame.playerid] then
+            -- I'm just guessing here...
+            for bagId = 1, 13 do
+                for slotId = 1, MAX_CONTAINER_ITEMS do
+                    local match = false;
+                    local tbagFrame = _G["TInvainerFrame" .. bagId .. "Item" .. slotId];
+                    if tbagFrame then
+                        if TInvItm[TInvFrame.playerid][bagId] and TInvItm[TInvFrame.playerid][bagId][slotId] and
+                            TInvItm[TInvFrame.playerid][bagId][slotId]["il"] then
+                            local itemString = TInvItm[TInvFrame.playerid][bagId][slotId]["il"]; -- .. ":" .. UnitLevel("player") .. ":::::::::"; -- messy workaround
+                            local itemName = TInvItm[TInvFrame.playerid][bagId][slotId]["in"];
+                            if not itemName then
+                                break;
+                            end
+                            for _, is in ipairs(itemStrings) do
+                                if not match and c:GetItemName(is) == itemName then
+                                    match = true;
+                                    break;
+                                end
+                            end
+                        end
+
+                        if not match then
+                            tinsert(result, tbagFrame);
                         end
                     end
                 end
@@ -670,6 +702,14 @@ function c:HighlightItemsInBags(itemStrings)
                 for slotId = 1, MAX_CONTAINER_ITEMS do
                     ResetFrameAlpha("ARKINV_Frame" .. invId .. "ScrollContainerBag" .. bagId .. "Item" .. slotId);
                 end
+            end
+        end
+    elseif c:IsAddonEnabled("TBag") then
+        -- reset alpha
+        -- I'm just guessing here...
+        for bagId = 1, 13 do
+            for slotId = 1, MAX_CONTAINER_ITEMS do
+                ResetFrameAlpha("TInvainerFrame" .. bagId .. "Item" .. slotId);
             end
         end
     else

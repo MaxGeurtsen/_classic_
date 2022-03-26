@@ -141,8 +141,18 @@ LunaUFDB = {
 				["party"] = {
 					["enabled"] = false,
 				},
-				["raid"] = {
-					["enabled"] = false,
+				["maintank"] = {
+					["y"] = -396.5836104252303,
+					["x"] = -1286.566665760674,
+					["point"] = "TOPRIGHT",
+					["relativePoint"] = "TOPRIGHT",
+					["width"] = 166,
+					["auras"] = {
+						["filterbuffs"] = 2,
+						["buffs"] = true,
+						["buffsize"] = 19,
+						["buffpos"] = "INFRAME",
+					},
 				},
 				["raidpet"] = {
 					["y"] = 387.9300043799194,
@@ -160,20 +170,10 @@ LunaUFDB = {
 						["type"] = "2D",
 					},
 				},
-				["maintank"] = {
-					["y"] = -396.5836104252303,
-					["x"] = -1286.566665760674,
-					["point"] = "TOPRIGHT",
-					["relativePoint"] = "TOPRIGHT",
-					["width"] = 166,
-					["auras"] = {
-						["filterbuffs"] = 2,
-						["buffs"] = true,
-						["buffsize"] = 19,
-						["buffpos"] = "INFRAME",
-					},
-				},
 				["arena"] = {
+					["enabled"] = false,
+				},
+				["raid"] = {
 					["enabled"] = false,
 				},
 				["player"] = {

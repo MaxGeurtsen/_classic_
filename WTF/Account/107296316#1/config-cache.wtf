@@ -1,5 +1,6 @@
 SET showTargetOfTarget "1"
 SET scriptErrors "1"
+SET displayFreeBagSlots "1"
 SET instantQuestText "1"
 SET flaggedTutorials "v11##M##$##&##'##8##6##(##)##*##+##,##/##;##.##E##:##A##7##5##1##K##J##?##@##9##I##-##=##Q##O##D##N##<##G##4##0##3##F##C##H##L##U##>##V##S##T"
 SET actionedAdventureJournalEntries "v"

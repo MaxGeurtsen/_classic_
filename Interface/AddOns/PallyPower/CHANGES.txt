@@ -1,11 +1,16 @@
-------------------------------------------------------------------------
-r392 | EsWoW | 2021-11-17 01:47:21 +0000 (Wed, 17 Nov 2021) | 2 lines
-Changed paths:
-   M /trunk/PallyPower.lua
-   M /trunk/PallyPower.xml
-   M /trunk/PallyPower_Vanilla.xml
+lightweight tag f722b506f178c6eeb3868d7f33d0a2fd293b5772 v1.4.3-classic
+Author:	gallantron <gallantron@281a127e-c2b9-49b4-b9ef-5bb33d143235>
+Date:	Tue Mar 22 17:57:39 2022 +0100
 
-* Fixed a bug introduced in 1.4.0 which prevented cycling of lesser blessings by the player with mousewheel
-* Fix prevention of the ability to assign sacrifice onto the same paladin as that which is buffing
-------------------------------------------------------------------------
+commit f722b506f178c6eeb3868d7f33d0a2fd293b5772
+Author: gallantron <gallantron@281a127e-c2b9-49b4-b9ef-5bb33d143235>
+Date:   Tue Mar 22 17:57:39 2022 +0100
+
+    BCC TOC: 20503 -> 20504 (ZA)
+
+commit 0e384ee7eb8f71ac3286ec68bf77b164f2a6e5d5
+Author: gallantron <gallantron@281a127e-c2b9-49b4-b9ef-5bb33d143235>
+Date:   Tue Mar 22 17:57:13 2022 +0100
+
+    vanilla TOC: 11401 -> 11403 (SoM: AQ40)
 

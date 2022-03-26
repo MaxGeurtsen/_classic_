@@ -28,18 +28,18 @@ VER 3 0000000000000015 "adw" "INV_MISC_QUESTIONMARK"
 END
 VER 3 000000000000000E "AutoHP" "INV_Misc_QuestionMark"
 #showtooltip
-/cast [mod:ctrl,target=player] item:2581; [combat] item:118; item:2287
+/cast [combat,mod:shift] item:22105; item:34062
 END
 VER 3 000000000000001B "BOSS" "135874"
 /gq switch boss
 END
 VER 3 000000000000000F "ConsumableHP" "INV_Misc_QuestionMark"
 #showtooltip
-/cast [mod:ctrl,target=player] item:2581; item:118
+/cast [mod:shift] item:22105; 
 END
 VER 3 0000000000000010 "ConsumableMP" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:2455
+/cast item:22832
 END
 VER 3 0000000000000001 "d" "132089"
 /2 Crafting [Small Silk Pack] 10 slots  with your mats! 12 silk cloth, 2 heavy leather, 3 fine thread
@@ -58,7 +58,7 @@ VER 3 000000000000000B "drink" "3867503"
 END
 VER 3 000000000000000C "DrinkOnlyMP" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:1179
+/cast item:34062
 END
 VER 3 0000000000000017 "DUNG" "132110"
 /1 LFM Hyjal REP FARM NEED ALL! (Hammer of Judgement and every other HoD RESS)
@@ -67,7 +67,7 @@ VER 3 0000000000000017 "DUNG" "132110"
 END
 VER 3 000000000000000D "FoodOnlyHP" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:2287
+/cast item:34062
 END
 VER 3 000000000000001A "HS" "132137"
 /run InviteUnit("a");(C_Timer.After(1, LeaveParty)

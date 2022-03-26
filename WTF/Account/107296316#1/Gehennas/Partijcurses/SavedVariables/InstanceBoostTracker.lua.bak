@@ -16,8 +16,8 @@ SavedComments = {
 SavedSettings = {
 	["LOCKOUT_LOGOFFWARNING"] = true,
 	["FEATURE_Payment"] = true,
-	["AUTO_FOLLOW"] = false,
 	["LOCKOUT_RESETONGROUPCHANGE"] = true,
+	["AUTO_FOLLOW"] = false,
 	["FEATURE_LockoutStatistics"] = true,
 	["SPEEDY_AUTO_LOOT"] = false,
 	["PAYMENT_REPORTCHAT"] = true,
@@ -28,9 +28,19 @@ SavedSettings = {
 	["REPORT_ELEMENTAL_EARTH"] = false,
 }
 SavedAntiReloadUISettings = {
-	["IsEnteringFirstInstanceAfterLogin"] = true,
+	["IsEnteringFirstInstanceAfterLogin"] = false,
 	["SavedCharacterLockouts"] = {
+		["Nokkz"] = {
+		},
+		["Nalabrooks"] = {
+		},
 		["Partijcurses"] = {
+			["[H] Wailing Caverns"] = {
+				["instanceName"] = "[H] Wailing Caverns",
+				["identifier"] = 1809511,
+				["playerName"] = "Partijcurses",
+				["instanceType"] = "party",
+			},
 		},
 	},
 }

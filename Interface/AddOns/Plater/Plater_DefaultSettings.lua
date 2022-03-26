@@ -93,8 +93,8 @@ PLATER_DEFAULT_SETTINGS = {
 		npc_colors = {},
 
 		--store the cast colors customized by the user
-		cast_colors = {},
-		cast_color_settings = {
+		cast_colors = {}, --[spellId] = {[1] = color, [2] = enabled, [3] = custom spell name}
+		cast_color_settings = { --these are settings for the original cast color settings
 			enabled = true,
 			width = 12,
 			height_offset = 0,
@@ -944,10 +944,100 @@ PLATER_DEFAULT_SETTINGS = {
 			["world"] =  true,
 			["cities"] = false,
 		},
-		
+
+		auto_inside_raid_dungeon = {
+			hide_enemy_player_pets = false,
+			hide_enemy_player_totems = false,
+		},
+
 		spell_animations = true,
 		spell_animations_scale = 1.25,
-		
+
+		--hold the npcs that has been rename on the Npcs tab, format: [npcId] = "new npc name"
+		npcs_renamed = {},
+
+		ghost_auras = {
+			enabled = false,
+			width = 0,
+			height = 0,
+			alpha = 0.5,
+			desaturated = true,
+			auras = {
+				["DEMONHUNTER"] = {
+					[0] = {},
+					[1] = {},
+					[2] = {},
+				},
+				["DEATHKNIGHT"] = {
+					[0] = {},
+					[1] = {},
+					[2] = {},
+					[3] = {},
+				},
+				["WARRIOR"] = {
+					[0] = {},
+					[1] = {},
+					[2] = {},
+					[3] = {},
+				},
+				["MAGE"] = {
+					[0] = {},
+					[1] = {},
+					[2] = {},
+					[3] = {},
+				},
+				["ROGUE"] = {
+					[0] = {},
+					[1] = {},
+					[2] = {},
+					[3] = {},
+				},
+				["DRUID"] = {
+					[0] = {},
+					[1] = {},
+					[2] = {},
+					[3] = {},
+					[4] = {},
+				},
+				["HUNTER"] = {
+					[0] = {},
+					[1] = {},
+					[2] = {},
+					[3] = {},
+				},
+				["SHAMAN"] = {
+					[0] = {},
+					[1] = {},
+					[2] = {},
+					[3] = {},
+				},
+				["PRIEST"] = {
+					[0] = {},
+					[1] = {},
+					[2] = {},
+					[3] = {},
+				},
+				["WARLOCK"] = {
+					[0] = {},
+					[1] = {},
+					[2] = {},
+					[3] = {},
+				},
+				["PALADIN"] = {
+					[0] = {},
+					[1] = {},
+					[2] = {},
+					[3] = {},
+				},
+				["MONK"] = {
+					[0] = {},
+					[1] = {},
+					[2] = {},
+					[3] = {},
+				},
+			},
+		},
+
 		spell_animation_list = {
 		
 			--chaos bolt

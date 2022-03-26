@@ -1,8 +1,8 @@
-## Interface: 20503
+## Interface: 20504
 ## Title: Classic Loot Manager
 ## Notes: Robust, DKP based Loot Manager system
-## Author: Lantis (WoW: Mirage Raceway EU <Essential> Alliance)
-## Version: v1.5.3
+## Author: Lantis
+## Version: v1.6.0
 ## X-License: MIT
 ## X-Curse-Project-ID: 481373
 ## X-WoWI-ID: 26001
@@ -60,6 +60,7 @@ Modules\Changelog\Changelog.lua
 # Addon models
 Modules\ProfileManager\Profile.lua
 Modules\ProfileManager\PruneLog.lua
+Modules\RosterManager\PointInfo.lua
 Modules\RosterManager\Roster.lua
 Modules\ProfileManager\LedgerEntries.lua
 Modules\RosterManager\LedgerEntries.lua
@@ -121,6 +122,7 @@ Alerts\Alerts.lua
 Global\GlobalSlashCommands.lua
 Global\GlobalConfigs.lua
 Global\GlobalChatMessageHandlers.lua
+Global\GlobalBindings.lua
 
 # Extra
 MinimapIcon.lua

@@ -72,15 +72,11 @@ function Buffet:ADDON_LOADED(event, addon)
         Core.customMacros[k].key = v.name
         Core.customMacros[k].name = v.name
         Core.customMacros[k].source = v.source
-        Core.customMacros[k].chunck = nil
+        Core.customMacros[k].chunk = nil
         Core.customMacros[k].error = false
         Core.customMacros[k].body = nil
         Core.customMacros[k].icon = nil
     end
-
-    Core.stats = {}
-    Core.stats.events = {}
-    Core.stats.timers = {}
 
     Core:ResetBest()
 
@@ -95,19 +91,6 @@ end
 
 function Buffet:PLAYER_LOGIN()
     self:UnregisterEvent("PLAYER_LOGIN")
-
-    Core.stats.events["PLAYER_REGEN_ENABLED"] = 0
-    Core.stats.events["PLAYER_LEVEL_UP"] = 0
-    Core.stats.events["BAG_UPDATE_DELAYED"] = 0
-    Core.stats.events["UNIT_MAXHEALTH"] = 0
-    Core.stats.events["UNIT_MAXPOWER"] = 0
-    Core.stats.events["ZONE_CHANGED"] = 0
-
-    --Core.stats.timers["ParseTexts"] = { totalTime = 0, count = 0 }
-    --Core.stats.timers["ScanTooltip"] = { totalTime = 0, count = 0 }
-    Core.stats.timers["QueueScan"] = { totalTime = 0, count = 0 }
-    Core.stats.timers["Scan"] = { totalTime = 0, count = 0 }
-    Core.stats.timers["UpdateCallback"] = { totalTime = 0, count = 0 }
 
     self:RegisterEvent("PLAYER_LOGOUT")
     self:RegisterEvent("PLAYER_REGEN_ENABLED")
@@ -173,14 +156,12 @@ function Buffet:PLAYER_LOGOUT()
 end
 
 function Buffet:PLAYER_REGEN_ENABLED()
-    Core.stats.events["PLAYER_REGEN_ENABLED"] = Core.stats.events["PLAYER_REGEN_ENABLED"] + 1
     if Core.dirty then
         Core:EnableDelayedScan()
     end
 end
 
 function Buffet:ZONE_CHANGED()
-    Core.stats.events["ZONE_CHANGED"] = Core.stats.events["ZONE_CHANGED"] + 1
     Core:QueueScan()
 end
 function Buffet:ZONE_CHANGED_NEW_AREA()
@@ -188,19 +169,16 @@ function Buffet:ZONE_CHANGED_NEW_AREA()
 end
 
 function Buffet:BAG_UPDATE_DELAYED()
-    Core.stats.events["BAG_UPDATE_DELAYED"] = Core.stats.events["BAG_UPDATE_DELAYED"] + 1
     Core:QueueScan()
 end
 
 function Buffet:PLAYER_LEVEL_UP(event, arg1)
-    Core.stats.events["PLAYER_LEVEL_UP"] = Core.stats.events["PLAYER_LEVEL_UP"] + 1
     Core.playerLevel = arg1
     Core:QueueScan()
 end
 
 function Buffet:UNIT_MAXHEALTH(event, arg1)
     if arg1 == "player" then
-        Core.stats.events["UNIT_MAXHEALTH"] = Core.stats.events["UNIT_MAXHEALTH"] + 1
         Core.playerHealth = UnitHealthMax("player")
         Core:QueueScan()
     end
@@ -208,7 +186,6 @@ end
 
 function Buffet:UNIT_MAXPOWER(event, arg1, arg2)
     if (arg1 == "player") and (arg2 == "MANA") then
-        Core.stats.events["UNIT_MAXPOWER"] = Core.stats.events["UNIT_MAXPOWER"] + 1
         Core.playerMana = UnitPowerMax("player")
         Core:QueueScan()
     end
@@ -221,13 +198,11 @@ function Core:ResetBest()
 end
 
 function Core:QueueScan()
-    local t = Utility.GetTime()
     if InCombatLockdown() then
         self.dirty = true -- try when out of combat (regen event)
     else
         self:EnableDelayedScan()
     end
-    self:StatsTimerUpdate("QueueScan", t)
 end
 
 function Core:EnableDelayedScan()
@@ -239,21 +214,18 @@ function Core:EnableDelayedScan()
 end
 
 function Core:OnTimerCallback()
-    local t = Utility.GetTime()
     Core.nextScanTimer = nil
     if InCombatLockdown() then
         Core.dirty = true
     else
         Core:Scan()
     end
-    Core:StatsTimerUpdate("UpdateCallback", t)
 end
 
 function Core:Scan()
     if Core.scanning then
         return
     end
-    local currentTime = Utility.GetTime()
 
     Core.scanning = true
 
@@ -310,9 +282,9 @@ function Core:Scan()
             -- if not found, scan and parse tooltip
             if not itemFoundInCache then
                 -- parse tooltip values
-                local texts, failedAttempt = Engine.ScanTooltip(itemLink, itemMinLevel)
+                local texts = Engine.ScanTooltip(itemLink)
 
-                if failedAttempt and (not Core.scanAttempt[itemId] or Core.scanAttempt[itemId] < 5) then
+                if (Utility.TableCount(texts) <= 0) and (not Core.scanAttempt[itemId] or Core.scanAttempt[itemId] < 5) then
                     if Core.scanAttempt[itemId] then
                         Core.scanAttempt[itemId] = Core.scanAttempt[itemId] + 1
                     else
@@ -339,7 +311,6 @@ function Core:Scan()
                             else
                                 Core.scanAttempt[itemId] = 1
                             end
-                            -- Utility.Debug("Need rescan for: ", itemLink)
                             delayedScanRequired = true
                         end
                     end
@@ -350,7 +321,7 @@ function Core:Scan()
             if itemFoundInCache and ((itemData.health and (itemData.health > 0)) or (itemData.mana and (itemData.mana > 0))) then
                 -- Utility.Debug(itemName, itemData)
 
-                local isRestricted = Engine.CheckRestriction(itemId)
+                local isRestricted, hasRestriction = Engine.CheckRestriction(itemId)
 
                 -- set found values to best
                 if not isRestricted then
@@ -385,12 +356,12 @@ function Core:Scan()
                     local healthCats, manaCats = Engine.GetCategories(itemData)
                     if healthCats then
                         for _, v2 in pairs(healthCats) do
-                            self:SetBest(v2, itemId, health, itemCount)
+                            self:SetBest(v2, itemId, health, itemCount, hasRestriction)
                         end
                     end
                     if manaCats then
                         for _, v2 in pairs(manaCats) do
-                            self:SetBest(v2, itemId, mana, itemCount)
+                            self:SetBest(v2, itemId, mana, itemCount, hasRestriction)
                         end
                     end
                 end
@@ -463,7 +434,7 @@ function Core:Scan()
             local macroId = GetMacroIndexByName(macro.name)
             if macroId > 0 then
                 Core:CompileSource(macro)
-                local body, icon = Core:RunChunck(macro)
+                local body, icon = Core:RunChunk(macro)
                 if body and (macro.body ~= body or macro.icon ~= icon) then
                     macro.body = body
                     macro.icon = icon
@@ -486,21 +457,19 @@ function Core:Scan()
     if delayedScanRequired then
         self:QueueScan()
     end
-
-    self:StatsTimerUpdate("Scan", currentTime)
 end
 
-function Core:RunChunck(macro)
-    if macro.error or macro.chunck == nil then
+function Core:RunChunk(macro)
+    if macro.error or macro.chunk == nil then
         return nil, nil
     end
 
-    local success, ret1, ret2 = pcall(macro.chunck, Core:BestsBeautifier(), Core.itemCache)
+    local success, ret1, ret2 = pcall(macro.chunk, Core:BestsBeautifier(), Core.itemCache)
     if success then
         return ret1, ret2
     else
         macro.error = true
-        macro.chunck = nil
+        macro.chunk = nil
         macro.icon = nil
         Utility.Print("Custom Macro: Unable to execute " .. macro.name ..", please check the source")
         Utility.Print("Error: " .. (ret1 or "unknown"))
@@ -510,15 +479,15 @@ end
 
 function Core:CompileSource(macro)
     if macro.error then
-        macro.chunck = nil
+        macro.chunk = nil
         return
     end
 
-    local chunck, errorMessage = loadstring(macro.source, macro.name)
-    if chunck then
-        macro.chunck = chunck
+    local chunk, errorMessage = loadstring(macro.source, macro.name)
+    if chunk then
+        macro.chunk = chunk
     else
-        macro.chunck = nil
+        macro.chunk = nil
         macro.error = true
         macro.icon = nil
         Utility.Print("Custom Macro: Unable to compile " .. macro.name ..", please check the source")
@@ -707,11 +676,11 @@ function Core:EditConsumable(name, substring, conjured, pot, mod)
     EditMacro(macroid, name, "INV_Misc_QuestionMark", substring:gsub("%%MACRO%%", cast), 1)
 end
 
-function Core:SetBest(cat, id, value, stack)
-    -- Utility.Debug("SetBest: ", cat, id, value, stack)
+function Core:SetBest(cat, id, value, stack, hasRestriction)
+    -- Utility.Debug("SetBest: ", cat, id, value, stack, hasRestriction)
     local best = Core.bests[cat];
     if best and id then
-        if (value > best.val) or ((value == best.val) and (best.stack > stack)) then
+        if (hasRestriction and (value >= best.val)) or ((value > best.val) or ((value == best.val) and (best.stack > stack))) then
             best.val = value
             best.id = id
             best.stack = stack
@@ -734,23 +703,6 @@ function Core:SlashHandler(message, editbox)
         else
             Utility.Print("combat mode: disable")
         end
-    elseif cmd == "stats" then
-        Utility.Print("Session Statistics:")
-        Utility.Print("- Functions called:")
-        for k, v in pairs(Core.stats.timers) do
-            local item = v
-            local avgTime = 0
-            if v.count > 0 then
-                avgTime = v.totalTime / v.count
-            end
-            Utility.Print(string_format("  - %s: %d time(s), total time: %.5fs, average time: %.5fs", k, v.count, v.totalTime, avgTime))
-        end
-        Utility.Print("- Events raised:")
-        for k, v in pairs(Core.stats.events) do
-            Utility.Print(string_format("  - %s: %d time(s)", k, v))
-        end
-        Utility.Print("- Caches size:")
-        Utility.Print(string_format("  - %d item(s) cached", Utility.TableCount(Core.itemCache)))
     elseif cmd == "clear" then
         Core.scanAttempt = {}
         Core.itemCache = {}
@@ -804,16 +756,15 @@ function Core:SlashHandler(message, editbox)
     elseif cmd == "debug" then
         local itemString = args or nil
         if itemString then
-            local _, itemLink, _, itemLevel, itemMinLevel, _, _, _, _, _, _, itemClassId, itemSubClassId = GetItemInfo(itemString)
+            local _, itemLink, _, _, _, _, _, _, _, _, _, itemClassId, itemSubClassId = GetItemInfo(itemString)
             if itemLink then
                 local itemId = string_match(itemLink, "item:([%d]+)")
                 if itemId then
                     itemId = tonumber(itemId)
 
-                    local texts, failedAttempt = Engine.ScanTooltip(itemLink, itemMinLevel)
-                    if failedAttempt then
-                        Utility.Print("Item " .. itemString .. ": ScanTooltip failed")
-                        Utility.Debug(texts)
+                    local texts = Engine.ScanTooltip(itemLink)
+                    if Utility.TableCount(texts) <= 0 then
+                        Utility.Print("Item " .. itemString .. ": ScanTooltip failed, please retry.")
                         return
                     end
 
@@ -830,8 +781,7 @@ function Core:SlashHandler(message, editbox)
         end
     elseif cmd == "bests" then
         Utility.Print("Best item ids:")
-        local bests = table.sort(Core:BestsBeautifier())
-        for k,v in pairs(bests) do
+        for k,v in pairs(Core:BestsBeautifier()) do
             Utility.Print("bests."  .. k .. "=" .. v)
         end
 --[===[@debug@
@@ -846,7 +796,6 @@ function Core:SlashHandler(message, editbox)
         Utility.Print("/buffet info <itemLink>: display info about <itemLink> (if item is in cache)")
         Utility.Print("/buffet scan: perform a manual scan of your bags")
         Utility.Print("/buffet ignored: list all items ignored from scan (session cached)")
-        Utility.Print("/buffet stats: show some internal statistics")
         Utility.Print("/buffet debug <itemLink>: scan and display info about <itemLink> (bypass caches)")
         Utility.Print("/buffet bests: show current best item ids")
     end
@@ -887,12 +836,6 @@ function Core:PrintItemData(itemString, itemData)
     end
     Utility.Print("- itemClassId: " .. itemData.itemClassId)
     Utility.Print("- itemSubClassId: " .. itemData.itemSubClassId)
-end
-
-function Core:StatsTimerUpdate(key, t)
-    Core.stats.timers[key].count = Core.stats.timers[key].count + 1
-    local t2 = Utility.GetTime()
-    Core.stats.timers[key].totalTime = Core.stats.timers[key].totalTime + (t2 - t)
 end
 
 Buffet:RegisterEvent("ADDON_LOADED")

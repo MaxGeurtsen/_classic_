@@ -61,6 +61,13 @@ function c:InitBroker()
                     CloseDropDownMenus();
                     ToggleDropDownMenu(1, nil, LDB.dropDownMenu, _G[self:GetName()], -4, -4);
                 end
+            end,
+            OnDoubleClick = function(self, button)
+                if button == "LeftButton" then
+                    c:QueueSwitch({
+                        [c.SWITCHARG_SETNAME] = c.KEYWORD_PREVIOUS
+                    });
+                end
             end
         });
 

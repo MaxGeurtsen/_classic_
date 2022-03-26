@@ -38,7 +38,7 @@ VER 3 000000000000000F "ConsumableHP" "INV_Misc_QuestionMark"
 END
 VER 3 0000000000000010 "ConsumableMP" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:28101
+/cast item:22832
 END
 VER 3 0000000000000001 "d" "132089"
 /2 Crafting [Small Silk Pack] 10 slots  with your mats! 12 silk cloth, 2 heavy leather, 3 fine thread

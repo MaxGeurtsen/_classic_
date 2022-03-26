@@ -484,248 +484,512 @@ XToLevelDB = {
 		["Partijcurses - Gehennas"] = {
 			["data"] = {
 				["total"] = {
+					["dungeonKills"] = 236,
 					["quests"] = 56,
-					["mobKills"] = 473,
+					["mobKills"] = 751,
 				},
-				["killAverage"] = 123.6,
-				["questAverage"] = 510,
-				["questList"] = {
-					210, -- [1]
-					420, -- [2]
-					900, -- [3]
-				},
+				["killAverage"] = 42.5,
 				["killList"] = {
 					{
-						["mob"] = "Witchwing Harpy",
-						["xp"] = 121,
+						["mob"] = "Deviate Venomwing",
+						["xp"] = 35,
 					}, -- [1]
 					{
-						["mob"] = "Witchwing Roguefeather",
-						["xp"] = 126,
+						["mob"] = "Lord Serpentis",
+						["xp"] = 74,
 					}, -- [2]
 					{
-						["mob"] = "Witchwing Harpy",
-						["xp"] = 121,
+						["mob"] = "Deviate Venomwing",
+						["xp"] = 35,
 					}, -- [3]
 					{
-						["mob"] = "Witchwing Harpy",
-						["xp"] = 121,
+						["mob"] = "Verdan the Everliving",
+						["xp"] = 74,
 					}, -- [4]
 					{
-						["mob"] = "Witchwing Windcaller",
-						["xp"] = 138,
+						["mob"] = "Druid of the Fang",
+						["xp"] = 35,
 					}, -- [5]
 					{
-						["mob"] = "Witchwing Roguefeather",
-						["xp"] = 126,
+						["mob"] = "Deviate Dreadfang",
+						["xp"] = 35,
 					}, -- [6]
 					{
-						["mob"] = "Witchwing Harpy",
-						["xp"] = 121,
+						["mob"] = "Druid of the Fang",
+						["xp"] = 35,
 					}, -- [7]
 					{
-						["mob"] = "Witchwing Harpy",
-						["xp"] = 121,
+						["mob"] = "Druid of the Fang",
+						["xp"] = 35,
 					}, -- [8]
 					{
-						["mob"] = "Witchwing Roguefeather",
-						["xp"] = 126,
+						["mob"] = "Evolving Ectoplasm",
+						["xp"] = 32,
 					}, -- [9]
 					{
-						["mob"] = "Witchwing Harpy",
-						["xp"] = 115,
+						["mob"] = "Deviate Dreadfang",
+						["xp"] = 35,
 					}, -- [10]
 					{
-						["mob"] = "Witchwing Roguefeather",
-						["xp"] = 126,
+						["mob"] = "Deviate Lasher",
+						["xp"] = 7,
 					}, -- [11]
 					{
-						["mob"] = "Witchwing Roguefeather",
-						["xp"] = 126,
+						["mob"] = "Deviate Lasher",
+						["xp"] = 7,
 					}, -- [12]
 					{
-						["mob"] = "Witchwing Roguefeather",
-						["xp"] = 121,
+						["mob"] = "Deviate Lasher",
+						["xp"] = 7,
 					}, -- [13]
 					{
-						["mob"] = "Witchwing Harpy",
-						["xp"] = 115,
+						["mob"] = "Deviate Venomwing",
+						["xp"] = 35,
 					}, -- [14]
 					{
-						["mob"] = "Witchwing Harpy",
-						["xp"] = 121,
+						["mob"] = "Deviate Dreadfang",
+						["xp"] = 35,
 					}, -- [15]
 					{
-						["mob"] = "Witchwing Harpy",
-						["xp"] = 121,
+						["mob"] = "Evolving Ectoplasm",
+						["xp"] = 29,
 					}, -- [16]
 					{
-						["mob"] = "Witchwing Roguefeather",
-						["xp"] = 126,
+						["mob"] = "Deviate Dreadfang",
+						["xp"] = 36,
 					}, -- [17]
 					{
-						["mob"] = "Witchwing Roguefeather",
-						["xp"] = 126,
+						["mob"] = "Deviate Venomwing",
+						["xp"] = 36,
 					}, -- [18]
 					{
-						["mob"] = "Witchwing Harpy",
-						["xp"] = 115,
+						["mob"] = "Deviate Dreadfang",
+						["xp"] = 36,
 					}, -- [19]
 					{
-						["mob"] = "Witchwing Harpy",
-						["xp"] = 121,
+						["mob"] = "Druid of the Fang",
+						["xp"] = 36,
 					}, -- [20]
 					{
-						["mob"] = "Witchwing Roguefeather",
-						["xp"] = 126,
+						["mob"] = "Skum",
+						["xp"] = 76,
 					}, -- [21]
 					{
-						["mob"] = "Hecklefang Hyena",
-						["xp"] = 126,
+						["mob"] = "Deviate Venomwing",
+						["xp"] = 36,
 					}, -- [22]
 					{
-						["mob"] = "Fleeting Plainstrider",
-						["xp"] = 101,
+						["mob"] = "Deviate Venomwing",
+						["xp"] = 36,
 					}, -- [23]
 					{
-						["mob"] = "Barak Kodobane",
-						["xp"] = 126,
+						["mob"] = "Druid of the Fang",
+						["xp"] = 36,
 					}, -- [24]
 					{
-						["mob"] = "Kolkar Wrangler",
-						["xp"] = 101,
+						["mob"] = "Deviate Venomwing",
+						["xp"] = 36,
 					}, -- [25]
 					{
-						["mob"] = "Fleeting Plainstrider",
-						["xp"] = 101,
+						["mob"] = "Druid of the Fang",
+						["xp"] = 36,
 					}, -- [26]
 					{
-						["mob"] = "Kolkar Stormer",
-						["xp"] = 101,
+						["mob"] = "Druid of the Fang",
+						["xp"] = 36,
 					}, -- [27]
 					{
-						["mob"] = "Kolkar Wrangler",
-						["xp"] = 86,
+						["mob"] = "Druid of the Fang",
+						["xp"] = 36,
 					}, -- [28]
 					{
-						["mob"] = "Kolkar Stormer",
-						["xp"] = 101,
+						["mob"] = "Deviate Venomwing",
+						["xp"] = 36,
 					}, -- [29]
 					{
-						["mob"] = "Kolkar Wrangler",
-						["xp"] = 101,
+						["mob"] = "Druid of the Fang",
+						["xp"] = 36,
 					}, -- [30]
 					{
-						["mob"] = "Kolkar Stormer",
-						["xp"] = 115,
+						["mob"] = "Druid of the Fang",
+						["xp"] = 36,
 					}, -- [31]
 					{
-						["mob"] = "Kolkar Stormer",
-						["xp"] = 115,
+						["mob"] = "Druid of the Fang",
+						["xp"] = 36,
 					}, -- [32]
 					{
-						["mob"] = "Kolkar Stormer",
-						["xp"] = 115,
+						["mob"] = "Druid of the Fang",
+						["xp"] = 36,
 					}, -- [33]
 					{
-						["mob"] = "Zhevra Runner",
-						["xp"] = 101,
+						["mob"] = "Deviate Venomwing",
+						["xp"] = 36,
 					}, -- [34]
 					{
-						["mob"] = "Fleeting Plainstrider",
-						["xp"] = 101,
+						["mob"] = "Druid of the Fang",
+						["xp"] = 36,
 					}, -- [35]
 					{
-						["mob"] = "Zhevra Runner",
-						["xp"] = 115,
+						["mob"] = "Deviate Dreadfang",
+						["xp"] = 36,
 					}, -- [36]
 					{
-						["mob"] = "Greater Plainstrider",
-						["xp"] = 86,
+						["mob"] = "Druid of the Fang",
+						["xp"] = 36,
 					}, -- [37]
+					{
+						["mob"] = "Druid of the Fang",
+						["xp"] = 36,
+					}, -- [38]
+					{
+						["mob"] = "Deviate Dreadfang",
+						["xp"] = 36,
+					}, -- [39]
+					{
+						["mob"] = "Deviate Dreadfang",
+						["xp"] = 36,
+					}, -- [40]
+					{
+						["mob"] = "Druid of the Fang",
+						["xp"] = 36,
+					}, -- [41]
+					{
+						["mob"] = "Deviate Lasher",
+						["xp"] = 7,
+					}, -- [42]
+					{
+						["mob"] = "Deviate Lasher",
+						["xp"] = 7,
+					}, -- [43]
+					{
+						["mob"] = "Deviate Lasher",
+						["xp"] = 7,
+					}, -- [44]
+					{
+						["mob"] = "Deviate Lasher",
+						["xp"] = 7,
+					}, -- [45]
+					{
+						["mob"] = "Deviate Lasher",
+						["xp"] = 7,
+					}, -- [46]
+					{
+						["mob"] = "Deviate Lasher",
+						["xp"] = 7,
+					}, -- [47]
+					{
+						["mob"] = "Deviate Lasher",
+						["xp"] = 7,
+					}, -- [48]
+					{
+						["mob"] = "Deviate Lasher",
+						["xp"] = 7,
+					}, -- [49]
+					{
+						["mob"] = "Deviate Lasher",
+						["xp"] = 7,
+					}, -- [50]
+					{
+						["mob"] = "Lord Pythas",
+						["xp"] = 76,
+					}, -- [51]
+					{
+						["mob"] = "Druid of the Fang",
+						["xp"] = 36,
+					}, -- [52]
+					{
+						["mob"] = "Druid of the Fang",
+						["xp"] = 36,
+					}, -- [53]
+					{
+						["mob"] = "Druid of the Fang",
+						["xp"] = 36,
+					}, -- [54]
+					{
+						["mob"] = "Druid of the Fang",
+						["xp"] = 36,
+					}, -- [55]
+					{
+						["mob"] = "Druid of the Fang",
+						["xp"] = 36,
+					}, -- [56]
+					{
+						["mob"] = "Druid of the Fang",
+						["xp"] = 36,
+					}, -- [57]
+					{
+						["mob"] = "Druid of the Fang",
+						["xp"] = 36,
+					}, -- [58]
+					{
+						["mob"] = "Deviate Venomwing",
+						["xp"] = 36,
+					}, -- [59]
+					{
+						["mob"] = "Druid of the Fang",
+						["xp"] = 36,
+					}, -- [60]
+					{
+						["mob"] = "Druid of the Fang",
+						["xp"] = 36,
+					}, -- [61]
+					{
+						["mob"] = "Druid of the Fang",
+						["xp"] = 36,
+					}, -- [62]
+					{
+						["mob"] = "Deviate Venomwing",
+						["xp"] = 36,
+					}, -- [63]
+					{
+						["mob"] = "Druid of the Fang",
+						["xp"] = 36,
+					}, -- [64]
+					{
+						["mob"] = "Druid of the Fang",
+						["xp"] = 36,
+					}, -- [65]
+					{
+						["mob"] = "Druid of the Fang",
+						["xp"] = 36,
+					}, -- [66]
+					{
+						["mob"] = "Druid of the Fang",
+						["xp"] = 36,
+					}, -- [67]
+					{
+						["mob"] = "Deviate Shambler",
+						["xp"] = 36,
+					}, -- [68]
+					{
+						["mob"] = "Deviate Dreadfang",
+						["xp"] = 36,
+					}, -- [69]
+					{
+						["mob"] = "Deviate Shambler",
+						["xp"] = 36,
+					}, -- [70]
+					{
+						["mob"] = "Evolving Ectoplasm",
+						["xp"] = 33,
+					}, -- [71]
+					{
+						["mob"] = "Deviate Shambler",
+						["xp"] = 36,
+					}, -- [72]
+					{
+						["mob"] = "Deviate Dreadfang",
+						["xp"] = 36,
+					}, -- [73]
+					{
+						["mob"] = "Deviate Shambler",
+						["xp"] = 36,
+					}, -- [74]
+					{
+						["mob"] = "Deviate Shambler",
+						["xp"] = 36,
+					}, -- [75]
+					{
+						["mob"] = "Deviate Shambler",
+						["xp"] = 36,
+					}, -- [76]
+					{
+						["mob"] = "Deviate Shambler",
+						["xp"] = 36,
+					}, -- [77]
+					{
+						["mob"] = "Deviate Dreadfang",
+						["xp"] = 36,
+					}, -- [78]
+					{
+						["mob"] = "Deviate Faerie Dragon",
+						["xp"] = 29,
+					}, -- [79]
+					{
+						["mob"] = "Deviate Shambler",
+						["xp"] = 36,
+					}, -- [80]
+					{
+						["mob"] = "Deviate Shambler",
+						["xp"] = 36,
+					}, -- [81]
+					{
+						["mob"] = "Deviate Lasher",
+						["xp"] = 7,
+					}, -- [82]
+					{
+						["mob"] = "Deviate Lasher",
+						["xp"] = 7,
+					}, -- [83]
+					{
+						["mob"] = "Deviate Lasher",
+						["xp"] = 7,
+					}, -- [84]
+					{
+						["mob"] = "Deviate Lasher",
+						["xp"] = 7,
+					}, -- [85]
+					{
+						["mob"] = "Deviate Lasher",
+						["xp"] = 7,
+					}, -- [86]
+					{
+						["mob"] = "Druid of the Fang",
+						["xp"] = 36,
+					}, -- [87]
+					{
+						["mob"] = "Druid of the Fang",
+						["xp"] = 36,
+					}, -- [88]
+					{
+						["mob"] = "Evolving Ectoplasm",
+						["xp"] = 33,
+					}, -- [89]
+					{
+						["mob"] = "Druid of the Fang",
+						["xp"] = 36,
+					}, -- [90]
+					{
+						["mob"] = "Druid of the Fang",
+						["xp"] = 36,
+					}, -- [91]
+					{
+						["mob"] = "Druid of the Fang",
+						["xp"] = 36,
+					}, -- [92]
+					{
+						["mob"] = "Druid of the Fang",
+						["xp"] = 36,
+					}, -- [93]
+					{
+						["mob"] = "Deviate Shambler",
+						["xp"] = 36,
+					}, -- [94]
+					{
+						["mob"] = "Deviate Shambler",
+						["xp"] = 36,
+					}, -- [95]
+					{
+						["mob"] = "Deviate Shambler",
+						["xp"] = 36,
+					}, -- [96]
+					{
+						["mob"] = "Deviate Shambler",
+						["xp"] = 36,
+					}, -- [97]
+					{
+						["mob"] = "Deviate Shambler",
+						["xp"] = 36,
+					}, -- [98]
+					{
+						["mob"] = "Deviate Shambler",
+						["xp"] = 36,
+					}, -- [99]
+					{
+						["mob"] = "Deviate Lasher",
+						["xp"] = 7,
+					}, -- [100]
 				},
 				["timer"] = {
-					["start"] = 1565.562,
-					["total"] = 14809,
-					["lastUpdated"] = 5815.566,
-					["xpPerSec"] = 3.484467308736651,
+					["start"] = 7931.836,
+					["total"] = 13129,
+					["lastUpdated"] = 10807.76,
+					["xpPerSec"] = 4.565141498871319,
 				},
+				["dungeonList"] = {
+					{
+						["inProgress"] = false,
+						["totalXP"] = 7017,
+						["killCount"] = 236,
+						["killTotal"] = 7017,
+						["level"] = 14,
+						["rested"] = 1055,
+						["name"] = "The Wailing Caverns",
+					}, -- [1]
+				},
+				["questAverage"] = 2100,
 				["npcXP"] = {
 					{
-						["level"] = 12,
-						["name"] = "Greater Plainstrider",
-						["xp"] = 86,
+						["level"] = 19,
+						["name"] = "Druid of the Fang",
+						["xp"] = 32,
 					}, -- [1]
 					{
-						["level"] = 14,
-						["name"] = "Zhevra Runner",
-						["xp"] = 115,
+						["level"] = 18,
+						["name"] = "Deviate Crocolisk",
+						["xp"] = 13,
 					}, -- [2]
 					{
-						["level"] = 13,
-						["name"] = "Fleeting Plainstrider",
-						["xp"] = 101,
+						["level"] = 19,
+						["name"] = "Deviate Crocolisk",
+						["xp"] = 14,
 					}, -- [3]
 					{
-						["level"] = 13,
-						["name"] = "Zhevra Runner",
-						["xp"] = 101,
+						["level"] = 18,
+						["name"] = "Evolving Ectoplasm",
+						["xp"] = 33,
 					}, -- [4]
 					{
-						["level"] = 14,
-						["name"] = "Kolkar Stormer",
-						["xp"] = 115,
+						["level"] = 19,
+						["name"] = "Deviate Ravager",
+						["xp"] = 36,
 					}, -- [5]
 					{
-						["level"] = 13,
-						["name"] = "Kolkar Wrangler",
-						["xp"] = 101,
+						["level"] = 19,
+						["name"] = "Deviate Guardian",
+						["xp"] = 36,
 					}, -- [6]
 					{
-						["level"] = 13,
-						["name"] = "Kolkar Stormer",
-						["xp"] = 101,
+						["level"] = 19,
+						["name"] = "Deviate Viper",
+						["xp"] = 36,
 					}, -- [7]
 					{
-						["level"] = 12,
-						["name"] = "Kolkar Wrangler",
-						["xp"] = 86,
+						["level"] = 18,
+						["name"] = "Deviate Adder",
+						["xp"] = 36,
 					}, -- [8]
 					{
-						["level"] = 16,
-						["name"] = "Barak Kodobane",
-						["xp"] = 126,
+						["level"] = 17,
+						["name"] = "Evolving Ectoplasm",
+						["xp"] = 29,
 					}, -- [9]
 					{
-						["level"] = 16,
-						["name"] = "Hecklefang Hyena",
-						["xp"] = 126,
+						["level"] = 20,
+						["name"] = "Lord Cobrahn",
+						["xp"] = 76,
 					}, -- [10]
 					{
-						["level"] = 16,
-						["name"] = "Witchwing Roguefeather",
-						["xp"] = 126,
+						["level"] = 18,
+						["name"] = "Deviate Ravager",
+						["xp"] = 33,
 					}, -- [11]
 					{
-						["level"] = 15,
-						["name"] = "Witchwing Harpy",
-						["xp"] = 121,
+						["level"] = 19,
+						["name"] = "Deviate Shambler",
+						["xp"] = 36,
 					}, -- [12]
 					{
-						["level"] = 14,
-						["name"] = "Witchwing Harpy",
-						["xp"] = 115,
+						["level"] = 19,
+						["name"] = "Deviate Lasher",
+						["xp"] = 7,
 					}, -- [13]
 					{
-						["level"] = 15,
-						["name"] = "Witchwing Roguefeather",
-						["xp"] = 121,
+						["level"] = 19,
+						["name"] = "Deviate Venomwing",
+						["xp"] = 35,
 					}, -- [14]
 					{
-						["level"] = 18,
-						["name"] = "Witchwing Windcaller",
-						["xp"] = 138,
+						["level"] = 19,
+						["name"] = "Deviate Dreadfang",
+						["xp"] = 35,
 					}, -- [15]
+					{
+						["level"] = 20,
+						["name"] = "Verdan the Everliving",
+						["xp"] = 74,
+					}, -- [16]
 				},
 			},
 		},

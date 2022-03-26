@@ -729,13 +729,13 @@ Bartender4DB = {
 				["Rinque - Gehennas"] = {
 					["actionbars"] = {
 						{
+							["padding"] = 0,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 41.75,
 								["x"] = -221,
 								["point"] = "BOTTOM",
 							},
-							["padding"] = 0,
 						}, -- [1]
 						{
 							["enabled"] = false,
@@ -747,46 +747,45 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
+							["padding"] = 0,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 151.6024475097656,
 								["x"] = -220.5,
 								["point"] = "BOTTOM",
 							},
-							["padding"] = 0,
 						}, -- [3]
 						{
 							["rows"] = 3,
+							["padding"] = 0,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 113.0000381469727,
 								["x"] = -423.3036499023438,
 								["point"] = "BOTTOM",
 							},
-							["padding"] = 0,
 						}, -- [4]
 						{
+							["padding"] = 0,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 114.6857452392578,
 								["x"] = -220.5,
 								["point"] = "BOTTOM",
 							},
-							["padding"] = 0,
 						}, -- [5]
 						{
+							["padding"] = 0,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 79.23177337646484,
 								["x"] = -220.5,
 								["point"] = "BOTTOM",
 							},
-							["padding"] = 0,
 						}, -- [6]
 						{
 						}, -- [7]
 						{
-							["rows"] = 3,
 							["enabled"] = true,
 							["version"] = 3,
 							["position"] = {
@@ -794,17 +793,18 @@ Bartender4DB = {
 								["x"] = 252.4461059570313,
 								["point"] = "BOTTOM",
 							},
+							["rows"] = 3,
 							["padding"] = 0,
 						}, -- [8]
 						{
 							["rows"] = 2,
+							["padding"] = 0,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 225.6024475097656,
 								["x"] = -400.2039794921875,
 								["point"] = "BOTTOM",
 							},
-							["padding"] = 0,
 						}, -- [9]
 						{
 						}, -- [10]
@@ -813,13 +813,13 @@ Bartender4DB = {
 				["Partijleider - Razorgore"] = {
 					["actionbars"] = {
 						{
-							["padding"] = 0,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 41.75,
 								["x"] = -221,
 								["point"] = "BOTTOM",
 							},
+							["padding"] = 0,
 						}, -- [1]
 						{
 							["enabled"] = false,
@@ -831,16 +831,15 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["padding"] = 0,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 151.6024475097656,
 								["x"] = -220.5,
 								["point"] = "BOTTOM",
 							},
+							["padding"] = 0,
 						}, -- [3]
 						{
-							["padding"] = 0,
 							["rows"] = 3,
 							["version"] = 3,
 							["position"] = {
@@ -848,24 +847,25 @@ Bartender4DB = {
 								["x"] = -423.3036499023438,
 								["point"] = "BOTTOM",
 							},
+							["padding"] = 0,
 						}, -- [4]
 						{
-							["padding"] = 0,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 114.6857452392578,
 								["x"] = -220.5,
 								["point"] = "BOTTOM",
 							},
+							["padding"] = 0,
 						}, -- [5]
 						{
-							["padding"] = 0,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 79.23177337646484,
 								["x"] = -220.5,
 								["point"] = "BOTTOM",
 							},
+							["padding"] = 0,
 						}, -- [6]
 						{
 							["version"] = 3,
@@ -876,6 +876,7 @@ Bartender4DB = {
 							},
 						}, -- [7]
 						{
+							["rows"] = 3,
 							["enabled"] = true,
 							["version"] = 3,
 							["position"] = {
@@ -883,10 +884,10 @@ Bartender4DB = {
 								["x"] = 252.4461059570313,
 								["point"] = "BOTTOM",
 							},
-							["rows"] = 3,
 							["padding"] = 0,
 						}, -- [8]
 						{
+							["rows"] = 2,
 							["enabled"] = true,
 							["version"] = 3,
 							["position"] = {
@@ -894,7 +895,6 @@ Bartender4DB = {
 								["x"] = -400.2039794921875,
 								["point"] = "BOTTOM",
 							},
-							["rows"] = 2,
 							["padding"] = 0,
 						}, -- [9]
 						{
@@ -1146,24 +1146,24 @@ Bartender4DB = {
 					},
 				},
 				["Rinque - Gehennas"] = {
+					["padding"] = -2,
+					["version"] = 3,
 					["position"] = {
 						["y"] = 42.00000381469727,
 						["x"] = -301.814208984375,
 						["point"] = "BOTTOMRIGHT",
 						["scale"] = 1,
 					},
-					["version"] = 3,
-					["padding"] = -2,
 				},
 				["Partijleider - Razorgore"] = {
-					["padding"] = -2,
-					["version"] = 3,
 					["position"] = {
 						["y"] = 42.00000381469727,
 						["x"] = -301.814208984375,
 						["point"] = "BOTTOMRIGHT",
 						["scale"] = 1,
 					},
+					["version"] = 3,
+					["padding"] = -2,
 				},
 				["Firebreather - Firemaw"] = {
 					["padding"] = -2,
@@ -1279,21 +1279,21 @@ Bartender4DB = {
 				},
 				["Rinque - Gehennas"] = {
 					["enabled"] = true,
+					["version"] = 3,
 					["position"] = {
 						["y"] = -13.9312744140625,
 						["x"] = -512.3206176757812,
 						["point"] = "TOP",
 					},
-					["version"] = 3,
 				},
 				["Partijleider - Razorgore"] = {
 					["enabled"] = true,
-					["version"] = 3,
 					["position"] = {
 						["y"] = -13.9312744140625,
 						["x"] = -512.3206176757812,
 						["point"] = "TOP",
 					},
+					["version"] = 3,
 				},
 				["Firebreather - Firemaw"] = {
 					["enabled"] = true,
@@ -1405,20 +1405,20 @@ Bartender4DB = {
 					},
 				},
 				["Rinque - Gehennas"] = {
+					["version"] = 3,
 					["position"] = {
 						["y"] = 47,
 						["x"] = -512,
 						["point"] = "BOTTOM",
 					},
-					["version"] = 3,
 				},
 				["Partijleider - Razorgore"] = {
-					["version"] = 3,
 					["position"] = {
 						["y"] = 47,
 						["x"] = -512,
 						["point"] = "BOTTOM",
 					},
+					["version"] = 3,
 				},
 				["Firebreather - Firemaw"] = {
 					["enabled"] = true,
@@ -1537,16 +1537,15 @@ Bartender4DB = {
 				},
 				["Rinque - Gehennas"] = {
 					["onebag"] = true,
+					["padding"] = 0,
 					["version"] = 3,
 					["position"] = {
 						["y"] = 42.00000381469727,
 						["x"] = -79.0001220703125,
 						["point"] = "BOTTOMRIGHT",
 					},
-					["padding"] = 0,
 				},
 				["Partijleider - Razorgore"] = {
-					["padding"] = 0,
 					["onebag"] = true,
 					["version"] = 3,
 					["position"] = {
@@ -1554,6 +1553,7 @@ Bartender4DB = {
 						["x"] = -79.0001220703125,
 						["point"] = "BOTTOMRIGHT",
 					},
+					["padding"] = 0,
 				},
 				["Firebreather - Firemaw"] = {
 					["padding"] = 5,
@@ -1658,20 +1658,20 @@ Bartender4DB = {
 					},
 				},
 				["Rinque - Gehennas"] = {
+					["version"] = 3,
 					["position"] = {
 						["y"] = 187.8047637939453,
 						["x"] = 230.8364868164063,
 						["point"] = "BOTTOM",
 					},
-					["version"] = 3,
 				},
 				["Partijleider - Razorgore"] = {
-					["version"] = 3,
 					["position"] = {
 						["y"] = 187.8047637939453,
 						["x"] = 230.8364868164063,
 						["point"] = "BOTTOM",
 					},
+					["version"] = 3,
 				},
 				["Firebreather - Firemaw"] = {
 					["version"] = 3,
@@ -1775,24 +1775,24 @@ Bartender4DB = {
 					},
 				},
 				["Rinque - Gehennas"] = {
+					["padding"] = 0,
+					["version"] = 3,
 					["position"] = {
 						["y"] = 34.99999618530273,
 						["x"] = 246.3247833251953,
 						["point"] = "BOTTOMLEFT",
 						["scale"] = 1,
 					},
-					["padding"] = 0,
-					["version"] = 3,
 				},
 				["Partijleider - Razorgore"] = {
-					["padding"] = 0,
-					["version"] = 3,
 					["position"] = {
 						["y"] = 34.99999618530273,
 						["x"] = 246.3247833251953,
 						["point"] = "BOTTOMLEFT",
 						["scale"] = 1,
 					},
+					["padding"] = 0,
+					["version"] = 3,
 				},
 				["Firebreather - Firemaw"] = {
 					["version"] = 3,
@@ -2023,21 +2023,21 @@ Bartender4DB = {
 				},
 				["Rinque - Gehennas"] = {
 					["enabled"] = true,
+					["version"] = 3,
 					["position"] = {
 						["y"] = -2.5640869140625,
 						["x"] = -511.5001220703125,
 						["point"] = "TOP",
 					},
-					["version"] = 3,
 				},
 				["Partijleider - Razorgore"] = {
 					["enabled"] = true,
-					["version"] = 3,
 					["position"] = {
 						["y"] = -2.5640869140625,
 						["x"] = -511.5001220703125,
 						["point"] = "TOP",
 					},
+					["version"] = 3,
 				},
 				["Firebreather - Firemaw"] = {
 					["enabled"] = true,

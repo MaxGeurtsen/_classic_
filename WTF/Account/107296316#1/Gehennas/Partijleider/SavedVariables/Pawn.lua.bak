@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0533,
+	["LastVersion"] = 2.0534,
 	["LastPlayerFullName"] = "Partijleider-Gehennas",
 	["AutoSelectScales"] = false,
 	["ItemLevels"] = {
@@ -15,9 +15,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:32649::::::::70:::::::::|h[Medallion of Karabor]|h|r",
 		}, -- [2]
 		{
-			["ID"] = 30917,
-			["Level"] = 141,
-			["Link"] = "|cffa335ee|Hitem:30917::::::::70:::::::::|h[Razorfury Mantle]|h|r",
+			["ID"] = 31022,
+			["Level"] = 146,
+			["Link"] = "|cffa335ee|Hitem:31022::::::::70:::::::::|h[Skyshatter Shoulderpads]|h|r",
 		}, -- [3]
 		[13] = {
 			["ID"] = 30841,

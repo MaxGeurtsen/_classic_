@@ -366,7 +366,7 @@ c.eventFrame:HookScript("OnEvent", function(self, event, arg1, arg2, arg3, ...)
             c:EquipmentChanged(arg1);
         elseif event == "ACTIONBAR_SLOT_CHANGED" then
             if not c:IsSwitching() and c:LoadActionSlotsOption() and arg1 and arg1 > 0 and arg1 < 121 and
-                c:SaveConditionsMet(c.OPT_SAVECHANGES_ACTIONSLOTS) then
+                c:SaveConditionsMet(c.OPT_SAVECHANGES_ACTIONSLOTS) and (not totemic or not totemic:IsSwitching()) then
                 c:SaveActionSlot(arg1);
             end
         elseif event == "PLAYER_LEVEL_UP" then
@@ -396,19 +396,23 @@ c.eventFrame:HookScript("OnEvent", function(self, event, arg1, arg2, arg3, ...)
                 destFlags, destRaidFlags, spellId, spellName, spellSchool = CombatLogGetCurrentEventInfo();
             c:DebugPrint(event, subevent, spellName, spellId);
 
-            if sourceName == UnitName("player") then
-                if subevent == "SPELL_CAST_START" then
-                    c:SpellCastStart(spellId);
-                elseif subevent == "SPELL_CAST_SUCCESS" then
-                    c:SpellCastSuccess(spellId);
-                elseif subevent == "SPELL_CAST_FAILED" or subevent == "SPELL_INTERRUPT" then
-                    c:SpellCastEnd();
-                elseif subevent == "SPELL_AURA_APPLIED" then
-                    c:SpellAuraApplied(spellId);
-                elseif subevent == "SPELL_AURA_REMOVED" then
-                    c:SpellAuraRemoved(spellId);
-                end
+            -- if sourceName == UnitName("player") then
+            if subevent == "SPELL_CAST_START" then
+                c:SpellCastStart(spellId);
+            elseif subevent == "SPELL_CAST_SUCCESS" then
+                c:SpellCastSuccess(spellId);
+            elseif subevent == "SPELL_CAST_FAILED" or subevent == "SPELL_INTERRUPT" then
+                c:SpellCastEnd();
+            elseif subevent == "SPELL_AURA_APPLIED" then
+                c:SpellAuraApplied(spellId);
+            elseif subevent == "SPELL_AURA_REMOVED" then
+                c:SpellAuraRemoved(spellId);
+            elseif subevent == "ENCHANT_APPLIED" then
+                C_Timer.After(c:GetHomeLatency(100 + GQ_OPTIONS[c.OPT_SWITCHDELAY]) / 1000, function()
+                    c:CheckForNewEnchantment();
+                end);
             end
+            -- end
         elseif event == "ITEM_LOCK_CHANGED" then
             if not c:IsInCombat() then
                 lastGearAndBagsCache = c:CacheCurrentGearAndBags();
@@ -710,9 +714,11 @@ end
 
 function c:SpellCastSuccess(spellId)
     -- check for enchanted items
-    C_Timer.After(c:GetHomeLatency(100 + GQ_OPTIONS[c.OPT_SWITCHDELAY]) / 1000, function()
-        c:CheckForNewEnchantment();
-    end);
+    if not c:IsInCombat() then
+        C_Timer.After(c:GetHomeLatency(100 + GQ_OPTIONS[c.OPT_SWITCHDELAY]) / 1000, function()
+            c:CheckForNewEnchantment();
+        end);
+    end
 
     -- check for paladin aura event
     if c:GetPaladinAuras()[spellId] then
@@ -741,15 +747,17 @@ function c:SpellAuraRemoved(spellId)
 end
 
 function c:SpellCastEnd()
-    C_Timer.After(c:GetHomeLatency(100 + GQ_OPTIONS[c.OPT_SWITCHDELAY]) / 1000, function()
-        -- if not c:IsSwitching() and not c:IsInCombat() and not c:IsCastingSpell() then
-        if table.getn(switchQueue) > 0 then
-            c:RequeueFirst();
-        elseif not c:IsSwitching() then
-            c:UnlockUI();
-        end
-        -- end
-    end);
+    if not c:IsInCombat() then
+        C_Timer.After(c:GetHomeLatency(100 + GQ_OPTIONS[c.OPT_SWITCHDELAY]) / 1000, function()
+            -- if not c:IsSwitching() and not c:IsInCombat() and not c:IsCastingSpell() then
+            if table.getn(switchQueue) > 0 then
+                c:RequeueFirst();
+            elseif not c:IsSwitching() then
+                c:UnlockUI();
+            end
+            -- end
+        end);
+    end
 end
 
 function c:CheckDruidFormChanged(eventType)

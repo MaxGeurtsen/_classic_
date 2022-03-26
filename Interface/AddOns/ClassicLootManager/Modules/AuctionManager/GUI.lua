@@ -32,6 +32,8 @@ local REGISTRY = "clm_auction_manager_gui_options"
 
 local EVENT_FILL_AUCTION_WINDOW = "CLM_AUCTION_WINDOW_FILL"
 
+local whoami = UTILS.whoami()
+
 local guiOptions = {
     type = "group",
     args = {}
@@ -74,19 +76,78 @@ local function HookCorpseSlots(hookedSlots)
     end
 end
 
+GetItemInfo(19019)
+local function Joke()
+    local L1, L2, R = "", "", math.random(1,5)
+
+    if R == 1 then
+        L1 = "What do you call a druid who melees in tree form?"
+        L2 = "A combat log."
+    elseif R == 2 then
+        L1 = "Why do mages and warlocks get invited to all parties?"
+        L2 = "Because mages bring the food and warlocks get you stoned."
+    elseif R == 3 then
+        L1 = "What's a rogue's favourite drink?"
+        L2 = "Subtle tea."
+    elseif R == 4 then
+        L1 = "How does Naxxramas fly?"
+        L2 = "With its four wings."
+    elseif R == 5 then
+        L1 = "How many Blizzard developers does it take to get an expansion right?"
+        L2 = "Nobody knows because it hasn't been done yet."
+    end
+
+    C_Timer.After(1, function()
+        SendChatMessage(L1, "RAID")
+        SendChatMessage(L2, "RAID")
+    end)
+end
+local function PAW()
+    if CLM.PAW then
+        if math.random(1,100) > 95 then
+            local L, C, D = nil, nil, 0
+            local R = math.random(1,4)
+            if R == 1 then
+                local _, itemLink= GetItemInfo(19019)
+                if itemLink then
+                    L, C, D = ("Did someone say " .. itemLink .. "?"), "RAID", 2
+                end
+            elseif R == 2 then
+                L, C, D = "[The Unclickable] just dropped!", "GUILD", 1
+            elseif R == 3 then
+                L, C, D = "mrrglrlrlrmgrrr", "YELL", 1
+            elseif R > 3 then
+                D = 0
+                Joke()
+            end
+            if D > 0 then C_Timer.After(D, function() SendChatMessage(L, C) end) end
+            C_Timer.After(2, function() LOG:Message("Happy |cff44ee44April Fools'|r raid week!") end)
+        end
+    end
+end
+
+local alreadyPostedLoot = {}
 local function PostLootToRaidChat()
     if not IsInRaid() then return end
+    PAW()
     if not ACL:IsTrusted() then return end
-    if CLM.GlobalConfigs:GetAnnounceLootToRaid() then
-        local numLootItems = GetNumLootItems()
+    if not CLM.GlobalConfigs:GetAnnounceLootToRaid() then return end
+    if CLM.GlobalConfigs:GetAnnounceLootToRaidOwnerOnly() then
+        if not RaidManager:IsRaidOwner(whoami) then return end
+    end
+    local targetGuid = UnitGUID("target")
+    if alreadyPostedLoot[targetGuid] then return end
+    alreadyPostedLoot[targetGuid] = true
 
-        for lootIndex = 1, numLootItems do
-            local _, _, _, _, rarity = GetLootSlotInfo(lootIndex)
-            local itemLink = GetLootSlotLink(lootIndex)
-            if itemLink then
-                if (tonumber(rarity) or 0) >= CLM.GlobalConfigs:GetAnnounceLootToRaidLevel() then -- post Blue Purple and Legendary to Raid -- 3 -blue
-                    SendChatMessage(lootIndex .. ". " .. itemLink, "RAID")
-                end
+    local numLootItems = GetNumLootItems()
+    local num = 1
+    for lootIndex = 1, numLootItems do
+        local _, _, _, _, rarity = GetLootSlotInfo(lootIndex)
+        local itemLink = GetLootSlotLink(lootIndex)
+        if itemLink then
+            if (tonumber(rarity) or 0) >= CLM.GlobalConfigs:GetAnnounceLootToRaidLevel() then
+                SendChatMessage(num .. ". " .. itemLink, "RAID")
+                num = num + 1
             end
         end
     end
@@ -123,6 +184,9 @@ function AuctionManagerGUI:Initialize()
     EventManager:RegisterWoWEvent({"LOOT_OPENED"}, (function(...)self:HandleLootOpenedEvent() end))
     EventManager:RegisterWoWEvent({"LOOT_CLOSED"}, (function(...)self:HandleLootClosedEvent() end))
     EventManager:RegisterEvent(EVENT_FILL_AUCTION_WINDOW, function(event, data)
+        if not RaidManager:IsInProgressingRaid() then
+            return
+        end
         if not AuctionManager:IsAuctionInProgress() then
             self.itemLink = data.link
             self:Refresh()

@@ -3,12 +3,12 @@ GoldSave = {
 	["Partijcurses_Gehennas::Horde"] = {
 		["show"] = true,
 		["name"] = "Partijcurses",
-		["gold"] = 294696,
+		["gold"] = 298865,
 	},
 	["Partijleider_Gehennas::Horde"] = {
 		["show"] = true,
 		["name"] = "Partijleider",
-		["gold"] = 40388251,
+		["gold"] = 39831035,
 	},
 	["Partijlijder_Gehennas::Horde"] = {
 		["show"] = true,

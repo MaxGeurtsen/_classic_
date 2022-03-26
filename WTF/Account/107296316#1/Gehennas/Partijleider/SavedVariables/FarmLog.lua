@@ -27,7 +27,7 @@ FLogVars = {
 				["drops"] = {
 				},
 				["hks"] = 0,
-				["resets"] = 13,
+				["resets"] = 21,
 				["rep"] = {
 				},
 				["ranks"] = {

@@ -6,52 +6,29 @@ local Locales = ns.Locales
 
 -- Local namespace
 local Engine = ns.Engine or {}
+local ActiveConst = ns.ActiveConst
 
 local string_gsub = string.gsub
 local string_match = string.match
+local string_lower = string.lower
 
-function Engine.ScanTooltip(itemLink, itemLevel)
-    local failedAttempt
+function Engine.ScanTooltip(itemLink)
     local texts = {}
     local tooltip = Utility.GetTooltip()
     tooltip:SetHyperlink(itemLink)
 
-    local isConjured = false
     local lineCount = 0
     for i = 2, tooltip:NumLines() do
         local text = _G["buffetTooltipTextLeft" .. i]:GetText() or ""
         text = Utility.Trim(text)
         if text ~= "" then
             texts[lineCount] = text
-            local lowerText = text:lower()
             lineCount = lineCount + 1
-            if Utility.StringContains(lowerText, Locales.KeyWords.ConjuredItem:lower()) then
-                isConjured = true
-            end
         end
     end
     tooltip:Hide()
 
-    -- sometimes tooltips are not properly generated on first pass, all interesting items should have at least 3 lines, 4 for conjured items
-    local neededLines = 3
-    if isConjured then
-        neededLines = 4
-    end
-    -- except low level item which can have only 2 lines..
-    if itemLevel and itemLevel < 10 then
-        neededLines = neededLines - 1
-    end
-
-    -- for item name (skipped in loop above)
-    neededLines = neededLines - 1
-
-    if (lineCount >= neededLines) then
-        failedAttempt = false
-    else
-        failedAttempt = true
-    end
-
-    return  texts, failedAttempt
+    return texts
 end
 
 function Engine.ParseTexts(texts, itemData)
@@ -59,12 +36,13 @@ function Engine.ParseTexts(texts, itemData)
     local usable = false
 
     for i, v in pairs(texts) do
-        local text = string.lower(v);
+        local text = string_lower(v);
 
         -- Food and Drink
         if Locales.KeyWords.FoodAndDrink then
             if not itemData.isFoodAndDrink and Utility.StringContains(text, Locales.KeyWords.FoodAndDrink:lower()) then
                 itemData.isFoodAndDrink = true
+                -- TODO: extract function
             end
         end
 
@@ -135,7 +113,35 @@ function Engine.ParseTexts(texts, itemData)
 
     itemData = Engine.PostParseUpdate(itemData)
 
+    itemData = Engine.CheckStaticData(itemData)
+
     return itemData
+end
+
+function Engine.GetPvpStatus()
+    -- all off by default
+    local inBg, inRatedBg, inArena, inRatedArena, inBrawl = false, false, false, false, false
+
+    if Utility.IsClassic then
+        local r = UnitInBattleground("player")
+        inBg = (r ~= nil)
+    end
+
+    if Utility.IsTBC then
+        local r = UnitInBattleground("player")
+        inBg = (r ~= nil)
+        inArena, inRatedArena = IsActiveBattlefieldArena()
+    end
+
+    if Utility.IsRetail then
+        inBg = C_PvP.IsBattleground() -- since version 8.2.0
+        inRatedBg = C_PvP.IsRatedBattleground() -- since version 8.2.0
+        inArena = C_PvP.IsArena() -- since version 8.2.0
+        inRatedArena = C_PvP.IsRatedArena() -- since version 8.2.0
+        inBrawl = C_PvP.IsInBrawl() -- since version 7.2.0
+    end
+
+    return inBg, inRatedBg, inArena, inRatedArena, inBrawl
 end
 
 function Engine.CheckRestrictionEntry(entry)
@@ -169,53 +175,40 @@ function Engine.CheckRestrictionEntry(entry)
     end
 
     if entry.pvp ~= nil then
+        local inBg, inRatedBg, inArena, inRatedArena, inBrawl = Engine.GetPvpStatus()
+
         if entry.pvp.bg ~= nil then
             conditions = conditions + 1
-            if Utility.IsClassic then
-                if entry.pvp.bg == true and C_PvP.IsPVPMap() then
-                    matches = matches + 1
-                end
-            end
-            if Utility.IsRetail then -- since version 8.2.0
-                if entry.pvp.bg == true and C_PvP.IsBattleground() then
-                    matches = matches + 1
-                end
+            if entry.pvp.bg == true and inBg then
+                matches = matches + 1
             end
         end
 
         if entry.pvp.arena ~= nil then
             conditions = conditions + 1
-            if Utility.IsRetail then -- since version 8.2.0
-                if entry.pvp.arena == true and C_PvP.IsArena() then
-                    matches = matches + 1
-                end
+            if entry.pvp.arena == true and inArena then
+                matches = matches + 1
             end
         end
 
         if entry.pvp.brawl ~= nil then
             conditions = conditions + 1
-            if Utility.IsRetail then -- since version 7.2.0
-                if entry.pvp.brawl == true and C_PvP.IsInBrawl() then
-                    matches = matches + 1
-                end
+            if entry.pvp.brawl == true and inBrawl then
+                matches = matches + 1
             end
         end
 
         if entry.pvp.ratedBg ~= nil then
             conditions = conditions + 1
-            if Utility.IsRetail then -- since version 8.2.0
-                if entry.pvp.ratedBg == true and C_PvP.IsRatedBattleground() then
-                    matches = matches + 1
-                end
+            if entry.pvp.ratedBg == true and inRatedBg then
+                matches = matches + 1
             end
         end
 
         if entry.pvp.ratedArena ~= nil then
             conditions = conditions + 1
-            if Utility.IsRetail then -- since version 8.2.0
-                if entry.pvp.ratedArena == true and C_PvP.IsRatedArena() then
-                    matches = matches + 1
-                end
+            if entry.pvp.ratedArena == true and inRatedArena then
+                matches = matches + 1
             end
         end
     end
@@ -239,6 +232,45 @@ function Engine.CheckRestrictionEntry(entry)
     end
 
     return false
+end
+
+function Engine.CheckStaticData(itemData)
+    if ActiveConst.StaticItemData then
+        if ActiveConst.StaticItemData[itemData.itemId] ~= nil then
+            local staticData = ActiveConst.StaticItemData[itemData.itemId]
+            if staticData.isHealth ~= nil then
+                itemData.isHealth = staticData.isHealth
+            end
+            if staticData.isMana ~= nil then
+                itemData.isMana = staticData.isMana
+            end
+            if staticData.isFoodAndDrink ~= nil then
+                itemData.isFoodAndDrink = staticData.isFoodAndDrink
+            end
+            if staticData.isPotion ~= nil then
+                itemData.isPotion = staticData.isPotion
+            end
+            if staticData.isBandage ~= nil then
+                itemData.isBandage = staticData.isBandage
+            end
+        end
+    end
+    return itemData
+end
+
+-- return true if the item is restricted, false otherwise
+function Engine.CheckRestriction(itemId)
+    -- check restricted items against rules
+    if ActiveConst.Restrictions[itemId] ~= nil then
+        for _, entry in pairs(ActiveConst.Restrictions[itemId]) do
+            local valid = Engine.CheckRestrictionEntry(entry)
+            if valid then
+                return false, true -- if one entry is valid, item is not currently restricted
+            end
+        end
+        return true, true -- no valid entry
+    end
+    return false, false -- no entry
 end
 
 function Engine.ExtractValue(value, indexes)

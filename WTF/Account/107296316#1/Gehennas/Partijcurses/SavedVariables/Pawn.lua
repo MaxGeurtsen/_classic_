@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0533,
+	["LastVersion"] = 2.0534,
 	["LastPlayerFullName"] = "Partijcurses-Gehennas",
 	["AutoSelectScales"] = false,
 	["ItemLevels"] = {
@@ -15,9 +15,9 @@ PawnOptions = {
 			["Link"] = "|cffffffff|Hitem:4944::::::::11:::::::::|h[Handsewn Cloak]|h|r",
 		},
 		[8] = {
-			["ID"] = 3289,
-			["Level"] = 11,
-			["Link"] = "|cffffffff|Hitem:3289::::::::10:::::::::|h[Ancestral Boots]|h|r",
+			["ID"] = 14129,
+			["Level"] = 20,
+			["Link"] = "|cff1eff00|Hitem:14129::::::1015:528268800:15:::::::::|h[Ritual Sandals of the Whale]|h|r",
 		},
 		[16] = {
 			["ID"] = 4938,
@@ -41,9 +41,9 @@ PawnOptions = {
 			["Link"] = "|cff9d9d9d|Hitem:1430::::::::10:::::::::|h[Patchwork Gloves]|h|r",
 		},
 		[9] = {
-			["ID"] = 6062,
-			["Level"] = 10,
-			["Link"] = "|cffffffff|Hitem:6062::::::::8:::::::::|h[Heavy Cord Bracers]|h|r",
+			["ID"] = 14366,
+			["Level"] = 17,
+			["Link"] = "|cff1eff00|Hitem:14366::::::::15:::::::::|h[Mystic's Bracelets]|h|r",
 		},
 		[11] = {
 			["ID"] = 21931,
@@ -63,9 +63,9 @@ PawnOptions = {
 			["Link"] = "|cff1eff00|Hitem:21931::::::::11:::::::::|h[Woven Copper Ring]|h|r",
 		},
 		[18] = {
-			["ID"] = 5071,
-			["Level"] = 14,
-			["Link"] = "|cff1eff00|Hitem:5071::::::::9:::::::::|h[Shadow Wand]|h|r",
+			["ID"] = 5207,
+			["Level"] = 20,
+			["Link"] = "|cff1eff00|Hitem:5207::::::::15:::::::::|h[Opaque Wand]|h|r",
 		},
 	},
 }

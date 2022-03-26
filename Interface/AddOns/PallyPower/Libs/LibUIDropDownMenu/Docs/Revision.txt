@@ -1,11 +1,43 @@
-$Id: Revision.txt 82 2021-06-30 13:28:50Z arithmandar $
+$Id: Revision.txt 96 2022-02-27 16:04:56Z arithmandar $
 
 Revision History:
 =================
 
+v4.09.9020042488 (2022/02/28)
+-----------------------------
+- Fixed issue while in Classic or BCC in counting maximum buttons
+
+v4.08.9020042423 (2022/02/23)
+-----------------------------
+- Toc update to support WoW 9.2.0
+- function sync with build 42423
+
+v4.07.9020042277 (2022/02/13)
+-----------------------------
+- function sync with build 42277
+- enhanced the auto hide feature in ClassicEra and Classic TBC
+
+v4.07.9020042257 (2022/02/10)
+-----------------------------
+- function sync with build 42257
+- BCC ToC update to support WoW 2.5.3
+- Classic ToC update to support WoW 1.14.2
+
+v4.07.9020042174 (2022/02/09)
+-----------------------------
+- Support multiple ToC
+- BCC ToC update to support WoW 2.5.3
+- Classic ToC update to support WoW 1.14.1
+
+v4.07.9020042069 (2022/01/26)
+-----------------------------
+- Toc update to support WoW 9.1.5
+- function sync with build 42069
+- fixed the issue that backdrop was not properly set
+
 v4.06.9010039185 (2021/06/30)
 -----------------------------
-- Toc update to suppport WoW 9.1.0
+- Toc update to support WoW 9.1.0
 - function sync with build 39185
 
 v4.05.9000538556 (2021/06/14)
@@ -31,7 +63,7 @@ v4.01.9000236639 (2020/12/14)
 
 v4.00.9000236639 (2020/11/22)
 -----------------------------
-- Toc update to suppport WoW 9.0.2
+- Toc update to support WoW 9.0.2
 - LibUIDropDownMenu
   - Set major version to 4.0
   - Migrate all global functions to be under library tables

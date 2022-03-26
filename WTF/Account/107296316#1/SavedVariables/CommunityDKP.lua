@@ -88,7 +88,7 @@ CommDKP_DB = {
 			},
 			["bossargs"] = {
 				["CurrentRaidZone"] = "Molten Core",
-				["LastKilledBoss"] = "Void Reaver",
+				["LastKilledBoss"] = "Prince Malchezaar",
 				["LastKilledNPC"] = {
 				},
 				["RecentZones"] = {
@@ -142,9 +142,9 @@ CommDKP_DB = {
 				["SuppressNotifications"] = false,
 				["ChatFrames"] = {
 					["LookingForGroup"] = true,
-					["Guild"] = true,
 					["Combat Log"] = true,
 					["General"] = true,
+					["Guild"] = true,
 				},
 				["HideChangeLogs"] = 30209,
 				["TooltipHistoryCount"] = 15,
@@ -381,9 +381,9 @@ CommDKP_DB = {
 			["SuppressNotifications"] = false,
 			["ChatFrames"] = {
 				["LookingForGroup"] = true,
-				["Guild"] = true,
 				["Combat Log"] = true,
 				["General"] = true,
+				["Guild"] = true,
 			},
 			["HideChangeLogs"] = 30209,
 			["TooltipHistoryCount"] = 15,
