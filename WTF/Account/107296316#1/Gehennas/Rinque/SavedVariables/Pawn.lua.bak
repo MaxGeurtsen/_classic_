@@ -1,6 +1,8 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0533,
+	["LastPlayerFullName"] = "Rinque-Gehennas",
+	["AutoSelectScales"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 30125,
@@ -49,16 +51,16 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:29998::::::::70:::::::::|h[Royal Gauntlets of Silvermoon]|h|r",
 		}, -- [10]
 		{
-			["ID"] = 29303,
-			["Level"] = 136,
+			["ID"] = 30109,
+			["Level"] = 138,
 			["AlsoFitsIn"] = 12,
-			["Link"] = "|cffa335ee|Hitem:29303::::::::70:::::::::|h[Band of Eternity]|h|r",
+			["Link"] = "|cffa335ee|Hitem:30109::::::::70:::::::::|h[Ring of Endless Coils]|h|r",
 		}, -- [11]
 		{
-			["ID"] = 29304,
-			["Level"] = 135,
+			["ID"] = 29303,
+			["Level"] = 136,
 			["AlsoFitsIn"] = 11,
-			["Link"] = "|cffa335ee|Hitem:29304::::::::70:::::::::|h[Band of Eternity]|h|r",
+			["Link"] = "|cffa335ee|Hitem:29303::::::::70:::::::::|h[Band of Eternity]|h|r",
 		}, -- [12]
 		{
 			["ID"] = 30629,
@@ -88,8 +90,6 @@ PawnOptions = {
 			["Link"] = "|cffff8000|Hitem:30314::::::::70:::::::::|h[Phaseshift Bulwark]|h|r",
 		}, -- [17]
 	},
-	["AutoSelectScales"] = false,
-	["LastPlayerFullName"] = "Rinque-Gehennas",
 }
 PawnMrRobotScaleProviderOptions = nil
 PawnClassicScaleProviderOptions = {

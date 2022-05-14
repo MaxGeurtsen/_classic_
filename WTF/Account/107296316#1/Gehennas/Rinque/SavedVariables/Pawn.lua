@@ -1,8 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0533,
-	["LastPlayerFullName"] = "Rinque-Gehennas",
-	["AutoSelectScales"] = false,
+	["LastVersion"] = 2.0534,
 	["ItemLevels"] = {
 		{
 			["ID"] = 30125,
@@ -90,6 +88,8 @@ PawnOptions = {
 			["Link"] = "|cffff8000|Hitem:30314::::::::70:::::::::|h[Phaseshift Bulwark]|h|r",
 		}, -- [17]
 	},
+	["AutoSelectScales"] = false,
+	["LastPlayerFullName"] = "Rinque-Gehennas",
 }
 PawnMrRobotScaleProviderOptions = nil
 PawnClassicScaleProviderOptions = {

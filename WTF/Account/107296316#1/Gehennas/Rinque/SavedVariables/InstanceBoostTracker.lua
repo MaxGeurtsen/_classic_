@@ -1,33 +1,16 @@
 
 SavedPayments = {
-	["Tipsyftw"] = 2000000,
 	["Hellwhisper"] = 8960000,
+	["Tipsyftw"] = 2000000,
 	["Humaan"] = 3050000,
 	["Syperpvz"] = 1500000,
 }
 SavedHistoricalPayments = nil
 SavedHistoricalPaymentsV2 = {
-	["Tipsyftw"] = {
-		["Sum"] = 2000000,
-		["Transactions"] = {
-			{
-				["PaymentDateTime"] = {
-					["year"] = "2022",
-					["month"] = "03",
-					["day"] = "04",
-					["minute"] = "52",
-					["hour"] = "15",
-					["second"] = "38",
-				},
-				["Amount"] = 2000000,
-			}, -- [1]
-		},
-	},
 	["Hellwhisper"] = {
 		["Sum"] = 8960000,
 		["Transactions"] = {
 			{
-				["Amount"] = 8960000,
 				["PaymentDateTime"] = {
 					["year"] = "2022",
 					["month"] = "03",
@@ -36,6 +19,23 @@ SavedHistoricalPaymentsV2 = {
 					["hour"] = "17",
 					["second"] = "31",
 				},
+				["Amount"] = 8960000,
+			}, -- [1]
+		},
+	},
+	["Tipsyftw"] = {
+		["Sum"] = 2000000,
+		["Transactions"] = {
+			{
+				["Amount"] = 2000000,
+				["PaymentDateTime"] = {
+					["year"] = "2022",
+					["month"] = "03",
+					["day"] = "04",
+					["minute"] = "52",
+					["hour"] = "15",
+					["second"] = "38",
+				},
 			}, -- [1]
 		},
 	},
@@ -43,6 +43,7 @@ SavedHistoricalPaymentsV2 = {
 		["Sum"] = 3050000,
 		["Transactions"] = {
 			{
+				["Amount"] = 3050000,
 				["PaymentDateTime"] = {
 					["year"] = "2022",
 					["month"] = "03",
@@ -51,7 +52,6 @@ SavedHistoricalPaymentsV2 = {
 					["hour"] = "21",
 					["second"] = "47",
 				},
-				["Amount"] = 3050000,
 			}, -- [1]
 		},
 	},
@@ -59,7 +59,6 @@ SavedHistoricalPaymentsV2 = {
 		["Sum"] = 1500000,
 		["Transactions"] = {
 			{
-				["Amount"] = 1500000,
 				["PaymentDateTime"] = {
 					["year"] = "2022",
 					["month"] = "03",
@@ -68,6 +67,7 @@ SavedHistoricalPaymentsV2 = {
 					["hour"] = "16",
 					["second"] = "00",
 				},
+				["Amount"] = 1500000,
 			}, -- [1]
 		},
 	},
@@ -84,43 +84,19 @@ SavedComments = {
 SavedSettings = {
 	["LOCKOUT_LOGOFFWARNING"] = true,
 	["FEATURE_Payment"] = true,
-	["REPORT_ELEMENTAL_EARTH"] = false,
+	["AUTO_FOLLOW"] = false,
 	["LOCKOUT_RESETONGROUPCHANGE"] = true,
 	["FEATURE_LockoutStatistics"] = true,
 	["SPEEDY_AUTO_LOOT"] = false,
 	["PAYMENT_REPORTCHAT"] = true,
 	["FEATURE_LockoutTracker"] = true,
-	["PAYMENT_REPORTMAIN"] = true,
 	["LOCKOUT_REPORTRESET"] = false,
+	["PAYMENT_REPORTMAIN"] = true,
 	["STATISTICS_REPORT"] = true,
-	["AUTO_FOLLOW"] = false,
+	["REPORT_ELEMENTAL_EARTH"] = false,
 }
 SavedAntiReloadUISettings = {
-	["IsEnteringFirstInstanceAfterLogin"] = false,
+	["IsEnteringFirstInstanceAfterLogin"] = true,
 	["SavedCharacterLockouts"] = {
-		["Nonâ"] = {
-		},
-		["Alycía"] = {
-		},
-		["Frsc"] = {
-		},
-		["Cantresist"] = {
-		},
-		["Freezebite"] = {
-		},
-		["Myacalifa"] = {
-		},
-		["Bängst"] = {
-		},
-		["Zenmastr"] = {
-		},
-		["Walkingsteak"] = {
-		},
-		["Rinque"] = {
-		},
-		["Valai"] = {
-		},
-		["Xodlie"] = {
-		},
 	},
 }

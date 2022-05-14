@@ -13,13 +13,13 @@ SimpleUnitFramesDB = {
 		["Maximaal - Firemaw"] = "Maximaal - Firemaw",
 		["Mírjam - Razorgore"] = "Mírjam - Razorgore",
 		["Helpsiebren - Razorgore"] = "Helpsiebren - Razorgore",
-		["Partijleider - Gehennas"] = "Partijleider - Gehennas",
-		["Mirjam - Firemaw"] = "Mirjam - Firemaw",
-		["Mírjam - Firemaw"] = "Mírjam - Firemaw",
-		["Rinque - Gehennas"] = "Rinque - Gehennas",
-		["Partijlijder - Razorgore"] = "Partijlijder - Razorgore",
-		["Eefjé - Razorgore"] = "Eefjé - Razorgore",
 		["Partijcurses - Gehennas"] = "Partijcurses - Gehennas",
+		["Mirjam - Firemaw"] = "Mirjam - Firemaw",
+		["Rinque - Gehennas"] = "Rinque - Gehennas",
+		["Eefjé - Razorgore"] = "Eefjé - Razorgore",
+		["Partijlijder - Razorgore"] = "Partijlijder - Razorgore",
+		["Mírjam - Firemaw"] = "Mírjam - Firemaw",
+		["Partijleider - Gehennas"] = "Partijleider - Gehennas",
 	},
 	["profiles"] = {
 		["Partijlijder - Gehennas"] = {
@@ -54,19 +54,19 @@ SimpleUnitFramesDB = {
 		},
 		["Helpsiebren - Razorgore"] = {
 		},
-		["Partijleider - Gehennas"] = {
+		["Partijcurses - Gehennas"] = {
 		},
 		["Mirjam - Firemaw"] = {
 		},
-		["Mírjam - Firemaw"] = {
-		},
 		["Rinque - Gehennas"] = {
-		},
-		["Partijlijder - Razorgore"] = {
 		},
 		["Eefjé - Razorgore"] = {
 		},
-		["Partijcurses - Gehennas"] = {
+		["Partijlijder - Razorgore"] = {
+		},
+		["Mírjam - Firemaw"] = {
+		},
+		["Partijleider - Gehennas"] = {
 		},
 	},
 }

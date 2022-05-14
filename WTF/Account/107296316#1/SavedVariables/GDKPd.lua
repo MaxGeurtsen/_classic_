@@ -1,8 +1,5 @@
 
 GDKPd_DB = {
-	["global"] = {
-		["shownPopupAddonMsg4_2"] = true,
-	},
 	["profileKeys"] = {
 		["Partijleider - Gehennas"] = "Partijleider - Gehennas",
 		["Partijlijder - Gehennas"] = "Partijlijder - Gehennas",
@@ -10,9 +7,20 @@ GDKPd_DB = {
 		["Rinque - Gehennas"] = "Rinque - Gehennas",
 		["Partijcurses - Gehennas"] = "Partijcurses - Gehennas",
 	},
+	["global"] = {
+		["shownPopupAddonMsg4_2"] = true,
+	},
 	["profiles"] = {
 		["Partijleider - Gehennas"] = {
+			["shareSecondAmount"] = 0.01,
+			["minQuality"] = 4,
 			["movable"] = false,
+			["hideChatMessages"] = {
+				["auctionAnnounce"] = true,
+				["auctionCancel"] = true,
+			},
+			["startBid"] = 300,
+			["increment"] = 50,
 			["point"] = {
 				["y"] = -69.38462829589844,
 				["relative"] = "RIGHT",
@@ -20,14 +28,6 @@ GDKPd_DB = {
 				["x"] = -235.0258178710938,
 			},
 			["shareThirdAmount"] = 0.01,
-			["startBid"] = 300,
-			["increment"] = 50,
-			["minQuality"] = 4,
-			["shareSecondAmount"] = 0.01,
-			["hideChatMessages"] = {
-				["auctionAnnounce"] = true,
-				["auctionCancel"] = true,
-			},
 		},
 		["Partijlijder - Gehennas"] = {
 			["movable"] = false,

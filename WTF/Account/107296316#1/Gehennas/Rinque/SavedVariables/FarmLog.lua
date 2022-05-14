@@ -1,13 +1,13 @@
 
 FLogVars = {
 	["enabled"] = false,
-	["lockMinimapButton"] = false,
+	["viewTotal"] = true,
 	["todayKills"] = {
 	},
-	["ver"] = 1.2,
-	["viewTotal"] = true,
-	["enableMinimapButton"] = true,
 	["inInstance"] = false,
+	["lockMinimapButton"] = false,
+	["currentFarm"] = "default",
+	["ver"] = 1.2,
 	["itemTooltip"] = true,
 	["hud"] = {
 		["show"] = false,
@@ -29,19 +29,19 @@ FLogVars = {
 				["hks"] = 0,
 				["resets"] = 25,
 				["rep"] = {
-					["Undercity"] = 7150,
 					["Argent Dawn"] = 1000,
+					["Undercity"] = 7150,
 				},
 				["ranks"] = {
 				},
 				["dks"] = 0,
 				["bgsWin"] = {
 				},
+				["xp"] = 0,
+				["honor"] = 0,
+				["seconds"] = 1375,
 				["consumes"] = {
 				},
-				["seconds"] = 1375,
-				["honor"] = 0,
-				["xp"] = 0,
 				["bgsLoss"] = {
 				},
 				["bgs"] = {
@@ -49,7 +49,7 @@ FLogVars = {
 			},
 			["goldTotal"] = 0,
 			["honorPerHourTotal"] = 0,
-			["lastUse"] = 1646407091,
+			["honorTotal"] = 0,
 			["past"] = {
 				["ah"] = 0,
 				["skill"] = {
@@ -70,18 +70,18 @@ FLogVars = {
 				["dks"] = 0,
 				["bgsWin"] = {
 				},
+				["xp"] = 0,
+				["honor"] = 0,
+				["seconds"] = 0,
 				["consumes"] = {
 				},
-				["seconds"] = 0,
-				["honor"] = 0,
-				["xp"] = 0,
 				["bgsLoss"] = {
 				},
 				["bgs"] = {
 				},
 			},
 			["goldPerHourTotal"] = 0,
-			["honorTotal"] = 0,
+			["lastUse"] = 1646407091,
 		},
 	},
 	["minimapButtonPosition"] = {
@@ -89,7 +89,7 @@ FLogVars = {
 		["x"] = -30.63874053955078,
 		["point"] = "TOPRIGHT",
 	},
-	["currentFarm"] = "default",
+	["enableMinimapButton"] = true,
 	["frameRect"] = {
 		["y"] = 0,
 		["x"] = 0,

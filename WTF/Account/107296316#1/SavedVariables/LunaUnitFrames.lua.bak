@@ -44,11 +44,8 @@ LunaUFDB = {
 				["raid"] = {
 					["enabled"] = false,
 				},
-				["focus"] = {
-					["point"] = "BOTTOMLEFT",
-					["relativePoint"] = "BOTTOMLEFT",
-					["y"] = 428.6668078853945,
-					["x"] = 1025.9004830173,
+				["arena"] = {
+					["enabled"] = false,
 				},
 				["focustarget"] = {
 					["enabled"] = true,
@@ -88,9 +85,6 @@ LunaUFDB = {
 						["type"] = "2D",
 					},
 				},
-				["arena"] = {
-					["enabled"] = false,
-				},
 				["maintank"] = {
 					["enabled"] = true,
 					["y"] = -396.5836104252303,
@@ -104,6 +98,12 @@ LunaUFDB = {
 						["buffsize"] = 19,
 						["buffs"] = true,
 					},
+				},
+				["focus"] = {
+					["point"] = "BOTTOMLEFT",
+					["relativePoint"] = "BOTTOMLEFT",
+					["y"] = 428.6668078853945,
+					["x"] = 1025.9004830173,
 				},
 			},
 			["version"] = 4260,
@@ -132,8 +132,12 @@ LunaUFDB = {
 				["partypet"] = {
 					["enabled"] = false,
 				},
-				["party"] = {
-					["enabled"] = false,
+				["raidpet"] = {
+					["y"] = 387.9300043799194,
+					["x"] = 410.4000296320228,
+					["point"] = "BOTTOMLEFT",
+					["anchorTo"] = "UIParent",
+					["relativePoint"] = "BOTTOMLEFT",
 				},
 				["player"] = {
 					["castBar"] = {
@@ -145,12 +149,12 @@ LunaUFDB = {
 					["portrait"] = {
 						["type"] = "2D",
 					},
-					["y"] = 253.5328958166792,
 					["fader"] = {
 						["enabled"] = true,
 						["speedyFade"] = true,
 						["inactiveAlpha"] = 0,
 					},
+					["y"] = 253.5328958166792,
 					["auras"] = {
 						["buffsize"] = 10,
 						["buffs"] = true,
@@ -159,11 +163,10 @@ LunaUFDB = {
 				["arena"] = {
 					["enabled"] = false,
 				},
-				["raidpet"] = {
-					["y"] = 387.9300043799194,
-					["x"] = 410.4000296320228,
+				["focus"] = {
+					["y"] = 428.6668078853945,
+					["x"] = 1025.9004830173,
 					["point"] = "BOTTOMLEFT",
-					["anchorTo"] = "UIParent",
 					["relativePoint"] = "BOTTOMLEFT",
 				},
 				["target"] = {
@@ -183,19 +186,16 @@ LunaUFDB = {
 					["x"] = -1286.566665760674,
 					["point"] = "TOPRIGHT",
 					["relativePoint"] = "TOPRIGHT",
-					["auras"] = {
-						["buffsize"] = 19,
-						["buffs"] = true,
-						["buffpos"] = "INFRAME",
-						["filterbuffs"] = 2,
-					},
 					["width"] = 166,
+					["auras"] = {
+						["buffs"] = true,
+						["filterbuffs"] = 2,
+						["buffpos"] = "INFRAME",
+						["buffsize"] = 19,
+					},
 				},
-				["focus"] = {
-					["y"] = 428.6668078853945,
-					["x"] = 1025.9004830173,
-					["point"] = "BOTTOMLEFT",
-					["relativePoint"] = "BOTTOMLEFT",
+				["party"] = {
+					["enabled"] = false,
 				},
 			},
 		},

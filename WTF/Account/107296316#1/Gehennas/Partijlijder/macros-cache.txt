@@ -1,4 +1,21 @@
-VER 3 0000000001000001 "shoot" "INV_MISC_QUESTIONMARK"
-#showtooltip shoot
-/castsequence reset=2 !Shoot, null
+VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/startattack
+/cast Maul
+END
+VER 3 0000000001000003 "Dash" "INV_MISC_QUESTIONMARK"
+#showtooltip Dash
+/cancelaura [stance:1] Bear Form; [stance:2] Aquatic Form
+/cast [nostance:3] Cat Form(Shapeshift); [nostealth, nocombat] 
+/cast Dash
+END
+VER 3 0000000001000004 "Hurricane" "INV_MISC_QUESTIONMARK"
+#showtooltip Hurricane
+/cast [@cursor] Hurricane
+END
+VER 3 0000000001000002 "Prowl" "INV_MISC_QUESTIONMARK"
+#showtooltip Prowl
+/cancelaura [stance:1] Bear Form; [stance:2] Aquatic Form
+/cast [nostance:3] Cat Form(Shapeshift); [nostealth, nocombat] 
+/cast Prowl
 END

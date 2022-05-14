@@ -4,7 +4,7 @@ FrameLevel: 1
 Anchor: TOP
 X: 1
 Y: -32
-W: 266
+W: 319
 H: 18
 Frame: AAPClassic_QL_QButtonMi_MainFrame
 FrameLevel: 1

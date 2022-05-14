@@ -2,5 +2,6 @@
 WSEDB = {
 	["profileKeys"] = {
 		["Partijleider - Gehennas"] = "Default",
+		["Partijlijder - Gehennas"] = "Default",
 	},
 }

@@ -1,21 +1,21 @@
 
 FLogGlobalVars = {
 	["track"] = {
-		["misc"] = false,
 		["deaths"] = true,
-		["drops"] = true,
+		["misc"] = false,
+		["consumes"] = true,
 		["honor"] = true,
 		["hks"] = true,
 		["levelup"] = true,
 		["xp"] = true,
-		["consumes"] = true,
+		["ranks"] = true,
 		["dks"] = true,
 		["kills"] = true,
-		["resets"] = true,
-		["rep"] = true,
-		["skill"] = false,
 		["money"] = true,
-		["ranks"] = true,
+		["skill"] = false,
+		["rep"] = true,
+		["resets"] = true,
+		["drops"] = true,
 		["bgs"] = true,
 	},
 	["blt"] = {
@@ -48,34 +48,34 @@ FLogGlobalVars = {
 	["minQuantitySold"] = false,
 	["showHonorPercentOnTooltip"] = true,
 	["debug"] = false,
-	["bls"] = {
-		["Razorgore"] = {
-		},
-		["Gehennas"] = {
-		},
-	},
+	["resumeSessionOnSwitch"] = true,
 	["autoSwitchInstances"] = false,
-	["sortBy"] = "A",
-	["sortSessionBy"] = "$",
-	["hud"] = {
-		["fontSize"] = 12,
-		["paddingX"] = 8,
-		["alpha"] = 0.7,
-		["fontName"] = "Fonts\\FRIZQT__.TTF",
-		["paddingY"] = 5,
-	},
 	["ahPrice"] = {
 		["Razorgore"] = {
 		},
 		["Gehennas"] = {
 		},
 	},
+	["showBlackLotusTimer"] = true,
 	["honorDRinBGs"] = true,
+	["ver"] = 1.2,
+	["hud"] = {
+		["fontSize"] = 12,
+		["paddingX"] = 8,
+		["fontName"] = "Fonts\\FRIZQT__.TTF",
+		["alpha"] = 0.7,
+		["paddingY"] = 5,
+	},
 	["reportTo"] = {
 	},
 	["dismissLootWindowOnEsc"] = false,
 	["showHonorFrenzyCounter"] = true,
-	["showBlackLotusTimer"] = true,
-	["ver"] = 1.2,
-	["resumeSessionOnSwitch"] = true,
+	["sortSessionBy"] = "$",
+	["sortBy"] = "A",
+	["bls"] = {
+		["Razorgore"] = {
+		},
+		["Gehennas"] = {
+		},
+	},
 }

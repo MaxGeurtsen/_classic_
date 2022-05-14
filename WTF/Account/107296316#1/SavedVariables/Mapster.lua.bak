@@ -19,13 +19,13 @@ MapsterDB = {
 		["Maximaal - Firemaw"] = "Default",
 		["Mírjam - Razorgore"] = "Default",
 		["Helpsiebren - Razorgore"] = "Default",
-		["Partijcurses - Gehennas"] = "Default",
+		["Partijleider - Gehennas"] = "Default",
 		["Mirjam - Firemaw"] = "Default",
-		["Rinque - Gehennas"] = "Default",
+		["Mírjam - Firemaw"] = "Default",
 		["Eefjé - Razorgore"] = "Default",
 		["Partijlijder - Razorgore"] = "Default",
-		["Mírjam - Firemaw"] = "Default",
-		["Partijleider - Gehennas"] = "Default",
+		["Rinque - Gehennas"] = "Default",
+		["Partijcurses - Gehennas"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

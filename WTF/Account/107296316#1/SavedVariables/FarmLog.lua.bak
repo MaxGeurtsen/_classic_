@@ -1,21 +1,21 @@
 
 FLogGlobalVars = {
 	["track"] = {
-		["deaths"] = true,
 		["misc"] = false,
-		["consumes"] = true,
+		["deaths"] = true,
 		["honor"] = true,
+		["drops"] = true,
 		["hks"] = true,
 		["levelup"] = true,
 		["xp"] = true,
 		["ranks"] = true,
 		["dks"] = true,
 		["kills"] = true,
-		["money"] = true,
-		["skill"] = false,
-		["rep"] = true,
 		["resets"] = true,
-		["drops"] = true,
+		["rep"] = true,
+		["skill"] = false,
+		["money"] = true,
+		["consumes"] = true,
 		["bgs"] = true,
 	},
 	["blt"] = {
@@ -40,12 +40,6 @@ FLogGlobalVars = {
 		["Razorgore"] = {
 		},
 		["Gehennas"] = {
-			{
-				["enter"] = 1648245373,
-				["player"] = "Partijleider",
-				["name"] = "Karazhan",
-				["leave"] = 1648249898,
-			}, -- [1]
 		},
 	},
 	["blackLotusTimeSeconds"] = 3600,
@@ -54,34 +48,34 @@ FLogGlobalVars = {
 	["minQuantitySold"] = false,
 	["showHonorPercentOnTooltip"] = true,
 	["debug"] = false,
-	["resumeSessionOnSwitch"] = true,
-	["autoSwitchInstances"] = false,
-	["ahPrice"] = {
-		["Razorgore"] = {
-		},
-		["Gehennas"] = {
-		},
-	},
-	["showBlackLotusTimer"] = true,
-	["honorDRinBGs"] = true,
-	["ver"] = 1.2,
-	["hud"] = {
-		["fontSize"] = 12,
-		["paddingX"] = 8,
-		["fontName"] = "Fonts\\FRIZQT__.TTF",
-		["alpha"] = 0.7,
-		["paddingY"] = 5,
-	},
-	["reportTo"] = {
-	},
-	["dismissLootWindowOnEsc"] = false,
-	["showHonorFrenzyCounter"] = true,
-	["sortSessionBy"] = "$",
-	["sortBy"] = "A",
 	["bls"] = {
 		["Razorgore"] = {
 		},
 		["Gehennas"] = {
 		},
 	},
+	["autoSwitchInstances"] = false,
+	["sortSessionBy"] = "$",
+	["sortBy"] = "A",
+	["hud"] = {
+		["fontSize"] = 12,
+		["paddingX"] = 8,
+		["alpha"] = 0.7,
+		["fontName"] = "Fonts\\FRIZQT__.TTF",
+		["paddingY"] = 5,
+	},
+	["ver"] = 1.2,
+	["honorDRinBGs"] = true,
+	["reportTo"] = {
+	},
+	["dismissLootWindowOnEsc"] = false,
+	["showHonorFrenzyCounter"] = true,
+	["showBlackLotusTimer"] = true,
+	["ahPrice"] = {
+		["Razorgore"] = {
+		},
+		["Gehennas"] = {
+		},
+	},
+	["resumeSessionOnSwitch"] = true,
 }

@@ -19,6 +19,7 @@ SavedHistoricalPaymentsV2 = {
 		["Sum"] = 4890000,
 		["Transactions"] = {
 			{
+				["Amount"] = 4890000,
 				["PaymentDateTime"] = {
 					["year"] = "2022",
 					["month"] = "03",
@@ -27,7 +28,6 @@ SavedHistoricalPaymentsV2 = {
 					["hour"] = "17",
 					["second"] = "43",
 				},
-				["Amount"] = 4890000,
 			}, -- [1]
 		},
 	},
@@ -35,7 +35,6 @@ SavedHistoricalPaymentsV2 = {
 		["Sum"] = 2000000,
 		["Transactions"] = {
 			{
-				["Amount"] = 2000000,
 				["PaymentDateTime"] = {
 					["year"] = "2022",
 					["month"] = "03",
@@ -44,6 +43,7 @@ SavedHistoricalPaymentsV2 = {
 					["hour"] = "11",
 					["second"] = "10",
 				},
+				["Amount"] = 2000000,
 			}, -- [1]
 		},
 	},
@@ -51,7 +51,6 @@ SavedHistoricalPaymentsV2 = {
 		["Sum"] = 4250000,
 		["Transactions"] = {
 			{
-				["Amount"] = 4250000,
 				["PaymentDateTime"] = {
 					["year"] = "2022",
 					["month"] = "01",
@@ -60,6 +59,7 @@ SavedHistoricalPaymentsV2 = {
 					["hour"] = "16",
 					["second"] = "55",
 				},
+				["Amount"] = 4250000,
 			}, -- [1]
 		},
 	},
@@ -67,6 +67,7 @@ SavedHistoricalPaymentsV2 = {
 		["Sum"] = 8080000,
 		["Transactions"] = {
 			{
+				["Amount"] = 8080000,
 				["PaymentDateTime"] = {
 					["year"] = "2022",
 					["month"] = "02",
@@ -75,7 +76,6 @@ SavedHistoricalPaymentsV2 = {
 					["hour"] = "22",
 					["second"] = "21",
 				},
-				["Amount"] = 8080000,
 			}, -- [1]
 		},
 	},
@@ -83,7 +83,6 @@ SavedHistoricalPaymentsV2 = {
 		["Sum"] = 15070000,
 		["Transactions"] = {
 			{
-				["Amount"] = 5360000,
 				["PaymentDateTime"] = {
 					["year"] = "2022",
 					["month"] = "02",
@@ -92,9 +91,9 @@ SavedHistoricalPaymentsV2 = {
 					["hour"] = "13",
 					["second"] = "27",
 				},
+				["Amount"] = 5360000,
 			}, -- [1]
 			{
-				["Amount"] = 9710000,
 				["PaymentDateTime"] = {
 					["year"] = "2022",
 					["month"] = "02",
@@ -103,6 +102,7 @@ SavedHistoricalPaymentsV2 = {
 					["hour"] = "16",
 					["second"] = "09",
 				},
+				["Amount"] = 9710000,
 			}, -- [2]
 		},
 	},
@@ -110,6 +110,7 @@ SavedHistoricalPaymentsV2 = {
 		["Sum"] = 3100000,
 		["Transactions"] = {
 			{
+				["Amount"] = 3100000,
 				["PaymentDateTime"] = {
 					["year"] = "2022",
 					["month"] = "02",
@@ -118,7 +119,6 @@ SavedHistoricalPaymentsV2 = {
 					["hour"] = "19",
 					["second"] = "47",
 				},
-				["Amount"] = 3100000,
 			}, -- [1]
 		},
 	},
@@ -126,7 +126,6 @@ SavedHistoricalPaymentsV2 = {
 		["Sum"] = 7230000,
 		["Transactions"] = {
 			{
-				["Amount"] = 7230000,
 				["PaymentDateTime"] = {
 					["year"] = "2022",
 					["month"] = "03",
@@ -135,6 +134,7 @@ SavedHistoricalPaymentsV2 = {
 					["hour"] = "16",
 					["second"] = "36",
 				},
+				["Amount"] = 7230000,
 			}, -- [1]
 		},
 	},
@@ -142,7 +142,6 @@ SavedHistoricalPaymentsV2 = {
 		["Sum"] = 5800000,
 		["Transactions"] = {
 			{
-				["Amount"] = 5800000,
 				["PaymentDateTime"] = {
 					["year"] = "2022",
 					["month"] = "03",
@@ -151,6 +150,7 @@ SavedHistoricalPaymentsV2 = {
 					["hour"] = "13",
 					["second"] = "11",
 				},
+				["Amount"] = 5800000,
 			}, -- [1]
 		},
 	},
@@ -158,7 +158,6 @@ SavedHistoricalPaymentsV2 = {
 		["Sum"] = 1740000,
 		["Transactions"] = {
 			{
-				["Amount"] = 1740000,
 				["PaymentDateTime"] = {
 					["year"] = "2022",
 					["month"] = "02",
@@ -167,6 +166,7 @@ SavedHistoricalPaymentsV2 = {
 					["hour"] = "15",
 					["second"] = "48",
 				},
+				["Amount"] = 1740000,
 			}, -- [1]
 		},
 	},
@@ -174,6 +174,7 @@ SavedHistoricalPaymentsV2 = {
 		["Sum"] = 1830000,
 		["Transactions"] = {
 			{
+				["Amount"] = 1830000,
 				["PaymentDateTime"] = {
 					["year"] = "2022",
 					["month"] = "02",
@@ -182,7 +183,6 @@ SavedHistoricalPaymentsV2 = {
 					["hour"] = "00",
 					["second"] = "03",
 				},
-				["Amount"] = 1830000,
 			}, -- [1]
 		},
 	},
@@ -190,7 +190,6 @@ SavedHistoricalPaymentsV2 = {
 		["Sum"] = 8200000,
 		["Transactions"] = {
 			{
-				["Amount"] = 8200000,
 				["PaymentDateTime"] = {
 					["year"] = "2022",
 					["month"] = "03",
@@ -199,6 +198,7 @@ SavedHistoricalPaymentsV2 = {
 					["hour"] = "12",
 					["second"] = "43",
 				},
+				["Amount"] = 8200000,
 			}, -- [1]
 		},
 	},
@@ -206,7 +206,6 @@ SavedHistoricalPaymentsV2 = {
 		["Sum"] = 9340000,
 		["Transactions"] = {
 			{
-				["Amount"] = 9340000,
 				["PaymentDateTime"] = {
 					["year"] = "2022",
 					["month"] = "03",
@@ -215,6 +214,7 @@ SavedHistoricalPaymentsV2 = {
 					["hour"] = "22",
 					["second"] = "05",
 				},
+				["Amount"] = 9340000,
 			}, -- [1]
 		},
 	},
@@ -231,29 +231,19 @@ SavedComments = {
 SavedSettings = {
 	["LOCKOUT_LOGOFFWARNING"] = true,
 	["FEATURE_Payment"] = true,
-	["REPORT_ELEMENTAL_EARTH"] = false,
+	["AUTO_FOLLOW"] = false,
 	["LOCKOUT_RESETONGROUPCHANGE"] = true,
 	["FEATURE_LockoutStatistics"] = true,
 	["SPEEDY_AUTO_LOOT"] = false,
 	["PAYMENT_REPORTCHAT"] = true,
 	["FEATURE_LockoutTracker"] = true,
-	["PAYMENT_REPORTMAIN"] = true,
 	["LOCKOUT_REPORTRESET"] = false,
+	["PAYMENT_REPORTMAIN"] = true,
 	["STATISTICS_REPORT"] = true,
-	["AUTO_FOLLOW"] = false,
+	["REPORT_ELEMENTAL_EARTH"] = false,
 }
 SavedAntiReloadUISettings = {
 	["IsEnteringFirstInstanceAfterLogin"] = true,
 	["SavedCharacterLockouts"] = {
-		["Amitida"] = {
-		},
-		["Kavzkan"] = {
-		},
-		["Partijleider"] = {
-		},
-		["Røny"] = {
-		},
-		["Naglowska"] = {
-		},
 	},
 }
