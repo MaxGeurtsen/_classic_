@@ -265,7 +265,12 @@ NIT.critterCreatures = {
 	[15368] = "Tonk Mine",
 	[11859] = "Doomguard",
 	[14337] = "Field Repair Bot 74A",
-	
+	--[10408] = "Rockwing Gargoyle", --Spawned from eyes in strat, but shares npcID with the other non-spawned that do give xp so can't ignore.
+	[10441] = "Plagued Rat",
+	[10461] = "Plagued Insect",
+	[10536] = "Plagued Maggot",
+	[10387] = "Vengeful Phantom",
+	[10955] = "Summoned Water Elemental",
 };
 
 --for k, v in pairs(NIT.critterCreatures2) do

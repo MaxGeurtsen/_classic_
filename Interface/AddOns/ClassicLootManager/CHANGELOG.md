@@ -1,4 +1,25 @@
+# Classic Loot Manager v1.8.0
+## Features
+### Spanish Locale
+Spanish locale is now available to use. Big thank you to Stoytovisiao for the contribution.
+## Fixes
+### CommunityDKP Migration
+CommunityDKP migration for multiple teams in TBC should now properly set the DKP values.
+### Weekly gains
+Weekly gains should now be properly calculated if there is now weekly cap.
+### Alerts
+Alerts should now better display small, fractional values.
+# Classic Loot Manager v1.7.0
+## Notes
+### April's Fools
+Thank you all for having fun with us in first CLM `April Fools'` raid week! Hear you next year for more cattle auction! ;)
+## Features
+### Exports
+You can now export `Standings`, `Point History` and ` Loot History` to XML and JSON formats for integration with external tools. Check it through `clm export` (or minimap icon if you're a Manager). Be aware that XML export for full database can be very heavy and timeout. This happens due to point history size. If this happens for you (e.g. game freezes and no output is produced) try reloading and limiting the export size. New optimizations coming soon!
 
+## Fixes
+### Rounding
+Fixed missing value rounding for zero-sum bank without caps.
 # Classic Loot Manager v1.6.0
 ## Features
 ### Bindings

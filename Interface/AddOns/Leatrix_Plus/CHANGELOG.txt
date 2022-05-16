@@ -1,3 +1,37 @@
+2.5.105 - 12th May 2022
+- Corrected a very popular flight route and added flight times.  There are now 2329 flight times stored in Leatrix Plus for BCC.
+
+2.5.104 - 12th May 2022
+- For 'Sell junk automatically' ('Automation'), you can now exclude specific junk items from being sold.  There is an exclusion list in the configuration panel where you can enter your own item IDs (separated by commas).  Item IDs will be shown in item tooltips while the configuration panel is showing.
+- If you try to use 'Enhance minimap' ('Interface') and ElvUI Minimap together, you will now be asked which one you want to use on startup.  Choosing Leatrix Plus will disable ElvUI's minimap module.  Choosing ElvUI will disable Leatrix Plus 'Enhance minimap' setting.
+- Added flight times.  There are now 2326 flight times stored in Leatrix Plus for BCC.
+
+2.5.103 - 5th May 2022
+- Added lots of flight times.  There are now 2314 flight times stored in Leatrix Plus for BCC.
+
+2.5.102 - 27th April 2022
+- Added lots of flight times.  There are now 2295 flight times stored in Leatrix Plus for BCC.
+
+2.5.101 - 20th April 2022
+- Added lots of flight times.  There are now 2265 flight times stored in Leatrix Plus for BCC.
+
+2.5.100 - 13th April 2022
+- For 'Enhance minimap' ('Interface'), if you use 'Hide addon buttons' or 'Combine addon buttons' but you want some buttons to remain visible around the minimap, you can now do so using a new 'Buttons' editor in the configuration panel.  Just follow the directions in the Help button.  The 'Exclude BugSack' setting has been removed since you can now add BugSack to the 'Buttons' panel to achieve the same result.
+- Added lots of flight times.  There are now 2180 flight times stored in Leatrix Plus for BCC.
+
+2.5.99 - 6th April 2022
+- Fixed an issue with 'Show bag search box' ('Interface') which caused a Lua error after opening a guild bank.
+- Added flight times.  There are now 2105 flight times stored in Leatrix Plus for BCC.
+
+2.5.98 - 6th April 2022
+- The 'Enhance dressup' option now shows a toggle stats button in the character frame.  You can either click this button or middle-click the character frame to toggle stats.  For new Leatrix Plus users, stats are now shown by default.
+- Added lots of flight times.  There are now 2102 flight times stored in Leatrix Plus for BCC.
+
+2.5.97 - 30th March 2022
+- If 'Enhance trainers' ('Interface') is enabled, a 'Train All' button will now be shown in the skill trainer frame allowing you to train all available skills in one click.
+- Added a compatibility fix for 'Enhance professions' when using the 'Classic Profession Filter' addon so that you can see the search box in the craft frame (used for enchanting).
+- Added lots of flight times.  There are now 2075 flight times stored in Leatrix Plus for BCC.
+
 2.5.96 - 25th March 2022
 - Fixed an issue with 'Enhance professions' ('Interface') which caused the new search box to be obscured.
 - Added lots of flight times.  There are now 2051 flight times stored in Leatrix Plus for BCC.

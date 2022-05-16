@@ -1,7 +1,7 @@
-## Interface: 20503
+## Interface: 20504
 ## Title: ClassicCastbars_Options
 ## Notes: Configuration for ClassicCastbars. Type /castbars for options.
-## Version: v1.4.4
+## Version: v1.4.5
 ## Dependencies: ClassicCastbars
 ## LoadOnDemand: 1
 

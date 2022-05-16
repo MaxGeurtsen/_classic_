@@ -1,6 +1,59 @@
 local  _, CLM = ...
 CLM.ChangelogData = {
     {
+        version = "v1.8.0",
+        data = {
+            {
+                name = "Features",
+                data = {
+                    {header = "Spanish Locale", body = "Spanish locale is now available to use. Big thank you to |cffAA151BSto|r|cffF1BF00ytovis|r|cffAA151Biao|r for the contribution."},
+                },
+            },
+            {
+                name = "Fixes",
+                data = {
+                    {header = "CommunityDKP Migration", body = "CommunityDKP migration for multiple teams in TBC should now properly set the DKP values."},
+                    {header = "Weekly gains", body = "Weekly gains should now be properly calculated if there is now weekly cap."},
+                    {header = "Alerts", body = "Alerts should now better display small, fractional values."},
+                },
+            },
+        }
+    },
+    {
+        version = "v1.7.1",
+        data = {
+            {
+                name = "Hotfix",
+                data = {
+                    {header = "Weekly cap", body = "Hotfix script errors for weekly cap."},
+                },
+            },
+        }
+    },
+    {
+        version = "v1.7.0",
+        data = {
+            {
+                name = "Notes",
+                data = {
+                    {header = "April's Fools", body = "Thank you all for having fun with us in first CLM |cff44ee44April Fools'|r raid week! Hear you next year for more cattle auction! ;)"},
+                },
+            },
+            {
+                name = "Features",
+                data = {
+                    {header = "Exports", body = "You can now export |cff4444eeStandings|r, |cff4444eePoint History|r and |cff4444ee Loot History|r to XML and JSON formats for integration with external tools. Check it through |cff44ee44/clm export|r (or minimap icon if you're a Manager). Be aware that XML export for full database can be very heavy and timeout. This happens due to point history size. If this happens for you (e.g. game freezes and no output is produced) try reloading and limiting the export size. New optimizations coming soon!"},
+                },
+            },
+            {
+                name = "Fixes",
+                data = {
+                    {header = "Rounding", body = "Fixed missing value rounding for zero-sum bank without caps."},
+                },
+            },
+        }
+    },
+    {
         version = "v1.6.0",
         data = {
             {

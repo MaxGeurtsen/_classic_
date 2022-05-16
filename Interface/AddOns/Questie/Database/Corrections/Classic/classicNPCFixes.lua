@@ -325,6 +325,9 @@ function QuestieNPCFixes:Load()
             [npcKeys.waypoints] = {[zoneIDs.DUROTAR]={{{54.2,73.2},{54.4,74.2},{54.4,75},{54,76.2},{54.4,75},{54.4,74.2},{54.2,73.2}}}},
             [npcKeys.spawns] = {[zoneIDs.DUROTAR]={{54.4,75}}},
         },
+        [3237] = {
+            [npcKeys.waypoints] = {},
+        },
         [3253] = {
             [npcKeys.spawns] = {[zoneIDs.THE_BARRENS]={{42,70}}},
             [npcKeys.waypoints] = {[zoneIDs.THE_BARRENS]={{{42,70},{44,69},{44,70},{44,73},{46,71},{47,69},{47,71}}}},
@@ -2365,6 +2368,10 @@ function QuestieNPCFixes:Load()
         [16143] = {
             [npcKeys.zoneID] = zoneIDs.WESTERN_PLAGUELANDS,
             [npcKeys.spawns] = {[zoneIDs.WESTERN_PLAGUELANDS] = {{44.13,71.5}}},
+        },
+        [16226] = {
+            [npcKeys.spawns] = {[zoneIDs.EASTERN_PLAGUELANDS] = {{80.3,57.8}}},
+            [npcKeys.zoneID] = zoneIDs.EASTERN_PLAGUELANDS,
         },
         [16255] = {
             [npcKeys.spawns] = {

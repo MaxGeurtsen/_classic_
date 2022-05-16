@@ -5,7 +5,7 @@
 
 local L = LibStub("AceLocale-3.0"):GetLocale("NovaInstanceTracker");
 local maxRecordsKept = 300;
-local maxTradesKept = 3000;
+local maxTradesKept = 2000;
 NIT.maxRecordsShown = 300;
 
 NIT.options = {

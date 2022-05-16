@@ -1,20 +1,18 @@
 # <DBM> Outlands
 
-## [2.5.30-15-g825359b](https://github.com/DeadlyBossMods/DBM-TBC-Classic/tree/825359be69ed12c91b4448700a233a7f29ed243e) (2022-03-25)
-[Full Changelog](https://github.com/DeadlyBossMods/DBM-TBC-Classic/compare/2.5.30...825359be69ed12c91b4448700a233a7f29ed243e) [Previous Releases](https://github.com/DeadlyBossMods/DBM-TBC-Classic/releases)
+## [2.5.35-6-ga8ca274](https://github.com/DeadlyBossMods/DBM-BCC/tree/a8ca274e1c9c9aaea20d94ce40b353e900f3c57b) (2022-05-16)
+[Full Changelog](https://github.com/DeadlyBossMods/DBM-BCC/compare/2.5.35...a8ca274e1c9c9aaea20d94ce40b353e900f3c57b) [Previous Releases](https://github.com/DeadlyBossMods/DBM-BCC/releases)
 
-- Fix https://github.com/DeadlyBossMods/DBM-TBC-Classic/issues/111  
-- This is hacky, but it won't throw errors setting a custom name.  
-- This should revert it to last stable point  
-- fuck it, i'm going to bed  
-- make luachec happy  
-- Fix bad copy paste  
-- not sure why this check is here, so remove it  
-- Update koKR (BCC) (DeadlyBossMods#107) (#110)  
-- Fix up Luacheck  
-- Fix logic  
-- no idea what spell is, since mods were lazy typed and poorly documented back then. it doesn't exist in classic tbc though so just remove it for now  
-- bump alpha  
-- prep new tag for retail  
-- Fixed a bug with timer text on kagath  
-- bump alphas  
+- tweak  
+- Muru Update  
+     - Slight adjustment to human spawn timers to line up better with their spawns  
+     - Black hole target is now detectable  
+     - Fixed a bug where false add spawn alerts could still fire/start new timers after phase 2 trigger has happened  
+     - Tweaks to black hole initial timer (was too long before)  
+- Brutallus Update  
+     - enabled burn target announce warning, since it now announces BOSSES target only and not spreads.  
+     - In addition, if you are the target of the bosses burn, you'll now get a warning that you are target about a full second faster since SUCCESS passes target in classic (when it didn't in original tbc)  
+     - Slight timer tweaks (talking .3 seconds here, any timer reports beyond that have been verifeid normal variance and not a DBM issue)  
+- Fixes to KJ timers  
+- Re update hyjal wave timer localization.kr (#1)  
+- Bump alphas  

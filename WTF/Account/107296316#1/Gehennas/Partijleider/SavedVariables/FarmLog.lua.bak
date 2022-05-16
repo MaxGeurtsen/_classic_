@@ -1,18 +1,13 @@
 
 FLogVars = {
 	["enabled"] = false,
-	["viewTotal"] = true,
-	["inInstance"] = false,
+	["lockMinimapButton"] = false,
 	["todayKills"] = {
 	},
-	["currentFarm"] = "default",
-	["lockMinimapButton"] = false,
-	["minimapButtonPosition"] = {
-		["y"] = -127,
-		["x"] = -165,
-		["point"] = "TOPRIGHT",
-	},
 	["ver"] = 1.2,
+	["viewTotal"] = true,
+	["enableMinimapButton"] = true,
+	["inInstance"] = false,
 	["hud"] = {
 		["show"] = false,
 		["locked"] = false,
@@ -32,7 +27,7 @@ FLogVars = {
 				["drops"] = {
 				},
 				["hks"] = 0,
-				["resets"] = 21,
+				["resets"] = 24,
 				["rep"] = {
 				},
 				["ranks"] = {
@@ -40,11 +35,11 @@ FLogVars = {
 				["dks"] = 0,
 				["bgsWin"] = {
 				},
-				["xp"] = 0,
-				["honor"] = 0,
-				["seconds"] = 0,
 				["consumes"] = {
 				},
+				["seconds"] = 0,
+				["honor"] = 0,
+				["xp"] = 0,
 				["bgsLoss"] = {
 				},
 				["bgs"] = {
@@ -72,11 +67,11 @@ FLogVars = {
 				["dks"] = 0,
 				["bgsWin"] = {
 				},
-				["xp"] = 0,
-				["honor"] = 0,
-				["seconds"] = 0,
 				["consumes"] = {
 				},
+				["seconds"] = 0,
+				["honor"] = 0,
+				["xp"] = 0,
 				["bgsLoss"] = {
 				},
 				["bgs"] = {
@@ -86,7 +81,12 @@ FLogVars = {
 			["honorTotal"] = 0,
 		},
 	},
-	["enableMinimapButton"] = true,
+	["minimapButtonPosition"] = {
+		["y"] = -127,
+		["x"] = -165,
+		["point"] = "TOPRIGHT",
+	},
+	["currentFarm"] = "default",
 	["frameRect"] = {
 		["y"] = 0,
 		["x"] = 0,

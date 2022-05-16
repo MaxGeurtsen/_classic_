@@ -107,6 +107,20 @@ local migrationFunctions = {
     [7] =  function()
         Questie.db.global.hasSeenBetaMessage = nil
     end,
+    [8] =  function()
+        if not Questie.db.char.questAnnounceChannel then
+            if (not Questie.db.char.questAnnounce) or Questie.db.char.questAnnounce == "disabled" then
+                Questie.db.char.questAnnounceChannel = "disabled"
+            else
+                Questie.db.char.questAnnounceChannel = "group"
+            end
+        end
+    end,
+    [9] = function()
+        if Questie.db.char.hiddenDailies and Questie.db.char.hiddenDailies.hc and next(Questie.db.char.hiddenDailies.hc) then
+            table.insert(Questie.db.char.hiddenDailies.hc, 11499, true) -- Add new HC daily to hiddenDailies
+        end
+    end,
 }
 
 function Migration:Migrate()

@@ -8,7 +8,8 @@ SavedPayments = {
 	["Psypower"] = 3100000,
 	["Holypumper"] = 7230000,
 	["Hokkari"] = 5800000,
-	["Udontknowme"] = 1740000,
+	["Udontknowme"] = 18490000,
+	["Ozziie"] = 7530000,
 	["Croxer"] = 1830000,
 	["Mohaadese"] = 8200000,
 	["Uldinx"] = 9340000,
@@ -155,7 +156,7 @@ SavedHistoricalPaymentsV2 = {
 		},
 	},
 	["Udontknowme"] = {
-		["Sum"] = 1740000,
+		["Sum"] = 18490000,
 		["Transactions"] = {
 			{
 				["PaymentDateTime"] = {
@@ -167,6 +168,33 @@ SavedHistoricalPaymentsV2 = {
 					["second"] = "48",
 				},
 				["Amount"] = 1740000,
+			}, -- [1]
+			{
+				["Amount"] = 16750000,
+				["PaymentDateTime"] = {
+					["year"] = "2022",
+					["month"] = "05",
+					["day"] = "16",
+					["minute"] = "18",
+					["hour"] = "19",
+					["second"] = "16",
+				},
+			}, -- [2]
+		},
+	},
+	["Ozziie"] = {
+		["Sum"] = 7530000,
+		["Transactions"] = {
+			{
+				["Amount"] = 7530000,
+				["PaymentDateTime"] = {
+					["year"] = "2022",
+					["month"] = "05",
+					["day"] = "14",
+					["minute"] = "32",
+					["hour"] = "19",
+					["second"] = "07",
+				},
 			}, -- [1]
 		},
 	},
@@ -220,7 +248,7 @@ SavedHistoricalPaymentsV2 = {
 	},
 }
 SavedWindowSettings = {
-	["y"] = 112.1847152709961,
+	["y"] = 106.5362396240234,
 	["x"] = 0,
 	["point"] = "CENTER",
 	["relativePoint"] = "CENTER",
@@ -231,8 +259,8 @@ SavedComments = {
 SavedSettings = {
 	["LOCKOUT_LOGOFFWARNING"] = true,
 	["FEATURE_Payment"] = true,
-	["AUTO_FOLLOW"] = false,
 	["LOCKOUT_RESETONGROUPCHANGE"] = true,
+	["AUTO_FOLLOW"] = false,
 	["FEATURE_LockoutStatistics"] = true,
 	["SPEEDY_AUTO_LOOT"] = false,
 	["PAYMENT_REPORTCHAT"] = true,

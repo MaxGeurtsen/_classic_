@@ -28,7 +28,23 @@ SavedSettings = {
 	["REPORT_ELEMENTAL_EARTH"] = false,
 }
 SavedAntiReloadUISettings = {
-	["IsEnteringFirstInstanceAfterLogin"] = true,
+	["IsEnteringFirstInstanceAfterLogin"] = false,
 	["SavedCharacterLockouts"] = {
+		["Partijlijder"] = {
+			["Coilfang: The Slave Pens"] = {
+				["instanceName"] = "Coilfang: The Slave Pens",
+				["identifier"] = 5686495,
+				["playerName"] = "Partijlijder",
+				["instanceType"] = "party",
+			},
+		},
+		["Horrorlol"] = {
+		},
+		["Laracrooft"] = {
+		},
+		["Repsie"] = {
+		},
+		["Badgallolxqt"] = {
+		},
 	},
 }

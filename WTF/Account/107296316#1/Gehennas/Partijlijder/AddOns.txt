@@ -1,2 +1,4 @@
 WeakAurasCompanion: enabled
 WeakAurasArchive: enabled
+Questie: enabled
+AAP-TBC-Classic: disabled

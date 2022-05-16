@@ -175,22 +175,12 @@ end
 
 
 local PlayStartSound, PlayEndSound
-if CLM.PAW then
-    PlayStartSound = function()
-        PlaySoundFile("Interface\\AddOns\\ClassicLootManager\\Media\\Audio\\lifestock_auction.ogg", "MASTER")
-    end
-    PlayEndSound = function()
-        PlaySoundFile("Interface\\AddOns\\ClassicLootManager\\Media\\Audio\\lifestock_auction_sold.ogg", "MASTER")
-    end
-else
-    PlayStartSound = function()
-        PlaySound(12889)
-    end
-    PlayEndSound = function()
-        PlaySound(12867)
-    end
+PlayStartSound = function()
+    PlaySound(12889)
 end
-
+PlayEndSound = function()
+    PlaySound(12867)
+end
 
 function BiddingManager:HandleStartAuction(data, sender)
     LOG:Trace("BiddingManager:HandleStartAuction()")

@@ -1,21 +1,10 @@
 # ClassicCastbars
 
-## [v1.4.4](https://github.com/wardz/ClassicCastbars/tree/v1.4.4) (2022-01-26)
-[Full Changelog](https://github.com/wardz/ClassicCastbars/compare/v1.4.3...v1.4.4) [Previous Releases](https://github.com/wardz/ClassicCastbars/releases)
+## [v1.4.5](https://github.com/wardz/ClassicCastbars/tree/v1.4.5) (2022-03-24)
+[Full Changelog](https://github.com/wardz/ClassicCastbars/compare/v1.4.4...v1.4.5) [Previous Releases](https://github.com/wardz/ClassicCastbars/releases)
 
-- return early for performance reasons  
-- show interrupt msg in castbar on successful interrupts  
-- restart casts on GROUP\_ROSTER\_UPDATE aswell since it can trigger randomly in combat etc  
-- check 'showCastBar' property aswell for player castbar incompatibility check  
-- shouldnt be needed  
-- simplify color initialization of player castbar  
-- code cleanup  
-- ensure animationgroups are inactive when frame is released  
-- remove duplicate code  
-- minor code cleanup  
-- bump toc & license year  
-- bump libs  
-- remove AMS for tbc castImmunityBuffs  
-- seems to work better (#61)  
-- add still casting checks for 'player' here since the stop events are triggered many times incorrectly for this specific unit (#61)  
-- bump settings version  
+- single to double quotes for tags  
+- increase debuff cap from 16 to 40 since debuff cap is removed in SoM  
+- set packager v1 here aswell  
+- [All] bump toc versions  
+- use packager v1 branch instead of master  

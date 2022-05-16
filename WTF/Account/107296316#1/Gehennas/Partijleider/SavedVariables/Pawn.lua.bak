@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0534,
+	["LastVersion"] = 2.0538,
 	["LastPlayerFullName"] = "Partijleider-Gehennas",
 	["AutoSelectScales"] = false,
 	["ItemLevels"] = {

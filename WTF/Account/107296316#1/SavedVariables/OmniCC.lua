@@ -1,25 +1,25 @@
 
 OmniCCDB = {
-	["global"] = {
-		["dbVersion"] = 6,
-		["addonVersion"] = "9.2.0",
-	},
 	["profileKeys"] = {
 		["Partijleider - Gehennas"] = "Default",
 		["Partijlijder - Gehennas"] = "Default",
-		["Partijcurses - Gehennas"] = "Default",
-		["Mírjam - Razorgore"] = "Default",
 		["Cursedbreath - Firemaw"] = "Default",
-		["Firebreather - Firemaw"] = "Default",
+		["Mírjam - Razorgore"] = "Default",
+		["Partijcurses - Gehennas"] = "Default",
+		["Mírjam - Firemaw"] = "Default",
 		["Awwaa - Gehennas"] = "Default",
 		["Helpsiebren - Razorgore"] = "Default",
-		["Rinque - Gehennas"] = "Default",
+		["Partijlijder - Razorgore"] = "Default",
 		["Mirjam - Firemaw"] = "Default",
 		["Partijleider - Razorgore"] = "Default",
+		["Rinque - Gehennas"] = "Default",
 		["Eefjé - Razorgore"] = "Default",
-		["Partijlijder - Razorgore"] = "Default",
-		["Mírjam - Firemaw"] = "Default",
+		["Firebreather - Firemaw"] = "Default",
 		["Kealthas - Razorgore"] = "Default",
+	},
+	["global"] = {
+		["dbVersion"] = 6,
+		["addonVersion"] = "9.2.0",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -38,9 +38,9 @@ OmniCCDB = {
 			["themes"] = {
 				["Default"] = {
 					["textStyles"] = {
-						["minutes"] = {
-						},
 						["seconds"] = {
+						},
+						["minutes"] = {
 						},
 						["soon"] = {
 						},
@@ -48,9 +48,9 @@ OmniCCDB = {
 				},
 				["Plater Nameplates Theme"] = {
 					["textStyles"] = {
-						["soon"] = {
-						},
 						["seconds"] = {
+						},
+						["soon"] = {
 						},
 						["minutes"] = {
 						},
@@ -61,10 +61,21 @@ OmniCCDB = {
 	},
 }
 OmniCC4Config = {
+	["groups"] = {
+	},
 	["version"] = "8.2.5",
 	["groupSettings"] = {
 		["base"] = {
 			["fontSize"] = 18,
+			["yOff"] = 0,
+			["anchor"] = "CENTER",
+			["minDuration"] = 2,
+			["xOff"] = 0,
+			["tenthsDuration"] = 0,
+			["fontOutline"] = "OUTLINE",
+			["minSize"] = 0.5,
+			["mmSSDuration"] = 0,
+			["minEffectDuration"] = 30,
 			["styles"] = {
 				["seconds"] = {
 					["scale"] = 1,
@@ -85,17 +96,6 @@ OmniCC4Config = {
 					["scale"] = 1.5,
 				},
 			},
-			["mmSSDuration"] = 0,
-			["minDuration"] = 2,
-			["xOff"] = 0,
-			["tenthsDuration"] = 0,
-			["fontOutline"] = "OUTLINE",
-			["minSize"] = 0.5,
-			["minEffectDuration"] = 30,
-			["anchor"] = "CENTER",
-			["yOff"] = 0,
 		},
-	},
-	["groups"] = {
 	},
 }

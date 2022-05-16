@@ -25,12 +25,11 @@ LunaUFDB = {
 				["party"] = {
 					["enabled"] = false,
 				},
-				["raidpet"] = {
-					["y"] = 387.9300043799194,
-					["x"] = 410.4000296320228,
-					["anchorTo"] = "UIParent",
-					["relativePoint"] = "BOTTOMLEFT",
+				["focus"] = {
 					["point"] = "BOTTOMLEFT",
+					["relativePoint"] = "BOTTOMLEFT",
+					["y"] = 428.6668078853945,
+					["x"] = 1025.9004830173,
 				},
 				["target"] = {
 					["point"] = "TOPLEFT",
@@ -44,8 +43,12 @@ LunaUFDB = {
 				["raid"] = {
 					["enabled"] = false,
 				},
-				["arena"] = {
-					["enabled"] = false,
+				["raidpet"] = {
+					["y"] = 387.9300043799194,
+					["x"] = 410.4000296320228,
+					["anchorTo"] = "UIParent",
+					["relativePoint"] = "BOTTOMLEFT",
+					["point"] = "BOTTOMLEFT",
 				},
 				["focustarget"] = {
 					["enabled"] = true,
@@ -99,14 +102,11 @@ LunaUFDB = {
 						["buffs"] = true,
 					},
 				},
-				["focus"] = {
-					["point"] = "BOTTOMLEFT",
-					["relativePoint"] = "BOTTOMLEFT",
-					["y"] = 428.6668078853945,
-					["x"] = 1025.9004830173,
+				["arena"] = {
+					["enabled"] = false,
 				},
 			},
-			["version"] = 4260,
+			["version"] = 4270,
 			["locked"] = true,
 			["fontoutline"] = false,
 		},
@@ -132,13 +132,6 @@ LunaUFDB = {
 				["partypet"] = {
 					["enabled"] = false,
 				},
-				["raidpet"] = {
-					["y"] = 387.9300043799194,
-					["x"] = 410.4000296320228,
-					["point"] = "BOTTOMLEFT",
-					["anchorTo"] = "UIParent",
-					["relativePoint"] = "BOTTOMLEFT",
-				},
 				["player"] = {
 					["castBar"] = {
 						["enabled"] = false,
@@ -149,18 +142,21 @@ LunaUFDB = {
 					["portrait"] = {
 						["type"] = "2D",
 					},
+					["y"] = 253.5328958166792,
 					["fader"] = {
 						["enabled"] = true,
 						["speedyFade"] = true,
 						["inactiveAlpha"] = 0,
 					},
-					["y"] = 253.5328958166792,
 					["auras"] = {
 						["buffsize"] = 10,
 						["buffs"] = true,
 					},
 				},
-				["arena"] = {
+				["party"] = {
+					["enabled"] = false,
+				},
+				["raid"] = {
 					["enabled"] = false,
 				},
 				["focus"] = {
@@ -178,24 +174,28 @@ LunaUFDB = {
 						["type"] = "2D",
 					},
 				},
-				["raid"] = {
-					["enabled"] = false,
-				},
 				["maintank"] = {
 					["y"] = -396.5836104252303,
 					["x"] = -1286.566665760674,
 					["point"] = "TOPRIGHT",
 					["relativePoint"] = "TOPRIGHT",
-					["width"] = 166,
 					["auras"] = {
-						["buffs"] = true,
-						["filterbuffs"] = 2,
 						["buffpos"] = "INFRAME",
+						["filterbuffs"] = 2,
 						["buffsize"] = 19,
+						["buffs"] = true,
 					},
+					["width"] = 166,
 				},
-				["party"] = {
+				["arena"] = {
 					["enabled"] = false,
+				},
+				["raidpet"] = {
+					["y"] = 387.9300043799194,
+					["x"] = 410.4000296320228,
+					["point"] = "BOTTOMLEFT",
+					["anchorTo"] = "UIParent",
+					["relativePoint"] = "BOTTOMLEFT",
 				},
 			},
 		},

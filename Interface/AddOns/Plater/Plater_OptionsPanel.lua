@@ -514,6 +514,10 @@ function Plater.OpenOptionsPanel()
 					for npcID, _ in pairs (Plater.db.profile.npc_colors) do
 						Plater.db.profile.npc_cache [npcID] = npc_cache [npcID]
 					end
+					--retain npc_cache for set npc_colors
+					for npcID, _ in pairs (Plater.db.profile.npcs_renamed) do
+						Plater.db.profile.npc_cache [npcID] = npc_cache [npcID]
+					end
 					
 					--save mod/script editing
 					local hookFrame = mainFrame.AllFrames [7]
@@ -1921,6 +1925,18 @@ local debuff_options = {
 		name = L["OPTIONS_ENABLED"],
 		desc = "Time left on buff or debuff.",
 	},
+	
+	{
+		type = "toggle",
+		get = function() return Plater.db.profile.aura_timer_decimals end,
+		set = function (self, fixedparam, value) 
+			Plater.db.profile.aura_timer_decimals = value
+			Plater.RefreshAuras()
+			Plater.UpdateAllPlates()
+		end,
+		name = "Show Decimals",
+		desc = "Show decimals below 10s remaining time",
+	},
 
 	{
 		type = "toggle",
@@ -2493,6 +2509,10 @@ Plater.CreateAuraTesting()
 			colorsFrame.ModelFrame:SetBackdropColor (.4, .4, .4, 1)
 
 			colorsFrame.ModelFrame:SetScript ("OnEnter", nil)
+			--colorsFrame.ModelFrame:SetScript ("OnMouseWheel", nil)
+			colorsFrame.ModelFrame.zoomLevel = 0.1
+			colorsFrame.ModelFrame.minZoom = 0.01
+			colorsFrame.ModelFrame.maxZoom = 1
 			
 			--store npcID = checkbox object
 			--this is used when selecting the color from the dropdown, it'll automatically enable the color and need to set the checkbox to checked for feedback
@@ -3114,12 +3134,13 @@ Plater.CreateAuraTesting()
 							local dbColors = Plater.db.profile.npc_colors
 							--table storing all npcs already detected inside dungeons and raids
 							local allNpcsDetectedTable = Plater.db.profile.npc_cache
+							local allNpcsRenamed = Plater.db.profile.npcs_renamed
 
 							--the uncompressed table is a numeric table of tables
 							for i, colorTable in pairs (colorData) do
 								--check integrity
 								if (type (colorTable) == "table") then
-									local npcID, scriptOnly, colorID, npcName, zoneName = unpack (colorTable)
+									local npcID, scriptOnly, colorID, npcName, zoneName, renamedName = unpack (colorTable)
 									if (npcID and colorID and npcName and zoneName) then
 										if (type (colorID) == "string" and type (npcName) == "string" and type (zoneName) == "string") then
 											if (type (npcID) == "number" and type (scriptOnly) == "boolean") then
@@ -3132,6 +3153,8 @@ Plater.CreateAuraTesting()
 												allNpcsDetectedTable [npcID] = allNpcsDetectedTable [npcID] or {}
 												allNpcsDetectedTable [npcID] [1] = npcName
 												allNpcsDetectedTable [npcID] [2] = zoneName
+												
+												allNpcsRenamed [npcID] = renamedName
 											end
 										end
 									end
@@ -3202,8 +3225,9 @@ Plater.CreateAuraTesting()
 								--build a table to store one the npc and insert the table inside the main table which will be compressed
 								--only add the npc if it is enabled in the color panel
 								if (enabled1) then
-												       --number   | boolean     | string   | string      | string
-									tinsert (exportedTable, {npcID, enabled2, colorID, npcName, zoneName})
+									local renamedName = Plater.db.profile.npcs_renamed [npcID]
+															--number| boolean |string  |string  |string   |string
+									tinsert (exportedTable, {npcID, enabled2, colorID, npcName, zoneName, renamedName})
 								end
 							end
 						end
@@ -3224,8 +3248,9 @@ Plater.CreateAuraTesting()
 							--build a table to store one the npc and insert the table inside the main table which will be compressed
 							--only add the npc if it is enabled in the color panel
 							if (enabled1 and npcName and zoneName) then
-											       --number   | boolean     | string   | string      | string
-								tinsert (exportedTable, {npcID, enabled2, colorID, npcName, zoneName})
+								local renamedName = Plater.db.profile.npcs_renamed [npcID]
+															--number| boolean |string  |string  |string   |string
+									tinsert (exportedTable, {npcID, enabled2, colorID, npcName, zoneName, renamedName})
 							end
 						end
 					end
@@ -4103,10 +4128,12 @@ Plater.CreateAuraTesting()
 		specialAuraFrame:SetPoint ("topright", auraSpecialFrame, "topright", -10, startY)
 		--DF:ApplyStandardBackdrop (specialAuraFrame, false, 0.6)
 		
+		local LoadGameSpellsCalled = false
 		function specialAuraFrame.LoadGameSpells()
-			if (not next (Plater.SpellHashTable)) then
+			if (not next (Plater.SpellHashTable) and not LoadGameSpellsCalled) then
 				--load all spells in the game
 				DF:LoadAllSpells (Plater.SpellHashTable, Plater.SpellIndexTable)
+				LoadGameSpellsCalled = true
 				return true
 			end
 		end
@@ -4249,8 +4276,11 @@ Plater.CreateAuraTesting()
 						-- avoids "unknown spell" in this case
 
 						if (not next (Plater.SpellHashTable)) then
-							specialAuraFrame.LoadGameSpells()
-							C_Timer.After (0.2, function() self:Refresh() end)
+							local loaded = specialAuraFrame.LoadGameSpells()
+							if loaded then
+								DF.LoadingAuraAlertFrame:HookScript("OnHide", function() self:Refresh() end)
+							end
+							--C_Timer.After (1, function() self:Refresh() end)
 						end
 						local id = Plater.SpellHashTable[lower(aura)]
 						spellName, _, spellIcon = GetSpellInfo (id)
@@ -4490,6 +4520,16 @@ Plater.CreateAuraTesting()
 				name = "Default Border Color",
 				desc = "Default Border Color",
 			},
+			{
+				type = "toggle",
+				get = function() return Plater.db.profile.extra_icon_cooldown_reverse end,
+				set = function (self, fixedparam, value) 
+					Plater.db.profile.extra_icon_cooldown_reverse = value
+					Plater.UpdateAllPlates()
+				end,
+				name = "Swipe Closure Inverted",
+				desc = "If enabled the swipe closure texture is applied as the swipe moves instead.",
+			},
 			
 			{type = "breakline"},
 			--{type = "label", get = function() return "Text Settings:" end, text_template = DF:GetTemplate ("font", "ORANGE_FONT_TEMPLATE")},
@@ -4503,6 +4543,16 @@ Plater.CreateAuraTesting()
 				end,
 				name = "Show Timer",
 				desc = "Show Timer",
+			},
+			{
+				type = "toggle",
+				get = function() return Plater.db.profile.extra_icon_timer_decimals end,
+				set = function (self, fixedparam, value) 
+					Plater.db.profile.extra_icon_timer_decimals = value
+					Plater.UpdateAllPlates()
+				end,
+				name = "Show Decimals",
+				desc = "Show decimals below 10s remaining time",
 			},
 			{
 				type = "select",
@@ -6696,10 +6746,10 @@ local relevance_options = {
 				end
 			end,
 			min = IS_WOW_PROJECT_MAINLINE and 60 or 20, --20y for tbc and classic
-			max = (IS_WOW_PROJECT_MAINLINE and 60) or (IS_WOW_PROJECT_CLASSIC_TBC and 40) or 20, --40y for tbc, 20y for classic era
+			max = (IS_WOW_PROJECT_MAINLINE and 60) or (IS_WOW_PROJECT_CLASSIC_TBC and 41) or 20, --41y for tbc, 20y for classic era
 			step = 1,
 			name = "View Distance" .. CVarIcon,
-			desc = "How far you can see nameplates (in yards).\n\n|cFFFFFFFFCurrent limitations: Retail = 60y, TBC = 20-40y, Classic = 20y|r" .. CVarDesc,
+			desc = "How far you can see nameplates (in yards).\n\n|cFFFFFFFFCurrent limitations: Retail = 60y, TBC = 20-41y, Classic = 20y|r" .. CVarDesc,
 			nocombat = true,
 		},
 	
@@ -7438,6 +7488,17 @@ local relevance_options = {
 			end,
 			name = "Pet Icon",
 			desc = "Pet Icon",
+		},
+
+		{
+			type = "toggle",
+			get = function() return Plater.db.profile.indicator_shield end,
+			set = function (self, fixedparam, value) 
+				Plater.db.profile.indicator_shield = value
+				Plater.UpdateAllPlates()
+			end,
+			name = "Shield Bar",
+			desc = "Shield Bar",
 		},
 		
 		{
@@ -10728,7 +10789,7 @@ end
 				get = function() return Plater.db.profile.plate_config.enemynpc.big_actorname_text_size end,
 				set = function (self, fixedparam, value) 
 					Plater.db.profile.plate_config.enemynpc.big_actorname_text_size = value
-					Plater.db.profile.plate_config.enemynpc.big_actortitle_text_size = value
+					--Plater.db.profile.plate_config.enemynpc.big_actortitle_text_size = value --why? there's a separate setting.
 					Plater.UpdateAllPlates()
 				end,
 				min = 6,
@@ -13130,6 +13191,21 @@ end
 			values = function() return nameplate_anchor_options end,
 			name = "Anchor Point" .. CVarIcon,
 			desc = "Where the nameplate is anchored to.\n\n|cFFFFFFFFDefault: Head|r" .. CVarDesc,
+			nocombat = true,
+		},
+		{
+			type = "toggle",
+			get = function() return GetCVarBool ("nameplateShowDebuffsOnFriendly") end,
+			set = function (self, fixedparam, value) 
+				if (not InCombatLockdown()) then
+					SetCVar ("nameplateShowDebuffsOnFriendly", value and "1" or "0")
+				else
+					Plater:Msg (L["OPTIONS_ERROR_CVARMODIFY"])
+					self:SetValue (GetCVarBool ("nameplateShowDebuffsOnFriendly"))
+				end
+			end,
+			name = "Show Debuffs on Blizzard Health Bars" .. CVarIcon,
+			desc = "While in dungeons or raids, if friendly nameplates are enabled it won't show debuffs on them.\nIf any Plater module is disabled, this will affect these nameplates as well." .. CVarDesc .. CVarNeedReload,
 			nocombat = true,
 		},
 		

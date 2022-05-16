@@ -1,36 +1,32 @@
-lightweight tag 1b83c9b7828a3c4afe1950aae43c38e7a94abed3 2.0.63.TBCC
+lightweight tag 1112b4f2a63ce02d7efb1386ef07eaf45cf86343 2.0.64.TBCC
 Author:	GitHub <noreply@github.com>
-Date:	Thu Jan 20 03:00:39 2022 -0800
+Date:	Mon May 2 17:19:38 2022 -0700
 
-commit 5c76a140a4c1a7515e693edf4ddf733e5ebf8051
-Author: MotherGinger <29235654+MotherGinger@users.noreply.github.com>
-Date:   Thu Jan 20 04:54:02 2022 -0500
+commit 0178284fb1f8c56b01c9e11c24b1f15126f4df27
+Author: Jens N <jens.n@godlike.biz>
+Date:   Sun May 1 19:41:36 2022 +0200
 
-    Remove deprecated backdrop templates, and add defaults
+    Added persistent Accessory equips that will not be unequipped unless done manually
 
-commit 5c76a140a4c1a7515e693edf4ddf733e5ebf8051
-Author: MotherGinger <29235654+MotherGinger@users.noreply.github.com>
-Date:   Thu Jan 20 04:54:02 2022 -0500
+commit 0178284fb1f8c56b01c9e11c24b1f15126f4df27
+Author: Jens N <jens.n@godlike.biz>
+Date:   Sun May 1 19:41:36 2022 +0200
 
-    Remove deprecated backdrop templates, and add defaults
+    Added persistent Accessory equips that will not be unequipped unless done manually
 
-commit 7e8e304756a78c3563735190bd6f708b2b80681b
-Author: MotherGinger <29235654+MotherGinger@users.noreply.github.com>
-Date:   Thu Jan 20 02:33:14 2022 -0500
+commit 58a1fdc8528a3cbc03f27f91fe072430684d6338
+Author: CKNOEP <c.knoepffler@free.fr>
+Date:   Thu Jan 20 17:36:24 2022 +0100
 
-    Respect the NineSlicePanelTemplate settings
-
-commit 83b7e3e4ffe62867097a7b225a8ececa10a47933
-Author: MotherGinger <29235654+MotherGinger@users.noreply.github.com>
-Date:   Thu Jan 20 01:47:53 2022 -0500
-
-    Fix #87 - Add backdrop mixin to GameTooltip
-
-commit d40810f52cc486473ef47be41a10bdb738e92953
-Author: balder89 <balder89@users.noreply.github.com>
-Date:   Thu Jan 20 01:00:01 2022 +0100
-
-    Update LibDropdown-1.0.lua
+    Update OutfitterStrings_fr.lua
     
-    Fix the dropdown menus
+    Thanks a lot for your job.
+
+commit 58a1fdc8528a3cbc03f27f91fe072430684d6338
+Author: CKNOEP <c.knoepffler@free.fr>
+Date:   Thu Jan 20 17:36:24 2022 +0100
+
+    Update OutfitterStrings_fr.lua
+    
+    Thanks a lot for your job.
 

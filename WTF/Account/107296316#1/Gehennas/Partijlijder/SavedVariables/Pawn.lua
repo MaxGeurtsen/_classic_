@@ -1,6 +1,8 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0534,
+	["LastVersion"] = 2.0538,
+	["LastPlayerFullName"] = "Partijlijder-Gehennas",
+	["AutoSelectScales"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 186026,
@@ -83,8 +85,6 @@ PawnOptions = {
 			["Link"] = "|cff1eff00|Hitem:11287::::::::11:::::::::|h[Lesser Magic Wand]|h|r",
 		},
 	},
-	["AutoSelectScales"] = false,
-	["LastPlayerFullName"] = "Partijlijder-Gehennas",
 }
 PawnMrRobotScaleProviderOptions = nil
 PawnClassicScaleProviderOptions = {

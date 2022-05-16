@@ -252,13 +252,13 @@ NIT.zones = {
 	[544] = {
 		name = L["Magtheridon's Lair"],
 		type = "raid",
-		expansion = "classic",
+		expansion = "tbc",
 		noLockout = true,
 	},
 	[548] = {
 		name = L["Serpentshrine Cavern"],
 		type = "raid",
-		expansion = "classic",
+		expansion = "tbc",
 		noLockout = true,
 	},
 	[580] = {
@@ -269,6 +269,12 @@ NIT.zones = {
 	},
 	[550] = {
 		name = L["Tempest Keep"],
+		type = "raid",
+		expansion = "tbc",
+		noLockout = true,
+	},
+	[568] = {
+		name = L["Zul'Aman"],
 		type = "raid",
 		expansion = "tbc",
 		noLockout = true,

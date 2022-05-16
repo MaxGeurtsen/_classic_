@@ -1,5 +1,6 @@
 
 MBB_Exclude = {
+	"Lib_GPI_Minimap_LFGBulletinBoard", -- [1]
 }
 MBB_Options = {
 	["CollapseTimeout"] = 1,

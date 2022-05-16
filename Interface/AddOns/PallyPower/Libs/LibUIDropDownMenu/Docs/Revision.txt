@@ -1,7 +1,11 @@
-$Id: Revision.txt 96 2022-02-27 16:04:56Z arithmandar $
+$Id: Revision.txt 98 2022-03-23 12:37:08Z arithmandar $
 
 Revision History:
 =================
+
+v4.09.9020042698 (2022/03/23)
+-----------------------------
+- BCC ToC update to support WoW 2.5.4
 
 v4.09.9020042488 (2022/02/28)
 -----------------------------

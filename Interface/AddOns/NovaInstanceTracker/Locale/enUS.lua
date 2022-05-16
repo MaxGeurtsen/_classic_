@@ -351,6 +351,8 @@ L["honorGains"] = "Honor Gains";
 L["Honor"] = "Honor";
 L["Won"] = "Won";
 L["Lost"] = "Lost";
+L["Arena"] = "Arena";
+L["Arena Points"] = "Arena Points";
 
 L["stillInArena"] = "Still inside";
 L["stillInBattleground"] = "Still inside";

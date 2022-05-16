@@ -2,7 +2,7 @@
 ## Title: Classic Loot Manager
 ## Notes: Robust, DKP based Loot Manager system
 ## Author: Lantis
-## Version: v1.6.0
+## Version: v1.8.0
 ## X-License: MIT
 ## X-Curse-Project-ID: 481373
 ## X-WoWI-ID: 26001
@@ -42,6 +42,8 @@ Libs\lib-st\lib-st.xml
 
 # Additional
 Libs\LibCandyBar-3.0\lib.xml
+Libs\LibJsonLua\LibJsonLua.lua
+Libs\LibLuaXML\LibLuaXML.lua
 
 # Locale
 Locale\enUS.lua
@@ -49,6 +51,7 @@ Locale\enUS.lua
 Locale\ruRU.lua
 Locale\frFR.lua
 #Locale\itIT.lua
+Locale\esES.lua
 
 # Addon Core
 ClassicLootManager.lua
@@ -127,4 +130,10 @@ Global\GlobalBindings.lua
 # Extra
 MinimapIcon.lua
 Migration.lua
-Integration.lua
+
+# Integrations
+Integrations\Integrations.lua
+Integrations\Exporter.lua
+Integrations\ExportConfiguration.lua
+Integrations\GUI.lua
+

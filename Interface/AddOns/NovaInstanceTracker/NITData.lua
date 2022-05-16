@@ -281,6 +281,7 @@ f:SetScript('OnEvent', function(self, event, ...)
 		NIT:chatMsgCombatFactionChange(...);
 	elseif (event == "CHAT_MSG_COMBAT_HONOR_GAIN") then
 		NIT:chatMsgCombatHonorGain(...);
+		NIT:recordHonorData();
 	elseif (event == "PLAYER_REGEN_ENABLED") then
 		NIT:recordCombatEndedData(...);
 		--Send GUID from mage possibly later after pull is done.
@@ -1552,6 +1553,9 @@ function NIT:recordCharacterData()
 	NIT:recordInventoryData();
 	NIT:recordLockoutData();
 	NIT:recordPvpData();
+	NIT:recordHonorData();
+	NIT:recordArenaPoints();
+	NIT:recordMarksData();
 	NIT:recordCooldowns();
 end
 
@@ -1619,6 +1623,86 @@ function NIT:recordPvpData()
 			NIT.data.myChars[char].pvpRankNumber = rankNumber;
 			NIT.data.myChars[char].pvpRankPercent = rankPercent;
 		end
+	end
+end
+
+function NIT:recordHonorData()
+	if (NIT.isClassic) then
+		return;
+	end
+	local data = C_CurrencyInfo.GetCurrencyInfo(1901);
+	local char = UnitName("player");
+	if (not NIT.data.myChars[char]) then
+		NIT.data.myChars[char] = {};
+	end
+	if (data and data.quantity and data.quantity > 0) then
+		NIT.data.myChars[char].honor = data.quantity;
+	else
+		NIT.data.myChars[char].honor = 0;
+	end
+end
+
+function NIT:recordArenaPoints()
+	if (NIT.isClassic) then
+		return;
+	end
+	local data = C_CurrencyInfo.GetCurrencyInfo(1900);
+	local char = UnitName("player");
+	if (not NIT.data.myChars[char]) then
+		NIT.data.myChars[char] = {};
+	end
+	if (data and data.quantity and data.quantity > 0) then
+		NIT.data.myChars[char].arenaPoints = data.quantity;
+	else
+		NIT.data.myChars[char].arenaPoints = 0;
+	end
+end
+
+NIT.bgMarks = {
+	[20558] = {
+		name = "Warsong Gulch Mark of Honor",
+		icon = 134420,
+	};
+	[20559] = {
+		name = "Arathi Basin Mark of Honor",
+		icon = 133282,
+	};
+	[20560] = {
+		name = "Alterac Valley Mark of Honor",
+		icon = 133308,
+	};
+};
+if (NIT.isTBC) then
+	NIT.bgMarks[29024] = {
+		name = "Eye of the Storm Mark of Honor",
+		icon = 136032,
+	};
+end
+if (NIT.isWrath) then
+	NIT.bgMarks[29024] = {
+		name = "Eye of the Storm Mark of Honor",
+		icon = 136032,
+	};
+	NIT.bgMarks[42425] = {
+		name = "Strand of the Ancients Mark of Honor",
+		icon = 133276,
+	};
+	NIT.bgMarks[47395] = {
+		name = "Isle of Conquest Mark of Honor",
+		icon = 133314,
+	};
+end
+
+function NIT:recordMarksData()
+	local char = UnitName("player");
+	if (not NIT.data.myChars[char]) then
+		NIT.data.myChars[char] = {};
+	end
+	if (not NIT.data.myChars[char].marks) then
+		NIT.data.myChars[char].marks = {};
+	end
+	for k, v in pairs(NIT.bgMarks) do
+		NIT.data.myChars[char].marks[k] = (GetItemCount(k, true) or 0);
 	end
 end
 
@@ -1803,6 +1887,7 @@ function NIT:recordInventoryData()
 			end
 		end
 	end
+	NIT:recordMarksData();
 end
 
 function NIT:recordPlayerLevelData()

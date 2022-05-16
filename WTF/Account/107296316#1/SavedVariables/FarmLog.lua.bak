@@ -1,21 +1,21 @@
 
 FLogGlobalVars = {
 	["track"] = {
-		["misc"] = false,
 		["deaths"] = true,
+		["misc"] = false,
+		["consumes"] = true,
 		["honor"] = true,
-		["drops"] = true,
 		["hks"] = true,
 		["levelup"] = true,
 		["xp"] = true,
 		["ranks"] = true,
 		["dks"] = true,
 		["kills"] = true,
-		["resets"] = true,
-		["rep"] = true,
-		["skill"] = false,
 		["money"] = true,
-		["consumes"] = true,
+		["skill"] = false,
+		["rep"] = true,
+		["resets"] = true,
+		["drops"] = true,
 		["bgs"] = true,
 	},
 	["blt"] = {
@@ -40,6 +40,24 @@ FLogGlobalVars = {
 		["Razorgore"] = {
 		},
 		["Gehennas"] = {
+			{
+				["enter"] = 1652732243,
+				["player"] = "Partijlijder",
+				["name"] = "Coilfang: The Slave Pens",
+				["leave"] = 1652733167,
+			}, -- [1]
+			{
+				["enter"] = 1652731462,
+				["player"] = "Partijlijder",
+				["name"] = "Coilfang: The Slave Pens",
+				["leave"] = 1652732237,
+			}, -- [2]
+			{
+				["enter"] = 1652730807,
+				["player"] = "Partijlijder",
+				["name"] = "Coilfang: The Slave Pens",
+				["leave"] = 1652731455,
+			}, -- [3]
 		},
 	},
 	["blackLotusTimeSeconds"] = 3600,
@@ -48,34 +66,34 @@ FLogGlobalVars = {
 	["minQuantitySold"] = false,
 	["showHonorPercentOnTooltip"] = true,
 	["debug"] = false,
-	["bls"] = {
-		["Razorgore"] = {
-		},
-		["Gehennas"] = {
-		},
-	},
+	["resumeSessionOnSwitch"] = true,
 	["autoSwitchInstances"] = false,
-	["sortSessionBy"] = "$",
-	["sortBy"] = "A",
-	["hud"] = {
-		["fontSize"] = 12,
-		["paddingX"] = 8,
-		["alpha"] = 0.7,
-		["fontName"] = "Fonts\\FRIZQT__.TTF",
-		["paddingY"] = 5,
-	},
-	["ver"] = 1.2,
-	["honorDRinBGs"] = true,
-	["reportTo"] = {
-	},
-	["dismissLootWindowOnEsc"] = false,
-	["showHonorFrenzyCounter"] = true,
-	["showBlackLotusTimer"] = true,
 	["ahPrice"] = {
 		["Razorgore"] = {
 		},
 		["Gehennas"] = {
 		},
 	},
-	["resumeSessionOnSwitch"] = true,
+	["showBlackLotusTimer"] = true,
+	["honorDRinBGs"] = true,
+	["ver"] = 1.2,
+	["hud"] = {
+		["fontSize"] = 12,
+		["paddingX"] = 8,
+		["fontName"] = "Fonts\\FRIZQT__.TTF",
+		["alpha"] = 0.7,
+		["paddingY"] = 5,
+	},
+	["reportTo"] = {
+	},
+	["dismissLootWindowOnEsc"] = false,
+	["showHonorFrenzyCounter"] = true,
+	["sortSessionBy"] = "$",
+	["sortBy"] = "A",
+	["bls"] = {
+		["Razorgore"] = {
+		},
+		["Gehennas"] = {
+		},
+	},
 }

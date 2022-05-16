@@ -770,6 +770,7 @@ PLATER_DEFAULT_SETTINGS = {
 		aura_custom = {},
 		
 		aura_timer = true,
+		aura_timer_decimals = false,
 		aura_timer_text_size = 15,
 		aura_timer_text_font = "Arial Narrow",
 		aura_timer_text_anchor = {side = 9, x = 0, y = 0},
@@ -788,6 +789,8 @@ PLATER_DEFAULT_SETTINGS = {
 		
 		extra_icon_anchor = {side = 6, x = -4, y = 0},
 		extra_icon_show_timer = true,
+		extra_icon_timer_decimals = false,
+		extra_icon_cooldown_reverse = false,
 		extra_icon_timer_font = "Arial Narrow",
 		extra_icon_timer_size = 12,
 		extra_icon_timer_outline = "NONE",
@@ -2654,6 +2657,7 @@ PLATER_DEFAULT_SETTINGS = {
 		indicator_friendlyclass = false,
 		indicator_anchor = {side = 2, x = -2, y = 0},
 		indicator_scale = 1,
+		indicator_shield = false,
 		
 		indicator_extra_raidmark = true,
 		indicator_raidmark_scale = 1,

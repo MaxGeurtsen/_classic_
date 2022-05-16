@@ -119,7 +119,7 @@ DejaClassicStatsDBPC = {
 			["ShowMeleeSetChecked"] = true,
 		},
 		["DejaClassicStatsManaRegenNotCasting"] = {
-			["DCSnotcasting"] = 6.7109055519104,
+			["DCSnotcasting"] = 23.18792343139648,
 		},
 		["DejaClassicStatsShowModelRotation"] = {
 			["ShowModelRotationChecked"] = false,

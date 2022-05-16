@@ -8,21 +8,21 @@ GoldSave = {
 	["Partijleider_Gehennas::Horde"] = {
 		["show"] = true,
 		["name"] = "Partijleider",
-		["gold"] = 23748577,
+		["gold"] = 47328413,
 	},
 	["Partijlijder_Gehennas::Horde"] = {
 		["show"] = true,
 		["name"] = "Partijlijder",
-		["gold"] = 3329058,
-	},
-	["Partijlijder_Razorgore::Horde"] = {
-		["show"] = true,
-		["name"] = "Partijlijder",
-		["gold"] = 55,
+		["gold"] = 1401601,
 	},
 	["Rinque_Gehennas::Horde"] = {
 		["show"] = true,
 		["name"] = "Rinque",
 		["gold"] = 32379235,
+	},
+	["Partijlijder_Razorgore::Horde"] = {
+		["show"] = true,
+		["name"] = "Partijlijder",
+		["gold"] = 55,
 	},
 }

@@ -14,7 +14,7 @@ CLM.GUI = {}
 CLM.OPTIONS = {}
 CLM.ALERTS = {}
 
-CLM.AUTOVERSION = "v1.6.0"
+CLM.AUTOVERSION = "v1.8.0"
 
 CLM.LOG = LibStub("LibLogger"):New()
 
@@ -248,6 +248,4 @@ function CORE:GUILD_ROSTER_UPDATE(...)
         self:_Initialize()
     end
 end
-
-CLM.PAW = ((GetServerTime() >= 1648512000) and (GetServerTime() <= 1649116800)) and not CLM_DB.DisableFun
 

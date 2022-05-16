@@ -915,7 +915,11 @@ function NIT:getMinimapButtonNextExpires(char)
 	local count = 0;
 	local found;
 	for k, v in ipairs(self.data.instances) do
-		if (not v.isPvp and (not NIT.perCharOnly or char == v.playerName)) then
+		local noLockout;
+		if (v.instanceID and NIT.zones[v.instanceID] and NIT.zones[v.instanceID].noLockout) then
+			noLockout = true;
+		end
+		if (not v.isPvp and not noLockout and (not NIT.perCharOnly or char == v.playerName)) then
 			if (v.leftTime and v.leftTime > (GetServerTime() - 3600)) then
 				local time = 3600 - (GetServerTime() - v.leftTime);
 				--msg = msg .. "\n|cFF9CD6DE" .. v.instanceName .. " expires in " .. NIT:getTimeString(time, true);
@@ -2353,7 +2357,7 @@ function NIT:recalcTradeLogFrame()
 	local found;
 	for k, v in ipairs(NIT.data.trades) do
 		count = count + 1;
-		if (count > 100) then
+		if (count > 200) then
 			break;
 		end
 		local msg = "";
@@ -3556,6 +3560,42 @@ function NIT:recalcAltsLineFramesTooltip(obj)
 			end
 			if (foundCooldowns) then
 				text = text .. cooldownText;
+			end
+			local pvpString = "";
+			if (data.honor and data.honor > 0) then
+				local texture;
+				if (NIT.faction == "Horde") then
+					texture = "|TInterface\\TargetingFrame\\UI-PVP-Horde:12:12:-1:0:64:64:7:36:1:36|t"
+				else
+					texture = "|TInterface\\TargetingFrame\\UI-PVP-Alliance:12:12:0:0:64:64:7:36:1:36|t";
+				end
+				pvpString = pvpString .. "\n  " .. texture .. " " .. color1 .. L["Honor"] .. ":|r " .. color2 .. NIT:commaValue(data.honor) .. "|r";
+			end
+			if (data.arenaPoints and data.arenaPoints > 0) then
+				local texture = "|T4006481:12:12|t";
+				pvpString = pvpString .. "\n  " .. texture .. " " .. color1 .. L["Arena Points"] .. ":|r " .. color2 .. NIT:commaValue(data.arenaPoints) .. "|r";
+			end
+			if (data.marks and next(data.marks)) then
+				for k, v in NIT:pairsByKeys(data.marks) do
+					if (v > 0) then
+						local texture = NIT.bgMarks[k].icon;
+						if (texture) then
+							texture = "|T" .. texture .. ":12:12:0:0|t";
+						end
+						--Try and get localization for the item name.
+						local itemName = GetItemInfo(k);
+						if (not itemName) then
+							itemName = NIT.bgMarks[k].name;
+						end
+						itemName = string.gsub(itemName, " of Honor", "");
+						pvpString = pvpString .. "\n  " .. texture .. " " .. color1 .. itemName .. ":|r "
+								.. color2 .. v .. "|r";
+					end
+				end
+			end
+			if (pvpString ~= "") then
+				text = text .. "\n\n|cFFFFFF00" .. L["PvP"] .. "|r";
+				text = text .. pvpString;
 			end
 			if (not NIT.isTBC) then
 				local pvpRank = "\n\n|cFFFFFF00" .. L["pvp"] .. " " .. L["rank"] .. "|r";
