@@ -100,3 +100,5 @@ ElvUI_QuestXP: disabled
 ElvUI_CustomTags: disabled
 ElvUI_OptionsUI: enabled
 ClassicLootManager: disabled
+WoWPro: disabled
+WoWPro_Leveling: disabled

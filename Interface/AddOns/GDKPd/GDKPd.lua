@@ -2124,13 +2124,13 @@ end
 function GDKPd:DistributePot()
 	local numraid = GetNumGroupMembers()
 	if not (numraid > 0) then return end
-	local distAmount = (GDKPd_PotData.potAmount or 0)-(GDKPd_PotData.prevDist or 0)
+	local distAmount = ((GDKPd_PotData.potAmount or 0)-(GDKPd_PotData.prevDist or 0))*(1-self.opt.shareSecondAmount)
 	if distAmount <= 0 then return end
 	local numadditionalmemb = self.opt.AdditonalRaidMembersAmount
 	if self.opt.AdditionalRaidMembersEnable then
-		SendChatMessage(("Distributing pot. Pot size: %d gold. Amount to distribute: %d gold. Players in raid: %d(%d). Share per player: %d gold."):format((GDKPd_PotData.potAmount or 0), distAmount, numraid,numadditionalmemb, (distAmount or 0)/(numraid+numadditionalmemb)),"RAID")
+		SendChatMessage(("Distributing pot. Pot size: %d gold. Amount to distribute: %d gold. Share per player: %d gold."):format((GDKPd_PotData.potAmount or 0), distAmount, (distAmount or 0)/(numraid+numadditionalmemb)),"RAID")
 	else
-		SendChatMessage(("Distributing pot. Pot size: %d gold. Amount to distribute: %d gold. Players in raid: %d. Share per player: %d gold."):format((GDKPd_PotData.potAmount or 0), distAmount, numraid, (distAmount or 0)/numraid),"RAID")
+		SendChatMessage(("Distributing pot. Pot size: %d gold. Amount to distribute: %d gold. Share per player: %d gold."):format((GDKPd_PotData.potAmount or 0), distAmount, (distAmount or 0)/numraid),"RAID")
 	end
 	for numRaid=1, numraid do
 		if self.opt.AdditionalRaidMembersEnable then

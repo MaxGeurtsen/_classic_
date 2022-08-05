@@ -840,3 +840,6 @@ L["Completed PvP dailies"] = "Completed PvP dailies";
 L["Hellfire Towers"] = "Hellfire Towers";
 L["Terokkar Towers"] = "Terokkar Towers";
 L["Nagrand Halaa"] = "Nagrand Halaa";
+
+L["wintergraspTimer"] = "Wintergrasp";
+L["wintergraspWarning"] = "Wintergrasp resets in %s";

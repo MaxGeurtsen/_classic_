@@ -2,3 +2,7 @@ WeakAurasCompanion: enabled
 WeakAurasArchive: enabled
 Questie: enabled
 AAP-TBC-Classic: disabled
+LFGBulletinBoard: enabled
+Outfitter: disabled
+WoWPro: disabled
+WoWPro_Leveling: disabled

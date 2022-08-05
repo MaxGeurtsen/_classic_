@@ -1,0 +1,26 @@
+lightweight tag 972945cb596aaf0ca4da543a43758d9bd0aed029 v1.2.0
+Author:	GitHub <noreply@github.com>
+Date:	Fri Mar 25 13:02:50 2022 -0700
+
+commit 2b5c814adec556a5ae5d53d95d79207f067a9e3b
+Author: Steffen Higel <higels@valvesoftware.com>
+Date:   Fri Mar 25 11:21:50 2022 -0700
+
+    Bumping Interface + Addon version in TOC
+    
+    Bumping interface to 20502 and addon to 1.2.0.
+
+commit 2b5c814adec556a5ae5d53d95d79207f067a9e3b
+Author: Steffen Higel <higels@valvesoftware.com>
+Date:   Fri Mar 25 11:21:50 2022 -0700
+
+    Bumping Interface + Addon version in TOC
+    
+    Bumping interface to 20502 and addon to 1.2.0.
+
+commit 7e4a4fbad2f70b4a2cb6f4d9474c690fc9e605cf
+Author: Steffen Higel <higels@gmail.com>
+Date:   Fri Mar 25 10:49:11 2022 -0700
+
+    adding Zul'Aman areaIDs
+

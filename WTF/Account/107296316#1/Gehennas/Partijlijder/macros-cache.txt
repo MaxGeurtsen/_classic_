@@ -9,6 +9,11 @@ VER 3 0000000001000003 "Dash" "INV_MISC_QUESTIONMARK"
 /cast [nostance:3] Cat Form(Shapeshift); [nostealth, nocombat] 
 /cast Dash
 END
+VER 3 0000000001000005 "FORM" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [noform:5] Moonkin Form
+/cast Starfire
+END
 VER 3 0000000001000004 "Hurricane" "INV_MISC_QUESTIONMARK"
 #showtooltip Hurricane
 /cast [@cursor] Hurricane

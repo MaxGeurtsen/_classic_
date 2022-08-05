@@ -1,7 +1,7 @@
 -- Luna Unit Frames 4.0 by Aviana
 
 LUF = select(2, ...)
-LUF.version = 4270
+LUF.version = 4330
 
 local L = LUF.L
 local ACR = LibStub("AceConfigRegistry-3.0", true)
@@ -35,6 +35,35 @@ LUF.stateMonitor:WrapScript(LUF.stateMonitor, "OnAttributeChanged", [[
 	local setting = self:GetAttribute("hideraid")
 	local showParty = setting == "never" or status ~= "full" and setting == "5man" or setting == "always" and status == "none"
 	
+	local frame
+	if self:GetAttribute("hideParty") and status ~= "full" and self:GetAttribute("showWhen") == "RAID" then
+		frame =self:GetFrameRef("raidpet")
+		if frame then
+			frame:SetAttribute("raidHidden",true)
+			frame:Hide()
+		end
+		for i=1, 9 do
+			frame = self:GetFrameRef("raid"..i)
+			if frame then
+				frame:SetAttribute("raidHidden",true)
+				frame:Hide()
+			end
+		end
+	else
+		frame = self:GetFrameRef("raidpet")
+		if frame and frame:GetAttribute("isEnabled") then
+			frame:SetAttribute("raidHidden",nil)
+			frame:Show()
+		end
+		for i=1, 9 do
+			frame = self:GetFrameRef("raid"..i)
+			if frame and frame:GetAttribute("isEnabled") then
+				frame:SetAttribute("raidHidden",nil)
+				frame:Show()
+			end
+		end
+	end
+
 	if partyFrame and self:GetAttribute("partyEnabled") then
 		partyFrame:SetAttribute("raidHidden", not showParty)
 		if showParty then
@@ -509,7 +538,11 @@ local moduleSettings = {
 			mod.bg:Hide()
 		end
 		mod.colorHappiness = config.colorType == "happiness"
-		mod.colorClass = config.colorType == "class"
+		if config.colorType == "happiness" then
+			mod.colorClass = true
+		else
+			mod.colorClass = config.colorType == "class"
+		end
 		mod.colorReaction = config.reactionType ~= "none" and config.reactionType
 		mod.colorSmooth = config.colorType == "percent"
 		mod.colorInvert = config.invert
@@ -1418,20 +1451,25 @@ function LUF:SpawnUnits()
 	for unit,frame in pairs(self.frameIndex) do
 		frame:SetFrameStrata(self.db.profile.strata)
 	end
+	local config = self.db.profile.units
 	self.stateMonitor:SetFrameRef("partyFrame", self.frameIndex["party"])
 	self.stateMonitor:SetFrameRef("partytargetFrame", self.frameIndex["partytarget"])
 	self.stateMonitor:SetFrameRef("partypetFrame", self.frameIndex["partypet"])
-	self.stateMonitor:SetAttribute("partyEnabled", self.db.profile.units.party.enabled)
-	self.stateMonitor:SetAttribute("partytargetEnabled", self.db.profile.units.partytarget.enabled)
-	self.stateMonitor:SetAttribute("partypetEnabled", self.db.profile.units.partypet.enabled)
-	self.stateMonitor:SetAttribute("hideraid", self.db.profile.units.party.hideraid)
+	self.stateMonitor:SetAttribute("partyEnabled", config.party.enabled)
+	self.stateMonitor:SetAttribute("partytargetEnabled", config.partytarget.enabled)
+	self.stateMonitor:SetAttribute("partypetEnabled", config.partypet.enabled)
+	self.stateMonitor:SetAttribute("hideraid", config.party.hideraid)
+	self.stateMonitor:SetAttribute("hideParty", config.raid.hideParty)
+	self.stateMonitor:SetAttribute("showWhen", (not config.raid.showSolo and not config.raid.showPlayer and not config.raid.showParty) and "RAID" or nil)
 	RegisterStateDriver(self.stateMonitor, "raidstatus", "[target=raid6, exists] full; [target=raid1, exists] semi; none")
 	for i=1, 10 do
 		local frame
 		if i == 10 then
 			frame = self.frameIndex["raidpet"]
+			self.stateMonitor:SetFrameRef("raidpet", frame)
 		else
 			frame = self.frameIndex["raid"..i]
+			self.stateMonitor:SetFrameRef("raid"..i, frame)
 		end
 		local child = frame:GetChildren()
 		frame.grpNumber = child:CreateFontString(nil, "ARTWORK")
@@ -1498,11 +1536,13 @@ local function SetHeaderAttributes(header, config)
 	end
 	if not config.enabled or config.filters and not config.filters[tonumber(strmatch(header:GetName(),".+(%d)"))] then
 		header:Hide()
+		header:SetAttribute("isEnabled", nil)
 		return
 	end
 	local xMod = config.attribPoint == "LEFT" and 1 or config.attribPoint == "RIGHT" and -1 or 0
 	local yMod = config.attribPoint == "TOP" and -1 or config.attribPoint == "BOTTOM" and 1 or 0
 	header:SetAttribute("_ignore", "attributeChanges")
+	header:SetAttribute("isEnabled", true)
 	header:SetAttribute("showParty", config.showParty)
 	header:SetAttribute("showRaid", config.showRaid)
 	header:SetAttribute("showSolo", config.showSolo)
@@ -1681,28 +1721,6 @@ function LUF:ReloadAll()
 	end
 end
 
-local function ScanRoster()
-	timerRunning = nil
-	if not LUF.InCombatLockdown then
-		for id=1,9 do
-			LUF.frameIndex["raid"..id]:SetAttribute("ForceUpdate", math.random())
-		end
-	end
-end
-
-local timerRunning
-local function CheckforRosterBug()
-	if UnitInRaid("player") then
-		for i=1, GetNumGroupMembers() do
-			local name = GetRaidRosterInfo(i)
-			if not timerRunning and not name then
-				timerRunning = true
-				C_Timer.After(1, ScanRoster)
-			end
-		end
-	end
-end
-
 local queuedEvent
 local frame = CreateFrame("Frame")
 frame:RegisterEvent("PLAYER_LOGIN")
@@ -1741,7 +1759,6 @@ frame:SetScript("OnEvent", function(self, event, addon)
 			queuedEvent = event
 		end
 	elseif event == "GROUP_ROSTER_UPDATE" then
-		CheckforRosterBug()
 		if not LUF.InCombatLockdown then
 			LUF:AutoswitchProfile(event)
 		else

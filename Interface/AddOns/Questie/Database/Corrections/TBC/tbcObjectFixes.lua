@@ -608,6 +608,16 @@ function QuestieTBCObjectFixes:Load()
             [objectKeys.name] = "Spend a Talent Point",
             [objectKeys.spawns] = {[zoneIDs.STORMWIND_CITY]={{84,37}}},
             [objectKeys.zoneID] = zoneIDs.STORMWIND_CITY,
-        }
+        },
+        [400013] = {
+            [objectKeys.name] = "Gather Nether Residue from any Herb or Ore Deposit in Outland",
+            [objectKeys.spawns] = {[zoneIDs.SHATTRATH_CITY]={{53.9,44.8}}},
+            [objectKeys.zoneID] = zoneIDs.SHATTRATH_CITY,
+        },
+        [400014] = {
+            [objectKeys.name] = "Gather Bloodberries all around the Isle of Quel'Danas",
+            [objectKeys.spawns] = {[zoneIDs.ISLE_OF_QUEL_DANAS]={{40,30}}},
+            [objectKeys.zoneID] = zoneIDs.ISLE_OF_QUEL_DANAS,
+        },
     }
 end

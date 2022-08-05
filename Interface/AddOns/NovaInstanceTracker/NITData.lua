@@ -149,7 +149,7 @@ end
 --Instance reset sent by someone with this addon.
 function NIT:instanceResetComm(data, sender, distribution)
 	--Do nothing if they have group msg enabled to let us know anyway.
-	NIT:debug("Incoming data:", data);
+	--NIT:debug("Incoming data:", data);
 end
 
 --Instance reset sent by someone with this addon but with group msg disabled.
@@ -370,15 +370,15 @@ end
 function NIT:combatLogEventUnfiltered(...)
 	local timestamp, subEvent, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, 
 			destName, destFlags, destRaidFlags, _, spellName = CombatLogGetCurrentEventInfo();
-	if (subEvent == "SWING_DAMAGE" or subEvent == "SPELL_DAMAGE" or subEvent == "RANGE_DAMAGE") then
+	--[[if (subEvent == "SWING_DAMAGE" or subEvent == "SPELL_DAMAGE" or subEvent == "RANGE_DAMAGE") then
 		if (sourceGUID and string.match(sourceGUID, "Creature")) then
 			NIT:parseGUID(nil, sourceGUID, "combatlogSourceGUID");
 		elseif (destGUID and string.match(destGUID, "Creature")) then
 			NIT:parseGUID(nil, destGUID, "combatlogDestGUID");
-		end
+		end]]
 	--elseif (subEvent == "UNIT_DIED" and UnitLevel("player") == NIT.maxLevel and string.match(destGUID, "Creature")) then
 	--elseif (subEvent == "UNIT_DIED" and UnitLevel("player") == NIT.maxLevel and string.match(destGUID, "Creature")) then
-	elseif (subEvent == "UNIT_DIED" and string.match(destGUID, "Creature")) then
+	if (subEvent == "UNIT_DIED" and string.match(destGUID, "Creature")) then
 		--If max level player then count mobs via death instead of xp.
 		local _, _, _, _, zoneID, npcID = strsplit("-", destGUID);
 		npcID = tonumber(npcID);
@@ -691,6 +691,22 @@ local function doubleCheckArena()
 	end
 end
 
+--This frame is only used for same instance detection and disabled after first event after entering.
+--Changed to it's own frame for disabling to see if it makes a performance difference.
+local instanceDetectionFrame = CreateFrame("Frame");
+instanceDetectionFrame:SetScript('OnEvent', function(self, event, ...)
+	local _, subEvent, _, sourceGUID, _, _, _, destGUID = CombatLogGetCurrentEventInfo();
+	if (subEvent == "SWING_DAMAGE" or subEvent == "SPELL_DAMAGE" or subEvent == "RANGE_DAMAGE") then
+		if (sourceGUID and string.match(sourceGUID, "Creature")) then
+			NIT:parseGUID(nil, sourceGUID, "combatlogSourceGUID");
+			instanceDetectionFrame:UnregisterEvent("COMBAT_LOG_EVENT_UNFILTERED");
+		elseif (destGUID and string.match(destGUID, "Creature")) then
+			NIT:parseGUID(nil, destGUID, "combatlogDestGUID");
+			instanceDetectionFrame:UnregisterEvent("COMBAT_LOG_EVENT_UNFILTERED");
+		end
+	end
+end)
+
 local isGhost = false;
 NIT.lastInstanceName = "(Unknown Instance)";
 local doneFirstGUIDCheck;
@@ -723,11 +739,12 @@ function NIT:enteredInstance(isReload, isLogon)
 			instanceNameMsg = instanceNameMsg .. " |cFF9CD6DE(|r|cFFFF2222H|r|cFF9CD6DE)|r";
 		end
 		if (isGhost) then
-			if (NIT.db.global.enteredMsg) then
-				local texture = "|TInterface\\AddOns\\NovaInstanceTracker\\Media\\greenTick:12:12:0:0|t";
-				NIT:print("Entered " .. instanceName .. " as ghost, not recording new instance. "
-						.. "If you would like to force record a new instance click |HNITCustomLink:deletelast|h" .. texture .. "|h");
-			end
+			--This never worked and doesn't need to anyway.
+			--if (NIT.db.global.enteredMsg) then
+			--	local texture = "|TInterface\\AddOns\\NovaInstanceTracker\\Media\\greenTick:12:12:0:0|t";
+				--NIT:print("Entered " .. instanceName .. " as ghost, not recording new instance. "
+				--		.. "If you would like to force record a new instance click |HNITCustomLink:deletelast|h" .. texture .. "|h");
+			--end
 		else
 			if (not isReload) then
 				local class, classEnglish = UnitClass("player");
@@ -772,7 +789,7 @@ function NIT:enteredInstance(isReload, isLogon)
 						doubleCheckArena();
 					end)
 				end
-				NIT:debug("entered", UnitLevel("player"));
+				--NIT:debug("entered", UnitLevel("player"));
 				--if (NIT.isDebug) then
 				--	t.GUIDList = {};
 				--end
@@ -786,18 +803,22 @@ function NIT:enteredInstance(isReload, isLogon)
 				local hourCount, hourCount24, hourTimestamp, hourTimestamp24 = NIT:getInstanceLockoutInfo();
 				local countMsg = "(" .. NIT.prefixColor .. hourCount .. "|r" .. NIT.chatColor .. " " .. L["thisHour"] .. ")";
 				if (t.isPvp) then
-					local msg = string.format(L["enteredDungeon"], instanceNameMsg, "");
-					msg = string.gsub(msg, " , ", ", ")
-					C_Timer.After(0.5, function()
-						--local hourCount, hourCount24, hourTimestamp, hourTimestamp24 = NIT:getInstanceLockoutInfo();
-						NIT:print("|HNITCustomLink:instancelog|h" .. msg .. "|h"
-								.. "|HNITCustomLink:deletelast|h" .. texture
-								.. "|h |HNITCustomLink:instancelog|h" .. L["enteredDungeon2"] .. "|h");
-					end)
+					if (NIT.db.global.pvpEnteredMsg) then
+						local msg = string.format(L["enteredDungeon"], instanceNameMsg, "");
+						msg = string.gsub(msg, " , ", ", ")
+						C_Timer.After(0.5, function()
+							--local hourCount, hourCount24, hourTimestamp, hourTimestamp24 = NIT:getInstanceLockoutInfo();
+							NIT:print("|HNITCustomLink:instancelog|h" .. msg .. "|h"
+									.. "|HNITCustomLink:deletelast|h" .. texture
+									.. "|h |HNITCustomLink:instancelog|h" .. L["enteredDungeon2"] .. "|h");
+						end)
+					end
 				elseif (raid) then
-					C_Timer.After(0.5, function()
-						NIT:print("|HNITCustomLink:instancelog|h" .. string.format(L["enteredRaid"], instanceNameMsg) .. "|h");
-					end)
+					if (NIT.db.global.raidEnteredMsg) then
+						C_Timer.After(0.5, function()
+							NIT:print("|HNITCustomLink:instancelog|h" .. string.format(L["enteredRaid"], instanceNameMsg) .. "|h");
+						end)
+					end
 				elseif (isLogon) then
 					C_Timer.After(3, function()
 						--local hourCount, hourCount24, hourTimestamp, hourTimestamp24 = NIT:getInstanceLockoutInfo();
@@ -806,12 +827,14 @@ function NIT:enteredInstance(isReload, isLogon)
 								.. "|h |HNITCustomLink:instancelog|h " .. L["loggedInDungeon2"] .. "|h");
 					end)
 				else
-					C_Timer.After(0.5, function()
-						--local hourCount, hourCount24, hourTimestamp, hourTimestamp24 = NIT:getInstanceLockoutInfo();
-						NIT:print("|HNITCustomLink:instancelog|h" .. string.format(L["enteredDungeon"], instanceNameMsg, countMsg) .. "|h"
-								.. "|HNITCustomLink:deletelast|h" .. texture
-								.. "|h |HNITCustomLink:instancelog|h" .. L["enteredDungeon2"] .. "|h");
-					end)
+					if (NIT.db.global.enteredMsg) then
+						C_Timer.After(0.5, function()
+							--local hourCount, hourCount24, hourTimestamp, hourTimestamp24 = NIT:getInstanceLockoutInfo();
+							NIT:print("|HNITCustomLink:instancelog|h" .. string.format(L["enteredDungeon"], instanceNameMsg, countMsg) .. "|h"
+									.. "|HNITCustomLink:deletelast|h" .. texture
+									.. "|h |HNITCustomLink:instancelog|h" .. L["enteredDungeon2"] .. "|h");
+						end)
+					end
 				end
 			elseif (isReload) then
 				C_Timer.After(3, function()
@@ -835,6 +858,7 @@ function NIT:enteredInstance(isReload, isLogon)
 			end
 			NIT:pushInstanceEntered(instanceName, instanceID, type, isReload, isLogon);
 			doneFirstGUIDCheck = nil;
+			instanceDetectionFrame:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED");
 		end
 		C_Timer.After(1, function()
 			NIT:recordGroupInfo();
@@ -854,8 +878,11 @@ function NIT:leftInstance()
 			NIT.data.instances[1]["leftXP"] = UnitXP("player");
 			NIT.data.instances[1]["leftMoney"] = GetMoney();
 		end
-		NIT:debug("left", UnitLevel("player"));
-		NIT:showInstanceStats();
+		--NIT:debug("left", UnitLevel("player"));
+		--Don't show party stats if bg or arena, only self.
+		if (not isPvp or NIT.db.global.instanceStatsOutputWhere == "self") then
+			NIT:showInstanceStats();
+		end
 		NIT:pushInstanceLeft(NIT.data.instances[1].instanceName, NIT.data.instances[1].instanceID);
 	end
 	NIT.inInstance = nil;
@@ -1112,7 +1139,10 @@ function NIT:parseGUID(unit, GUID, source)
 					local hourCount, hourCount24, hourTimestamp, hourTimestamp24 = NIT:getInstanceLockoutInfo();
 					local countMsg = "(" .. NIT.prefixColor .. hourCount .. "|r" .. NIT.mergeColor .. " " .. L["thisHour"] .. ")";
 					C_Timer.After(0.7, function()
-						NIT:print(NIT.mergeColor .. string.format(L["sameInstance"], countMsg));
+						local isInstance, instanceType = IsInInstance();
+						if (instanceType ~= "raid" or not NIT.db.global.noRaidInstanceMergeMsg) then
+							NIT:print(NIT.mergeColor .. string.format(L["sameInstance"], countMsg));
+						end
 					end)
 				end
 			elseif (NIT.lastNpcID == npcID or (not NIT.data.instances[1].zoneID or NIT.data.instances[1].zoneID < 1)) then

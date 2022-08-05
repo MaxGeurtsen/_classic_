@@ -1,11 +1,9 @@
 
 DecursiveDB = {
-	["profileKeys"] = {
-		["Mírjam - Firemaw"] = "Default",
-		["Partijleider - Razorgore"] = "Default",
-		["Firebreather - Firemaw"] = "Default",
-		["Cursedbreath - Firemaw"] = "Default",
-		["Mirjam - Firemaw"] = "Default",
+	["global"] = {
+		["NoStartMessages"] = true,
+		["NewVersionsBugMeNot"] = 1655078282,
+		["LastVersionAnnounce"] = 1659527360,
 	},
 	["class"] = {
 		["HUNTER"] = {
@@ -21,13 +19,13 @@ DecursiveDB = {
 		},
 		["WARLOCK"] = {
 			["CureOrder"] = {
-				-11, -- [1]
-				-15, -- [2]
+				-12, -- [1]
+				-16, -- [2]
 				nil, -- [3]
-				-12, -- [4]
-				[8] = -13,
-				[16] = -14,
-				[32] = -16,
+				-13, -- [4]
+				[8] = -14,
+				[16] = -15,
+				[32] = 1,
 			},
 		},
 		["ROGUE"] = {
@@ -52,34 +50,64 @@ DecursiveDB = {
 				[32] = 2,
 			},
 		},
-		["SHAMAN"] = {
+		["DRUID"] = {
 			["CureOrder"] = {
 				-13, -- [1]
+				-15, -- [2]
+				nil, -- [3]
+				1, -- [4]
+				[8] = 2,
+				[16] = -14,
+				[32] = -16,
+			},
+		},
+		["SHAMAN"] = {
+			["CureOrder"] = {
+				-14, -- [1]
 				2, -- [2]
 				nil, -- [3]
-				-14, -- [4]
+				-15, -- [4]
 				[8] = 1,
-				[16] = -15,
+				[16] = 3,
+				[32] = -16,
+			},
+		},
+		["PALADIN"] = {
+			["CureOrder"] = {
+				nil, -- [1]
+				-15, -- [2]
+				nil, -- [3]
+				-14, -- [4]
+				[8] = 2,
+				[16] = 3,
 				[32] = -16,
 			},
 		},
 	},
-	["global"] = {
-		["LastVersionAnnounce"] = 1618257767,
+	["profileKeys"] = {
+		["Firebreather - Gehennas"] = "Default",
+		["Partijlijder - Gehennas"] = "Default",
+		["Firebreather - Firemaw"] = "Default",
+		["Partijcurses - Gehennas"] = "Default",
+		["Mirjam - Firemaw"] = "Default",
+		["Partijleider - Razorgore"] = "Default",
+		["Rinque - Gehennas"] = "Default",
+		["Cursedbreath - Firemaw"] = "Default",
+		["Mírjam - Firemaw"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
-			["MainBarY"] = -96.0000020345051,
-			["DebuffsFrameContainer_x"] = 1024.00002170139,
-			["ShowDebuffsFrame"] = false,
 			["AutoHideMUFs"] = 2,
 			["DebuffsFrameContainer_y"] = 494.933354808665,
 			["DebuffsFrameVerticalDisplay"] = true,
 			["MainBarX"] = 682.666681134258,
+			["MainBarY"] = -96.0000020345051,
+			["ShowDebuffsFrame"] = false,
 			["MiniMapIcon"] = {
 				["minimapPos"] = 347.813964133712,
 				["hide"] = false,
 			},
+			["DebuffsFrameContainer_x"] = 1024.00002170139,
 		},
 	},
 }

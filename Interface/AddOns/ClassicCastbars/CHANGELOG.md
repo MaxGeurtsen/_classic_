@@ -1,10 +1,13 @@
 # ClassicCastbars
 
-## [v1.4.5](https://github.com/wardz/ClassicCastbars/tree/v1.4.5) (2022-03-24)
-[Full Changelog](https://github.com/wardz/ClassicCastbars/compare/v1.4.4...v1.4.5) [Previous Releases](https://github.com/wardz/ClassicCastbars/releases)
+## [v1.4.6](https://github.com/wardz/ClassicCastbars/tree/v1.4.6) (2022-08-04)
+[Full Changelog](https://github.com/wardz/ClassicCastbars/compare/v1.4.5...v1.4.6) [Previous Releases](https://github.com/wardz/ClassicCastbars/releases)
 
-- single to double quotes for tags  
-- increase debuff cap from 16 to 40 since debuff cap is removed in SoM  
-- set packager v1 here aswell  
-- [All] bump toc versions  
-- use packager v1 branch instead of master  
+- rename TBC file  
+- spellSchool should be dest not source  
+- fixes for party frame anchoring  
+- print msg instead of displaying confirm popup (#64)  
+- add note for Uninterruptible Border Shield option when switching border textures (#64)  
+- add BoP cast immunity buff for melees, and spell warding for casters (#64)  
+-  rework deploy script (wip)  
+- Create pull\_request.yml  

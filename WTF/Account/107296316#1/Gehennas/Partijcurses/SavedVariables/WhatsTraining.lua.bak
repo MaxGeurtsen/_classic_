@@ -1,7 +1,21 @@
 
 WT_LearnedPetAbilities = {
-	[16302] = true,
-	[16331] = true,
+	[16327] = true,
+	[16351] = true,
+	[16375] = true,
 	[16321] = true,
+	[16368] = true,
+	[16376] = true,
+	[16322] = true,
+	[16323] = true,
+	[16331] = true,
+	[16316] = true,
+	[16371] = true,
+	[16379] = true,
+	[16302] = true,
+	[16380] = true,
+	[16318] = true,
+	[16326] = true,
+	[16317] = true,
 }
 WT_NeedsToOpenBeastTraining = false

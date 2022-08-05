@@ -271,6 +271,7 @@ NIT.critterCreatures = {
 	[10536] = "Plagued Maggot",
 	[10387] = "Vengeful Phantom",
 	[10955] = "Summoned Water Elemental",
+	[23226] = "Illidari Elite",
 };
 
 --for k, v in pairs(NIT.critterCreatures2) do

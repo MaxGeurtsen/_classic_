@@ -57,6 +57,7 @@ function QuestieOptionsDefaults:Load()
             enableTooltipsQuestLevel = true,
             enableMapIcons = true,
             enableMiniMapIcons = true,
+            questieShutUp = false,
 
             -- TBC Isle of Quel'Danas
             isleOfQuelDanasPhase = 1,
@@ -97,10 +98,10 @@ function QuestieOptionsDefaults:Load()
             trackerQuestPadding = 4,
             trackerBackdropAlpha = 1,
             --trackerReset = QuestieTracker:ResetLocation()
-            trackerEnabled = true,
             globalTrackerLocation = true,
+            showQuestXpAtMaxLevel = true,
+            enableTooltipsQuestID = true,
             questieTLoc = "char",
-
         },
         char = {
             minLevelFilter = GetQuestGreenRange("player"), -- Raised the default to allow more quests to be shown
@@ -127,8 +128,10 @@ function QuestieOptionsDefaults:Load()
             autoModifier = "shift",
             acceptTrivial = false,
             questAnnounceChannel = "group",
+            questAnnounceItems = true,
             questAnnounceAccepted = false,
             questAnnounceAbandoned = false,
+            questAnnounceObjectives = true,
             questAnnounceCompleted = false,
             isTrackerExpanded = true,
             hideUnexploredMapIcons = false,

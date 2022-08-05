@@ -2,7 +2,7 @@
 ## Title: Classic Loot Manager
 ## Notes: Robust, DKP based Loot Manager system
 ## Author: Lantis
-## Version: v1.8.0
+## Version: v1.9.1
 ## X-License: MIT
 ## X-Curse-Project-ID: 481373
 ## X-WoWI-ID: 26001
@@ -47,7 +47,7 @@ Libs\LibLuaXML\LibLuaXML.lua
 
 # Locale
 Locale\enUS.lua
-#Locale\deDE.lua
+Locale\deDE.lua
 Locale\ruRU.lua
 Locale\frFR.lua
 #Locale\itIT.lua

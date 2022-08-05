@@ -7,10 +7,11 @@ CCPOptions = {
 		["Partijcurses - Gehennas"] = "Default",
 		["Awwaa - Gehennas"] = "Default",
 		["Helpsiebren - Razorgore"] = "Default",
+		["Firebreather - Gehennas"] = "Default",
 		["Partijleider - Razorgore"] = "Default",
 		["Rinque - Gehennas"] = "Default",
-		["Mírjam - Razorgore"] = "Default",
 		["Partijlijder - Razorgore"] = "Default",
+		["Mírjam - Razorgore"] = "Default",
 		["Kealthas - Razorgore"] = "Default",
 	},
 }

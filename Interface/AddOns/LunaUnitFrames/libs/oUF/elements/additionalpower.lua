@@ -196,15 +196,11 @@ end
 local function ElementDisable(self)
 	local element = self.AdditionalPower
 
-	if(element.frequentUpdates) then
-		self:RegisterEvent('UNIT_POWER_FREQUENT', Path)
-	else
-		self:RegisterEvent('UNIT_POWER_UPDATE', Path)
-	end
-
+	self:UnregisterEvent('UNIT_POWER_FREQUENT', Path)
+	self:UnregisterEvent('UNIT_POWER_UPDATE', Path)
 	self:UnregisterEvent('UNIT_MAXPOWER', Path)
 
-	self.AdditionalPower:Hide()
+	element:Hide()
 
 	-- ElvUI block
 	if element.PostUpdateVisibility then

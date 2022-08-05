@@ -3,7 +3,7 @@
 ## Notes: Adds customizable castbars to various unitframes.
 ## SavedVariables: ClassicCastbarsDB
 ## SavedVariablesPerCharacter: ClassicCastbarsCharDB
-## Version: v1.4.5
+## Version: v1.4.6
 ## X-Curse-Project-ID: 322865
 ## X-Wago-ID: vEGPdkG1
 ## X-WoWI-ID: 24925
@@ -11,6 +11,6 @@
 core/PoolManager.lua
 core/AnchorManager.lua
 core/Data.lua
-ClassicCastbars_TBC.lua
+ClassicCastbars_NonClassic.lua
 core/Frames.lua
 core/LoadOptions.lua

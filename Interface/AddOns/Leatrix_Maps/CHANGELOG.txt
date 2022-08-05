@@ -1,5 +1,23 @@
-2.5.104 - 12th May 2022
-- Maintenance update.
+2.5.117 - 3rd August 2022
+- Leatrix Maps will be updated for Wrath Beta during August 2022.
+
+2.5.116 - 27th July 2022
+- For 'Unlock map frame', added a fix for Demodal preventing the map frame from being moved to the top edge of the screen.
+- Leatrix Maps for BCC will now attempt to run on Wrath Beta but note that it hasn't been tested and there are no Wrath features yet.
+
+2.5.115 - 20th July 2022
+- Fixed a minor cosmetic issue with 'Show zone menus' which may have sometimes caused menus to overlap.  Added skins for ElvUI.
+
+2.5.114 - 13th July 2022
+- Added a new setting 'Show zone menus'.  If enabled, continent and zone dropdown menus will be shown in the map frame allowing you to see the current map zone and change it as you wish.  It's enabled by default.
+- For 'Show zone crossings', Mulgore and Thunder Bluff maps now show north and south zone crossing arrows.
+- For 'Show dungeons and raids', Blackrock Mountain, Caverns of Time and Coilfang Reservoir icons will now show minimum levels for each of the dungeons and raids included.
+
+2.5.111 - 22nd June 2022
+- In the game key bindings menu, you can now set a keybind to toggle Leatrix Maps.
+
+2.5.109 - 8th June 2022
+- Added 'Ravenholdt Manor' zone crossing to Hillsbrad Foothills and Alterac Mountains maps.
 
 2.5.96 - 30th March 2022
 - For developers, you can now configure Leatrix Maps from your own addon or script using the following as a guide:

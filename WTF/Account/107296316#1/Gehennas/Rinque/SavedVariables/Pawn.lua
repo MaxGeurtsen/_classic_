@@ -1,11 +1,11 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0534,
+	["LastVersion"] = 2.0538,
 	["ItemLevels"] = {
 		{
-			["ID"] = 30125,
-			["Level"] = 133,
-			["Link"] = "|cffa335ee|Hitem:30125::::::::70:::::::::|h[Crystalforge Faceguard]|h|r",
+			["ID"] = 32521,
+			["Level"] = 151,
+			["Link"] = "|cffa335ee|Hitem:32521::::::::70:::::::::|h[Faceplate of the Impenetrable]|h|r",
 		}, -- [1]
 		{
 			["ID"] = 30007,
@@ -13,20 +13,20 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:30007::::::::70:::::::::|h[The Darkener's Grasp]|h|r",
 		}, -- [2]
 		{
-			["ID"] = 30127,
-			["Level"] = 133,
-			["Link"] = "|cffa335ee|Hitem:30127::::::::70:::::::::|h[Crystalforge Shoulderguards]|h|r",
+			["ID"] = 30998,
+			["Level"] = 146,
+			["Link"] = "|cffa335ee|Hitem:30998::::::::70:::::::::|h[Lightbringer Shoulderguards]|h|r",
 		}, -- [3]
 		nil, -- [4]
 		{
-			["ID"] = 30123,
-			["Level"] = 133,
-			["Link"] = "|cffa335ee|Hitem:30123::::::::70:::::::::|h[Crystalforge Chestguard]|h|r",
+			["ID"] = 30991,
+			["Level"] = 146,
+			["Link"] = "|cffa335ee|Hitem:30991::::::::70:::::::::|h[Lightbringer Chestguard]|h|r",
 		}, -- [5]
 		{
-			["ID"] = 25022,
-			["Level"] = 120,
-			["Link"] = "|cff1eff00|Hitem:25022::::::-16:2023227434:70:::::::::|h[Warlord's Iron-Girdle of Stamina]|h|r",
+			["ID"] = 30034,
+			["Level"] = 128,
+			["Link"] = "|cffa335ee|Hitem:30034::::::::70:::::::::|h[Belt of the Guardian]|h|r",
 		}, -- [6]
 		{
 			["ID"] = 30126,
@@ -34,9 +34,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:30126::::::::70:::::::::|h[Crystalforge Legguards]|h|r",
 		}, -- [7]
 		{
-			["ID"] = 30641,
-			["Level"] = 115,
-			["Link"] = "|cffa335ee|Hitem:30641::::::::70:::::::::|h[Boots of Elusion]|h|r",
+			["ID"] = 34947,
+			["Level"] = 141,
+			["Link"] = "|cffa335ee|Hitem:34947::::::::70:::::::::|h[Blue's Greaves of the Righteous Guardian]|h|r",
 		}, -- [8]
 		{
 			["ID"] = 28167,
@@ -44,33 +44,33 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:28167::::::::69:::::::::|h[Sha'tari Wrought Armguards]|h|r",
 		}, -- [9]
 		{
-			["ID"] = 29998,
-			["Level"] = 138,
-			["Link"] = "|cffa335ee|Hitem:29998::::::::70:::::::::|h[Royal Gauntlets of Silvermoon]|h|r",
+			["ID"] = 30985,
+			["Level"] = 146,
+			["Link"] = "|cffa335ee|Hitem:30985::::::::70:::::::::|h[Lightbringer Handguards]|h|r",
 		}, -- [10]
 		{
-			["ID"] = 30109,
-			["Level"] = 138,
+			["ID"] = 29305,
+			["Level"] = 152,
 			["AlsoFitsIn"] = 12,
-			["Link"] = "|cffa335ee|Hitem:30109::::::::70:::::::::|h[Ring of Endless Coils]|h|r",
+			["Link"] = "|cffa335ee|Hitem:29305::::::::70:::::::::|h[Band of the Eternal Sage]|h|r",
 		}, -- [11]
 		{
-			["ID"] = 29303,
-			["Level"] = 136,
+			["ID"] = 29297,
+			["Level"] = 152,
 			["AlsoFitsIn"] = 11,
-			["Link"] = "|cffa335ee|Hitem:29303::::::::70:::::::::|h[Band of Eternity]|h|r",
+			["Link"] = "|cffa335ee|Hitem:29297::::::::70:::::::::|h[Band of the Eternal Defender]|h|r",
 		}, -- [12]
 		{
-			["ID"] = 30629,
-			["Level"] = 128,
+			["ID"] = 33830,
+			["Level"] = 133,
 			["AlsoFitsIn"] = 14,
-			["Link"] = "|cffa335ee|Hitem:30629::::::::70:::::::::|h[Scarab of Displacement]|h|r",
+			["Link"] = "|cffa335ee|Hitem:33830::::::::70:::::::::|h[Ancient Aqir Artifact]|h|r",
 		}, -- [13]
 		{
-			["ID"] = 27529,
-			["Level"] = 115,
+			["ID"] = 30620,
+			["Level"] = 128,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cff0070dd|Hitem:27529::::::::70:::::::::|h[Figurine of the Colossus]|h|r",
+			["Link"] = "|cffa335ee|Hitem:30620::::::::70:::::::::|h[Spyglass of the Hidden Fleet]|h|r",
 		}, -- [14]
 		{
 			["ID"] = 34010,

@@ -1,3 +1,57 @@
+2.5.117 - 3rd August 2022
+- Added lots of flight times.  There are now 2551 flight times stored in Leatrix Plus for BCC.
+- Leatrix Plus will be updated for Wrath Classic in August 2022.
+
+2.5.116 - 27th July 2022
+- For 'Enhance minimap', added a new setting to hide the tracking button while the pointer is not over the minimap.  The clock and zone text bar will now be shown on top when using square minimap.  Some structural changes to the code.
+- Added lots of flight times.  There are now 2530 flight times stored in Leatrix Plus for BCC.
+- Leatrix Plus will now attempt to run on Wrath Beta but note that it hasn't been tested and there are no Wrath features yet.
+
+2.5.115 - 20th July 2022
+- Removed the compatibility fix for ClassicCodex addon.
+- Added lots of flight times.  There are now 2507 flight times stored in Leatrix Plus for BCC.
+
+2.5.114 - 13th July 2022
+- For 'Enhance tooltip' ('Interface'), there is a new setting to hide the health bar.  It's disabled by default.
+- Added lots of flight times.  There are now 2492 flight times stored in Leatrix Plus for BCC.
+
+2.5.113 - 6th July 2022
+- Added lots of flight times.  There are now 2473 flight times stored in Leatrix Plus for BCC.
+
+2.5.112 - 29th June 2022
+- In the game key bindings menu, you can now set a keybind to announce rares in chat.  Target a creature, press your keybind and detals of your target will be shown in the General chat channel.  These details include your target's name, health percentage remaining and coordinates.
+- Added lots of flight times.  There are now 2455 flight times stored in Leatrix Plus for BCC.
+
+2.5.111 - 22nd June 2022
+- In the game key bindings menu, you can now set a keybind to show a web link for whatever your pointer is over (as long as it has a tooltip).  For example, if you have an item in your bag and you don't know what it's for, hover your pointer over it so the item tooltip shows up then press your defined hotkey.  A Wowhead link will show in a copy-friendly window.  Press CTRL/C to copy the link then paste it into your browser.
+- In the game key bindings menu, you can now set a keybind to toggle Leatrix Plus.  The 'Enable hotkey' command has been removed.
+- The '/ltp id' command now runs the web link keybind function so if you don't want to set a keybind, you can enter '/ltp id' instead.
+- Added lots of flight times.  There are now 2431 flight times stored in Leatrix Plus for BCC.
+
+2.5.110 - 15th June 2022
+- The 'Manage frames', 'Manage buffs', 'Manage widget' and 'Manage focus' settings ('Frames') now show a frame alignment grid when moving the frames (there is a button in each configuration panel to toggle the grid).  You can now drag the frames with the left button to position them freely or with the right button to position them using snap-to-grid.
+- Added lots of flight times.  There are now 2416 flight times stored in Leatrix Plus for BCC.
+
+2.5.109 - 8th June 2022
+- For 'Show flight times', you can now change the position, scale and width of the flight progress bar using a new configuration panel.  You can also remove the progress bar background and destination text if you wish.  The flight progress bar is now noninteractive so you can click through it as if it isn't there.  If you wish to manually close the flight progress bar, there is a new Close Bar button in the configuration panel.  These new settings give you a lot of customisation options.  For example, if you set the width to the minimum, hide the background and hide the destination, you can have a neat little flight timer in the corner of the screen.
+- Added lots of flight times.  There are now 2402 flight times stored in Leatrix Plus for BCC.
+
+2.5.108 - 1st June 2022
+- For 'Enhance trainers' ('Interface'), you can now disable the train all skills button if you wish using a new setting in the configuration panel.
+- For 'Mute game sounds' ('System'), the 'Mechstriders' setting will no longer mute mechanostrider footstep sounds.  There is a new setting called 'Mechsteps' that will mute footstep sounds for mechanical mounts.
+- Added lots of flight times.  There are now 2383 flight times stored in Leatrix Plus for BCC.
+
+2.5.107 - 25th May 2022
+- Added a new option 'Show ready timer' ('Interface').  If checked, a timer will be shown under the PvP encounter ready frame so that you know how long you have left to click the enter button.
+- Added lots of flight times.  There are now 2359 flight times stored in Leatrix Plus for BCC.
+
+2.5.106 - 18th May 2022
+- For 'Enhance quest log' ('Interface'), the quest log is now taller.
+- For 'Enhance professions' ('Interface'), the professions frame is now taller.
+- For 'Enhance trainers' ('Interface'), the skill trainer frame is now taller.  Also fixed a cosmetic bug with the position of the beast training cost column.
+- If you are using ElvUI, 'Show Wowhead links' ('Interface') will now place links inside the quest log frame rather than above it.  For 'Enhance professions', the search box and 'Have materials' checkbox have been repositioned.
+- Added some flight times.  There are now 2340 flight times stored in Leatrix Plus for BCC.
+
 2.5.105 - 12th May 2022
 - Corrected a very popular flight route and added flight times.  There are now 2329 flight times stored in Leatrix Plus for BCC.
 

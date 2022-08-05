@@ -2,15 +2,16 @@ VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [focus] Earth Shock
 END
-VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast Reincarnation
-END
 VER 3 0000000001000005 " /castsequence r" "INV_MISC_QUESTIONMARK"
 /castsequence reset=combat/5   Grace of air Totem, Strength of Earth Totem, Mana Spring Totem,Searing Totem
 END
-VER 3 0000000001000009 " Chain" "INV_MISC_QUESTIONMARK"
+VER 3 0000000001000004 " ankh" "INV_MISC_QUESTIONMARK"
 #showtooltip
+/cast Reincarnation
+END
+VER 3 0000000001000009 " Chain" "INV_MISC_QUESTIONMARK"
+#showtooltip Chain Heal
+/use 14
 /cast [harm]Chain Lightning; Chain Heal
 END
 VER 3 000000000100000B " focus" "INV_MISC_QUESTIONMARK"
@@ -22,8 +23,8 @@ VER 3 0000000001000008 " wave" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [harm]Lightning Bolt; Healing Wave
 END
-VER 3 000000000100000A " Wspamawdaw" "INV_MISC_QUESTIONMARK"
-/castsequence reset=combat/5  Wrath of Air Totem, Strength of Earth Totem, Mana Spring Totem,Searing Totem
+VER 3 000000000100000A "ADDS" "136070"
+/gq switch RestoAdds
 END
 VER 3 000000000100000D "DPS" "136050"
 /gq switch Enhancement
@@ -39,6 +40,11 @@ VER 3 0000000001000010 "HS" "INV_MISC_QUESTIONMARK"
 /use item:19012
 /use item:9421
 END
+VER 3 0000000001000013 "MANA" "INV_MISC_QUESTIONMARK"
+/p free mana, LETS GO!!!!
+#showtooltip
+/cast Mana Tide Totem
+END
 VER 3 0000000001000006 "PUMP" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast Blood Fury
@@ -46,6 +52,9 @@ VER 3 0000000001000006 "PUMP" "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000001000011 "shadow" "132095"
 /gq switch shadowRESTO
+END
+VER 3 0000000001000012 "shadowEnhance" "136082"
+/gq switch shadowEnhance
 END
 VER 3 0000000001000002 "Stormstrike" "INV_MISC_QUESTIONMARK"
 #showtooltip

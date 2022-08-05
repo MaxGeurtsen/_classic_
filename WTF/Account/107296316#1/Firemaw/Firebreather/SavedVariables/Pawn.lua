@@ -1,8 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0531,
-	["LastPlayerFullName"] = "Firebreather-Firemaw",
-	["AutoSelectScales"] = false,
+	["LastVersion"] = 2.0538,
 	["ItemLevels"] = {
 		{
 			["ID"] = 16795,
@@ -95,6 +93,8 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:19108::::::::60:::11::::|h[Wand of Biting Cold]|h|r",
 		}, -- [18]
 	},
+	["AutoSelectScales"] = false,
+	["LastPlayerFullName"] = "Firebreather-Firemaw",
 }
 PawnMrRobotScaleProviderOptions = nil
 PawnClassicScaleProviderOptions = {

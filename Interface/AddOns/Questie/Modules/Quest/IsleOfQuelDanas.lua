@@ -48,7 +48,6 @@ IsleOfQuelDanas.quests = {
     { -- Phase 1
         [11513] = true,
         [11514] = true,
-        [11517] = true,
         [11520] = true,
         [11521] = true,
         [11523] = true,
@@ -78,6 +77,7 @@ IsleOfQuelDanas.quests = {
         [11496] = true,
         [11514] = true,
         [11524] = true,
+        [11534] = true,
         --
         [11520] = true,
         [11521] = true,
@@ -101,6 +101,7 @@ IsleOfQuelDanas.quests = {
         -- temp quests from previous phases
         [11496] = true,
         [11513] = true,
+        [11517] = true,
         [11524] = true,
         --
         [11520] = true,
@@ -124,6 +125,7 @@ IsleOfQuelDanas.quests = {
         -- temp quests from previous phases
         [11496] = true,
         [11513] = true,
+        [11517] = true,
         [11524] = true,
         [11532] = true,
         [11538] = true,
@@ -144,6 +146,7 @@ IsleOfQuelDanas.quests = {
         -- temp quests from previous phases
         [11496] = true,
         [11513] = true,
+        [11517] = true,
         [11524] = true,
         [11532] = true,
         [11535] = true,
@@ -151,11 +154,9 @@ IsleOfQuelDanas.quests = {
         --
         [11520] = true,
         [11521] = true,
-        [11536] = true,
         [11540] = true,
         [11541] = true,
         [11543] = true,
-        [11544] = true,
         [11545] = true,
         [11546] = true,
         [11548] = true,
@@ -165,6 +166,7 @@ IsleOfQuelDanas.quests = {
         -- temp quests from previous phases
         [11496] = true,
         [11513] = true,
+        [11517] = true,
         [11524] = true,
         [11532] = true,
         [11535] = true,
@@ -180,6 +182,7 @@ IsleOfQuelDanas.quests = {
         -- temp quests from previous phases
         [11496] = true,
         [11513] = true,
+        [11517] = true,
         [11520] = true,
         [11524] = true,
         [11532] = true,
@@ -194,6 +197,7 @@ IsleOfQuelDanas.quests = {
         -- temp quests from previous phases
         [11496] = true,
         [11513] = true,
+        [11517] = true,
         [11524] = true,
         [11532] = true,
         [11535] = true,
@@ -209,6 +213,7 @@ IsleOfQuelDanas.quests = {
         -- temp quests from previous phases
         [11496] = true,
         [11513] = true,
+        [11517] = true,
         [11520] = true,
         [11524] = true,
         [11532] = true,

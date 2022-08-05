@@ -1,3 +1,5 @@
+local WatchFrame = QuestWatchFrame or WatchFrame
+
 ---@class QuestieTracker
 local QuestieTracker = QuestieLoader:CreateModule("QuestieTracker")
 local _QuestieTracker = QuestieTracker.private
@@ -325,8 +327,8 @@ function _QuestieTracker:CreateBaseFrame()
             Questie.db[Questie.db.global.questieTLoc].TrackerLocation = nil
             print(l10n("Error: Questie tracker in invalid location, resetting..."))
 
-            if QuestWatchFrame then
-                local result2, _ = pcall(frm.SetPoint, frm, unpack({QuestWatchFrame:GetPoint()}))
+            if WatchFrame then
+                local result2, _ = pcall(frm.SetPoint, frm, unpack({WatchFrame:GetPoint()}))
                 Questie.db[Questie.db.global.questieTLoc].trackerSetpoint = "AUTO"
                 if (not result2) then
                     Questie.db[Questie.db.global.questieTLoc].TrackerLocation = nil
@@ -338,8 +340,8 @@ function _QuestieTracker:CreateBaseFrame()
         end
 
     else
-        if QuestWatchFrame then
-            local result, _ = pcall(frm.SetPoint, frm, unpack({QuestWatchFrame:GetPoint()}))
+        if WatchFrame then
+            local result, _ = pcall(frm.SetPoint, frm, unpack({WatchFrame:GetPoint()}))
             Questie.db[Questie.db.global.questieTLoc].trackerSetpoint = "AUTO"
 
             if not result then
@@ -388,7 +390,7 @@ function _QuestieTracker:CreateActiveQuestsHeader()
             local maxQuestAmount = "/" .. C_QuestLog.GetMaxNumQuestsCanAccept()
 
             local _, activeQuests = GetNumQuestLogEntries()
-            self.trackedQuests.label:SetText(Questie.TBC_BETA_BUILD_VERSION_SHORTHAND .. l10n("Questie Tracker: ") .. tostring(activeQuests) .. maxQuestAmount)
+            self.trackedQuests.label:SetText(l10n("Questie Tracker: ") .. tostring(activeQuests) .. maxQuestAmount)
             self.trackedQuests.label:SetPoint("TOPLEFT", self.trackedQuests, "TOPLEFT", 0, 0)
 
             --self.trackedQuests.label2:SetFont(LSM30:Fetch("font", Questie.db.global.trackerFontHeader) or STANDARD_TEXT_FONT, trackerFontSizeHeader)
@@ -673,11 +675,10 @@ function _QuestieTracker:CreateTrackedQuestItemButtons()
 
             -- Edge case to find "equipped" quest items since they will no longer be in the players bag
             if (not isFound) then
-                for j = 13, 18 do
-                    local itemID = GetInventoryItemID("player", j)
-                    local texture = GetInventoryItemTexture("player", j)
+                for inventorySlot = 1, 19 do
+                    local itemID = GetInventoryItemID("player", inventorySlot)
                     if quest.sourceItemId == itemID then
-                        validTexture = texture
+                        validTexture = GetInventoryItemTexture("player", inventorySlot)
                         isFound = true
                         break
                     end
@@ -2038,7 +2039,7 @@ function QuestieTracker:Unhook()
         GetNumQuestWatches = QuestieTracker._GetNumQuestWatches
     end
     _QuestieTracker._alreadyHooked = nil
-    QuestWatchFrame:Show()
+    WatchFrame:Show()
 end
 
 function QuestieTracker:HookBaseTracker()
@@ -2048,16 +2049,17 @@ function QuestieTracker:HookBaseTracker()
     QuestieTracker._disableHooks = nil
 
     if not QuestieTracker._alreadyHookedSecure then
-        hooksecurefunc("AutoQuestWatch_Insert", function(index, watchTimer)
-            QuestieTracker:AQW_Insert(index, watchTimer)
-        end)
+        -- TODO Find the Wotlk solution for this
+        --hooksecurefunc("AutoQuestWatch_Insert", function(index, watchTimer)
+        --    QuestieTracker:AQW_Insert(index, watchTimer)
+        --end)
         hooksecurefunc("AddQuestWatch", function(index, watchTimer)
             QuestieTracker:AQW_Insert(index, watchTimer)
         end)
         hooksecurefunc("RemoveQuestWatch", _RemoveQuestWatch)
 
         -- totally prevent the blizzard tracker frame from showing (BAD CODE, shouldn't be needed but some have had trouble)
-        QuestWatchFrame:HookScript("OnShow", function(self)
+        WatchFrame:HookScript("OnShow", function(self)
             if QuestieTracker._disableHooks then
                 return
             end
@@ -2090,7 +2092,7 @@ function QuestieTracker:HookBaseTracker()
         return 0
     end
 
-    QuestWatchFrame:Hide()
+    WatchFrame:Hide()
     QuestieTracker._alreadyHooked = true
 end
 
@@ -2252,7 +2254,7 @@ end
 
 function QuestieTracker:AQW_Insert(index, expire)
     Questie:Debug(Questie.DEBUG_DEVELOP, "QuestieTracker: AQW_Insert")
-    if QuestieTracker._disableHooks then
+    if (not Questie.db.global.trackerEnabled) or QuestieTracker._disableHooks then
         return
     end
 
@@ -2307,7 +2309,7 @@ function QuestieTracker:AQW_Insert(index, expire)
                 Questie.db.char.collapsedZones[zoneId] = nil
             end
         else
-            Questie:Error(Questie.TBC_BETA_BUILD_VERSION_SHORTHAND.."Missing quest " .. tostring(questId) .. "," .. tostring(expire) .. " during tracker update")
+            Questie:Error("Missing quest " .. tostring(questId) .. "," .. tostring(expire) .. " during tracker update")
         end
         QuestieCombatQueue:Queue(function()
             QuestieTracker:ResetLinesForChange()

@@ -8,14 +8,13 @@ DejaClassicStatsDBPC = {
 			["ShowDuraTextureSetChecked"] = true,
 		},
 		["DejaClassicStatsShowDuraChecked"] = {
-			["ShowDuraSetChecked"] = true,
+			["ShowDuraSetChecked"] = false,
 		},
 		["DejaClassicStatsShowItemLevelChecked"] = {
 			["ShowItemLevelSetChecked"] = true,
 		},
-		["DejaClassicStatsSimpleItemColorChecked"] = {
-			["SimpleItemColorChecked"] = false,
-			["DarkerItemColorChecked"] = false,
+		["DejaClassicStatsAlternateInfoPlacement"] = {
+			["AlternateInfoPlacementChecked"] = false,
 		},
 		["DejaClassicStatsShowEnchantChecked"] = {
 			["ShowEnchantSetChecked"] = true,
@@ -92,35 +91,36 @@ DejaClassicStatsDBPC = {
 		["dejacharacterstatsExpandButtonAltPlacementChecked"] = {
 			["ExpandButtonAltPlacementSetChecked"] = false,
 		},
-		["dejacharacterstatsExpandButtonChecked"] = {
-			["ExpandButtonSetChecked"] = true,
+		["DejaClassicStatsDesaturateScrollArtBackground"] = {
+			["DesaturateScrollArtBackgroundChecked"] = false,
 		},
 		["dejacharacterstatsExpandChecked"] = {
 			["ExpandSetChecked"] = true,
 		},
 		["DejaClassicStatsShowItemRepairChecked"] = {
-			["ShowItemRepairSetChecked"] = true,
+			["ShowItemRepairSetChecked"] = false,
 		},
 		["QCOA_SetSliderValue"] = {
 			["QCOA_SliderValue"] = 0.75,
 		},
-		["DejaClassicStatsAlternateInfoPlacement"] = {
-			["AlternateInfoPlacementChecked"] = false,
+		["DejaClassicStatsSimpleItemColorChecked"] = {
+			["SimpleItemColorChecked"] = false,
+			["DarkerItemColorChecked"] = false,
 		},
 		["DejaClassicStatsShowPrimaryChecked"] = {
 			["ShowPrimarySetChecked"] = true,
 		},
 		["DejaClassicStatsShowRangedChecked"] = {
-			["ShowRangedSetChecked"] = true,
+			["ShowRangedSetChecked"] = false,
 		},
 		["DejaClassicStatsShowAverageRepairChecked"] = {
 			["ShowAverageRepairSetChecked"] = true,
 		},
 		["DejaClassicStatsShowMeleeChecked"] = {
-			["ShowMeleeSetChecked"] = true,
+			["ShowMeleeSetChecked"] = false,
 		},
 		["DejaClassicStatsManaRegenNotCasting"] = {
-			["DCSnotcasting"] = 6.707602977752686,
+			["DCSnotcasting"] = 18.82728385925293,
 		},
 		["DejaClassicStatsShowModelRotation"] = {
 			["ShowModelRotationChecked"] = false,
@@ -132,13 +132,13 @@ DejaClassicStatsDBPC = {
 			["ShowSpellSetChecked"] = true,
 		},
 		["DejaClassicStatsShowDefenseChecked"] = {
-			["ShowDefenseSetChecked"] = true,
+			["ShowDefenseSetChecked"] = false,
 		},
 		["DejaClassicStatsShowHideScrollArtBackground"] = {
 			["ShowHideScrollArtBackgroundChecked"] = true,
 		},
-		["DejaClassicStatsDesaturateScrollArtBackground"] = {
-			["DesaturateScrollArtBackgroundChecked"] = false,
+		["dejacharacterstatsExpandButtonChecked"] = {
+			["ExpandButtonSetChecked"] = true,
 		},
 		["dejacharacterstatsScrollbarChecked"] = {
 			["ScrollbarSetChecked"] = false,

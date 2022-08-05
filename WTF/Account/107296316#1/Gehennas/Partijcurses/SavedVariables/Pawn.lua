@@ -1,18 +1,23 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0534,
+	["LastVersion"] = 2.0538,
 	["LastPlayerFullName"] = "Partijcurses-Gehennas",
 	["AutoSelectScales"] = false,
 	["ItemLevels"] = {
 		[7] = {
-			["ID"] = 1431,
-			["Level"] = 8,
-			["Link"] = "|cff9d9d9d|Hitem:1431::::::::7:::::::::|h[Patchwork Pants]|h|r",
+			["ID"] = 3309,
+			["Level"] = 16,
+			["Link"] = "|cff1eff00|Hitem:3309::::::::19:::::::::|h[Barbaric Loincloth]|h|r",
+		},
+		[2] = {
+			["ID"] = 21934,
+			["Level"] = 20,
+			["Link"] = "|cff1eff00|Hitem:21934::::::::19:::::::::|h[Ornate Tigerseye Necklace]|h|r",
 		},
 		[15] = {
-			["ID"] = 4944,
-			["Level"] = 12,
-			["Link"] = "|cffffffff|Hitem:4944::::::::11:::::::::|h[Handsewn Cloak]|h|r",
+			["ID"] = 9770,
+			["Level"] = 20,
+			["Link"] = "|cff1eff00|Hitem:9770::::::1878:1335307136:21:::::::::|h[Greenweave Cloak of Fiery Wrath]|h|r",
 		},
 		[8] = {
 			["ID"] = 14129,
@@ -20,9 +25,9 @@ PawnOptions = {
 			["Link"] = "|cff1eff00|Hitem:14129::::::1015:528268800:15:::::::::|h[Ritual Sandals of the Whale]|h|r",
 		},
 		[16] = {
-			["ID"] = 4938,
-			["Level"] = 11,
-			["Link"] = "|cffffffff|Hitem:4938::::::::11:::::::::|h[Blemished Wooden Staff]|h|r",
+			["ID"] = 6631,
+			["Level"] = 25,
+			["Link"] = "|cff0070dd|Hitem:6631::::::::20:::::::::|h[Living Root]|h|r",
 		},
 		[17] = {
 			["ID"] = 4925,
@@ -31,36 +36,36 @@ PawnOptions = {
 			["Link"] = "|cffffffff|Hitem:4925::::::::3:::::::::|h[Primitive Hand Blade]|h|r",
 		},
 		[5] = {
-			["ID"] = 4916,
-			["Level"] = 5,
-			["Link"] = "|cffffffff|Hitem:4916::::::::3:::::::::|h[Soft Wool Vest]|h|r",
+			["ID"] = 6465,
+			["Level"] = 22,
+			["Link"] = "|cff0070dd|Hitem:6465::::::::21:::::::::|h[Robe of the Moccasin]|h|r",
 		},
 		[10] = {
-			["ID"] = 1430,
-			["Level"] = 7,
-			["Link"] = "|cff9d9d9d|Hitem:1430::::::::10:::::::::|h[Patchwork Gloves]|h|r",
+			["ID"] = 9771,
+			["Level"] = 25,
+			["Link"] = "|cff1eff00|Hitem:9771::::::2033:421308800:21:::::::::|h[Greenweave Gloves of Healing]|h|r",
 		},
 		[9] = {
-			["ID"] = 14366,
-			["Level"] = 17,
-			["Link"] = "|cff1eff00|Hitem:14366::::::::15:::::::::|h[Mystic's Bracelets]|h|r",
+			["ID"] = 14148,
+			["Level"] = 18,
+			["Link"] = "|cff0070dd|Hitem:14148::::::::19:::::::::|h[Crystalline Cuffs]|h|r",
 		},
 		[11] = {
-			["ID"] = 21931,
-			["Level"] = 15,
+			["ID"] = 20820,
+			["Level"] = 22,
 			["AlsoFitsIn"] = 12,
-			["Link"] = "|cff1eff00|Hitem:21931::::::::10:::::::::|h[Woven Copper Ring]|h|r",
+			["Link"] = "|cff1eff00|Hitem:20820::::::::19:::::::::|h[Simple Pearl Ring]|h|r",
 		},
 		[6] = {
-			["ID"] = 14093,
-			["Level"] = 9,
-			["Link"] = "|cffffffff|Hitem:14093::::::::11:::::::::|h[Beaded Cord]|h|r",
+			["ID"] = 14113,
+			["Level"] = 15,
+			["Link"] = "|cff1eff00|Hitem:14113::::::1876:2132902656:19:::::::::|h[Aboriginal Sash of Fiery Wrath]|h|r",
 		},
 		[12] = {
-			["ID"] = 21931,
-			["Level"] = 15,
+			["ID"] = 20818,
+			["Level"] = 22,
 			["AlsoFitsIn"] = 11,
-			["Link"] = "|cff1eff00|Hitem:21931::::::::11:::::::::|h[Woven Copper Ring]|h|r",
+			["Link"] = "|cff1eff00|Hitem:20818::::::::19:::::::::|h[Elegant Silver Ring]|h|r",
 		},
 		[18] = {
 			["ID"] = 5207,

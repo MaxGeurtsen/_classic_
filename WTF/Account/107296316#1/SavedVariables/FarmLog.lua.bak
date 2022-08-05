@@ -1,27 +1,29 @@
 
 FLogGlobalVars = {
 	["track"] = {
-		["deaths"] = true,
 		["misc"] = false,
-		["consumes"] = true,
+		["deaths"] = true,
 		["honor"] = true,
+		["drops"] = true,
 		["hks"] = true,
 		["levelup"] = true,
 		["xp"] = true,
 		["ranks"] = true,
 		["dks"] = true,
 		["kills"] = true,
-		["money"] = true,
-		["skill"] = false,
-		["rep"] = true,
 		["resets"] = true,
-		["drops"] = true,
+		["rep"] = true,
+		["skill"] = false,
+		["money"] = true,
+		["consumes"] = true,
 		["bgs"] = true,
 	},
 	["blt"] = {
+		["Gehennas"] = {
+		},
 		["Razorgore"] = {
 		},
-		["Gehennas"] = {
+		["Firemaw"] = {
 		},
 	},
 	["pauseOnLogin"] = true,
@@ -31,33 +33,25 @@ FLogGlobalVars = {
 	["blp"] = {
 	},
 	["ahScan"] = {
+		["Gehennas"] = {
+		},
 		["Razorgore"] = {
 		},
-		["Gehennas"] = {
+		["Firemaw"] = {
 		},
 	},
 	["instances"] = {
-		["Razorgore"] = {
-		},
 		["Gehennas"] = {
 			{
-				["enter"] = 1652732243,
-				["player"] = "Partijlijder",
-				["name"] = "Coilfang: The Slave Pens",
-				["leave"] = 1652733167,
+				["enter"] = 1659545568,
+				["player"] = "Partijleider",
+				["name"] = "The Sunwell",
+				["leave"] = 1659552124,
 			}, -- [1]
-			{
-				["enter"] = 1652731462,
-				["player"] = "Partijlijder",
-				["name"] = "Coilfang: The Slave Pens",
-				["leave"] = 1652732237,
-			}, -- [2]
-			{
-				["enter"] = 1652730807,
-				["player"] = "Partijlijder",
-				["name"] = "Coilfang: The Slave Pens",
-				["leave"] = 1652731455,
-			}, -- [3]
+		},
+		["Razorgore"] = {
+		},
+		["Firemaw"] = {
 		},
 	},
 	["blackLotusTimeSeconds"] = 3600,
@@ -66,34 +60,38 @@ FLogGlobalVars = {
 	["minQuantitySold"] = false,
 	["showHonorPercentOnTooltip"] = true,
 	["debug"] = false,
-	["resumeSessionOnSwitch"] = true,
-	["autoSwitchInstances"] = false,
-	["ahPrice"] = {
-		["Razorgore"] = {
-		},
+	["bls"] = {
 		["Gehennas"] = {
 		},
+		["Razorgore"] = {
+		},
+		["Firemaw"] = {
+		},
 	},
-	["showBlackLotusTimer"] = true,
-	["honorDRinBGs"] = true,
-	["ver"] = 1.2,
+	["autoSwitchInstances"] = false,
+	["sortSessionBy"] = "$",
+	["sortBy"] = "A",
 	["hud"] = {
 		["fontSize"] = 12,
 		["paddingX"] = 8,
-		["fontName"] = "Fonts\\FRIZQT__.TTF",
 		["alpha"] = 0.7,
+		["fontName"] = "Fonts\\FRIZQT__.TTF",
 		["paddingY"] = 5,
 	},
+	["ver"] = 1.2,
+	["honorDRinBGs"] = true,
 	["reportTo"] = {
 	},
 	["dismissLootWindowOnEsc"] = false,
 	["showHonorFrenzyCounter"] = true,
-	["sortSessionBy"] = "$",
-	["sortBy"] = "A",
-	["bls"] = {
-		["Razorgore"] = {
-		},
+	["showBlackLotusTimer"] = true,
+	["ahPrice"] = {
 		["Gehennas"] = {
 		},
+		["Razorgore"] = {
+		},
+		["Firemaw"] = {
+		},
 	},
+	["resumeSessionOnSwitch"] = true,
 }

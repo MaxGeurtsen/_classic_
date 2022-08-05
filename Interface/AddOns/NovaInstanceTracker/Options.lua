@@ -21,20 +21,32 @@ NIT.options = {
 		},
 		authorText = {
 			type = "description",
-			name = "|TInterface\\AddOns\\NovaInstanceTracker\\Media\\nitLogo32:32:32:0:20|t |cFF9CD6DEby Novaspark-Arugal",
+			name = "|TInterface\\AddOns\\NovaInstanceTracker\\Media\\nitLogo32:32:32:0:20|t |cFF9CD6DEby Novaspark-Arugal|r  |cFF00C800-|r  |cFFFFFF00For help or suggestions discord.gg/RTKMfTmkdj|r",
 			fontSize = "medium",
 			order = 2,
+		},
+		resetAllInstances = {
+			type = "execute",
+			name = L["resetAllInstancesTitle"];
+			desc = L["resetAllInstancesDesc"],
+			func = function()
+				NIT:resetAllInstances();
+			end,
+			order = 3,
+			confirm = function()
+				return "|cFFFFFF00" .. L["resetAllInstancesConfirm"];
+			end,
 		},
 		autoDialogue = {
 			type = "header",
 			name = L["autoDialogueDesc"],
-			order = 3,
+			order = 4,
 		},
 		autoSlavePens = {
 			type = "toggle",
 			name = L["autoSlavePensTitle"],
 			desc = L["autoSlavePensDesc"],
-			order = 4,
+			order = 5,
 			get = "getAutoSlavePens",
 			set = "setAutoSlavePens",
 		},
@@ -42,7 +54,7 @@ NIT.options = {
 			type = "toggle",
 			name = L["autoCavernsFlightTitle"],
 			desc = L["autoCavernsFlightDesc"],
-			order = 5,
+			order = 6,
 			get = "getAutoCavernsFlight",
 			set = "setAutoCavernsFlight",
 		},
@@ -50,7 +62,7 @@ NIT.options = {
 			type = "toggle",
 			name = L["autoBlackMorassTitle"],
 			desc = L["autoBlackMorassDesc"],
-			order = 6,
+			order = 7,
 			get = "getAutoBlackMorass",
 			set = "setAutoBlackMorass",
 		},
@@ -58,7 +70,7 @@ NIT.options = {
 			type = "toggle",
 			name = L["autoSfkDoorTitle"],
 			desc = L["autoSfkDoorDesc"],
-			order = 7,
+			order = 8,
 			get = "getAutoSfkDoor",
 			set = "setAutoSfkDoor",
 		},
@@ -108,11 +120,35 @@ NIT.options = {
 			get = "getEnteredMsg",
 			set = "setEnteredMsg",
 		},
+		raidEnteredMsg = {
+			type = "toggle",
+			name = L["raidEnteredMsgTitle"],
+			desc = L["raidEnteredMsgDesc"],
+			order = 16,
+			get = "getRaidEnteredMsg",
+			set = "setRaidEnteredMsg",
+		},
+		pvpEnteredMsg = {
+			type = "toggle",
+			name = L["pvpEnteredMsgTitle"],
+			desc = L["pvpEnteredMsgDesc"],
+			order = 17,
+			get = "getPvpEnteredMsg",
+			set = "setPvpEnteredMsg",
+		},
+		noRaidInstanceMergeMsg = {
+			type = "toggle",
+			name = L["noRaidInstanceMergeMsgTitle"],
+			desc = L["noRaidInstanceMergeMsgDesc"],
+			order = 18,
+			get = "getNoRaidInstanceMergeMsg",
+			set = "setNoRaidInstanceMergeMsg",
+		},
 		instanceResetMsg = {
 			type = "toggle",
 			name = L["instanceResetMsgTitle"],
 			desc = L["instanceResetMsgDesc"],
-			order = 16,
+			order = 19,
 			get = "getInstanceResetMsg",
 			set = "setInstanceResetMsg",
 		},
@@ -120,7 +156,7 @@ NIT.options = {
 			type = "toggle",
 			name = L["minimapButtonTitle"],
 			desc = L["minimapButtonDesc"],
-			order = 17,
+			order = 20,
 			get = "getMinimapButton",
 			set = "setMinimapButton",
 		},
@@ -586,8 +622,10 @@ NIT.optionDefaults = {
 		showLockoutTime = true,
 		maxRecordsKept = maxRecordsKept,
 		maxTradesKept = maxTradesKept,
-		instanceResetMsg = true;
-		enteredMsg = true;
+		instanceResetMsg = true,
+		enteredMsg = true,
+		raidEnteredMsg = false,
+		pvpEnteredMsg = true,
 		timeStampFormat = 12,
 		timeStampZone = "local",
 		ignore40Man = false,
@@ -632,6 +670,7 @@ NIT.optionDefaults = {
 		autoCavernsFlight = true,
 		showPvpLog = true,
 		showPveLog = true,
+		noRaidInstanceMergeMsg = true,
 		resetCharData = true, --Reset one time to delete data before alt UI stuff was added.
 	},
 };
@@ -724,6 +763,30 @@ end
 
 function NIT:getEnteredMsg(info)
 	return self.db.global.enteredMsg;
+end
+
+function NIT:setRaidEnteredMsg(info, value)
+	self.db.global.raidEnteredMsg = value;
+end
+
+function NIT:getRaidEnteredMsg(info)
+	return self.db.global.raidEnteredMsg;
+end
+
+function NIT:setPvpEnteredMsg(info, value)
+	self.db.global.pvpEnteredMsg = value;
+end
+
+function NIT:getPvpEnteredMsg(info)
+	return self.db.global.pvpEnteredMsg;
+end
+
+function NIT:setNoRaidInstanceMergeMsg(info, value)
+	self.db.global.noRaidInstanceMergeMsg = value;
+end
+
+function NIT:getNoRaidInstanceMergeMsg(info)
+	return self.db.global.noRaidInstanceMergeMsg;
 end
 
 --Chat color.

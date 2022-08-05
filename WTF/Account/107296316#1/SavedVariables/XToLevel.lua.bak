@@ -453,451 +453,756 @@ XToLevelDB = {
 			["data"] = {
 				["total"] = {
 					["quests"] = 1,
-					["mobKills"] = 1,
+					["dungeonKills"] = 854,
+					["mobKills"] = 866,
 				},
-				["killAverage"] = 50,
-				["questAverage"] = 40,
-				["questList"] = {
-					40, -- [1]
-				},
+				["killAverage"] = 980.8888888888889,
 				["killList"] = {
 					{
-						["mob"] = "Duskbat",
-						["xp"] = 50,
+						["mob"] = "Cabal Ritualist",
+						["xp"] = 952,
 					}, -- [1]
+					{
+						["mob"] = "Cabal Ritualist",
+						["xp"] = 1004,
+					}, -- [2]
+					{
+						["mob"] = "Cabal Ritualist",
+						["xp"] = 1004,
+					}, -- [3]
+					{
+						["mob"] = "Cabal Ritualist",
+						["xp"] = 1004,
+					}, -- [4]
+					{
+						["mob"] = "Cabal Ritualist",
+						["xp"] = 952,
+					}, -- [5]
+					{
+						["mob"] = "Cabal Ritualist",
+						["xp"] = 1004,
+					}, -- [6]
+					{
+						["mob"] = "Cabal Ritualist",
+						["xp"] = 952,
+					}, -- [7]
+					{
+						["mob"] = "Cabal Ritualist",
+						["xp"] = 1004,
+					}, -- [8]
+					{
+						["mob"] = "Cabal Ritualist",
+						["xp"] = 952,
+					}, -- [9]
 				},
 				["timer"] = {
-					["start"] = 69.202,
+					["start"] = 11584.22,
 					["total"] = 0,
-					["lastUpdated"] = 103.206,
-					["xpPerSec"] = 157.7688989575732,
+					["lastUpdated"] = 11660.222,
+					["xpPerSec"] = 84.68120967890576,
 				},
-				["npcXP"] = {
+				["dungeonList"] = {
 					{
-						["level"] = 1,
-						["name"] = "Duskbat",
-						["xp"] = 50,
+						["inProgress"] = false,
+						["totalXP"] = 38348,
+						["killCount"] = 51,
+						["killTotal"] = 38348,
+						["level"] = 67,
+						["rested"] = 29520,
+						["name"] = "Shadow Labyrinth",
 					}, -- [1]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 34346,
+						["killCount"] = 47,
+						["killTotal"] = 34346,
+						["level"] = 67,
+						["rested"] = 34346,
+						["name"] = "Shadow Labyrinth",
+					}, -- [2]
+					{
+						["killCount"] = 52,
+						["name"] = "Shadow Labyrinth",
+						["inProgress"] = false,
+						["killTotal"] = 37689,
+						["level"] = 67,
+						["rested"] = 37689,
+						["totalXP"] = 37689,
+					}, -- [3]
+					{
+						["killCount"] = 51,
+						["name"] = "Shadow Labyrinth",
+						["inProgress"] = false,
+						["killTotal"] = 40440,
+						["level"] = 67,
+						["rested"] = 40440,
+						["totalXP"] = 40440,
+					}, -- [4]
+					{
+						["killCount"] = 48,
+						["name"] = "Shadow Labyrinth",
+						["inProgress"] = false,
+						["killTotal"] = 33398,
+						["level"] = 67,
+						["rested"] = 33398,
+						["totalXP"] = 33398,
+					}, -- [5]
+					{
+						["killCount"] = 50,
+						["name"] = "Shadow Labyrinth",
+						["inProgress"] = false,
+						["killTotal"] = 36134,
+						["level"] = 67,
+						["rested"] = 36134,
+						["totalXP"] = 36134,
+					}, -- [6]
+					{
+						["totalXP"] = 33743,
+						["name"] = "Shadow Labyrinth",
+						["rested"] = 33743,
+						["killTotal"] = 33743,
+						["level"] = 66,
+						["killCount"] = 52,
+						["inProgress"] = false,
+					}, -- [7]
+					{
+						["totalXP"] = 31132,
+						["name"] = "Shadow Labyrinth",
+						["rested"] = 31132,
+						["killTotal"] = 31132,
+						["level"] = 66,
+						["killCount"] = 48,
+						["inProgress"] = false,
+					}, -- [8]
+					{
+						["totalXP"] = 18231,
+						["name"] = "Shadow Labyrinth",
+						["rested"] = 18231,
+						["killTotal"] = 18231,
+						["level"] = 66,
+						["killCount"] = 31,
+						["inProgress"] = false,
+					}, -- [9]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 33529,
+						["killCount"] = 51,
+						["killTotal"] = 33529,
+						["level"] = 66,
+						["rested"] = 33529,
+						["name"] = "Shadow Labyrinth",
+					}, -- [10]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 21512,
+						["killCount"] = 35,
+						["killTotal"] = 21512,
+						["level"] = 66,
+						["rested"] = 21512,
+						["name"] = "Shadow Labyrinth",
+					}, -- [11]
+					{
+						["name"] = "Shadow Labyrinth",
+						["totalXP"] = 35091,
+						["rested"] = 35091,
+						["killTotal"] = 35091,
+						["level"] = 66,
+						["inProgress"] = false,
+						["killCount"] = 51,
+					}, -- [12]
+					{
+						["name"] = "Shadow Labyrinth",
+						["totalXP"] = 34998,
+						["rested"] = 34998,
+						["killTotal"] = 34998,
+						["level"] = 66,
+						["inProgress"] = false,
+						["killCount"] = 51,
+					}, -- [13]
+					{
+						["name"] = "Shadow Labyrinth",
+						["totalXP"] = 20199,
+						["rested"] = 20199,
+						["killTotal"] = 20199,
+						["level"] = 66,
+						["inProgress"] = false,
+						["killCount"] = 33,
+					}, -- [14]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 24411,
+						["killCount"] = 38,
+						["killTotal"] = 24411,
+						["level"] = 65,
+						["rested"] = 24411,
+						["name"] = "Shadow Labyrinth",
+					}, -- [15]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 26872,
+						["killCount"] = 42,
+						["killTotal"] = 26872,
+						["level"] = 65,
+						["rested"] = 26872,
+						["name"] = "Shadow Labyrinth",
+					}, -- [16]
+					{
+						["inProgress"] = false,
+						["totalXP"] = 27165,
+						["killCount"] = 43,
+						["killTotal"] = 27165,
+						["level"] = 65,
+						["rested"] = 27165,
+						["name"] = "Shadow Labyrinth",
+					}, -- [17]
+					{
+						["killCount"] = 39,
+						["name"] = "Shadow Labyrinth",
+						["inProgress"] = false,
+						["killTotal"] = 24646,
+						["level"] = 65,
+						["rested"] = 24646,
+						["totalXP"] = 24646,
+					}, -- [18]
+					{
+						["killCount"] = 41,
+						["name"] = "Shadow Labyrinth",
+						["inProgress"] = false,
+						["killTotal"] = 26320,
+						["level"] = 65,
+						["rested"] = 26320,
+						["totalXP"] = 26320,
+					}, -- [19]
 				},
+				["questAverage"] = 7200,
 			},
 		},
 		["Partijcurses - Gehennas"] = {
 			["data"] = {
-				["total"] = {
-					["dungeonKills"] = 236,
-					["quests"] = 56,
-					["mobKills"] = 751,
-				},
-				["killAverage"] = 42.5,
-				["killList"] = {
+				["npcXP"] = {
 					{
-						["mob"] = "Deviate Venomwing",
-						["xp"] = 35,
+						["level"] = 18,
+						["name"] = "Deepmoss Venomspitter",
+						["xp"] = 40,
 					}, -- [1]
 					{
-						["mob"] = "Lord Serpentis",
-						["xp"] = 74,
+						["level"] = 17,
+						["name"] = "Deepmoss Venomspitter",
+						["xp"] = 34,
 					}, -- [2]
 					{
-						["mob"] = "Deviate Venomwing",
-						["xp"] = 35,
+						["level"] = 17,
+						["name"] = "Deepmoss Creeper",
+						["xp"] = 34,
 					}, -- [3]
 					{
-						["mob"] = "Verdan the Everliving",
-						["xp"] = 74,
+						["level"] = 22,
+						["name"] = "Deepmoss Matriarch",
+						["xp"] = 63,
 					}, -- [4]
 					{
-						["mob"] = "Druid of the Fang",
-						["xp"] = 35,
+						["level"] = 16,
+						["name"] = "Deepmoss Creeper",
+						["xp"] = 29,
 					}, -- [5]
 					{
-						["mob"] = "Deviate Dreadfang",
-						["xp"] = 35,
+						["level"] = 19,
+						["name"] = "Stormsnout",
+						["xp"] = 113,
 					}, -- [6]
 					{
-						["mob"] = "Druid of the Fang",
-						["xp"] = 35,
+						["level"] = 16,
+						["name"] = "Bristleback Water Seeker",
+						["xp"] = 70,
 					}, -- [7]
 					{
-						["mob"] = "Druid of the Fang",
-						["xp"] = 35,
+						["level"] = 17,
+						["name"] = "Bristleback Water Seeker",
+						["xp"] = 85,
 					}, -- [8]
 					{
-						["mob"] = "Evolving Ectoplasm",
-						["xp"] = 32,
+						["level"] = 17,
+						["name"] = "Bristleback Hunter",
+						["xp"] = 85,
 					}, -- [9]
 					{
-						["mob"] = "Deviate Dreadfang",
-						["xp"] = 35,
+						["level"] = 19,
+						["name"] = "Bristleback Thornweaver",
+						["xp"] = 113,
 					}, -- [10]
 					{
-						["mob"] = "Deviate Lasher",
-						["xp"] = 7,
+						["level"] = 19,
+						["name"] = "Wandering Barrens Giraffe",
+						["xp"] = 113,
 					}, -- [11]
 					{
-						["mob"] = "Deviate Lasher",
-						["xp"] = 7,
+						["level"] = 18,
+						["name"] = "Bristleback Hunter",
+						["xp"] = 99,
 					}, -- [12]
 					{
-						["mob"] = "Deviate Lasher",
-						["xp"] = 7,
+						["level"] = 20,
+						["name"] = "Bristleback Geomancer",
+						["xp"] = 127,
 					}, -- [13]
 					{
-						["mob"] = "Deviate Venomwing",
-						["xp"] = 35,
+						["level"] = 19,
+						["name"] = "Bristleback Geomancer",
+						["xp"] = 113,
 					}, -- [14]
 					{
-						["mob"] = "Deviate Dreadfang",
-						["xp"] = 35,
+						["level"] = 19,
+						["name"] = "Thunderhawk Hatchling",
+						["xp"] = 113,
 					}, -- [15]
 					{
-						["mob"] = "Evolving Ectoplasm",
-						["xp"] = 29,
+						["level"] = 20,
+						["name"] = "Summoned Succubus",
+						["xp"] = 128,
+					}, -- [16]
+				},
+				["total"] = {
+					["quests"] = 82,
+					["dungeonKills"] = 511,
+					["mobKills"] = 1199,
+				},
+				["killAverage"] = 106.1,
+				["killList"] = {
+					{
+						["mob"] = "Summoned Succubus",
+						["xp"] = 128,
+					}, -- [1]
+					{
+						["mob"] = "Thunderhawk Hatchling",
+						["xp"] = 113,
+					}, -- [2]
+					{
+						["mob"] = "Bristleback Hunter",
+						["xp"] = 85,
+					}, -- [3]
+					{
+						["mob"] = "Bristleback Thornweaver",
+						["xp"] = 113,
+					}, -- [4]
+					{
+						["mob"] = "Bristleback Hunter",
+						["xp"] = 99,
+					}, -- [5]
+					{
+						["mob"] = "Bristleback Hunter",
+						["xp"] = 99,
+					}, -- [6]
+					{
+						["mob"] = "Bristleback Hunter",
+						["xp"] = 99,
+					}, -- [7]
+					{
+						["mob"] = "Bristleback Hunter",
+						["xp"] = 85,
+					}, -- [8]
+					{
+						["mob"] = "Bristleback Geomancer",
+						["xp"] = 127,
+					}, -- [9]
+					{
+						["mob"] = "Bristleback Geomancer",
+						["xp"] = 113,
+					}, -- [10]
+					{
+						["mob"] = "Bristleback Geomancer",
+						["xp"] = 127,
+					}, -- [11]
+					{
+						["mob"] = "Bristleback Hunter",
+						["xp"] = 99,
+					}, -- [12]
+					{
+						["mob"] = "Bristleback Hunter",
+						["xp"] = 99,
+					}, -- [13]
+					{
+						["mob"] = "Wandering Barrens Giraffe",
+						["xp"] = 113,
+					}, -- [14]
+					{
+						["mob"] = "Bristleback Thornweaver",
+						["xp"] = 113,
+					}, -- [15]
+					{
+						["mob"] = "Bristleback Hunter",
+						["xp"] = 85,
 					}, -- [16]
 					{
-						["mob"] = "Deviate Dreadfang",
-						["xp"] = 36,
+						["mob"] = "Bristleback Water Seeker",
+						["xp"] = 85,
 					}, -- [17]
 					{
-						["mob"] = "Deviate Venomwing",
-						["xp"] = 36,
+						["mob"] = "Bristleback Water Seeker",
+						["xp"] = 70,
 					}, -- [18]
 					{
-						["mob"] = "Deviate Dreadfang",
-						["xp"] = 36,
+						["mob"] = "Bristleback Water Seeker",
+						["xp"] = 70,
 					}, -- [19]
 					{
-						["mob"] = "Druid of the Fang",
-						["xp"] = 36,
+						["mob"] = "Stormsnout",
+						["xp"] = 113,
 					}, -- [20]
 					{
-						["mob"] = "Skum",
-						["xp"] = 76,
+						["mob"] = "Arugal's Voidwalker",
+						["xp"] = 18,
 					}, -- [21]
 					{
-						["mob"] = "Deviate Venomwing",
-						["xp"] = 36,
+						["mob"] = "Arugal's Voidwalker",
+						["xp"] = 18,
 					}, -- [22]
 					{
-						["mob"] = "Deviate Venomwing",
-						["xp"] = 36,
+						["mob"] = "Arugal's Voidwalker",
+						["xp"] = 18,
 					}, -- [23]
 					{
-						["mob"] = "Druid of the Fang",
-						["xp"] = 36,
+						["mob"] = "Arugal's Voidwalker",
+						["xp"] = 18,
 					}, -- [24]
 					{
-						["mob"] = "Deviate Venomwing",
-						["xp"] = 36,
+						["mob"] = "Son of Arugal",
+						["xp"] = 46,
 					}, -- [25]
 					{
-						["mob"] = "Druid of the Fang",
-						["xp"] = 36,
+						["mob"] = "Shadowfang Ragetooth",
+						["xp"] = 46,
 					}, -- [26]
 					{
-						["mob"] = "Druid of the Fang",
-						["xp"] = 36,
+						["mob"] = "Fenrus the Devourer",
+						["xp"] = 102,
 					}, -- [27]
 					{
-						["mob"] = "Druid of the Fang",
-						["xp"] = 36,
+						["mob"] = "Odo the Blindwatcher",
+						["xp"] = 102,
 					}, -- [28]
 					{
-						["mob"] = "Deviate Venomwing",
-						["xp"] = 36,
+						["mob"] = "Tormented Officer",
+						["xp"] = 46,
 					}, -- [29]
 					{
-						["mob"] = "Druid of the Fang",
-						["xp"] = 36,
+						["mob"] = "Tormented Officer",
+						["xp"] = 46,
 					}, -- [30]
 					{
-						["mob"] = "Druid of the Fang",
-						["xp"] = 36,
+						["mob"] = "Tormented Officer",
+						["xp"] = 46,
 					}, -- [31]
 					{
-						["mob"] = "Druid of the Fang",
-						["xp"] = 36,
+						["mob"] = "Tormented Officer",
+						["xp"] = 46,
 					}, -- [32]
 					{
-						["mob"] = "Druid of the Fang",
-						["xp"] = 36,
+						["mob"] = "Tormented Officer",
+						["xp"] = 46,
 					}, -- [33]
 					{
-						["mob"] = "Deviate Venomwing",
-						["xp"] = 36,
+						["mob"] = "Tormented Officer",
+						["xp"] = 46,
 					}, -- [34]
 					{
-						["mob"] = "Druid of the Fang",
-						["xp"] = 36,
+						["mob"] = "Vile Bat",
+						["xp"] = 46,
 					}, -- [35]
 					{
-						["mob"] = "Deviate Dreadfang",
-						["xp"] = 36,
+						["mob"] = "Commander Springvale",
+						["xp"] = 91,
 					}, -- [36]
 					{
-						["mob"] = "Druid of the Fang",
-						["xp"] = 36,
+						["mob"] = "Wailing Guardsman",
+						["xp"] = 40,
 					}, -- [37]
 					{
-						["mob"] = "Druid of the Fang",
-						["xp"] = 36,
+						["mob"] = "Shadowfang Darksoul",
+						["xp"] = 40,
 					}, -- [38]
 					{
-						["mob"] = "Deviate Dreadfang",
-						["xp"] = 36,
+						["mob"] = "Wailing Guardsman",
+						["xp"] = 40,
 					}, -- [39]
 					{
-						["mob"] = "Deviate Dreadfang",
-						["xp"] = 36,
+						["mob"] = "Wailing Guardsman",
+						["xp"] = 40,
 					}, -- [40]
 					{
-						["mob"] = "Druid of the Fang",
-						["xp"] = 36,
+						["mob"] = "Wailing Guardsman",
+						["xp"] = 40,
 					}, -- [41]
 					{
-						["mob"] = "Deviate Lasher",
-						["xp"] = 7,
+						["mob"] = "Wailing Guardsman",
+						["xp"] = 40,
 					}, -- [42]
 					{
-						["mob"] = "Deviate Lasher",
-						["xp"] = 7,
+						["mob"] = "Wailing Guardsman",
+						["xp"] = 40,
 					}, -- [43]
 					{
-						["mob"] = "Deviate Lasher",
-						["xp"] = 7,
+						["mob"] = "Wailing Guardsman",
+						["xp"] = 40,
 					}, -- [44]
 					{
-						["mob"] = "Deviate Lasher",
-						["xp"] = 7,
+						["mob"] = "Wailing Guardsman",
+						["xp"] = 40,
 					}, -- [45]
 					{
-						["mob"] = "Deviate Lasher",
-						["xp"] = 7,
+						["mob"] = "Wailing Guardsman",
+						["xp"] = 40,
 					}, -- [46]
 					{
-						["mob"] = "Deviate Lasher",
-						["xp"] = 7,
+						["mob"] = "Shadowfang Darksoul",
+						["xp"] = 40,
 					}, -- [47]
 					{
-						["mob"] = "Deviate Lasher",
-						["xp"] = 7,
+						["mob"] = "Haunted Servitor",
+						["xp"] = 40,
 					}, -- [48]
 					{
-						["mob"] = "Deviate Lasher",
-						["xp"] = 7,
+						["mob"] = "Wailing Guardsman",
+						["xp"] = 40,
 					}, -- [49]
 					{
-						["mob"] = "Deviate Lasher",
-						["xp"] = 7,
+						["mob"] = "Shadowfang Darksoul",
+						["xp"] = 40,
 					}, -- [50]
 					{
-						["mob"] = "Lord Pythas",
-						["xp"] = 76,
+						["mob"] = "Shadowfang Darksoul",
+						["xp"] = 40,
 					}, -- [51]
 					{
-						["mob"] = "Druid of the Fang",
-						["xp"] = 36,
+						["mob"] = "Wailing Guardsman",
+						["xp"] = 40,
 					}, -- [52]
 					{
-						["mob"] = "Druid of the Fang",
-						["xp"] = 36,
+						["mob"] = "Wailing Guardsman",
+						["xp"] = 40,
 					}, -- [53]
 					{
-						["mob"] = "Druid of the Fang",
-						["xp"] = 36,
+						["mob"] = "Haunted Servitor",
+						["xp"] = 40,
 					}, -- [54]
 					{
-						["mob"] = "Druid of the Fang",
-						["xp"] = 36,
+						["mob"] = "Shadowfang Moonwalker",
+						["xp"] = 40,
 					}, -- [55]
 					{
-						["mob"] = "Druid of the Fang",
-						["xp"] = 36,
+						["mob"] = "Shadowfang Moonwalker",
+						["xp"] = 40,
 					}, -- [56]
 					{
-						["mob"] = "Druid of the Fang",
-						["xp"] = 36,
+						["mob"] = "Shadowfang Moonwalker",
+						["xp"] = 40,
 					}, -- [57]
 					{
-						["mob"] = "Druid of the Fang",
-						["xp"] = 36,
+						["mob"] = "Shadowfang Moonwalker",
+						["xp"] = 40,
 					}, -- [58]
 					{
-						["mob"] = "Deviate Venomwing",
-						["xp"] = 36,
+						["mob"] = "Shadowfang Moonwalker",
+						["xp"] = 40,
 					}, -- [59]
 					{
-						["mob"] = "Druid of the Fang",
-						["xp"] = 36,
+						["mob"] = "Shadowfang Moonwalker",
+						["xp"] = 40,
 					}, -- [60]
 					{
-						["mob"] = "Druid of the Fang",
-						["xp"] = 36,
+						["mob"] = "Slavering Worg",
+						["xp"] = 40,
 					}, -- [61]
 					{
-						["mob"] = "Druid of the Fang",
-						["xp"] = 36,
+						["mob"] = "Shadowfang Moonwalker",
+						["xp"] = 40,
 					}, -- [62]
 					{
-						["mob"] = "Deviate Venomwing",
-						["xp"] = 36,
+						["mob"] = "Slavering Worg",
+						["xp"] = 35,
 					}, -- [63]
 					{
-						["mob"] = "Druid of the Fang",
-						["xp"] = 36,
+						["mob"] = "Slavering Worg",
+						["xp"] = 35,
 					}, -- [64]
 					{
-						["mob"] = "Druid of the Fang",
-						["xp"] = 36,
+						["mob"] = "Shadowfang Moonwalker",
+						["xp"] = 40,
 					}, -- [65]
 					{
-						["mob"] = "Druid of the Fang",
-						["xp"] = 36,
+						["mob"] = "Haunted Servitor",
+						["xp"] = 35,
 					}, -- [66]
 					{
-						["mob"] = "Druid of the Fang",
-						["xp"] = 36,
+						["mob"] = "Slavering Worg",
+						["xp"] = 40,
 					}, -- [67]
 					{
-						["mob"] = "Deviate Shambler",
-						["xp"] = 36,
+						["mob"] = "Haunted Servitor",
+						["xp"] = 40,
 					}, -- [68]
 					{
-						["mob"] = "Deviate Dreadfang",
-						["xp"] = 36,
+						["mob"] = "Slavering Worg",
+						["xp"] = 35,
 					}, -- [69]
 					{
-						["mob"] = "Deviate Shambler",
-						["xp"] = 36,
+						["mob"] = "Haunted Servitor",
+						["xp"] = 35,
 					}, -- [70]
 					{
-						["mob"] = "Evolving Ectoplasm",
-						["xp"] = 33,
+						["mob"] = "Haunted Servitor",
+						["xp"] = 40,
 					}, -- [71]
 					{
-						["mob"] = "Deviate Shambler",
-						["xp"] = 36,
+						["mob"] = "Shadowfang Moonwalker",
+						["xp"] = 40,
 					}, -- [72]
 					{
-						["mob"] = "Deviate Dreadfang",
-						["xp"] = 36,
+						["mob"] = "Shadowfang Moonwalker",
+						["xp"] = 40,
 					}, -- [73]
 					{
-						["mob"] = "Deviate Shambler",
-						["xp"] = 36,
+						["mob"] = "Slavering Worg",
+						["xp"] = 40,
 					}, -- [74]
 					{
-						["mob"] = "Deviate Shambler",
-						["xp"] = 36,
+						["mob"] = "Haunted Servitor",
+						["xp"] = 40,
 					}, -- [75]
 					{
-						["mob"] = "Deviate Shambler",
-						["xp"] = 36,
+						["mob"] = "Shadowfang Moonwalker",
+						["xp"] = 40,
 					}, -- [76]
 					{
-						["mob"] = "Deviate Shambler",
-						["xp"] = 36,
+						["mob"] = "Slavering Worg",
+						["xp"] = 35,
 					}, -- [77]
 					{
-						["mob"] = "Deviate Dreadfang",
-						["xp"] = 36,
+						["mob"] = "Bleak Worg",
+						["xp"] = 35,
 					}, -- [78]
 					{
-						["mob"] = "Deviate Faerie Dragon",
-						["xp"] = 29,
+						["mob"] = "Shadowfang Whitescalp",
+						["xp"] = 35,
 					}, -- [79]
 					{
-						["mob"] = "Deviate Shambler",
-						["xp"] = 36,
+						["mob"] = "Shadowfang Whitescalp",
+						["xp"] = 40,
 					}, -- [80]
 					{
-						["mob"] = "Deviate Shambler",
-						["xp"] = 36,
+						["mob"] = "Bleak Worg",
+						["xp"] = 35,
 					}, -- [81]
 					{
-						["mob"] = "Deviate Lasher",
-						["xp"] = 7,
+						["mob"] = "Bleak Worg",
+						["xp"] = 40,
 					}, -- [82]
 					{
-						["mob"] = "Deviate Lasher",
-						["xp"] = 7,
+						["mob"] = "Bleak Worg",
+						["xp"] = 40,
 					}, -- [83]
 					{
-						["mob"] = "Deviate Lasher",
-						["xp"] = 7,
+						["mob"] = "Shadowfang Whitescalp",
+						["xp"] = 35,
 					}, -- [84]
 					{
-						["mob"] = "Deviate Lasher",
-						["xp"] = 7,
+						["mob"] = "Shadowfang Whitescalp",
+						["xp"] = 36,
 					}, -- [85]
 					{
-						["mob"] = "Deviate Lasher",
-						["xp"] = 7,
+						["mob"] = "Bleak Worg",
+						["xp"] = 36,
 					}, -- [86]
 					{
-						["mob"] = "Druid of the Fang",
+						["mob"] = "Shadowfang Whitescalp",
 						["xp"] = 36,
 					}, -- [87]
 					{
-						["mob"] = "Druid of the Fang",
+						["mob"] = "Bleak Worg",
 						["xp"] = 36,
 					}, -- [88]
 					{
-						["mob"] = "Evolving Ectoplasm",
-						["xp"] = 33,
+						["mob"] = "Shadowfang Whitescalp",
+						["xp"] = 42,
 					}, -- [89]
 					{
-						["mob"] = "Druid of the Fang",
-						["xp"] = 36,
+						["mob"] = "Rethilgore",
+						["xp"] = 57,
 					}, -- [90]
 					{
-						["mob"] = "Druid of the Fang",
+						["mob"] = "Shadowfang Whitescalp",
 						["xp"] = 36,
 					}, -- [91]
 					{
-						["mob"] = "Druid of the Fang",
+						["mob"] = "Sorcerer Ashcrombe",
 						["xp"] = 36,
 					}, -- [92]
 					{
-						["mob"] = "Druid of the Fang",
-						["xp"] = 36,
+						["mob"] = "Bleak Worg",
+						["xp"] = 42,
 					}, -- [93]
 					{
-						["mob"] = "Deviate Shambler",
-						["xp"] = 36,
+						["mob"] = "Deepmoss Creeper",
+						["xp"] = 29,
 					}, -- [94]
 					{
-						["mob"] = "Deviate Shambler",
-						["xp"] = 36,
+						["mob"] = "Deepmoss Creeper",
+						["xp"] = 29,
 					}, -- [95]
 					{
-						["mob"] = "Deviate Shambler",
-						["xp"] = 36,
+						["mob"] = "Deepmoss Creeper",
+						["xp"] = 34,
 					}, -- [96]
 					{
-						["mob"] = "Deviate Shambler",
-						["xp"] = 36,
+						["mob"] = "Deepmoss Creeper",
+						["xp"] = 34,
 					}, -- [97]
 					{
-						["mob"] = "Deviate Shambler",
-						["xp"] = 36,
+						["mob"] = "Deepmoss Creeper",
+						["xp"] = 29,
 					}, -- [98]
 					{
-						["mob"] = "Deviate Shambler",
-						["xp"] = 36,
+						["mob"] = "Deepmoss Venomspitter",
+						["xp"] = 34,
 					}, -- [99]
 					{
-						["mob"] = "Deviate Lasher",
-						["xp"] = 7,
+						["mob"] = "Deepmoss Matriarch",
+						["xp"] = 63,
 					}, -- [100]
 				},
 				["timer"] = {
-					["start"] = 7931.836,
-					["total"] = 13129,
-					["lastUpdated"] = 10807.76,
-					["xpPerSec"] = 4.565141498871319,
+					["start"] = 12288.772,
+					["total"] = 0,
+					["lastUpdated"] = 12816.773,
+					["xpPerSec"] = 3.239127673377943,
 				},
 				["dungeonList"] = {
+					{
+						["inProgress"] = false,
+						["totalXP"] = 3008,
+						["killCount"] = 73,
+						["killTotal"] = 3008,
+						["level"] = 22,
+						["rested"] = 2742,
+						["name"] = "Shadowfang Keep",
+					}, -- [1]
+					{
+						["killCount"] = 191,
+						["name"] = "The Wailing Caverns",
+						["inProgress"] = false,
+						["killTotal"] = 14240,
+						["level"] = 20,
+						["rested"] = 779,
+						["totalXP"] = 14240,
+					}, -- [2]
+					{
+						["totalXP"] = 927,
+						["name"] = "The Wailing Caverns",
+						["rested"] = 927,
+						["killTotal"] = 927,
+						["level"] = 20,
+						["killCount"] = 11,
+						["inProgress"] = false,
+					}, -- [3]
 					{
 						["inProgress"] = false,
 						["totalXP"] = 7017,
@@ -906,98 +1211,23 @@ XToLevelDB = {
 						["level"] = 14,
 						["rested"] = 1055,
 						["name"] = "The Wailing Caverns",
-					}, -- [1]
-				},
-				["questAverage"] = 2100,
-				["npcXP"] = {
-					{
-						["level"] = 19,
-						["name"] = "Druid of the Fang",
-						["xp"] = 32,
-					}, -- [1]
-					{
-						["level"] = 18,
-						["name"] = "Deviate Crocolisk",
-						["xp"] = 13,
-					}, -- [2]
-					{
-						["level"] = 19,
-						["name"] = "Deviate Crocolisk",
-						["xp"] = 14,
-					}, -- [3]
-					{
-						["level"] = 18,
-						["name"] = "Evolving Ectoplasm",
-						["xp"] = 33,
 					}, -- [4]
-					{
-						["level"] = 19,
-						["name"] = "Deviate Ravager",
-						["xp"] = 36,
-					}, -- [5]
-					{
-						["level"] = 19,
-						["name"] = "Deviate Guardian",
-						["xp"] = 36,
-					}, -- [6]
-					{
-						["level"] = 19,
-						["name"] = "Deviate Viper",
-						["xp"] = 36,
-					}, -- [7]
-					{
-						["level"] = 18,
-						["name"] = "Deviate Adder",
-						["xp"] = 36,
-					}, -- [8]
-					{
-						["level"] = 17,
-						["name"] = "Evolving Ectoplasm",
-						["xp"] = 29,
-					}, -- [9]
-					{
-						["level"] = 20,
-						["name"] = "Lord Cobrahn",
-						["xp"] = 76,
-					}, -- [10]
-					{
-						["level"] = 18,
-						["name"] = "Deviate Ravager",
-						["xp"] = 33,
-					}, -- [11]
-					{
-						["level"] = 19,
-						["name"] = "Deviate Shambler",
-						["xp"] = 36,
-					}, -- [12]
-					{
-						["level"] = 19,
-						["name"] = "Deviate Lasher",
-						["xp"] = 7,
-					}, -- [13]
-					{
-						["level"] = 19,
-						["name"] = "Deviate Venomwing",
-						["xp"] = 35,
-					}, -- [14]
-					{
-						["level"] = 19,
-						["name"] = "Deviate Dreadfang",
-						["xp"] = 35,
-					}, -- [15]
-					{
-						["level"] = 20,
-						["name"] = "Verdan the Everliving",
-						["xp"] = 74,
-					}, -- [16]
+				},
+				["questAverage"] = 1248,
+				["questList"] = {
+					1300, -- [1]
+					440, -- [2]
+					1300, -- [3]
+					1750, -- [4]
+					1450, -- [5]
 				},
 			},
 		},
 		["Firebreather - Firemaw"] = {
 			["data"] = {
 				["total"] = {
-					["dungeonKills"] = 16379,
 					["quests"] = 113,
+					["dungeonKills"] = 16379,
 					["mobKills"] = 18333,
 				},
 				["killAverage"] = 282.8,
@@ -1404,9 +1634,9 @@ XToLevelDB = {
 					}, -- [100]
 				},
 				["timer"] = {
-					["start"] = 25102.217,
+					["start"] = 23680.486,
 					["total"] = 0,
-					["lastUpdated"] = 25376.219,
+					["lastUpdated"] = 23696.489,
 					["xpPerSec"] = 1.9148694013516,
 				},
 				["dungeonList"] = {
@@ -7671,8 +7901,8 @@ XToLevelDB = {
 			},
 			["averageDisplay"] = {
 				["playerGathering"] = false,
-				["scale"] = 1.3,
 				["orientation"] = "h",
+				["scale"] = 1.3,
 				["playerBGs"] = false,
 				["playerDigs"] = false,
 				["playerQuests"] = false,

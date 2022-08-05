@@ -188,8 +188,19 @@ function CCP.createBnetString(id, msg)
 	id = tonumber(id);
 	local totalBNFriends = BNGetNumFriends()
 	for friendIndex = 1, totalBNFriends do
-		local presenceID, name, tag = BNGetFriendInfo(friendIndex);
-		if (id == presenceID) then
+		local presenceID, name, tag;
+		if (C_BattleNet and C_BattleNet.GetFriendAccountInfo) then
+			--Retail.
+			local data = C_BattleNet.GetFriendAccountInfo(friendIndex);
+			if (data) then
+				presenceID = data.bnetAccountID;
+				name = data.accountName;
+				tag = data.battleTag;
+			end
+		else
+			presenceID, name, tag = BNGetFriendInfo(friendIndex)
+		end
+		if (tag and id == presenceID) then
 			tag = strsplit("#", tag);
 			return gsub(msg, "|HBNplayer:.*:.*:.*:BN_WHISPER:.*:", "[" .. tag .. "]:");
 		end

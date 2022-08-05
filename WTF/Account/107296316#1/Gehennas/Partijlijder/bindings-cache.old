@@ -1,0 +1,54 @@
+bind A STRAFELEFT
+bind D STRAFERIGHT
+bind Q ACTIONBUTTON6
+bind E ACTIONBUTTON7
+bind NUMPADDIVIDE NONE
+bind 6 NONE
+bind 7 NONE
+bind 8 NONE
+bind CTRL-F1 NONE
+bind CTRL-1 PETATTACK
+bind SHIFT-1 CLICK BT4Button25:LeftButton
+bind SHIFT-2 CLICK BT4Button26:LeftButton
+bind SHIFT-3 CLICK BT4Button27:LeftButton
+bind SHIFT-4 CLICK BT4Button28:LeftButton
+bind SHIFT-5 CLICK BT4Button29:LeftButton
+bind SHIFT-6 CLICK BT4Button30:LeftButton
+bind TAB TARGETSCANENEMY
+bind F1 CLICK BT4Button49:LeftButton
+bind SHIFT-F1 CLICK BT4Button53:LeftButton
+bind F2 CLICK BT4Button62:LeftButton
+bind F3 CLICK BT4Button61:LeftButton
+bind F4 CLICK BT4Button50:LeftButton
+bind F5 CLICK BT4Button63:LeftButton
+bind SHIFT-F2 CLICK BT4Button68:LeftButton
+bind SHIFT-F3 CLICK BT4Button67:LeftButton
+bind SHIFT-F4 CLICK BT4Button54:LeftButton
+bind SHIFT-F5 CLICK BT4Button69:LeftButton
+bind G ACTIONBUTTON11
+bind F CLICK DejaMark:LeftButton
+bind T ACTIONBUTTON8
+bind SHIFT-T NONE
+bind F8 CLICK BT4Button64:LeftButton
+bind F10 CLICK BT4Button52:LeftButton
+bind F11 CLICK BT4Button65:LeftButton
+bind F12 CLICK BT4Button66:LeftButton
+bind ALT-Z NONE
+bind F6 NONE
+bind SHIFT-F6 NONE
+bind SHIFT-7 CLICK BT4Button31:LeftButton
+bind SHIFT-8 CLICK BT4Button32:LeftButton
+bind SHIFT-9 CLICK BT4Button33:LeftButton
+bind SHIFT-0 CLICK BT4Button34:LeftButton
+bind SHIFT-- CLICK BT4Button35:LeftButton
+bind SHIFT-= CLICK BT4Button36:LeftButton
+bind CTRL-Z TOGGLEUI
+bind SHIFT-F8 CLICK BT4Button70:LeftButton
+bind SHIFT-F11 CLICK BT4Button71:LeftButton
+bind SHIFT-F12 CLICK BT4Button72:LeftButton
+bind F7 CLICK BT4Button51:LeftButton
+bind SHIFT-F7 CLICK BT4Button55:LeftButton
+bind SHIFT-F10 CLICK BT4Button56:LeftButton
+bind BUTTON5 TOGGLERUN
+bind [ PAWN_COMPARE_LEFT
+bind ] PAWN_COMPARE_RIGHT

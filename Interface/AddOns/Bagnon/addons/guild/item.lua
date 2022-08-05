@@ -32,11 +32,7 @@ function Item:OnClick(button)
 		return
 	elseif IsModifiedClick('SPLITSTACK') then
 		if not CursorHasItem() and not self.info.locked and self.info.count > 1 then
-			if OpenStackSplitFrame then
-				OpenStackSplitFrame(self.info.count, self, 'BOTTOMLEFT', 'TOPLEFT')
-			else
-				StackSplitFrame:OpenStackSplitFrame(self.info.count, self, 'BOTTOMLEFT', 'TOPLEFT')
-			end
+			StackSplitFrame:OpenStackSplitFrame(self.info.count, self, 'BOTTOMLEFT', 'TOPLEFT')
 		end
 	else
 		local type, amount = GetCursorInfo()

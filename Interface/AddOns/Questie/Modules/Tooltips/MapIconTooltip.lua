@@ -19,6 +19,8 @@ local QuestieLib = QuestieLoader:ImportModule("QuestieLib")
 local QuestieComms = QuestieLoader:ImportModule("QuestieComms")
 ---@type l10n
 local l10n = QuestieLoader:ImportModule("l10n")
+---@type QuestXP
+local QuestXP = QuestieLoader:ImportModule("QuestXP")
 
 local HBDPins = LibStub("HereBeDragonsQuestie-Pins-2.0")
 
@@ -213,9 +215,9 @@ function MapIconTooltip:Show()
                     local quest = QuestieDB:GetQuest(questData.questId)
                     local rewardString = ""
                     if (quest and shift) then
-                        local xpReward = GetQuestLogRewardXP(questData.questId)
+                        local xpReward = QuestXP:GetQuestLogRewardXP(questData.questId, Questie.db.global.showQuestXpAtMaxLevel)
                         if xpReward > 0 then
-                            rewardString = QuestieLib:PrintDifficultyColor(quest.level, "(".. FormatLargeNumber(xpReward) .. xpString .. ") ")
+                            rewardString = QuestieLib:PrintDifficultyColor(quest.level, "(".. FormatLargeNumber(xpReward) .. xpString .. ") ", QuestieDB:IsRepeatable(quest.Id))
                         end
 
                         local moneyReward = GetQuestLogRewardMoney(questData.questId)
@@ -303,7 +305,7 @@ function MapIconTooltip:Show()
                 self:AddDoubleLine(questTitle, "(" .. l10n("Active") .. ")", 1, 1, 1, 1, 1, 0);
                 haveGiver = false -- looks better when only the first one shows (active)
             else
-                local xpReward = GetQuestLogRewardXP(questId)
+                local xpReward = QuestXP:GetQuestLogRewardXP(questId, Questie.db.global.showQuestXpAtMaxLevel)
                 if (quest and shift and xpReward > 0) then
                     r, g, b = QuestieLib:GetDifficultyColorPercent(quest.level);
                     self:AddDoubleLine(questTitle, "("..FormatLargeNumber(xpReward)..xpString..")", 0.2, 1, 0.2, r, g, b);
@@ -426,8 +428,7 @@ function _MapIconTooltip:GetAvailableOrCompleteTooltip(icon)
         tip.type = "(" .. l10n("Complete") .. ")";
     else
 
-        local quest = icon.data.QuestData
-        local questType, questTag = quest:GetQuestTagInfo();
+        local questType, questTag = QuestieDB:GetQuestTagInfo(icon.data.Id)
 
         if (QuestieDB:IsRepeatable(icon.data.Id)) then
             tip.type = "(" .. l10n("Repeatable") .. ")";

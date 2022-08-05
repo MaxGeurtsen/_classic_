@@ -36,6 +36,15 @@ VER 3 000000000100000C "DS" "INV_MISC_QUESTIONMARK"
 /cancelaura Divine Shield
 /cast Divine Shield
 END
+VER 3 000000000100000E "FIRE" "135818"
+/gq switch FIRE
+END
+VER 3 000000000100000D "FROST" "135988"
+/gq switch FROST
+END
+VER 3 000000000100000F "KINGS" "135995"
+/cast [target=apecss, exists, nodead][target=Reapér, exists, nodead][target=skurkeh, exists, nodead][target=bigmanbooy, exists, nodead][target=Axinator, exists, nodead][target=Aggrae, exists, nodead] Greater Blessing of Might
+END
 VER 3 0000000001000007 "kings" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [mod:ctrl] greater Blessing of kings; blessing of kings

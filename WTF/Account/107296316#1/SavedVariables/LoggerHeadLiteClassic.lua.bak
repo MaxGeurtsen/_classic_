@@ -1,0 +1,23 @@
+
+LoggerHeadNDB = {
+	["profileKeys"] = {
+		["Partijleider - Gehennas"] = "Default",
+		["Partijlijder - Gehennas"] = "Default",
+		["Rinque - Gehennas"] = "Default",
+		["Partijcurses - Gehennas"] = "Default",
+		["Firebreather - Gehennas"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["zones"] = {
+				[533] = false,
+				[409] = false,
+				[309] = false,
+				[509] = false,
+				[249] = false,
+				[531] = false,
+				[469] = false,
+			},
+		},
+	},
+}

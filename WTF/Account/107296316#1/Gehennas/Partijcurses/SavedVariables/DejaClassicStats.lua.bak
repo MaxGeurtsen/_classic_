@@ -13,8 +13,8 @@ DejaClassicStatsDBPC = {
 		["DejaClassicStatsShowItemLevelChecked"] = {
 			["ShowItemLevelSetChecked"] = true,
 		},
-		["dejacharacterstatsExpandButtonChecked"] = {
-			["ExpandButtonSetChecked"] = true,
+		["DejaClassicStatsDesaturateScrollArtBackground"] = {
+			["DesaturateScrollArtBackgroundChecked"] = false,
 		},
 		["DejaClassicStatsShowEnchantChecked"] = {
 			["ShowEnchantSetChecked"] = true,
@@ -91,17 +91,17 @@ DejaClassicStatsDBPC = {
 		["dejacharacterstatsExpandButtonAltPlacementChecked"] = {
 			["ExpandButtonAltPlacementSetChecked"] = false,
 		},
-		["DejaClassicStatsDesaturateScrollArtBackground"] = {
-			["DesaturateScrollArtBackgroundChecked"] = false,
+		["dejacharacterstatsExpandButtonChecked"] = {
+			["ExpandButtonSetChecked"] = true,
 		},
 		["DejaClassicStatsShowHideScrollArtBackground"] = {
 			["ShowHideScrollArtBackgroundChecked"] = true,
 		},
 		["DejaClassicStatsShowItemRepairChecked"] = {
-			["ShowItemRepairSetChecked"] = true,
+			["ShowItemRepairSetChecked"] = false,
 		},
 		["DejaClassicStatsShowDefenseChecked"] = {
-			["ShowDefenseSetChecked"] = true,
+			["ShowDefenseSetChecked"] = false,
 		},
 		["DejaClassicStatsShowSpellChecked"] = {
 			["ShowSpellSetChecked"] = true,
@@ -116,19 +116,20 @@ DejaClassicStatsDBPC = {
 			["ShowAverageRepairSetChecked"] = true,
 		},
 		["DejaClassicStatsShowMeleeChecked"] = {
-			["ShowMeleeSetChecked"] = true,
+			["ShowMeleeSetChecked"] = false,
 		},
 		["DejaClassicStatsManaRegenNotCasting"] = {
-			["DCSnotcasting"] = 5.668918132781982,
+			["DCSnotcasting"] = 18.59410667419434,
 		},
 		["DejaClassicStatsShowModelRotation"] = {
 			["ShowModelRotationChecked"] = false,
 		},
 		["DejaClassicStatsShowRangedChecked"] = {
-			["ShowRangedSetChecked"] = true,
+			["ShowRangedSetChecked"] = false,
 		},
-		["DejaClassicStatsAlternateInfoPlacement"] = {
-			["AlternateInfoPlacementChecked"] = false,
+		["DejaClassicStatsSimpleItemColorChecked"] = {
+			["SimpleItemColorChecked"] = false,
+			["DarkerItemColorChecked"] = false,
 		},
 		["QCOA_SetSliderValue"] = {
 			["QCOA_SliderValue"] = 0.75,
@@ -136,12 +137,11 @@ DejaClassicStatsDBPC = {
 		["dejacharacterstatsExpandChecked"] = {
 			["ExpandSetChecked"] = true,
 		},
-		["DejaClassicStatsSimpleItemColorChecked"] = {
-			["SimpleItemColorChecked"] = false,
-			["DarkerItemColorChecked"] = false,
+		["DejaClassicStatsAlternateInfoPlacement"] = {
+			["AlternateInfoPlacementChecked"] = false,
 		},
 		["DejaClassicStatsShowDuraChecked"] = {
-			["ShowDuraSetChecked"] = true,
+			["ShowDuraSetChecked"] = false,
 		},
 	},
 }

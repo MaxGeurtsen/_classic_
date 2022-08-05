@@ -14,9 +14,9 @@ CommDKP_DB = {
 			["SuppressNotifications"] = false,
 			["ChatFrames"] = {
 				["LookingForGroup"] = true,
+				["Guild"] = true,
 				["Combat Log"] = true,
 				["General"] = true,
-				["Guild"] = true,
 			},
 			["HideChangeLogs"] = 30209,
 			["TooltipHistoryCount"] = 15,
@@ -69,14 +69,6 @@ CommDKP_DB = {
 		},
 		["raiders"] = {
 		},
-		["bossargs"] = {
-			["CurrentRaidZone"] = "Molten Core",
-			["LastKilledBoss"] = "Magtheridon",
-			["RecentZones"] = {
-			},
-			["LastKilledNPC"] = {
-			},
-		},
 		["modes"] = {
 			["rolls"] = {
 				["min"] = 1,
@@ -103,6 +95,14 @@ CommDKP_DB = {
 			["AllowNegativeBidders"] = false,
 			["AnnounceRaidWarning"] = false,
 		},
+		["bossargs"] = {
+			["CurrentRaidZone"] = "Molten Core",
+			["LastKilledBoss"] = "Magtheridon",
+			["RecentZones"] = {
+			},
+			["LastKilledNPC"] = {
+			},
+		},
 		["DKPBonus"] = {
 			["IncStandby"] = false,
 			["IntervalBonus"] = 15,
@@ -117,6 +117,242 @@ CommDKP_DB = {
 		},
 	},
 	["Gehennas-Horde"] = {
+		["Knokploeg"] = {
+			["defaults"] = {
+				["CommDKPScaleSize"] = 1,
+				["HistoryLimit"] = 2500,
+				["CustomMaxBid"] = true,
+				["CurrentTeam"] = "0",
+				["SuppressTells"] = true,
+				["BidTimerSize"] = 1,
+				["DKPHistoryLimit"] = 2500,
+				["CurrentGuild"] = {
+				},
+				["SuppressNotifications"] = false,
+				["ChatFrames"] = {
+					["LookingForGroup"] = true,
+					["Log"] = true,
+					["General"] = true,
+					["Raid"] = true,
+					["Voice"] = true,
+					["RiseHeal"] = true,
+				},
+				["HideChangeLogs"] = 30209,
+				["TooltipHistoryCount"] = 15,
+				["CustomMinBid"] = true,
+			},
+			["MaxBidBySlot"] = {
+				["Other"] = 0,
+				["OneHanded"] = 0,
+				["Bracers"] = 0,
+				["Neck"] = 0,
+				["Belt"] = 0,
+				["Hands"] = 0,
+				["Boots"] = 0,
+				["Ring"] = 0,
+				["Cloak"] = 0,
+				["Head"] = 0,
+				["Trinket"] = 0,
+				["Chest"] = 0,
+				["OffHand"] = 0,
+				["Legs"] = 0,
+				["TwoHanded"] = 0,
+				["Shoulders"] = 0,
+				["Range"] = 0,
+			},
+			["MinBidBySlot"] = {
+				["Other"] = 70,
+				["OneHanded"] = 70,
+				["Bracers"] = 70,
+				["Neck"] = 70,
+				["Belt"] = 70,
+				["Hands"] = 70,
+				["Boots"] = 70,
+				["Ring"] = 70,
+				["Cloak"] = 70,
+				["Head"] = 70,
+				["Trinket"] = 70,
+				["Chest"] = 70,
+				["OffHand"] = 70,
+				["Legs"] = 70,
+				["TwoHanded"] = 70,
+				["Shoulders"] = 70,
+				["Range"] = 70,
+			},
+			["teams"] = {
+				["0"] = {
+					["name"] = "Knokploeg",
+				},
+			},
+			["DKPBonus"] = {
+				["IncStandby"] = false,
+				["IntervalBonus"] = 15,
+				["CompletionBonus"] = 10,
+				["OnTimeBonus"] = 15,
+				["UnexcusedAbsence"] = -25,
+				["NewBossKillBonus"] = 10,
+				["BossKillBonus"] = 5,
+				["BidTimer"] = 30,
+				["DecayPercentage"] = 20,
+				["GiveRaidStart"] = false,
+			},
+			["bossargs"] = {
+				["CurrentRaidZone"] = "Molten Core",
+				["LastKilledBoss"] = "Illidan Stormrage",
+				["LastKilledNPC"] = {
+				},
+				["RecentZones"] = {
+				},
+			},
+			["modes"] = {
+				["rolls"] = {
+					["min"] = 1,
+					["AddToMax"] = 0,
+					["max"] = 100,
+					["UsePerc"] = false,
+				},
+				["ZeroSumBidType"] = "Static",
+				["channels"] = {
+					["raid"] = true,
+					["whisper"] = true,
+					["guild"] = true,
+				},
+				["increment"] = 60,
+				["rounding"] = 0,
+				["AddToNegative"] = false,
+				["SubZeroBidding"] = false,
+				["AllowNegativeBidders"] = false,
+				["mode"] = "Minimum Bid Values",
+				["ZeroSumBank"] = {
+					["balance"] = 0,
+				},
+				["costvalue"] = "Integer",
+				["AntiSnipe"] = 0,
+				["AnnounceRaidWarning"] = false,
+			},
+			["raiders"] = {
+			},
+			["pendingLoot"] = {
+			},
+		},
+		["Omega"] = {
+			["defaults"] = {
+				["CommDKPScaleSize"] = 1,
+				["HistoryLimit"] = 2500,
+				["CustomMaxBid"] = true,
+				["CurrentTeam"] = "0",
+				["SuppressTells"] = true,
+				["BidTimerSize"] = 1,
+				["DKPHistoryLimit"] = 2500,
+				["CurrentGuild"] = {
+				},
+				["SuppressNotifications"] = false,
+				["ChatFrames"] = {
+					["LookingForGroup"] = true,
+					["Log"] = true,
+					["General"] = true,
+					["Raid"] = true,
+					["Voice"] = true,
+					["RiseHeal"] = true,
+				},
+				["HideChangeLogs"] = 30209,
+				["TooltipHistoryCount"] = 15,
+				["CustomMinBid"] = true,
+			},
+			["MaxBidBySlot"] = {
+				["Other"] = 0,
+				["OneHanded"] = 0,
+				["Bracers"] = 0,
+				["Neck"] = 0,
+				["Belt"] = 0,
+				["Hands"] = 0,
+				["Boots"] = 0,
+				["Ring"] = 0,
+				["Cloak"] = 0,
+				["Head"] = 0,
+				["Trinket"] = 0,
+				["Chest"] = 0,
+				["OffHand"] = 0,
+				["Legs"] = 0,
+				["TwoHanded"] = 0,
+				["Shoulders"] = 0,
+				["Range"] = 0,
+			},
+			["MinBidBySlot"] = {
+				["Other"] = 70,
+				["OneHanded"] = 70,
+				["Bracers"] = 70,
+				["Neck"] = 70,
+				["Belt"] = 70,
+				["Hands"] = 70,
+				["Boots"] = 70,
+				["Ring"] = 70,
+				["Cloak"] = 70,
+				["Head"] = 70,
+				["Trinket"] = 70,
+				["Chest"] = 70,
+				["OffHand"] = 70,
+				["Legs"] = 70,
+				["TwoHanded"] = 70,
+				["Shoulders"] = 70,
+				["Range"] = 70,
+			},
+			["teams"] = {
+				["0"] = {
+					["name"] = "Omega",
+				},
+			},
+			["DKPBonus"] = {
+				["IncStandby"] = false,
+				["IntervalBonus"] = 15,
+				["CompletionBonus"] = 10,
+				["OnTimeBonus"] = 15,
+				["UnexcusedAbsence"] = -25,
+				["NewBossKillBonus"] = 10,
+				["BossKillBonus"] = 5,
+				["BidTimer"] = 30,
+				["DecayPercentage"] = 20,
+				["GiveRaidStart"] = false,
+			},
+			["bossargs"] = {
+				["CurrentRaidZone"] = "Molten Core",
+				["LastKilledBoss"] = "Kil'jaeden",
+				["LastKilledNPC"] = {
+				},
+				["RecentZones"] = {
+				},
+			},
+			["modes"] = {
+				["rolls"] = {
+					["min"] = 1,
+					["AddToMax"] = 0,
+					["max"] = 100,
+					["UsePerc"] = false,
+				},
+				["ZeroSumBidType"] = "Static",
+				["channels"] = {
+					["raid"] = true,
+					["whisper"] = true,
+					["guild"] = true,
+				},
+				["increment"] = 60,
+				["rounding"] = 0,
+				["AddToNegative"] = false,
+				["SubZeroBidding"] = false,
+				["AllowNegativeBidders"] = false,
+				["mode"] = "Minimum Bid Values",
+				["ZeroSumBank"] = {
+					["balance"] = 0,
+				},
+				["costvalue"] = "Integer",
+				["AntiSnipe"] = 0,
+				["AnnounceRaidWarning"] = false,
+			},
+			["raiders"] = {
+			},
+			["pendingLoot"] = {
+			},
+		},
 		["Undecided"] = {
 			["defaults"] = {
 				["CommDKPScaleSize"] = 1,
@@ -188,6 +424,14 @@ CommDKP_DB = {
 			},
 			["raiders"] = {
 			},
+			["bossargs"] = {
+				["CurrentRaidZone"] = "Molten Core",
+				["LastKilledBoss"] = "Illidan Stormrage",
+				["RecentZones"] = {
+				},
+				["LastKilledNPC"] = {
+				},
+			},
 			["modes"] = {
 				["rolls"] = {
 					["min"] = 1,
@@ -213,14 +457,6 @@ CommDKP_DB = {
 				["mode"] = "Minimum Bid Values",
 				["AllowNegativeBidders"] = false,
 				["AnnounceRaidWarning"] = false,
-			},
-			["bossargs"] = {
-				["CurrentRaidZone"] = "Molten Core",
-				["LastKilledBoss"] = "Illidan Stormrage",
-				["RecentZones"] = {
-				},
-				["LastKilledNPC"] = {
-				},
 			},
 			["DKPBonus"] = {
 				["IncStandby"] = false,
@@ -252,9 +488,9 @@ CommDKP_DB = {
 				["SuppressNotifications"] = false,
 				["ChatFrames"] = {
 					["LookingForGroup"] = true,
+					["Guild"] = true,
 					["Combat Log"] = true,
 					["General"] = true,
-					["Guild"] = true,
 				},
 				["HideChangeLogs"] = 30209,
 				["TooltipHistoryCount"] = 15,
@@ -437,14 +673,6 @@ CommDKP_DB = {
 				["DecayPercentage"] = 20,
 				["GiveRaidStart"] = false,
 			},
-			["bossargs"] = {
-				["CurrentRaidZone"] = "Molten Core",
-				["LastKilledBoss"] = "Lucifron",
-				["LastKilledNPC"] = {
-				},
-				["RecentZones"] = {
-				},
-			},
 			["modes"] = {
 				["rolls"] = {
 					["min"] = 1,
@@ -471,6 +699,14 @@ CommDKP_DB = {
 				["AntiSnipe"] = 0,
 				["AnnounceRaidWarning"] = false,
 			},
+			["bossargs"] = {
+				["CurrentRaidZone"] = "Molten Core",
+				["LastKilledBoss"] = "Lucifron",
+				["LastKilledNPC"] = {
+				},
+				["RecentZones"] = {
+				},
+			},
 			["raiders"] = {
 			},
 			["pendingLoot"] = {
@@ -489,6 +725,16 @@ CommDKP_Loot = {
 		["seed"] = 0,
 	},
 	["Gehennas-Horde"] = {
+		["Knokploeg"] = {
+			["0"] = {
+				["seed"] = 0,
+			},
+		},
+		["Omega"] = {
+			["0"] = {
+				["seed"] = 0,
+			},
+		},
 		["Undecided"] = {
 			["0"] = {
 				["seed"] = 0,
@@ -518,6 +764,14 @@ CommDKP_DKPTable = {
 	["__default"] = {
 	},
 	["Gehennas-Horde"] = {
+		["Knokploeg"] = {
+			["0"] = {
+			},
+		},
+		["Omega"] = {
+			["0"] = {
+			},
+		},
 		["Undecided"] = {
 			["0"] = {
 			},
@@ -545,6 +799,16 @@ CommDKP_DKPHistory = {
 		["seed"] = 0,
 	},
 	["Gehennas-Horde"] = {
+		["Knokploeg"] = {
+			["0"] = {
+				["seed"] = 0,
+			},
+		},
+		["Omega"] = {
+			["0"] = {
+				["seed"] = 0,
+			},
+		},
 		["Undecided"] = {
 			["0"] = {
 				["seed"] = 0,
@@ -574,6 +838,14 @@ CommDKP_MinBids = {
 	["__default"] = {
 	},
 	["Gehennas-Horde"] = {
+		["Knokploeg"] = {
+			["0"] = {
+			},
+		},
+		["Omega"] = {
+			["0"] = {
+			},
+		},
 		["Undecided"] = {
 			["0"] = {
 			},
@@ -616,6 +888,10 @@ CommDKP_Whitelist = {
 	["__default"] = {
 	},
 	["Gehennas-Horde"] = {
+		["Knokploeg"] = {
+		},
+		["Omega"] = {
+		},
 		["Undecided"] = {
 		},
 	},
@@ -673,6 +949,14 @@ CommDKP_Profiles = {
 	["__default"] = {
 	},
 	["Gehennas-Horde"] = {
+		["Knokploeg"] = {
+			["0"] = {
+			},
+		},
+		["Omega"] = {
+			["0"] = {
+			},
+		},
 		["Undecided"] = {
 			["0"] = {
 			},

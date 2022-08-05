@@ -18700,8 +18700,7 @@ L["Level Up"] = "升級"
 --[[Translation missing --]]
 L["Limit"] = "Limit"
 L["Link to Another Operation"] = "連接到另一個作業"
---[[Translation missing --]]
-L["Loading..."] = "Loading..."
+L["Loading..."] = "載入中..."
 L["Lock Column Width"] = "鎖定直欄寬度"
 --[[Translation missing --]]
 L["Lock task list's background"] = "Lock task list's background"
@@ -18745,9 +18744,8 @@ L["Management Options"] = "管理選項"
 L["Many commonly-used actions in TSM can be added to a macro and bound to your scroll wheel. Use the options below to setup this macro and scroll wheel binding."] = "Many commonly-used actions in TSM can be added to a macro and bound to your scroll wheel. Use the options below to setup this macro and scroll wheel binding."
 --[[Translation missing --]]
 L["Map Ping"] = "Map Ping"
-L["Market Value"] = "市值"
---[[Translation missing --]]
-L["Market value"] = "Market value"
+L["Market Value"] = "市場價格"
+L["Market value"] = "市場價格"
 L["Market value price source"] = "市值價格來源"
 L["Market Value Price Source"] = "市值價格來源"
 L["Mat cost"] = "原材料成本"

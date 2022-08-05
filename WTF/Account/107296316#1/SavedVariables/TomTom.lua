@@ -7,10 +7,11 @@ TomTomDB = {
 		["Partijcurses - Gehennas"] = "Default",
 		["Awwaa - Gehennas"] = "Default",
 		["Helpsiebren - Razorgore"] = "Default",
+		["Firebreather - Gehennas"] = "Default",
 		["Partijleider - Razorgore"] = "Default",
 		["Rinque - Gehennas"] = "Default",
-		["Mírjam - Razorgore"] = "Default",
 		["Partijlijder - Razorgore"] = "Default",
+		["Mírjam - Razorgore"] = "Default",
 		["Kealthas - Razorgore"] = "Default",
 	},
 	["profiles"] = {
@@ -45,10 +46,11 @@ TomTomWaypointsM = {
 		["Partijcurses - Gehennas"] = "Partijcurses - Gehennas",
 		["Awwaa - Gehennas"] = "Awwaa - Gehennas",
 		["Helpsiebren - Razorgore"] = "Helpsiebren - Razorgore",
+		["Firebreather - Gehennas"] = "Firebreather - Gehennas",
 		["Partijleider - Razorgore"] = "Partijleider - Razorgore",
 		["Rinque - Gehennas"] = "Rinque - Gehennas",
-		["Mírjam - Razorgore"] = "Mírjam - Razorgore",
 		["Partijlijder - Razorgore"] = "Partijlijder - Razorgore",
+		["Mírjam - Razorgore"] = "Mírjam - Razorgore",
 		["Kealthas - Razorgore"] = "Kealthas - Razorgore",
 	},
 	["profiles"] = {
@@ -64,13 +66,15 @@ TomTomWaypointsM = {
 		},
 		["Helpsiebren - Razorgore"] = {
 		},
+		["Firebreather - Gehennas"] = {
+		},
 		["Partijleider - Razorgore"] = {
 		},
 		["Rinque - Gehennas"] = {
 		},
-		["Mírjam - Razorgore"] = {
-		},
 		["Partijlijder - Razorgore"] = {
+		},
+		["Mírjam - Razorgore"] = {
 		},
 		["Kealthas - Razorgore"] = {
 		},

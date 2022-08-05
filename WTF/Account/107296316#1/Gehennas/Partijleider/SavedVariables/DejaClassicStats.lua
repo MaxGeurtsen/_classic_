@@ -7,14 +7,14 @@ DejaClassicStatsDBPC = {
 		["DejaClassicStatsShowDuraTextureChecked"] = {
 			["ShowDuraTextureSetChecked"] = false,
 		},
-		["DejaClassicStatsShowDuraChecked"] = {
-			["ShowDuraSetChecked"] = true,
+		["dejacharacterstatsScrollbarChecked"] = {
+			["ScrollbarSetChecked"] = false,
 		},
 		["DejaClassicStatsShowItemLevelChecked"] = {
 			["ShowItemLevelSetChecked"] = false,
 		},
-		["DejaClassicStatsAlternateInfoPlacement"] = {
-			["AlternateInfoPlacementChecked"] = false,
+		["dejacharacterstatsExpandButtonChecked"] = {
+			["ExpandButtonSetChecked"] = true,
 		},
 		["DejaClassicStatsShowEnchantChecked"] = {
 			["ShowEnchantSetChecked"] = true,
@@ -63,15 +63,6 @@ DejaClassicStatsDBPC = {
 				"DCS_Durability", -- [8]
 				"DCS_RepairTotal", -- [9]
 			},
-			["DCS_DEFENSE_STAT_LIST"] = {
-				"Defense", -- [1]
-				"DodgeChance", -- [2]
-				"ParryChance", -- [3]
-				"BlockChance", -- [4]
-				"BlockValue", -- [5]
-				"Resilience", -- [6]
-				"Avoidance", -- [7]
-			},
 			["DCS_MELEE_STAT_LIST"] = {
 				"MHWeaponSkill", -- [1]
 				"MHDamage", -- [2]
@@ -87,6 +78,15 @@ DejaClassicStatsDBPC = {
 				"MeleeHaste", -- [12]
 				"Expertise", -- [13]
 			},
+			["DCS_DEFENSE_STAT_LIST"] = {
+				"Defense", -- [1]
+				"DodgeChance", -- [2]
+				"ParryChance", -- [3]
+				"BlockChance", -- [4]
+				"BlockValue", -- [5]
+				"Resilience", -- [6]
+				"Avoidance", -- [7]
+			},
 		},
 		["dejacharacterstatsExpandButtonAltPlacementChecked"] = {
 			["ExpandButtonAltPlacementSetChecked"] = false,
@@ -94,54 +94,54 @@ DejaClassicStatsDBPC = {
 		["DejaClassicStatsDesaturateScrollArtBackground"] = {
 			["DesaturateScrollArtBackgroundChecked"] = false,
 		},
-		["dejacharacterstatsExpandChecked"] = {
-			["ExpandSetChecked"] = true,
+		["DejaClassicStatsShowHideScrollArtBackground"] = {
+			["ShowHideScrollArtBackgroundChecked"] = true,
 		},
 		["DejaClassicStatsShowItemRepairChecked"] = {
 			["ShowItemRepairSetChecked"] = false,
 		},
-		["QCOA_SetSliderValue"] = {
-			["QCOA_SliderValue"] = 0.75,
+		["DejaClassicStatsShowDefenseChecked"] = {
+			["ShowDefenseSetChecked"] = false,
 		},
-		["DejaClassicStatsSimpleItemColorChecked"] = {
-			["SimpleItemColorChecked"] = false,
-			["DarkerItemColorChecked"] = false,
+		["DejaClassicStatsShowSpellChecked"] = {
+			["ShowSpellSetChecked"] = true,
 		},
 		["DejaClassicStatsShowPrimaryChecked"] = {
 			["ShowPrimarySetChecked"] = true,
 		},
-		["DejaClassicStatsShowRangedChecked"] = {
-			["ShowRangedSetChecked"] = false,
+		["DejaClassicStatsDefaultResistances"] = {
+			["DefaultResistancesChecked"] = true,
 		},
 		["DejaClassicStatsShowAverageRepairChecked"] = {
 			["ShowAverageRepairSetChecked"] = true,
 		},
 		["DejaClassicStatsShowMeleeChecked"] = {
-			["ShowMeleeSetChecked"] = true,
+			["ShowMeleeSetChecked"] = false,
 		},
 		["DejaClassicStatsManaRegenNotCasting"] = {
-			["DCSnotcasting"] = 31.23610687255859,
+			["DCSnotcasting"] = 75.02628326416016,
 		},
 		["DejaClassicStatsShowModelRotation"] = {
 			["ShowModelRotationChecked"] = false,
 		},
-		["DejaClassicStatsDefaultResistances"] = {
-			["DefaultResistancesChecked"] = true,
+		["DejaClassicStatsShowRangedChecked"] = {
+			["ShowRangedSetChecked"] = false,
 		},
-		["DejaClassicStatsShowSpellChecked"] = {
-			["ShowSpellSetChecked"] = true,
+		["DejaClassicStatsAlternateInfoPlacement"] = {
+			["AlternateInfoPlacementChecked"] = false,
 		},
-		["DejaClassicStatsShowDefenseChecked"] = {
-			["ShowDefenseSetChecked"] = false,
+		["QCOA_SetSliderValue"] = {
+			["QCOA_SliderValue"] = 0.75,
 		},
-		["DejaClassicStatsShowHideScrollArtBackground"] = {
-			["ShowHideScrollArtBackgroundChecked"] = true,
+		["dejacharacterstatsExpandChecked"] = {
+			["ExpandSetChecked"] = true,
 		},
-		["dejacharacterstatsExpandButtonChecked"] = {
-			["ExpandButtonSetChecked"] = true,
+		["DejaClassicStatsSimpleItemColorChecked"] = {
+			["SimpleItemColorChecked"] = false,
+			["DarkerItemColorChecked"] = false,
 		},
-		["dejacharacterstatsScrollbarChecked"] = {
-			["ScrollbarSetChecked"] = false,
+		["DejaClassicStatsShowDuraChecked"] = {
+			["ShowDuraSetChecked"] = true,
 		},
 	},
 }

@@ -1,5 +1,831 @@
 
 CLM_DB = {
+	["horde gehennas undecided"] = {
+		["personal"] = {
+			["global"] = {
+				["announce_loot_to_raid"] = false,
+				["suppress_outgoing_chat_commands"] = false,
+				["wowdkpbot_integration"] = false,
+				["tracked_loot_level"] = 4,
+				["alerts"] = true,
+				["disable_sync"] = false,
+				["suppress_incoming_chat_commands"] = false,
+				["raid_warnings"] = {
+					["countdown"] = true,
+					["auction"] = true,
+					["loot"] = true,
+					["raid"] = true,
+					["commands"] = false,
+					["bids"] = true,
+				},
+				["announce_award_to_guild"] = true,
+				["announce_loot_to_raid_owner_only"] = true,
+				["announce_loot_to_raid_level"] = 3,
+				["chat_commands"] = false,
+			},
+			["profileInfo"] = {
+				["Wålol"] = {
+					["version"] = {
+						["minor"] = 9,
+						["patch"] = 1,
+						["major"] = 1,
+						["changeset"] = "",
+					},
+					["spec"] = {
+						["one"] = 0,
+						["three"] = 0,
+						["two"] = 0,
+					},
+				},
+				["Partijlijder"] = {
+					["version"] = {
+						["minor"] = 9,
+						["major"] = 1,
+						["patch"] = 1,
+						["changeset"] = "",
+					},
+					["spec"] = {
+						["one"] = 0,
+						["three"] = 0,
+						["two"] = 0,
+					},
+				},
+				["Partijcurses"] = {
+					["version"] = {
+						["minor"] = 9,
+						["major"] = 1,
+						["patch"] = 1,
+						["changeset"] = "",
+					},
+					["spec"] = {
+						["one"] = 0,
+						["three"] = 0,
+						["two"] = 0,
+					},
+				},
+				["Rinque"] = {
+					["version"] = {
+						["minor"] = 9,
+						["major"] = 1,
+						["patch"] = 0,
+						["changeset"] = "",
+					},
+					["spec"] = {
+						["one"] = 0,
+						["three"] = 0,
+						["two"] = 0,
+					},
+				},
+				["Lilbidness"] = {
+					["version"] = {
+						["minor"] = 9,
+						["patch"] = 0,
+						["major"] = 1,
+						["changeset"] = "",
+					},
+					["spec"] = {
+						["one"] = 0,
+						["three"] = 0,
+						["two"] = 0,
+					},
+				},
+				["Wålolxd"] = {
+					["version"] = {
+						["minor"] = 9,
+						["major"] = 1,
+						["patch"] = 0,
+						["changeset"] = "",
+					},
+					["spec"] = {
+						["one"] = 0,
+						["three"] = 0,
+						["two"] = 0,
+					},
+				},
+			},
+			["lootQueue"] = {
+				["ignoredClasses"] = {
+				},
+				["tracked_loot_level"] = 4,
+				["queue"] = {
+				},
+			},
+			["profileManager"] = {
+				["pruneLog"] = {
+				},
+			},
+			["rosterManager"] = {
+				["raidsForFullAttendance"] = 2,
+				["attendanceWeeksWindow"] = 10,
+			},
+			["bidding"] = {
+				["autoOpen"] = true,
+				["autoUpdateBidValue"] = false,
+			},
+			["version"] = {
+			},
+			["auctionHistory"] = {
+				["enable"] = true,
+				["stack"] = {
+				},
+				["post_bids"] = true,
+				["post_bids_channel"] = 5,
+			},
+			["auction"] = {
+				["autoAward"] = true,
+				["autoTrade"] = true,
+			},
+			["gui"] = {
+				["export"] = {
+					["location"] = {
+						[3] = "CENTER",
+						[4] = 0,
+						[5] = 0,
+					},
+					["export_config"] = {
+						["timerange"] = {
+							["begin"] = {
+								["year"] = 2019,
+								["day"] = 1,
+								["month"] = 1,
+							},
+							["finish"] = {
+								["year"] = 2022,
+								["day"] = 31,
+								["month"] = 12,
+							},
+						},
+						["format"] = 0,
+						["data"] = {
+						},
+					},
+				},
+				["point"] = {
+					["location"] = {
+						"CENTER", -- [1]
+						{
+							["variablesLoaded"] = true,
+							["firstTimeLoaded"] = 1,
+							["fadeInfo"] = {
+								["startAlpha"] = 1,
+								["endAlpha"] = 1,
+								["mode"] = "IN",
+								["fadeTimer"] = 0.5070000290870667,
+								["timeToFade"] = 0.5,
+							},
+						}, -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+				},
+				["lootQueue"] = {
+					["location"] = {
+						"CENTER", -- [1]
+						{
+							["variablesLoaded"] = true,
+							["firstTimeLoaded"] = 1,
+							["fadeInfo"] = {
+								["startAlpha"] = 1,
+								["endAlpha"] = 1,
+								["mode"] = "IN",
+								["fadeTimer"] = 0.5070000290870667,
+								["timeToFade"] = 0.5,
+							},
+						}, -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+				},
+				["changelog"] = {
+					["location"] = {
+						[3] = "CENTER",
+						[4] = 0,
+						[5] = 0,
+					},
+					["do_not_show"] = true,
+					["never_show"] = false,
+					["lastVersion"] = {
+						["minor"] = 9,
+						["patch"] = 1,
+						["major"] = 1,
+						["changeset"] = "",
+					},
+				},
+				["profile"] = {
+					["location"] = {
+						"CENTER", -- [1]
+						{
+							["variablesLoaded"] = true,
+							["firstTimeLoaded"] = 1,
+							["fadeInfo"] = {
+								["startAlpha"] = 1,
+								["endAlpha"] = 1,
+								["mode"] = "IN",
+								["fadeTimer"] = 0.5070000290870667,
+								["timeToFade"] = 0.5,
+							},
+						}, -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+				},
+				["auction"] = {
+					["location"] = {
+						"CENTER", -- [1]
+						{
+							["variablesLoaded"] = true,
+							["firstTimeLoaded"] = 1,
+							["fadeInfo"] = {
+								["startAlpha"] = 1,
+								["endAlpha"] = 1,
+								["mode"] = "IN",
+								["fadeTimer"] = 0.5070000290870667,
+								["timeToFade"] = 0.5,
+							},
+						}, -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+					["notes"] = {
+					},
+				},
+				["standings"] = {
+					["location"] = {
+						"CENTER", -- [1]
+						{
+							["variablesLoaded"] = true,
+							["firstTimeLoaded"] = 1,
+							["fadeInfo"] = {
+								["startAlpha"] = 1,
+								["endAlpha"] = 1,
+								["mode"] = "IN",
+								["fadeTimer"] = 0.5070000290870667,
+								["timeToFade"] = 0.5,
+							},
+						}, -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+				},
+				["raid"] = {
+					["location"] = {
+						"CENTER", -- [1]
+						{
+							["variablesLoaded"] = true,
+							["firstTimeLoaded"] = 1,
+							["fadeInfo"] = {
+								["startAlpha"] = 1,
+								["endAlpha"] = 1,
+								["mode"] = "IN",
+								["fadeTimer"] = 0.5070000290870667,
+								["timeToFade"] = 0.5,
+							},
+						}, -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+				},
+				["loot"] = {
+					["location"] = {
+						"CENTER", -- [1]
+						{
+							["variablesLoaded"] = true,
+							["firstTimeLoaded"] = 1,
+							["fadeInfo"] = {
+								["startAlpha"] = 1,
+								["endAlpha"] = 1,
+								["mode"] = "IN",
+								["fadeTimer"] = 0.5070000290870667,
+								["timeToFade"] = 0.5,
+							},
+						}, -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+				},
+				["bidding"] = {
+					["location"] = {
+						"CENTER", -- [1]
+						{
+							["variablesLoaded"] = true,
+							["firstTimeLoaded"] = 1,
+							["fadeInfo"] = {
+								["startAlpha"] = 1,
+								["endAlpha"] = 1,
+								["mode"] = "IN",
+								["fadeTimer"] = 0.5070000290870667,
+								["timeToFade"] = 0.5,
+							},
+						}, -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+					["customButton"] = {
+						["value"] = 1,
+						["mode"] = 1,
+					},
+				},
+			},
+		},
+		["raid"] = {
+		},
+		["guild"] = {
+		},
+		["ledger"] = {
+		},
+	},
+	["alliance gehennas unguilded"] = {
+		["personal"] = {
+			["global"] = {
+				["announce_loot_to_raid"] = false,
+				["suppress_outgoing_chat_commands"] = false,
+				["suppress_incoming_chat_commands"] = false,
+				["alerts"] = true,
+				["chat_commands"] = false,
+				["announce_loot_to_raid_level"] = 3,
+				["raid_warnings"] = {
+					["countdown"] = true,
+					["auction"] = true,
+					["loot"] = true,
+					["raid"] = true,
+					["bids"] = true,
+					["commands"] = false,
+				},
+				["announce_award_to_guild"] = true,
+				["announce_loot_to_raid_owner_only"] = true,
+				["disable_sync"] = false,
+				["wowdkpbot_integration"] = false,
+			},
+			["profileInfo"] = {
+			},
+			["lootQueue"] = {
+				["ignoredClasses"] = {
+				},
+				["queue"] = {
+				},
+				["tracked_loot_level"] = 4,
+			},
+			["profileManager"] = {
+				["pruneLog"] = {
+				},
+			},
+			["rosterManager"] = {
+				["raidsForFullAttendance"] = 2,
+				["attendanceWeeksWindow"] = 10,
+			},
+			["bidding"] = {
+				["autoOpen"] = true,
+				["autoUpdateBidValue"] = false,
+			},
+			["version"] = {
+			},
+			["auctionHistory"] = {
+				["enable"] = true,
+				["stack"] = {
+				},
+				["post_bids"] = true,
+				["post_bids_channel"] = 5,
+			},
+			["auction"] = {
+				["autoAward"] = true,
+				["autoTrade"] = true,
+			},
+			["gui"] = {
+				["export"] = {
+					["location"] = {
+						[3] = "CENTER",
+						[4] = 0,
+						[5] = 0,
+					},
+					["export_config"] = {
+						["timerange"] = {
+							["begin"] = {
+								["year"] = 2019,
+								["day"] = 1,
+								["month"] = 1,
+							},
+							["finish"] = {
+								["year"] = 2022,
+								["day"] = 31,
+								["month"] = 12,
+							},
+						},
+						["format"] = 0,
+						["data"] = {
+						},
+					},
+				},
+				["point"] = {
+					["location"] = {
+						"CENTER", -- [1]
+						{
+							["variablesLoaded"] = true,
+							["firstTimeLoaded"] = 1,
+						}, -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+				},
+				["lootQueue"] = {
+					["location"] = {
+						"CENTER", -- [1]
+						{
+							["variablesLoaded"] = true,
+							["firstTimeLoaded"] = 1,
+						}, -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+				},
+				["changelog"] = {
+					["location"] = {
+						[3] = "CENTER",
+						[4] = 0,
+						[5] = 0,
+					},
+					["lastVersion"] = {
+						["minor"] = 9,
+						["patch"] = 0,
+						["major"] = 1,
+						["changeset"] = "",
+					},
+					["never_show"] = false,
+					["do_not_show"] = false,
+				},
+				["profile"] = {
+					["location"] = {
+						"CENTER", -- [1]
+						{
+							["variablesLoaded"] = true,
+							["firstTimeLoaded"] = 1,
+						}, -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+				},
+				["auction"] = {
+					["location"] = {
+						"CENTER", -- [1]
+						{
+							["variablesLoaded"] = true,
+							["firstTimeLoaded"] = 1,
+						}, -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+					["notes"] = {
+					},
+				},
+				["loot"] = {
+					["location"] = {
+						"CENTER", -- [1]
+						{
+							["variablesLoaded"] = true,
+							["firstTimeLoaded"] = 1,
+						}, -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+				},
+				["raid"] = {
+					["location"] = {
+						"CENTER", -- [1]
+						{
+							["variablesLoaded"] = true,
+							["firstTimeLoaded"] = 1,
+						}, -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+				},
+				["bidding"] = {
+					["location"] = {
+						"CENTER", -- [1]
+						{
+							["variablesLoaded"] = true,
+							["firstTimeLoaded"] = 1,
+						}, -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+					["customButton"] = {
+						["value"] = 1,
+						["mode"] = 1,
+					},
+				},
+				["standings"] = {
+					["location"] = {
+						"CENTER", -- [1]
+						{
+							["variablesLoaded"] = true,
+							["firstTimeLoaded"] = 1,
+						}, -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+				},
+			},
+		},
+		["raid"] = {
+		},
+		["guild"] = {
+		},
+		["ledger"] = {
+		},
+	},
+	["horde gehennas unguilded"] = {
+		["personal"] = {
+			["global"] = {
+				["announce_loot_to_raid"] = false,
+				["suppress_outgoing_chat_commands"] = false,
+				["wowdkpbot_integration"] = false,
+				["tracked_loot_level"] = 4,
+				["alerts"] = true,
+				["disable_sync"] = false,
+				["announce_award_to_guild"] = true,
+				["raid_warnings"] = {
+					["countdown"] = true,
+					["auction"] = true,
+					["loot"] = true,
+					["raid"] = true,
+					["bids"] = true,
+					["commands"] = false,
+				},
+				["announce_loot_to_raid_level"] = 3,
+				["announce_loot_to_raid_owner_only"] = true,
+				["chat_commands"] = false,
+				["suppress_incoming_chat_commands"] = false,
+			},
+			["profileInfo"] = {
+				["Rinque"] = {
+					["version"] = {
+						["minor"] = 4,
+						["major"] = 1,
+						["patch"] = 2,
+						["changeset"] = "",
+					},
+					["spec"] = {
+						["one"] = 0,
+						["three"] = 0,
+						["two"] = 0,
+					},
+				},
+			},
+			["lootQueue"] = {
+				["ignoredClasses"] = {
+				},
+				["queue"] = {
+				},
+				["tracked_loot_level"] = 4,
+			},
+			["profileManager"] = {
+				["pruneLog"] = {
+				},
+			},
+			["rosterManager"] = {
+				["raidsForFullAttendance"] = 2,
+				["attendanceWeeksWindow"] = 10,
+			},
+			["bidding"] = {
+				["autoOpen"] = true,
+				["autoUpdateBidValue"] = false,
+			},
+			["version"] = {
+			},
+			["auctionHistory"] = {
+				["enable"] = true,
+				["stack"] = {
+				},
+				["post_bids_channel"] = 5,
+				["post_bids"] = true,
+			},
+			["auction"] = {
+				["autoAward"] = true,
+				["autoTrade"] = true,
+			},
+			["gui"] = {
+				["export"] = {
+					["location"] = {
+						[3] = "CENTER",
+						[4] = 0,
+						[5] = 0,
+					},
+					["export_config"] = {
+						["timerange"] = {
+							["begin"] = {
+								["year"] = 2019,
+								["day"] = 1,
+								["month"] = 1,
+							},
+							["finish"] = {
+								["year"] = 2022,
+								["day"] = 31,
+								["month"] = 12,
+							},
+						},
+						["format"] = 0,
+						["data"] = {
+						},
+					},
+				},
+				["point"] = {
+					["location"] = {
+						"CENTER", -- [1]
+						{
+							["variablesLoaded"] = true,
+							["firstTimeLoaded"] = 1,
+							["fadeInfo"] = {
+								["startAlpha"] = 1,
+								["endAlpha"] = 1,
+								["mode"] = "IN",
+								["fadeTimer"] = 0.5000000176951289,
+								["timeToFade"] = 0.5,
+							},
+						}, -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+				},
+				["lootQueue"] = {
+					["location"] = {
+						"CENTER", -- [1]
+						{
+							["variablesLoaded"] = true,
+							["firstTimeLoaded"] = 1,
+							["fadeInfo"] = {
+								["startAlpha"] = 1,
+								["endAlpha"] = 1,
+								["mode"] = "IN",
+								["fadeTimer"] = 0.5000000176951289,
+								["timeToFade"] = 0.5,
+							},
+						}, -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+				},
+				["changelog"] = {
+					["location"] = {
+						[3] = "CENTER",
+						[4] = 0,
+						[5] = 0,
+					},
+					["lastVersion"] = {
+						["minor"] = 9,
+						["patch"] = 1,
+						["major"] = 1,
+						["changeset"] = "",
+					},
+					["never_show"] = false,
+					["do_not_show"] = true,
+				},
+				["profile"] = {
+					["location"] = {
+						"CENTER", -- [1]
+						{
+							["variablesLoaded"] = true,
+							["firstTimeLoaded"] = 1,
+							["fadeInfo"] = {
+								["startAlpha"] = 1,
+								["endAlpha"] = 1,
+								["mode"] = "IN",
+								["fadeTimer"] = 0.5000000176951289,
+								["timeToFade"] = 0.5,
+							},
+						}, -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+				},
+				["auction"] = {
+					["location"] = {
+						"CENTER", -- [1]
+						{
+							["variablesLoaded"] = true,
+							["firstTimeLoaded"] = 1,
+							["fadeInfo"] = {
+								["startAlpha"] = 1,
+								["endAlpha"] = 1,
+								["mode"] = "IN",
+								["fadeTimer"] = 0.5000000176951289,
+								["timeToFade"] = 0.5,
+							},
+						}, -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+					["notes"] = {
+					},
+				},
+				["standings"] = {
+					["location"] = {
+						"CENTER", -- [1]
+						{
+							["variablesLoaded"] = true,
+							["firstTimeLoaded"] = 1,
+							["fadeInfo"] = {
+								["startAlpha"] = 1,
+								["endAlpha"] = 1,
+								["mode"] = "IN",
+								["fadeTimer"] = 0.5000000176951289,
+								["timeToFade"] = 0.5,
+							},
+						}, -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+				},
+				["raid"] = {
+					["location"] = {
+						"CENTER", -- [1]
+						{
+							["variablesLoaded"] = true,
+							["firstTimeLoaded"] = 1,
+							["fadeInfo"] = {
+								["startAlpha"] = 1,
+								["endAlpha"] = 1,
+								["mode"] = "IN",
+								["fadeTimer"] = 0.5000000176951289,
+								["timeToFade"] = 0.5,
+							},
+						}, -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+				},
+				["bidding"] = {
+					["location"] = {
+						"CENTER", -- [1]
+						{
+							["variablesLoaded"] = true,
+							["firstTimeLoaded"] = 1,
+							["fadeInfo"] = {
+								["startAlpha"] = 1,
+								["endAlpha"] = 1,
+								["mode"] = "IN",
+								["fadeTimer"] = 0.5000000176951289,
+								["timeToFade"] = 0.5,
+							},
+						}, -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+					["customButton"] = {
+						["value"] = 1,
+						["mode"] = 1,
+					},
+				},
+				["loot"] = {
+					["location"] = {
+						"CENTER", -- [1]
+						{
+							["variablesLoaded"] = true,
+							["firstTimeLoaded"] = 1,
+							["fadeInfo"] = {
+								["startAlpha"] = 1,
+								["endAlpha"] = 1,
+								["mode"] = "IN",
+								["fadeTimer"] = 0.5000000176951289,
+								["timeToFade"] = 0.5,
+							},
+						}, -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+				},
+			},
+		},
+		["raid"] = {
+		},
+		["guild"] = {
+		},
+		["ledger"] = {
+		},
+	},
 	["horde razorgore knokploeg"] = {
 		["personal"] = {
 			["global"] = {
@@ -111,8 +937,8 @@ CLM_DB = {
 						["major"] = 1,
 						["changeset"] = "",
 					},
-					["do_not_show"] = true,
 					["never_show"] = false,
+					["do_not_show"] = true,
 					["location"] = {
 						[3] = "CENTER",
 						[4] = 0,
@@ -10149,497 +10975,6 @@ CLM_DB = {
 			}, -- [851]
 		},
 	},
-	["global"] = {
-		["version"] = {
-			["minor"] = 8,
-			["patch"] = 0,
-			["major"] = 1,
-			["changeset"] = "",
-		},
-		["logger"] = {
-			["severity"] = 40,
-			["verbosity"] = false,
-		},
-	},
-	["alliance firemaw unguilded"] = {
-		["personal"] = {
-			["global"] = {
-				["announce_loot_to_raid"] = false,
-				["suppress_outgoing_chat_commands"] = false,
-				["wowdkpbot_integration"] = false,
-				["tracked_loot_level"] = 4,
-				["alerts"] = true,
-				["raid_warnings"] = {
-					["countdown"] = true,
-					["auction"] = true,
-					["loot"] = true,
-					["raid"] = true,
-					["commands"] = false,
-					["bids"] = true,
-				},
-				["announce_award_to_guild"] = true,
-				["suppress_incoming_chat_commands"] = false,
-				["chat_commands"] = false,
-				["announce_loot_to_raid_level"] = 3,
-			},
-			["profileInfo"] = {
-			},
-			["lootQueue"] = {
-				["queue"] = {
-				},
-			},
-			["profileManager"] = {
-				["pruneLog"] = {
-				},
-			},
-			["rosterManager"] = {
-				["raidsForFullAttendance"] = 2,
-				["attendanceWeeksWindow"] = 10,
-			},
-			["bidding"] = {
-				["autoOpen"] = true,
-				["autoUpdateBidValue"] = false,
-			},
-			["version"] = {
-			},
-			["auction"] = {
-				["autoAward"] = true,
-				["autoTrade"] = true,
-			},
-			["gui"] = {
-				["point"] = {
-					["location"] = {
-						"CENTER", -- [1]
-						{
-							["variablesLoaded"] = true,
-							["firstTimeLoaded"] = 1,
-							["fadeInfo"] = {
-								["startAlpha"] = 1,
-								["endAlpha"] = 1,
-								["mode"] = "IN",
-								["fadeTimer"] = 0.5040000062435865,
-								["timeToFade"] = 0.5,
-							},
-						}, -- [2]
-						"CENTER", -- [3]
-						0, -- [4]
-						0, -- [5]
-					},
-				},
-				["lootQueue"] = {
-					["location"] = {
-						"CENTER", -- [1]
-						{
-							["variablesLoaded"] = true,
-							["firstTimeLoaded"] = 1,
-							["fadeInfo"] = {
-								["startAlpha"] = 1,
-								["endAlpha"] = 1,
-								["mode"] = "IN",
-								["fadeTimer"] = 0.5040000062435865,
-								["timeToFade"] = 0.5,
-							},
-						}, -- [2]
-						"CENTER", -- [3]
-						0, -- [4]
-						0, -- [5]
-					},
-				},
-				["changelog"] = {
-					["location"] = {
-						[3] = "CENTER",
-						[4] = 0,
-						[5] = 0,
-					},
-					["never_show"] = false,
-					["do_not_show"] = false,
-					["lastVersion"] = {
-						["minor"] = 4,
-						["major"] = 1,
-						["patch"] = 2,
-						["changeset"] = "",
-					},
-				},
-				["profile"] = {
-					["location"] = {
-						"CENTER", -- [1]
-						{
-							["variablesLoaded"] = true,
-							["firstTimeLoaded"] = 1,
-							["fadeInfo"] = {
-								["startAlpha"] = 1,
-								["endAlpha"] = 1,
-								["mode"] = "IN",
-								["fadeTimer"] = 0.5040000062435865,
-								["timeToFade"] = 0.5,
-							},
-						}, -- [2]
-						"CENTER", -- [3]
-						0, -- [4]
-						0, -- [5]
-					},
-				},
-				["auction"] = {
-					["location"] = {
-						"CENTER", -- [1]
-						{
-							["variablesLoaded"] = true,
-							["firstTimeLoaded"] = 1,
-							["fadeInfo"] = {
-								["startAlpha"] = 1,
-								["endAlpha"] = 1,
-								["mode"] = "IN",
-								["fadeTimer"] = 0.5040000062435865,
-								["timeToFade"] = 0.5,
-							},
-						}, -- [2]
-						"CENTER", -- [3]
-						0, -- [4]
-						0, -- [5]
-					},
-					["notes"] = {
-					},
-				},
-				["standings"] = {
-					["location"] = {
-						"CENTER", -- [1]
-						{
-							["variablesLoaded"] = true,
-							["firstTimeLoaded"] = 1,
-							["fadeInfo"] = {
-								["startAlpha"] = 1,
-								["endAlpha"] = 1,
-								["mode"] = "IN",
-								["fadeTimer"] = 0.5040000062435865,
-								["timeToFade"] = 0.5,
-							},
-						}, -- [2]
-						"CENTER", -- [3]
-						0, -- [4]
-						0, -- [5]
-					},
-				},
-				["raid"] = {
-					["location"] = {
-						"CENTER", -- [1]
-						{
-							["variablesLoaded"] = true,
-							["firstTimeLoaded"] = 1,
-							["fadeInfo"] = {
-								["startAlpha"] = 1,
-								["endAlpha"] = 1,
-								["mode"] = "IN",
-								["fadeTimer"] = 0.5040000062435865,
-								["timeToFade"] = 0.5,
-							},
-						}, -- [2]
-						"CENTER", -- [3]
-						0, -- [4]
-						0, -- [5]
-					},
-				},
-				["loot"] = {
-					["location"] = {
-						"CENTER", -- [1]
-						{
-							["variablesLoaded"] = true,
-							["firstTimeLoaded"] = 1,
-							["fadeInfo"] = {
-								["startAlpha"] = 1,
-								["endAlpha"] = 1,
-								["mode"] = "IN",
-								["fadeTimer"] = 0.5040000062435865,
-								["timeToFade"] = 0.5,
-							},
-						}, -- [2]
-						"CENTER", -- [3]
-						0, -- [4]
-						0, -- [5]
-					},
-				},
-				["bidding"] = {
-					["location"] = {
-						"CENTER", -- [1]
-						{
-							["variablesLoaded"] = true,
-							["firstTimeLoaded"] = 1,
-							["fadeInfo"] = {
-								["startAlpha"] = 1,
-								["endAlpha"] = 1,
-								["mode"] = "IN",
-								["fadeTimer"] = 0.5040000062435865,
-								["timeToFade"] = 0.5,
-							},
-						}, -- [2]
-						"CENTER", -- [3]
-						0, -- [4]
-						0, -- [5]
-					},
-					["customButton"] = {
-						["value"] = 1,
-						["mode"] = 1,
-					},
-				},
-			},
-		},
-		["raid"] = {
-		},
-		["guild"] = {
-		},
-		["ledger"] = {
-		},
-	},
-	["horde gehennas unguilded"] = {
-		["personal"] = {
-			["global"] = {
-				["announce_loot_to_raid"] = false,
-				["suppress_outgoing_chat_commands"] = false,
-				["wowdkpbot_integration"] = false,
-				["tracked_loot_level"] = 4,
-				["alerts"] = true,
-				["raid_warnings"] = {
-					["countdown"] = true,
-					["auction"] = true,
-					["loot"] = true,
-					["raid"] = true,
-					["bids"] = true,
-					["commands"] = false,
-				},
-				["announce_award_to_guild"] = true,
-				["announce_loot_to_raid_level"] = 3,
-				["chat_commands"] = false,
-				["suppress_incoming_chat_commands"] = false,
-			},
-			["profileInfo"] = {
-				["Rinque"] = {
-					["version"] = {
-						["minor"] = 4,
-						["major"] = 1,
-						["patch"] = 2,
-						["changeset"] = "",
-					},
-					["spec"] = {
-						["one"] = 0,
-						["three"] = 0,
-						["two"] = 0,
-					},
-				},
-			},
-			["lootQueue"] = {
-				["ignoredClasses"] = {
-				},
-				["queue"] = {
-				},
-				["tracked_loot_level"] = 4,
-			},
-			["profileManager"] = {
-				["pruneLog"] = {
-				},
-			},
-			["rosterManager"] = {
-				["raidsForFullAttendance"] = 2,
-				["attendanceWeeksWindow"] = 10,
-			},
-			["bidding"] = {
-				["autoOpen"] = true,
-				["autoUpdateBidValue"] = false,
-			},
-			["version"] = {
-			},
-			["auctionHistory"] = {
-				["enable"] = true,
-				["stack"] = {
-				},
-				["post_bids_channel"] = 5,
-				["post_bids"] = true,
-			},
-			["auction"] = {
-				["autoAward"] = true,
-				["autoTrade"] = true,
-			},
-			["gui"] = {
-				["point"] = {
-					["location"] = {
-						"CENTER", -- [1]
-						{
-							["variablesLoaded"] = true,
-							["firstTimeLoaded"] = 1,
-							["fadeInfo"] = {
-								["startAlpha"] = 1,
-								["endAlpha"] = 1,
-								["mode"] = "IN",
-								["fadeTimer"] = 0.5000000088475645,
-								["timeToFade"] = 0.5,
-							},
-						}, -- [2]
-						"CENTER", -- [3]
-						0, -- [4]
-						0, -- [5]
-					},
-				},
-				["lootQueue"] = {
-					["location"] = {
-						"CENTER", -- [1]
-						{
-							["variablesLoaded"] = true,
-							["firstTimeLoaded"] = 1,
-							["fadeInfo"] = {
-								["startAlpha"] = 1,
-								["endAlpha"] = 1,
-								["mode"] = "IN",
-								["fadeTimer"] = 0.5000000088475645,
-								["timeToFade"] = 0.5,
-							},
-						}, -- [2]
-						"CENTER", -- [3]
-						0, -- [4]
-						0, -- [5]
-					},
-				},
-				["changelog"] = {
-					["location"] = {
-						[3] = "CENTER",
-						[4] = 0,
-						[5] = 0,
-					},
-					["lastVersion"] = {
-						["minor"] = 5,
-						["patch"] = 3,
-						["major"] = 1,
-						["changeset"] = "",
-					},
-					["do_not_show"] = true,
-					["never_show"] = false,
-				},
-				["profile"] = {
-					["location"] = {
-						"CENTER", -- [1]
-						{
-							["variablesLoaded"] = true,
-							["firstTimeLoaded"] = 1,
-							["fadeInfo"] = {
-								["startAlpha"] = 1,
-								["endAlpha"] = 1,
-								["mode"] = "IN",
-								["fadeTimer"] = 0.5000000088475645,
-								["timeToFade"] = 0.5,
-							},
-						}, -- [2]
-						"CENTER", -- [3]
-						0, -- [4]
-						0, -- [5]
-					},
-				},
-				["auction"] = {
-					["location"] = {
-						"CENTER", -- [1]
-						{
-							["variablesLoaded"] = true,
-							["firstTimeLoaded"] = 1,
-							["fadeInfo"] = {
-								["startAlpha"] = 1,
-								["endAlpha"] = 1,
-								["mode"] = "IN",
-								["fadeTimer"] = 0.5000000088475645,
-								["timeToFade"] = 0.5,
-							},
-						}, -- [2]
-						"CENTER", -- [3]
-						0, -- [4]
-						0, -- [5]
-					},
-					["notes"] = {
-					},
-				},
-				["standings"] = {
-					["location"] = {
-						"CENTER", -- [1]
-						{
-							["variablesLoaded"] = true,
-							["firstTimeLoaded"] = 1,
-							["fadeInfo"] = {
-								["startAlpha"] = 1,
-								["endAlpha"] = 1,
-								["mode"] = "IN",
-								["fadeTimer"] = 0.5000000088475645,
-								["timeToFade"] = 0.5,
-							},
-						}, -- [2]
-						"CENTER", -- [3]
-						0, -- [4]
-						0, -- [5]
-					},
-				},
-				["raid"] = {
-					["location"] = {
-						"CENTER", -- [1]
-						{
-							["variablesLoaded"] = true,
-							["firstTimeLoaded"] = 1,
-							["fadeInfo"] = {
-								["startAlpha"] = 1,
-								["endAlpha"] = 1,
-								["mode"] = "IN",
-								["fadeTimer"] = 0.5000000088475645,
-								["timeToFade"] = 0.5,
-							},
-						}, -- [2]
-						"CENTER", -- [3]
-						0, -- [4]
-						0, -- [5]
-					},
-				},
-				["bidding"] = {
-					["location"] = {
-						"CENTER", -- [1]
-						{
-							["variablesLoaded"] = true,
-							["firstTimeLoaded"] = 1,
-							["fadeInfo"] = {
-								["startAlpha"] = 1,
-								["endAlpha"] = 1,
-								["mode"] = "IN",
-								["fadeTimer"] = 0.5000000088475645,
-								["timeToFade"] = 0.5,
-							},
-						}, -- [2]
-						"CENTER", -- [3]
-						0, -- [4]
-						0, -- [5]
-					},
-					["customButton"] = {
-						["value"] = 1,
-						["mode"] = 1,
-					},
-				},
-				["loot"] = {
-					["location"] = {
-						"CENTER", -- [1]
-						{
-							["variablesLoaded"] = true,
-							["firstTimeLoaded"] = 1,
-							["fadeInfo"] = {
-								["startAlpha"] = 1,
-								["endAlpha"] = 1,
-								["mode"] = "IN",
-								["fadeTimer"] = 0.5000000088475645,
-								["timeToFade"] = 0.5,
-							},
-						}, -- [2]
-						"CENTER", -- [3]
-						0, -- [4]
-						0, -- [5]
-					},
-				},
-			},
-		},
-		["raid"] = {
-		},
-		["guild"] = {
-		},
-		["ledger"] = {
-		},
-	},
 	["horde razorgore rise"] = {
 		["personal"] = {
 			["gui"] = {
@@ -10689,8 +11024,8 @@ CLM_DB = {
 						["patch"] = 2,
 						["changeset"] = "",
 					},
-					["never_show"] = false,
 					["do_not_show"] = true,
+					["never_show"] = false,
 					["location"] = {
 						[3] = "CENTER",
 						[4] = 0,
@@ -11142,29 +11477,16 @@ CLM_DB = {
 						["two"] = 5,
 					},
 				},
-				["Plaguebringr"] = {
+				["Chigzaj"] = {
 					["version"] = {
-						["minor"] = 4,
+						["minor"] = 1,
+						["major"] = 1,
 						["patch"] = 2,
-						["major"] = 1,
 						["changeset"] = "",
 					},
 					["spec"] = {
-						["one"] = 14,
-						["three"] = 47,
-						["two"] = 0,
-					},
-				},
-				["Szteaok"] = {
-					["version"] = {
-						["minor"] = 3,
-						["patch"] = 1,
-						["major"] = 1,
-						["changeset"] = "",
-					},
-					["spec"] = {
-						["one"] = 9,
-						["three"] = 43,
+						["one"] = 0,
+						["three"] = 61,
 						["two"] = 0,
 					},
 				},
@@ -11181,7 +11503,7 @@ CLM_DB = {
 						["two"] = 11,
 					},
 				},
-				["Sindrä"] = {
+				["Szteaok"] = {
 					["version"] = {
 						["minor"] = 3,
 						["patch"] = 1,
@@ -11189,9 +11511,9 @@ CLM_DB = {
 						["changeset"] = "",
 					},
 					["spec"] = {
-						["one"] = 0,
-						["three"] = 12,
-						["two"] = 49,
+						["one"] = 9,
+						["three"] = 43,
+						["two"] = 0,
 					},
 				},
 				["Kokomoko"] = {
@@ -11205,6 +11527,19 @@ CLM_DB = {
 						["one"] = 41,
 						["three"] = 11,
 						["two"] = 0,
+					},
+				},
+				["Sindrä"] = {
+					["version"] = {
+						["minor"] = 3,
+						["patch"] = 1,
+						["major"] = 1,
+						["changeset"] = "",
+					},
+					["spec"] = {
+						["one"] = 0,
+						["three"] = 12,
+						["two"] = 49,
 					},
 				},
 				["Mylviväsonni"] = {
@@ -11571,16 +11906,16 @@ CLM_DB = {
 						["two"] = 20,
 					},
 				},
-				["Chigzaj"] = {
+				["Plaguebringr"] = {
 					["version"] = {
-						["minor"] = 1,
-						["major"] = 1,
+						["minor"] = 4,
 						["patch"] = 2,
+						["major"] = 1,
 						["changeset"] = "",
 					},
 					["spec"] = {
-						["one"] = 0,
-						["three"] = 61,
+						["one"] = 14,
+						["three"] = 47,
 						["two"] = 0,
 					},
 				},
@@ -21646,17 +21981,17 @@ CLM_DB = {
 				["_b"] = 2,
 			}, -- [854]
 			{
-				["_d"] = "P1",
-				["_a"] = 41717713,
-				["_c"] = 1642413622,
 				["g"] = 53450716,
+				["_a"] = 41717713,
+				["_d"] = "P1",
+				["_c"] = 1642413622,
 				["_b"] = 0,
 			}, -- [855]
 			{
-				["_d"] = "P1",
-				["_a"] = 41717713,
-				["_c"] = 1642413622,
 				["g"] = 53253150,
+				["_a"] = 41717713,
+				["_d"] = "P1",
+				["_c"] = 1642413622,
 				["_b"] = 1,
 			}, -- [856]
 			{
@@ -29702,7 +30037,322 @@ CLM_DB = {
 			}, -- [1509]
 		},
 	},
-	["horde gehennas undecided"] = {
+	["horde gehennas knokploeg"] = {
+		["personal"] = {
+			["global"] = {
+				["announce_loot_to_raid"] = true,
+				["suppress_outgoing_chat_commands"] = false,
+				["suppress_incoming_chat_commands"] = false,
+				["alerts"] = true,
+				["chat_commands"] = false,
+				["announce_award_to_guild"] = false,
+				["raid_warnings"] = {
+					["countdown"] = true,
+					["auction"] = true,
+					["loot"] = true,
+					["raid"] = true,
+					["bids"] = true,
+					["commands"] = false,
+				},
+				["announce_loot_to_raid_level"] = 3,
+				["announce_loot_to_raid_owner_only"] = false,
+				["disable_sync"] = false,
+				["wowdkpbot_integration"] = false,
+			},
+			["profileInfo"] = {
+				["Exiz"] = {
+					["version"] = {
+						["minor"] = 5,
+						["major"] = 1,
+						["patch"] = 3,
+						["changeset"] = "",
+					},
+					["spec"] = {
+						["one"] = 0,
+						["three"] = 0,
+						["two"] = 0,
+					},
+				},
+				["Rinque"] = {
+					["version"] = {
+						["minor"] = 9,
+						["major"] = 1,
+						["patch"] = 1,
+						["changeset"] = "",
+					},
+					["spec"] = {
+						["one"] = 0,
+						["three"] = 0,
+						["two"] = 0,
+					},
+				},
+				["Dokteur"] = {
+					["version"] = {
+						["minor"] = 5,
+						["patch"] = 3,
+						["major"] = 1,
+						["changeset"] = "",
+					},
+					["spec"] = {
+						["one"] = 0,
+						["three"] = 0,
+						["two"] = 0,
+					},
+				},
+				["Kryptex"] = {
+					["version"] = {
+						["minor"] = 5,
+						["major"] = 1,
+						["patch"] = 3,
+						["changeset"] = "",
+					},
+					["spec"] = {
+						["one"] = 0,
+						["three"] = 0,
+						["two"] = 0,
+					},
+				},
+			},
+			["lootQueue"] = {
+				["ignoredClasses"] = {
+				},
+				["queue"] = {
+				},
+				["tracked_loot_level"] = 4,
+			},
+			["profileManager"] = {
+				["pruneLog"] = {
+				},
+			},
+			["rosterManager"] = {
+				["raidsForFullAttendance"] = 2,
+				["attendanceWeeksWindow"] = 10,
+			},
+			["bidding"] = {
+				["autoOpen"] = true,
+				["autoUpdateBidValue"] = true,
+			},
+			["version"] = {
+			},
+			["auctionHistory"] = {
+				["enable"] = true,
+				["stack"] = {
+				},
+				["post_bids"] = true,
+				["post_bids_channel"] = 5,
+			},
+			["auction"] = {
+				["autoAward"] = true,
+				["autoTrade"] = false,
+			},
+			["gui"] = {
+				["export"] = {
+					["location"] = {
+						[3] = "CENTER",
+						[4] = 0,
+						[5] = 0,
+					},
+					["export_config"] = {
+						["timerange"] = {
+							["begin"] = {
+								["year"] = 2019,
+								["day"] = 1,
+								["month"] = 1,
+							},
+							["finish"] = {
+								["year"] = 2022,
+								["day"] = 31,
+								["month"] = 12,
+							},
+						},
+						["format"] = 0,
+						["data"] = {
+						},
+					},
+				},
+				["point"] = {
+					["location"] = {
+						"CENTER", -- [1]
+						{
+							["variablesLoaded"] = true,
+							["firstTimeLoaded"] = 1,
+							["fadeInfo"] = {
+								["startAlpha"] = 1,
+								["endAlpha"] = 1,
+								["mode"] = "IN",
+								["fadeTimer"] = 0.5000000172294676,
+								["timeToFade"] = 0.5,
+							},
+						}, -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+				},
+				["lootQueue"] = {
+					["location"] = {
+						"CENTER", -- [1]
+						{
+							["variablesLoaded"] = true,
+							["firstTimeLoaded"] = 1,
+							["fadeInfo"] = {
+								["startAlpha"] = 1,
+								["endAlpha"] = 1,
+								["mode"] = "IN",
+								["fadeTimer"] = 0.5000000172294676,
+								["timeToFade"] = 0.5,
+							},
+						}, -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+				},
+				["changelog"] = {
+					["location"] = {
+						[3] = "CENTER",
+						[4] = 0,
+						[5] = 0,
+					},
+					["lastVersion"] = {
+						["minor"] = 9,
+						["patch"] = 1,
+						["major"] = 1,
+						["changeset"] = "",
+					},
+					["do_not_show"] = true,
+					["never_show"] = false,
+				},
+				["profile"] = {
+					["location"] = {
+						"CENTER", -- [1]
+						{
+							["variablesLoaded"] = true,
+							["firstTimeLoaded"] = 1,
+							["fadeInfo"] = {
+								["startAlpha"] = 1,
+								["endAlpha"] = 1,
+								["mode"] = "IN",
+								["fadeTimer"] = 0.5000000172294676,
+								["timeToFade"] = 0.5,
+							},
+						}, -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+				},
+				["auction"] = {
+					["location"] = {
+						"CENTER", -- [1]
+						{
+							["variablesLoaded"] = true,
+							["firstTimeLoaded"] = 1,
+							["fadeInfo"] = {
+								["startAlpha"] = 1,
+								["endAlpha"] = 1,
+								["mode"] = "IN",
+								["fadeTimer"] = 0.5000000172294676,
+								["timeToFade"] = 0.5,
+							},
+						}, -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+					["notes"] = {
+					},
+				},
+				["loot"] = {
+					["location"] = {
+						"CENTER", -- [1]
+						{
+							["variablesLoaded"] = true,
+							["firstTimeLoaded"] = 1,
+							["fadeInfo"] = {
+								["startAlpha"] = 1,
+								["endAlpha"] = 1,
+								["mode"] = "IN",
+								["fadeTimer"] = 0.5000000172294676,
+								["timeToFade"] = 0.5,
+							},
+						}, -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+				},
+				["raid"] = {
+					["location"] = {
+						"CENTER", -- [1]
+						{
+							["variablesLoaded"] = true,
+							["firstTimeLoaded"] = 1,
+							["fadeInfo"] = {
+								["startAlpha"] = 1,
+								["endAlpha"] = 1,
+								["mode"] = "IN",
+								["fadeTimer"] = 0.5000000172294676,
+								["timeToFade"] = 0.5,
+							},
+						}, -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+				},
+				["bidding"] = {
+					["location"] = {
+						"CENTER", -- [1]
+						{
+							["variablesLoaded"] = true,
+							["firstTimeLoaded"] = 1,
+							["fadeInfo"] = {
+								["startAlpha"] = 1,
+								["endAlpha"] = 1,
+								["mode"] = "IN",
+								["fadeTimer"] = 0.5000000172294676,
+								["timeToFade"] = 0.5,
+							},
+						}, -- [2]
+						"CENTER", -- [3]
+						-33.64091491699219, -- [4]
+						-11.48726558685303, -- [5]
+					},
+					["customButton"] = {
+						["value"] = 1,
+						["mode"] = 1,
+					},
+				},
+				["standings"] = {
+					["location"] = {
+						"CENTER", -- [1]
+						{
+							["variablesLoaded"] = true,
+							["firstTimeLoaded"] = 1,
+							["fadeInfo"] = {
+								["startAlpha"] = 1,
+								["endAlpha"] = 1,
+								["mode"] = "IN",
+								["fadeTimer"] = 0.5000000172294676,
+								["timeToFade"] = 0.5,
+							},
+						}, -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+				},
+			},
+		},
+		["raid"] = {
+		},
+		["guild"] = {
+		},
+		["ledger"] = {
+		},
+	},
+	["alliance firemaw unguilded"] = {
 		["personal"] = {
 			["global"] = {
 				["announce_loot_to_raid"] = false,
@@ -29710,8 +30360,8 @@ CLM_DB = {
 				["wowdkpbot_integration"] = false,
 				["tracked_loot_level"] = 4,
 				["alerts"] = true,
-				["disable_sync"] = false,
 				["suppress_incoming_chat_commands"] = false,
+				["disable_sync"] = false,
 				["raid_warnings"] = {
 					["countdown"] = true,
 					["auction"] = true,
@@ -29726,32 +30376,6 @@ CLM_DB = {
 				["chat_commands"] = false,
 			},
 			["profileInfo"] = {
-				["Partijlijder"] = {
-					["version"] = {
-						["minor"] = 8,
-						["major"] = 1,
-						["patch"] = 0,
-						["changeset"] = "",
-					},
-					["spec"] = {
-						["one"] = 0,
-						["three"] = 0,
-						["two"] = 0,
-					},
-				},
-				["Rinque"] = {
-					["version"] = {
-						["minor"] = 5,
-						["patch"] = 3,
-						["major"] = 1,
-						["changeset"] = "",
-					},
-					["spec"] = {
-						["one"] = 0,
-						["three"] = 0,
-						["two"] = 0,
-					},
-				},
 			},
 			["lootQueue"] = {
 				["ignoredClasses"] = {
@@ -29816,7 +30440,6 @@ CLM_DB = {
 						{
 							["variablesLoaded"] = true,
 							["firstTimeLoaded"] = 1,
-							[0] = nil --[[ skipped userdata ]],
 						}, -- [2]
 						"CENTER", -- [3]
 						0, -- [4]
@@ -29829,7 +30452,6 @@ CLM_DB = {
 						{
 							["variablesLoaded"] = true,
 							["firstTimeLoaded"] = 1,
-							[0] = nil --[[ skipped userdata ]],
 						}, -- [2]
 						"CENTER", -- [3]
 						0, -- [4]
@@ -29842,10 +30464,10 @@ CLM_DB = {
 						[4] = 0,
 						[5] = 0,
 					},
+					["do_not_show"] = false,
 					["never_show"] = false,
-					["do_not_show"] = true,
 					["lastVersion"] = {
-						["minor"] = 8,
+						["minor"] = 9,
 						["patch"] = 0,
 						["major"] = 1,
 						["changeset"] = "",
@@ -29857,7 +30479,6 @@ CLM_DB = {
 						{
 							["variablesLoaded"] = true,
 							["firstTimeLoaded"] = 1,
-							[0] = nil --[[ skipped userdata ]],
 						}, -- [2]
 						"CENTER", -- [3]
 						0, -- [4]
@@ -29870,7 +30491,6 @@ CLM_DB = {
 						{
 							["variablesLoaded"] = true,
 							["firstTimeLoaded"] = 1,
-							[0] = nil --[[ skipped userdata ]],
 						}, -- [2]
 						"CENTER", -- [3]
 						0, -- [4]
@@ -29885,7 +30505,6 @@ CLM_DB = {
 						{
 							["variablesLoaded"] = true,
 							["firstTimeLoaded"] = 1,
-							[0] = nil --[[ skipped userdata ]],
 						}, -- [2]
 						"CENTER", -- [3]
 						0, -- [4]
@@ -29897,6 +30516,243 @@ CLM_DB = {
 						"CENTER", -- [1]
 						{
 							["variablesLoaded"] = true,
+							["firstTimeLoaded"] = 1,
+						}, -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+				},
+				["loot"] = {
+					["location"] = {
+						"CENTER", -- [1]
+						{
+							["variablesLoaded"] = true,
+							["firstTimeLoaded"] = 1,
+						}, -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+				},
+				["bidding"] = {
+					["location"] = {
+						"CENTER", -- [1]
+						{
+							["variablesLoaded"] = true,
+							["firstTimeLoaded"] = 1,
+						}, -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+					["customButton"] = {
+						["value"] = 1,
+						["mode"] = 1,
+					},
+				},
+			},
+		},
+		["raid"] = {
+		},
+		["guild"] = {
+		},
+		["ledger"] = {
+		},
+	},
+	["global"] = {
+		["version"] = {
+			["minor"] = 9,
+			["patch"] = 1,
+			["major"] = 1,
+			["changeset"] = "",
+		},
+		["logger"] = {
+			["severity"] = 40,
+			["verbosity"] = false,
+		},
+	},
+	["horde gehennas omega"] = {
+		["personal"] = {
+			["global"] = {
+				["announce_loot_to_raid"] = false,
+				["suppress_outgoing_chat_commands"] = false,
+				["suppress_incoming_chat_commands"] = false,
+				["alerts"] = true,
+				["wowdkpbot_integration"] = false,
+				["disable_sync"] = false,
+				["raid_warnings"] = {
+					["countdown"] = true,
+					["auction"] = true,
+					["loot"] = true,
+					["raid"] = true,
+					["commands"] = false,
+					["bids"] = true,
+				},
+				["announce_loot_to_raid_level"] = 3,
+				["announce_loot_to_raid_owner_only"] = true,
+				["announce_award_to_guild"] = true,
+				["chat_commands"] = false,
+			},
+			["profileInfo"] = {
+				["Partijcurses"] = {
+					["version"] = {
+						["minor"] = 9,
+						["major"] = 1,
+						["patch"] = 1,
+						["changeset"] = "",
+					},
+					["spec"] = {
+						["one"] = 0,
+						["three"] = 0,
+						["two"] = 0,
+					},
+				},
+			},
+			["lootQueue"] = {
+				["ignoredClasses"] = {
+				},
+				["tracked_loot_level"] = 4,
+				["queue"] = {
+				},
+			},
+			["profileManager"] = {
+				["pruneLog"] = {
+				},
+			},
+			["rosterManager"] = {
+				["raidsForFullAttendance"] = 2,
+				["attendanceWeeksWindow"] = 10,
+			},
+			["bidding"] = {
+				["autoOpen"] = true,
+				["autoUpdateBidValue"] = false,
+			},
+			["version"] = {
+			},
+			["auctionHistory"] = {
+				["enable"] = true,
+				["stack"] = {
+				},
+				["post_bids_channel"] = 5,
+				["post_bids"] = true,
+			},
+			["auction"] = {
+				["autoAward"] = true,
+				["autoTrade"] = true,
+			},
+			["gui"] = {
+				["export"] = {
+					["location"] = {
+						[3] = "CENTER",
+						[4] = 0,
+						[5] = 0,
+					},
+					["export_config"] = {
+						["timerange"] = {
+							["begin"] = {
+								["day"] = 1,
+								["year"] = 2019,
+								["month"] = 1,
+							},
+							["finish"] = {
+								["day"] = 31,
+								["year"] = 2022,
+								["month"] = 12,
+							},
+						},
+						["format"] = 0,
+						["data"] = {
+						},
+					},
+				},
+				["point"] = {
+					["location"] = {
+						"CENTER", -- [1]
+						{
+							["variablesLoaded"] = true,
+							["fadeInfo"] = {
+								["startAlpha"] = 1,
+								["endAlpha"] = 1,
+								["mode"] = "IN",
+								["fadeTimer"] = 0.5040000132285058,
+								["timeToFade"] = 0.5,
+							},
+							["firstTimeLoaded"] = 1,
+							[0] = nil --[[ skipped userdata ]],
+						}, -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+				},
+				["lootQueue"] = {
+					["location"] = {
+						"CENTER", -- [1]
+						{
+							["variablesLoaded"] = true,
+							["fadeInfo"] = {
+								["startAlpha"] = 1,
+								["endAlpha"] = 1,
+								["mode"] = "IN",
+								["fadeTimer"] = 0.5040000132285058,
+								["timeToFade"] = 0.5,
+							},
+							["firstTimeLoaded"] = 1,
+							[0] = nil --[[ skipped userdata ]],
+						}, -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+				},
+				["changelog"] = {
+					["location"] = {
+						[3] = "CENTER",
+						[4] = 0,
+						[5] = 0,
+					},
+					["do_not_show"] = true,
+					["never_show"] = false,
+					["lastVersion"] = {
+						["minor"] = 9,
+						["patch"] = 1,
+						["major"] = 1,
+						["changeset"] = "",
+					},
+				},
+				["profile"] = {
+					["location"] = {
+						"CENTER", -- [1]
+						{
+							["variablesLoaded"] = true,
+							["fadeInfo"] = {
+								["startAlpha"] = 1,
+								["endAlpha"] = 1,
+								["mode"] = "IN",
+								["fadeTimer"] = 0.5040000132285058,
+								["timeToFade"] = 0.5,
+							},
+							["firstTimeLoaded"] = 1,
+							[0] = nil --[[ skipped userdata ]],
+						}, -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+				},
+				["auctionHistory"] = {
+					["location"] = {
+						"CENTER", -- [1]
+						{
+							["variablesLoaded"] = true,
+							["fadeInfo"] = {
+								["startAlpha"] = 1,
+								["endAlpha"] = 1,
+								["mode"] = "IN",
+								["fadeTimer"] = 0.5040000132285058,
+								["timeToFade"] = 0.5,
+							},
 							["firstTimeLoaded"] = 1,
 							[0] = nil --[[ skipped userdata ]],
 						}, -- [2]
@@ -29910,6 +30766,75 @@ CLM_DB = {
 						"CENTER", -- [1]
 						{
 							["variablesLoaded"] = true,
+							["fadeInfo"] = {
+								["startAlpha"] = 1,
+								["endAlpha"] = 1,
+								["mode"] = "IN",
+								["fadeTimer"] = 0.5040000132285058,
+								["timeToFade"] = 0.5,
+							},
+							["firstTimeLoaded"] = 1,
+							[0] = nil --[[ skipped userdata ]],
+						}, -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+				},
+				["auction"] = {
+					["location"] = {
+						"CENTER", -- [1]
+						{
+							["variablesLoaded"] = true,
+							["fadeInfo"] = {
+								["startAlpha"] = 1,
+								["endAlpha"] = 1,
+								["mode"] = "IN",
+								["fadeTimer"] = 0.5040000132285058,
+								["timeToFade"] = 0.5,
+							},
+							["firstTimeLoaded"] = 1,
+							[0] = nil --[[ skipped userdata ]],
+						}, -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+					["notes"] = {
+					},
+				},
+				["raid"] = {
+					["location"] = {
+						"CENTER", -- [1]
+						{
+							["variablesLoaded"] = true,
+							["fadeInfo"] = {
+								["startAlpha"] = 1,
+								["endAlpha"] = 1,
+								["mode"] = "IN",
+								["fadeTimer"] = 0.5040000132285058,
+								["timeToFade"] = 0.5,
+							},
+							["firstTimeLoaded"] = 1,
+							[0] = nil --[[ skipped userdata ]],
+						}, -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+				},
+				["standings"] = {
+					["location"] = {
+						"CENTER", -- [1]
+						{
+							["variablesLoaded"] = true,
+							["fadeInfo"] = {
+								["startAlpha"] = 1,
+								["endAlpha"] = 1,
+								["mode"] = "IN",
+								["fadeTimer"] = 0.5040000132285058,
+								["timeToFade"] = 0.5,
+							},
 							["firstTimeLoaded"] = 1,
 							[0] = nil --[[ skipped userdata ]],
 						}, -- [2]
@@ -29923,6 +30848,13 @@ CLM_DB = {
 						"CENTER", -- [1]
 						{
 							["variablesLoaded"] = true,
+							["fadeInfo"] = {
+								["startAlpha"] = 1,
+								["endAlpha"] = 1,
+								["mode"] = "IN",
+								["fadeTimer"] = 0.5040000132285058,
+								["timeToFade"] = 0.5,
+							},
 							["firstTimeLoaded"] = 1,
 							[0] = nil --[[ skipped userdata ]],
 						}, -- [2]
