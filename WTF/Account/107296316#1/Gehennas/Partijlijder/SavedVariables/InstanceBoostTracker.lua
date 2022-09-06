@@ -1,9 +1,11 @@
 
 SavedPayments = {
 	["Shaskhin"] = 3400000,
-	["Fka"] = 200000,
 	["Grndmagus"] = 1300000,
+	["Legalz"] = 5320000,
+	["Fka"] = 200000,
 	["Taynt"] = 3400000,
+	["Martinaa"] = 7210000,
 }
 SavedHistoricalPayments = nil
 SavedHistoricalPaymentsV2 = {
@@ -19,22 +21,6 @@ SavedHistoricalPaymentsV2 = {
 					["minute"] = "29",
 					["hour"] = "00",
 					["second"] = "13",
-				},
-			}, -- [1]
-		},
-	},
-	["Fka"] = {
-		["Sum"] = 200000,
-		["Transactions"] = {
-			{
-				["Amount"] = 200000,
-				["PaymentDateTime"] = {
-					["year"] = "2022",
-					["month"] = "06",
-					["day"] = "25",
-					["minute"] = "23",
-					["hour"] = "23",
-					["second"] = "17",
 				},
 			}, -- [1]
 		},
@@ -66,6 +52,38 @@ SavedHistoricalPaymentsV2 = {
 			}, -- [2]
 		},
 	},
+	["Legalz"] = {
+		["Sum"] = 5320000,
+		["Transactions"] = {
+			{
+				["Amount"] = 5320000,
+				["PaymentDateTime"] = {
+					["year"] = "2022",
+					["month"] = "08",
+					["day"] = "26",
+					["minute"] = "48",
+					["hour"] = "22",
+					["second"] = "55",
+				},
+			}, -- [1]
+		},
+	},
+	["Fka"] = {
+		["Sum"] = 200000,
+		["Transactions"] = {
+			{
+				["Amount"] = 200000,
+				["PaymentDateTime"] = {
+					["year"] = "2022",
+					["month"] = "06",
+					["day"] = "25",
+					["minute"] = "23",
+					["hour"] = "23",
+					["second"] = "17",
+				},
+			}, -- [1]
+		},
+	},
 	["Taynt"] = {
 		["Sum"] = 3400000,
 		["Transactions"] = {
@@ -82,9 +100,25 @@ SavedHistoricalPaymentsV2 = {
 			}, -- [1]
 		},
 	},
+	["Martinaa"] = {
+		["Sum"] = 7210000,
+		["Transactions"] = {
+			{
+				["Amount"] = 7210000,
+				["PaymentDateTime"] = {
+					["year"] = "2022",
+					["month"] = "08",
+					["day"] = "31",
+					["minute"] = "02",
+					["hour"] = "16",
+					["second"] = "17",
+				},
+			}, -- [1]
+		},
+	},
 }
 SavedWindowSettings = {
-	["y"] = 157.4060516357422,
+	["y"] = 146.1091003417969,
 	["x"] = 0,
 	["point"] = "CENTER",
 	["relativePoint"] = "CENTER",
@@ -95,8 +129,8 @@ SavedComments = {
 SavedSettings = {
 	["LOCKOUT_LOGOFFWARNING"] = true,
 	["FEATURE_Payment"] = true,
-	["AUTO_FOLLOW"] = false,
 	["LOCKOUT_RESETONGROUPCHANGE"] = true,
+	["AUTO_FOLLOW"] = false,
 	["FEATURE_LockoutStatistics"] = true,
 	["SPEEDY_AUTO_LOOT"] = false,
 	["PAYMENT_REPORTCHAT"] = true,
@@ -107,17 +141,17 @@ SavedSettings = {
 	["REPORT_ELEMENTAL_EARTH"] = false,
 }
 SavedAntiReloadUISettings = {
-	["IsEnteringFirstInstanceAfterLogin"] = false,
+	["IsEnteringFirstInstanceAfterLogin"] = true,
 	["SavedCharacterLockouts"] = {
+		["Jomppa"] = {
+		},
 		["Partijlijder"] = {
 		},
-		["Shamanlaine"] = {
+		["Bullhammerdk"] = {
 		},
-		["Feverrogue"] = {
+		["Ledrys"] = {
 		},
-		["Desimate"] = {
-		},
-		["Parallx"] = {
+		["Tankii"] = {
 		},
 	},
 }

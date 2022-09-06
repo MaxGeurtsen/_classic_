@@ -188,7 +188,15 @@ Lang["DelUnder70_TEXT"] = "Eliminar PJs por debajo de nivel 70"
 Lang["DelUnder70_DESC"] = "Eliminar toda la información sobre Pjs por debajo de nivel 70."
 Lang["DelUnder70_CONF"] = "¿Quieres realmente eliminar TODOS los personajes por debajo de 70?"
 Lang["DelUnder70_DONE"] = "Todos los resultados por debajo de nivel 70 eliminados."
-
+--302
+Lang["AnnounceAchieve_TEXT"] = "Anunciar logros en el chat del gremio                                    Límite:"
+Lang["AnnounceAchieve_DESC"] = "Envía un mensaje de hermandad cuando obtengas un logro."
+Lang["AchieveCompleteGuild"] = "##LINK## completada! (##POINTS## puntos totales)" 
+Lang["AchieveSurvey"] = "¿Te gustaría |cFFFFD100Attune|r anunciar los logros de |cFFFFD100##WHO##|r en el chat del gremio?"
+--306
+Lang["showDeprecatedAttunes_TEXT"] = "Mostrar armonización en desuso"
+Lang["showDeprecatedAttunes_DESC"] = "Mantenga las armonización más antiguas (Onyxia 40, Naxxramas 40) visibles en la lista"
+					
 
 -- TREEVIEW
 Lang["World of Warcraft"] = "World of Warcraft"

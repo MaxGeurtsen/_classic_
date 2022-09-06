@@ -10,12 +10,14 @@ WoWProCharDB = {
 	},
 	["Trades"] = {
 	},
-	["EnablePetBattles"] = true,
+	["GuideStack"] = {
+	},
 	["EnableFlight"] = true,
-	["EnableGrailQuestName"] = false,
-	["Enabled"] = true,
-	["EnableGrailQuestObsolete"] = false,
 	["EnableRares"] = true,
+	["EnableGrailQuestName"] = false,
+	["EnablePetBattles"] = true,
+	["EnableGrailQuestObsolete"] = false,
+	["EnableGrailBreadcrumbs"] = false,
 	["Tradeskills"] = {
 		[171] = {
 			["skillLvl"] = 375,
@@ -30,23 +32,21 @@ WoWProCharDB = {
 			["skillMod"] = 0,
 		},
 	},
-	["EnableGrailBreadcrumbs"] = false,
+	["DebugLevel"] = 0,
 	["Taxi"] = {
 	},
-	["GuideVersion"] = {
+	["BuildingLocations"] = {
 	},
 	["EnableTreasures"] = true,
-	["DebugLevel"] = 0,
 	["completedQIDs"] = {
 	},
 	["AutoHideInsideInstancesNotify"] = true,
 	["AutoHideInCombat"] = false,
-	["BuildingLocations"] = {
-	},
 	["Guide"] = {
 	},
-	["GuideStack"] = {
+	["GuideVersion"] = {
 	},
+	["Enabled"] = true,
 	["skippedQIDs"] = {
 	},
 	["Rank"] = {

@@ -1,8 +1,8 @@
-## Interface: 20503
+## Interface: 90207
 ## Title: Buffet
 ## Notes: Food/water macro generator
 ## Author: Tekkub Stoutwrithe, mZHg
-## Version: 2.5.3.82
+## Version: 9.2.7.87_Beta
 ## X-Icon: Interface\Icons\INV_Misc_Food_DimSum
 ## SavedVariables: BuffetItemDB
 ## SavedVariablesPerCharacter: BuffetDB
@@ -39,6 +39,13 @@ TBC\Localization.esMX.lua
 TBC\Localization.frFR.lua
 TBC\Localization.zhCN.lua
 
+WLK\Localization.enUS.lua
+WLK\Localization.deDE.lua
+WLK\Localization.esES.lua
+WLK\Localization.esMX.lua
+WLK\Localization.frFR.lua
+WLK\Localization.zhCN.lua
+
 Retail\ConstRetail.lua
 Retail\Retail.lua
 
@@ -47,6 +54,9 @@ Classic\Classic.lua
 
 TBC\ConstTBC.lua
 TBC\TBC.lua
+
+WLK\ConstWLK.lua
+WLK\WLK.lua
 
 Engine.lua
 

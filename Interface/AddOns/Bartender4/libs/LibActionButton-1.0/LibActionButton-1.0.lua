@@ -29,7 +29,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ]]
 local MAJOR_VERSION = "LibActionButton-1.0"
-local MINOR_VERSION = 82
+local MINOR_VERSION = 84
 
 if not LibStub then error(MAJOR_VERSION .. " requires LibStub.") end
 local lib, oldversion = LibStub:NewLibrary(MAJOR_VERSION, MINOR_VERSION)
@@ -42,6 +42,7 @@ local str_match, format, tinsert, tremove = string.match, format, tinsert, tremo
 
 local WoWClassic = (WOW_PROJECT_ID == WOW_PROJECT_CLASSIC)
 local WoWBCC = (WOW_PROJECT_ID == WOW_PROJECT_BURNING_CRUSADE_CLASSIC)
+local WoWWrath = (WOW_PROJECT_ID == WOW_PROJECT_WRATH_CLASSIC)
 
 local KeyBound = LibStub("LibKeyBound-1.0", true)
 local CBH = LibStub("CallbackHandler-1.0")
@@ -680,13 +681,15 @@ function InitializeEventHandler()
 	lib.eventFrame:RegisterEvent("SPELL_UPDATE_CHARGES")
 	lib.eventFrame:RegisterEvent("SPELL_UPDATE_ICON")
 	if not WoWClassic and not WoWBCC then
-		lib.eventFrame:RegisterEvent("ARCHAEOLOGY_CLOSED")
+		if not WoWWrath then
+			lib.eventFrame:RegisterEvent("ARCHAEOLOGY_CLOSED")
+			lib.eventFrame:RegisterEvent("UPDATE_SUMMONPETS_ACTION")
+			lib.eventFrame:RegisterEvent("SPELL_ACTIVATION_OVERLAY_GLOW_SHOW")
+			lib.eventFrame:RegisterEvent("SPELL_ACTIVATION_OVERLAY_GLOW_HIDE")
+		end
 		lib.eventFrame:RegisterEvent("UNIT_ENTERED_VEHICLE")
 		lib.eventFrame:RegisterEvent("UNIT_EXITED_VEHICLE")
 		lib.eventFrame:RegisterEvent("COMPANION_UPDATE")
-		lib.eventFrame:RegisterEvent("SPELL_ACTIVATION_OVERLAY_GLOW_SHOW")
-		lib.eventFrame:RegisterEvent("SPELL_ACTIVATION_OVERLAY_GLOW_HIDE")
-		lib.eventFrame:RegisterEvent("UPDATE_SUMMONPETS_ACTION")
 	end
 
 	-- With those two, do we still need the ACTIONBAR equivalents of them?
@@ -701,6 +704,7 @@ function InitializeEventHandler()
 	lib.eventFrame:SetScript("OnUpdate", OnUpdate)
 end
 
+local _lastFormUpdate = GetTime()
 function OnEvent(frame, event, arg1, ...)
 	if (event == "UNIT_INVENTORY_CHANGED" and arg1 == "player") or event == "LEARNED_SPELL_IN_TAB" then
 		local tooltipOwner = GameTooltip_GetOwnerForbidden()
@@ -714,8 +718,24 @@ function OnEvent(frame, event, arg1, ...)
 				Update(button)
 			end
 		end
-	elseif event == "PLAYER_ENTERING_WORLD" or event == "UPDATE_SHAPESHIFT_FORM" or event == "UPDATE_VEHICLE_ACTIONBAR" then
+	elseif event == "PLAYER_ENTERING_WORLD" or event == "UPDATE_VEHICLE_ACTIONBAR" then
 		ForAllButtons(Update)
+	elseif event == "UPDATE_SHAPESHIFT_FORM" then
+		-- XXX: throttle these updates since Blizzard broke the event and its now extremely spammy in some clients
+		local _time = GetTime()
+		if (_time - _lastFormUpdate) < 1 then
+			return
+		end
+		_lastFormUpdate = _time
+
+		-- the attack icon can change when shapeshift form changes, so need to do a quick update here
+		-- for performance reasons don't run full updates here, though
+		for button in next, ActiveButtons do
+			local texture = button:GetTexture()
+			if texture then
+				button.icon:SetTexture(texture)
+			end
+		end
 	elseif event == "ACTIONBAR_PAGE_CHANGED" or event == "UPDATE_BONUS_ACTIONBAR" then
 		-- TODO: Are these even needed?
 	elseif event == "ACTIONBAR_SHOWGRID" then
@@ -1158,7 +1178,7 @@ function UpdateUsable(self)
 		end
 	end
 
-	if not WoWClassic and not WoWBCC and self._state_type == "action" then
+	if not WoWClassic and not WoWBCC and not WoWWrath and self._state_type == "action" then
 		local isLevelLinkLocked = C_LevelLink.IsActionLocked(self._state_action)
 		if not self.icon:IsDesaturated() then
 			self.icon:SetDesaturated(isLevelLinkLocked)
@@ -1556,7 +1576,7 @@ if WoWClassic then
 	end
 end
 
-if WoWClassic or WoWBCC then
+if WoWClassic or WoWBCC or WoWWrath then
 	-- disable loss of control cooldown on classic
 	Action.GetLossOfControlCooldown = function(self) return 0,0 end
 end
@@ -1641,7 +1661,7 @@ Custom.GetSpellId              = function(self) return nil end
 Custom.RunCustom               = function(self, unit, button) return self._state_action.func(self, unit, button) end
 
 --- WoW Classic overrides
-if WoWClassic or WoWBCC then
+if WoWClassic or WoWBCC or WoWWrath then
 	UpdateOverlayGlow = function() end
 end
 

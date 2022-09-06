@@ -53,6 +53,9 @@ L["Set the level used in calculations (0 = your level)"] = "Задать уро�
 -- /rb ilvlid itemlevelall
 --L["Show Item Level on all items"] = ""
 --L["Display the Item Level on all items instead of just on equippable items"] = ""
+-- /rb avoidancedr
+L["Enable Avoidance Diminishing Returns"] = "Включить убывания уклонений от удара"
+L["Dodge, Parry, Miss Avoidance values will be calculated using the avoidance deminishing return formula with your current stats"] = "Значения уклонения, парирования, уклонений от удара при расчетах будет использоваться формула убывания (deminishing return) уклонений от удара по вашим текущим данным"
 -- /rb ilvlid itemid
 --L["Show Item ID"] = ""
 --L["Display the Item ID on all items"] = ""
@@ -75,6 +78,30 @@ L["Show detailed text for Resilience and Expertise conversions"] = "Показы
 -- /rb rating exp
 L["Expertise Breakdown"] = "Разбивать уровень мастерства"
 L["Convert Expertise into Dodge Neglect and Parry Neglect"] = "Разбивать уровень мастерства на игнорирование уклонения и парирования"
+L["from"] = "от"
+L["HEALING"] = STAT_SPELLHEALING
+L["AP"] = ATTACK_POWER_TOOLTIP
+L["RANGED_AP"] = RANGED_ATTACK_POWER
+L["ARMOR"] = ARMOR
+L["SPELL_DMG"] = STAT_SPELLDAMAGE
+L["SPELL_CRIT"] = PLAYERSTAT_SPELL_COMBAT .. " " .. SPELL_CRIT_CHANCE
+L["STR"] = SPELL_STAT1_NAME
+L["AGI"] = SPELL_STAT2_NAME
+L["STA"] = SPELL_STAT3_NAME
+L["INT"] = SPELL_STAT4_NAME
+L["SPI"] = SPELL_STAT5_NAME
+L["PARRY"] = PARRY
+L["MANA_REG"] = "Восполнение маныn"
+L["NORMAL_MANA_REG"] = SPELL_STAT4_NAME .. " & " .. SPELL_STAT5_NAME -- Intellect & Spirit
+L["PET_STA"] = PET .. SPELL_STAT3_NAME -- Pet Stamina
+L["PET_INT"] = PET .. SPELL_STAT4_NAME -- Pet Intellect
+L.statModOptionName = function(show, add)
+	return string.format("%s %s ", show, add)
+end
+L.statModOptionDesc = function(show, add, from, mod)
+	return string.format("%s %s %s %s ", show, add, from, mod)
+end
+
 ---------------------------------------------------------------------------
 -- /rb rating color
 L["Change Text Color"] = "Изменить цвет текста"
@@ -383,6 +410,12 @@ L["Ranged Haste <- Haste Rating, Ranged Haste Rating"] = "Скорости да�
 -- /rb sum physical rangedhasterating
 L["Sum Ranged Haste Rating"] = "Сумма рейтинга скорости дальнего боя"
 L["Ranged Haste Rating Summary"] = "Суммировать рейтинг скорости дальнего боя"
+L["Sum Ignore Armor"] = "Сумма игнорирования брони"
+L["Ignore Armor Summary"] = "Суммировать игнорирование брони"
+L["Sum Armor Penetration"] = "Сумма пробивание брони"
+L["Armor Penetration Summary"] = "Суммировать пробивание брони"
+L["Sum Armor Penetration Rating"] = "Сумма рейтинга пробивание брони"
+L["Armor Penetration Rating Summary"] = "Суммировать рейтинг пробивания брони"
 -- /rb sum physical maxdamage
 L["Sum Weapon Max Damage"] = "Сумма макс урона оружия"
 L["Weapon Max Damage Summary"] = "Суммировать макс урон уружия"
@@ -691,22 +724,12 @@ L["statList"] = {
 	{pattern = "рейтинг критического удара заклинаниями", id = CR_CRIT_SPELL},
 	{pattern = "критический удар %(заклинания%)", id = CR_CRIT_SPELL},
 	{pattern = "меткость %(заклинания%)", id = CR_HIT_SPELL},
-	{pattern = "spell critical hit rating", id = CR_CRIT_SPELL},
-	{pattern = "spell critical rating", id = CR_CRIT_SPELL},
-	{pattern = "spell crit rating", id = CR_CRIT_SPELL},
-	{pattern = "ranged critical strike rating", id = CR_CRIT_RANGED},
 	{pattern = "к критическому удару в дальнем бою", id = CR_CRIT_RANGED}, -- [Heartseeker Scope]
-	{pattern = "ranged critical hit rating", id = CR_CRIT_RANGED},
-	{pattern = "ranged critical rating", id = CR_CRIT_RANGED},
-	{pattern = "ranged crit rating", id = CR_CRIT_RANGED},
-	{pattern = "рейтинг критического удара", id = CR_CRIT_MELEE},
-	{pattern = "рейтинг критического эффекта", id = CR_CRIT_MELEE},
-	{pattern = "рейтингу критического удара", id = CR_CRIT_MELEE},
-	{pattern = "рейтинга критического удара", id = CR_CRIT_MELEE},
+	{pattern = "рейтинг критического удара", id = CR_CRIT},
+	{pattern = "рейтинг критического эффекта", id = CR_CRIT},
+	{pattern = "рейтингу критического удара", id = CR_CRIT},
+	{pattern = "рейтинга критического удара", id = CR_CRIT},
 	{pattern = "рейтинг крит. удара оруж. ближнего боя", id = CR_CRIT_MELEE},
-	{pattern = "critical hit rating", id = CR_CRIT_MELEE},
-	{pattern = "critical rating", id = CR_CRIT_MELEE},
-	{pattern = "crit rating", id = CR_CRIT_MELEE},
 
 	{pattern = "рейтинг меткости %(заклинания%)", id = CR_HIT_SPELL},
 	{pattern = "рейтингу меткости %(заклинания%)", id = CR_HIT_SPELL},
@@ -715,9 +738,9 @@ L["statList"] = {
 	{pattern = "рейтингу меткости заклинаний", id = CR_HIT_SPELL},
 	{pattern = "Рейтинг меткости (оруж. дальн. боя)", id = CR_HIT_RANGED},
 	{pattern = "рейтинга нанесения удара ближнего боя", id = CR_HIT_MELEE},
-	{pattern = "рейтинг меткости", id = CR_HIT_MELEE},
-	{pattern = "рейтинга меткости", id = CR_HIT_MELEE},
-	{pattern = "рейтингу меткости", id = CR_HIT_MELEE},
+	{pattern = "рейтинг меткости", id = CR_HIT},
+	{pattern = "рейтинга меткости", id = CR_HIT},
+	{pattern = "рейтингу меткости", id = CR_HIT},
 
 	{pattern = "рейтинг устойчивости", id = COMBAT_RATING_RESILIENCE_PLAYER_DAMAGE_TAKEN}, -- resilience is implicitly a rating
 	{pattern = "рейтингу устойчивости", id = COMBAT_RATING_RESILIENCE_PLAYER_DAMAGE_TAKEN},
@@ -731,44 +754,22 @@ L["statList"] = {
 	{pattern = "рейтинг скорости дальнего боя", id = CR_HASTE_RANGED},
 	{pattern = "рейтингу скорости дальнего боя", id = CR_HASTE_RANGED},
 	{pattern = "рейтинга скорости дальнего боя", id = CR_HASTE_RANGED},
-	{pattern = "рейтинг скорости", id = CR_HASTE_MELEE},
-	{pattern = "рейтингу скорости", id = CR_HASTE_MELEE},
-	{pattern = "рейтинга скорости", id = CR_HASTE_MELEE},
-	{pattern = "speed rating", id = CR_HASTE_MELEE}, -- [Drums of Battle]
+	{pattern = "рейтинг скорости", id = CR_HASTE},
+	{pattern = "рейтингу скорости", id = CR_HASTE},
+	{pattern = "рейтинга скорости", id = CR_HASTE},
 
-	{pattern = "рейтинг владения", id = CR_WEAPON_SKILL},
-	{pattern = "рейтингу владения", id = CR_WEAPON_SKILL},
-	{pattern = "рейтинга владения", id = CR_WEAPON_SKILL},
 	{pattern = "рейтинг мастерства", id = CR_EXPERTISE},
 	{pattern = "рейтингу мастерства", id = CR_EXPERTISE},
 	{pattern = "рейтинга мастерства", id = CR_EXPERTISE},
 
-	{pattern = "рейтинг уклонения от удара", id = CR_HIT_TAKEN_MELEE},
-	{pattern = "Рейтингу уклонения от удара", id = CR_HIT_TAKEN_MELEE},
-	{pattern = "рейтинга уклонения от удара", id = CR_HIT_TAKEN_MELEE},
 	{pattern = "рейтинг пробивания брони", id = CR_ARMOR_PENETRATION},
 	{pattern = "рейтингу пробивания брони", id = CR_ARMOR_PENETRATION},
 	{pattern = "рейтинга пробивания брони", id = CR_ARMOR_PENETRATION},
+	{pattern = string.lower(ARMOR), id = ARMOR},
+
 	{pattern = "рейтинг искусности", id = CR_MASTERY},
 	{pattern = "рейтингу искусности", id = CR_MASTERY},
 	{pattern = "рейтинга искусности", id = CR_MASTERY},
-	{pattern = string.lower(ARMOR), id = ARMOR},
-	--[[
-	{pattern = "dagger skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "sword skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "two%-handed swords skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "axe skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "bow skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "crossbow skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "gun skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "feral combat skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "mace skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "polearm skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "staff skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "two%-handed axes skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "two%-handed maces skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "fist weapons skill rating", id = CR_WEAPON_SKILL},
-	--]]
 }
 -------------------------
 -- Added info patterns --
@@ -800,6 +801,11 @@ L["$value Parry"] = "$value парирование"
 -- (+1.21%, +0.98% S)
 L["$value Spell"] = "$value закл."
 L["$value Spell Hit"] = "$value метк. закл."
+L["$value% Parry"] = "$value% парирование"
+-- for hit rating showing both physical and spell conversions
+-- (+1.21%, S+0.98%)
+-- (+1.21%, +0.98% S)
+L["$value Spell"] = "$value закл."
 
 ------------------
 -- Stat Summary --

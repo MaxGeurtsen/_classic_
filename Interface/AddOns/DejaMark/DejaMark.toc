@@ -1,5 +1,5 @@
-## Interface: 20503
-## Version: T20502r2
+## Interface: 30400
+## Version: 30400r2
 ## Title: DejaMark
 ## Authors: Dejablue, Baudzila, Ro, Choonster, Phanx
 ## Notes: Dejablue's simple raid markers.

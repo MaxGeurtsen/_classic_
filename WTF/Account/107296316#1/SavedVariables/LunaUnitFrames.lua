@@ -3,13 +3,15 @@ LunaUFDB = {
 	["profileKeys"] = {
 		["Partijleider - Gehennas"] = "Default",
 		["Partijlijder - Gehennas"] = "Default",
+		["Partijdood - Gehennas"] = "Default",
 		["Firebreather - Firemaw"] = "Default",
 		["Partijcurses - Gehennas"] = "Default",
 		["Awwaa - Gehennas"] = "Default",
+		["Partijaxert - Gehennas"] = "Default",
 		["Partijleider - Razorgore"] = "Default",
 		["Rinque - Gehennas"] = "Pala",
-		["Firebreather - Gehennas"] = "Default",
 		["Partijlijder - Razorgore"] = "Default",
+		["Firebreather - Gehennas"] = "Default",
 		["Kealthas - Razorgore"] = "Default",
 	},
 	["profiles"] = {
@@ -17,7 +19,7 @@ LunaUFDB = {
 		},
 		["Pala"] = {
 			["fontoutline"] = false,
-			["version"] = 4310,
+			["version"] = 4330,
 			["locked"] = true,
 			["hidden"] = {
 				["cast"] = false,
@@ -37,9 +39,6 @@ LunaUFDB = {
 				["partypet"] = {
 					["enabled"] = false,
 				},
-				["arena"] = {
-					["enabled"] = false,
-				},
 				["player"] = {
 					["castBar"] = {
 						["enabled"] = false,
@@ -50,34 +49,31 @@ LunaUFDB = {
 					["portrait"] = {
 						["type"] = "2D",
 					},
+					["y"] = 253.5328958166792,
 					["fader"] = {
 						["enabled"] = true,
 						["speedyFade"] = true,
 						["inactiveAlpha"] = 0,
 					},
-					["y"] = 253.5328958166792,
 					["auras"] = {
 						["buffsize"] = 10,
 						["buffs"] = true,
 					},
 				},
-				["maintank"] = {
-					["y"] = -396.5836104252303,
-					["x"] = -1286.566665760674,
-					["point"] = "TOPRIGHT",
-					["relativePoint"] = "TOPRIGHT",
-					["width"] = 166,
-					["auras"] = {
-						["buffs"] = true,
-						["filterbuffs"] = 2,
-						["buffpos"] = "INFRAME",
-						["buffsize"] = 19,
-					},
+				["party"] = {
+					["enabled"] = false,
 				},
 				["focus"] = {
 					["y"] = 428.6668078853945,
 					["x"] = 1025.9004830173,
 					["point"] = "BOTTOMLEFT",
+					["relativePoint"] = "BOTTOMLEFT",
+				},
+				["raidpet"] = {
+					["y"] = 387.9300043799194,
+					["x"] = 410.4000296320228,
+					["point"] = "BOTTOMLEFT",
+					["anchorTo"] = "UIParent",
 					["relativePoint"] = "BOTTOMLEFT",
 				},
 				["target"] = {
@@ -92,14 +88,20 @@ LunaUFDB = {
 				["raid"] = {
 					["enabled"] = false,
 				},
-				["raidpet"] = {
-					["y"] = 387.9300043799194,
-					["x"] = 410.4000296320228,
-					["point"] = "BOTTOMLEFT",
-					["anchorTo"] = "UIParent",
-					["relativePoint"] = "BOTTOMLEFT",
+				["maintank"] = {
+					["y"] = -396.5836104252303,
+					["x"] = -1286.566665760674,
+					["point"] = "TOPRIGHT",
+					["relativePoint"] = "TOPRIGHT",
+					["auras"] = {
+						["buffpos"] = "INFRAME",
+						["filterbuffs"] = 2,
+						["buffsize"] = 19,
+						["buffs"] = true,
+					},
+					["width"] = 166,
 				},
-				["party"] = {
+				["arena"] = {
 					["enabled"] = false,
 				},
 			},
@@ -117,12 +119,11 @@ LunaUFDB = {
 				["party"] = {
 					["enabled"] = false,
 				},
-				["raidpet"] = {
-					["y"] = 387.9300043799194,
-					["x"] = 410.4000296320228,
-					["anchorTo"] = "UIParent",
-					["relativePoint"] = "BOTTOMLEFT",
+				["focus"] = {
 					["point"] = "BOTTOMLEFT",
+					["relativePoint"] = "BOTTOMLEFT",
+					["y"] = 428.6668078853945,
+					["x"] = 1025.9004830173,
 				},
 				["target"] = {
 					["point"] = "TOPLEFT",
@@ -136,11 +137,12 @@ LunaUFDB = {
 				["raid"] = {
 					["enabled"] = false,
 				},
-				["focus"] = {
-					["point"] = "BOTTOMLEFT",
+				["raidpet"] = {
+					["y"] = 387.9300043799194,
+					["x"] = 410.4000296320228,
+					["anchorTo"] = "UIParent",
 					["relativePoint"] = "BOTTOMLEFT",
-					["y"] = 428.6668078853945,
-					["x"] = 1025.9004830173,
+					["point"] = "BOTTOMLEFT",
 				},
 				["focustarget"] = {
 					["enabled"] = true,

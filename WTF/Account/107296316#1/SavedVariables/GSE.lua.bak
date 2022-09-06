@@ -20,10 +20,10 @@ GSEOptions = {
 	},
 	["editorHeight"] = 700,
 	["filterList"] = {
-		["All"] = false,
-		["Spec"] = true,
-		["Global"] = true,
 		["Class"] = true,
+		["All"] = false,
+		["Global"] = true,
+		["Spec"] = true,
 	},
 	["UseWLMExportFormat"] = true,
 	["autoCreateMacroStubsClass"] = true,

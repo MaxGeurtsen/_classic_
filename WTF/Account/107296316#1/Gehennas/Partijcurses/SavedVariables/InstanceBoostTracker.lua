@@ -16,21 +16,25 @@ SavedComments = {
 SavedSettings = {
 	["LOCKOUT_LOGOFFWARNING"] = true,
 	["FEATURE_Payment"] = true,
-	["REPORT_ELEMENTAL_EARTH"] = false,
 	["AUTO_FOLLOW"] = false,
+	["LOCKOUT_RESETONGROUPCHANGE"] = true,
 	["FEATURE_LockoutStatistics"] = true,
 	["SPEEDY_AUTO_LOOT"] = false,
 	["PAYMENT_REPORTCHAT"] = true,
 	["FEATURE_LockoutTracker"] = true,
-	["PAYMENT_REPORTMAIN"] = true,
 	["LOCKOUT_REPORTRESET"] = false,
+	["PAYMENT_REPORTMAIN"] = true,
 	["STATISTICS_REPORT"] = true,
-	["LOCKOUT_RESETONGROUPCHANGE"] = true,
+	["REPORT_ELEMENTAL_EARTH"] = false,
 }
 SavedAntiReloadUISettings = {
-	["IsEnteringFirstInstanceAfterLogin"] = true,
+	["IsEnteringFirstInstanceAfterLogin"] = false,
 	["SavedCharacterLockouts"] = {
-		["Elshot"] = {
+		["Ambulans"] = {
+		},
+		["Fernandèllo"] = {
+		},
+		["Kilova"] = {
 		},
 		["Partijcurses"] = {
 		},

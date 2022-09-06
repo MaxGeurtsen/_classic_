@@ -1,0 +1,12 @@
+{
+    "Lua.diagnostics.globals": [
+        "ITEM_SOULBOUND",
+        "gearquipper",
+        "ITEM_MIN_LEVEL",
+        "DURABILITY",
+        "ShoppingTooltip1",
+        "ShoppingTooltip2",
+        "GameTooltip",
+        "GetItemStats"
+    ]
+}

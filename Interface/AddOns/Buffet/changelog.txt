@@ -1,3 +1,33 @@
+### 87_Beta
+
+* Fix issue #47: Harvest festival items not working on WLK
+* Changed versioning scheme: git tags wil now only contain an incremental version number, with an optional _Beta suffix
+
+
+### 9.2.7.86_Beta
+
+* Mana Gem not recognized on Wrath
+
+
+### 9.2.7.85_Beta
+
+* Fix issue with CurseForge packaging
+
+
+### 9.2.7.84_Beta
+
+* Added missing project versions
+* Disabled debug mode
+* Cleaned up few things
+
+
+### 9.2.7.83_Beta
+
+* Added support for Wrath (untested)
+* Added support for multi-toc
+* Added lib to repo and removed from curse auto-build
+
+
 ### 9.2.0.82
 
 * Few fixes

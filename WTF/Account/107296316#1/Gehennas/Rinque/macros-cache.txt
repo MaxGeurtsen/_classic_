@@ -47,7 +47,7 @@ VER 3 0000000001000007 "kings" "INV_MISC_QUESTIONMARK"
 /cast [mod:ctrl] greater Blessing of kings; blessing of kings
 END
 VER 3 000000000100000F "KINGS" "135995"
-/cast [target=apecss, exists, nodead][target=Reapér, exists, nodead][target=skurkeh, exists, nodead][target=bigmanbooy, exists, nodead][target=Axinator, exists, nodead][target=Aggrae, exists, nodead] Greater Blessing of Might
+/cast [target=apecss, exists, nodead][target=kharees, exists, nodead][target=ffvii, exists, nodead][target=émillion, exists, nodead][target=Axinator, exists, nodead][target=Aggrae, exists, nodead] Greater Blessing of kings
 END
 VER 3 000000000100000A "light" "INV_MISC_QUESTIONMARK"
 #showtooltip

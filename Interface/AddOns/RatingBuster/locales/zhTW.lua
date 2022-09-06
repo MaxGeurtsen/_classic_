@@ -27,6 +27,9 @@ L["Shows the Options Window"] = "顯示選項視窗"
 -- /rb statmod
 L["Enable Stat Mods"] = "屬性加成"
 L["Enable support for Stat Mods"] = "啟用屬性加成計算"
+-- /rb avoidancedr
+L["Enable Avoidance Diminishing Returns"] = "啟用迴避遞減效應"
+L["Dodge, Parry, Miss Avoidance values will be calculated using the avoidance deminishing return formula with your current stats"] = "你的閃避、招架、避免命中值會被計算在迴避遞減效應中"
 -- /rb itemid
 L["Show ItemID"] = "顯示物品編號"
 L["Show the ItemID in tooltips"] = "顯示物品編號"
@@ -54,6 +57,12 @@ L["Options for Rating display"] = "設定屬性等級顯示"
 -- /rb rating show
 L["Show Rating conversions"] = "顯示屬性等級轉換"
 L["Show Rating conversions in tooltips"] = "在提示框架中顯示屬性等級轉換結果"
+-- /rb rating spell
+L["Show Spell Hit/Haste"] = "顯示法術命中/加速"
+L["Show Spell Hit/Haste from Hit/Haste Rating"] = "顯示命中/加速給的法術命中/加速"
+-- /rb rating physical
+L["Show Physical Hit/Haste"] = "顯示物理命中/加速"
+L["Show Physical Hit/Haste from Hit/Haste Rating"] = "顯示命中/加速給的物理命中/加速"
 -- /rb rating detail
 L["Show detailed conversions text"] = "顯示詳細轉換文字"
 L["Show detailed text for Resiliance and Expertise conversions"] = "顯示韌性和熟練技能的詳細轉換文字"
@@ -66,6 +75,29 @@ L["Convert Weapon Skill into Crit Hit, Dodge Neglect, Parry Neglect and Block Ne
 -- /rb rating exp -- 2.3.0
 L["Expertise breakdown"] = "分析熟練技能"
 L["Convert Expertise into Dodge Neglect and Parry Neglect"] = "將熟練技能分為防止被閃躲、防止被招架"
+L["from"] = "給的"
+L["HEALING"] = STAT_SPELLHEALING
+L["AP"] = ATTACK_POWER_TOOLTIP
+L["RANGED_AP"] = RANGED_ATTACK_POWER
+L["ARMOR"] = ARMOR
+L["SPELL_DMG"] = STAT_SPELLDAMAGE
+L["SPELL_CRIT"] = PLAYERSTAT_SPELL_COMBAT .. " " .. SPELL_CRIT_CHANCE
+L["STR"] = SPELL_STAT1_NAME
+L["AGI"] = SPELL_STAT2_NAME
+L["STA"] = SPELL_STAT3_NAME
+L["INT"] = SPELL_STAT4_NAME
+L["SPI"] = SPELL_STAT5_NAME
+L["PARRY"] = PARRY
+L["MANA_REG"] = "施法回魔"
+L["NORMAL_MANA_REG"] = SPELL_STAT4_NAME .. " & " .. SPELL_STAT5_NAME -- Intellect & Spirit
+L["PET_STA"] = PET .. SPELL_STAT3_NAME -- Pet Stamina
+L["PET_INT"] = PET .. SPELL_STAT4_NAME -- Pet Intellect
+L.statModOptionName = function(show, add)
+	return string.format("%s %s ", show, add)
+end
+L.statModOptionDesc = function(show, add, from, mod)
+	return string.format("%s %s %s %s ", show, mod, from, add)
+end
 
 -- /rb stat
 L["Stat Breakdown"] = "基本屬性解析"
@@ -357,6 +389,10 @@ L["Spell Penetration Summary"] = "統計法術穿透力"
 -- /rb sum stat ignorearmor
 L["Sum Ignore Armor"] = "統計無視護甲"
 L["Ignore Armor Summary"] = "統計無視護甲"
+L["Sum Armor Penetration"] = "統計護甲穿透"
+L["Armor Penetration Summary"] = "統計無視護甲穿透"
+L["Sum Armor Penetration Rating"] = "統計無視護甲穿透等級"
+L["Armor Penetration Rating Summary"] = "統計無視護甲穿透等級"
 -- /rb sum stat weapondps
 --["Sum Weapon DPS"] = true,
 --["Weapon DPS Summary"] = true,
@@ -548,39 +584,23 @@ L["statList"] = {
 
 	{pattern = "法術致命一擊等級", id = CR_CRIT_SPELL},
 	{pattern = "遠程攻擊致命一擊等級", id = CR_CRIT_RANGED},
-	{pattern = "致命一擊等級", id = CR_CRIT_MELEE},
+	{pattern = "致命一擊等級", id = CR_CRIT},
 
 	{pattern = "法術命中等級", id = CR_HIT_SPELL},
 	{pattern = "遠程命中等級", id = CR_HIT_RANGED},
-	{pattern = "命中等級", id = CR_HIT_MELEE},
+	{pattern = "命中等級", id = CR_HIT},
 
 	{pattern = "韌性", id = CR_CRIT_TAKEN_MELEE}, -- resilience is implicitly a rating
 
 	{pattern = "法術加速等級", id = CR_HASTE_SPELL},
 	{pattern = "遠程攻擊加速等級", id = CR_HASTE_RANGED},
-	{pattern = "加速等級", id = CR_HASTE_MELEE},
-	{pattern = "攻擊速度等級", id = CR_HASTE_MELEE}, -- [Drums of Battle]
+	{pattern = "加速等級", id = CR_HASTE},
+	{pattern = "攻擊速度等級", id = CR_HASTE}, -- [Drums of Battle]
 
-	{pattern = "技能等級", id = CR_WEAPON_SKILL},
 	{pattern = "熟練等級", id = CR_EXPERTISE}, -- 2.3
 
-	{pattern = "命中迴避率", id = CR_HIT_TAKEN_MELEE},
-	--[[
-	{pattern = "dagger skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "sword skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "two%-handed swords skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "axe skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "bow skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "crossbow skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "gun skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "feral combat skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "mace skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "polearm skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "staff skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "two%-handed axes skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "two%-handed maces skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "fist weapons skill rating", id = CR_WEAPON_SKILL},
-	--]]
+	{pattern = "護甲穿透等級", id = CR_ARMOR_PENETRATION},
+	{pattern = string.lower(ARMOR), id = ARMOR},
 }
 -------------------------
 -- Added info patterns --
@@ -606,6 +626,11 @@ L["$value to be Dodged/Parried"] = "$value 被閃躲/被招架"
 L["$value to be Crit"] = "$value 被致命"
 L["$value Crit Dmg Taken"] = "$value 致命傷害減免"
 L["$value DOT Dmg Taken"] = "$value 持續傷害減免"
+L["$value% Parry"] = "$value% 招架"
+-- for hit rating showing both physical and spell conversions
+-- (+1.21%, S+0.98%)
+-- (+1.21%, +0.98% S)
+L["$value Spell"] = "$value 法術"
 
 ------------------
 -- Stat Summary --

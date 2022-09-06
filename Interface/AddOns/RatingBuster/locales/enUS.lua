@@ -19,6 +19,9 @@ L["Shows the Options Window"] = true
 -- /rb statmod
 L["Enable Stat Mods"] = true
 L["Enable support for Stat Mods"] = true
+L["Enable Avoidance Diminishing Returns"] = true
+L["Dodge, Parry, Miss Avoidance values will be calculated using the avoidance deminishing return formula with your current stats"] = true
+
 -- /rb itemid
 L["Show ItemID"] = true
 L["Show the ItemID in tooltips"] = true
@@ -46,6 +49,12 @@ L["Options for Rating display"] = true
 -- /rb rating show
 L["Show Rating conversions"] = true
 L["Show Rating conversions in tooltips"] = true
+-- /rb rating spell
+L["Show Spell Hit/Haste"] = true
+L["Show Spell Hit/Haste from Hit/Haste Rating"] = true
+-- /rb rating physical
+L["Show Physical Hit/Haste"] = true
+L["Show Physical Hit/Haste from Hit/Haste Rating"] = true
 -- /rb rating detail
 L["Show detailed conversions text"] = true
 L["Show detailed text for Resiliance and Expertise conversions"] = true
@@ -58,6 +67,29 @@ L["Convert Weapon Skill into Crit, Hit, Dodge Neglect, Parry Neglect and Block N
 -- /rb rating exp -- 2.3.0
 L["Expertise breakdown"] = true
 L["Convert Expertise into Dodge Neglect and Parry Neglect"] = true
+L["from"] = true
+L["HEALING"] = STAT_SPELLHEALING
+L["AP"] = ATTACK_POWER_TOOLTIP
+L["RANGED_AP"] = RANGED_ATTACK_POWER
+L["ARMOR"] = ARMOR
+L["SPELL_DMG"] = STAT_SPELLDAMAGE
+L["SPELL_CRIT"] = PLAYERSTAT_SPELL_COMBAT .. " " .. SPELL_CRIT_CHANCE
+L["STR"] = SPELL_STAT1_NAME
+L["AGI"] = SPELL_STAT2_NAME
+L["STA"] = SPELL_STAT3_NAME
+L["INT"] = SPELL_STAT4_NAME
+L["SPI"] = SPELL_STAT5_NAME
+L["PARRY"] = PARRY
+L["MANA_REG"] = "Mana Regen"
+L["NORMAL_MANA_REG"] = SPELL_STAT4_NAME .. " & " .. SPELL_STAT5_NAME -- Intellect & Spirit
+L["PET_STA"] = PET .. SPELL_STAT3_NAME -- Pet Stamina
+L["PET_INT"] = PET .. SPELL_STAT4_NAME -- Pet Intellect
+L.statModOptionName = function(show, add)
+	return string.format("%s %s ", show, add)
+end
+L.statModOptionDesc = function(show, add, from, mod)
+	return string.format("%s %s %s %s ", show, add, from, mod)
+end
 
 -- /rb stat
 L["Stat Breakdown"] = true
@@ -160,6 +192,14 @@ L["Show Spell Damage from Spirit"] = true
 L["Show Healing"] = true
 L["Show Healing from Spirit"] = true
 
+---------------------------------------------------------------------------
+-- /rb stat armor
+L["Armor"] = true
+L["Changes the display of Armor"] = true
+-- /rb stat armor ap
+L["Show Attack Power"] = true
+L["Show Attack Power from Armor"] = true
+---------------------------------------------------------------------------
 -- /rb sum
 L["Stat Summary"] = true
 L["Options for stat summary"] = true
@@ -349,6 +389,10 @@ L["Spell Penetration Summary"] = true
 -- /rb sum stat ignorearmor
 L["Sum Ignore Armor"] = true
 L["Ignore Armor Summary"] = true
+L["Sum Armor Penetration"] = true
+L["Armor Penetration Summary"] = true
+L["Sum Armor Penetration Rating"] = true
+L["Armor Penetration Rating Summary"] = true
 -- /rb sum stat weapondps
 --["Sum Weapon DPS"] = true,
 --["Weapon DPS Summary"] = true,
@@ -550,42 +594,25 @@ L["statList"] = {
 	{pattern = "ranged critical hit rating", id = CR_CRIT_RANGED},
 	{pattern = "ranged critical rating", id = CR_CRIT_RANGED},
 	{pattern = "ranged crit rating", id = CR_CRIT_RANGED},
-	{pattern = "critical strike rating", id = CR_CRIT_MELEE},
-	{pattern = "critical hit rating", id = CR_CRIT_MELEE},
-	{pattern = "critical rating", id = CR_CRIT_MELEE},
-	{pattern = "crit rating", id = CR_CRIT_MELEE},
+	{pattern = "critical strike rating", id = CR_CRIT},
+	{pattern = "critical hit rating", id = CR_CRIT},
+	{pattern = "critical rating", id = CR_CRIT},
+	{pattern = "crit rating", id = CR_CRIT},
 
 	{pattern = "spell hit rating", id = CR_HIT_SPELL},
 	{pattern = "ranged hit rating", id = CR_HIT_RANGED},
-	{pattern = "hit rating", id = CR_HIT_MELEE},
+	{pattern = "hit rating", id = CR_HIT},
 
 	{pattern = "resilience", id = CR_CRIT_TAKEN_MELEE}, -- resilience is implicitly a rating
 
 	{pattern = "spell haste rating", id = CR_HASTE_SPELL},
 	{pattern = "ranged haste rating", id = CR_HASTE_RANGED},
-	{pattern = "haste rating", id = CR_HASTE_MELEE},
-	{pattern = "speed rating", id = CR_HASTE_MELEE}, -- [Drums of Battle]
+	{pattern = "haste rating", id = CR_HASTE},
 
-	{pattern = "skill rating", id = CR_WEAPON_SKILL},
 	{pattern = "expertise rating", id = CR_EXPERTISE},
 
-	{pattern = "hit avoidance rating", id = CR_HIT_TAKEN_MELEE},
-	--[[
-	{pattern = "dagger skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "sword skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "two%-handed swords skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "axe skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "bow skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "crossbow skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "gun skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "feral combat skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "mace skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "polearm skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "staff skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "two%-handed axes skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "two%-handed maces skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "fist weapons skill rating", id = CR_WEAPON_SKILL},
-	--]]
+	{pattern = "armor penetration rating", id = CR_ARMOR_PENETRATION},
+	{pattern = string.lower(ARMOR), id = ARMOR},
 }
 -------------------------
 -- Added info patterns --
@@ -611,6 +638,11 @@ L["$value to be Dodged/Parried"] = true
 L["$value to be Crit"] = true
 L["$value Crit Dmg Taken"] = true
 L["$value DOT Dmg Taken"] = true
+L["$value% Parry"] = true
+-- for hit rating showing both physical and spell conversions
+-- (+1.21%, S+0.98%)
+-- (+1.21%, +0.98% S)
+L["$value Spell"] = true
 
 ------------------
 -- Stat Summary --

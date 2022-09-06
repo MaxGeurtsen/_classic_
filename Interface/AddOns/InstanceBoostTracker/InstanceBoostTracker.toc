@@ -3,11 +3,11 @@
 # /run print((select(4, GetBuildInfo())));
 # /eventtrace
 
-## Version: 297
-## Notes: Commit 99bd88f5
-## Interface: 20502
+## Version: 3_4_0_1149
+## Notes: Commit fb21ab7a
+## Interface: 30400
 ## Title: Instance Tracker
-## Author: Okrah - Skullflame EU
+## Author: Okrah - Gehennas EU
 
 # https://wowwiki.fandom.com/wiki/Saving_variables_between_game_sessions
 # Variables are saved and loaded in the global environment 
@@ -54,7 +54,6 @@ Features\Timer.lua
 Features\SpeedyAutoLoot.lua
 Features\LootTracker.lua
 Features\AutoFollow.lua
-Features\AntiAfk.lua
 
 # UI components
 UI\GUI.lua

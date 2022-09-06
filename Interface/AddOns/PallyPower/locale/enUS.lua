@@ -14,6 +14,7 @@ L["[|cffffd200Enable|r/|cffffd200Disable|r] The Auto Buff Button or [|cffffd200E
 L["[|cffffd200Enable|r/|cffffd200Disable|r] The Drag Handle Button."] = "[|cffffd200Enable|r/|cffffd200Disable|r] The Drag Handle Button."
 L["[|cffffd200Enable|r/|cffffd200Disable|r] The Player(s) or Class Buttons."] = "[|cffffd200Enable|r/|cffffd200Disable|r] The Player(s) or Class Buttons."
 L["[|cffffd200Enable|r/|cffffd200Disable|r] The Seal Button, Enable/Disable Righteous Fury or select the Seal you want to track."] = "[|cffffd200Enable|r/|cffffd200Disable|r] The Seal Button, Enable/Disable Righteous Fury or select the Seal you want to track."
+L["[Enable/Disable] Class Buttons"] = "[Enable/Disable] Class Buttons"
 L["[Enable/Disable] PallyPower"] = "[Enable/Disable] PallyPower"
 L["[Enable/Disable] PallyPower in Party"] = "[Enable/Disable] PallyPower in Party"
 L["[Enable/Disable] PallyPower while Solo"] = "[Enable/Disable] PallyPower while Solo"
@@ -30,7 +31,7 @@ L["Aura Tracker"] = "Aura Tracker"
 L["Auto Buff Button"] = "Auto Buff Button"
 L["Auto Greater Blessing Key"] = "Auto Greater Blessing Key"
 L["Auto Normal Blessing Key"] = "Auto Normal Blessing Key"
-L["AUTO_ASSIGN_TOOLIP"] = [=[Auto-Assign all Blessings based on
+L["AUTO_ASSIGN_TOOLTIP"] = [=[Auto-Assign all Blessings based on
 the number of available Paladins
 and their available Blessings.
 
@@ -84,18 +85,26 @@ L["If this option is disabled it will also disable the Player Buttons and you wi
 L["If this option is disabled then Class and Player buttons will ignore buffs' duration, allowing buffs to be reapplied at will. This is especially useful for Protection Paladins when they spam Greater Blessings to generate more threat."] = "If this option is disabled then Class and Player buttons will ignore buffs' duration, allowing buffs to be reapplied at will. This is especially useful for Protection Paladins when they spam Greater Blessings to generate more threat."
 L["If this option is disabled then you will no longer see the pop out buttons showing individual players and you will not be able to reapply Normal Blessings while in combat."] = "If this option is disabled then you will no longer see the pop out buttons showing individual players and you will not be able to reapply Normal Blessings while in combat."
 L["If this option is enabled then the Auto Buff Button and the Class Buff Button(s) will not auto buff a Greater Blessing if recipient(s) are not within the Paladins range (100yds). This range check excludes AFK, Dead and Offline players."] = "If this option is enabled then the Auto Buff Button and the Class Buff Button(s) will not auto buff a Greater Blessing if recipient(s) are not within the Paladins range (100yds). This range check excludes AFK, Dead and Offline players."
+L["If you enable this option PallyPower will automatically over-write a Greater Blessing with a Normal Blessing on players marked with the |cffffd200Main Assistant|r role in the Blizzard Raid Panel. This is useful for spot buffing the |cffffd200Main Assistant|r role with Blessing of Sanctuary."] = "If you enable this option PallyPower will automatically over-write a Greater Blessing with a Normal Blessing on players marked with the |cffffd200Main Assistant|r role in the Blizzard Raid Panel. This is useful for spot buffing the |cffffd200Main Assistant|r role with Blessing of Sanctuary."
 L["If you enable this option PallyPower will automatically over-write a Greater Blessing with a Normal Blessing on players marked with the |cffffd200Main Assistant|r role in the Blizzard Raid Panel. This is useful to avoid blessing the |cffffd200Main Assistant|r role with a Greater Blessing of Salvation."] = "If you enable this option PallyPower will automatically over-write a Greater Blessing with a Normal Blessing on players marked with the |cffffd200Main Assistant|r role in the Blizzard Raid Panel. This is useful to avoid blessing the |cffffd200Main Assistant|r role with a Greater Blessing of Salvation."
+L["If you enable this option PallyPower will automatically over-write a Greater Blessing with a Normal Blessing on players marked with the |cffffd200Main Tank|r role in the Blizzard Raid Panel. This is useful for spot buffing the |cffffd200Main Tank|r role with Blessing of Sanctuary."] = "If you enable this option PallyPower will automatically over-write a Greater Blessing with a Normal Blessing on players marked with the |cffffd200Main Tank|r role in the Blizzard Raid Panel. This is useful for spot buffing the |cffffd200Main Tank|r role with Blessing of Sanctuary."
 L["If you enable this option PallyPower will automatically over-write a Greater Blessing with a Normal Blessing on players marked with the |cffffd200Main Tank|r role in the Blizzard Raid Panel. This is useful to avoid blessing the |cffffd200Main Tank|r role with a Greater Blessing of Salvation."] = "If you enable this option PallyPower will automatically over-write a Greater Blessing with a Normal Blessing on players marked with the |cffffd200Main Tank|r role in the Blizzard Raid Panel. This is useful to avoid blessing the |cffffd200Main Tank|r role with a Greater Blessing of Salvation."
 L["If you enable this option, you will not be allowed to assign Blessing of Wisdom to Warriors or Rogues, and Blessing of Might to Mages, Warlocks, or Hunters."] = "If you enable this option, you will not be allowed to assign Blessing of Wisdom to Warriors or Rogues, and Blessing of Might to Mages, Warlocks, or Hunters."
+L["If you enable this option, you will not be allowed to assign Blessing of Wisdom to Warriors, Rogues, or Death Knights and Blessing of Might to Mages, Warlocks, or Hunters."] = "If you enable this option, you will not be allowed to assign Blessing of Wisdom to Warriors, Rogues, or Death Knights and Blessing of Might to Mages, Warlocks, or Hunters."
 L["LAYOUT_TOOLTIP"] = [=[Vertical [Left/Right]
 Horizontal [Up/Down]]=]
 L["Main PallyPower Settings"] = "Main PallyPower Settings"
 L["Main Tank / Main Assist Roles"] = "Main Tank / Main Assist Roles"
-L["MAIN_ROLES_DESCRIPTION"] = [=[These options can be used to automatically assign alternate Normal Blessings for any Greater Blessing assigned to Warriors, Druids or Paladins |cffff0000only|r.
+L["MAIN_ROLES_DESCRIPTION"] = [=[These options can be used to automatically assign alternate Normal Blessings for any Greater Blessing assigned to Warriors, Druids, or Paladins |cffff0000only|r.
 
 Normally the Main Tank and the Main Assist roles have been used to identify Main Tanks and Off-Tanks (Main Assist) however, some guilds assign the Main Tank role to both Main Tanks and Off-Tanks and assign the Main Assist role to Healers.
 
-By having a separate setting for both roles it will allow Paladin Class Leaders or Raid Leaders to remove, as an example, Greater Blessing of Salvation from Tanking classes or if Druid or Paladin Healers are marked with the Main Assist role they could be setup to get Normal Blessing of Wisdom vs Greater Blessing of Might which would allow assigning Greater Blessing of Might for DPS spec'd Druids and Paladins and Normal Blessing of Wisdom to Healing spec'd Druids and Paladins.]=]
+By having a separate setting for both roles it will allow Paladin Class Leaders or Raid Leaders to remove, as an example, Greater Blessing of Salvation from tanking classes. Another example being if Druid or Paladin Healers are marked with the Main Assist role, they could be set up to get normal Blessing of Wisdom vs Greater Blessing of Might which would allow assigning Greater Blessing of Might for DPS spec'd Druids and Paladins and normal Blessing of Wisdom to Healing spec'd Druids and Paladins.]=]
+L["MAIN_ROLES_DESCRIPTION_WRATH"] = [=[These options can be used to automatically assign alternate Normal Blessings for any Greater Blessing assigned to Warriors, Death Knights, Druids, or Paladins |cffff0000only|r.
+
+Normally the Main Tank and the Main Assist roles have been used to identify Main Tanks and Off-Tanks (Main Assist) however, some guilds assign the Main Tank role to both Main Tanks and Off-Tanks and assign the Main Assist role to Healers.
+
+By having a separate setting for both roles it will allow Paladin Class Leaders or Raid Leaders to add, as an example, Blessing of Sanctuary to tanking classes. Another example being if Druid or Paladin Healers are marked with the Main Assist role, they could be set up to get normal Blessing of Wisdom vs Greater Blessing of Might which would allow assigning Greater Blessing of Might for DPS spec'd Druids and Paladins and normal Blessing of Wisdom to Healing spec'd Druids and Paladins.]=]
 L["MINIMAP_ICON_TOOLTIP"] = [=[|cffffffff[Left-Click]|r Open Blessing Assignments
 |cffffffff[Right-Click]|r Open Options]=]
 L["None"] = "None"
@@ -104,6 +113,7 @@ L["Options"] = "Options"
 L["OPTIONS_BUTTON_TOOLTIP"] = [=[Opens the PallyPower
 addon options panel.]=]
 L["Override Druids / Paladins..."] = "Override Druids / Paladins..."
+L["Override Warriors / Death Knights..."] = "Override Warriors / Death Knights..."
 L["Override Warriors..."] = "Override Warriors..."
 L["PallyPower Buttons Scale"] = "PallyPower Buttons Scale"
 L["PallyPower Classic"] = "PallyPower Classic"
@@ -116,9 +126,15 @@ L["PP_REFRESH_TOOLTIP"] = [=[Refreshes all Blessing
 assignments, Talents, and
 Symbol of Kings among Self,
 Party, and Raid Paladins.]=]
+L["Preset"] = "Preset"
+L["PRESET_TOOLTIP"] = [=[|cffffffff[Left-Click]|r Load the last saved Preset.
+
+|cffffffff[Shift-Left-Click]|r Save a preset 
+of all Greater and Normal Blessings 
+currently configured.]=]
 L["Raid only options"] = "Raid only options"
 L["Refresh"] = "Refresh"
-L["REPORT_CHANNEL_OPTION_TOOLTIP"] = [=[Set the desired chennel to broadcast the Bliessings Report to:
+L["REPORT_CHANNEL_OPTION_TOOLTIP"] = [=[Set the desired channel to broadcast the Blessings Report to:
 
 |cffffd200[None]|r Selects channel based on group makeup. (Party/Raid)
 
@@ -138,12 +154,16 @@ L["Seal Button"] = "Seal Button"
 L["Seal Tracker"] = "Seal Tracker"
 L["Select the Aura you want to track"] = "Select the Aura you want to track"
 L["Select the Greater Blessing assignment you wish to over-write on Main Assist: Druids / Paladins."] = "Select the Greater Blessing assignment you wish to over-write on Main Assist: Druids / Paladins."
+L["Select the Greater Blessing assignment you wish to over-write on Main Assist: Warriors / Death Knights."] = "Select the Greater Blessing assignment you wish to over-write on Main Assist: Warriors / Death Knights."
 L["Select the Greater Blessing assignment you wish to over-write on Main Assist: Warriors."] = "Select the Greater Blessing assignment you wish to over-write on Main Assist: Warriors."
 L["Select the Greater Blessing assignment you wish to over-write on Main Tank: Druids / Paladins."] = "Select the Greater Blessing assignment you wish to over-write on Main Tank: Druids / Paladins."
+L["Select the Greater Blessing assignment you wish to over-write on Main Tank: Warriors / Death Knights."] = "Select the Greater Blessing assignment you wish to over-write on Main Tank: Warriors / Death Knights."
 L["Select the Greater Blessing assignment you wish to over-write on Main Tank: Warriors."] = "Select the Greater Blessing assignment you wish to over-write on Main Tank: Warriors."
 L["Select the Normal Blessing you wish to use to over-write the Main Assist: Druids / Paladins."] = "Select the Normal Blessing you wish to use to over-write the Main Assist: Druids / Paladins."
+L["Select the Normal Blessing you wish to use to over-write the Main Assist: Warriors / Death Knights."] = "Select the Normal Blessing you wish to use to over-write the Main Assist: Warriors / Death Knights."
 L["Select the Normal Blessing you wish to use to over-write the Main Assist: Warriors."] = "Select the Normal Blessing you wish to use to over-write the Main Assist: Warriors."
 L["Select the Normal Blessing you wish to use to over-write the Main Tank: Druids / Paladins."] = "Select the Normal Blessing you wish to use to over-write the Main Tank: Druids / Paladins."
+L["Select the Normal Blessing you wish to use to over-write the Main Tank: Warriors / Death Knights."] = "Select the Normal Blessing you wish to use to over-write the Main Tank: Warriors / Death Knights."
 L["Select the Normal Blessing you wish to use to over-write the Main Tank: Warriors."] = "Select the Normal Blessing you wish to use to over-write the Main Tank: Warriors."
 L["Select the Seal you want to track"] = "Select the Seal you want to track"
 L["Show Minimap Icon"] = "Show Minimap Icon"

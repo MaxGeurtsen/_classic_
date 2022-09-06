@@ -2,65 +2,38 @@
 Bagnon_Sets = {
 	["tackleColor"] = {
 	},
-	["fridgeColor"] = {
+	["leatherColor"] = {
 	},
 	["engineerColor"] = {
 	},
-	["refrigeColor"] = {
+	["herbColor"] = {
 	},
 	["inscribeColor"] = {
 	},
 	["soulColor"] = {
 	},
-	["locked"] = true,
 	["quiverColor"] = {
 	},
 	["reagentColor"] = {
 	},
 	["gemColor"] = {
 	},
+	["enchantColor"] = {
+	},
+	["keyColor"] = {
+	},
+	["normalColor"] = {
+	},
+	["profiles"] = {
+	},
+	["mineColor"] = {
+	},
+	["version"] = "9.2.2",
+	["fridgeColor"] = {
+	},
 	["global"] = {
 		["inventory"] = {
-			["strata"] = "HIGH",
-			["point"] = "BOTTOMRIGHT",
-			["hiddenBags"] = {
-				false, -- [1]
-				[-2] = true,
-				[0] = false,
-				[4] = false,
-				[3] = false,
-			},
-			["scale"] = 0.86,
-			["sort"] = true,
-			["borderColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["bagToggle"] = true,
-			["options"] = true,
-			["enabled"] = true,
-			["brokerObject"] = "BagnonLauncher",
-			["columns"] = 10,
-			["reverseBags"] = false,
-			["money"] = true,
-			["spacing"] = 0,
-			["itemScale"] = 1.01,
-			["alpha"] = 1,
-			["y"] = 82.72373962402344,
-			["x"] = -112.0677055571214,
-			["bagBreak"] = false,
-			["showBags"] = true,
-			["reverseSlots"] = false,
-			["hiddenRules"] = {
-			},
-			["color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
+			["y"] = 100,
 			["rules"] = {
 				"all", -- [1]
 				"all/normal", -- [2]
@@ -85,6 +58,17 @@ Bagnon_Sets = {
 				"all/souls", -- [21]
 				"equip/ammo", -- [22]
 			},
+			["point"] = "BOTTOMRIGHT",
+			["hiddenBags"] = {
+				[-2] = true,
+			},
+			["color"] = {
+			},
+			["borderColor"] = {
+			},
+			["hiddenRules"] = {
+			},
+			["x"] = -50,
 		},
 		["vault"] = {
 			["rules"] = {
@@ -119,7 +103,7 @@ Bagnon_Sets = {
 			},
 		},
 		["guild"] = {
-			["y"] = -364.0711059570313,
+			["y"] = 406.269287109375,
 			["rules"] = {
 				"all", -- [1]
 				"all/normal", -- [2]
@@ -144,18 +128,25 @@ Bagnon_Sets = {
 				"all/souls", -- [21]
 				"equip/ammo", -- [22]
 			},
-			["point"] = "TOPLEFT",
+			["point"] = "BOTTOMLEFT",
 			["borderColor"] = {
 			},
 			["color"] = {
 			},
-			["hiddenBags"] = {
-			},
+			["x"] = 770.2564697265625,
 			["hiddenRules"] = {
 			},
-			["x"] = 695.2380981445312,
+			["hiddenBags"] = {
+			},
 		},
 		["bank"] = {
+			["y"] = 326.7692565917969,
+			["x"] = 95.00000762939453,
+			["point"] = "BOTTOMLEFT",
+			["borderColor"] = {
+			},
+			["color"] = {
+			},
 			["rules"] = {
 				"all", -- [1]
 				"all/normal", -- [2]
@@ -180,43 +171,10 @@ Bagnon_Sets = {
 				"all/souls", -- [21]
 				"equip/ammo", -- [22]
 			},
-			["point"] = "TOPLEFT",
-			["hiddenBags"] = {
-				[5] = false,
-			},
-			["color"] = {
-			},
-			["bagBreak"] = true,
-			["alpha"] = 1,
-			["broker"] = true,
-			["y"] = -177.1727294921875,
-			["x"] = 504.2839965820313,
-			["sort"] = true,
-			["borderColor"] = {
-			},
-			["itemScale"] = 1,
-			["scale"] = 1,
-			["showBags"] = true,
 			["hiddenRules"] = {
 			},
+			["hiddenBags"] = {
+			},
 		},
-	},
-	["keyColor"] = {
-	},
-	["normalColor"] = {
-	},
-	["profiles"] = {
-	},
-	["mineColor"] = {
-	},
-	["glowUnusable"] = true,
-	["version"] = "9.1.5",
-	["displayGems"] = false,
-	["glowPoor"] = false,
-	["herbColor"] = {
-	},
-	["enchantColor"] = {
-	},
-	["leatherColor"] = {
 	},
 }

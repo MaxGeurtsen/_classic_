@@ -1,29 +1,21 @@
-## Interface: 20504
+## Interface: 30400
 ## Title: RatingBuster
 ## Notes: Item stat breakdown, analysis and comparing
 ## Notes-zhTW: 裝備數值解析與比較
 ## Author: Whitetooth, raethkcj
 ## SavedVariables: RatingBusterDB
-## OptionalDeps: Ace3, TipHookerLib, StatLogicLib, UTF8, LibBabble-Inventory-3.0, TankPoints
-## X-Embeds: Ace3, TipHookerLib, StatLogicLib, UTF8, LibBabble-Inventory-3.0
+## Dependencies: StatLogic
+## OptionalDeps: Ace3, TipHookerLib
 ## X-Category: Interface Enhancements
 ## X-License: GPL v2
-## X-Encoding: UTF-8
 ## X-WoWI-ID: 26235
+## X-Wago-ID: RaN0eM6j
 
-#############
-# Libraries #
-#############
-UTF8\utf8data.lua
-UTF8\utf8.lua
+# Libraries
 embeds.xml
 
-################
-# Localization #
-################
+# Localization
 locales\locales.xml
 
-########
-# Core #
-########
+# Core
 RatingBuster.lua

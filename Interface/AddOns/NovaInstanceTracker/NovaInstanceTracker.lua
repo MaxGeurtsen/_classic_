@@ -4,15 +4,22 @@
 --https://www.curseforge.com/members/venomisto/projects
 
 NIT = LibStub("AceAddon-3.0"):NewAddon("NovaInstanceTracker", "AceComm-3.0");
+local _, _, _, tocVersion = GetBuildInfo();
 NIT.expansionNum = 1;
 if (WOW_PROJECT_ID == WOW_PROJECT_CLASSIC) then
 	NIT.isClassic = true;
+elseif (tocVersion > 30000 and tocVersion < 40000) then
+	NIT.isWrath = true;
+	NIT.expansionNum = 3;
+	if (GetRealmName() ~= "Classic Beta PvE" and GetServerTime() < 1664200800) then --Mon Sep 26 2022 14:00:00 GMT+0000;
+		NIT.isPrepatch = true;
+	end
 elseif (WOW_PROJECT_ID == WOW_PROJECT_BURNING_CRUSADE_CLASSIC) then
 	NIT.isTBC = true;
 	NIT.expansionNum = 2;
-elseif (WOW_PROJECT_ID == WOW_PROJECT_WRATH_CLASSIC) then
-	NIT.isWrath = true;
-	NIT.expansionNum = 3;
+--elseif (WOW_PROJECT_ID == WOW_PROJECT_WRATH_CLASSIC) then
+--	NIT.isWrath = true;
+--	NIT.expansionNum = 3;
 elseif (WOW_PROJECT_ID == WOW_PROJECT_MAINLINE) then
 	NIT.isRetail = true;
 	NIT.expansionNum = 10;
@@ -33,16 +40,22 @@ NIT.LDBIcon = LibStub("LibDBIcon-1.0");
 local version = GetAddOnMetadata("NovaInstanceTracker", "Version") or 9999;
 NIT.classic = true;
 NIT.latestRemoteVersion = version;
---local tbcRelease = 1622570400;
-local utcTime = time(date("!*t", GetServerTime()));
-if (NIT.isTBC) then
+if (NIT.isWrath) then
 	NIT.hourlyLimit = 5;
-	NIT.dailyLimit = 200;  --No limit in prepatch, but maybe limit after portal opens?
-	--if (utcTime > tbcRelease) then
+	NIT.dailyLimit = 999;  --No limit in prepatch, but maybe a limit later?
+	if (NIT.isPrepatch) then
 		NIT.maxLevel = 70;
-	--else
-	--	NIT.maxLevel = 60;
-	--end
+	else
+		NIT.maxLevel = 80;
+	end
+elseif (NIT.isTBC) then
+	NIT.hourlyLimit = 5;
+	NIT.dailyLimit = 999;
+	NIT.maxLevel = 70;
+elseif (NIT.isRetail) then
+	NIT.hourlyLimit = 10;
+	NIT.dailyLimit = 999;
+	NIT.maxLevel = 60;
 else
 	NIT.hourlyLimit = 5;
 	NIT.dailyLimit = 30;
@@ -848,7 +861,14 @@ function NIT:updateMinimapButton(tooltip, frame)
 					mobCount = data.mobCountFromKill;
 				end
 				tooltip:AddLine("|cFF9CD6DE" .. L["mobCount"] .. ":|r |cFFFFFFFF" .. (mobCount or "Unknown"));
+			end
+			if (data.honor) then
+				tooltip:AddLine("|cFF9CD6DE" .. L["Honor"] .. ":|r |cFFFFFFFF" .. data.honor);
+			end
+			if (not NIT.isClassic and not NIT.isTBC and UnitLevel("player") ~= NIT.maxLevel and data.type ~= "arena") then
 				tooltip:AddLine("|cFF9CD6DE" .. L["experience"] .. ":|r |cFFFFFFFF" .. (NIT:commaValue(data.xpFromChat) or "Unknown"));
+			end
+			if (not data.isPvp) then
 				if (data.rawMoneyCount and data.rawMoneyCount > 0) then
 					tooltip:AddLine("|cFF9CD6DE" .. L["rawGoldMobs"] .. ":|r |cFFFFFFFF" .. GetCoinTextureString(data.rawMoneyCount));
 				elseif (data.enteredMoney and data.leftMoney and data.enteredMoney > 0 and data.leftMoney > 0
@@ -862,9 +882,6 @@ function NIT:updateMinimapButton(tooltip, frame)
 				if (data.groupAverage and data.groupAverage > 0) then
 					tooltip:AddLine("|cFF9CD6DE" .. L["averageGroupLevel"] .. ":|r |cFFFFFFFF" .. (NIT:round(data.groupAverage, 2) or "Unknown"));
 				end
-			end
-			if (data.honor) then
-				tooltip:AddLine("|cFF9CD6DE" .. L["Honor"] .. ":|r |cFFFFFFFF" .. data.honor);
 			end
 			if (data.rep and next(data.rep)) then
 				tooltip:AddLine("|cFFFFFF00" .. L["repGains"] .. ":|r");
@@ -1799,9 +1816,9 @@ function NIT:recalcInstanceLineFramesTooltip(obj)
 		if (not data.isPvp) then
 			text = text .. "\n|cFF9CD6DE" .. L["mobCount"] .. ":|r " .. (mobCount or "Unknown");
 		end
-		if (not data.isPvp) then
+		if (not data.isPvp or (data.xpFromChat and data.xpFromChat > 0)) then
 			text = text .. "\n|cFF9CD6DE" .. L["experience"] .. ":|r " .. (NIT:commaValue(data.xpFromChat) or "Unknown");
-			if (timeSpentRaw and timeSpentRaw > 0 and tonumber(data.xpFromChat) and data.xpFromChat > 0 and not data.isPvp) then
+			if (timeSpentRaw and timeSpentRaw > 0 and tonumber(data.xpFromChat) and data.xpFromChat > 0) then
 				local xpPerHour = NIT:commaValue(NIT:round((tonumber(data.xpFromChat) / timeSpentRaw) * 3600));
 				text = text .. "\n|cFF9CD6DE" .. L["experiencePerHour"] .. ":|r " .. xpPerHour;
 			end

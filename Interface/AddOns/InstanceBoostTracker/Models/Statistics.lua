@@ -1,6 +1,6 @@
 Statistics = {}
 
-function Statistics:CreateStatisticsFor(instanceId, playerName)
+function Statistics:CreateStatisticsFor(instanceId, playerName, instanceName)
     DebugHelper:Print("Statistics:CreateStatisticsFor()")
 
     playerName = playerName or IT_CONST_UNIT_NAME_PLAYER
@@ -15,12 +15,13 @@ function Statistics:CreateStatisticsFor(instanceId, playerName)
             Experience = 0,
             Gold = 0,
             Kills = 0,
-            Reputation = 0
+            Reputation = 0,
+            Name = instanceName
         }
     end
 end
 
-function Statistics:ImportStatistics(instanceId, playerName, experience, gold, kills, reputation)
+function Statistics:ImportStatistics(instanceId, playerName, experience, gold, kills, reputation, instanceName)
     DebugHelper:Print("Statistics:ImportStatistics()")
     
     -- If we don't check for the playername being nil then we will override our own statistics.
@@ -31,7 +32,8 @@ function Statistics:ImportStatistics(instanceId, playerName, experience, gold, k
             Experience = tonumber(experience),
             Gold = tonumber(gold),
             Kills = tonumber(kills),
-            Reputation = tonumber(reputation)
+            Reputation = tonumber(reputation),
+            Name = instanceName
         }
     end
 end

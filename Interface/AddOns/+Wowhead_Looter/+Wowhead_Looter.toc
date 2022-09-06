@@ -1,0 +1,13 @@
+## Interface: 20504
+## Title: Wowhead Looter
+## Notes: Gathers data for Wowhead while you play. Version 20504.
+## Author: Wowhead
+## eMail: feedback@wowhead.com
+## URL: https://www.wowhead.com/
+## Version: 20504
+## LoadOnDemand: 0
+## DefaultState: enabled
+## SavedVariables: wlTime, wlVersion, wlUploaded, wlStats, wlExportData, wlRealmList, wlAuction, wlEvent, wlItemSuffix, wlObject, wlProfile, wlProfileData, wlUnit, wlItemDurability, wlItemBonuses, wlTradeSkillDifficulty
+## SavedVariablesPerCharacter: wlScans, wlSetting, wlPetBlacklist, wlUIReloaded
+
+Wowhead_Looter.xml

@@ -6,3 +6,15 @@ LFGBulletinBoard: enabled
 Outfitter: disabled
 WoWPro: disabled
 WoWPro_Leveling: disabled
+Talented: enabled
+AtlasLootClassic_Options: enabled
+Details: enabled
+ChatCopyPaste: enabled
+Buffet: disabled
+WhatsTraining: enabled
+GogoLoot: disabled
+RepHelper_Classic: disabled
+Bagnon: enabled
+Bagnon_VoidStorage: enabled
+Bagnon_GuildBank: enabled
+Bagnon_Config: enabled

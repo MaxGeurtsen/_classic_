@@ -29,22 +29,22 @@ VER 3 0000000000000024 "AUCTION" "134567"
 END
 VER 3 000000000000000E "AutoHP" "INV_Misc_QuestionMark"
 #showtooltip
-/cast [combat,mod:shift] item:22105; item:34062
+/cast [combat] item:39327; item:33452
 END
 VER 3 0000000000000022 "AutoMP" "INV_Misc_QuestionMark"
 #showtooltip
-/cast [mod:ctrl,target=player] item:20520; [combat] item:22832; item:34062
+/cast item:6948
 END
 VER 3 000000000000001B "BOSS" "135874"
 /gq switch boss
 END
 VER 3 000000000000000F "ConsumableHP" "INV_Misc_QuestionMark"
 #showtooltip
-/cast [mod:shift] item:22105; 
+/cast item:39327
 END
 VER 3 0000000000000010 "ConsumableMP" "INV_Misc_QuestionMark"
 #showtooltip
-/cast [mod:ctrl,target=player] item:20520; item:22832
+/cast item:6948
 END
 VER 3 0000000000000001 "d" "132089"
 /2 Crafting [Small Silk Pack] 10 slots  with your mats! 12 silk cloth, 2 heavy leather, 3 fine thread
@@ -53,8 +53,7 @@ VER 3 0000000000000009 "dad" "INV_MISC_QUESTIONMARK"
 /run for i=1,GetMerchantNumItems() do local l=GetMerchantItemLink(i) if l then if l:find("Design: Amulet of the Moon") then BuyMerchantItem(i, 1)end end end
 END
 VER 3 0000000000000005 "Decursive" "INV_MISC_QUESTIONMARK"
-/stopcasting
-/cast [@mouseover,nomod,exists] Fear;  [@mouseover,exists,mod:ctrl] Fear; [@mouseover,exists,mod:shift] Fear
+/script DecursiveRootTable.Dcr:Println('No spell available')
 END
 VER 3 000000000000000B "drink" "3867503"
 #showtooltip
@@ -63,14 +62,22 @@ VER 3 000000000000000B "drink" "3867503"
 END
 VER 3 000000000000000C "DrinkOnlyMP" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:34062
+/cast item:6948
 END
 VER 3 0000000000000017 "DUNG" "132110"
-LFM Hyjal GDKP 80% even Split || Tokens and Archi Loot 2K, rest 1K || NEED ALL!!
+/1 LFM Botanica N healer
+/6 LFM Botanica N healer
+/5 LFM Botanica N healer
 END
 VER 3 000000000000000D "FoodOnlyHP" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:34062
+/cast item:33452
+END
+VER 3 0000000000000028 "fsf" "INV_MISC_QUESTIONMARK"
+#showtooltip Earth Shock(rank 1)
+/stopcasting
+/tar Shadowsword Fury Mage
+/cast Earth Shock(rank 1)
 END
 VER 3 0000000000000027 "GHETTO" "136010"
  /run InviteUnit("a");(C_Timer.After)(1,function() LeaveParty() end)
@@ -79,7 +86,7 @@ VER 3 000000000000001A "HS" "132137"
 /run InviteUnit("a");(C_Timer.After(1, LeaveParty)
 END
 VER 3 0000000000000026 "Hyjal" "132339"
-LFM Hyjal GDKP 80/20|| NEED ALL|| Tokens/Arci loot: 2K, rest 1K
+LFM Hyjal GDKP 80/20|| NEED ALL|| Tokens/ToC: 1,5K, rest 750g
 END
 VER 3 0000000000000014 "ORB" "132108"
 /use Tainted Core
@@ -129,5 +136,5 @@ VER 3 0000000000000012 "world" "INV_MISC_QUESTIONMARK"
 /4 WTS |cffa335ee|Hitem:31332::::::::70::::::::|h[Blinkstrike]|h|r, wisp me an offer
 END
 VER 3 0000000000000025 "ZA spam" "132242"
-LFM ZA GDKP 80/20 ||Need ALL!! || Trinkets: 2k, weps/rings/neck: 1k, rest 500g
+LFM ZA GDKP 80/20 || Need ALL!! || Trinkets: 2k, weps/rings/neck: 1k, rest 500g
 END

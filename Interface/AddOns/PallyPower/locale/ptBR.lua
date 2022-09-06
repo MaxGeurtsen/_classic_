@@ -8,6 +8,8 @@ L["[|cffffd200Enable|r/|cffffd200Disable|r] The Auto Buff Button or [|cffffd200E
 L["[|cffffd200Enable|r/|cffffd200Disable|r] The Drag Handle Button."] = "[|cffffd200Enable|r / |cffffd200Disable|r] O botão da alça de arrasto."
 L["[|cffffd200Enable|r/|cffffd200Disable|r] The Player(s) or Class Buttons."] = "[|cffffd200Enable|r / |cffffd200Disable|r] O player (s) ou botões de classe."
 L["[|cffffd200Enable|r/|cffffd200Disable|r] The Seal Button, Enable/Disable Righteous Fury or select the Seal you want to track."] = "[|cffffd200Enable|r / |cffffd200Disable|r] O botão Selo, Ativar / Desativar Fúria Correta ou selecione o Selo que você deseja rastrear."
+--[[Translation missing --]]
+L["[Enable/Disable] Class Buttons"] = "[Enable/Disable] Class Buttons"
 L["[Enable/Disable] PallyPower"] = "[Ativar / Desativar] PallyPower"
 L["[Enable/Disable] PallyPower in Party"] = "[Ativar / Desativar] PallyPower no grupo"
 L["[Enable/Disable] PallyPower while Solo"] = "[Ativar / Desativar] PallyPower enquanto Solo"
@@ -24,7 +26,7 @@ L["Aura Tracker"] = "Aura Tracker"
 L["Auto Buff Button"] = "Botão de Buff automático"
 L["Auto Greater Blessing Key"] = "Chave de bênção automática maior"
 L["Auto Normal Blessing Key"] = "Chave de bênção normal automática"
-L["AUTO_ASSIGN_TOOLIP"] = [=[Atribuir automaticamente todas as bênçãos com base em
+L["AUTO_ASSIGN_TOOLTIP"] = [=[Atribuir automaticamente todas as bênçãos com base em
 o número de paladinos disponíveis
 e suas bênçãos disponíveis.
 
@@ -79,9 +81,15 @@ L["If this option is disabled it will also disable the Player Buttons and you wi
 L["If this option is disabled then Class and Player buttons will ignore buffs' duration, allowing buffs to be reapplied at will. This is especially useful for Protection Paladins when they spam Greater Blessings to generate more threat."] = "Se esta opção estiver desabilitada, os botões Classe e Jogador ignorarão uma duração de buffs, permitindo que um buff seja reaplicado à vontade. Isso é especialmente útil para os Paladins de Proteção quando eles enviam spames de Bênçãos Maiores para gerar mais ameaças."
 L["If this option is disabled then you will no longer see the pop out buttons showing individual players and you will not be able to reapply Normal Blessings while in combat."] = "Se esta opção estiver desativada, você não verá mais os botões pop-up que mostram jogadores individuais e não poderá reaplicar as bênçãos normais durante o combate."
 L["If this option is enabled then the Auto Buff Button and the Class Buff Button(s) will not auto buff a Greater Blessing if recipient(s) are not within the Paladins range (100yds). This range check excludes AFK, Dead and Offline players."] = "Se esta opção estiver ativada, o botão Auto Buff e o (s) botão (s) de classe não receberão uma bênção maior automaticamente se os destinatários não estiverem dentro do intervalo de paladinos (100yds). Essa verificação de intervalo exclui AFK, Dead e jogadores offline ."
+--[[Translation missing --]]
+L["If you enable this option PallyPower will automatically over-write a Greater Blessing with a Normal Blessing on players marked with the |cffffd200Main Assistant|r role in the Blizzard Raid Panel. This is useful for spot buffing the |cffffd200Main Assistant|r role with Blessing of Sanctuary."] = "If you enable this option PallyPower will automatically over-write a Greater Blessing with a Normal Blessing on players marked with the |cffffd200Main Assistant|r role in the Blizzard Raid Panel. This is useful for spot buffing the |cffffd200Main Assistant|r role with Blessing of Sanctuary."
 L["If you enable this option PallyPower will automatically over-write a Greater Blessing with a Normal Blessing on players marked with the |cffffd200Main Assistant|r role in the Blizzard Raid Panel. This is useful to avoid blessing the |cffffd200Main Assistant|r role with a Greater Blessing of Salvation."] = "Se você habilitar esta opção, o PallyPower sobrescreverá automaticamente uma Benção Maior com uma Benção Normal nos jogadores marcados com a função |cffffd200Main Assistant|r no painel de ataque da Blizzard. Isso é útil para evitar abençoar a |cffffd200Main Assistant|r papel com uma maior bênção da salvação ."
+--[[Translation missing --]]
+L["If you enable this option PallyPower will automatically over-write a Greater Blessing with a Normal Blessing on players marked with the |cffffd200Main Tank|r role in the Blizzard Raid Panel. This is useful for spot buffing the |cffffd200Main Tank|r role with Blessing of Sanctuary."] = "If you enable this option PallyPower will automatically over-write a Greater Blessing with a Normal Blessing on players marked with the |cffffd200Main Tank|r role in the Blizzard Raid Panel. This is useful for spot buffing the |cffffd200Main Tank|r role with Blessing of Sanctuary."
 L["If you enable this option PallyPower will automatically over-write a Greater Blessing with a Normal Blessing on players marked with the |cffffd200Main Tank|r role in the Blizzard Raid Panel. This is useful to avoid blessing the |cffffd200Main Tank|r role with a Greater Blessing of Salvation."] = "Se você habilitar esta opção, o PallyPower sobrescreverá automaticamente uma Benção Maior com uma Benção Normal nos jogadores marcados com a função |cffffd200Main Tank|r no painel de ataque da Blizzard. Isso é útil para evitar abençoar a |cffffd200Main Tank|r papel com uma maior bênção da salvação ."
 L["If you enable this option, you will not be allowed to assign Blessing of Wisdom to Warriors or Rogues, and Blessing of Might to Mages, Warlocks, or Hunters."] = "Se você habilitar esta opção, não poderá atribuir Bênção da Sabedoria a Guerreiros ou Ladinos e Bênção do Poder a Magos, Bruxos e Caçadores."
+--[[Translation missing --]]
+L["If you enable this option, you will not be allowed to assign Blessing of Wisdom to Warriors, Rogues, or Death Knights and Blessing of Might to Mages, Warlocks, or Hunters."] = "If you enable this option, you will not be allowed to assign Blessing of Wisdom to Warriors, Rogues, or Death Knights and Blessing of Might to Mages, Warlocks, or Hunters."
 L["LAYOUT_TOOLTIP"] = [=[Vertical [Esquerda / Direita]
 Horizontal [Para cima / Para baixo]]=]
 L["Main PallyPower Settings"] = "Principais configurações do PallyPower"
@@ -92,6 +100,12 @@ Normalmente, as funções Tanque Principal e Assistência Principal foram usadas
 
 Por ter uma configuração separada para ambas as funções, permitirá aos Líderes da Classe Paladin ou Líderes de Raide removerem, por exemplo, Maior Bênção da Salvação das classes Tanking ou se Druid ou Curandeiros da Paladina estiverem marcados com a função de Assistência Principal que eles poderiam ser configurados para obter. Bênção Normal da Sabedoria vs Maior Bênção do Poder, o que permitiria atribuir Maior Bênção do Poder para Druidas e Paladinos específicos do DPS e Bênção Normal da Sabedoria para Curar Druidas e Paladinos específicos.
 ]=]
+--[[Translation missing --]]
+L["MAIN_ROLES_DESCRIPTION_WRATH"] = [=[These options can be used to automatically assign alternate Normal Blessings for any Greater Blessing assigned to Warriors, Death Knights, Druids, or Paladins |cffff0000only|r.
+
+Normally the Main Tank and the Main Assist roles have been used to identify Main Tanks and Off-Tanks (Main Assist) however, some guilds assign the Main Tank role to both Main Tanks and Off-Tanks and assign the Main Assist role to Healers.
+
+By having a separate setting for both roles it will allow Paladin Class Leaders or Raid Leaders to add, as an example, Blessing of Sanctuary to tanking classes. Another example being if Druid or Paladin Healers are marked with the Main Assist role, they could be set up to get normal Blessing of Wisdom vs Greater Blessing of Might which would allow assigning Greater Blessing of Might for DPS spec'd Druids and Paladins and normal Blessing of Wisdom to Healing spec'd Druids and Paladins.]=]
 L["MINIMAP_ICON_TOOLTIP"] = [=[|cffffffff [Clique com o Botão Esquerdo]|r Abrir Atribuições de Bênção
 |cffffffff [Clique com o Botão Direito]|r Abrir Opções]=]
 L["None"] = "Nenhum"
@@ -100,6 +114,8 @@ L["Options"] = "Opções"
 L["OPTIONS_BUTTON_TOOLTIP"] = [=[Abre o PallyPower
 painel de opções adicionais.]=]
 L["Override Druids / Paladins..."] = "Substituir druidas / paladinos ..."
+--[[Translation missing --]]
+L["Override Warriors / Death Knights..."] = "Override Warriors / Death Knights..."
 L["Override Warriors..."] = "Substituir guerreiros ..."
 L["PallyPower Buttons Scale"] = "PallyPower Buttons Scale"
 L["PallyPower Classic"] = "PallyPower Classic"
@@ -112,6 +128,14 @@ L["PP_REFRESH_TOOLTIP"] = [=[Atualiza todas as bênçãos
 atribuições, talentos e
 Símbolo dos reis entre si,
 Party e Raid Paladins.]=]
+--[[Translation missing --]]
+L["Preset"] = "Preset"
+--[[Translation missing --]]
+L["PRESET_TOOLTIP"] = [=[|cffffffff[Left-Click]|r Load the last saved Preset.
+
+|cffffffff[Shift-Left-Click]|r Save a preset 
+of all Greater and Normal Blessings 
+currently configured.]=]
 L["Raid only options"] = "Opções somente de invasão"
 L["Refresh"] = "Atualizar"
 L["REPORT_CHANNEL_OPTION_TOOLTIP"] = [=[Defina o canil desejado para transmitir o Relatório Bliessings para:
@@ -134,12 +158,20 @@ L["Seal Button"] = "Botão de vedação"
 L["Seal Tracker"] = "Seal Tracker"
 L["Select the Aura you want to track"] = "Selecione a Aura que você deseja rastrear"
 L["Select the Greater Blessing assignment you wish to over-write on Main Assist: Druids / Paladins."] = "Selecione a tarefa de Grande Bênção que você deseja sobrescrever no Tanque Principal: Druidas / Paladinos."
+--[[Translation missing --]]
+L["Select the Greater Blessing assignment you wish to over-write on Main Assist: Warriors / Death Knights."] = "Select the Greater Blessing assignment you wish to over-write on Main Assist: Warriors / Death Knights."
 L["Select the Greater Blessing assignment you wish to over-write on Main Assist: Warriors."] = "Selecione a tarefa de Grande Bênção que você deseja sobrescrever no Tanque Principal: Guerreiros."
 L["Select the Greater Blessing assignment you wish to over-write on Main Tank: Druids / Paladins."] = "Selecione a tarefa de Bênção Maior que você deseja sobrescrever no Tanque Principal: Druidas / Paladinos."
+--[[Translation missing --]]
+L["Select the Greater Blessing assignment you wish to over-write on Main Tank: Warriors / Death Knights."] = "Select the Greater Blessing assignment you wish to over-write on Main Tank: Warriors / Death Knights."
 L["Select the Greater Blessing assignment you wish to over-write on Main Tank: Warriors."] = "Selecione a tarefa de Grande Bênção que você deseja sobrescrever no tanque principal: guerreiros."
 L["Select the Normal Blessing you wish to use to over-write the Main Assist: Druids / Paladins."] = "Selecione a bênção normal que deseja usar para substituir o tanque principal: druidas / paladinos."
+--[[Translation missing --]]
+L["Select the Normal Blessing you wish to use to over-write the Main Assist: Warriors / Death Knights."] = "Select the Normal Blessing you wish to use to over-write the Main Assist: Warriors / Death Knights."
 L["Select the Normal Blessing you wish to use to over-write the Main Assist: Warriors."] = "Selecione a bênção normal que deseja usar para substituir o tanque principal: guerreiros."
 L["Select the Normal Blessing you wish to use to over-write the Main Tank: Druids / Paladins."] = "Selecione a bênção normal que deseja usar para substituir o tanque principal: druidas / paladinos."
+--[[Translation missing --]]
+L["Select the Normal Blessing you wish to use to over-write the Main Tank: Warriors / Death Knights."] = "Select the Normal Blessing you wish to use to over-write the Main Tank: Warriors / Death Knights."
 L["Select the Normal Blessing you wish to use to over-write the Main Tank: Warriors."] = "Selecione a bênção normal que deseja usar para substituir o tanque principal: guerreiros."
 L["Select the Seal you want to track"] = "Selecione o selo que você deseja rastrear"
 L["Show Minimap Icon"] = "Mostrar ícone do Minimapa"

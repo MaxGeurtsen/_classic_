@@ -1,0 +1,12 @@
+VER 3 0000000001000002 "it" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/click PetActionButton1
+/startattack
+/cast icy touch
+END
+VER 3 0000000001000001 "pet" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/click PetActionButton1
+/startattack
+/cast scourge strike
+END

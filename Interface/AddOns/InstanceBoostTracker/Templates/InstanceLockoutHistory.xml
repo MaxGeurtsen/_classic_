@@ -1,7 +1,7 @@
 <Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/..\FrameXML\UI.xsd">
 
 	<Frame name="InstanceLockoutHistoryItemTemplate" virtual="true">
-		<Size y="12" x="860"/>
+		<Size y="14" x="860"/>
 		<Layers>
 			<Layer level="BACKGROUND">
 				<Texture parentKey="Background" setAllPoints="true">
@@ -9,39 +9,46 @@
 				</Texture>
 			</Layer>
 			<Layer level="ARTWORK">
+
 				<FontString parentKey="Id" inherits="GameFontHighlightSmall" justifyH="LEFT">
 					<Size x="70"/>
 				</FontString>
+
 				<FontString parentKey="Character" inherits="GameFontHighlightSmall" justifyH="LEFT">
-					<Size x="70"/>
+					<Size x="80"/>
 					<Anchors>
 						<Anchor point="TOPLEFT" relativePoint="TOPRIGHT" relativeKey="$parent.Id"/>
 					</Anchors>
 				</FontString>
+
 				<FontString parentKey="InstanceName" inherits="GameFontHighlightSmall" justifyH="LEFT">
-					<Size x="180"/>
+					<Size x="240"/>
 					<Anchors>
 						<Anchor point="TOPLEFT" relativePoint="TOPRIGHT" relativeKey="$parent.Character"/>
 					</Anchors>
 				</FontString>
+
 				<FontString parentKey="StartDateTime" inherits="GameFontHighlightSmall" justifyH="LEFT">
 					<Size x="175"/>
 					<Anchors>
 						<Anchor point="TOPLEFT" relativePoint="TOPRIGHT" relativeKey="$parent.InstanceName"/>
 					</Anchors>
 				</FontString>
+
 				<FontString parentKey="EndDateTime" inherits="GameFontHighlightSmall" justifyH="LEFT">
 					<Size x="175"/>
 					<Anchors>
 						<Anchor point="TOPLEFT" relativePoint="TOPRIGHT" relativeKey="$parent.StartDateTime"/>
 					</Anchors>
 				</FontString>
+
 				<FontString parentKey="TimeTaken" inherits="GameFontHighlightSmall" justifyH="LEFT">
 					<Size x="50"/>
 					<Anchors>
 						<Anchor point="TOPLEFT" relativePoint="TOPRIGHT" relativeKey="$parent.EndDateTime"/>
 					</Anchors>
 				</FontString>
+
 			</Layer>
 			<Layer level="HIGHLIGHT">
 				<Texture parentKey="Highlight" setAllPoints="true" alphaMode="ADD">

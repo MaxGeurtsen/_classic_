@@ -29,19 +29,58 @@ function StatisticsTracker:BroadcastLoop()
 end
 StatisticsTracker:BroadcastLoop()
 
-function StatisticsTracker:StartTracking(identifier, playerName)
+function StatisticsTracker:StartTracking(identifier, playerName, instanceName)
     DebugHelper:Print("StatisticsTracker:StartTracking()")
 
     if Settings:GetKey("FEATURE_LockoutStatistics") then
         INSTANCE_ID = identifier
-        Statistics:CreateStatisticsFor(INSTANCE_ID, playerName)
+        Statistics:CreateStatisticsFor(INSTANCE_ID, playerName, instanceName)
+        --print(INSTANCE_ID)
     end
 end
 
 function StatisticsTracker:StopTracking()
     if INSTANCE_ID then
         StatisticsTracker:CreateDelayedStatisticsLink(INSTANCE_ID)
+        StatisticsTracker:ReportToChat(INSTANCE_ID)
         INSTANCE_ID = nil
+    end
+end
+
+-- /script StatisticsTracker:ReportToChat(8387992)
+function StatisticsTracker:ReportToChat(identifier)
+    local stats = Statistics:GetStatisticsFor(identifier, IT_CONST_UNIT_NAME_PLAYER)
+    local accLockout = AccountLockout:Get(identifier)
+    if stats ~= nil and accLockout ~= nil then
+        local msg = stats.Name
+
+        if stats.Kills > 0 then
+            msg = msg..", Mobs: "..stats.Kills
+        end
+
+        if stats.Experience > 0 then
+            msg = msg..", XP: "..stats.Experience
+
+            -- resetsPerHour = Calculate TT divide 60 by TT
+            -- Multiply XP * resetsPerHour
+            local duration = DateTimeHelper:FromTable(accLockout.endDateTime) - DateTimeHelper:FromTable(accLockout.startDateTime)
+            local hourlyXP = 0
+            if duration:gethours() == 0 then
+                local resetsPerHour = 60 / duration:getminutes()
+                hourlyXP = math.floor(stats.Experience * resetsPerHour)
+                msg = msg..", Hourly: "..tostring(hourlyXP)
+            end
+        end
+
+        if stats.Gold > 0 then
+            msg = msg..", Money: "..GetCoinText(stats.Gold)
+        end
+
+        if Settings:GetKey("STATISTICS_REPORT_PARTY") and UnitInParty("player") and not UnitInRaid("player") then
+            SendChatMessage("InstanceTracker - "..msg, "party")
+        else
+            IT:PrintMsg(msg)
+        end
     end
 end
 
@@ -52,7 +91,7 @@ function StatisticsTracker:ImportStatistics(instanceName, playerName, gold, expe
         local instanceLockout = CharacterLockout:Get(instanceName)
         if instanceLockout then
             DebugHelper:Print("-> Found id "..instanceLockout.identifier.." for the name "..instanceName)
-            Statistics:ImportStatistics(instanceLockout.identifier, playerName, experience, gold, kills, reputation)
+            Statistics:ImportStatistics(instanceLockout.identifier, playerName, experience, gold, kills, reputation, instanceName)
         end
     end
 end
@@ -60,7 +99,6 @@ end
 function StatisticsTracker:CreateStatisticsLink(identifier)
     if Settings:GetKey("STATISTICS_REPORT") and identifier then
         local link = "|cffff6633|HInstanceTrackerLink:lockoutstatistics:"..identifier.."|hClick here to view the statistics for "..identifier.."|h|r"
-        --ChatFrame1:AddMessage(link);
         IT:PrintMsg(link)
     end
 end

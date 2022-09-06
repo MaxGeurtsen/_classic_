@@ -13,8 +13,8 @@ DejaClassicStatsDBPC = {
 		["DejaClassicStatsShowItemLevelChecked"] = {
 			["ShowItemLevelSetChecked"] = false,
 		},
-		["DejaClassicStatsDesaturateScrollArtBackground"] = {
-			["DesaturateScrollArtBackgroundChecked"] = false,
+		["dejacharacterstatsExpandButtonChecked"] = {
+			["ExpandButtonSetChecked"] = true,
 		},
 		["DejaClassicStatsShowEnchantChecked"] = {
 			["ShowEnchantSetChecked"] = true,
@@ -91,8 +91,8 @@ DejaClassicStatsDBPC = {
 		["dejacharacterstatsExpandButtonAltPlacementChecked"] = {
 			["ExpandButtonAltPlacementSetChecked"] = false,
 		},
-		["dejacharacterstatsExpandButtonChecked"] = {
-			["ExpandButtonSetChecked"] = true,
+		["DejaClassicStatsDesaturateScrollArtBackground"] = {
+			["DesaturateScrollArtBackgroundChecked"] = false,
 		},
 		["DejaClassicStatsShowHideScrollArtBackground"] = {
 			["ShowHideScrollArtBackgroundChecked"] = true,
@@ -119,7 +119,7 @@ DejaClassicStatsDBPC = {
 			["ShowMeleeSetChecked"] = false,
 		},
 		["DejaClassicStatsManaRegenNotCasting"] = {
-			["DCSnotcasting"] = 53.60869979858398,
+			["DCSnotcasting"] = 46.89297103881836,
 		},
 		["DejaClassicStatsShowModelRotation"] = {
 			["ShowModelRotationChecked"] = false,
@@ -127,9 +127,8 @@ DejaClassicStatsDBPC = {
 		["DejaClassicStatsShowRangedChecked"] = {
 			["ShowRangedSetChecked"] = false,
 		},
-		["DejaClassicStatsSimpleItemColorChecked"] = {
-			["SimpleItemColorChecked"] = false,
-			["DarkerItemColorChecked"] = false,
+		["DejaClassicStatsAlternateInfoPlacement"] = {
+			["AlternateInfoPlacementChecked"] = false,
 		},
 		["QCOA_SetSliderValue"] = {
 			["QCOA_SliderValue"] = 0.75,
@@ -137,8 +136,9 @@ DejaClassicStatsDBPC = {
 		["dejacharacterstatsExpandChecked"] = {
 			["ExpandSetChecked"] = true,
 		},
-		["DejaClassicStatsAlternateInfoPlacement"] = {
-			["AlternateInfoPlacementChecked"] = false,
+		["DejaClassicStatsSimpleItemColorChecked"] = {
+			["SimpleItemColorChecked"] = false,
+			["DarkerItemColorChecked"] = false,
 		},
 		["DejaClassicStatsShowDuraChecked"] = {
 			["ShowDuraSetChecked"] = true,

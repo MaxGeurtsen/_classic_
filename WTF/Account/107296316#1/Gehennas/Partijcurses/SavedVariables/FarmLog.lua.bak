@@ -1,13 +1,14 @@
 
 FLogVars = {
 	["enabled"] = false,
-	["lockMinimapButton"] = false,
+	["instanceName"] = "Coilfang: The Slave Pens",
+	["viewTotal"] = true,
 	["todayKills"] = {
 	},
+	["inInstance"] = true,
+	["lockMinimapButton"] = false,
+	["currentFarm"] = "default",
 	["ver"] = 1.2,
-	["viewTotal"] = true,
-	["enableMinimapButton"] = true,
-	["inInstance"] = false,
 	["hud"] = {
 		["show"] = false,
 		["locked"] = false,
@@ -27,7 +28,7 @@ FLogVars = {
 				["drops"] = {
 				},
 				["hks"] = 0,
-				["resets"] = 47,
+				["resets"] = 78,
 				["rep"] = {
 				},
 				["ranks"] = {
@@ -35,11 +36,11 @@ FLogVars = {
 				["dks"] = 0,
 				["bgsWin"] = {
 				},
+				["xp"] = 0,
+				["honor"] = 0,
+				["seconds"] = 0,
 				["consumes"] = {
 				},
-				["seconds"] = 0,
-				["honor"] = 0,
-				["xp"] = 0,
 				["bgsLoss"] = {
 				},
 				["bgs"] = {
@@ -67,11 +68,11 @@ FLogVars = {
 				["dks"] = 0,
 				["bgsWin"] = {
 				},
+				["xp"] = 0,
+				["honor"] = 0,
+				["seconds"] = 0,
 				["consumes"] = {
 				},
-				["seconds"] = 0,
-				["honor"] = 0,
-				["xp"] = 0,
 				["bgsLoss"] = {
 				},
 				["bgs"] = {
@@ -86,7 +87,7 @@ FLogVars = {
 		["x"] = -165,
 		["point"] = "TOPRIGHT",
 	},
-	["currentFarm"] = "default",
+	["enableMinimapButton"] = true,
 	["frameRect"] = {
 		["y"] = 0,
 		["x"] = 0,

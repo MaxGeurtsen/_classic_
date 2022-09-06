@@ -117,7 +117,7 @@ local function CreateHeader()
     amountOfColumns = 0
     CreateColumn(header, "Player name", 100)
     CreateColumn(header, "Experience", 100)
-    CreateColumn(header, "Gold", 100)
+    CreateColumn(header, "Gold", 120)
     CreateColumn(header, "Reputation", 100)
     CreateColumn(header, "Kills", 50)
 
@@ -155,7 +155,7 @@ local function CreateGUI(instanceId)
     mainFrame:Hide()
     _G["IBPT_Statistics"] = mainFrame
     tinsert(UISpecialFrames, "IBPT_Statistics")	-- allow ESC close
-    mainFrame:SetWidth(500)
+    mainFrame:SetWidth(550)
     mainFrame:SetHeight(300)
     mainFrame:SetTitle("Statistics - "..instanceId)
     mainFrame:EnableResize(false)

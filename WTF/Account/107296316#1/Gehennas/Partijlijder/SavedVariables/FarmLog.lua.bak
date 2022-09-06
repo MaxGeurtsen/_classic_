@@ -1,10 +1,12 @@
 
 FLogVars = {
 	["enabled"] = false,
+	["instanceName"] = "Alterac Valley",
 	["lockMinimapButton"] = false,
 	["todayKills"] = {
+		["Xanomir"] = 1,
 	},
-	["inInstance"] = false,
+	["inInstance"] = true,
 	["viewTotal"] = true,
 	["currentFarm"] = "default",
 	["ver"] = 1.2,
@@ -27,7 +29,7 @@ FLogVars = {
 				["drops"] = {
 				},
 				["hks"] = 0,
-				["resets"] = 82,
+				["resets"] = 97,
 				["rep"] = {
 				},
 				["ranks"] = {
@@ -43,6 +45,8 @@ FLogVars = {
 				["bgsLoss"] = {
 				},
 				["bgs"] = {
+					["Warsong Gulch"] = 8,
+					["Alterac Valley"] = 2,
 				},
 			},
 			["goldTotal"] = 0,

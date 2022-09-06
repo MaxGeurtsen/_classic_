@@ -3,9 +3,9 @@ local L = LibStub("AceLocale-3.0"):GetLocale("Talented")
 
 local classNames = {}
 FillLocalizedClassList(classNames, false)
--- classNames["Ferocity"] = Talented.tabdata["Ferocity"][1].name
--- classNames["Tenacity"] = Talented.tabdata["Tenacity"][1].name
--- classNames["Cunning"] = Talented.tabdata["Cunning"][1].name
+classNames["Ferocity"] = Talented.tabdata["Ferocity"][1].name
+classNames["Tenacity"] = Talented.tabdata["Tenacity"][1].name
+classNames["Cunning"] = Talented.tabdata["Cunning"][1].name
 
 local menuColorCodes = {}
 local function fill_menuColorCodes()
@@ -13,9 +13,9 @@ local function fill_menuColorCodes()
 		local color = CUSTOM_CLASS_COLORS and CUSTOM_CLASS_COLORS[name] or default
 		menuColorCodes[name] =  string.format("|cff%2x%2x%2x", color.r * 255, color.g * 255, color.b * 255)
 	end
-	-- menuColorCodes["Ferocity"] = "|cffe0a040"
-	-- menuColorCodes["Tenacity"] = "|cffe0a040"
-	-- menuColorCodes["Cunning"] = "|cffe0a040"
+	menuColorCodes["Ferocity"] = "|cffe0a040"
+	menuColorCodes["Tenacity"] = "|cffe0a040"
+	menuColorCodes["Cunning"] = "|cffe0a040"
 end
 fill_menuColorCodes()
 
@@ -63,13 +63,31 @@ local function Menu_NewTemplate(entry, class)
 end
 
 function Talented:CreateTemplateMenu()
+	--N.B. called by MakeTemplateMenu()
 	local menu = self:GetNamedMenu("Template")
 
 	local entry = self:GetNamedMenu("primary")
 	entry.text = TALENT_SPEC_PRIMARY
 	entry.func = Menu_SetTemplate
-	entry.arg1 = self.current
 	menu[#menu + 1] = entry
+
+	entry = self:GetNamedMenu("secondary")
+	entry.text = TALENT_SPEC_SECONDARY
+	entry.disabled = true
+	entry.func = Menu_SetTemplate
+	menu[#menu + 1] = entry
+
+	if select(2, UnitClass"player") == "HUNTER" then
+		entry = self:GetNamedMenu("petcurrent")
+		entry.text = L["View Pet Spec"]
+		entry.disabled = true
+		entry.func = function ()
+			Talented:PET_TALENT_UPDATE()
+			Talented:OpenTemplate(Talented.pet_current)
+			Talented:CloseMenu()
+		end
+		menu[#menu + 1] = entry
+	end
 
 	entry = self:GetNamedMenu("separator")
 	if not entry.text then
@@ -83,6 +101,9 @@ function Talented:CreateTemplateMenu()
 	for index, name in ipairs(CLASS_SORT_ORDER) do
 		list[index] = name
 	end
+	list[#list + 1] = "Ferocity"
+	list[#list + 1] = "Tenacity"
+	list[#list + 1] = "Cunning"
 
 	for _, name in ipairs(list) do
 		entry = self:GetNamedMenu(name)
@@ -124,9 +145,7 @@ end
 function Talented:MakeTemplateMenu()
 	local menu = self:CreateTemplateMenu()
 
-
-	for cindex, class in pairs(CLASS_SORT_ORDER) do
-		color = menuColorCodes[class] --Looping through menuColorCodes would give us Death Knight, etc, which aren't in classic
+	for class, color in pairs(menuColorCodes) do
 		local menuList = self:GetNamedMenu(class.."List")
 		local index = 1
 		classdb = self.db.global.templates[class]
@@ -182,20 +201,27 @@ function Talented:MakeTemplateMenu()
 	-- 	end
 	-- 	table.sort(menuList, Sort_Template_Menu_Entry)
 	-- end
-	-- local talentGroup = GetActiveTalentGroup()
-	-- local entry = self:GetNamedMenu("primary")
-	-- local current = self.alternates[1]
-	-- update_template_entry(entry, TALENT_SPEC_PRIMARY, current)
-	-- entry.arg1 = current
-	-- entry.checked = (self.template == current)
-	-- if #self.alternates > 1 then
-	-- 	local alt = self.alternates[2]
-	-- 	local entry = self:GetNamedMenu("secondary")
-	-- 	entry.disabled = false
-	-- 	update_template_entry(entry, TALENT_SPEC_SECONDARY, alt)
-	-- 	entry.arg1 = alt
-	-- 	entry.checked = (self.template == alt)
-	-- end
+	local talentGroup = GetActiveTalentGroup()
+	local entry = self:GetNamedMenu("primary")
+	local current = self.alternates[1]
+	update_template_entry(entry, TALENT_SPEC_PRIMARY, current)
+	entry.arg1 = current
+	entry.checked = (self.template == current)
+	if #self.alternates > 1 then
+		local alt = self.alternates[2]
+		local entry = self:GetNamedMenu("secondary")
+		entry.disabled = false
+		update_template_entry(entry, TALENT_SPEC_SECONDARY, alt)
+		entry.arg1 = alt
+		entry.checked = (self.template == alt)
+	end
+
+	--Pet talents
+	entry = self.menus.petcurrent
+	if entry then
+		entry.disabled = not self.pet_current
+		entry.checked = (self.template == self.pet_current)
+	end
 
 	return menu
 end
@@ -260,9 +286,9 @@ function Talented:CreateActionMenu()
 	for index, name in ipairs(CLASS_SORT_ORDER) do
 		list[index] = name
 	end
-	-- list[#list + 1] = "Ferocity"
-	-- list[#list + 1] = "Tenacity"
-	-- list[#list + 1] = "Cunning"
+	list[#list + 1] = "Ferocity"
+	list[#list + 1] = "Tenacity"
+	list[#list + 1] = "Cunning"
 
 	for _, name in ipairs(list) do
 		local s = {
@@ -369,22 +395,24 @@ end
 
 function Talented:MakeActionMenu()
 	local menu = self:CreateActionMenu()
-	-- local templateTalentGroup, activeTalentGroup = self.template.talentGroup, GetActiveTalentGroup()
-	local template, current = self.template, self.current
+	local templateTalentGroup, activeTalentGroup = self.template.talentGroup, GetActiveTalentGroup()
 	local restricted = (self.template.class ~= select(2, UnitClass("player")))
+	local pet_restricted = not self.GetPetClass or self:GetPetClass() ~= self.template.class
 	local targetName
 	if not restricted then
-		targetName = 1 --Primary talents, the only talent group ion calssic. Formerly targetName = templateTalentGroup or activeTalentGroup
+		targetName = 1 --Primary talents, the only talent group in classic. Formerly targetName = templateTalentGroup or activeTalentGroup
+	elseif not pet_restricted then
+		targetName = UnitName"PET"
 	end
 
-	self:GetNamedMenu("Apply").disabled = self.template==self.current or restricted
-	self:GetNamedMenu("Delete").disabled = self.template==self.current or not self.db.global.templates[self.template.class][self.template.name]
+	self:GetNamedMenu("Apply").disabled = templateTalentGroup or restricted and pet_restricted
+	self:GetNamedMenu("Delete").disabled = templateTalentGroup or not self.db.global.templates[self.template.class][self.template.name]
 	-- local switch = self:GetNamedMenu("SwitchTalentGroup")
 	-- switch.disabled = (restricted or not templateTalentGroup or templateTalentGroup == activeTalentGroup)
 	-- switch.arg1 = templateTalentGroup
 
 	local target = self:GetNamedMenu("Target")
-	if template == self.current then
+	if templateTalentGroup then
 		target.text = L["Clear target"]
 		target.arg1 = targetName
 		target.arg2 = nil

@@ -4,13 +4,15 @@ GDKPd_DB = {
 		["shownPopupAddonMsg4_2"] = true,
 	},
 	["profileKeys"] = {
-		["Partijleider - Gehennas"] = "ZA",
-		["Partijlijder - Gehennas"] = "Partijlijder - Gehennas",
-		["Partijlijder - Razorgore"] = "Partijlijder - Razorgore",
-		["Rinque - Gehennas"] = "ZA",
-		["Partijcurses - Gehennas"] = "Partijcurses - Gehennas",
-		["Firebreather - Firemaw"] = "Firebreather - Firemaw",
 		["Firebreather - Gehennas"] = "Firebreather - Gehennas",
+		["Partijlijder - Gehennas"] = "Partijlijder - Gehennas",
+		["Partijdood - Gehennas"] = "Partijdood - Gehennas",
+		["Firebreather - Firemaw"] = "Firebreather - Firemaw",
+		["Partijcurses - Gehennas"] = "Partijcurses - Gehennas",
+		["Partijlijder - Razorgore"] = "Partijlijder - Razorgore",
+		["Rinque - Gehennas"] = "Hyjal",
+		["Partijleider - Gehennas"] = "Hyjal",
+		["Partijaxert - Gehennas"] = "Partijaxert - Gehennas",
 	},
 	["profiles"] = {
 		["Partijleider - Gehennas"] = {
@@ -58,6 +60,15 @@ GDKPd_DB = {
 			},
 			["movable"] = false,
 		},
+		["Partijdood - Gehennas"] = {
+			["movable"] = false,
+			["point"] = {
+				["y"] = 32.82036209106445,
+				["relative"] = "RIGHT",
+				["point"] = "RIGHT",
+				["x"] = -248.7693481445313,
+			},
+		},
 		["Firebreather - Firemaw"] = {
 		},
 		["Partijcurses - Gehennas"] = {
@@ -69,8 +80,42 @@ GDKPd_DB = {
 				["x"] = -311.9486083984375,
 			},
 		},
+		["Hyjal"] = {
+			["shareSecondAmount"] = 0.2,
+			["point"] = {
+				["y"] = -92.35736083984375,
+				["relative"] = "TOP",
+				["point"] = "TOP",
+				["x"] = 399.985107421875,
+			},
+			["startBid"] = 500,
+			["auctionTimerRefresh"] = 15,
+			["balancepoint"] = {
+				["y"] = 192.0515289306641,
+				["x"] = 38.56388854980469,
+			},
+			["rulesString"] = "!!Starting Bids!!\nPlz type your bid in full numbers (1300) or With a k/K behind them (1.3K)\nThank you!",
+			["auctionTimer"] = 15,
+			["movable"] = false,
+			["statuspoint"] = {
+				["y"] = 284.1959838867188,
+				["relative"] = "RIGHT",
+				["point"] = "RIGHT",
+				["x"] = -191.0688781738281,
+			},
+			["increment"] = 100,
+			["showAuctionDurationTimerText"] = true,
+		},
 		["ZA"] = {
 			["shareSecondAmount"] = 0.2,
+			["point"] = {
+				["y"] = -49.69070053100586,
+				["x"] = -643.8606567382812,
+				["point"] = "TOPRIGHT",
+				["relative"] = "TOPRIGHT",
+			},
+			["announceBidRaidWarning"] = true,
+			["auctionTimerRefresh"] = 15,
 			["balancepoint"] = {
 				["y"] = 279.2564086914063,
 				["relative"] = "BOTTOMRIGHT",
@@ -81,8 +126,17 @@ GDKPd_DB = {
 			["controlScale"] = 1.1,
 			["movable"] = false,
 			["anchorBalance"] = true,
+			["hide"] = false,
 			["announcePotAfterAuction"] = false,
 			["appearScale"] = 0.5807656049728394,
+			["increment"] = 100,
+			["showAuctionDurationTimerText"] = true,
+			["statuspoint"] = {
+				["y"] = 67.65550231933594,
+				["x"] = -168.5423889160156,
+				["point"] = "RIGHT",
+				["relative"] = "RIGHT",
+			},
 			["customItemSettings"] = {
 				[33298] = {
 					["minIncrement"] = 100,
@@ -217,28 +271,13 @@ GDKPd_DB = {
 					["minBid"] = 1000,
 				},
 			},
-			["point"] = {
-				["y"] = -49.69070053100586,
-				["x"] = -643.8606567382812,
-				["point"] = "TOPRIGHT",
-				["relative"] = "TOPRIGHT",
-			},
-			["auctionTimerRefresh"] = 15,
 			["hideCombat"] = {
 				["status"] = false,
 				["history"] = false,
 			},
-			["hide"] = false,
-			["startBid"] = 500,
-			["increment"] = 100,
-			["showAuctionDurationTimerText"] = true,
-			["announceBidRaidWarning"] = true,
-			["statuspoint"] = {
-				["y"] = -12.15809631347656,
-				["x"] = -197.6331176757813,
-				["point"] = "RIGHT",
-				["relative"] = "RIGHT",
-			},
+			["startBid"] = 1000,
+		},
+		["Default"] = {
 		},
 		["Partijlijder - Razorgore"] = {
 			["movable"] = false,
@@ -248,106 +287,6 @@ GDKPd_DB = {
 				["point"] = "RIGHT",
 				["x"] = -446.5126953125,
 			},
-		},
-		["Hyjal"] = {
-			["shareSecondAmount"] = 0.2,
-			["point"] = {
-				["y"] = -92.35736083984375,
-				["relative"] = "TOP",
-				["point"] = "TOP",
-				["x"] = 399.985107421875,
-			},
-			["startBid"] = 1000,
-			["auctionTimerRefresh"] = 15,
-			["balancepoint"] = {
-				["y"] = 192.0515289306641,
-				["x"] = 38.56388854980469,
-			},
-			["rulesString"] = "!!Starting Bids!!\nPlz type your bid in full numbers (1300) or With a k/K behind them (1.3K)\nThank you!",
-			["auctionTimer"] = 15,
-			["movable"] = false,
-			["statuspoint"] = {
-				["y"] = 284.1959838867188,
-				["relative"] = "RIGHT",
-				["point"] = "RIGHT",
-				["x"] = -191.0688781738281,
-			},
-			["customItemSettings"] = {
-				[30902] = {
-					["minIncrement"] = 100,
-					["minBid"] = 2000,
-				},
-				[30903] = {
-					["minIncrement"] = 100,
-					["minBid"] = 2000,
-				},
-				[30904] = {
-					["minIncrement"] = 100,
-					["minBid"] = 2000,
-				},
-				[30905] = {
-					["minIncrement"] = 100,
-					["minBid"] = 2000,
-				},
-				[31092] = {
-					["minIncrement"] = 100,
-					["minBid"] = 2000,
-				},
-				[31093] = {
-					["minIncrement"] = 100,
-					["minBid"] = 2000,
-				},
-				[31094] = {
-					["minIncrement"] = 100,
-					["minBid"] = 2000,
-				},
-				[31095] = {
-					["minIncrement"] = 100,
-					["minBid"] = 2000,
-				},
-				[30910] = {
-					["minIncrement"] = 100,
-					["minBid"] = 2000,
-				},
-				[31097] = {
-					["minIncrement"] = 100,
-					["minBid"] = 2000,
-				},
-				[30912] = {
-					["minIncrement"] = 100,
-					["minBid"] = 2000,
-				},
-				[30913] = {
-					["minIncrement"] = 100,
-					["minBid"] = 2000,
-				},
-				[30906] = {
-					["minIncrement"] = 100,
-					["minBid"] = 2000,
-				},
-				[30909] = {
-					["minIncrement"] = 100,
-					["minBid"] = 2000,
-				},
-				[30911] = {
-					["minIncrement"] = 100,
-					["minBid"] = 2000,
-				},
-				[30908] = {
-					["minIncrement"] = 100,
-					["minBid"] = 2000,
-				},
-				[31096] = {
-					["minIncrement"] = 100,
-					["minBid"] = 2000,
-				},
-				[30907] = {
-					["minIncrement"] = 100,
-					["minBid"] = 2000,
-				},
-			},
-			["increment"] = 100,
-			["showAuctionDurationTimerText"] = true,
 		},
 		["Rinque - Gehennas"] = {
 			["point"] = {
@@ -479,6 +418,54 @@ GDKPd_DB = {
 		["Firebreather - Gehennas"] = {
 			["point"] = {
 				["y"] = -3.591206768760458e-05,
+			},
+		},
+		["Hyjal2"] = {
+			["shareSecondAmount"] = 0.2,
+			["customItemSettings"] = {
+				[31094] = {
+					["minIncrement"] = 100,
+					["minBid"] = 1500,
+				},
+				[31095] = {
+					["minIncrement"] = 100,
+					["minBid"] = 1500,
+				},
+				[31096] = {
+					["minIncrement"] = 100,
+					["minBid"] = 1500,
+				},
+				[31097] = {
+					["minIncrement"] = 100,
+					["minBid"] = 1500,
+				},
+				[31093] = {
+					["minIncrement"] = 100,
+					["minBid"] = 1500,
+				},
+				[30910] = {
+					["minIncrement"] = 100,
+					["minBid"] = 1500,
+				},
+				[30904] = {
+					["minIncrement"] = 100,
+					["minBid"] = 1500,
+				},
+				[31092] = {
+					["minIncrement"] = 100,
+					["minBid"] = 1500,
+				},
+			},
+			["movable"] = false,
+			["startBid"] = 500,
+		},
+		["Partijaxert - Gehennas"] = {
+			["movable"] = false,
+			["point"] = {
+				["y"] = -77.94890594482422,
+				["relative"] = "RIGHT",
+				["point"] = "RIGHT",
+				["x"] = -294.7181396484375,
 			},
 		},
 	},

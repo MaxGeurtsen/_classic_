@@ -25,6 +25,54 @@ DBMPvP_AllSavedVars = {
 			},
 		},
 	},
+	["Partijdood-Gehennas"] = {
+		["z529"] = {
+			[3] = {
+				["Enabled"] = true,
+			},
+		},
+		["z566"] = {
+			[3] = {
+				["Enabled"] = true,
+			},
+		},
+		["PvPGeneral"] = {
+			[3] = {
+				["TimerFlagCVoice"] = 0,
+				["TimerStartTColor"] = 0,
+				["ShowBasesToWin"] = false,
+				["TimerFlagTColor"] = 0,
+				["HideBossEmoteFrame"] = false,
+				["TimerWinCVoice"] = 0,
+				["TimerWinTColor"] = 0,
+				["TimerCapCVoice"] = 0,
+				["TimerFlag"] = true,
+				["TimerStartCVoice"] = 0,
+				["Enabled"] = true,
+				["ShowRelativeGameTime"] = true,
+				["TimerWin"] = true,
+				["TimerCapTColor"] = 0,
+				["TimerCap"] = true,
+				["AutoSpirit"] = false,
+				["TimerStart"] = true,
+			},
+		},
+		["talent3"] = "DEATHKNIGHT3",
+		["z489"] = {
+			[3] = {
+				["Enabled"] = true,
+			},
+		},
+		["z30"] = {
+			[3] = {
+				["Enabled"] = true,
+				["TimerBossTColor"] = 0,
+				["TimerBoss"] = true,
+				["AutoTurnIn"] = true,
+				["TimerBossCVoice"] = 0,
+			},
+		},
+	},
 	["Rinque-Gehennas"] = {
 		["z529"] = {
 			[2] = {
@@ -65,6 +113,90 @@ DBMPvP_AllSavedVars = {
 		},
 		["z30"] = {
 			[2] = {
+				["Enabled"] = true,
+				["TimerBossTColor"] = 0,
+				["TimerBoss"] = true,
+				["AutoTurnIn"] = true,
+				["TimerBossCVoice"] = 0,
+			},
+		},
+	},
+	["Partijlijder-Gehennas"] = {
+		["z529"] = {
+			{
+				["Enabled"] = true,
+			}, -- [1]
+			[3] = {
+				["Enabled"] = true,
+			},
+		},
+		["z566"] = {
+			{
+				["Enabled"] = true,
+			}, -- [1]
+			[3] = {
+				["Enabled"] = true,
+			},
+		},
+		["talent1"] = "DRUID1",
+		["PvPGeneral"] = {
+			{
+				["TimerFlagCVoice"] = 0,
+				["TimerStartTColor"] = 0,
+				["ShowBasesToWin"] = false,
+				["TimerFlagTColor"] = 0,
+				["HideBossEmoteFrame"] = false,
+				["Enabled"] = true,
+				["TimerWinTColor"] = 0,
+				["TimerCapCVoice"] = 0,
+				["TimerCap"] = true,
+				["TimerStartCVoice"] = 0,
+				["TimerWinCVoice"] = 0,
+				["TimerWin"] = true,
+				["ShowRelativeGameTime"] = true,
+				["TimerCapTColor"] = 0,
+				["TimerFlag"] = true,
+				["AutoSpirit"] = false,
+				["TimerStart"] = true,
+			}, -- [1]
+			[3] = {
+				["TimerFlagCVoice"] = 0,
+				["TimerStartTColor"] = 0,
+				["ShowBasesToWin"] = false,
+				["TimerFlagTColor"] = 0,
+				["HideBossEmoteFrame"] = false,
+				["TimerWinCVoice"] = 0,
+				["TimerWinTColor"] = 0,
+				["TimerCapCVoice"] = 0,
+				["TimerFlag"] = true,
+				["TimerStartCVoice"] = 0,
+				["Enabled"] = true,
+				["TimerCap"] = true,
+				["TimerWin"] = true,
+				["TimerCapTColor"] = 0,
+				["ShowRelativeGameTime"] = true,
+				["AutoSpirit"] = false,
+				["TimerStart"] = true,
+			},
+		},
+		["talent3"] = "DRUID3",
+		["z489"] = {
+			{
+				["Enabled"] = true,
+			}, -- [1]
+			[3] = {
+				["Enabled"] = true,
+			},
+		},
+		["z30"] = {
+			{
+				["Enabled"] = true,
+				["TimerBossTColor"] = 0,
+				["TimerBoss"] = true,
+				["AutoTurnIn"] = true,
+				["TimerBossCVoice"] = 0,
+			}, -- [1]
+			[3] = {
 				["Enabled"] = true,
 				["TimerBossTColor"] = 0,
 				["TimerBoss"] = true,

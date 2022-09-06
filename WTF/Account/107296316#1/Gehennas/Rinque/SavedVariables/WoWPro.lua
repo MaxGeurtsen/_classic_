@@ -10,38 +10,38 @@ WoWProCharDB = {
 	},
 	["Trades"] = {
 	},
-	["EnableGrailQuestObsolete"] = false,
-	["completedQIDs"] = {
-	},
 	["Rank"] = {
 	},
 	["EnableGrailQuestName"] = false,
 	["GuideStack"] = {
 	},
 	["Enabled"] = true,
-	["Guide"] = {
+	["EnableGrailQuestObsolete"] = false,
+	["GuideVersion"] = {
 	},
 	["Tradeskills"] = {
 		[171] = {
 			["skillLvl"] = 375,
-			["skillMax"] = 375,
-			["name"] = "Alchemy",
 			["skillMod"] = 0,
+			["name"] = "Alchemy",
+			["skillMax"] = 375,
 		},
 		[186] = {
 			["skillLvl"] = 375,
-			["skillMax"] = 375,
-			["name"] = "Mining",
 			["skillMod"] = 0,
+			["name"] = "Mining",
+			["skillMax"] = 375,
 		},
 	},
-	["BuildingLocations"] = {
+	["Guide"] = {
 	},
 	["Taxi"] = {
 	},
-	["GuideVersion"] = {
+	["BuildingLocations"] = {
 	},
 	["EnableTreasures"] = true,
+	["completedQIDs"] = {
+	},
 	["EnableFlight"] = true,
 	["AutoHideInsideInstancesNotify"] = true,
 	["AutoHideInCombat"] = false,

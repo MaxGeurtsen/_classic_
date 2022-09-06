@@ -33,7 +33,7 @@ FishingBuddy: disabled
 honorspy: enabled
 Immersion: enabled
 Leatrix_Plus: enabled
-LibClassicMobHealth-1.0: enabled
+LibClassicMobHealth-1.0: disabled
 Mapster: enabled
 NovaWorldBuffs: enabled
 OmniCC: enabled
@@ -46,7 +46,7 @@ WeakAuras: enabled
 WeakAurasModelPaths: enabled
 WeakAurasOptions: enabled
 WeakAurasTemplates: enabled
-WhatsTraining: enabled
+WhatsTraining: disabled
 XToLevel: enabled
 DBM-Core: enabled
 DBM-GUI: enabled
@@ -79,12 +79,12 @@ Outfitter: disabled
 AAP-TBC-Classic: disabled
 WideQuestLog: enabled
 Bartender4: enabled
-Buffet: enabled
+Buffet: disabled
 ChatCopyPaste: enabled
 GearQuipper-TBC: enabled
 Leatrix_Maps: enabled
 NovaInstanceTracker: enabled
-RepHelper_Classic: enabled
+RepHelper_Classic: disabled
 ReputationWatcher: enabled
 SpellbookAbridged: enabled
 TomTom: enabled
@@ -99,6 +99,10 @@ ElvUI_DTBars2: disabled
 ElvUI_QuestXP: disabled
 ElvUI_CustomTags: disabled
 ElvUI_OptionsUI: enabled
-ClassicLootManager: disabled
+ClassicLootManager: enabled
 WoWPro: disabled
 WoWPro_Leveling: disabled
+GogoLoot: disabled
+Bagnon_ItemLevel: disabled
+Bagnon_Tooltips: disabled
+Bagnon_Forever: disabled

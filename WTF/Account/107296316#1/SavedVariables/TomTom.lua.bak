@@ -3,15 +3,17 @@ TomTomDB = {
 	["profileKeys"] = {
 		["Partijleider - Gehennas"] = "Default",
 		["Partijlijder - Gehennas"] = "Default",
+		["Partijdood - Gehennas"] = "Default",
 		["Firebreather - Firemaw"] = "Default",
 		["Partijcurses - Gehennas"] = "Default",
 		["Awwaa - Gehennas"] = "Default",
 		["Helpsiebren - Razorgore"] = "Default",
+		["Partijaxert - Gehennas"] = "Default",
 		["Firebreather - Gehennas"] = "Default",
-		["Partijleider - Razorgore"] = "Default",
+		["Partijlijder - Razorgore"] = "Default",
 		["Rinque - Gehennas"] = "Default",
 		["Mírjam - Razorgore"] = "Default",
-		["Partijlijder - Razorgore"] = "Default",
+		["Partijleider - Razorgore"] = "Default",
 		["Kealthas - Razorgore"] = "Default",
 	},
 	["profiles"] = {
@@ -42,21 +44,25 @@ TomTomWaypointsM = {
 	["profileKeys"] = {
 		["Partijleider - Gehennas"] = "Partijleider - Gehennas",
 		["Partijlijder - Gehennas"] = "Partijlijder - Gehennas",
+		["Partijdood - Gehennas"] = "Partijdood - Gehennas",
 		["Firebreather - Firemaw"] = "Firebreather - Firemaw",
 		["Partijcurses - Gehennas"] = "Partijcurses - Gehennas",
 		["Awwaa - Gehennas"] = "Awwaa - Gehennas",
 		["Helpsiebren - Razorgore"] = "Helpsiebren - Razorgore",
+		["Partijaxert - Gehennas"] = "Partijaxert - Gehennas",
 		["Firebreather - Gehennas"] = "Firebreather - Gehennas",
-		["Partijleider - Razorgore"] = "Partijleider - Razorgore",
+		["Partijlijder - Razorgore"] = "Partijlijder - Razorgore",
 		["Rinque - Gehennas"] = "Rinque - Gehennas",
 		["Mírjam - Razorgore"] = "Mírjam - Razorgore",
-		["Partijlijder - Razorgore"] = "Partijlijder - Razorgore",
+		["Partijleider - Razorgore"] = "Partijleider - Razorgore",
 		["Kealthas - Razorgore"] = "Kealthas - Razorgore",
 	},
 	["profiles"] = {
 		["Partijleider - Gehennas"] = {
 		},
 		["Partijlijder - Gehennas"] = {
+		},
+		["Partijdood - Gehennas"] = {
 		},
 		["Firebreather - Firemaw"] = {
 		},
@@ -66,15 +72,17 @@ TomTomWaypointsM = {
 		},
 		["Helpsiebren - Razorgore"] = {
 		},
+		["Partijaxert - Gehennas"] = {
+		},
 		["Firebreather - Gehennas"] = {
 		},
-		["Partijleider - Razorgore"] = {
+		["Partijlijder - Razorgore"] = {
 		},
 		["Rinque - Gehennas"] = {
 		},
 		["Mírjam - Razorgore"] = {
 		},
-		["Partijlijder - Razorgore"] = {
+		["Partijleider - Razorgore"] = {
 		},
 		["Kealthas - Razorgore"] = {
 		},

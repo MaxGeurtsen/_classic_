@@ -3,9 +3,11 @@ LoggerHeadNDB = {
 	["profileKeys"] = {
 		["Partijleider - Gehennas"] = "Default",
 		["Partijlijder - Gehennas"] = "Default",
+		["Partijdood - Gehennas"] = "Default",
 		["Rinque - Gehennas"] = "Default",
 		["Partijcurses - Gehennas"] = "Default",
 		["Firebreather - Gehennas"] = "Default",
+		["Partijaxert - Gehennas"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

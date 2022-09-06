@@ -22,6 +22,7 @@ function InitializeVariables()
     if SavedSettings["LOCKOUT_RESETONGROUPCHANGE"] == nil then SavedSettings["LOCKOUT_RESETONGROUPCHANGE"] = true end
 
     if SavedSettings["STATISTICS_REPORT"] == nil then SavedSettings["STATISTICS_REPORT"] = true end
+    if SavedSettings["STATISTICS_REPORT_PARTY"] == nil then SavedSettings["STATISTICS_REPORT_PARTY"] = true end
 
     if SavedSettings["PAYMENT_REPORTMAIN"] == nil then SavedSettings["PAYMENT_REPORTMAIN"] = true end
     if SavedSettings["PAYMENT_REPORTCHAT"] == nil then SavedSettings["PAYMENT_REPORTCHAT"] = true end

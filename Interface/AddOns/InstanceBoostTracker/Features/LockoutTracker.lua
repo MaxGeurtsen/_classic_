@@ -48,7 +48,7 @@ local function UpdateLockout()
 
     if CURRENT_LOCKOUT then
         AccountLockout:Update(CURRENT_LOCKOUT.identifier)
-        StatisticsTracker:StartTracking(CURRENT_LOCKOUT.identifier, nil)
+        StatisticsTracker:StartTracking(CURRENT_LOCKOUT.identifier, nil, CURRENT_LOCKOUT.instanceName)
     end
 end
 

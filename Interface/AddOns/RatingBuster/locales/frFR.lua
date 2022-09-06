@@ -20,6 +20,9 @@ L["Shows the Options Window"] = "Affiche la fenêtre des options"
 -- /rb statmod
 L["Enable Stat Mods"] = "Activer les Stat Mods"
 L["Enable support for Stat Mods"] = "Active le support pour Stat Mods"
+-- /rb avoidancedr
+L["Enable Avoidance Diminishing Returns"] = true -- à traduire
+L["Dodge, Parry, Miss Avoidance values will be calculated using the avoidance deminishing return formula with your current stats"] = true -- à traduire
 -- /rb itemid
 L["Show ItemID"] = "ID des objets"
 L["Show the ItemID in tooltips"] = "Affiche l'ID des objets dans les info-bulles."
@@ -47,6 +50,13 @@ L["Options for Rating display"] = "Sélectionne les différents bonus liés aux 
 -- /rb rating show
 L["Show Rating conversions"] = "Aperçu pourcentage"
 L["Show Rating conversions in tooltips"] = "Ajoute la conversion en pourcentage des différents scores dans les info-bulles des objets.\n\nCette case est requise pour l'affichage des scores détaillés."
+-- TODO
+-- /rb rating spell
+L["Show Spell Hit/Haste"] = true
+L["Show Spell Hit/Haste from Hit/Haste Rating"] = true
+-- /rb rating physical
+L["Show Physical Hit/Haste"] = true
+L["Show Physical Hit/Haste from Hit/Haste Rating"] = true
 -- /rb rating detail
 L["Show detailed conversions text"] = "Textes plus détaillés" 
 L["Show detailed text for Resiliance and Expertise conversions"] = "Rend la conversion des scores de résilience et d'expertise plus précise.\n\nLa résilience indiquera l'évitement des coups critiques, la diminution des dégâts critiques et la diminution des dégâts périodiques.\n\nL'expertise indiquera la diminution du risque que vos attaques soient esquivées et parées."
@@ -59,6 +69,29 @@ L["Convert Weapon Skill into Crit, Hit, Dodge Neglect, Parry Neglect and Block N
 -- /rb rating exp -- 2.3.0
 L["Expertise breakdown"] = "Expertise détaillée"
 L["Convert Expertise into Dodge Neglect and Parry Neglect"] = "Convertis le score d'expertise en pourcentage de diminution d'esquive et diminution de parade."
+L["from"] = "par"
+L["HEALING"] = STAT_SPELLHEALING
+L["AP"] = ATTACK_POWER_TOOLTIP
+L["RANGED_AP"] = RANGED_ATTACK_POWER
+L["ARMOR"] = ARMOR
+L["SPELL_DMG"] = STAT_SPELLDAMAGE
+L["SPELL_CRIT"] = PLAYERSTAT_SPELL_COMBAT .. " " .. SPELL_CRIT_CHANCE
+L["STR"] = SPELL_STAT1_NAME
+L["AGI"] = SPELL_STAT2_NAME
+L["STA"] = SPELL_STAT3_NAME
+L["INT"] = SPELL_STAT4_NAME
+L["SPI"] = SPELL_STAT5_NAME
+L["PARRY"] = PARRY
+L["MANA_REG"] = "Régén. mana (incantation)"
+L["NORMAL_MANA_REG"] = SPELL_STAT4_NAME .. " & " .. SPELL_STAT5_NAME -- Intellect & Spirit
+L["PET_STA"] = PET .. SPELL_STAT3_NAME -- Pet Stamina
+L["PET_INT"] = PET .. SPELL_STAT4_NAME -- Pet Intellect
+L.statModOptionName = function(show, add)
+	return string.format("%s %s ", show, add)
+end
+L.statModOptionDesc = function(show, add, from, mod)
+	return string.format("%s %s %s %s ", show, add, from, mod)
+end
 
 -- /rb stat
 L["Stat Breakdown"] = "Détail des caractéristiques"
@@ -350,6 +383,11 @@ L["Spell Penetration Summary"] = "Inclure la Pénétration des sorts."
 -- /rb sum stat ignorearmor
 L["Sum Ignore Armor"] = "Pénétration d'armure"
 L["Ignore Armor Summary"] = "Inclure la Pénétration d'armure."
+-- TODO
+L["Sum Armor Penetration"] = true
+L["Armor Penetration Summary"] = true
+L["Sum Armor Penetration Rating"] = true
+L["Armor Penetration Rating Summary"] = true
 -- /rb sum stat weapondps
 --["Sum Weapon DPS"] = true,
 --["Weapon DPS Summary"] = true,
@@ -548,41 +586,25 @@ L["statList"] = {
 	{pattern = "score de critique à distance", id = CR_CRIT_RANGED},
 	{pattern = "score de coup critique à distance", id = CR_CRIT_RANGED},
 	{pattern = "score de toucher critique à distance", id = CR_CRIT_RANGED},
-	{pattern = "score de critique", id = CR_CRIT_MELEE}, --ex : https://fr.tbc.wowhead.com/item=30565/opale-de-feu-dassassin
-	{pattern = "score de coup critique", id = CR_CRIT_MELEE},
-	{pattern = "score de toucher critique", id = CR_CRIT_MELEE},
+	{pattern = "score de critique", id = CR_CRIT}, --ex : https://fr.tbc.wowhead.com/item=30565/opale-de-feu-dassassin
+	{pattern = "score de coup critique", id = CR_CRIT},
+	{pattern = "score de toucher critique", id = CR_CRIT},
 
 	{pattern = "score de toucher des sorts", id = CR_HIT_SPELL},
 	{pattern = "score de toucher à distance", id = CR_HIT_RANGED},
-	{pattern = "score de toucher", id = CR_HIT_MELEE},
+	{pattern = "score de toucher", id = CR_HIT},
 
 	{pattern = "résilience", id = CR_CRIT_TAKEN_MELEE}, -- resilience is implicitly a rating
 
 	{pattern = "score de hâte des sorts", id = CR_HASTE_SPELL},
 	{pattern = "score de hâte à distance", id = CR_HASTE_RANGED},
-	{pattern = "score de hâte", id = CR_HASTE_MELEE},
+	{pattern = "score de hâte", id = CR_HASTE},
 	{pattern = "score de hâte en mêlée", id = CR_HASTE_MELEE}, -- [Tambours de Bataille] "score de hâte en mêlée, à distance et avec les sorts" complete drums line
-	--{pattern = "skill rating", id = CR_WEAPON_SKILL},
 	{pattern = "score d’expertise", id = CR_EXPERTISE},
 	{pattern = "score d'expertise", id = CR_EXPERTISE},
-	{pattern = "score d'évitement des coups", id = CR_HIT_TAKEN_MELEE},
 
-	--[[
-	{pattern = "score de la compétence dagues", id = CR_WEAPON_SKILL}, {pattern = "Dagues augmentées", id = CR_WEAPON_SKILL},
-	{pattern = "score de la compétence epées", id = CR_WEAPON_SKILL}, {pattern = "Epées augmentées", id = CR_WEAPON_SKILL},
-	{pattern = "score de la compétence epées à deux mains", id = CR_WEAPON_SKILL},
-	{pattern = "score de la compétence haches", id = CR_WEAPON_SKILL},
-	{pattern = "score de la compétence arcs", id = CR_WEAPON_SKILL},
-	{pattern = "score de la compétence arbalètes", id = CR_WEAPON_SKILL},
-	{pattern = "score de la compétence fusils", id = CR_WEAPON_SKILL},
-	{pattern = "score de la compétence combat farouche", id = CR_WEAPON_SKILL},
-	{pattern = "score de la compétence masses", id = CR_WEAPON_SKILL},
-	{pattern = "score de la compétence armes d'hast", id = CR_WEAPON_SKILL},
-	{pattern = "score de la compétence bâton", id = CR_WEAPON_SKILL},	
-	{pattern = "score de la compétence haches à deux mains", id = CR_WEAPON_SKILL},
-	{pattern = "score de la compétence masses à deux mains", id = CR_WEAPON_SKILL},
-	{pattern = "score de la compétence armes de pugilat", id = CR_WEAPON_SKILL},
-	--]]
+	{pattern = "score de pénétration d'armure", id = CR_ARMOR_PENETRATION},
+	{pattern = string.lower(ARMOR), id = ARMOR},
 }
 -------------------------
 -- Added info patterns --
@@ -608,6 +630,11 @@ L["$value to be Dodged/Parried"] = "$value esquivé/paré"
 L["$value to be Crit"] = "$value recevoir CC"
 L["$value Crit Dmg Taken"] = "$value dégâts CC"
 L["$value DOT Dmg Taken"] = "$value dégâts DoT"
+L["$value% Parry"] = "$value% parer"
+-- for hit rating showing both physical and spell conversions
+-- (+1.21%, S+0.98%)
+-- (+1.21%, +0.98% S)
+L["$value Spell"] = "$value% Sort"
 
 ------------------
 -- Stat Summary --

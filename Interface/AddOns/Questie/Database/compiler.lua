@@ -259,16 +259,21 @@ QuestieDBCompiler.readers = {
             QuestieDBCompiler.readers["u24pair"](stream),
         }
 
-        local creditCount = stream:ReadByte()
-        if creditCount > 0 then
-            local creditList = {}
-            for i=1,creditCount do
-                creditList[i] = stream:ReadInt24()
-            end
-            local rootNPCId = stream:ReadInt24()
-            local rootNPCName = stream:ReadTinyStringNil()
-            ret[5] = {creditList, rootNPCId, rootNPCName}
+        local count = stream:ReadByte()
+        if count == 0 then
+            return ret
         end
+
+        local killobjectives = {}
+        for i=1, count do
+            local creditCount = stream:ReadByte()
+            local creditList = {}
+            for j=1, creditCount do
+                creditList[j] = stream:ReadInt24()
+            end
+            killobjectives[i] = {creditList, stream:ReadInt24(), stream:ReadTinyStringNil()}
+        end
+        ret[5] = killobjectives
 
         return ret
     end,
@@ -540,13 +545,22 @@ QuestieDBCompiler.writers = {
             QuestieDBCompiler.writers["objective"](stream, value[2])
             QuestieDBCompiler.writers["objective"](stream, value[3])
             QuestieDBCompiler.writers["u24pair"](stream, value[4])
-            if value[5] and value[5][1] and value[5][1][1] then
-                stream:WriteByte(#value[5][1])
-                for _, v in pairs(value[5][1]) do
-                    stream:WriteInt24(v)
+
+            local killobjectives = value[5]
+            if type(killobjectives) == "table" and #killobjectives > 0 then
+                stream:WriteByte(#killobjectives)
+                for i=1, #killobjectives do -- iterate over all killobjectives
+                    local killobjective = killobjectives[i]
+                    local npcIds = killobjective[1]
+                    assert(type(npcIds) == "table", "killobjective's npcids is not a table.")
+                    assert(#npcIds > 0, "killOojective has 0 npcIDs.")
+                    stream:WriteByte(#npcIds) -- write count of creatureIDs
+                    for j=1, #npcIds do
+                        stream:WriteInt24(npcIds[j]) -- write creatureID
+                    end
+                    stream:WriteInt24(killobjective[2]) -- write baseCreatureID
+                    stream:WriteTinyString(killobjective[3] or "") -- write baseCreatureText
                 end
-                stream:WriteInt24(value[5][2])
-                stream:WriteTinyString(value[5][3] or "")
             else
                 stream:WriteByte(0)
             end
@@ -675,10 +689,12 @@ QuestieDBCompiler.skippers = {
         QuestieDBCompiler.skippers["objective"](stream)
         QuestieDBCompiler.skippers["objective"](stream)
         QuestieDBCompiler.skippers["u24pair"](stream)
-        local count = stream:ReadByte()
+        local count = stream:ReadByte() -- killobjectives
         if count > 0 then
-            stream._pointer = stream._pointer + count * 3 + 3
-            QuestieDBCompiler.skippers["u8string"](stream)
+            for _=1, count do
+                stream._pointer = stream:ReadByte() * 3 + 3 + stream._pointer
+                stream._pointer = stream:ReadByte() + stream._pointer
+            end
         end
     end,
     ["reflist"] = function(stream)
@@ -1027,9 +1043,9 @@ function QuestieDBCompiler:ValidateItems()
     local validator = QuestieDBCompiler:GetDBHandle(Questie.db.global.itemBin, Questie.db.global.itemPtrs, QuestieDBCompiler:BuildSkipMap(QuestieDB.itemCompilerTypes, QuestieDB.itemCompilerOrder))
     local obj = QuestieDBCompiler:GetDBHandle(Questie.db.global.objBin, Questie.db.global.objPtrs, QuestieDBCompiler:BuildSkipMap(QuestieDB.objectCompilerTypes, QuestieDB.objectCompilerOrder))
     local npc = QuestieDBCompiler:GetDBHandle(Questie.db.global.npcBin, Questie.db.global.npcPtrs, QuestieDBCompiler:BuildSkipMap(QuestieDB.npcCompilerTypes, QuestieDB.npcCompilerOrder))
-    
+
     for id, _ in pairs(validator.pointers) do
-        local objDrops, npcDrops = unpack(validator.Query(id, "objectDrops", "npcDrops"))
+        local objDrops, npcDrops = validator.QuerySingle(id, "objectDrops"), validator.QuerySingle(id, "npcDrops")
         if objDrops then -- validate object drops
             --print("Validating objs")
             for _, oid in pairs(objDrops) do
@@ -1127,56 +1143,6 @@ function QuestieDBCompiler:Initialize()
     QuestieDBCompiler.npcSkipMap = QuestieDBCompiler:BuildSkipMap(QuestieDB.npcCompilerTypes, QuestieDB.npcCompilerOrder)
 end
 
-function QuestieDBCompiler:BuildCompileUI() -- probably wont be used, I was thinking of making something with a progress bar since it takes ~ 30 seconds to compile the db
-                                            -- but this would be too intrusive. Maybe a small progress bar that attaches to the tracker?
-    local base = CreateFrame("Frame", nil, UIParent)
-    base:SetBackdrop( { 
-        bgFile="Interface\\DialogFrame\\UI-DialogBox-Background-Dark",
-        edgeFile="Interface\\DialogFrame\\UI-DialogBox-Border", 
-        tile = true, tileSize = 32, edgeSize = 32, 
-        insets = { left = 11, right = 11, top = 11, bottom = 11 }
-    });
-    base:SetSize(420, 120)
-    base:SetPoint("Center",UIParent)
-
-    base.title = base:CreateFontString(nil, "ARTWORK", "GameFontNormal")
-    base.title:SetJustifyH("LEFT")
-    base.title:SetPoint("CENTER", base, 0, 120/2-22)
-    base.title:SetText("Questie DB has updated!")
-    base.title:SetFont(base.title:GetFont(), 18)
-    base.title:Show()
-
-    base.desc = base:CreateFontString(nil, "ARTWORK", "GameFontNormal")
-    base.desc:SetJustifyH("LEFT")
-    base.desc:SetPoint("CENTER", base, 0, 120/2-46)
-    base.desc:SetText("The new database needs to be compiled, press start to begin.")
-    --base.desc:SetFont(base.desc:GetFont(), 18)
-    base.desc:Show()
-
-    local button = CreateFrame("Button", nil, base)
-    button:SetPoint("CENTER", base, "CENTER", 0, 24-120/2)
-    button:SetWidth(80)
-    button:SetHeight(20)
-
-    button:SetText("Start")
-    button:SetNormalFontObject("GameFontNormal")
-
-    local function buildTexture(str)
-        local tex = button:CreateTexture()
-        tex:SetTexture(str)
-        tex:SetTexCoord(0, 0.625, 0, 0.6875)
-        tex:SetAllPoints()
-        return tex
-    end
-
-    button:SetNormalTexture(buildTexture("Interface/Buttons/UI-Panel-Button-Up"))
-    button:SetHighlightTexture(buildTexture("Interface/Buttons/UI-Panel-Button-Highlight"))
-    button:SetPushedTexture(buildTexture("Interface/Buttons/UI-Panel-Button-Down"))
-    button:SetScript("OnClick", function(...) print("clicked") end)
-
-    base:Show()
-end
-
 function QuestieDBCompiler:GetDBHandle(data, pointers, skipMap, keyToRootIndex, overrides)
     local handle = {}
     local map, lastIndex, lastPtr, types, _, indexToKey, keyToIndex = unpack(skipMap)
@@ -1200,7 +1166,7 @@ function QuestieDBCompiler:GetDBHandle(data, pointers, skipMap, keyToRootIndex, 
             end
             local typ = types[key]
             local ptr = pointers[id]
-            if ptr == nil then
+            if not ptr then
                 --print("Entry not found! " .. id)
                 return nil
             end
@@ -1209,7 +1175,7 @@ function QuestieDBCompiler:GetDBHandle(data, pointers, skipMap, keyToRootIndex, 
             else -- need to skip over some variably sized data
                 stream._pointer = lastPtr + ptr
                 local targetIndex = keyToIndex[key]
-                if targetIndex == nil then
+                if not targetIndex then
                     Questie:Error("ERROR: Unhandled db key: " .. key)
                     return nil
                 end
@@ -1233,7 +1199,7 @@ function QuestieDBCompiler:GetDBHandle(data, pointers, skipMap, keyToRootIndex, 
             local ptr = pointers[id]
             local override = overrides[id]
             local keys = {...}
-            if ptr == nil then
+            if not ptr then
                 if override then
                     local ret = {}
                     for index=1,#keys do
@@ -1259,7 +1225,7 @@ function QuestieDBCompiler:GetDBHandle(data, pointers, skipMap, keyToRootIndex, 
                     else -- need to skip over some variably sized data
                         stream._pointer = lastPtr + ptr
                         local targetIndex = keyToIndex[key]
-                        if targetIndex == nil then
+                        if not targetIndex then
                             Questie:Error("ERROR: Unhandled db key: " .. key)
                             return nil
                         end
@@ -1270,13 +1236,13 @@ function QuestieDBCompiler:GetDBHandle(data, pointers, skipMap, keyToRootIndex, 
                     ret[index] = QuestieDBCompiler.readers[typ](stream)
                 end
             end
-            return ret--unpack(ret)
+            return ret -- do not unpack the returned table
         end
     else
         handle.QuerySingle = function(id, key)
             local typ = types[key]
             local ptr = pointers[id]
-            if ptr == nil then
+            if not ptr then
                 --print("Entry not found! " .. id)
                 return nil
             end
@@ -1285,7 +1251,7 @@ function QuestieDBCompiler:GetDBHandle(data, pointers, skipMap, keyToRootIndex, 
             else -- need to skip over some variably sized data
                 stream._pointer = lastPtr + ptr
                 local targetIndex = keyToIndex[key]
-                if targetIndex == nil then
+                if not targetIndex then
                     Questie:Error("ERROR: Unhandled db key: " .. key)
                     return nil
                 end
@@ -1298,7 +1264,7 @@ function QuestieDBCompiler:GetDBHandle(data, pointers, skipMap, keyToRootIndex, 
 
         handle.Query = function(id, ...)
             local ptr = pointers[id]
-            if ptr == nil then
+            if not ptr then
                 --print("Entry not found! " .. id)
                 return nil
             end
@@ -1312,7 +1278,7 @@ function QuestieDBCompiler:GetDBHandle(data, pointers, skipMap, keyToRootIndex, 
                 else -- need to skip over some variably sized data
                     stream._pointer = lastPtr + ptr
                     local targetIndex = keyToIndex[key]
-                    if targetIndex == nil then
+                    if not targetIndex then
                         Questie:Error("ERROR: Unhandled db key: " .. key)
                         return nil
                     end
@@ -1322,7 +1288,7 @@ function QuestieDBCompiler:GetDBHandle(data, pointers, skipMap, keyToRootIndex, 
                 end
                 ret[index] = QuestieDBCompiler.readers[typ](stream)
             end
-            return ret--unpack(ret)
+            return ret -- do not unpack the returned table
         end
     end
 

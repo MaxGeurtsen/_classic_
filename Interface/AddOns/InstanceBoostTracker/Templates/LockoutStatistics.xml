@@ -1,7 +1,7 @@
 <Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/..\FrameXML\UI.xsd">
 
 	<Frame name="LockoutStatisticsItemTemplate" virtual="true">
-		<Size y="12" x="500"/>
+		<Size y="12" x="600"/>
 		<Layers>
 			<Layer level="BACKGROUND">
 				<Texture parentKey="Background" setAllPoints="true">
@@ -19,7 +19,7 @@
 					</Anchors>
 				</FontString>
 				<FontString parentKey="Gold" inherits="GameFontHighlightSmall" justifyH="LEFT">
-					<Size x="100"/>
+					<Size x="120"/>
 					<Anchors>
 						<Anchor point="TOPLEFT" relativePoint="TOPRIGHT" relativeKey="$parent.Experience"/>
 					</Anchors>

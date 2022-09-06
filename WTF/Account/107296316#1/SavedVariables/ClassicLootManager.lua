@@ -40,8 +40,8 @@ CLM_DB = {
 				["Partijlijder"] = {
 					["version"] = {
 						["minor"] = 9,
-						["major"] = 1,
 						["patch"] = 1,
+						["major"] = 1,
 						["changeset"] = "",
 					},
 					["spec"] = {
@@ -170,7 +170,7 @@ CLM_DB = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.5070000290870667,
+								["fadeTimer"] = 0.5060000256635249,
 								["timeToFade"] = 0.5,
 							},
 						}, -- [2]
@@ -189,7 +189,7 @@ CLM_DB = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.5070000290870667,
+								["fadeTimer"] = 0.5060000256635249,
 								["timeToFade"] = 0.5,
 							},
 						}, -- [2]
@@ -223,7 +223,7 @@ CLM_DB = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.5070000290870667,
+								["fadeTimer"] = 0.5060000256635249,
 								["timeToFade"] = 0.5,
 							},
 						}, -- [2]
@@ -242,7 +242,7 @@ CLM_DB = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.5070000290870667,
+								["fadeTimer"] = 0.5060000256635249,
 								["timeToFade"] = 0.5,
 							},
 						}, -- [2]
@@ -263,7 +263,7 @@ CLM_DB = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.5070000290870667,
+								["fadeTimer"] = 0.5060000256635249,
 								["timeToFade"] = 0.5,
 							},
 						}, -- [2]
@@ -282,7 +282,7 @@ CLM_DB = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.5070000290870667,
+								["fadeTimer"] = 0.5060000256635249,
 								["timeToFade"] = 0.5,
 							},
 						}, -- [2]
@@ -301,7 +301,7 @@ CLM_DB = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.5070000290870667,
+								["fadeTimer"] = 0.5060000256635249,
 								["timeToFade"] = 0.5,
 							},
 						}, -- [2]
@@ -320,7 +320,7 @@ CLM_DB = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.5070000290870667,
+								["fadeTimer"] = 0.5060000256635249,
 								["timeToFade"] = 0.5,
 							},
 						}, -- [2]
@@ -586,6 +586,32 @@ CLM_DB = {
 						["two"] = 0,
 					},
 				},
+				["Partijlijder"] = {
+					["version"] = {
+						["minor"] = 9,
+						["major"] = 1,
+						["patch"] = 2,
+						["changeset"] = "",
+					},
+					["spec"] = {
+						["one"] = 0,
+						["three"] = 0,
+						["two"] = 0,
+					},
+				},
+				["Partijdood"] = {
+					["version"] = {
+						["minor"] = 9,
+						["patch"] = 2,
+						["major"] = 1,
+						["changeset"] = "",
+					},
+					["spec"] = {
+						["one"] = 0,
+						["three"] = 0,
+						["two"] = 0,
+					},
+				},
 			},
 			["lootQueue"] = {
 				["ignoredClasses"] = {
@@ -654,7 +680,7 @@ CLM_DB = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.5000000176951289,
+								["fadeTimer"] = 0.5050000115297735,
 								["timeToFade"] = 0.5,
 							},
 						}, -- [2]
@@ -673,7 +699,7 @@ CLM_DB = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.5000000176951289,
+								["fadeTimer"] = 0.5050000115297735,
 								["timeToFade"] = 0.5,
 							},
 						}, -- [2]
@@ -690,7 +716,7 @@ CLM_DB = {
 					},
 					["lastVersion"] = {
 						["minor"] = 9,
-						["patch"] = 1,
+						["patch"] = 2,
 						["major"] = 1,
 						["changeset"] = "",
 					},
@@ -707,7 +733,7 @@ CLM_DB = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.5000000176951289,
+								["fadeTimer"] = 0.5050000115297735,
 								["timeToFade"] = 0.5,
 							},
 						}, -- [2]
@@ -726,7 +752,7 @@ CLM_DB = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.5000000176951289,
+								["fadeTimer"] = 0.5050000115297735,
 								["timeToFade"] = 0.5,
 							},
 						}, -- [2]
@@ -747,7 +773,26 @@ CLM_DB = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.5000000176951289,
+								["fadeTimer"] = 0.5050000115297735,
+								["timeToFade"] = 0.5,
+							},
+						}, -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+				},
+				["auctionHistory"] = {
+					["location"] = {
+						"CENTER", -- [1]
+						{
+							["variablesLoaded"] = true,
+							["firstTimeLoaded"] = 1,
+							["fadeInfo"] = {
+								["startAlpha"] = 1,
+								["endAlpha"] = 1,
+								["mode"] = "IN",
+								["fadeTimer"] = 0.5050000115297735,
 								["timeToFade"] = 0.5,
 							},
 						}, -- [2]
@@ -766,7 +811,7 @@ CLM_DB = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.5000000176951289,
+								["fadeTimer"] = 0.5050000115297735,
 								["timeToFade"] = 0.5,
 							},
 						}, -- [2]
@@ -785,7 +830,7 @@ CLM_DB = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.5000000176951289,
+								["fadeTimer"] = 0.5050000115297735,
 								["timeToFade"] = 0.5,
 							},
 						}, -- [2]
@@ -808,7 +853,7 @@ CLM_DB = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.5000000176951289,
+								["fadeTimer"] = 0.5050000115297735,
 								["timeToFade"] = 0.5,
 							},
 						}, -- [2]
@@ -21981,17 +22026,17 @@ CLM_DB = {
 				["_b"] = 2,
 			}, -- [854]
 			{
-				["g"] = 53450716,
-				["_a"] = 41717713,
 				["_d"] = "P1",
+				["_a"] = 41717713,
 				["_c"] = 1642413622,
+				["g"] = 53450716,
 				["_b"] = 0,
 			}, -- [855]
 			{
-				["g"] = 53253150,
-				["_a"] = 41717713,
 				["_d"] = "P1",
+				["_a"] = 41717713,
 				["_c"] = 1642413622,
+				["g"] = 53253150,
 				["_b"] = 1,
 			}, -- [856]
 			{
@@ -30180,7 +30225,7 @@ CLM_DB = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.5000000172294676,
+								["fadeTimer"] = 0.5050000119954348,
 								["timeToFade"] = 0.5,
 							},
 						}, -- [2]
@@ -30199,7 +30244,7 @@ CLM_DB = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.5000000172294676,
+								["fadeTimer"] = 0.5050000119954348,
 								["timeToFade"] = 0.5,
 							},
 						}, -- [2]
@@ -30216,8 +30261,8 @@ CLM_DB = {
 					},
 					["lastVersion"] = {
 						["minor"] = 9,
-						["patch"] = 1,
 						["major"] = 1,
+						["patch"] = 1,
 						["changeset"] = "",
 					},
 					["do_not_show"] = true,
@@ -30233,7 +30278,7 @@ CLM_DB = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.5000000172294676,
+								["fadeTimer"] = 0.5050000119954348,
 								["timeToFade"] = 0.5,
 							},
 						}, -- [2]
@@ -30252,7 +30297,7 @@ CLM_DB = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.5000000172294676,
+								["fadeTimer"] = 0.5050000119954348,
 								["timeToFade"] = 0.5,
 							},
 						}, -- [2]
@@ -30273,7 +30318,7 @@ CLM_DB = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.5000000172294676,
+								["fadeTimer"] = 0.5050000119954348,
 								["timeToFade"] = 0.5,
 							},
 						}, -- [2]
@@ -30292,7 +30337,7 @@ CLM_DB = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.5000000172294676,
+								["fadeTimer"] = 0.5050000119954348,
 								["timeToFade"] = 0.5,
 							},
 						}, -- [2]
@@ -30311,7 +30356,7 @@ CLM_DB = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.5000000172294676,
+								["fadeTimer"] = 0.5050000119954348,
 								["timeToFade"] = 0.5,
 							},
 						}, -- [2]
@@ -30334,7 +30379,7 @@ CLM_DB = {
 								["startAlpha"] = 1,
 								["endAlpha"] = 1,
 								["mode"] = "IN",
-								["fadeTimer"] = 0.5000000172294676,
+								["fadeTimer"] = 0.5050000119954348,
 								["timeToFade"] = 0.5,
 							},
 						}, -- [2]
@@ -30563,7 +30608,7 @@ CLM_DB = {
 	["global"] = {
 		["version"] = {
 			["minor"] = 9,
-			["patch"] = 1,
+			["patch"] = 2,
 			["major"] = 1,
 			["changeset"] = "",
 		},
@@ -30595,11 +30640,63 @@ CLM_DB = {
 				["chat_commands"] = false,
 			},
 			["profileInfo"] = {
-				["Partijcurses"] = {
+				["Partijlijder"] = {
+					["version"] = {
+						["minor"] = 9,
+						["patch"] = 2,
+						["major"] = 1,
+						["changeset"] = "",
+					},
+					["spec"] = {
+						["one"] = 0,
+						["three"] = 0,
+						["two"] = 0,
+					},
+				},
+				["Partijleider"] = {
+					["version"] = {
+						["minor"] = 9,
+						["patch"] = 2,
+						["major"] = 1,
+						["changeset"] = "",
+					},
+					["spec"] = {
+						["one"] = 0,
+						["three"] = 0,
+						["two"] = 0,
+					},
+				},
+				["Rinque"] = {
+					["version"] = {
+						["minor"] = 9,
+						["patch"] = 2,
+						["major"] = 1,
+						["changeset"] = "",
+					},
+					["spec"] = {
+						["one"] = 0,
+						["three"] = 0,
+						["two"] = 0,
+					},
+				},
+				["Partijdood"] = {
 					["version"] = {
 						["minor"] = 9,
 						["major"] = 1,
+						["patch"] = 2,
+						["changeset"] = "",
+					},
+					["spec"] = {
+						["one"] = 0,
+						["three"] = 0,
+						["two"] = 0,
+					},
+				},
+				["Partijcurses"] = {
+					["version"] = {
+						["minor"] = 9,
 						["patch"] = 1,
+						["major"] = 1,
 						["changeset"] = "",
 					},
 					["spec"] = {
@@ -30670,16 +30767,9 @@ CLM_DB = {
 					["location"] = {
 						"CENTER", -- [1]
 						{
-							["variablesLoaded"] = true,
-							["fadeInfo"] = {
-								["startAlpha"] = 1,
-								["endAlpha"] = 1,
-								["mode"] = "IN",
-								["fadeTimer"] = 0.5040000132285058,
-								["timeToFade"] = 0.5,
-							},
-							["firstTimeLoaded"] = 1,
 							[0] = nil --[[ skipped userdata ]],
+							["firstTimeLoaded"] = 1,
+							["variablesLoaded"] = true,
 						}, -- [2]
 						"CENTER", -- [3]
 						0, -- [4]
@@ -30690,16 +30780,9 @@ CLM_DB = {
 					["location"] = {
 						"CENTER", -- [1]
 						{
-							["variablesLoaded"] = true,
-							["fadeInfo"] = {
-								["startAlpha"] = 1,
-								["endAlpha"] = 1,
-								["mode"] = "IN",
-								["fadeTimer"] = 0.5040000132285058,
-								["timeToFade"] = 0.5,
-							},
-							["firstTimeLoaded"] = 1,
 							[0] = nil --[[ skipped userdata ]],
+							["firstTimeLoaded"] = 1,
+							["variablesLoaded"] = true,
 						}, -- [2]
 						"CENTER", -- [3]
 						0, -- [4]
@@ -30716,7 +30799,7 @@ CLM_DB = {
 					["never_show"] = false,
 					["lastVersion"] = {
 						["minor"] = 9,
-						["patch"] = 1,
+						["patch"] = 2,
 						["major"] = 1,
 						["changeset"] = "",
 					},
@@ -30725,16 +30808,9 @@ CLM_DB = {
 					["location"] = {
 						"CENTER", -- [1]
 						{
-							["variablesLoaded"] = true,
-							["fadeInfo"] = {
-								["startAlpha"] = 1,
-								["endAlpha"] = 1,
-								["mode"] = "IN",
-								["fadeTimer"] = 0.5040000132285058,
-								["timeToFade"] = 0.5,
-							},
-							["firstTimeLoaded"] = 1,
 							[0] = nil --[[ skipped userdata ]],
+							["firstTimeLoaded"] = 1,
+							["variablesLoaded"] = true,
 						}, -- [2]
 						"CENTER", -- [3]
 						0, -- [4]
@@ -30745,16 +30821,9 @@ CLM_DB = {
 					["location"] = {
 						"CENTER", -- [1]
 						{
-							["variablesLoaded"] = true,
-							["fadeInfo"] = {
-								["startAlpha"] = 1,
-								["endAlpha"] = 1,
-								["mode"] = "IN",
-								["fadeTimer"] = 0.5040000132285058,
-								["timeToFade"] = 0.5,
-							},
-							["firstTimeLoaded"] = 1,
 							[0] = nil --[[ skipped userdata ]],
+							["firstTimeLoaded"] = 1,
+							["variablesLoaded"] = true,
 						}, -- [2]
 						"CENTER", -- [3]
 						0, -- [4]
@@ -30765,16 +30834,9 @@ CLM_DB = {
 					["location"] = {
 						"CENTER", -- [1]
 						{
-							["variablesLoaded"] = true,
-							["fadeInfo"] = {
-								["startAlpha"] = 1,
-								["endAlpha"] = 1,
-								["mode"] = "IN",
-								["fadeTimer"] = 0.5040000132285058,
-								["timeToFade"] = 0.5,
-							},
-							["firstTimeLoaded"] = 1,
 							[0] = nil --[[ skipped userdata ]],
+							["firstTimeLoaded"] = 1,
+							["variablesLoaded"] = true,
 						}, -- [2]
 						"CENTER", -- [3]
 						0, -- [4]
@@ -30785,16 +30847,9 @@ CLM_DB = {
 					["location"] = {
 						"CENTER", -- [1]
 						{
-							["variablesLoaded"] = true,
-							["fadeInfo"] = {
-								["startAlpha"] = 1,
-								["endAlpha"] = 1,
-								["mode"] = "IN",
-								["fadeTimer"] = 0.5040000132285058,
-								["timeToFade"] = 0.5,
-							},
-							["firstTimeLoaded"] = 1,
 							[0] = nil --[[ skipped userdata ]],
+							["firstTimeLoaded"] = 1,
+							["variablesLoaded"] = true,
 						}, -- [2]
 						"CENTER", -- [3]
 						0, -- [4]
@@ -30807,16 +30862,9 @@ CLM_DB = {
 					["location"] = {
 						"CENTER", -- [1]
 						{
-							["variablesLoaded"] = true,
-							["fadeInfo"] = {
-								["startAlpha"] = 1,
-								["endAlpha"] = 1,
-								["mode"] = "IN",
-								["fadeTimer"] = 0.5040000132285058,
-								["timeToFade"] = 0.5,
-							},
-							["firstTimeLoaded"] = 1,
 							[0] = nil --[[ skipped userdata ]],
+							["firstTimeLoaded"] = 1,
+							["variablesLoaded"] = true,
 						}, -- [2]
 						"CENTER", -- [3]
 						0, -- [4]
@@ -30827,16 +30875,9 @@ CLM_DB = {
 					["location"] = {
 						"CENTER", -- [1]
 						{
-							["variablesLoaded"] = true,
-							["fadeInfo"] = {
-								["startAlpha"] = 1,
-								["endAlpha"] = 1,
-								["mode"] = "IN",
-								["fadeTimer"] = 0.5040000132285058,
-								["timeToFade"] = 0.5,
-							},
-							["firstTimeLoaded"] = 1,
 							[0] = nil --[[ skipped userdata ]],
+							["firstTimeLoaded"] = 1,
+							["variablesLoaded"] = true,
 						}, -- [2]
 						"CENTER", -- [3]
 						0, -- [4]
@@ -30847,16 +30888,9 @@ CLM_DB = {
 					["location"] = {
 						"CENTER", -- [1]
 						{
-							["variablesLoaded"] = true,
-							["fadeInfo"] = {
-								["startAlpha"] = 1,
-								["endAlpha"] = 1,
-								["mode"] = "IN",
-								["fadeTimer"] = 0.5040000132285058,
-								["timeToFade"] = 0.5,
-							},
-							["firstTimeLoaded"] = 1,
 							[0] = nil --[[ skipped userdata ]],
+							["firstTimeLoaded"] = 1,
+							["variablesLoaded"] = true,
 						}, -- [2]
 						"CENTER", -- [3]
 						0, -- [4]

@@ -24,6 +24,9 @@ L["Shows the Options Window"] = "Zeigt das Optionsfenster"
 -- /rb statmod
 L["Enable Stat Mods"] = "Aktiviere Stat Mods"
 L["Enable support for Stat Mods"] = "Aktiviert die Unterstützung von Stat Mods"
+-- /rb avoidancedr
+L["Enable Avoidance Diminishing Returns"] = "Aktiviere Diminishing Returns für Vermeidung"
+L["Dodge, Parry, Miss Avoidance values will be calculated using the avoidance deminishing return formula with your current stats"] = "Ausweichen, Parieren und Treffervermeidung wird über die Diminishing Returns (Abnehmende Wirkung) Formel berechnet"
 -- /rb itemid
 L["Show ItemID"] = "Zeige ItemID"
 L["Show the ItemID in tooltips"] = "Zeigt ItemID im Tooltip"
@@ -51,6 +54,13 @@ L["Options for Rating display"] = "Optionen für die Bewertungsanzeige"
 -- /rb rating show
 L["Show Rating conversions"] = "Zeige Bewertungsumrechnung"
 L["Show Rating conversions in tooltips"] = "Zeige Bewertungsumrechnung im Tooltip"
+-- TODO
+-- /rb rating spell
+L["Show Spell Hit/Haste"] = true
+L["Show Spell Hit/Haste from Hit/Haste Rating"] = true
+-- /rb rating physical
+L["Show Physical Hit/Haste"] = true
+L["Show Physical Hit/Haste from Hit/Haste Rating"] = true
 -- /rb rating detail
 L["Show detailed conversions text"] = "Zeige detaillierten Umrechnungtext"
 L["Show detailed text for Resiliance and Expertise conversions"] = "Zeige detaillierten Text für Abhärtungs- und Waffenkundumrechnung"
@@ -63,6 +73,29 @@ L["Convert Weapon Skill into Crit Hit, Dodge Neglect, Parry Neglect and Block Ne
 -- /rb rating exp -- 2.3.0
 L["Expertise breakdown"] = "Waffenkundeanalyse"
 L["Convert Expertise into Dodge Neglect and Parry Neglect"] = "Wandle Waffenkunde in Ausweich- und Pariermissachtung um"
+L["from"] = "aus"
+L["HEALING"] = STAT_SPELLHEALING
+L["AP"] = ATTACK_POWER_TOOLTIP
+L["RANGED_AP"] = RANGED_ATTACK_POWER
+L["ARMOR"] = ARMOR
+L["SPELL_DMG"] = STAT_SPELLDAMAGE
+L["SPELL_CRIT"] = PLAYERSTAT_SPELL_COMBAT .. " " .. SPELL_CRIT_CHANCE
+L["STR"] = SPELL_STAT1_NAME
+L["AGI"] = SPELL_STAT2_NAME
+L["STA"] = SPELL_STAT3_NAME
+L["INT"] = SPELL_STAT4_NAME
+L["SPI"] = SPELL_STAT5_NAME
+L["PARRY"] = PARRY
+L["MANA_REG"] = "Manaregeneration"
+L["NORMAL_MANA_REG"] = SPELL_STAT4_NAME .. " & " .. SPELL_STAT5_NAME -- Intellect & Spirit
+L["PET_STA"] = PET .. SPELL_STAT3_NAME -- Pet Stamina
+L["PET_INT"] = PET .. SPELL_STAT4_NAME -- Pet Intellect
+L.statModOptionName = function(show, add)
+	return string.format("%s %s ", show, add)
+end
+L.statModOptionDesc = function(show, add, from, mod)
+	return string.format("%s %s %s %s ", show, add, from, mod)
+end
 
 -- /rb stat
 --["Stat Breakdown"] = "Werte",
@@ -165,6 +198,14 @@ L["Show Spell Damage from Spirit"] = "Zeige Zauberschaden resultierend aus Wille
 L["Show Healing"] = "Zeige Heilung"
 L["Show Healing from Spirit"] = "Zeige Heilung resultierend aus Willenskraft"
 
+---------------------------------------------------------------------------
+-- /rb stat armor
+L["Armor"] = "Rüstung"
+L["Changes the display of Armor"] = "Ändert die Anzeige von Rüstung"
+-- /rb stat armor ap
+L["Show Attack Power"] = "Zeige Angriffskraft"
+L["Show Attack Power from Armor"] = "Zeige Angriffskraft, resultierend aus Rüstung"
+---------------------------------------------------------------------------
 -- /rb sum
 L["Stat Summary"] = "Werteübersicht"
 L["Options for stat summary"] = "Optionen für die Werteübersicht"
@@ -354,6 +395,10 @@ L["Spell Penetration Summary"] = "Durchschlagsübersicht"
 -- /rb sum stat ignorearmor
 L["Sum Ignore Armor"] = "Rüstungsmissachtung zusammenrechnen"
 L["Ignore Armor Summary"] = "Rüstungsmissachtungsübersicht"
+L["Sum Armor Penetration"] = "Rüstungsdurchlag zusammenrechnen"
+L["Armor Penetration Summary"] = "Rüstungsdurchlagsübersicht"
+L["Sum Armor Penetration Rating"] = "Rüstungsdurchlagwertung zusammenrechnen"
+L["Armor Penetration Rating Summary"] = "Rüstungsdurchlagwertungsübersicht"
 -- /rb sum stat weapondps
 --["Sum Weapon DPS"] = true,
 --["Weapon DPS Summary"] = true,
@@ -544,51 +589,26 @@ L["statList"] = {
 	{pattern = "blockwertung", id = CR_BLOCK}, -- block enchant: "+10 Shield Block Rating"
 	{pattern = "parierwertung", id = CR_PARRY},
 
-	-- Falls jemand ein Item mit den unten auskommentierten Patterns hat, die nicht der Übersetzung entsprechen soll er mir bescheid sagen, ich habe nix gefunden...
 	{pattern = "kritische zaubertrefferwertung", id = CR_CRIT_SPELL},
-	--		{pattern = "spell critical hit rating", id = CR_CRIT_SPELL},
-	--		{pattern = "spell critical rating", id = CR_CRIT_SPELL},
-	--		{pattern = "spell crit rating", id = CR_CRIT_SPELL},
 	{pattern = "kritische distanztrefferwertung", id = CR_CRIT_RANGED},
-	--		{pattern = "ranged critical hit rating", id = CR_CRIT_RANGED},
-	--		{pattern = "ranged critical rating", id = CR_CRIT_RANGED},
-	--		{pattern = "ranged crit rating", id = CR_CRIT_RANGED},
-	{pattern = "kritische trefferwertung", id = CR_CRIT_MELEE},
-	--		{pattern = "critical hit rating", id = CR_CRIT_MELEE},
-	--		{pattern = "crit rating", id = CR_CRIT_MELEE},
+	{pattern = "kritische trefferwertung", id = CR_CRIT},
 
 	{pattern = "zaubertrefferwertung", id = CR_HIT_SPELL},
 	{pattern = "trefferwertung", id = CR_HIT_RANGED},
-	{pattern = "trefferwertung", id = CR_HIT_MELEE},
+	{pattern = "trefferwertung", id = CR_HIT},
 
 	{pattern = "abhärtungswertung", id = CR_CRIT_TAKEN_MELEE}, -- resilience is implicitly a rating
 
 	{pattern = "zaubertempowertung", id = CR_HASTE_SPELL},
 	{pattern = "distanztempowertung", id = CR_HASTE_RANGED},
-	{pattern = "angriffstempowertung", id = CR_HASTE_MELEE},
+	{pattern = "angriffstempowertung", id = CR_HASTE},
 	{pattern = "nahkampftempowertung", id = CR_HASTE_MELEE},
-	{pattern = "tempowertung", id = CR_HASTE_MELEE}, -- [Drums of Battle]
+	{pattern = "tempowertung", id = CR_HASTE}, -- [Drums of Battle]
 
-	--		{pattern = "skill rating", id = CR_WEAPON_SKILL}, -- seit 2.3.0 entfernt denke ich..
 	{pattern = "waffenkundewertung", id = CR_EXPERTISE},
 
-	--		{pattern = "hit avoidance rating", id = CR_HIT_TAKEN_MELEE}, - seit 2.0.10 gibt es kein item mehr damit
-	--[[
-	{pattern = "dagger skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "sword skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "two%-handed swords skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "axe skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "bow skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "crossbow skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "gun skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "feral combat skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "mace skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "polearm skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "staff skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "two%-handed axes skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "two%-handed maces skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "fist weapons skill rating", id = CR_WEAPON_SKILL},
-	--]]
+	{pattern = "rüstungsdurchschlagwertung", id = CR_ARMOR_PENETRATION},
+	{pattern = string.lower(ARMOR), id = ARMOR},
 }
 -------------------------
 -- Added info patterns --
@@ -614,6 +634,11 @@ L["$value to be Dodged/Parried"] = "$value wird Ausgewichen/Pariert"
 L["$value to be Crit"] = "$value wird kritisch"
 L["$value Crit Dmg Taken"] = "$value erlittener Schaden"
 L["$value DOT Dmg Taken"] = "$value erlittener Schaden durch DOTs"
+L["$value% Parry"] = "$value% Parieren"
+-- for hit rating showing both physical and spell conversions
+-- (+1.21%, S+0.98%)
+-- (+1.21%, +0.98% S)
+L["$value Spell"] = "$value Zauber"
 
 ------------------
 -- Stat Summary --

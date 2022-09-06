@@ -1,7 +1,7 @@
 local L = LibStub("AceLocale-3.0"):GetLocale("Talented")
 local Talented = Talented
 
-Talented.max_talent_points = 61 --Level 70 is max
+Talented.max_talent_points = 71 --Level 80 is max
 
 Talented.defaults = {
 	profile = {
@@ -220,7 +220,7 @@ Talented.options = {
 		-- 					desc = L["Create a new template from your current spec."],
 		-- 					type = "execute",
 		-- 					order = 300,
-		-- 					func = function() Talented:SetTemplate(Talented:CopyTemplate(Talented.current)) end,
+		-- 					func = function() Talented:SetTemplate(Talented:CopyTemplate(Talented.template)) end,
 		-- 				},
 		-- 				clone = {
 		-- 					name = L["Clone selected"],

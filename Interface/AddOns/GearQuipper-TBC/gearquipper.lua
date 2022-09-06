@@ -7,7 +7,7 @@ GQ_OPTIONS = GQ_OPTIONS or {};
 GQ_DATA = GQ_DATA or {};
 GQ_AUX = GQ_AUX or {};
 
-local GQ_VERSION = 30;
+local GQ_VERSION = 34;
 
 c.VALUE_NONE = "VALUE_NONE";
 c.KEYWORD_NONE = "$NONE";
@@ -90,8 +90,13 @@ function c:IsClassic()
     return WOW_PROJECT_CLASSIC and WOW_PROJECT_ID == WOW_PROJECT_CLASSIC;
 end
 
-function c:IsTBC()
+function c:IsTbcClassic()
     return WOW_PROJECT_BURNING_CRUSADE_CLASSIC and WOW_PROJECT_ID == WOW_PROJECT_BURNING_CRUSADE_CLASSIC;
+end
+
+function c:IsWotlkClassic()
+    -- ProjectId to be defined by Blizzard
+    return c:IsTbcClassic();
 end
 
 function c:GetHomeLatency(addFixed)

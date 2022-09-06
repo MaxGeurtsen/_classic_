@@ -3,13 +3,15 @@ IdentityDB = {
 	["profileKeys"] = {
 		["Partijleider - Gehennas"] = "Partijleider - Razorgore",
 		["Partijlijder - Gehennas"] = "Default",
+		["Partijdood - Gehennas"] = "Default",
 		["Firebreather - Firemaw"] = "Default",
 		["Partijcurses - Gehennas"] = "Default",
 		["Awwaa - Gehennas"] = "Default",
+		["Partijaxert - Gehennas"] = "Default",
 		["Partijleider - Razorgore"] = "Partijleider - Razorgore",
 		["Rinque - Gehennas"] = "Default",
-		["Firebreather - Gehennas"] = "Default",
 		["Partijlijder - Razorgore"] = "Default",
+		["Firebreather - Gehennas"] = "Default",
 		["Kealthas - Razorgore"] = "Default",
 	},
 	["profiles"] = {

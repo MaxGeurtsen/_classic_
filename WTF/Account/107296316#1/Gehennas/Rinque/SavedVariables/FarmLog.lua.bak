@@ -1,13 +1,13 @@
 
 FLogVars = {
 	["enabled"] = false,
-	["viewTotal"] = false,
+	["lockMinimapButton"] = false,
 	["todayKills"] = {
 	},
-	["inInstance"] = false,
-	["lockMinimapButton"] = false,
-	["currentFarm"] = "default",
 	["ver"] = 1.2,
+	["viewTotal"] = false,
+	["enableMinimapButton"] = true,
+	["inInstance"] = false,
 	["hud"] = {
 		["show"] = false,
 		["locked"] = false,
@@ -20,7 +20,7 @@ FLogVars = {
 			["honorPerHourTotal"] = 0,
 			["goldPerHour"] = 0,
 			["goldPerHourTotal"] = 0,
-			["goldTotal"] = 0,
+			["honor"] = 0,
 			["gold"] = 0,
 			["current"] = {
 				["ah"] = 0,
@@ -34,7 +34,7 @@ FLogVars = {
 				["drops"] = {
 				},
 				["hks"] = 0,
-				["resets"] = 50,
+				["resets"] = 58,
 				["rep"] = {
 				},
 				["ranks"] = {
@@ -42,16 +42,16 @@ FLogVars = {
 				["dks"] = 0,
 				["bgsWin"] = {
 				},
-				["xp"] = 0,
-				["honor"] = 0,
-				["seconds"] = 155,
 				["consumes"] = {
 				},
+				["seconds"] = 155,
+				["honor"] = 0,
+				["xp"] = 0,
 				["bgsLoss"] = {
 				},
 				["bgs"] = {
-					["Eye of the Storm"] = 1,
 					["Alterac Valley"] = 1,
+					["Eye of the Storm"] = 1,
 				},
 			},
 			["past"] = {
@@ -74,18 +74,18 @@ FLogVars = {
 				["dks"] = 0,
 				["bgsWin"] = {
 				},
-				["xp"] = 0,
-				["honor"] = 0,
-				["seconds"] = 0,
 				["consumes"] = {
 				},
+				["seconds"] = 0,
+				["honor"] = 0,
+				["xp"] = 0,
 				["bgsLoss"] = {
 				},
 				["bgs"] = {
 				},
 			},
 			["honorPerHour"] = 0,
-			["honor"] = 0,
+			["goldTotal"] = 0,
 		},
 	},
 	["minimapButtonPosition"] = {
@@ -93,7 +93,7 @@ FLogVars = {
 		["x"] = -30.63874053955078,
 		["point"] = "TOPRIGHT",
 	},
-	["enableMinimapButton"] = true,
+	["currentFarm"] = "default",
 	["frameRect"] = {
 		["y"] = -133.7430114746094,
 		["x"] = -453.46142578125,

@@ -20,14 +20,14 @@ Talented.importers[".*/talent.calc/(.-)/(%d*)-?(%d*)-?(%d*).*"] = function (self
 	src={t1, t2, t3}
 	--src
 	dst.class = class:upper()
-	local info = self:GetTalentInfo(dst.class)
+	local info = self:UncompressSpellData(dst.class)
 	local lens = {t1:len(), t2:len(), t3:len()}
 	
 	for tab, tree in ipairs(info) do
 		local count = 1
 		local t = {}
 		dst[tab] = t
-		for index = 1, #tree.talents do
+		for index = 1, #tree do
 			if count <= lens[tab] then
 				t[index] = tonumber(src[tab]:sub(count, count))
 				count = count + 1
@@ -62,6 +62,6 @@ Talented.exporters[L["Wowhead Talent Calculator"]] = function (self, template)
 		end
 		s[#s + 1] = "-"
 	end
-	-- return L["http://tbc.wowhead.com/talent#%s"]:format(self:TemplateToString(template, "0zMcmVokRsaqbdrfwihuGINALpTjnyxtgevE"))
-	return L["http://tbc.wowhead.com/talent-calc/%s/%s"]:format(template.class:lower(), table.concat(s))
+	if not RAID_CLASS_COLORS[template.class] then return self:ExportWhpetTemplate(template) end
+	return L["https://www.wowhead.com/wotlk/talent-calc/%s/%s"]:format(template.class:lower(), table.concat(s))
 end

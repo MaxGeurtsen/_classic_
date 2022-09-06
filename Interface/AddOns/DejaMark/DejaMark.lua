@@ -3,12 +3,6 @@
 BINDING_HEADER_DEJAMARK = "DejaMark"
 _G["BINDING_NAME_CLICK DejaMark:LeftButton"] = "Show Markers(Hold)"
 
-local DMM_isClassic
-local _, _, _, tocversion = GetBuildInfo()
-if (tocversion < 20000) then
-	DMM_isClassic = true
-end
-
 World_Flares = {
 	5,
 	6,
@@ -22,12 +16,12 @@ World_Flares = {
 }
 
 local DejaMarkFrame=CreateFrame("Frame","DejaMarkFrame",UIParent)
-DejaMarkFrame:SetClampedToScreen( true )
-DejaMarkFrame:SetMovable(true)
-DejaMarkFrame:EnableMouse(true)
-DejaMarkFrame:SetSize(100,100)
-DejaMarkFrame:SetScale(1.0)
-DejaMarkFrame:Hide()
+	DejaMarkFrame:SetClampedToScreen( true )
+	DejaMarkFrame:SetMovable(true)
+	DejaMarkFrame:EnableMouse(true)
+	DejaMarkFrame:SetSize(100,100)
+	DejaMarkFrame:SetScale(1.0)
+	DejaMarkFrame:Hide()
 
 local t=DejaMarkFrame:CreateTexture(nil,"ARTWORK")
 	t:SetAllPoints(DejaMarkFrame)
@@ -81,16 +75,12 @@ for index = 1, 9 do -- Lua starts tables at 1 isntead of 0... so below I do lots
 		self.Texture:SetAllPoints();
 	end);
 
-	if DMM_isClassic then --Check for Classic which doesn't have world markers. This doesn't use macros and won't have the custom script warning popup.
-		Button:SetScript("OnClick", function (self, button, down)
-			if (index == 9) then
-				if (button=="LeftButton") then
- 					SetRaidTarget("target", 0)
-				end
-				if (button=="RightButton") then
-					for index = 1, 9 do
-						SetRaidTarget("player", index)
-					end
+	Button:SetScript("OnClick", function (self, button, down)
+		if (button=="LeftButton") then
+			if (index == 9) then			
+				for index = 1, 9 do
+					SetRaidTarget("player", index)
+					SetRaidTarget("player", 0)
 				end
 			else
 				local targetindex = GetRaidTargetIndex("target")
@@ -100,18 +90,9 @@ for index = 1, 9 do -- Lua starts tables at 1 isntead of 0... so below I do lots
 					SetRaidTarget("target", index)
 				end
 			end
-		end)
-	else
-		Button:SetAttribute("type","macro") -- /tm on left click, /wm on right click
-
-		wfIndex = World_Flares[Button:GetID()]
-		-- print(index, wfIndex)
-		if (wfIndex==0) then
-			Button:SetAttribute("macrotext",'/run PlaySound(SOUNDKIT.U_CHAT_SCROLL_BUTTON) if SecureCmdOptionParse("[btn:1]") then for i=1,9 do SetRaidTarget("player",i)end end\n/cwm [btn:2] all')
-		else
-			Button:SetAttribute("macrotext",'/run PlaySound(SOUNDKIT.U_CHAT_SCROLL_BUTTON) if SecureCmdOptionParse("[btn:1]") then SetRaidTargetIcon("target", '..index..') end\n/wm [btn:2] '..wfIndex..'\n/cwm [btn:2] '..wfIndex..'')
 		end
-	end
+		PlaySound(SOUNDKIT.U_CHAT_SCROLL_BUTTON)
+	end)
 end
 
 --toggle frame, has no visible parts. exists as a place to accept a click run a snippet

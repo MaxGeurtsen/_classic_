@@ -24,10 +24,19 @@ function c:InitUI(paperDollFrame)
             c:SetSlotInfo();
             c:SetPaperDollLabelText();
 
-            if c:IsSwitching() or c:IsInCombat() then
+            if c:IsSwitching() or c:IsInCombat() or c:IsDead() then
                 c:LockUI();
             else
                 c:UnlockUI();
+            end
+
+            if c:IsWotlkClassic() then
+                _G["GearManagerToggleButton"]:ClearAllPoints();
+                if ElvUI then
+                    _G["GearManagerToggleButton"]:SetPoint("TOPLEFT", c.paperDollFrame, "TOPLEFT", 18, -33);
+                else
+                    _G["GearManagerToggleButton"]:SetPoint("TOPLEFT", c.paperDollFrame, "TOPLEFT", 75, -39);
+                end                
             end
         end);
         c.paperDollFrame:HookScript("OnHide", function()
@@ -519,7 +528,7 @@ function c:ShowItemToolTip(itemString)
         -- if _G["GameTooltipTextRight1"] then
         --     GameTooltipTextRight1:SetText("hi");
         -- end
-        
+
         GameTooltip:AddLine(" ");
         GameTooltip:AddDoubleLine(c:GetText("GearQuipper set(s):"), table.concat(sets, ", "));
     end
@@ -580,12 +589,12 @@ local function GetContainersForItems(itemStrings)
                             local itemString = TInvItm[TInvFrame.playerid][bagId][slotId]["il"]; -- .. ":" .. UnitLevel("player") .. ":::::::::"; -- messy workaround
                             local itemName = TInvItm[TInvFrame.playerid][bagId][slotId]["in"];
                             if not itemName then
-                                break;
+                                break
                             end
                             for _, is in ipairs(itemStrings) do
                                 if not match and c:GetItemName(is) == itemName then
                                     match = true;
-                                    break;
+                                    break
                                 end
                             end
                         end

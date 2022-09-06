@@ -2,11 +2,31 @@
 FLogVars = {
 	["enabled"] = false,
 	["viewTotal"] = true,
-	["todayKills"] = {
-	},
 	["ver"] = 1.2,
-	["lockMinimapButton"] = false,
+	["todayKills"] = {
+		["Mamamerkel"] = 5,
+		["Ranax"] = 2,
+		["Boboraa"] = 1,
+		["Doneasfk"] = 4,
+		["Hellcatt"] = 3,
+		["Xanomir"] = 1,
+		["Caladblog"] = 2,
+		["Hixxe"] = 4,
+		["Nepøla"] = 1,
+		["Dotqtpie"] = 3,
+		["Lalatino"] = 9,
+		["Slapo"] = 1,
+		["Sächadispell"] = 4,
+		["Misstetas"] = 7,
+		["Shackie"] = 1,
+	},
 	["enableMinimapButton"] = true,
+	["lockMinimapButton"] = false,
+	["minimapButtonPosition"] = {
+		["y"] = -127,
+		["x"] = -165,
+		["point"] = "TOPRIGHT",
+	},
 	["inInstance"] = false,
 	["hud"] = {
 		["show"] = false,
@@ -27,7 +47,7 @@ FLogVars = {
 				["drops"] = {
 				},
 				["hks"] = 0,
-				["resets"] = 84,
+				["resets"] = 97,
 				["rep"] = {
 				},
 				["ranks"] = {
@@ -43,6 +63,8 @@ FLogVars = {
 				["bgsLoss"] = {
 				},
 				["bgs"] = {
+					["Warsong Gulch"] = 9,
+					["Alterac Valley"] = 2,
 				},
 			},
 			["goldTotal"] = 0,
@@ -80,11 +102,6 @@ FLogVars = {
 			["goldPerHourTotal"] = 0,
 			["honorTotal"] = 0,
 		},
-	},
-	["minimapButtonPosition"] = {
-		["y"] = -127,
-		["x"] = -165,
-		["point"] = "TOPRIGHT",
 	},
 	["currentFarm"] = "default",
 	["frameRect"] = {

@@ -7,14 +7,14 @@ DejaClassicStatsDBPC = {
 		["DejaClassicStatsShowDuraTextureChecked"] = {
 			["ShowDuraTextureSetChecked"] = true,
 		},
-		["DejaClassicStatsShowDuraChecked"] = {
-			["ShowDuraSetChecked"] = true,
+		["dejacharacterstatsScrollbarChecked"] = {
+			["ScrollbarSetChecked"] = false,
 		},
 		["DejaClassicStatsShowItemLevelChecked"] = {
 			["ShowItemLevelSetChecked"] = false,
 		},
-		["DejaClassicStatsAlternateInfoPlacement"] = {
-			["AlternateInfoPlacementChecked"] = false,
+		["DejaClassicStatsDesaturateScrollArtBackground"] = {
+			["DesaturateScrollArtBackgroundChecked"] = false,
 		},
 		["DejaClassicStatsShowEnchantChecked"] = {
 			["ShowEnchantSetChecked"] = true,
@@ -63,15 +63,6 @@ DejaClassicStatsDBPC = {
 				"DCS_Durability", -- [8]
 				"DCS_RepairTotal", -- [9]
 			},
-			["DCS_DEFENSE_STAT_LIST"] = {
-				"Defense", -- [1]
-				"DodgeChance", -- [2]
-				"ParryChance", -- [3]
-				"BlockChance", -- [4]
-				"BlockValue", -- [5]
-				"Resilience", -- [6]
-				"Avoidance", -- [7]
-			},
 			["DCS_MELEE_STAT_LIST"] = {
 				"MHWeaponSkill", -- [1]
 				"MHDamage", -- [2]
@@ -87,61 +78,70 @@ DejaClassicStatsDBPC = {
 				"MeleeHaste", -- [12]
 				"Expertise", -- [13]
 			},
+			["DCS_DEFENSE_STAT_LIST"] = {
+				"Defense", -- [1]
+				"DodgeChance", -- [2]
+				"ParryChance", -- [3]
+				"BlockChance", -- [4]
+				"BlockValue", -- [5]
+				"Resilience", -- [6]
+				"Avoidance", -- [7]
+			},
 		},
 		["dejacharacterstatsExpandButtonAltPlacementChecked"] = {
 			["ExpandButtonAltPlacementSetChecked"] = false,
 		},
-		["DejaClassicStatsDesaturateScrollArtBackground"] = {
-			["DesaturateScrollArtBackgroundChecked"] = false,
+		["dejacharacterstatsExpandButtonChecked"] = {
+			["ExpandButtonSetChecked"] = true,
 		},
-		["dejacharacterstatsExpandChecked"] = {
-			["ExpandSetChecked"] = true,
+		["DejaClassicStatsShowHideScrollArtBackground"] = {
+			["ShowHideScrollArtBackgroundChecked"] = true,
 		},
 		["DejaClassicStatsShowItemRepairChecked"] = {
 			["ShowItemRepairSetChecked"] = false,
 		},
-		["QCOA_SetSliderValue"] = {
-			["QCOA_SliderValue"] = 0.75,
+		["DejaClassicStatsShowDefenseChecked"] = {
+			["ShowDefenseSetChecked"] = true,
 		},
-		["DejaClassicStatsSimpleItemColorChecked"] = {
-			["SimpleItemColorChecked"] = false,
-			["DarkerItemColorChecked"] = false,
+		["DejaClassicStatsShowSpellChecked"] = {
+			["ShowSpellSetChecked"] = true,
 		},
 		["DejaClassicStatsShowPrimaryChecked"] = {
 			["ShowPrimarySetChecked"] = true,
 		},
-		["DejaClassicStatsShowRangedChecked"] = {
-			["ShowRangedSetChecked"] = false,
+		["DejaClassicStatsDefaultResistances"] = {
+			["DefaultResistancesChecked"] = true,
 		},
 		["DejaClassicStatsShowAverageRepairChecked"] = {
 			["ShowAverageRepairSetChecked"] = false,
 		},
 		["DejaClassicStatsShowMeleeChecked"] = {
-			["ShowMeleeSetChecked"] = false,
+			["ShowMeleeSetChecked"] = true,
 		},
 		["DejaClassicStatsManaRegenNotCasting"] = {
-			["DCSnotcasting"] = 16.35625076293945,
+			["DCSnotcasting"] = 4.515879631042481,
 		},
 		["DejaClassicStatsShowModelRotation"] = {
 			["ShowModelRotationChecked"] = false,
 		},
-		["DejaClassicStatsDefaultResistances"] = {
-			["DefaultResistancesChecked"] = true,
+		["DejaClassicStatsShowRangedChecked"] = {
+			["ShowRangedSetChecked"] = false,
 		},
-		["DejaClassicStatsShowSpellChecked"] = {
-			["ShowSpellSetChecked"] = true,
+		["DejaClassicStatsSimpleItemColorChecked"] = {
+			["SimpleItemColorChecked"] = false,
+			["DarkerItemColorChecked"] = false,
 		},
-		["DejaClassicStatsShowDefenseChecked"] = {
-			["ShowDefenseSetChecked"] = true,
+		["QCOA_SetSliderValue"] = {
+			["QCOA_SliderValue"] = 0.75,
 		},
-		["DejaClassicStatsShowHideScrollArtBackground"] = {
-			["ShowHideScrollArtBackgroundChecked"] = true,
+		["dejacharacterstatsExpandChecked"] = {
+			["ExpandSetChecked"] = true,
 		},
-		["dejacharacterstatsExpandButtonChecked"] = {
-			["ExpandButtonSetChecked"] = true,
+		["DejaClassicStatsAlternateInfoPlacement"] = {
+			["AlternateInfoPlacementChecked"] = false,
 		},
-		["dejacharacterstatsScrollbarChecked"] = {
-			["ScrollbarSetChecked"] = false,
+		["DejaClassicStatsShowDuraChecked"] = {
+			["ShowDuraSetChecked"] = true,
 		},
 	},
 }

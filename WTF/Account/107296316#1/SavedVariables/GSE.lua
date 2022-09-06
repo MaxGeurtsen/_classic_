@@ -11,10 +11,10 @@ GSEOptions = {
 	["autoCreateMacroStubsClass"] = true,
 	["COMMENT"] = "|cff55cc55",
 	["filterList"] = {
-		["Class"] = true,
-		["All"] = false,
-		["Global"] = true,
 		["Spec"] = true,
+		["Class"] = true,
+		["Global"] = true,
+		["All"] = false,
 	},
 	["menuWidth"] = 700,
 	["NUMBER"] = "|cffffaa00",

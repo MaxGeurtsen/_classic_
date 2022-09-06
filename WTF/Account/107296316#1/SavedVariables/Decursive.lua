@@ -1,18 +1,14 @@
 
 DecursiveDB = {
-	["profileKeys"] = {
-		["Firebreather - Gehennas"] = "Default",
-		["Partijlijder - Gehennas"] = "Default",
-		["Firebreather - Firemaw"] = "Default",
-		["Partijcurses - Gehennas"] = "Default",
-		["Mirjam - Firemaw"] = "Default",
-		["Partijleider - Razorgore"] = "Default",
-		["Rinque - Gehennas"] = "Default",
-		["Mírjam - Firemaw"] = "Default",
-		["Cursedbreath - Firemaw"] = "Default",
+	["global"] = {
+		["NoStartMessages"] = true,
+		["NewVersionsBugMeNot"] = 1655078282,
+		["LastVersionAnnounce"] = 1662461898,
+		["NewerVersionName"] = "2.7.8.7",
+		["NewerVersionDetected"] = 1662296826,
 	},
 	["class"] = {
-		["HUNTER"] = {
+		["DEATHKNIGHT"] = {
 			["CureOrder"] = {
 				-11, -- [1]
 				-15, -- [2]
@@ -23,46 +19,13 @@ DecursiveDB = {
 				[32] = -16,
 			},
 		},
-		["WARLOCK"] = {
-			["CureOrder"] = {
-				-12, -- [1]
-				-13, -- [2]
-				nil, -- [3]
-				-14, -- [4]
-				[8] = -15,
-				[16] = -16,
-				[32] = 1,
-			},
-		},
-		["ROGUE"] = {
+		["WARRIOR"] = {
 			["CureOrder"] = {
 				-11, -- [1]
 				-15, -- [2]
 				nil, -- [3]
 				-12, -- [4]
 				[8] = -13,
-				[16] = -14,
-				[32] = -16,
-			},
-		},
-		["MAGE"] = {
-			["CureOrder"] = {
-				-13, -- [1]
-				-16, -- [2]
-				nil, -- [3]
-				1, -- [4]
-				[8] = -14,
-				[16] = -15,
-				[32] = 2,
-			},
-		},
-		["DRUID"] = {
-			["CureOrder"] = {
-				-13, -- [1]
-				-15, -- [2]
-				nil, -- [3]
-				1, -- [4]
-				[8] = 2,
 				[16] = -14,
 				[32] = -16,
 			},
@@ -78,6 +41,61 @@ DecursiveDB = {
 				[32] = -16,
 			},
 		},
+		["MAGE"] = {
+			["CureOrder"] = {
+				-13, -- [1]
+				-16, -- [2]
+				nil, -- [3]
+				1, -- [4]
+				[8] = -14,
+				[16] = -15,
+				[32] = 2,
+			},
+		},
+		["WARLOCK"] = {
+			["CureOrder"] = {
+				-12, -- [1]
+				-13, -- [2]
+				nil, -- [3]
+				-14, -- [4]
+				[8] = -15,
+				[16] = -16,
+				[32] = 1,
+			},
+		},
+		["HUNTER"] = {
+			["CureOrder"] = {
+				-11, -- [1]
+				-15, -- [2]
+				nil, -- [3]
+				-12, -- [4]
+				[8] = -13,
+				[16] = -14,
+				[32] = -16,
+			},
+		},
+		["DRUID"] = {
+			["CureOrder"] = {
+				-13, -- [1]
+				-15, -- [2]
+				nil, -- [3]
+				1, -- [4]
+				[8] = 2,
+				[16] = -14,
+				[32] = -16,
+			},
+		},
+		["ROGUE"] = {
+			["CureOrder"] = {
+				-11, -- [1]
+				-15, -- [2]
+				nil, -- [3]
+				-12, -- [4]
+				[8] = -13,
+				[16] = -14,
+				[32] = -16,
+			},
+		},
 		["SHAMAN"] = {
 			["CureOrder"] = {
 				-14, -- [1]
@@ -90,10 +108,18 @@ DecursiveDB = {
 			},
 		},
 	},
-	["global"] = {
-		["NoStartMessages"] = true,
-		["NewVersionsBugMeNot"] = 1655078282,
-		["LastVersionAnnounce"] = 1659530329,
+	["profileKeys"] = {
+		["Firebreather - Gehennas"] = "Default",
+		["Partijlijder - Gehennas"] = "Default",
+		["Partijdood - Gehennas"] = "Default",
+		["Firebreather - Firemaw"] = "Default",
+		["Partijcurses - Gehennas"] = "Default",
+		["Mirjam - Firemaw"] = "Default",
+		["Partijleider - Razorgore"] = "Default",
+		["Rinque - Gehennas"] = "Default",
+		["Partijaxert - Gehennas"] = "Default",
+		["Cursedbreath - Firemaw"] = "Default",
+		["Mírjam - Firemaw"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -102,6 +128,7 @@ DecursiveDB = {
 			["DebuffsFrameVerticalDisplay"] = true,
 			["MainBarX"] = 682.666681134258,
 			["MainBarY"] = -96.0000020345051,
+			["ShowDebuffsFrame"] = false,
 			["MiniMapIcon"] = {
 				["minimapPos"] = 347.813964133712,
 				["hide"] = false,

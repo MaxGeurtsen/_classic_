@@ -2,4 +2,184 @@
 RAID_PULLOUT_POSITIONS = {
 }
 RAID_SINGLE_POSITIONS = {
+	{
+		["y"] = 941.128173828125,
+		["x"] = 140.3076934814453,
+		["point"] = "TOP",
+		["relativePoint"] = "BOTTOMLEFT",
+		["settings"] = {
+		},
+		["name"] = "Machomann-Venoxis",
+	}, -- [1]
+	{
+		["y"] = 941.128173828125,
+		["x"] = 140.3076934814453,
+		["point"] = "TOP",
+		["relativePoint"] = "BOTTOMLEFT",
+		["settings"] = {
+		},
+		["name"] = "Machomann-Venoxis",
+	}, -- [2]
+	{
+		["y"] = 941.128173828125,
+		["x"] = 140.3076934814453,
+		["point"] = "TOP",
+		["relativePoint"] = "BOTTOMLEFT",
+		["settings"] = {
+		},
+		["name"] = "Machomann-Venoxis",
+	}, -- [3]
+	{
+		["y"] = 941.128173828125,
+		["x"] = 140.3076934814453,
+		["point"] = "TOP",
+		["relativePoint"] = "BOTTOMLEFT",
+		["settings"] = {
+		},
+		["name"] = "Machomann-Venoxis",
+	}, -- [4]
+	{
+		["y"] = 941.128173828125,
+		["x"] = 140.3076934814453,
+		["point"] = "TOP",
+		["relativePoint"] = "BOTTOMLEFT",
+		["settings"] = {
+		},
+		["name"] = "Machomann-Venoxis",
+	}, -- [5]
+	{
+		["y"] = 941.128173828125,
+		["x"] = 140.3076934814453,
+		["point"] = "TOP",
+		["relativePoint"] = "BOTTOMLEFT",
+		["settings"] = {
+		},
+		["name"] = "Machomann-Venoxis",
+	}, -- [6]
+	{
+		["y"] = 941.128173828125,
+		["x"] = 140.3076934814453,
+		["point"] = "TOP",
+		["relativePoint"] = "BOTTOMLEFT",
+		["settings"] = {
+		},
+		["name"] = "Machomann-Venoxis",
+	}, -- [7]
+	{
+		["y"] = 941.128173828125,
+		["x"] = 140.3076934814453,
+		["point"] = "TOP",
+		["relativePoint"] = "BOTTOMLEFT",
+		["settings"] = {
+		},
+		["name"] = "Machomann-Venoxis",
+	}, -- [8]
+	{
+		["y"] = 941.128173828125,
+		["x"] = 140.3076934814453,
+		["point"] = "TOP",
+		["relativePoint"] = "BOTTOMLEFT",
+		["settings"] = {
+		},
+		["name"] = "Machomann-Venoxis",
+	}, -- [9]
+	{
+		["y"] = 941.128173828125,
+		["x"] = 140.3076934814453,
+		["point"] = "TOP",
+		["relativePoint"] = "BOTTOMLEFT",
+		["settings"] = {
+		},
+		["name"] = "Machomann-Venoxis",
+	}, -- [10]
+	{
+		["y"] = 941.128173828125,
+		["x"] = 140.3076934814453,
+		["point"] = "TOP",
+		["relativePoint"] = "BOTTOMLEFT",
+		["settings"] = {
+		},
+		["name"] = "Machomann-Venoxis",
+	}, -- [11]
+	{
+		["y"] = 941.128173828125,
+		["x"] = 140.3076934814453,
+		["point"] = "TOP",
+		["relativePoint"] = "BOTTOMLEFT",
+		["settings"] = {
+		},
+		["name"] = "Machomann-Venoxis",
+	}, -- [12]
+	{
+		["y"] = 941.128173828125,
+		["x"] = 140.3076934814453,
+		["point"] = "TOP",
+		["relativePoint"] = "BOTTOMLEFT",
+		["settings"] = {
+		},
+		["name"] = "Machomann-Venoxis",
+	}, -- [13]
+	{
+		["y"] = 941.128173828125,
+		["x"] = 140.3076934814453,
+		["point"] = "TOP",
+		["relativePoint"] = "BOTTOMLEFT",
+		["settings"] = {
+		},
+		["name"] = "Machomann-Venoxis",
+	}, -- [14]
+	{
+		["y"] = 941.128173828125,
+		["x"] = 140.3076934814453,
+		["point"] = "TOP",
+		["relativePoint"] = "BOTTOMLEFT",
+		["settings"] = {
+		},
+		["name"] = "Machomann-Venoxis",
+	}, -- [15]
+	{
+		["y"] = 941.128173828125,
+		["x"] = 140.3076934814453,
+		["point"] = "TOP",
+		["relativePoint"] = "BOTTOMLEFT",
+		["settings"] = {
+		},
+		["name"] = "Machomann-Venoxis",
+	}, -- [16]
+	{
+		["y"] = 941.128173828125,
+		["x"] = 140.3076934814453,
+		["point"] = "TOP",
+		["relativePoint"] = "BOTTOMLEFT",
+		["settings"] = {
+		},
+		["name"] = "Machomann-Venoxis",
+	}, -- [17]
+	{
+		["y"] = 941.128173828125,
+		["x"] = 140.3076934814453,
+		["point"] = "TOP",
+		["relativePoint"] = "BOTTOMLEFT",
+		["settings"] = {
+		},
+		["name"] = "Machomann-Venoxis",
+	}, -- [18]
+	{
+		["y"] = 941.128173828125,
+		["x"] = 140.3076934814453,
+		["point"] = "TOP",
+		["relativePoint"] = "BOTTOMLEFT",
+		["settings"] = {
+		},
+		["name"] = "Machomann-Venoxis",
+	}, -- [19]
+	{
+		["y"] = 941.128173828125,
+		["x"] = 140.3076934814453,
+		["point"] = "TOP",
+		["relativePoint"] = "BOTTOMLEFT",
+		["settings"] = {
+		},
+		["name"] = "Machomann-Venoxis",
+	}, -- [20]
 }

@@ -222,6 +222,7 @@ END
 CHANNELS
 world
 lfg
+LookingForGroup
 END
 
 ZONECHANNELS 2

@@ -140,7 +140,7 @@ PallyPower.options = {
 							order = 1,
 							type = "toggle",
 							name = L["Smart Buffs"],
-							desc = L["If you enable this option, you will not be allowed to assign Blessing of Wisdom to Warriors or Rogues, and Blessing of Might to Mages, Warlocks, or Hunters."],
+							desc = PallyPower.isWrath and L["If you enable this option, you will not be allowed to assign Blessing of Wisdom to Warriors, Rogues, or Death Knights and Blessing of Might to Mages, Warlocks, or Hunters."] or L["If you enable this option, you will not be allowed to assign Blessing of Wisdom to Warriors or Rogues, and Blessing of Might to Mages, Warlocks, or Hunters."],
 							width = 1.0,
 							get = function(info)
 								return PallyPower.opt.SmartBuffs
@@ -173,10 +173,11 @@ PallyPower.options = {
 							get = function(info)
 								return PallyPower.opt.SalvInCombat
 							end,
-							set = function(info, val)
+							set = function(_, val)
 								PallyPower.opt.SalvInCombat = val
 								PallyPower:UpdateRoster()
-							end
+							end,
+							hidden = PallyPower.isWrath
 						}
 					}
 				},
@@ -438,7 +439,16 @@ PallyPower.options = {
 							set = function(info, val)
 								PallyPower_AuraAssignments[PallyPower.player] = val
 							end,
-							values = {
+							values = PallyPower.isWrath and {
+								[0] = L["None"],
+								[1] = PallyPower.Auras[1], -- Devotion Aura
+								[2] = PallyPower.Auras[2], -- Retribution Aura
+								[3] = PallyPower.Auras[3], -- Concentration Aura
+								[4] = PallyPower.Auras[4], -- Shadow Resistance Aura
+								[5] = PallyPower.Auras[5], -- Frost Resistance Aura
+								[6] = PallyPower.Auras[6], -- Fire Resistance Aura
+								[7] = PallyPower.Auras[8] -- Crusader Aura
+							} or {
 								[0] = L["None"],
 								[1] = PallyPower.Auras[1], -- Devotion Aura
 								[2] = PallyPower.Auras[2], -- Retribution Aura
@@ -513,7 +523,18 @@ PallyPower.options = {
 								PallyPower.opt.seal = val
 								PallyPower:SealAssign(PallyPower.opt.seal)
 							end,
-							values = {
+							values = PallyPower.isWrath and {
+								[0] = L["None"],
+								[1] = PallyPower.Seals[1], -- Seal of Justice
+								[2] = PallyPower.Seals[2], -- Seal of Light
+								[3] = PallyPower.Seals[3], -- Seal of Wisdom
+								[4] = PallyPower.Seals[4], -- Seal of Righteousness
+								[5] = PallyPower.Seals[5], -- Seal of Command
+								[6] = PallyPower.Seals[6], -- Seal of Vengeance (Alliance)
+								[7] = PallyPower.Seals[7], -- Seal of Blood (Horde)
+								[8] = PallyPower.Seals[8], -- Seal of the Martyr (Alliance)
+								[9] = PallyPower.Seals[9] -- Seal of Corruption (Horde)
+							} or {
 								[0] = L["None"],
 								[1] = PallyPower.Seals[1], -- Seal of Justice
 								[2] = PallyPower.Seals[2], -- Seal of Light
@@ -590,17 +611,13 @@ PallyPower.options = {
 							order = 1,
 							type = "toggle",
 							name = L["Class Buttons"],
-							desc = L["If this option is disabled it will also disable the Player Buttons and you will only be able to buff using the Auto Buff button."],
+							desc = L["[Enable/Disable] Class Buttons"],
 							width = 1.1,
 							get = function(info)
 								return PallyPower.opt.display.showClassButtons
 							end,
 							set = function(info, val)
 								PallyPower.opt.display.showClassButtons = val
-								if not PallyPower.opt.display.showClassButtons then
-									PallyPower.opt.display.showPlayerButtons = false
-									PallyPower.opt.display.buffDuration = false
-								end
 								PallyPower:UpdateRoster()
 							end
 						},
@@ -610,16 +627,13 @@ PallyPower.options = {
 							name = L["Player Buttons"],
 							desc = L["If this option is disabled then you will no longer see the pop out buttons showing individual players and you will not be able to reapply Normal Blessings while in combat."],
 							disabled = function(info)
-								return PallyPower.opt.display.showClassButtons == false or PallyPower.opt.enabled == false or not isPally
+								return PallyPower.opt.enabled == false or not isPally
 							end,
 							get = function(info)
 								return PallyPower.opt.display.showPlayerButtons
 							end,
 							set = function(info, val)
 								PallyPower.opt.display.showPlayerButtons = val
-								if not PallyPower.opt.display.showClassButtons then
-									PallyPower.opt.display.showPlayerButtons = false
-								end
 								PallyPower:UpdateRoster()
 							end
 						},
@@ -629,7 +643,7 @@ PallyPower.options = {
 							name = L["Buff Duration"],
 							desc = L["If this option is disabled then Class and Player buttons will ignore buffs' duration, allowing buffs to be reapplied at will. This is especially useful for Protection Paladins when they spam Greater Blessings to generate more threat."],
 							disabled = function(info)
-								return PallyPower.opt.display.showClassButtons == false or PallyPower.opt.enabled == false or not isPally
+								return PallyPower.opt.enabled == false or not isPally
 							end,
 							get = function(info)
 								return PallyPower.opt.display.buffDuration
@@ -714,13 +728,13 @@ PallyPower.options = {
 						mainroles_desc = {
 							order = 0,
 							type = "description",
-							name = L["MAIN_ROLES_DESCRIPTION"]
+							name = PallyPower.isWrath and L["MAIN_ROLES_DESCRIPTION_WRATH"] or L["MAIN_ROLES_DESCRIPTION"]
 						},
 						maintank_buff = {
 							order = 1,
 							type = "toggle",
 							name = L["Auto-Buff Main Tank"],
-							desc = L["If you enable this option PallyPower will automatically over-write a Greater Blessing with a Normal Blessing on players marked with the |cffffd200Main Tank|r role in the Blizzard Raid Panel. This is useful to avoid blessing the |cffffd200Main Tank|r role with a Greater Blessing of Salvation."],
+							desc = PallyPower.isWrath and L["If you enable this option PallyPower will automatically over-write a Greater Blessing with a Normal Blessing on players marked with the |cffffd200Main Tank|r role in the Blizzard Raid Panel. This is useful for spot buffing the |cffffd200Main Tank|r role with Blessing of Sanctuary."] or L["If you enable this option PallyPower will automatically over-write a Greater Blessing with a Normal Blessing on players marked with the |cffffd200Main Tank|r role in the Blizzard Raid Panel. This is useful to avoid blessing the |cffffd200Main Tank|r role with a Greater Blessing of Salvation."],
 							width = "full",
 							get = function(info)
 								return PallyPower.opt.mainTank
@@ -730,11 +744,11 @@ PallyPower.options = {
 								PallyPower:UpdateRoster()
 							end
 						},
-						maintank_GBWarrior = {
+						maintank_GBWarriorPDeathKnight = {
 							order = 2,
 							type = "select",
-							name = L["Override Warriors..."],
-							desc = L["Select the Greater Blessing assignment you wish to over-write on Main Tank: Warriors."],
+							name = PallyPower.isWrath and L["Override Warriors / Death Knights..."] or L["Override Warriors..."],
+							desc = PallyPower.isWrath and L["Select the Greater Blessing assignment you wish to over-write on Main Tank: Warriors / Death Knights."] or L["Select the Greater Blessing assignment you wish to over-write on Main Tank: Warriors."],
 							width = 1.2,
 							disabled = function(info)
 								return (not (PallyPower.opt.mainTank))
@@ -746,7 +760,13 @@ PallyPower.options = {
 								PallyPower.opt.mainTankGSpellsW = val
 								PallyPower:UpdateRoster()
 							end,
-							values = {
+							values = PallyPower.isWrath and {
+								[0] = L["None"],
+								[1] = PallyPower.GSpells[1], -- Greater Blessing of Wisdom
+								[2] = PallyPower.GSpells[2], -- Greater Blessing of Might
+								[3] = PallyPower.GSpells[3], -- Greater Blessing of Kings
+								[4] = PallyPower.GSpells[4] -- Greater Blessing of Sanctuary
+							} or {
 								[0] = L["None"],
 								[1] = PallyPower.GSpells[1], -- Greater Blessing of Wisdom
 								[2] = PallyPower.GSpells[2], -- Greater Blessing of Might
@@ -756,11 +776,11 @@ PallyPower.options = {
 								[6] = PallyPower.GSpells[6] -- Greater Blessing of Sanctuary
 							}
 						},
-						maintank_NBWarrior = {
+						maintank_NBWarriorPDeathKnight = {
 							order = 3,
 							type = "select",
 							name = L["...with Normal..."],
-							desc = L["Select the Normal Blessing you wish to use to over-write the Main Tank: Warriors."],
+							desc = PallyPower.isWrath and L["Select the Normal Blessing you wish to use to over-write the Main Tank: Warriors / Death Knights."] or L["Select the Normal Blessing you wish to use to over-write the Main Tank: Warriors."],
 							width = 0.9,
 							disabled = function(info)
 								return (not (PallyPower.opt.mainTank))
@@ -772,7 +792,13 @@ PallyPower.options = {
 								PallyPower.opt.mainTankSpellsW = val
 								PallyPower:UpdateRoster()
 							end,
-							values = {
+							values = PallyPower.isWrath and {
+								[0] = L["None"],
+								[1] = PallyPower.Spells[1], -- Blessing of Wisdom
+								[2] = PallyPower.Spells[2], -- Blessing of Might
+								[3] = PallyPower.Spells[3], -- Blessing of Kings
+								[4] = PallyPower.Spells[4] -- Blessing of Sanctuary
+							} or {
 								[0] = L["None"],
 								[1] = PallyPower.Spells[1], -- Blessing of Wisdom
 								[2] = PallyPower.Spells[2], -- Blessing of Might
@@ -799,7 +825,13 @@ PallyPower.options = {
 								PallyPower.opt.mainTankGSpellsDP = val
 								PallyPower:UpdateRoster()
 							end,
-							values = {
+							values = PallyPower.isWrath and {
+								[0] = L["None"],
+								[1] = PallyPower.GSpells[1], -- Greater Blessing of Wisdom
+								[2] = PallyPower.GSpells[2], -- Greater Blessing of Might
+								[3] = PallyPower.GSpells[3], -- Greater Blessing of Kings
+								[4] = PallyPower.GSpells[4] -- Greater Blessing of Sanctuary
+							} or {
 								[0] = L["None"],
 								[1] = PallyPower.GSpells[1], -- Greater Blessing of Wisdom
 								[2] = PallyPower.GSpells[2], -- Greater Blessing of Might
@@ -825,7 +857,13 @@ PallyPower.options = {
 								PallyPower.opt.mainTankSpellsDP = val
 								PallyPower:UpdateRoster()
 							end,
-							values = {
+							values = PallyPower.isWrath and {
+								[0] = L["None"],
+								[1] = PallyPower.Spells[1], -- Blessing of Wisdom
+								[2] = PallyPower.Spells[2], -- Blessing of Might
+								[3] = PallyPower.Spells[3], -- Blessing of Kings
+								[4] = PallyPower.Spells[4] -- Blessing of Sanctuary
+							} or {
 								[0] = L["None"],
 								[1] = PallyPower.Spells[1], -- Blessing of Wisdom
 								[2] = PallyPower.Spells[2], -- Blessing of Might
@@ -840,7 +878,7 @@ PallyPower.options = {
 							order = 6,
 							type = "toggle",
 							name = L["Auto-Buff Main Assistant"],
-							desc = L["If you enable this option PallyPower will automatically over-write a Greater Blessing with a Normal Blessing on players marked with the |cffffd200Main Assistant|r role in the Blizzard Raid Panel. This is useful to avoid blessing the |cffffd200Main Assistant|r role with a Greater Blessing of Salvation."],
+							desc = PallyPower.isWrath and L["If you enable this option PallyPower will automatically over-write a Greater Blessing with a Normal Blessing on players marked with the |cffffd200Main Assistant|r role in the Blizzard Raid Panel. This is useful for spot buffing the |cffffd200Main Assistant|r role with Blessing of Sanctuary."] or L["If you enable this option PallyPower will automatically over-write a Greater Blessing with a Normal Blessing on players marked with the |cffffd200Main Assistant|r role in the Blizzard Raid Panel. This is useful to avoid blessing the |cffffd200Main Assistant|r role with a Greater Blessing of Salvation."],
 							width = "full",
 							get = function(info)
 								return PallyPower.opt.mainAssist
@@ -850,11 +888,11 @@ PallyPower.options = {
 								PallyPower:UpdateRoster()
 							end
 						},
-						mainassist_GBWarrior = {
+						mainassist_GBWarriorPDeathKnight = {
 							order = 7,
 							type = "select",
-							name = L["Override Warriors..."],
-							desc = L["Select the Greater Blessing assignment you wish to over-write on Main Assist: Warriors."],
+							name = PallyPower.isWrath and L["Override Warriors / Death Knights..."] or L["Override Warriors..."],
+							desc = PallyPower.isWrath and L["Select the Greater Blessing assignment you wish to over-write on Main Assist: Warriors / Death Knights."] or L["Select the Greater Blessing assignment you wish to over-write on Main Assist: Warriors."],
 							width = 1.2,
 							disabled = function(info)
 								return (not (PallyPower.opt.mainAssist))
@@ -866,7 +904,13 @@ PallyPower.options = {
 								PallyPower.opt.mainAssistGSpellsW = val
 								PallyPower:UpdateRoster()
 							end,
-							values = {
+							values = PallyPower.isWrath and {
+								[0] = L["None"],
+								[1] = PallyPower.GSpells[1], -- Greater Blessing of Wisdom
+								[2] = PallyPower.GSpells[2], -- Greater Blessing of Might
+								[3] = PallyPower.GSpells[3], -- Greater Blessing of Kings
+								[4] = PallyPower.GSpells[4] -- Greater Blessing of Sanctuary
+							} or {
 								[0] = L["None"],
 								[1] = PallyPower.GSpells[1], -- Greater Blessing of Wisdom
 								[2] = PallyPower.GSpells[2], -- Greater Blessing of Might
@@ -876,11 +920,11 @@ PallyPower.options = {
 								[6] = PallyPower.GSpells[6] -- Greater Blessing of Sanctuary
 							}
 						},
-						mainassist_NBWarrior = {
+						mainassist_NBWarriorPDeathKnight = {
 							order = 8,
 							type = "select",
 							name = L["...with Normal..."],
-							desc = L["Select the Normal Blessing you wish to use to over-write the Main Assist: Warriors."],
+							desc = PallyPower.isWrath and L["Select the Normal Blessing you wish to use to over-write the Main Assist: Warriors / Death Knights."] or L["Select the Normal Blessing you wish to use to over-write the Main Assist: Warriors."],
 							width = 0.9,
 							disabled = function(info)
 								return (not (PallyPower.opt.mainAssist))
@@ -892,7 +936,13 @@ PallyPower.options = {
 								PallyPower.opt.mainAssistSpellsW = val
 								PallyPower:UpdateRoster()
 							end,
-							values = {
+							values = PallyPower.isWrath and {
+								[0] = L["None"],
+								[1] = PallyPower.Spells[1], -- Blessing of Wisdom
+								[2] = PallyPower.Spells[2], -- Blessing of Might
+								[3] = PallyPower.Spells[3], -- Blessing of Kings
+								[4] = PallyPower.Spells[4] -- Blessing of Sanctuary
+							} or {
 								[0] = L["None"],
 								[1] = PallyPower.Spells[1], -- Blessing of Wisdom
 								[2] = PallyPower.Spells[2], -- Blessing of Might
@@ -919,7 +969,13 @@ PallyPower.options = {
 								PallyPower.opt.mainAssistGSpellsDP = val
 								PallyPower:UpdateRoster()
 							end,
-							values = {
+							values = PallyPower.isWrath and {
+								[0] = L["None"],
+								[1] = PallyPower.GSpells[1], -- Greater Blessing of Wisdom
+								[2] = PallyPower.GSpells[2], -- Greater Blessing of Might
+								[3] = PallyPower.GSpells[3], -- Greater Blessing of Kings
+								[4] = PallyPower.GSpells[4] -- Greater Blessing of Sanctuary
+							} or {
 								[0] = L["None"],
 								[1] = PallyPower.GSpells[1], -- Greater Blessing of Wisdom
 								[2] = PallyPower.GSpells[2], -- Greater Blessing of Might
@@ -945,7 +1001,13 @@ PallyPower.options = {
 								PallyPower.opt.mainAssistSpellsDP = val
 								PallyPower:UpdateRoster()
 							end,
-							values = {
+							values = PallyPower.isWrath and {
+								[0] = L["None"],
+								[1] = PallyPower.Spells[1], -- Blessing of Wisdom
+								[2] = PallyPower.Spells[2], -- Blessing of Might
+								[3] = PallyPower.Spells[3], -- Blessing of Kings
+								[4] = PallyPower.Spells[4] -- Blessing of Sanctuary
+							} or {
 								[0] = L["None"],
 								[1] = PallyPower.Spells[1], -- Blessing of Wisdom
 								[2] = PallyPower.Spells[2], -- Blessing of Might

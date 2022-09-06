@@ -29,9 +29,8 @@ GBB.MSGPREFIX="GBB: "
 GBB.TAGBAD="---"
 GBB.TAGSEARCH="+++"
 
-GBB.UPDATETIMER=5
-GBB.AutoUpdateTimer=0
 GBB.Initalized = false
+GBB.ElapsedSinceListUpdate = 0
 GBB.LFG_Timer=0
 GBB.LFG_UPDATETIME=10
 GBB.TBCDUNGEONBREAK = 57
@@ -358,13 +357,10 @@ function GBB.Popup_Minimap(frame,notminimap)
 
 	GBB.PopupDynamic:AddItem(GBB.L["HeaderSettings"],false, GBB.Options.Open, 1)
 
-	if GBB.GameType == "TBC" then
-		GBB.PopupDynamic:AddItem(GBB.L["TBCPanelFilter"], false, GBB.Options.Open, 1 + GBB.PANELOFFSET)
-	else
-		GBB.PopupDynamic:AddItem(GBB.L["PanelFilter"], false, GBB.Options.Open, 2 + GBB.PANELOFFSET)
-	end
+	GBB.PopupDynamic:AddItem(GBB.L["TBCPanelFilter"], false, GBB.Options.Open, 2)
 
-	GBB.PopupDynamic:AddItem(GBB.L["PanelAbout"], false, GBB.Options.Open, 5 + GBB.PANELOFFSET)
+
+	GBB.PopupDynamic:AddItem(GBB.L["PanelAbout"], false, GBB.Options.Open, 6)
 	
 	GBB.PopupDynamic:AddItem("",true)
 	GBB.PopupDynamic:AddItem(GBB.L["CboxNotifyChat"],false,GBB.DB,"NotifyChat")
@@ -441,8 +437,6 @@ function GBB.Init()
 	GBB.LFG_Timer=time()+GBB.LFG_UPDATETIME
 	GBB.LFG_Successfulljoined=false
 	
-	GBB.AutoUpdateTimer=time()+GBB.UPDATETIMER
-
 	GBB.AnnounceInit()
 	if GBB.DB.DisplayLFG == false then
 		GroupBulletinBoardFrameAnnounce:Hide()
@@ -593,7 +587,6 @@ local function Event_CHAT_MSG_SYSTEM(arg1)
 	if name and level then
 		level=tonumber(level) or 0
 		GBB.RealLevel[name]=level
-		GBB.UpdateList()
 	else
 		d,name=string.match(arg1,GBB.PatternOnline)
 	end
@@ -671,7 +664,7 @@ local function Event_CHAT_MSG_CHANNEL(msg,name,_3,_4,_5,_6,_7,channelID,channel,
 	if not GBB.Initalized then return end
 	--print("channel:"..tostring(channelID))
 	if GBB.DBChar and GBB.DBChar.channel and GBB.DBChar.channel[channelID] then
-		GBB.PhraseMessage(msg,name,guid,channel)
+		GBB.ParseMessage(msg,name,guid,channel)
 	end
 end
 
@@ -717,15 +710,21 @@ function GBB.OnSizeChanged()
 	end
 end
 
-function GBB.OnUpdate()
+function GBB.OnUpdate(elapsed)
 	if GBB.Initalized==true then
 		if GBB.LFG_Timer<time() and GBB.LFG_Successfulljoined==false then
 			GBB.JoinLFG()
 			GBB.LFG_Timer=time()+GBB.LFG_UPDATETIME
 		end
-		if GBB.AutoUpdateTimer<time() or GBB.ClearNeeded then			
-			GBB.UpdateList()			
-		end	
+
+		if GBB.ElapsedSinceListUpdate > 0.5 then
+			if GroupBulletinBoardFrame:IsVisible() then
+				GBB.UpdateList()
+			end
+			GBB.ElapsedSinceListUpdate = 0;
+		else
+			GBB.ElapsedSinceListUpdate = GBB.ElapsedSinceListUpdate + elapsed;
+		end;
 	end
 end
 

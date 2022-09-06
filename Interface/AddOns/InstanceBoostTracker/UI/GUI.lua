@@ -3,6 +3,7 @@ local mainWindow, paymentLines, windowSettings = nil, nil, nil
 local resettingWindowPosition = false
 GUI = {}
 
+-- Deprecated
 local function AddPaymentToWindow(payer, amount)
     DebugHelper:Print("GUI:AddPaymentToWindow("..payer..", "..amount..")")
 
@@ -12,13 +13,14 @@ local function AddPaymentToWindow(payer, amount)
     local payment = AceGUI:Create("Label")
     payment:SetFullWidth(true)
     payment:SetText(text)
-    paymentLines:AddChild(payment)
+    --paymentLines:AddChild(payment)
 end
 
+-- Deprecated
 local function ClearpaymentLines()
     DebugHelper:Print("GUI:ClearpaymentLines()")
-    paymentLines:ReleaseChildren()
-    paymentLines.frame.height = 0
+    --paymentLines:ReleaseChildren()
+    --paymentLines.frame.height = 0
 end
 
 local function SaveWindowSettings()
@@ -55,7 +57,8 @@ end
 local function UpdateHeight()
     DebugHelper:Print("GUI:UpdateHeight()")
     local defaultHeight = 140
-    local newHeight = defaultHeight + paymentLines.frame.height
+    -- Deprecated
+    local newHeight = defaultHeight --+ paymentLines.frame.height 
 
     DebugHelper:Print("-> newHeight: "..newHeight)
     mainWindow:SetHeight(newHeight)
@@ -182,41 +185,29 @@ mainWindow:SetTitle("Tracker")
 mainWindow:SetWidth(220)
 mainWindow:EnableResize(false)
 
-local group = AceGUI:Create("SimpleGroup")
-group:SetFullWidth(true)
-mainWindow:AddChild(group)
-
-local buttonGroup = AceGUI:Create("SimpleGroup")
-buttonGroup:SetFullWidth(true)
-group:AddChild(buttonGroup)
-
 local paymentsBtn = AceGUI:Create("Button")
 paymentsBtn:SetText("Payments")
 paymentsBtn:SetFullWidth(true)
 paymentsBtn:SetCallback("OnClick", function() GUIPayments:Show() end)
-buttonGroup:AddChild(paymentsBtn)
+mainWindow:AddChild(paymentsBtn)
 
 local lockoutsBtn = AceGUI:Create("Button")
 lockoutsBtn:SetText("Lockouts")
 lockoutsBtn:SetFullWidth(true)
 lockoutsBtn:SetCallback("OnClick", function() GUILockouts:Show() end)
-buttonGroup:AddChild(lockoutsBtn)
+mainWindow:AddChild(lockoutsBtn)
 
 local lockoutsBtn = AceGUI:Create("Button")
 lockoutsBtn:SetText("Settings")
 lockoutsBtn:SetFullWidth(true)
 lockoutsBtn:SetCallback("OnClick", function() GUISettings:Show() end)
-buttonGroup:AddChild(lockoutsBtn)
+mainWindow:AddChild(lockoutsBtn)
 
 local resetBtn = AceGUI:Create("Button")
 resetBtn:SetText("Reset")
 resetBtn:SetFullWidth(true)
 resetBtn:SetCallback("OnClick", function() GUI:Reset() end)
-buttonGroup:AddChild(resetBtn)
-
-paymentLines = AceGUI:Create("SimpleGroup")
-paymentLines:SetFullWidth(true)
-group:AddChild(paymentLines)
+mainWindow:AddChild(resetBtn)
 
 mainWindow.frame:SetScript("OnMouseUp", SaveWindowSettings)
 

@@ -47,8 +47,19 @@ function Engine.ParseTexts(texts, itemData)
         end
 
         -- Conjured item
-        if not itemData.isConjured and Utility.StringContains(text, Locales.KeyWords.ConjuredItem:lower()) then
-            itemData.isConjured = true
+        if not itemData.isConjured then
+            if type(Locales.KeyWords.ConjuredItem) == "table" then
+                for _, s in pairs(Locales.KeyWords.ConjuredItem) do
+                    if Utility.StringContains(text, s:lower()) then
+                        itemData.isConjured = true
+                        break
+                    end
+                end
+            elseif type(Locales.KeyWords.WellFed) == "string" then
+                if Utility.StringContains(text, Locales.KeyWords.ConjuredItem:lower()) then
+                    itemData.isConjured = true
+                end
+            end
         end
 
         -- Bandage
@@ -128,6 +139,12 @@ function Engine.GetPvpStatus()
     end
 
     if Utility.IsTBC then
+        local r = UnitInBattleground("player")
+        inBg = (r ~= nil)
+        inArena, inRatedArena = IsActiveBattlefieldArena()
+    end
+
+    if Utility.IsWLK then
         local r = UnitInBattleground("player")
         inBg = (r ~= nil)
         inArena, inRatedArena = IsActiveBattlefieldArena()

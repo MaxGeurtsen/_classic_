@@ -1,0 +1,11 @@
+WeakAurasCompanion: enabled
+WeakAurasArchive: enabled
+Bagnon: enabled
+RepHelper_Classic: enabled
+WhatsTraining: enabled
+GogoLoot: disabled
+Buffet: enabled
+TradeSkillMaster: enabled
+RCLootCouncil_Classic: disabled
+Immersion: enabled
+LibClassicMobHealth-1.0: disabled

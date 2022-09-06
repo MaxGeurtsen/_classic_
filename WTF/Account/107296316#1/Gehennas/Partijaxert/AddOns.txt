@@ -1,0 +1,6 @@
+Bagnon: disabled
+WeakAurasCompanion: enabled
+WeakAurasArchive: enabled
+Buffet: disabled
+RepHelper_Classic: disabled
+WhatsTraining: disabled

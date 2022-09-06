@@ -25,6 +25,9 @@ L["Shows the Options Window"] = "Muestra la ventana de opciones"
 -- /rb statmod
 L["Enable Stat Mods"] = "Habilitar Stat Mods"
 L["Enable support for Stat Mods"] = "Habilita el soporte para Stat Mods"
+-- /rb avoidancedr
+L["Enable Avoidance Diminishing Returns"] = "Habilita evitacion de rendimientos decrecientes"
+L["Dodge, Parry, Miss Avoidance values will be calculated using the avoidance deminishing return formula with your current stats"] = "Rendimientos decrecientes"
 -- /rb itemid
 L["Show ItemID"] = "Mostrar ItemID"
 L["Show the ItemID in tooltips"] = "Mostrar ItemID en los tooltips"
@@ -52,6 +55,13 @@ L["Options for Rating display"] = "Opciones de visualizacion"
 -- /rb rating show
 L["Show Rating conversions"] = "Mostrar conversion calificacion"
 L["Show Rating conversions in tooltips"] = "Mostrar conversion calificacion en tooltips"
+-- TODO
+-- /rb rating spell
+L["Show Spell Hit/Haste"] = true
+L["Show Spell Hit/Haste from Hit/Haste Rating"] = true
+-- /rb rating physical
+L["Show Physical Hit/Haste"] = true
+L["Show Physical Hit/Haste from Hit/Haste Rating"] = true
 -- /rb rating detail
 L["Show detailed conversions text"] = "Mostrar texto detallado conversiones"
 L["Show detailed text for Resiliance and Expertise conversions"] = "Mostrar texto detallado de conversiones de Temple y Pericia"
@@ -64,6 +74,29 @@ L["Convert Weapon Skill into Crit Hit, Dodge Neglect, Parry Neglect and Block Ne
 -- /rb rating exp -- 2.3.0
 L["Expertise breakdown"] = "Desglose Pericia"
 L["Convert Expertise into Dodge Neglect and Parry Neglect"] = "Convierte Pericia en fallo Esquivar y fallo Parar"
+L["from"] = "de"
+L["HEALING"] = STAT_SPELLHEALING
+L["AP"] = ATTACK_POWER_TOOLTIP
+L["RANGED_AP"] = RANGED_ATTACK_POWER
+L["ARMOR"] = ARMOR
+L["SPELL_DMG"] = STAT_SPELLDAMAGE
+L["SPELL_CRIT"] = PLAYERSTAT_SPELL_COMBAT .. " " .. SPELL_CRIT_CHANCE
+L["STR"] = SPELL_STAT1_NAME
+L["AGI"] = SPELL_STAT2_NAME
+L["STA"] = SPELL_STAT3_NAME
+L["INT"] = SPELL_STAT4_NAME
+L["SPI"] = SPELL_STAT5_NAME
+L["PARRY"] = PARRY
+L["MANA_REG"] = "Regen.Mana"
+L["NORMAL_MANA_REG"] = SPELL_STAT4_NAME .. " & " .. SPELL_STAT5_NAME -- Intellect & Spirit
+L["PET_STA"] = PET .. SPELL_STAT3_NAME -- Pet Stamina
+L["PET_INT"] = PET .. SPELL_STAT4_NAME -- Pet Intellect
+L.statModOptionName = function(show, add)
+	return string.format("%s %s ", show, add)
+end
+L.statModOptionDesc = function(show, add, from, mod)
+	return string.format("%s %s %s %s ", show, add, from, mod)
+end
 
 -- /rb stat
 --["Stat Breakdown"] = "Estad",
@@ -355,6 +388,10 @@ L["Spell Penetration Summary"] = "Resumen Penetracion Hechizos"
 -- /rb sum stat ignorearmor
 L["Sum Ignore Armor"] = "Res. Ignorar armadura"
 L["Ignore Armor Summary"] = "Resumen de Ignorar Armadura"
+L["Sum Armor Penetration"] = "Res. Penetracion Armadura"
+L["Armor Penetration Summary"] = "Resumen de Penetracion Armadura"
+L["Sum Armor Penetration Rating"] = "Res. Indice Penetracion Armadura"
+L["Armor Penetration Rating Summary"] = "Resumen Indice Penetracion de Armadura"
 -- /rb sum stat weapondps
 --["Sum Weapon DPS"] = true,
 --["Weapon DPS Summary"] = true,
@@ -548,42 +585,25 @@ L["statList"] = {
 	{pattern = "índice de golpe crítico con hechizos", id = CR_CRIT_SPELL},
 	{pattern = "índice de golpe crítico a distancia", id = CR_CRIT_RANGED},
 	{pattern = "índice de golpe crítico cuerpo a cuerpo", id = CR_CRIT_MELEE},
-	{pattern = "índice de golpe crítico", id = CR_CRIT_MELEE},
+	{pattern = "índice de golpe crítico", id = CR_CRIT},
 
 	{pattern = "índice de golpe con hechizo", id = CR_HIT_SPELL},
 	{pattern = "índice de golpe a distancia", id = CR_HIT_RANGED},
 	{pattern = "índice de golpe cuerpo a cuerpo", id = CR_HIT_MELEE},
-	{pattern = "índice de golpe", id = CR_HIT_MELEE},
+	{pattern = "índice de golpe", id = CR_HIT},
 
 	{pattern = "índice de temple", id = CR_CRIT_TAKEN_MELEE}, -- resilience is implicitly a rating
 
 	{pattern = "índice de celeridad con hechizos", id = CR_HASTE_SPELL},
 	{pattern = "índice de celeridad a distancia", id = CR_HASTE_RANGED},
 	{pattern = "índice de celeridad con cuerpo a cuerpo", id = CR_HASTE_MELEE},
-	{pattern = "índice de celeridad", id = CR_HASTE_MELEE},
-	{pattern = "Aumenta el índice de velocidad de lanzamiento de ataques y de ataque de los miembros del grupo cercanos", id = CR_HASTE_MELEE}, -- [Drums of Battle]
+	{pattern = "índice de celeridad", id = CR_HASTE},
+	{pattern = "Aumenta el índice de velocidad de lanzamiento de ataques y de ataque de los miembros del grupo cercanos", id = CR_HASTE}, -- [Drums of Battle]
 
-	{pattern = "índice de habilidad", id = CR_WEAPON_SKILL},
 	{pattern = "índice de pericia", id = CR_EXPERTISE},
 
-	{pattern = "índice de evasion de golpes cuerpo a cuerpo", id = CR_HIT_TAKEN_MELEE},
-	{pattern = "índice de evasion", id = CR_HIT_TAKEN_MELEE},
-	--[[
-	{pattern = "índice de habilidad con dagas", id = CR_WEAPON_SKILL},
-	{pattern = "índice de habilidad con espadas", id = CR_WEAPON_SKILL},
-	{pattern = "índice de habilidad con espadas de dos manos", id = CR_WEAPON_SKILL},
-	{pattern = "índice de habilidad con hachas", id = CR_WEAPON_SKILL},
-	{pattern = "índice de habilidad con arcos", id = CR_WEAPON_SKILL},
-	{pattern = "índice de habilidad con ballesta", id = CR_WEAPON_SKILL},
-	{pattern = "índice de habilidad con armas de fuego", id = CR_WEAPON_SKILL},
-	{pattern = "índice de habilidad en combate feral", id = CR_WEAPON_SKILL},
-	{pattern = "índice de habilidad con mazas", id = CR_WEAPON_SKILL},
-	{pattern = "índice de habilidad con armas de asta", id = CR_WEAPON_SKILL},
-	{pattern = "índice de habilidad con bastones", id = CR_WEAPON_SKILL},
-	{pattern = "índice de habilidad con hachas de dos manos", id = CR_WEAPON_SKILL},
-	{pattern = "índice de habilidad con mazas de dos manos", id = CR_WEAPON_SKILL},
-	{pattern = "índice de habilidad sin armas", id = CR_WEAPON_SKILL},
-	--]]
+	{pattern = "índice de penetración de armadura", id = CR_ARMOR_PENETRATION},
+	{pattern = string.lower(ARMOR), id = ARMOR},
 }
 -------------------------
 -- Added info patterns --
@@ -609,6 +629,11 @@ L["$value to be Dodged/Parried"] = "$value Esquivado/Parado"
 L["$value to be Crit"] = "$value recibir Crit"
 L["$value Crit Dmg Taken"] = "$value Daño crit recib"
 L["$value DOT Dmg Taken"] = "$value Daño por tiempo recib"
+L["$value% Parry"] = "$value Parada"
+-- for hit rating showing both physical and spell conversions
+-- (+1.21%, S+0.98%)
+-- (+1.21%, +0.98% S)
+L["$value Spell"] = "$value Hech."
 
 ------------------
 -- Stat Summary --

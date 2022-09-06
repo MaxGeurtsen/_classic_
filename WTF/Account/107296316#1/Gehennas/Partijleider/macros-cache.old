@@ -23,8 +23,8 @@ VER 3 0000000001000008 " wave" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [harm]Lightning Bolt; Healing Wave
 END
-VER 3 000000000100000A " Wspamawdaw" "INV_MISC_QUESTIONMARK"
-/castsequence reset=combat/5  Wrath of Air Totem, Strength of Earth Totem, Mana Spring Totem,Searing Totem
+VER 3 000000000100000A "ADDS" "136070"
+/gq switch RestoAdds
 END
 VER 3 000000000100000D "DPS" "136050"
 /gq switch Enhancement

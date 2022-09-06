@@ -4,7 +4,7 @@ local c = gearquipper;
 local LDB;
 
 function c:InitBroker()
-    if LibStub then
+    if LibStub and not LDB then
         LDB = LibStub('LibDataBroker-1.1'):NewDataObject('GearQuipper', {
             label = 'GearQuipper',
             type = 'data source',
@@ -70,6 +70,11 @@ function c:InitBroker()
                 end
             end
         });
+
+        if not LDB then
+            c:Println(c:GetText("Error while initializing data broker!"));
+            return;
+        end
 
         LDB.dropDownMenu = CreateFrame("Frame", "GearQuipper_Broker_DropDownMenu", UIParent,
             BackdropTemplateMixin and "BackdropTemplate");

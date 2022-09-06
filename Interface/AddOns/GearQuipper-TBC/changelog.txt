@@ -1,3 +1,16 @@
+Version 34 (22-09-04):
+- Fixed ElvUI equipment manager button position
+- Fixed mounts on actionslots
+
+Version 33 (22-08-31):
+- Added WOTLK support
+- Moved the in-game equipment manager button to make some space for GQ ;)
+
+Version 32 (22-08-17):
+- Fixed the addon reset feature
+- Fixed an error which occured when the LDB did not initialize properly
+- Fixed an error which made the ammo slot contain an unexpected item after each levelup
+
 Version 31 (22-03-23):
 - Added: Doubleclick on GQ LDB item will switch to previous set
 - Added: TBag addon support

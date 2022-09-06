@@ -195,8 +195,8 @@ local function CreateTableHeader()
 
     TableHelper:CreateColumns(header, { 
         { "Id", 70 }, 
-        { "Character", 70 },
-        { "Instance name", 180 },
+        { "Character", 80 },
+        { "Instance name", 240 },
         { "Start date time", 175 },
         { "End date time", 175 },
         { "TT", 50 }
@@ -214,12 +214,15 @@ local function CreateTable()
     local tableHeader = CreateTableHeader()
     tableContentGroup = AceGUI:Create("SimpleGroup")
 	tableContentGroup:SetFullWidth(true)
-	tableContentGroup:SetHeight(408)
+	tableContentGroup:SetHeight(400)
 	tableContentGroup:SetLayout("Fill")
+    
 	mainFrame:AddChild(tableContentGroup)
+    
 	tableContentGroup:ClearAllPoints()
 	tableContentGroup.frame:SetPoint("TOP", tableHeader.frame, "BOTTOM", 0, -5)
     tableContentGroup.frame:SetPoint("BOTTOM", 0, 20)
+
     scroll = TableHelper:AddScroll(tableContentGroup, "InstanceLockoutHistory", "InstanceLockoutHistoryItemTemplate", function() 
         GUILockouts:ForceUpdate() 
     end)
@@ -241,17 +244,18 @@ local function CreateGUI()
     mainFrame:Hide()
     _G["IBPT_Lockouts"] = mainFrame
     tinsert(UISpecialFrames, "IBPT_Lockouts")	-- allow ESC close
-    mainFrame:SetWidth(760)
+    mainFrame:SetWidth(860)
     mainFrame:SetTitle("Lockouts")
     mainFrame:EnableResize(false)
 
     local lockoutLabel = AceGUI:Create("Label")
     lockoutLabel:SetFullWidth(true)
-    --local text = "Daily: "..LockoutTracker:CalculateDailyLockouts().."/30, ".."Hourly: "..LockoutTracker:CalculateHourlyLockouts().."/5"
+
     local text = "Hourly: "..LockoutTracker:CalculateHourlyLockouts().."/5"
     if LockoutTracker:CalculateHourlyLockouts() >= 4 or LockoutTracker:CalculateDailyLockouts() >= 30 then
         text = text..", "..LockoutTracker:CreateNextReadableLockoutTimer()
     end
+
     lockoutLabel:SetText(text)
     mainFrame:AddChild(lockoutLabel)
 

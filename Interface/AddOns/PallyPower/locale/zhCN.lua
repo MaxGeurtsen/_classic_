@@ -8,6 +8,8 @@ L["[|cffffd200Enable|r/|cffffd200Disable|r] The Auto Buff Button or [|cffffd200E
 L["[|cffffd200Enable|r/|cffffd200Disable|r] The Drag Handle Button."] = "[|cffffd200启用|r/|cffffd200禁用|r]拖拽按钮"
 L["[|cffffd200Enable|r/|cffffd200Disable|r] The Player(s) or Class Buttons."] = "[|cffffd200启用|r/|cffffd200禁用|r] 玩家或职业按钮"
 L["[|cffffd200Enable|r/|cffffd200Disable|r] The Seal Button, Enable/Disable Righteous Fury or select the Seal you want to track."] = "[|cffffd200启用|r/|cffffd200禁用|r] 圣印按钮，启用/禁用 正义之怒或你想要监视的圣印。"
+--[[Translation missing --]]
+L["[Enable/Disable] Class Buttons"] = "[Enable/Disable] Class Buttons"
 L["[Enable/Disable] PallyPower"] = "[显示/隐藏] PallyPower"
 L["[Enable/Disable] PallyPower in Party"] = "当加入一个小队后显示/隐藏祝福施加窗口"
 L["[Enable/Disable] PallyPower while Solo"] = "当单独一人时显示/隐藏祝福施加窗口"
@@ -24,7 +26,7 @@ L["Aura Tracker"] = "光环监视"
 L["Auto Buff Button"] = "自动Buff按钮"
 L["Auto Greater Blessing Key"] = "[自动]强效祝福快捷键"
 L["Auto Normal Blessing Key"] = "[自动]普通祝福快捷键"
-L["AUTO_ASSIGN_TOOLIP"] = [=[基于圣骑士的人数和他们可用的祝福自动分配所有祝福
+L["AUTO_ASSIGN_TOOLTIP"] = [=[基于圣骑士的人数和他们可用的祝福自动分配所有祝福
 
 |cffffffff[Shift+左键点击]|r使用战场分配模板而不是团本分配模板]=]
 L["Auto-Assign"] = "自动分配"
@@ -69,9 +71,15 @@ L["If this option is disabled it will also disable the Player Buttons and you wi
 L["If this option is disabled then Class and Player buttons will ignore buffs' duration, allowing buffs to be reapplied at will. This is especially useful for Protection Paladins when they spam Greater Blessings to generate more threat."] = "如果禁止此选项，则插件会忽略职业和玩家的增益持续时间，允许重新进行施放BUFF。这对于需要使用祝福来制造仇恨的防骑来说尤其有用。"
 L["If this option is disabled then you will no longer see the pop out buttons showing individual players and you will not be able to reapply Normal Blessings while in combat."] = "禁用后，将不再看到显示单个玩家的弹出按钮， 并且在战斗中将无法释放祝福。"
 L["If this option is enabled then the Auto Buff Button and the Class Buff Button(s) will not auto buff a Greater Blessing if recipient(s) are not within the Paladins range (100yds). This range check excludes AFK, Dead and Offline players."] = "启用后，如果玩家死亡、离线或者不在施法范围中（100码），那么自动Buff按钮不会自动给对应的职业加强效祝福。"
+--[[Translation missing --]]
+L["If you enable this option PallyPower will automatically over-write a Greater Blessing with a Normal Blessing on players marked with the |cffffd200Main Assistant|r role in the Blizzard Raid Panel. This is useful for spot buffing the |cffffd200Main Assistant|r role with Blessing of Sanctuary."] = "If you enable this option PallyPower will automatically over-write a Greater Blessing with a Normal Blessing on players marked with the |cffffd200Main Assistant|r role in the Blizzard Raid Panel. This is useful for spot buffing the |cffffd200Main Assistant|r role with Blessing of Sanctuary."
 L["If you enable this option PallyPower will automatically over-write a Greater Blessing with a Normal Blessing on players marked with the |cffffd200Main Assistant|r role in the Blizzard Raid Panel. This is useful to avoid blessing the |cffffd200Main Assistant|r role with a Greater Blessing of Salvation."] = "启用后，PallyPower将自动以普通祝福覆盖暴雪面板上标记为|cffffd200主助理|r的玩家的强效祝福。这将有效避免对|cffffd200主助理|r角色施放强效拯救祝福。"
+--[[Translation missing --]]
+L["If you enable this option PallyPower will automatically over-write a Greater Blessing with a Normal Blessing on players marked with the |cffffd200Main Tank|r role in the Blizzard Raid Panel. This is useful for spot buffing the |cffffd200Main Tank|r role with Blessing of Sanctuary."] = "If you enable this option PallyPower will automatically over-write a Greater Blessing with a Normal Blessing on players marked with the |cffffd200Main Tank|r role in the Blizzard Raid Panel. This is useful for spot buffing the |cffffd200Main Tank|r role with Blessing of Sanctuary."
 L["If you enable this option PallyPower will automatically over-write a Greater Blessing with a Normal Blessing on players marked with the |cffffd200Main Tank|r role in the Blizzard Raid Panel. This is useful to avoid blessing the |cffffd200Main Tank|r role with a Greater Blessing of Salvation."] = "启用后，PallyPower将自动以普通祝福覆盖暴雪面板中标记为|cffffd200主坦克|r的玩家的强效祝福。这将有效防止对|cffffd200主坦克|r角色施放强效拯救祝福。"
 L["If you enable this option, you will not be allowed to assign Blessing of Wisdom to Warriors or Rogues, and Blessing of Might to Mages, Warlocks, or Hunters."] = "启用后，将不会给战士或盗贼智慧祝福，不会给法师、术士和猎人力量祝福。"
+--[[Translation missing --]]
+L["If you enable this option, you will not be allowed to assign Blessing of Wisdom to Warriors, Rogues, or Death Knights and Blessing of Might to Mages, Warlocks, or Hunters."] = "If you enable this option, you will not be allowed to assign Blessing of Wisdom to Warriors, Rogues, or Death Knights and Blessing of Might to Mages, Warlocks, or Hunters."
 L["LAYOUT_TOOLTIP"] = [=[垂直布局[左/右展开]
 水平布局[上/下展开]]=]
 L["Main PallyPower Settings"] = "PallyPower总设置"
@@ -81,6 +89,12 @@ L["MAIN_ROLES_DESCRIPTION"] = [=[这些选项可以用来|cffff0000且仅用于|
 通常主坦克和主助理角色用来区分主坦克和副坦克（主助理）。但是，一些工会将主坦克角色用来分配给坦克群（包含主副坦克），并将主助理角色分配给治疗们。 
 
 通过为这两个团队角色分开设置，将允许圣骑士职业长或者团长移除例如坦克职业的强效拯救祝福。当奶骑、奶德被标记为主助理角色时，可以设置为其使用普通智慧祝福来替代强效光明祝福。或者在为输出专精的德鲁伊、圣骑士指派强效力量祝福的同时为治疗专精的德鲁伊及圣骑士指派普通智慧祝福。]=]
+--[[Translation missing --]]
+L["MAIN_ROLES_DESCRIPTION_WRATH"] = [=[These options can be used to automatically assign alternate Normal Blessings for any Greater Blessing assigned to Warriors, Death Knights, Druids, or Paladins |cffff0000only|r.
+
+Normally the Main Tank and the Main Assist roles have been used to identify Main Tanks and Off-Tanks (Main Assist) however, some guilds assign the Main Tank role to both Main Tanks and Off-Tanks and assign the Main Assist role to Healers.
+
+By having a separate setting for both roles it will allow Paladin Class Leaders or Raid Leaders to add, as an example, Blessing of Sanctuary to tanking classes. Another example being if Druid or Paladin Healers are marked with the Main Assist role, they could be set up to get normal Blessing of Wisdom vs Greater Blessing of Might which would allow assigning Greater Blessing of Might for DPS spec'd Druids and Paladins and normal Blessing of Wisdom to Healing spec'd Druids and Paladins.]=]
 L["MINIMAP_ICON_TOOLTIP"] = [=[|cffffffff[Left-Click]|r 打开祝福分配面板
 |cffffffff[Right-Click]|r 打开选项]=]
 L["None"] = "None"
@@ -88,6 +102,8 @@ L["None Buffed"] = "未祝福"
 L["Options"] = "选项设置"
 L["OPTIONS_BUTTON_TOOLTIP"] = "打开PallyPower选项面板"
 L["Override Druids / Paladins..."] = "覆盖 德鲁伊 / 圣骑士..."
+--[[Translation missing --]]
+L["Override Warriors / Death Knights..."] = "Override Warriors / Death Knights..."
 L["Override Warriors..."] = "覆盖 战士..."
 L["PallyPower Buttons Scale"] = "主窗口大小"
 L["PallyPower Classic"] = "PallyPower Classic"
@@ -95,6 +111,14 @@ L["Partially Buffed"] = "部分祝福"
 L["Player Buttons"] = "启用玩家按钮"
 L["PP_CLEAR_TOOLTIP"] = "清除所有为自己分配的祝福任务。"
 L["PP_REFRESH_TOOLTIP"] = "刷新自己、小队、团队所有骑士的祝福分配，天赋和王者印记数量。"
+--[[Translation missing --]]
+L["Preset"] = "Preset"
+--[[Translation missing --]]
+L["PRESET_TOOLTIP"] = [=[|cffffffff[Left-Click]|r Load the last saved Preset.
+
+|cffffffff[Shift-Left-Click]|r Save a preset 
+of all Greater and Normal Blessings 
+currently configured.]=]
 L["Raid only options"] = "团队选项"
 L["Refresh"] = "刷新"
 L["REPORT_CHANNEL_OPTION_TOOLTIP"] = [=[选择你想要广播祝福报告的频道:
@@ -116,12 +140,20 @@ L["Seal Button"] = "圣印按钮"
 L["Seal Tracker"] = "圣印监视器"
 L["Select the Aura you want to track"] = "选择你想监视的光环"
 L["Select the Greater Blessing assignment you wish to over-write on Main Assist: Druids / Paladins."] = "选择你希望覆盖到主坦上的强效祝福指派：德鲁伊/圣骑士"
+--[[Translation missing --]]
+L["Select the Greater Blessing assignment you wish to over-write on Main Assist: Warriors / Death Knights."] = "Select the Greater Blessing assignment you wish to over-write on Main Assist: Warriors / Death Knights."
 L["Select the Greater Blessing assignment you wish to over-write on Main Assist: Warriors."] = "选择你希望覆盖到主坦克上的强效祝福指派：战士"
 L["Select the Greater Blessing assignment you wish to over-write on Main Tank: Druids / Paladins."] = "选择你希望覆盖到主坦克上的强效祝福指派：德鲁伊/圣骑士"
+--[[Translation missing --]]
+L["Select the Greater Blessing assignment you wish to over-write on Main Tank: Warriors / Death Knights."] = "Select the Greater Blessing assignment you wish to over-write on Main Tank: Warriors / Death Knights."
 L["Select the Greater Blessing assignment you wish to over-write on Main Tank: Warriors."] = "选择你希望覆盖到主坦克上的强效祝福指派：战士"
 L["Select the Normal Blessing you wish to use to over-write the Main Assist: Druids / Paladins."] = "选择你希望覆盖到主坦克上的普通祝福指派：德鲁伊/圣骑士"
+--[[Translation missing --]]
+L["Select the Normal Blessing you wish to use to over-write the Main Assist: Warriors / Death Knights."] = "Select the Normal Blessing you wish to use to over-write the Main Assist: Warriors / Death Knights."
 L["Select the Normal Blessing you wish to use to over-write the Main Assist: Warriors."] = "选择你希望覆盖到主坦克上的普通祝福指派：战士"
 L["Select the Normal Blessing you wish to use to over-write the Main Tank: Druids / Paladins."] = "选择你希望覆盖到主坦克上的普通祝福指派: 德鲁伊/圣骑士"
+--[[Translation missing --]]
+L["Select the Normal Blessing you wish to use to over-write the Main Tank: Warriors / Death Knights."] = "Select the Normal Blessing you wish to use to over-write the Main Tank: Warriors / Death Knights."
 L["Select the Normal Blessing you wish to use to over-write the Main Tank: Warriors."] = "选择你希望覆盖到主坦克上的普通祝福指派：战士。"
 L["Select the Seal you want to track"] = "选择你想监视的圣印"
 L["Show Minimap Icon"] = "显示小地图图标"

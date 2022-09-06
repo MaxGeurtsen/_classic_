@@ -65,7 +65,6 @@ function events.CHAT_MSG_ADDON(...)
 end
 
 function events.PLAYER_FLAGS_CHANGED(...)
-    IT.AntiAfk.PLAYER_FLAGS_CHANGED(...)
 end
 
 events:RegisterEvent("PLAYER_LOGIN")

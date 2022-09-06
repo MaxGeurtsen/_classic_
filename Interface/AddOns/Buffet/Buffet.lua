@@ -1,6 +1,10 @@
 local addonName, ns = ...
 
--- TODO: play with https://wow.gamepedia.com/ItemMixin#Methods
+-- Lib used in this addon:
+-- https://www.wowace.com/projects/libbabble-subzone-3-0
+
+-- TODO:
+-- play with https://wow.gamepedia.com/ItemMixin#Methods
 
 -- Imports
 local Utility = ns.Utility
@@ -109,10 +113,14 @@ function Buffet:PLAYER_LOGIN()
     Core.playerHealth = UnitHealthMax("player")
     Core.playerMana = UnitPowerMax("player")
 
-    Utility.Print(Core.Version, " Loaded!")
+    Utility.Print(Core.Version, "Loaded!")
 
     if Utility.IsClassic then
         Utility.Debug("Classic mode enabled")
+    elseif Utility.IsTBC then
+        Utility.Debug("TBC mode enabled")
+    elseif Utility.WLK then
+        Utility.Debug("WLK mode enabled")
     elseif Utility.IsRetail then
         Utility.Debug("Retail mode enabled")
     end
@@ -374,7 +382,7 @@ function Core:Scan()
         local _, _, _, _, itemMinLevel = GetItemInfo(12662)
         if itemMinLevel <= self.playerLevel then
             local runeValue = 0
-            if Utility.IsClassic or Utility.IsTBC then
+            if Utility.IsClassic or Utility.IsTBC or Utility.IsWLK then
                 runeValue = 1200
             end
             if Utility.IsRetail then
@@ -389,7 +397,7 @@ function Core:Scan()
         local _, _, _, _, itemMinLevel = GetItemInfo(20520)
         if itemMinLevel <= self.playerLevel then
             local runeValue = 0
-            if Utility.IsClassic or Utility.IsTBC then
+            if Utility.IsClassic or Utility.IsTBC or Utility.IsWLK then
                 runeValue = 1199 -- health set to 1199 to prioritize demonic rune over dark rune
             end
             if Utility.IsRetail then
@@ -784,10 +792,6 @@ function Core:SlashHandler(message, editbox)
         for k,v in pairs(Core:BestsBeautifier()) do
             Utility.Print("bests."  .. k .. "=" .. v)
         end
---[===[@debug@
-    elseif cmd == "showzone" then
-        Utility.ShowPlayerZoneInfo()
---@end-debug@]===]
     else
         Utility.Print("Usage:")
         Utility.Print("/buffet combat [0, 1]: 1 to enable, 0 to disable")

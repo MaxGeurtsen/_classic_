@@ -1,8 +1,8 @@
-## Interface: 20504
+## Interface: 30400
 ## Notes: A simple chat copy paste addon.
 ## Title: ChatCopyPaste
 ## Author: Novaspark-Arugal OCE
-## Version: 1.12
+## Version: 1.13
 ## SavedVariables: CCPOptions
 
 embeds.xml

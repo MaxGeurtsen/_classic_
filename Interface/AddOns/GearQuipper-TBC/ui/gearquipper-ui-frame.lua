@@ -148,7 +148,7 @@ end
 
 function c:ToggleEvents(value)
     if c.initFinished and btnAddBinding then
-        btnAddBinding:SetEnabled(value and not c:IsInCombat());
+        btnAddBinding:SetEnabled(value and not c:IsInCombat() and not c:IsDead());
         if eventEntries then
             for index, entry in ipairs(eventEntries) do
                 if entry.cbSet then
@@ -307,10 +307,11 @@ function c:CreateSetEntry(index)
 
     chSet.iconFrame.partial = CreateFrame("Frame", "GqUiSetCheckBox_" .. index .. "_IconFrame_Partial", chSet.iconFrame);
     chSet.iconFrame.partial:SetAllPoints();
-    chSet.iconFrame.partial.fontString = chSet:CreateFontString("GqUiSetCheckBox_" .. index .. "_IconFrame_FontString", "ARTWORK", "GameFontNormalSmall");
+    chSet.iconFrame.partial.fontString = chSet:CreateFontString("GqUiSetCheckBox_" .. index .. "_IconFrame_FontString",
+        "ARTWORK", "GameFontNormalSmall");
     chSet.iconFrame.partial.fontString:SetPoint("BOTTOMLEFT", 28, 8);
 
-    chSet.SetIcon_Partial = function (self, value)
+    chSet.SetIcon_Partial = function(self, value)
         if value == true then
             self.iconFrame.partial.fontString:SetText(c:FormatTextWithColor("p", "777777"));
         else
@@ -318,12 +319,14 @@ function c:CreateSetEntry(index)
         end
     end
 
-    chSet.iconFrame.actionslots = CreateFrame("Frame", "GqUiSetCheckBox_" .. index .. "_IconFrame_ActionSlots", chSet.iconFrame);
+    chSet.iconFrame.actionslots = CreateFrame("Frame", "GqUiSetCheckBox_" .. index .. "_IconFrame_ActionSlots",
+        chSet.iconFrame);
     chSet.iconFrame.actionslots:SetAllPoints();
-    chSet.iconFrame.actionslots.fontString = chSet:CreateFontString("GqUiSetCheckBox_" .. index .. "_IconFrame_FontString", "ARTWORK", "GameFontNormalSmall")
+    chSet.iconFrame.actionslots.fontString = chSet:CreateFontString(
+        "GqUiSetCheckBox_" .. index .. "_IconFrame_FontString", "ARTWORK", "GameFontNormalSmall")
     chSet.iconFrame.actionslots.fontString:SetPoint("BOTTOMLEFT", 22, 8);
 
-    chSet.SetIcon_ActionSlots = function (self, value)
+    chSet.SetIcon_ActionSlots = function(self, value)
         if value == true then
             self.iconFrame.actionslots.fontString:SetText(c:FormatTextWithColor("a", "777777"));
         else
@@ -648,7 +651,7 @@ function GqUiFrame_OnShow(gqFrame)
         c.isFrameHooked["ECS_StatsFrame"] = true;
     end
 
-    if c:IsSwitching() or c:IsInCombat() then
+    if c:IsSwitching() or c:IsInCombat() or c:IsDead() then
         c:LockUI();
     else
         c:UnlockUI();

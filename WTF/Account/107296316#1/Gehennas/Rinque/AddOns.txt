@@ -15,3 +15,8 @@ ElvUI_QuestXP: disabled
 ElvUI_CustomTags: disabled
 kExtraBossFrames: disabled
 ElvUI_OptionsUI: enabled
+Bagnon: enabled
+RepHelper_Classic: disabled
+WhatsTraining: enabled
+wowup_data_addon: disabled
+Buffet: disabled

@@ -24,6 +24,9 @@ L["Shows the Options Window"] = "설정창을 표시합니다."
 -- /rb statmod
 L["Enable Stat Mods"] = "능력치 애드온 사용"
 L["Enable support for Stat Mods"] = "능력치 애드온 지원을 사용합니다."
+-- /rb avoidancedr
+L["Enable Avoidance Diminishing Returns"] = "방어행동 점감 효과 사용"
+L["Dodge, Parry, Miss Avoidance values will be calculated using the avoidance deminishing return formula with your current stats"] = "회피, 무기 막기, 빗맞힘 수치를 현재 능력치에서 점감 효과를 적용하여 계산합니다."
 -- /rb itemid
 L["Show ItemID"] = "아이템 ID 표시"
 L["Show the ItemID in tooltips"] = "툴팁에 아이템 ID를 표시합니다."
@@ -51,6 +54,13 @@ L["Options for Rating display"] = "평점 표시에 대한 설정입니다."
 -- /rb rating show
 L["Show Rating conversions"] = "평점 변화 표시"
 L["Show Rating conversions in tooltips"] = "툴팁에 평점 변화를 표시합니다."
+-- TODO
+-- /rb rating spell
+L["Show Spell Hit/Haste"] = true
+L["Show Spell Hit/Haste from Hit/Haste Rating"] = true
+-- /rb rating physical
+L["Show Physical Hit/Haste"] = true
+L["Show Physical Hit/Haste from Hit/Haste Rating"] = true
 -- /rb rating detail
 L["Show detailed conversions text"] = "세부적인 평점 변화 표시"
 L["Show detailed text for Resiliance and Expertise conversions"] = "탄력도와 숙련의 세부적인 평점 변화 표시를 사용합니다."
@@ -63,6 +73,29 @@ L["Convert Weapon Skill into Crit Hit, Dodge Neglect, Parry Neglect and Block Ne
 -- /rb rating exp -- 2.3.0
 L["Expertise breakdown"] = "숙련 세분화"
 L["Convert Expertise into Dodge Neglect and Parry Neglect"] = "회피 무시와 무기막기 무시 등으로 숙련을 세분화 합니다."
+L["from"] = true
+L["HEALING"] = STAT_SPELLHEALING
+L["AP"] = ATTACK_POWER_TOOLTIP
+L["RANGED_AP"] = RANGED_ATTACK_POWER
+L["ARMOR"] = ARMOR
+L["SPELL_DMG"] = STAT_SPELLDAMAGE
+L["SPELL_CRIT"] = PLAYERSTAT_SPELL_COMBAT .. " " .. SPELL_CRIT_CHANCE
+L["STR"] = SPELL_STAT1_NAME
+L["AGI"] = SPELL_STAT2_NAME
+L["STA"] = SPELL_STAT3_NAME
+L["INT"] = SPELL_STAT4_NAME
+L["SPI"] = SPELL_STAT5_NAME
+L["PARRY"] = PARRY
+L["MANA_REG"] = "마나 재생"
+L["NORMAL_MANA_REG"] = SPELL_STAT4_NAME .. " & " .. SPELL_STAT5_NAME -- Intellect & Spirit
+L["PET_STA"] = PET .. SPELL_STAT3_NAME -- Pet Stamina
+L["PET_INT"] = PET .. SPELL_STAT4_NAME -- Pet Intellect
+L.statModOptionName = function(show, add)
+	return string.format("%s %s ", add, show)
+end
+L.statModOptionDesc = function(show, add, from, mod)
+	return string.format("%s %s %s %s ", mod, from, add, show)
+end
 
 -- /rb stat
 --["Stat Breakdown"] = "능력치",
@@ -354,6 +387,10 @@ L["Spell Penetration Summary"] = "주문 관통력 요약"
 -- /rb sum stat ignorearmor
 L["Sum Ignore Armor"] = "방어도 무시"
 L["Ignore Armor Summary"] = "방어도 무시 요약"
+L["Sum Armor Penetration"] = "방어도 관통력 합계"
+L["Armor Penetration Summary"] = "방어도 관통력 요약"
+L["Sum Armor Penetration Rating"] = "방어도 관통도 합계"
+L["Armor Penetration Rating Summary"] = "방어도 관통도 요약"
 -- /rb sum stat weapondps
 --["Sum Weapon DPS"] = true,
 --["Weapon DPS Summary"] = true,
@@ -545,48 +582,26 @@ L["statList"] = {
 
 	{pattern = "주문 극대화 적중도", id = CR_CRIT_SPELL},
 	{pattern = "주문의 극대화 적중도", id = CR_CRIT_SPELL},
-	--		{pattern = "spell critical rating", id = CR_CRIT_SPELL},
-	--		{pattern = "spell crit rating", id = CR_CRIT_SPELL},
 	{pattern = "원거리 치명타 적중도", id = CR_CRIT_RANGED},
-	--		{pattern = "ranged critical hit rating", id = CR_CRIT_RANGED},
-	--		{pattern = "ranged critical rating", id = CR_CRIT_RANGED},
-	--		{pattern = "ranged crit rating", id = CR_CRIT_RANGED},
-	{pattern = "치명타 적중도", id = CR_CRIT_MELEE},
+	{pattern = "치명타 적중도", id = CR_CRIT},
 	{pattern = "근접 치명타 적중도", id = CR_CRIT_MELEE},
-	--		{pattern = "crit rating", id = CR_CRIT_MELEE},
 
 	--		{pattern = "주문의 적중도", id = CR_HIT_SPELL},
 	{pattern = "주문 적중도", id = CR_HIT_SPELL},
 	{pattern = "원거리 적중도", id = CR_HIT_RANGED},
-	{pattern = "적중도", id = CR_HIT_MELEE},
+	{pattern = "적중도", id = CR_HIT},
 
 	{pattern = "탄력도", id = CR_CRIT_TAKEN_MELEE}, -- resilience is implicitly a rating
 
 	{pattern = "주문 시전 가속도", id = CR_HASTE_SPELL},
 	{pattern = "원거리 공격 가속도", id = CR_HASTE_RANGED},
-	{pattern = "공격 가속도", id = CR_HASTE_MELEE},
-	{pattern = "가속도", id = CR_HASTE_MELEE}, -- [Drums of Battle]
+	{pattern = "공격 가속도", id = CR_HASTE},
+	{pattern = "가속도", id = CR_HASTE}, -- [Drums of Battle]
 
-	{pattern = "무기 숙련도", id = CR_WEAPON_SKILL},
 	{pattern = "숙련도", id = CR_EXPERTISE},
 
-	{pattern = "근접 공격 회피", id = CR_HIT_TAKEN_MELEE},
-	--[[
-	{pattern = "dagger skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "sword skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "two%-handed swords skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "axe skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "bow skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "crossbow skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "gun skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "feral combat skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "mace skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "polearm skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "staff skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "two%-handed axes skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "two%-handed maces skill rating", id = CR_WEAPON_SKILL},
-	{pattern = "fist weapons skill rating", id = CR_WEAPON_SKILL},
-	--]]
+	{pattern = "방어구 관통력", id = CR_ARMOR_PENETRATION},	--armor penetration rating
+	{pattern = string.lower(ARMOR), id = ARMOR},
 }
 -------------------------
 -- Added info patterns --
@@ -612,6 +627,11 @@ L["$value to be Dodged/Parried"] = "이후 회피 감소/무기막기 감소 $va
 L["$value to be Crit"] = "이후 치명타 $value"
 L["$value Crit Dmg Taken"] = "가질 치명타 데미지 $value"
 L["$value DOT Dmg Taken"] = "가질 DOT 데미지 $value"
+L["$value% Parry"] = "무막 $value%"
+-- for hit rating showing both physical and spell conversions
+-- (+1.21%, S+0.98%)
+-- (+1.21%, +0.98% S)
+L["$value Spell"] = "주문 $value"
 
 ------------------
 -- Stat Summary --

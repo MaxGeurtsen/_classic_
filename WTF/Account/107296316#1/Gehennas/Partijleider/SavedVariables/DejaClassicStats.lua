@@ -7,14 +7,14 @@ DejaClassicStatsDBPC = {
 		["DejaClassicStatsShowDuraTextureChecked"] = {
 			["ShowDuraTextureSetChecked"] = false,
 		},
-		["dejacharacterstatsScrollbarChecked"] = {
-			["ScrollbarSetChecked"] = false,
+		["DejaClassicStatsShowDuraChecked"] = {
+			["ShowDuraSetChecked"] = true,
 		},
 		["DejaClassicStatsShowItemLevelChecked"] = {
 			["ShowItemLevelSetChecked"] = false,
 		},
-		["dejacharacterstatsExpandButtonChecked"] = {
-			["ExpandButtonSetChecked"] = true,
+		["DejaClassicStatsAlternateInfoPlacement"] = {
+			["AlternateInfoPlacementChecked"] = false,
 		},
 		["DejaClassicStatsShowEnchantChecked"] = {
 			["ShowEnchantSetChecked"] = true,
@@ -63,6 +63,15 @@ DejaClassicStatsDBPC = {
 				"DCS_Durability", -- [8]
 				"DCS_RepairTotal", -- [9]
 			},
+			["DCS_DEFENSE_STAT_LIST"] = {
+				"Defense", -- [1]
+				"DodgeChance", -- [2]
+				"ParryChance", -- [3]
+				"BlockChance", -- [4]
+				"BlockValue", -- [5]
+				"Resilience", -- [6]
+				"Avoidance", -- [7]
+			},
 			["DCS_MELEE_STAT_LIST"] = {
 				"MHWeaponSkill", -- [1]
 				"MHDamage", -- [2]
@@ -78,15 +87,6 @@ DejaClassicStatsDBPC = {
 				"MeleeHaste", -- [12]
 				"Expertise", -- [13]
 			},
-			["DCS_DEFENSE_STAT_LIST"] = {
-				"Defense", -- [1]
-				"DodgeChance", -- [2]
-				"ParryChance", -- [3]
-				"BlockChance", -- [4]
-				"BlockValue", -- [5]
-				"Resilience", -- [6]
-				"Avoidance", -- [7]
-			},
 		},
 		["dejacharacterstatsExpandButtonAltPlacementChecked"] = {
 			["ExpandButtonAltPlacementSetChecked"] = false,
@@ -94,54 +94,54 @@ DejaClassicStatsDBPC = {
 		["DejaClassicStatsDesaturateScrollArtBackground"] = {
 			["DesaturateScrollArtBackgroundChecked"] = false,
 		},
-		["DejaClassicStatsShowHideScrollArtBackground"] = {
-			["ShowHideScrollArtBackgroundChecked"] = true,
+		["dejacharacterstatsExpandChecked"] = {
+			["ExpandSetChecked"] = true,
 		},
 		["DejaClassicStatsShowItemRepairChecked"] = {
 			["ShowItemRepairSetChecked"] = false,
 		},
-		["DejaClassicStatsShowDefenseChecked"] = {
-			["ShowDefenseSetChecked"] = false,
-		},
-		["DejaClassicStatsShowSpellChecked"] = {
-			["ShowSpellSetChecked"] = true,
-		},
-		["DejaClassicStatsShowPrimaryChecked"] = {
-			["ShowPrimarySetChecked"] = true,
-		},
-		["DejaClassicStatsDefaultResistances"] = {
-			["DefaultResistancesChecked"] = true,
-		},
-		["DejaClassicStatsShowAverageRepairChecked"] = {
-			["ShowAverageRepairSetChecked"] = true,
-		},
-		["DejaClassicStatsShowMeleeChecked"] = {
-			["ShowMeleeSetChecked"] = false,
-		},
-		["DejaClassicStatsManaRegenNotCasting"] = {
-			["DCSnotcasting"] = 75.02628326416016,
-		},
-		["DejaClassicStatsShowModelRotation"] = {
-			["ShowModelRotationChecked"] = false,
-		},
-		["DejaClassicStatsShowRangedChecked"] = {
-			["ShowRangedSetChecked"] = false,
-		},
-		["DejaClassicStatsAlternateInfoPlacement"] = {
-			["AlternateInfoPlacementChecked"] = false,
-		},
 		["QCOA_SetSliderValue"] = {
 			["QCOA_SliderValue"] = 0.75,
-		},
-		["dejacharacterstatsExpandChecked"] = {
-			["ExpandSetChecked"] = true,
 		},
 		["DejaClassicStatsSimpleItemColorChecked"] = {
 			["SimpleItemColorChecked"] = false,
 			["DarkerItemColorChecked"] = false,
 		},
-		["DejaClassicStatsShowDuraChecked"] = {
-			["ShowDuraSetChecked"] = true,
+		["DejaClassicStatsShowPrimaryChecked"] = {
+			["ShowPrimarySetChecked"] = true,
+		},
+		["DejaClassicStatsShowRangedChecked"] = {
+			["ShowRangedSetChecked"] = false,
+		},
+		["DejaClassicStatsShowAverageRepairChecked"] = {
+			["ShowAverageRepairSetChecked"] = true,
+		},
+		["DejaClassicStatsShowMeleeChecked"] = {
+			["ShowMeleeSetChecked"] = true,
+		},
+		["DejaClassicStatsManaRegenNotCasting"] = {
+			["DCSnotcasting"] = 50.26041793823242,
+		},
+		["DejaClassicStatsShowModelRotation"] = {
+			["ShowModelRotationChecked"] = false,
+		},
+		["DejaClassicStatsDefaultResistances"] = {
+			["DefaultResistancesChecked"] = true,
+		},
+		["DejaClassicStatsShowSpellChecked"] = {
+			["ShowSpellSetChecked"] = true,
+		},
+		["DejaClassicStatsShowDefenseChecked"] = {
+			["ShowDefenseSetChecked"] = false,
+		},
+		["DejaClassicStatsShowHideScrollArtBackground"] = {
+			["ShowHideScrollArtBackgroundChecked"] = true,
+		},
+		["dejacharacterstatsExpandButtonChecked"] = {
+			["ExpandButtonSetChecked"] = true,
+		},
+		["dejacharacterstatsScrollbarChecked"] = {
+			["ScrollbarSetChecked"] = false,
 		},
 	},
 }

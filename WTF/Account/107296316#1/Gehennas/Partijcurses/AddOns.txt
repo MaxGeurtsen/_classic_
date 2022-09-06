@@ -5,3 +5,6 @@ LFGBulletinBoard: enabled
 Outfitter: disabled
 WoWPro: disabled
 WoWPro_Leveling: disabled
+Talented: enabled
+Bagnon: disabled
+RepHelper_Classic: disabled

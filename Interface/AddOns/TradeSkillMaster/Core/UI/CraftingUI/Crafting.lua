@@ -1070,7 +1070,7 @@ function private.FSMCreate()
 		wipe(private.professions)
 		wipe(private.professionsKeys)
 		if currentProfession and not isCurrentProfessionPlayer then
-			assert(not TSM.IsWowClassic())
+			assert(not TSM.IsWowVanillaClassic())
 			local playerName = nil
 			local linked, linkedName = TSM.Crafting.ProfessionUtil.IsLinkedProfession()
 			if linked then
@@ -1236,7 +1236,7 @@ function private.FSMCreate()
 		local currentProfession = TSM.Crafting.ProfessionState.GetCurrentProfession()
 		if not resultItemString then
 			buttonFrame:GetElement("craftBtn")
-				:SetText(currentProfession == GetSpellInfo(7411) and L["Enchant"] or L["Tinker"])
+				:SetText(currentProfession == GetSpellInfo(7411) and L["Enchant"] or (currentProfession == GetSpellInfo(4036) and L["Tinker"] or L["Craft"]))
 			buttonFrame:GetElement("queueBtn")
 				:SetDisabled(true)
 			buttonFrame:GetElement("craftInput")

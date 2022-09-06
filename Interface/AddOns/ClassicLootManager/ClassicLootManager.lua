@@ -14,7 +14,7 @@ CLM.GUI = {}
 CLM.OPTIONS = {}
 CLM.ALERTS = {}
 
-CLM.AUTOVERSION = "v1.9.1"
+CLM.AUTOVERSION = "v1.9.2"
 
 CLM.LOG = LibStub("LibLogger"):New()
 

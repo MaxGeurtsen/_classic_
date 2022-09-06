@@ -1,26 +1,28 @@
 
 OmniCCDB = {
 	["profileKeys"] = {
-		["Partijleider - Gehennas"] = "Default",
-		["Firebreather - Gehennas"] = "Default",
 		["Partijlijder - Gehennas"] = "Default",
-		["Cursedbreath - Firemaw"] = "Default",
-		["Mírjam - Razorgore"] = "Default",
-		["Partijcurses - Gehennas"] = "Default",
-		["Mirjam - Firemaw"] = "Default",
-		["Awwaa - Gehennas"] = "Default",
-		["Helpsiebren - Razorgore"] = "Default",
-		["Eefjé - Razorgore"] = "Default",
-		["Mírjam - Firemaw"] = "Default",
-		["Partijleider - Razorgore"] = "Default",
-		["Rinque - Gehennas"] = "Default",
-		["Partijlijder - Razorgore"] = "Default",
 		["Firebreather - Firemaw"] = "Default",
+		["Partijcurses - Gehennas"] = "Default",
+		["Awwaa - Gehennas"] = "Default",
+		["Partijlijder - Razorgore"] = "Default",
 		["Kealthas - Razorgore"] = "Default",
+		["Firebreather - Gehennas"] = "Default",
+		["Partijdood - Gehennas"] = "Default",
+		["Mírjam - Razorgore"] = "Default",
+		["Partijaxert - Gehennas"] = "Default",
+		["Helpsiebren - Razorgore"] = "Default",
+		["Partijleider - Gehennas"] = "Default",
+		["Mírjam - Firemaw"] = "Default",
+		["Cursedbreath - Firemaw"] = "Default",
+		["Rinque - Gehennas"] = "Default",
+		["Eefjé - Razorgore"] = "Default",
+		["Mirjam - Firemaw"] = "Default",
+		["Partijleider - Razorgore"] = "Default",
 	},
 	["global"] = {
 		["dbVersion"] = 6,
-		["addonVersion"] = "9.2.0",
+		["addonVersion"] = "9.2.1",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -62,6 +64,8 @@ OmniCCDB = {
 	},
 }
 OmniCC4Config = {
+	["groups"] = {
+	},
 	["version"] = "8.2.5",
 	["groupSettings"] = {
 		["base"] = {
@@ -96,7 +100,5 @@ OmniCC4Config = {
 				},
 			},
 		},
-	},
-	["groups"] = {
 	},
 }

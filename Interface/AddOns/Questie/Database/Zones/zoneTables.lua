@@ -107,6 +107,7 @@ local areaIdToUiMapId = {
     [3523] = 1953, -- Netherstorm
     [3524] = 1943, -- Azuremyst Isle
     [3525] = 1950, -- Bloodmyst Isle
+    [3535] = 1950, -- The Shattered Halls - Dungeon
     [3537] = 114, -- Borean Tundra
     [3557] = 1947, -- The Exodar
     [3562] = 347, -- Hellfire Ramparts - Dungeon
@@ -359,13 +360,7 @@ local subZoneToParentZone = {
 }
 
 function ZoneDB:GetZoneTables()
-    return {
-        areaIdToUiMapId,
-        dungeons,
-        dungeonLocations,
-        dungeonParentZones,
-        subZoneToParentZone
-    }
+    return areaIdToUiMapId, dungeons, dungeonLocations, dungeonParentZones, subZoneToParentZone
 end
 
 -- Different source of zoneIds
@@ -493,10 +488,11 @@ ZoneDB.zoneIDs = {
     ICECROWN = 210,
     GRIZZLY_HILLS = 394,
     HOWLING_FJORD = 495,
-    CRYSTALSONG_FOREST = 2817,	
+    CRYSTALSONG_FOREST = 2817,
     BOREAN_TUNDRA = 3537,
     SHOLAZAR_BASIN = 3711,
     WINTERGRASP = 4197,
+    THE_NEXUS = 4265,
     DALARAN = 4395,
     PLAGUELANDS_THE_SCARLET_ENCLAVE = 4298,
 }

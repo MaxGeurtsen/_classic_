@@ -139,13 +139,13 @@ Bartender4DB = {
 				["Resto"] = {
 					["actionbars"] = {
 						{
-							["padding"] = 0,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 41.75,
 								["x"] = -221,
 								["point"] = "BOTTOM",
 							},
+							["padding"] = 0,
 						}, -- [1]
 						{
 							["enabled"] = false,
@@ -157,16 +157,15 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["padding"] = 0,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 151.6024475097656,
 								["x"] = -220.5,
 								["point"] = "BOTTOM",
 							},
+							["padding"] = 0,
 						}, -- [3]
 						{
-							["padding"] = 0,
 							["rows"] = 3,
 							["version"] = 3,
 							["position"] = {
@@ -174,28 +173,30 @@ Bartender4DB = {
 								["x"] = -423.3036499023438,
 								["point"] = "BOTTOM",
 							},
+							["padding"] = 0,
 						}, -- [4]
 						{
-							["padding"] = 0,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 114.6857452392578,
 								["x"] = -220.5,
 								["point"] = "BOTTOM",
 							},
+							["padding"] = 0,
 						}, -- [5]
 						{
-							["padding"] = 0,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 79.23177337646484,
 								["x"] = -220.5,
 								["point"] = "BOTTOM",
 							},
+							["padding"] = 0,
 						}, -- [6]
 						{
 						}, -- [7]
 						{
+							["rows"] = 3,
 							["enabled"] = true,
 							["version"] = 3,
 							["position"] = {
@@ -203,10 +204,10 @@ Bartender4DB = {
 								["x"] = 252.4461059570313,
 								["point"] = "BOTTOM",
 							},
-							["rows"] = 3,
 							["padding"] = 0,
 						}, -- [8]
 						{
+							["rows"] = 2,
 							["enabled"] = true,
 							["version"] = 3,
 							["position"] = {
@@ -214,7 +215,6 @@ Bartender4DB = {
 								["x"] = -400.2039794921875,
 								["point"] = "BOTTOM",
 							},
-							["rows"] = 2,
 							["padding"] = 0,
 						}, -- [9]
 						{
@@ -662,6 +662,72 @@ Bartender4DB = {
 						}, -- [10]
 					},
 				},
+				["Partijdood - Gehennas"] = {
+					["actionbars"] = {
+						{
+							["padding"] = 6,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 41.75,
+								["x"] = -510,
+								["point"] = "BOTTOM",
+							},
+						}, -- [1]
+						{
+							["enabled"] = false,
+							["version"] = 3,
+							["position"] = {
+								["y"] = -227.4999237060547,
+								["x"] = -231.5,
+								["point"] = "CENTER",
+							},
+						}, -- [2]
+						{
+							["padding"] = 5,
+							["rows"] = 12,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 610,
+								["x"] = -82,
+								["point"] = "BOTTOMRIGHT",
+							},
+						}, -- [3]
+						{
+							["padding"] = 5,
+							["rows"] = 12,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 610,
+								["x"] = -42,
+								["point"] = "BOTTOMRIGHT",
+							},
+						}, -- [4]
+						{
+							["padding"] = 6,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 110,
+								["x"] = 3,
+								["point"] = "BOTTOM",
+							},
+						}, -- [5]
+						{
+							["padding"] = 6,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 110,
+								["x"] = -510,
+								["point"] = "BOTTOM",
+							},
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						[10] = {
+						},
+					},
+				},
 				["Mírjam - Razorgore"] = {
 					["actionbars"] = {
 						{
@@ -794,6 +860,103 @@ Bartender4DB = {
 						},
 					},
 				},
+				["Partijleider - Razorgore"] = {
+					["actionbars"] = {
+						{
+							["padding"] = 0,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 41.75,
+								["x"] = -221,
+								["point"] = "BOTTOM",
+							},
+						}, -- [1]
+						{
+							["enabled"] = false,
+							["version"] = 3,
+							["position"] = {
+								["y"] = -227.4999389648438,
+								["x"] = -231.5000610351563,
+								["point"] = "CENTER",
+							},
+						}, -- [2]
+						{
+							["padding"] = 0,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 151.6024475097656,
+								["x"] = -220.5,
+								["point"] = "BOTTOM",
+							},
+						}, -- [3]
+						{
+							["rows"] = 3,
+							["padding"] = 0,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 113.0000381469727,
+								["x"] = -423.3036499023438,
+								["point"] = "BOTTOM",
+							},
+						}, -- [4]
+						{
+							["padding"] = 0,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 114.6857452392578,
+								["x"] = -220.5,
+								["point"] = "BOTTOM",
+							},
+						}, -- [5]
+						{
+							["padding"] = 0,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 79.23177337646484,
+								["x"] = -220.5,
+								["point"] = "BOTTOM",
+							},
+						}, -- [6]
+						{
+							["version"] = 3,
+							["position"] = {
+								["y"] = -227.4999237060547,
+								["x"] = -231.5,
+								["point"] = "CENTER",
+							},
+						}, -- [7]
+						{
+							["enabled"] = true,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 113.0000381469727,
+								["x"] = 252.4461059570313,
+								["point"] = "BOTTOM",
+							},
+							["rows"] = 3,
+							["padding"] = 0,
+						}, -- [8]
+						{
+							["enabled"] = true,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 225.6024475097656,
+								["x"] = -400.2039794921875,
+								["point"] = "BOTTOM",
+							},
+							["rows"] = 2,
+							["padding"] = 0,
+						}, -- [9]
+						{
+							["version"] = 3,
+							["position"] = {
+								["y"] = -227.4999237060547,
+								["x"] = -231.5,
+								["point"] = "CENTER",
+							},
+						}, -- [10]
+					},
+				},
 				["Default"] = {
 					["actionbars"] = {
 						{
@@ -856,20 +1019,21 @@ Bartender4DB = {
 						}, -- [7]
 						{
 						}, -- [8]
-						[10] = {
-						},
+						nil, -- [9]
+						{
+						}, -- [10]
 					},
 				},
-				["Partijleider - Razorgore"] = {
+				["Firebreather - Firemaw"] = {
 					["actionbars"] = {
 						{
+							["padding"] = 6,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 41.75,
-								["x"] = -221,
+								["x"] = -510,
 								["point"] = "BOTTOM",
 							},
-							["padding"] = 0,
 						}, -- [1]
 						{
 							["enabled"] = false,
@@ -881,79 +1045,49 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
+							["padding"] = 5,
+							["rows"] = 12,
 							["version"] = 3,
 							["position"] = {
-								["y"] = 151.6024475097656,
-								["x"] = -220.5,
-								["point"] = "BOTTOM",
+								["y"] = 610,
+								["x"] = -82,
+								["point"] = "BOTTOMRIGHT",
 							},
-							["padding"] = 0,
 						}, -- [3]
 						{
-							["rows"] = 3,
+							["padding"] = 5,
+							["rows"] = 12,
 							["version"] = 3,
 							["position"] = {
-								["y"] = 113.0000381469727,
-								["x"] = -423.3036499023438,
-								["point"] = "BOTTOM",
+								["y"] = 610,
+								["x"] = -42,
+								["point"] = "BOTTOMRIGHT",
 							},
-							["padding"] = 0,
 						}, -- [4]
 						{
+							["padding"] = 6,
 							["version"] = 3,
 							["position"] = {
-								["y"] = 114.6857452392578,
-								["x"] = -220.5,
+								["y"] = 110,
+								["x"] = 3,
 								["point"] = "BOTTOM",
 							},
-							["padding"] = 0,
 						}, -- [5]
 						{
+							["padding"] = 6,
 							["version"] = 3,
 							["position"] = {
-								["y"] = 79.23177337646484,
-								["x"] = -220.5,
+								["y"] = 110,
+								["x"] = -510,
 								["point"] = "BOTTOM",
 							},
-							["padding"] = 0,
 						}, -- [6]
 						{
-							["version"] = 3,
-							["position"] = {
-								["y"] = -227.4999237060547,
-								["x"] = -231.5,
-								["point"] = "CENTER",
-							},
 						}, -- [7]
 						{
-							["rows"] = 3,
-							["enabled"] = true,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 113.0000381469727,
-								["x"] = 252.4461059570313,
-								["point"] = "BOTTOM",
-							},
-							["padding"] = 0,
 						}, -- [8]
+						nil, -- [9]
 						{
-							["rows"] = 2,
-							["enabled"] = true,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 225.6024475097656,
-								["x"] = -400.2039794921875,
-								["point"] = "BOTTOM",
-							},
-							["padding"] = 0,
-						}, -- [9]
-						{
-							["version"] = 3,
-							["position"] = {
-								["y"] = -227.4999237060547,
-								["x"] = -231.5,
-								["point"] = "CENTER",
-							},
 						}, -- [10]
 					},
 				},
@@ -1107,7 +1241,7 @@ Bartender4DB = {
 						},
 					},
 				},
-				["Firebreather - Firemaw"] = {
+				["Firebreather - Gehennas"] = {
 					["actionbars"] = {
 						{
 							["padding"] = 6,
@@ -1122,8 +1256,8 @@ Bartender4DB = {
 							["enabled"] = false,
 							["version"] = 3,
 							["position"] = {
-								["y"] = -227.4999389648438,
-								["x"] = -231.5000610351563,
+								["y"] = -227.4999237060547,
+								["x"] = -231.5,
 								["point"] = "CENTER",
 							},
 						}, -- [2]
@@ -1169,12 +1303,11 @@ Bartender4DB = {
 						}, -- [7]
 						{
 						}, -- [8]
-						nil, -- [9]
-						{
-						}, -- [10]
+						[10] = {
+						},
 					},
 				},
-				["Firebreather - Gehennas"] = {
+				["Partijaxert - Gehennas"] = {
 					["actionbars"] = {
 						{
 							["padding"] = 6,
@@ -1265,14 +1398,14 @@ Bartender4DB = {
 					},
 				},
 				["Resto"] = {
-					["padding"] = -2,
-					["version"] = 3,
 					["position"] = {
 						["y"] = 42.00000381469727,
 						["x"] = -301.814208984375,
 						["point"] = "BOTTOMRIGHT",
 						["scale"] = 1,
 					},
+					["version"] = 3,
+					["padding"] = -2,
 				},
 				["Partijcurses - Gehennas"] = {
 					["padding"] = -2,
@@ -1334,6 +1467,16 @@ Bartender4DB = {
 						["scale"] = 1,
 					},
 				},
+				["Partijdood - Gehennas"] = {
+					["padding"] = -2,
+					["version"] = 3,
+					["position"] = {
+						["scale"] = 1,
+						["x"] = 33,
+						["point"] = "BOTTOM",
+						["y"] = 42,
+					},
+				},
 				["Mírjam - Razorgore"] = {
 					["padding"] = -2,
 					["version"] = 3,
@@ -1354,25 +1497,35 @@ Bartender4DB = {
 						["y"] = 42,
 					},
 				},
-				["Default"] = {
+				["Partijleider - Razorgore"] = {
 					["padding"] = -2,
 					["version"] = 3,
-					["position"] = {
-						["scale"] = 1,
-						["x"] = 33,
-						["point"] = "BOTTOM",
-						["y"] = 42,
-					},
-				},
-				["Partijleider - Razorgore"] = {
 					["position"] = {
 						["y"] = 42.00000381469727,
 						["x"] = -301.814208984375,
 						["point"] = "BOTTOMRIGHT",
 						["scale"] = 1,
 					},
-					["version"] = 3,
+				},
+				["Default"] = {
 					["padding"] = -2,
+					["version"] = 3,
+					["position"] = {
+						["y"] = 42,
+						["x"] = 33,
+						["point"] = "BOTTOM",
+						["scale"] = 1,
+					},
+				},
+				["Firebreather - Firemaw"] = {
+					["padding"] = -2,
+					["version"] = 3,
+					["position"] = {
+						["y"] = 42,
+						["x"] = 33,
+						["point"] = "BOTTOM",
+						["scale"] = 1,
+					},
 				},
 				["Rinque - Gehennas"] = {
 					["padding"] = -2,
@@ -1394,17 +1547,17 @@ Bartender4DB = {
 						["y"] = 42,
 					},
 				},
-				["Firebreather - Firemaw"] = {
+				["Firebreather - Gehennas"] = {
 					["padding"] = -2,
 					["version"] = 3,
 					["position"] = {
-						["y"] = 42,
+						["scale"] = 1,
 						["x"] = 33,
 						["point"] = "BOTTOM",
-						["scale"] = 1,
+						["y"] = 42,
 					},
 				},
-				["Firebreather - Gehennas"] = {
+				["Partijaxert - Gehennas"] = {
 					["padding"] = -2,
 					["version"] = 3,
 					["position"] = {
@@ -1437,12 +1590,13 @@ Bartender4DB = {
 					},
 				},
 				["Resto"] = {
-					["version"] = 3,
+					["enabled"] = true,
 					["position"] = {
-						["y"] = 54,
-						["x"] = -514,
-						["point"] = "BOTTOM",
+						["y"] = -17.4005126953125,
+						["x"] = -511.4999694824219,
+						["point"] = "TOP",
 					},
+					["version"] = 3,
 				},
 				["Partijcurses - Gehennas"] = {
 					["enabled"] = true,
@@ -1497,6 +1651,15 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
+				["Partijdood - Gehennas"] = {
+					["enabled"] = true,
+					["version"] = 3,
+					["position"] = {
+						["y"] = 54,
+						["x"] = -514,
+						["point"] = "BOTTOM",
+					},
+				},
 				["Mírjam - Razorgore"] = {
 					["enabled"] = true,
 					["version"] = 3,
@@ -1515,6 +1678,15 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
+				["Partijleider - Razorgore"] = {
+					["enabled"] = true,
+					["version"] = 3,
+					["position"] = {
+						["y"] = -13.9312744140625,
+						["x"] = -512.3206176757812,
+						["point"] = "TOP",
+					},
+				},
 				["Default"] = {
 					["enabled"] = true,
 					["version"] = 3,
@@ -1524,14 +1696,14 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Partijleider - Razorgore"] = {
+				["Firebreather - Firemaw"] = {
 					["enabled"] = true,
-					["position"] = {
-						["y"] = -13.9312744140625,
-						["x"] = -512.3206176757812,
-						["point"] = "TOP",
-					},
 					["version"] = 3,
+					["position"] = {
+						["y"] = 54,
+						["x"] = -514,
+						["point"] = "BOTTOM",
+					},
 				},
 				["Rinque - Gehennas"] = {
 					["enabled"] = true,
@@ -1551,7 +1723,7 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Firebreather - Firemaw"] = {
+				["Firebreather - Gehennas"] = {
 					["enabled"] = true,
 					["version"] = 3,
 					["position"] = {
@@ -1560,13 +1732,25 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Firebreather - Gehennas"] = {
+				["Partijaxert - Gehennas"] = {
 					["enabled"] = true,
 					["version"] = 3,
 					["position"] = {
 						["y"] = 54,
 						["x"] = -514,
 						["point"] = "BOTTOM",
+					},
+				},
+			},
+		},
+		["MultiCast"] = {
+			["profiles"] = {
+				["Partijleider - Razorgore"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 35.00001907348633,
+						["x"] = 384.4905700683594,
+						["point"] = "BOTTOMLEFT",
 					},
 				},
 			},
@@ -1592,12 +1776,12 @@ Bartender4DB = {
 					},
 				},
 				["Resto"] = {
-					["version"] = 3,
 					["position"] = {
 						["y"] = 47,
 						["x"] = -512,
 						["point"] = "BOTTOM",
 					},
+					["version"] = 3,
 				},
 				["Partijcurses - Gehennas"] = {
 					["enabled"] = true,
@@ -1651,6 +1835,15 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
+				["Partijdood - Gehennas"] = {
+					["enabled"] = true,
+					["version"] = 3,
+					["position"] = {
+						["y"] = 47,
+						["x"] = -512,
+						["point"] = "BOTTOM",
+					},
+				},
 				["Mírjam - Razorgore"] = {
 					["enabled"] = true,
 					["version"] = 3,
@@ -1669,6 +1862,14 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
+				["Partijleider - Razorgore"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 47,
+						["x"] = -512,
+						["point"] = "BOTTOM",
+					},
+				},
 				["Default"] = {
 					["enabled"] = true,
 					["version"] = 3,
@@ -1678,13 +1879,14 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Partijleider - Razorgore"] = {
+				["Firebreather - Firemaw"] = {
+					["enabled"] = true,
+					["version"] = 3,
 					["position"] = {
 						["y"] = 47,
 						["x"] = -512,
 						["point"] = "BOTTOM",
 					},
-					["version"] = 3,
 				},
 				["Rinque - Gehennas"] = {
 					["version"] = 3,
@@ -1703,7 +1905,7 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Firebreather - Firemaw"] = {
+				["Firebreather - Gehennas"] = {
 					["enabled"] = true,
 					["version"] = 3,
 					["position"] = {
@@ -1712,7 +1914,7 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Firebreather - Gehennas"] = {
+				["Partijaxert - Gehennas"] = {
 					["enabled"] = true,
 					["version"] = 3,
 					["position"] = {
@@ -1744,7 +1946,6 @@ Bartender4DB = {
 					},
 				},
 				["Resto"] = {
-					["padding"] = 0,
 					["onebag"] = true,
 					["version"] = 3,
 					["position"] = {
@@ -1752,6 +1953,7 @@ Bartender4DB = {
 						["x"] = -79.0001220703125,
 						["point"] = "BOTTOMRIGHT",
 					},
+					["padding"] = 0,
 				},
 				["Partijcurses - Gehennas"] = {
 					["padding"] = 5,
@@ -1809,6 +2011,15 @@ Bartender4DB = {
 						["point"] = "BOTTOMRIGHT",
 					},
 				},
+				["Partijdood - Gehennas"] = {
+					["padding"] = 4,
+					["version"] = 3,
+					["position"] = {
+						["y"] = 42,
+						["x"] = 303,
+						["point"] = "BOTTOM",
+					},
+				},
 				["Mírjam - Razorgore"] = {
 					["padding"] = 5,
 					["version"] = 3,
@@ -1827,6 +2038,16 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
+				["Partijleider - Razorgore"] = {
+					["onebag"] = true,
+					["padding"] = 0,
+					["version"] = 3,
+					["position"] = {
+						["y"] = 42.00000381469727,
+						["x"] = -79.0001220703125,
+						["point"] = "BOTTOMRIGHT",
+					},
+				},
 				["Default"] = {
 					["padding"] = 5,
 					["version"] = 3,
@@ -1836,15 +2057,14 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Partijleider - Razorgore"] = {
-					["onebag"] = true,
+				["Firebreather - Firemaw"] = {
+					["padding"] = 5,
 					["version"] = 3,
 					["position"] = {
-						["y"] = 42.00000381469727,
-						["x"] = -79.0001220703125,
-						["point"] = "BOTTOMRIGHT",
+						["y"] = 41,
+						["x"] = 296,
+						["point"] = "BOTTOM",
 					},
-					["padding"] = 0,
 				},
 				["Rinque - Gehennas"] = {
 					["onebag"] = true,
@@ -1865,7 +2085,7 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Firebreather - Firemaw"] = {
+				["Firebreather - Gehennas"] = {
 					["padding"] = 5,
 					["version"] = 3,
 					["position"] = {
@@ -1874,12 +2094,12 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Firebreather - Gehennas"] = {
-					["padding"] = 5,
+				["Partijaxert - Gehennas"] = {
+					["padding"] = 4,
 					["version"] = 3,
 					["position"] = {
-						["y"] = 41,
-						["x"] = 296,
+						["y"] = 42,
+						["x"] = 303,
 						["point"] = "BOTTOM",
 					},
 				},
@@ -1904,12 +2124,12 @@ Bartender4DB = {
 					},
 				},
 				["Resto"] = {
-					["version"] = 3,
 					["position"] = {
 						["y"] = 187.8047637939453,
 						["x"] = 230.8364868164063,
 						["point"] = "BOTTOM",
 					},
+					["version"] = 3,
 				},
 				["Partijcurses - Gehennas"] = {
 					["version"] = 3,
@@ -1959,6 +2179,14 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
+				["Partijdood - Gehennas"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 42.50006103515625,
+						["x"] = 104.5,
+						["point"] = "CENTER",
+					},
+				},
 				["Mírjam - Razorgore"] = {
 					["version"] = 3,
 					["position"] = {
@@ -1975,6 +2203,14 @@ Bartender4DB = {
 						["point"] = "CENTER",
 					},
 				},
+				["Partijleider - Razorgore"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 187.8047637939453,
+						["x"] = 230.8364868164063,
+						["point"] = "BOTTOM",
+					},
+				},
 				["Default"] = {
 					["version"] = 3,
 					["position"] = {
@@ -1983,13 +2219,13 @@ Bartender4DB = {
 						["point"] = "CENTER",
 					},
 				},
-				["Partijleider - Razorgore"] = {
-					["position"] = {
-						["y"] = 187.8047637939453,
-						["x"] = 230.8364868164063,
-						["point"] = "BOTTOM",
-					},
+				["Firebreather - Firemaw"] = {
 					["version"] = 3,
+					["position"] = {
+						["y"] = 42.50006103515625,
+						["x"] = 104.5000610351563,
+						["point"] = "CENTER",
+					},
 				},
 				["Rinque - Gehennas"] = {
 					["version"] = 3,
@@ -2007,15 +2243,15 @@ Bartender4DB = {
 						["point"] = "CENTER",
 					},
 				},
-				["Firebreather - Firemaw"] = {
+				["Firebreather - Gehennas"] = {
 					["version"] = 3,
 					["position"] = {
 						["y"] = 42.50006103515625,
-						["x"] = 104.5000610351563,
+						["x"] = 104.5,
 						["point"] = "CENTER",
 					},
 				},
-				["Firebreather - Gehennas"] = {
+				["Partijaxert - Gehennas"] = {
 					["version"] = 3,
 					["position"] = {
 						["y"] = 42.50006103515625,
@@ -2045,12 +2281,12 @@ Bartender4DB = {
 					},
 				},
 				["Resto"] = {
-					["version"] = 3,
 					["position"] = {
-						["y"] = -14.99999237060547,
-						["x"] = -82.49996948242188,
-						["point"] = "CENTER",
+						["y"] = 54.00003433227539,
+						["x"] = 328.4402618408203,
+						["point"] = "BOTTOMLEFT",
 					},
+					["version"] = 3,
 				},
 				["Partijcurses - Gehennas"] = {
 					["version"] = 3,
@@ -2101,6 +2337,15 @@ Bartender4DB = {
 						["point"] = "CENTER",
 					},
 				},
+				["Partijdood - Gehennas"] = {
+					["version"] = 3,
+					["position"] = {
+						["scale"] = 1,
+						["x"] = -460,
+						["point"] = "BOTTOM",
+						["y"] = 143,
+					},
+				},
 				["Mírjam - Razorgore"] = {
 					["version"] = 3,
 					["position"] = {
@@ -2117,24 +2362,32 @@ Bartender4DB = {
 						["point"] = "CENTER",
 					},
 				},
-				["Default"] = {
-					["version"] = 3,
-					["position"] = {
-						["scale"] = 1,
-						["x"] = -460,
-						["point"] = "BOTTOM",
-						["y"] = 143,
-					},
-				},
 				["Partijleider - Razorgore"] = {
+					["padding"] = 0,
+					["version"] = 3,
 					["position"] = {
 						["y"] = 34.99999618530273,
 						["x"] = 246.3247833251953,
 						["point"] = "BOTTOMLEFT",
 						["scale"] = 1,
 					},
-					["padding"] = 0,
+				},
+				["Default"] = {
 					["version"] = 3,
+					["position"] = {
+						["y"] = 143,
+						["x"] = -460,
+						["point"] = "BOTTOM",
+						["scale"] = 1,
+					},
+				},
+				["Firebreather - Firemaw"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = -14.99999237060547,
+						["x"] = -82.49996948242188,
+						["point"] = "CENTER",
+					},
 				},
 				["Rinque - Gehennas"] = {
 					["padding"] = 0,
@@ -2155,20 +2408,21 @@ Bartender4DB = {
 						["y"] = 143,
 					},
 				},
-				["Firebreather - Firemaw"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = -14.99999237060547,
-						["x"] = -82.49996948242188,
-						["point"] = "CENTER",
-					},
-				},
 				["Firebreather - Gehennas"] = {
 					["version"] = 3,
 					["position"] = {
 						["y"] = -14.99998474121094,
 						["x"] = -82.50003051757812,
 						["point"] = "CENTER",
+					},
+				},
+				["Partijaxert - Gehennas"] = {
+					["version"] = 3,
+					["position"] = {
+						["scale"] = 1,
+						["x"] = -460,
+						["point"] = "BOTTOM",
+						["y"] = 143,
 					},
 				},
 			},
@@ -2247,6 +2501,14 @@ Bartender4DB = {
 						["point"] = "CENTER",
 					},
 				},
+				["Partijdood - Gehennas"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 143,
+						["x"] = -120,
+						["point"] = "BOTTOM",
+					},
+				},
 				["Mírjam - Razorgore"] = {
 					["version"] = 3,
 					["position"] = {
@@ -2263,6 +2525,14 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
+				["Partijleider - Razorgore"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 183.2095031738281,
+						["x"] = -163.5,
+						["point"] = "BOTTOM",
+					},
+				},
 				["Default"] = {
 					["version"] = 3,
 					["position"] = {
@@ -2271,11 +2541,11 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Partijleider - Razorgore"] = {
+				["Firebreather - Firemaw"] = {
 					["version"] = 3,
 					["position"] = {
-						["y"] = 183.2095031738281,
-						["x"] = -163.5,
+						["y"] = 143,
+						["x"] = -460,
 						["point"] = "BOTTOM",
 					},
 				},
@@ -2295,7 +2565,7 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Firebreather - Firemaw"] = {
+				["Firebreather - Gehennas"] = {
 					["version"] = 3,
 					["position"] = {
 						["y"] = 143,
@@ -2303,11 +2573,11 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Firebreather - Gehennas"] = {
+				["Partijaxert - Gehennas"] = {
 					["version"] = 3,
 					["position"] = {
 						["y"] = 143,
-						["x"] = -460,
+						["x"] = -120,
 						["point"] = "BOTTOM",
 					},
 				},
@@ -2335,12 +2605,12 @@ Bartender4DB = {
 				},
 				["Resto"] = {
 					["enabled"] = true,
-					["version"] = 3,
 					["position"] = {
 						["y"] = -3,
 						["x"] = -512.0000610351562,
 						["point"] = "TOP",
 					},
+					["version"] = 3,
 				},
 				["Partijcurses - Gehennas"] = {
 					["enabled"] = true,
@@ -2396,6 +2666,15 @@ Bartender4DB = {
 						["point"] = "TOP",
 					},
 				},
+				["Partijdood - Gehennas"] = {
+					["enabled"] = true,
+					["version"] = 3,
+					["position"] = {
+						["y"] = 61,
+						["x"] = -514,
+						["point"] = "BOTTOM",
+					},
+				},
 				["Mírjam - Razorgore"] = {
 					["enabled"] = true,
 					["version"] = 3,
@@ -2414,6 +2693,15 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
+				["Partijleider - Razorgore"] = {
+					["enabled"] = true,
+					["version"] = 3,
+					["position"] = {
+						["y"] = -2.5640869140625,
+						["x"] = -511.5001220703125,
+						["point"] = "TOP",
+					},
+				},
 				["Default"] = {
 					["enabled"] = true,
 					["version"] = 3,
@@ -2423,14 +2711,14 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Partijleider - Razorgore"] = {
+				["Firebreather - Firemaw"] = {
 					["enabled"] = true,
-					["position"] = {
-						["y"] = -2.5640869140625,
-						["x"] = -511.5001220703125,
-						["point"] = "TOP",
-					},
 					["version"] = 3,
+					["position"] = {
+						["y"] = 61,
+						["x"] = -514,
+						["point"] = "BOTTOM",
+					},
 				},
 				["Rinque - Gehennas"] = {
 					["enabled"] = true,
@@ -2450,7 +2738,7 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Firebreather - Firemaw"] = {
+				["Firebreather - Gehennas"] = {
 					["enabled"] = true,
 					["version"] = 3,
 					["position"] = {
@@ -2459,7 +2747,7 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Firebreather - Gehennas"] = {
+				["Partijaxert - Gehennas"] = {
 					["enabled"] = true,
 					["version"] = 3,
 					["position"] = {
@@ -2474,15 +2762,17 @@ Bartender4DB = {
 	["profileKeys"] = {
 		["Partijleider - Gehennas"] = "Partijleider - Razorgore",
 		["Partijlijder - Gehennas"] = "Partijleider - Razorgore",
+		["Partijdood - Gehennas"] = "Resto",
 		["Firebreather - Firemaw"] = "Firebreather - Firemaw",
 		["Partijcurses - Gehennas"] = "Rinque - Gehennas",
 		["Awwaa - Gehennas"] = "Awwaa - Gehennas",
 		["Helpsiebren - Razorgore"] = "Helpsiebren - Razorgore",
-		["Firebreather - Gehennas"] = "Firebreather - Gehennas",
+		["Partijaxert - Gehennas"] = "Resto",
 		["Partijlijder - Razorgore"] = "Partijlijder - Razorgore",
-		["Rinque - Gehennas"] = "Partijleider - Razorgore",
 		["Partijleider - Razorgore"] = "elemental",
+		["Rinque - Gehennas"] = "Partijleider - Razorgore",
 		["Mírjam - Razorgore"] = "Mírjam - Razorgore",
+		["Firebreather - Gehennas"] = "Firebreather - Gehennas",
 		["Kealthas - Razorgore"] = "Partijleider - Razorgore",
 	},
 	["profiles"] = {
@@ -2531,6 +2821,11 @@ Bartender4DB = {
 			["blizzardVehicle"] = true,
 			["outofrange"] = "hotkey",
 		},
+		["Partijdood - Gehennas"] = {
+			["focuscastmodifier"] = false,
+			["blizzardVehicle"] = true,
+			["outofrange"] = "hotkey",
+		},
 		["Mírjam - Razorgore"] = {
 			["focuscastmodifier"] = false,
 			["blizzardVehicle"] = true,
@@ -2541,12 +2836,17 @@ Bartender4DB = {
 			["blizzardVehicle"] = true,
 			["outofrange"] = "hotkey",
 		},
+		["Partijleider - Razorgore"] = {
+			["focuscastmodifier"] = false,
+			["blizzardVehicle"] = true,
+			["outofrange"] = "hotkey",
+		},
 		["Default"] = {
 			["focuscastmodifier"] = false,
 			["blizzardVehicle"] = true,
 			["outofrange"] = "hotkey",
 		},
-		["Partijleider - Razorgore"] = {
+		["Firebreather - Firemaw"] = {
 			["focuscastmodifier"] = false,
 			["blizzardVehicle"] = true,
 			["outofrange"] = "hotkey",
@@ -2561,12 +2861,12 @@ Bartender4DB = {
 			["blizzardVehicle"] = true,
 			["outofrange"] = "hotkey",
 		},
-		["Firebreather - Firemaw"] = {
+		["Firebreather - Gehennas"] = {
 			["focuscastmodifier"] = false,
 			["blizzardVehicle"] = true,
 			["outofrange"] = "hotkey",
 		},
-		["Firebreather - Gehennas"] = {
+		["Partijaxert - Gehennas"] = {
 			["focuscastmodifier"] = false,
 			["blizzardVehicle"] = true,
 			["outofrange"] = "hotkey",

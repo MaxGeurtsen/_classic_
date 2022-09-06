@@ -2,48 +2,60 @@
 HandyNotesDB = {
 	["profileKeys"] = {
 		["Partijleider - Gehennas"] = "Partijleider - Gehennas",
-		["Partijlijder - Gehennas"] = "Partijlijder - Gehennas",
 		["Rinque - Gehennas"] = "Rinque - Gehennas",
+		["Partijlijder - Gehennas"] = "Partijlijder - Gehennas",
+		["Partijdood - Gehennas"] = "Partijdood - Gehennas",
+		["Firebreather - Firemaw"] = "Firebreather - Firemaw",
 		["Partijcurses - Gehennas"] = "Partijcurses - Gehennas",
 		["Firebreather - Gehennas"] = "Firebreather - Gehennas",
-		["Firebreather - Firemaw"] = "Firebreather - Firemaw",
+		["Partijaxert - Gehennas"] = "Partijaxert - Gehennas",
 	},
 	["profiles"] = {
 		["Partijleider - Gehennas"] = {
 		},
+		["Rinque - Gehennas"] = {
+		},
 		["Partijlijder - Gehennas"] = {
 		},
-		["Rinque - Gehennas"] = {
+		["Partijdood - Gehennas"] = {
+		},
+		["Firebreather - Firemaw"] = {
 		},
 		["Partijcurses - Gehennas"] = {
 		},
 		["Firebreather - Gehennas"] = {
 		},
-		["Firebreather - Firemaw"] = {
+		["Partijaxert - Gehennas"] = {
 		},
 	},
 }
 HandyNotes_HandyNotesDB = {
 	["profileKeys"] = {
 		["Partijleider - Gehennas"] = "Partijleider - Gehennas",
-		["Partijlijder - Gehennas"] = "Partijlijder - Gehennas",
 		["Rinque - Gehennas"] = "Rinque - Gehennas",
+		["Partijlijder - Gehennas"] = "Partijlijder - Gehennas",
+		["Partijdood - Gehennas"] = "Partijdood - Gehennas",
+		["Firebreather - Firemaw"] = "Firebreather - Firemaw",
 		["Partijcurses - Gehennas"] = "Partijcurses - Gehennas",
 		["Firebreather - Gehennas"] = "Firebreather - Gehennas",
-		["Firebreather - Firemaw"] = "Firebreather - Firemaw",
+		["Partijaxert - Gehennas"] = "Partijaxert - Gehennas",
 	},
 	["profiles"] = {
 		["Partijleider - Gehennas"] = {
 		},
+		["Rinque - Gehennas"] = {
+		},
 		["Partijlijder - Gehennas"] = {
 		},
-		["Rinque - Gehennas"] = {
+		["Partijdood - Gehennas"] = {
+		},
+		["Firebreather - Firemaw"] = {
 		},
 		["Partijcurses - Gehennas"] = {
 		},
 		["Firebreather - Gehennas"] = {
 		},
-		["Firebreather - Firemaw"] = {
+		["Partijaxert - Gehennas"] = {
 		},
 	},
 }

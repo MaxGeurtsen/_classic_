@@ -304,7 +304,7 @@ f:SetScript('OnEvent', function(self, event, ...)
 	elseif (event == "PLAYER_DEAD") then
 		NIT:throddleEventByFunc(event, 2, "recordDurabilityData", ...);
 	elseif (event == "BAG_UPDATE" or event == "PLAYER_MONEY") then
-		NIT:throddleEventByFunc(event, 2, "recordInventoryData", ...);
+		NIT:throddleEventByFunc(event, 3, "recordInventoryData", ...);
 	elseif (event == "QUEST_TURNED_IN") then
 		NIT:throddleEventByFunc(event, 2, "recordPlayerLevelData", ...);
 	elseif (event == "CHAT_MSG_SKILL") then
@@ -418,11 +418,11 @@ function NIT:chatMsgCombatXpGain(...)
 		xpGained = string.match(text, "(%d+)의 경험치");
 	end
 	if (NIT.inInstance and NIT.data.instances[1]) then
+		NIT.data.instances[1].xpFromChat = NIT.data.instances[1].xpFromChat + xpGained;
 		if (NIT.data.instances[1].isPvp) then
 			return;
 		end
 		NIT.data.instances[1].mobCount = NIT.data.instances[1].mobCount + 1;
-		NIT.data.instances[1].xpFromChat = NIT.data.instances[1].xpFromChat + xpGained;
 	end
 	currentXP = (UnitXP("player") or 0);
 	maxXP = (UnitXPMax("player") or 0);
@@ -532,15 +532,15 @@ function NIT:playerEnteringWorld(...)
 	local isInstance, instanceType = IsInInstance();
 	if (isInstance) then
 		if (isReload) then
-			C_Timer.After(0.2, function()
+			C_Timer.After(0.5, function()
 				NIT:enteredInstance(true);
 			end)
 		elseif (isLogon) then
-			C_Timer.After(0.2, function()
+			C_Timer.After(0.5, function()
 				NIT:enteredInstance(nil, true);
 			end)
 		else
-			C_Timer.After(0.2, function()
+			C_Timer.After(0.5, function()
 				if (isInstance) then
 					NIT:enteredInstance();
 				end
@@ -667,9 +667,13 @@ function NIT:recordBgStats()
 			instance.winningFaction = 1;
 		end
 		--No winner name means a draw.
-		local drawName = GetBattlefieldTeamInfo(GetBattlefieldWinner());
-		if (not drawName) then
-			instance.draw = true;
+		local drawName;
+		--I've seen one time GetBattlefieldWinner() be nil when not a draw so had to add a check here.
+		if (GetBattlefieldWinner()) then
+			local drawName = GetBattlefieldTeamInfo(GetBattlefieldWinner());
+			if (not drawName) then
+				instance.draw = true;
+			end
 		end
 		if (next(purpleTeam)) then
 			instance.purpleTeam = purpleTeam;
@@ -710,17 +714,31 @@ end)
 local isGhost = false;
 NIT.lastInstanceName = "(Unknown Instance)";
 local doneFirstGUIDCheck;
-function NIT:enteredInstance(isReload, isLogon)
+function NIT:enteredInstance(isReload, isLogon, checkAgain)
 	doGUID = true;
 	local instance, instanceType = IsInInstance();
 	local type;
-	--if (NIT.isTBC) then
+	--instanceType was showing "pvp" at the start of tbc, now it shows "arena".
+	--Leave some redunant checks here in place anyway incase it ever reverts back.
+	if (instanceType == "pvp" or instanceType == "arena") then
 		if (NIT:isInArena()) then
 			type = "arena";
 		elseif (UnitInBattleground("player")) then
 			type = "bg";
 		end
-	--end
+		if (not type and not checkAgain) then
+			--Sometimes UnitInBattleground() is slow to return true after PEW.
+			--So recheck after a couple of seconds if we're in a pvp instance and both arena and bg wern't found.
+			NIT:debug("PvP type not found, rechecking.")
+			C_Timer.After(2, function()
+				NIT:enteredInstance(isReload, isLogon, true);
+			end)
+			return;
+		end
+	end
+	if (checkAgain) then
+		NIT:debug("Rechecked Instance:", instance, "Type:", instanceType, NIT:isInArena(), UnitInBattleground("player"));
+	end
 	if (instance == true and ((instanceType == "party") or (instanceType == "raid")
 			or (type == "bg") or (type == "arena"))) then
 		local instanceName, instanceType, difficultyID, difficultyName, maxPlayers, dynamicDifficulty,
@@ -778,12 +796,12 @@ function NIT:enteredInstance(isReload, isLogon)
 				if (t.isPvp) then
 					--No need to store certain things for pvp instances.
 					t.difficultyID = nil;
-					t.enteredLevel = nil;
-					t.enteredXP = nil;
+					--t.enteredLevel = nil;
+					--t.enteredXP = nil;
 					t.enteredMoney = nil;
 					t.rawMoneyCount = nil;
-					t.xpFromChat = nil;
-					--t.mobCount = nil;
+					--t.xpFromChat = nil;
+					t.mobCount = nil;
 					--t.mobCountFromKill = nil;
 					C_Timer.After(2, function()
 						doubleCheckArena();
@@ -926,6 +944,11 @@ function NIT:showInstanceStats(id, output, showAll)
 	if (data.isPvp) then
 		if (data.type == "bg") then
 			text = text .. pColor .. " " .. L["Honor"] .. ":|r " .. sColor .. (data.honor or 0) .. "|r";
+		end
+		if (not NIT.isClassic and not NIT.isTBC and data.type ~= "arena") then
+			if ((NIT.db.global.instanceStatsOutputXP or showAll) and UnitLevel("player") ~= NIT.maxLevel) then
+				text = text .. pColor .. " " .. L["statsXP"] .. "|r " .. sColor .. NIT:commaValue(data.xpFromChat) .. "|r";
+			end
 		end
 	else
 		--Check both count from xp and count from combat log event.
@@ -2148,7 +2171,7 @@ function NIT:recordCooldowns()
 			if (item) then
 				local itemID = item:GetItemID(item);
 				local itemName = item:GetItemName(item);
-				if (itemID and itemCooldowns[itemID]) then
+				if (itemID and itemName and itemCooldowns[itemID]) then
 					local startTime, duration, isEnabled = GetContainerItemCooldown(bag, slot);
 					--local endTime = (startTime + duration) - (GetTime() - GetServerTime());
 					local endTime = GetCooldownLeft(startTime, duration) + GetServerTime();

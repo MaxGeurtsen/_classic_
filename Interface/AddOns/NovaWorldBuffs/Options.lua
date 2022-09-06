@@ -1311,7 +1311,7 @@ NWB.options = {
 };
 
 function NWB:loadSpecificOptions()
-	if (NWB.isTBC) then
+	if (not NWB.isClassic) then
 		NWB.options.args["tbcHeader"] = {
 			type = "description",
 			name = "|cFF50D050" .. L["tbcHeaderText"],
@@ -1453,14 +1453,14 @@ function NWB:loadSpecificOptions()
 			get = "getGuildTerok10",
 			set = "setGuildTerok10",
 		};
-		NWB.options.args["tbcNote"] = {
+		--[[NWB.options.args["tbcNote"] = {
 			type = "description",
 			name = "|cFF50D050" .. L["tbcNoteText"],
 			fontSize = "medium",
 			order = 30,
-		};
+		};]]
 	end
-	if (NWB.isTBC or NWB.realmsTBC) then
+	if (NWB.isWrath or NWB.isTBC or NWB.realmsTBC) then
 		NWB.optionDefaults.global.minimapIcon = {["minimapPos"] = 139, ["hide"] = false};
 	end
 	if (NWB.faction == "Alliance") then

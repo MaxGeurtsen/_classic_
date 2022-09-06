@@ -8,6 +8,8 @@ L["[|cffffd200Enable|r/|cffffd200Disable|r] The Auto Buff Button or [|cffffd200E
 L["[|cffffd200Enable|r/|cffffd200Disable|r] The Drag Handle Button."] = "드래그 손잡이 버튼 [|cffffd200사용|r/|cffffd200사용안함|r]"
 L["[|cffffd200Enable|r/|cffffd200Disable|r] The Player(s) or Class Buttons."] = "플레이어 또는 직업 버튼 [|cffffd200사용|r/|cffffd200사용안함|r]"
 L["[|cffffd200Enable|r/|cffffd200Disable|r] The Seal Button, Enable/Disable Righteous Fury or select the Seal you want to track."] = "문장 버튼 [|cffffd200사용|r/|cffffd200사용안함|r], 정의의 격노 사용/사용안함 또는 추적하려는 문장을 선택하세요."
+--[[Translation missing --]]
+L["[Enable/Disable] Class Buttons"] = "[Enable/Disable] Class Buttons"
 L["[Enable/Disable] PallyPower"] = "PallyPower [표시/숨김]"
 L["[Enable/Disable] PallyPower in Party"] = "파티 시 PallyPower [표시/숨김]"
 L["[Enable/Disable] PallyPower while Solo"] = "솔로일 때 PallyPower [표시/숨김]"
@@ -24,7 +26,7 @@ L["Aura Tracker"] = "오라 추적기"
 L["Auto Buff Button"] = "자동 버프 버튼"
 L["Auto Greater Blessing Key"] = "자동 상급 축복 단축키"
 L["Auto Normal Blessing Key"] = "자동 일반 축복 단축키"
-L["AUTO_ASSIGN_TOOLIP"] = [=[이용 가능한 성기사의 수와
+L["AUTO_ASSIGN_TOOLTIP"] = [=[이용 가능한 성기사의 수와
 사용 가능한 축복을 기반으로
 모든 축복을 자동 할당합니다.
 
@@ -79,9 +81,15 @@ L["If this option is disabled it will also disable the Player Buttons and you wi
 L["If this option is disabled then Class and Player buttons will ignore buffs' duration, allowing buffs to be reapplied at will. This is especially useful for Protection Paladins when they spam Greater Blessings to generate more threat."] = "이 옵션을 사용하지 않으면 직업 및 플레이어 버튼은 버프 지속시간을 무시하고 버프를 다시 적용 할 수 있습니다. 이것은 보호 성기사가 상급 축복을 스팸으로 만들어 더 많은 위협을 생성 할 때 특히 유용합니다."
 L["If this option is disabled then you will no longer see the pop out buttons showing individual players and you will not be able to reapply Normal Blessings while in combat."] = "이 옵션을 사용안하게 되면 더 이상 개별 플레이어를 표시하는 팝업 버튼이 표시되지 않으며 전투 중에 일반 축복을 다시 적용 할 수 없습니다."
 L["If this option is enabled then the Auto Buff Button and the Class Buff Button(s) will not auto buff a Greater Blessing if recipient(s) are not within the Paladins range (100yds). This range check excludes AFK, Dead and Offline players."] = "이 옵션을 사용하면 버프받을 사용자가 접속종료이거나 성기사 범위에 속하지 않을 경우 자동 버프 버튼과 직업 버프 버튼이 상급 축복을 자동으로 버프하지 않습니다."
+--[[Translation missing --]]
+L["If you enable this option PallyPower will automatically over-write a Greater Blessing with a Normal Blessing on players marked with the |cffffd200Main Assistant|r role in the Blizzard Raid Panel. This is useful for spot buffing the |cffffd200Main Assistant|r role with Blessing of Sanctuary."] = "If you enable this option PallyPower will automatically over-write a Greater Blessing with a Normal Blessing on players marked with the |cffffd200Main Assistant|r role in the Blizzard Raid Panel. This is useful for spot buffing the |cffffd200Main Assistant|r role with Blessing of Sanctuary."
 L["If you enable this option PallyPower will automatically over-write a Greater Blessing with a Normal Blessing on players marked with the |cffffd200Main Assistant|r role in the Blizzard Raid Panel. This is useful to avoid blessing the |cffffd200Main Assistant|r role with a Greater Blessing of Salvation."] = "이 옵션을 사용하면 블리자드 공격대 창에서 |cffffd200지원공격 전담|r 역할이 표시된 플레이어에 PallyPower가 일반 축복으로 상급 축복을 자동으로 덮어 씁니다. 이것은 상급 구원의 축복으로 |cffffd200지원공격 전담|r 역할을 축복하지 않도록 하는 데 유용합니다."
+--[[Translation missing --]]
+L["If you enable this option PallyPower will automatically over-write a Greater Blessing with a Normal Blessing on players marked with the |cffffd200Main Tank|r role in the Blizzard Raid Panel. This is useful for spot buffing the |cffffd200Main Tank|r role with Blessing of Sanctuary."] = "If you enable this option PallyPower will automatically over-write a Greater Blessing with a Normal Blessing on players marked with the |cffffd200Main Tank|r role in the Blizzard Raid Panel. This is useful for spot buffing the |cffffd200Main Tank|r role with Blessing of Sanctuary."
 L["If you enable this option PallyPower will automatically over-write a Greater Blessing with a Normal Blessing on players marked with the |cffffd200Main Tank|r role in the Blizzard Raid Panel. This is useful to avoid blessing the |cffffd200Main Tank|r role with a Greater Blessing of Salvation."] = "이 옵션을 사용하면 블리자드 공격대 창에서 |cffffd200방어 전담|r 역할이 표시된 플레이어에 PallyPower가 일반 축복으로 상급 축복을 자동으로 덮어 씌웁니다. 이것은 상급 구원의 축복을 |cffffd200방어 전담|r 역할에 축복하지 않도록 하는 데 유용합니다."
 L["If you enable this option, you will not be allowed to assign Blessing of Wisdom to Warriors or Rogues, and Blessing of Might to Mages, Warlocks, or Hunters."] = "이 옵션을 사용하면 전사 또는 도적에게 지혜의 축복을 할당하고 마법사, 흑마법사 및 사냥꾼에게 힘의 축복을 할당 할 수 없습니다."
+--[[Translation missing --]]
+L["If you enable this option, you will not be allowed to assign Blessing of Wisdom to Warriors, Rogues, or Death Knights and Blessing of Might to Mages, Warlocks, or Hunters."] = "If you enable this option, you will not be allowed to assign Blessing of Wisdom to Warriors, Rogues, or Death Knights and Blessing of Might to Mages, Warlocks, or Hunters."
 L["LAYOUT_TOOLTIP"] = "수직 [좌/우] 수평 [상/하]"
 L["Main PallyPower Settings"] = "PallyPower 표시 시기"
 L["Main Tank / Main Assist Roles"] = "메인 탱커 / 공격지원 전담 역할"
@@ -92,6 +100,12 @@ L["MAIN_ROLES_DESCRIPTION"] = [=[이 옵션을 사용하면 |cffff0000전사, �
 두 역할에 대해 별도의 설정을 함으로 성기사 클래스장 또는 공격대장이 제거할 수 있습니다. 예를 들어, 탱킹 클래스에 대한 '상급 구원의 축복' 또는 드루이드나 성기사 힐러가 공격지원 전담 역할이면 딜러 특성의 드루이드와 성기사에 '상급 힘의 축복'을 할당하고 힐러 특성의 드루이드와 성기사에 '일반 지혜의 축복'을 할당하여 '일반 지혜의 축복' 및 '상급 힘의 축복'을 얻도록 설정할 수 있습니다. 
 
 |cffffff00참고: 공격대에 성기사 축복이 모두 주어질만큼 충분한 성기사가 있는 경우, 이 설정은 무시해도됩니다. 탱킹 클래스는 구원의 축복을 수동으로 해제해야 합니다.|r]=]
+--[[Translation missing --]]
+L["MAIN_ROLES_DESCRIPTION_WRATH"] = [=[These options can be used to automatically assign alternate Normal Blessings for any Greater Blessing assigned to Warriors, Death Knights, Druids, or Paladins |cffff0000only|r.
+
+Normally the Main Tank and the Main Assist roles have been used to identify Main Tanks and Off-Tanks (Main Assist) however, some guilds assign the Main Tank role to both Main Tanks and Off-Tanks and assign the Main Assist role to Healers.
+
+By having a separate setting for both roles it will allow Paladin Class Leaders or Raid Leaders to add, as an example, Blessing of Sanctuary to tanking classes. Another example being if Druid or Paladin Healers are marked with the Main Assist role, they could be set up to get normal Blessing of Wisdom vs Greater Blessing of Might which would allow assigning Greater Blessing of Might for DPS spec'd Druids and Paladins and normal Blessing of Wisdom to Healing spec'd Druids and Paladins.]=]
 L["MINIMAP_ICON_TOOLTIP"] = "|cffffffff[좌-클릭]|r 축복 할당 열기 |cffffffff[우-클릭]|r 설정 열기"
 L["None"] = "없음"
 L["None Buffed"] = "버프 없음"
@@ -99,6 +113,8 @@ L["Options"] = "옵션"
 L["OPTIONS_BUTTON_TOOLTIP"] = [=[PallyPower 애드온 
 설정창을 엽니다.]=]
 L["Override Druids / Paladins..."] = "드루이드 / 성기사 무시..."
+--[[Translation missing --]]
+L["Override Warriors / Death Knights..."] = "Override Warriors / Death Knights..."
 L["Override Warriors..."] = "전사 무시..."
 L["PallyPower Buttons Scale"] = "PallyPower 버튼 크기"
 L["PallyPower Classic"] = "PallyPower 클래식"
@@ -111,6 +127,14 @@ L["PP_REFRESH_TOOLTIP"] = [=[자신, 파티 및 공격대
 성기사 중 모든 축복 
 할당, 특성 및 왕의 징표를 
 새로고침 합니다.]=]
+--[[Translation missing --]]
+L["Preset"] = "Preset"
+--[[Translation missing --]]
+L["PRESET_TOOLTIP"] = [=[|cffffffff[Left-Click]|r Load the last saved Preset.
+
+|cffffffff[Shift-Left-Click]|r Save a preset 
+of all Greater and Normal Blessings 
+currently configured.]=]
 L["Raid only options"] = "공격대 전용 옵션"
 L["Refresh"] = "새로고침"
 L["REPORT_CHANNEL_OPTION_TOOLTIP"] = [=[축복을 알릴 방송 채널을 다음과 같이 설정하세요:
@@ -133,12 +157,20 @@ L["Seal Button"] = "문장 버튼"
 L["Seal Tracker"] = "문장 추적기"
 L["Select the Aura you want to track"] = "추적하려는 오라를 선택하세요."
 L["Select the Greater Blessing assignment you wish to over-write on Main Assist: Druids / Paladins."] = "방어 전담에 덮어 쓰려는 상급 축복 할당을 선택하세요: 드루이드 / 성기사."
+--[[Translation missing --]]
+L["Select the Greater Blessing assignment you wish to over-write on Main Assist: Warriors / Death Knights."] = "Select the Greater Blessing assignment you wish to over-write on Main Assist: Warriors / Death Knights."
 L["Select the Greater Blessing assignment you wish to over-write on Main Assist: Warriors."] = "방어 전담에 덮어 쓰려는 상급 축복 할당을 선택하세요: 전사."
 L["Select the Greater Blessing assignment you wish to over-write on Main Tank: Druids / Paladins."] = "방어 전담에 덮어 쓰려는 상급 축복 할당을 선택하세요: 드루이드 / 성기사."
+--[[Translation missing --]]
+L["Select the Greater Blessing assignment you wish to over-write on Main Tank: Warriors / Death Knights."] = "Select the Greater Blessing assignment you wish to over-write on Main Tank: Warriors / Death Knights."
 L["Select the Greater Blessing assignment you wish to over-write on Main Tank: Warriors."] = "방어 전담에 덮어 쓰려는 상급 축복 할당을 선택하세요: 전사."
 L["Select the Normal Blessing you wish to use to over-write the Main Assist: Druids / Paladins."] = "방어 전담에 덮어 쓰는 데 사용할 일반 축복을 선택하세요: 드루이드 / 성기사."
+--[[Translation missing --]]
+L["Select the Normal Blessing you wish to use to over-write the Main Assist: Warriors / Death Knights."] = "Select the Normal Blessing you wish to use to over-write the Main Assist: Warriors / Death Knights."
 L["Select the Normal Blessing you wish to use to over-write the Main Assist: Warriors."] = "방어 전담에 덮어 쓰는 데 사용할 일반 축복을 선택하세요: 전사."
 L["Select the Normal Blessing you wish to use to over-write the Main Tank: Druids / Paladins."] = "방어 전담에 덮어 쓰는데 사용할 일반 축복을 선택하세요: 드루이드 / 성기사."
+--[[Translation missing --]]
+L["Select the Normal Blessing you wish to use to over-write the Main Tank: Warriors / Death Knights."] = "Select the Normal Blessing you wish to use to over-write the Main Tank: Warriors / Death Knights."
 L["Select the Normal Blessing you wish to use to over-write the Main Tank: Warriors."] = "방어 전담에 덮어 쓰는데 사용할 일반 축복을 선택하세요: 전사."
 L["Select the Seal you want to track"] = "추적하려는 문장을 선택하세요."
 L["Show Minimap Icon"] = "미니맵 아이콘 표시"

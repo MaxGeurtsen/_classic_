@@ -42,12 +42,6 @@ FLogGlobalVars = {
 	},
 	["instances"] = {
 		["Gehennas"] = {
-			{
-				["enter"] = 1659643094,
-				["player"] = "Partijleider",
-				["name"] = "Zul'Aman",
-				["leave"] = 1659646483,
-			}, -- [1]
 		},
 		["Razorgore"] = {
 		},

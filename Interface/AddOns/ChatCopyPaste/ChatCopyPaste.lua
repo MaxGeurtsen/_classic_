@@ -273,6 +273,9 @@ function CCP.removeChatJunk(currentMsg)
 end
 
 function CCP.makeChatWindowButtons(i)
+	if (_G['ChatFrame'..i] and _G['ChatFrame'..i].ccpButton) then
+		return;
+	end
 	local obj = CreateFrame("Button", "ccpChatCopyIcon" .. i, _G['ChatFrame'..i]);
 	obj.bg = obj:CreateTexture(nil,	"ARTWORK");
 	obj.bg:SetTexture("Interface\\AddOns\\ChatCopyPaste\\Media\\copypaste");
@@ -334,6 +337,7 @@ function CCP.makeChatWindowButtons(i)
 	end
 	obj:SetScript("OnEnter", obj.show);
 	obj:SetScript("OnLeave", obj.hide);
+	_G['ChatFrame'..i].ccpButton = obj;
 end
 
 function CCP:loadChatButtons()
@@ -341,6 +345,17 @@ function CCP:loadChatButtons()
 		CCP.makeChatWindowButtons(i);
 	end
 end
+
+--Add buttons to new frames as they load (whispers etc).
+hooksecurefunc("ChatFrame_OnLoad", function(...)
+	local frame = ...;
+	if (frame and frame.GetName) then
+		local num = string.match(frame:GetName(), "ChatFrame(%d+)");
+		if (num) then
+			CCP.makeChatWindowButtons(num);
+		end
+	end
+end)
 
 --Clickable website links.
 local urlColorCode = "";
@@ -428,7 +443,7 @@ CCP.options = {
 	args = {
 		top_header = {
 			type = "description",
-			name = "|CffDEDE42Options (You can type /ccp to open this)\n",
+			name = "|CffDEDE42Options (You can type /ccp to open this)",
 			fontSize = "medium",
 			order = 1,
 		},

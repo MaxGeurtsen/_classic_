@@ -1,5 +1,5 @@
-## v4.11.32 Changes
+## v4.11.45 Changes
 
-* [Retail] Reverted previous change which caused issues with posted crafted items
+* [Classic] Fixed error while buying auctions
 
 [Known Issues](https://support.tradeskillmaster.com/en_US/known_issues)

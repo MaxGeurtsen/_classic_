@@ -1,0 +1,141 @@
+VER 3 0000000000000013 " aap" "132165"
+/aap skip
+END
+VER 3 0000000000000007 " dwa" "132166"
+/cast enchant cloak - superior defense
+/use Cloak of Scintillating Auras
+/click StaticPopup1Button1
+END
+VER 3 0000000000000019 "10" "132090"
+/pull 10
+END
+VER 3 0000000000000002 "4" "132156"
+https://www.twitch.tv/firebreathereu
+END
+VER 3 000000000000000A "aaaa" "INV_MISC_QUESTIONMARK"
+/run local a,b="Formula: Enchant Shield - Greater Stamina"; for i=30,33 do b=GetMerchantItemInfo(i) if b==a then BuyMerchantItem(i,1) else end end CloseMerchant()
+END
+VER 3 0000000000000008 "ad" "INV_MISC_QUESTIONMARK"
+/run for i=1,GetMerchantNumItems() do local l=GetMerchantItemLink(i) if l then if l:find("Formula: Enchant Shield - Greater Stamina") then BuyMerchantItem(i, 1)end end end
+END
+VER 3 000000000000001C "ADDS" "135922"
+/gq switch ADDS
+END
+VER 3 0000000000000015 "adw" "INV_MISC_QUESTIONMARK"
+/run DEFAULT_CHAT_FRAME.editBox:SetText("/gdkp auction " .. select(2, GameTooltip:GetItem()));ChatEdit_SendText(DEFAULT_CHAT_FRAME.editBox, 0)
+END
+VER 3 0000000000000024 "AUCTION" "134567"
+/run DEFAULT_CHAT_FRAME.editBox:SetText("/gdkp auction " .. select(2, GameTooltip:GetItem()));ChatEdit_SendText(DEFAULT_CHAT_FRAME.editBox, 0)
+END
+VER 3 000000000000000E "AutoHP" "INV_Misc_QuestionMark"
+#showtooltip
+/cast item:34780
+END
+VER 3 0000000000000022 "AutoMP" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [combat] item:22832; item:34780
+END
+VER 3 000000000000001B "BOSS" "135874"
+/gq switch boss
+END
+VER 3 000000000000000F "ConsumableHP" "INV_Misc_QuestionMark"
+#showtooltip
+/cast item:6948
+END
+VER 3 0000000000000010 "ConsumableMP" "INV_Misc_QuestionMark"
+#showtooltip
+/cast item:22832
+END
+VER 3 0000000000000001 "d" "132089"
+/2 Crafting [Small Silk Pack] 10 slots  with your mats! 12 silk cloth, 2 heavy leather, 3 fine thread
+END
+VER 3 0000000000000009 "dad" "INV_MISC_QUESTIONMARK"
+/run for i=1,GetMerchantNumItems() do local l=GetMerchantItemLink(i) if l then if l:find("Design: Amulet of the Moon") then BuyMerchantItem(i, 1)end end end
+END
+VER 3 0000000000000005 "Decursive" "INV_MISC_QUESTIONMARK"
+/stopcasting
+/cast [@mouseover,nomod,exists] Remove Curse;  [@mouseover,exists,mod:ctrl] Abolish Poison; [@mouseover,exists,mod:shift] Remove Curse
+END
+VER 3 000000000000000B "drink" "3867503"
+#showtooltip
+/use Conjured Manna Biscuit
+/use Purified Draenic Water
+END
+VER 3 000000000000000C "DrinkOnlyMP" "INV_Misc_QuestionMark"
+#showtooltip
+/cast item:34780
+END
+VER 3 0000000000000017 "DUNG" "132110"
+/1 LFM Botanica N healer
+/6 LFM Botanica N healer
+/5 LFM Botanica N healer
+END
+VER 3 000000000000000D "FoodOnlyHP" "INV_Misc_QuestionMark"
+#showtooltip
+/cast item:34780
+END
+VER 3 0000000000000028 "fsf" "INV_MISC_QUESTIONMARK"
+#showtooltip Earth Shock(rank 1)
+/stopcasting
+/tar Shadowsword Fury Mage
+/cast Earth Shock(rank 1)
+END
+VER 3 0000000000000027 "GHETTO" "136010"
+ /run InviteUnit("a");(C_Timer.After)(1,function() LeaveParty() end)
+END
+VER 3 000000000000001A "HS" "132137"
+/run InviteUnit("a");(C_Timer.After(1, LeaveParty)
+END
+VER 3 0000000000000026 "Hyjal" "132339"
+LFM Hyjal GDKP 80/20|| NEED ALL|| Tokens/ToC: 1,5K, rest 750g
+END
+VER 3 0000000000000014 "ORB" "132108"
+/use Tainted Core
+/y <------ TAINTED CORE TO: %t ! ! !
+/s <------ TAINTED CORE TO: %t ! ! !
+/script SendChatMessage("!!! YOU HAVE CORE FRIEND", "WHISPER", nil, UnitName("target"));
+END
+VER 3 0000000000000003 "p" "132156"
+/p follow me plz on: twitch.tv/firebreathereu
+END
+VER 3 0000000000000004 "part" "132089"
+/leave party
+END
+VER 3 0000000000000016 "PET" "132114"
+/click PetActionButton5 
+/click PetActionButton4
+/click PetActionButton3
+END
+VER 3 000000000000001F "RC" "136155"
+/readycheck
+END
+VER 3 0000000000000006 "ROLL" "INV_MISC_QUESTIONMARK"
+/ROLL
+END
+VER 3 0000000000000023 "SETTINGS" "134563"
+/gdkpd
+END
+VER 3 0000000000000020 "shoot" "INV_MISC_QUESTIONMARK"
+#showtooltip shoot
+/castsequence reset=2 !Shoot, null
+END
+VER 3 0000000000000021 "SW1" "INV_MISC_QUESTIONMARK"
+/run WeakAuras.ScanEvents("BL_SWAP1")
+END
+VER 3 000000000000001E "T1" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use 13
+END
+VER 3 000000000000001D "T2" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use 14
+END
+VER 3 0000000000000018 "trade" "INV_MISC_QUESTIONMARK"
+/trade
+END
+VER 3 0000000000000012 "world" "INV_MISC_QUESTIONMARK"
+/4 WTS |cffa335ee|Hitem:31332::::::::70::::::::|h[Blinkstrike]|h|r, wisp me an offer
+END
+VER 3 0000000000000025 "ZA spam" "132242"
+LFM ZA GDKP 80/20 || Need ALL!! || Trinkets: 2k, weps/rings/neck: 1k, rest 500g
+END

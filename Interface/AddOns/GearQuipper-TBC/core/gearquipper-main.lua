@@ -262,7 +262,7 @@ c.eventFrame:RegisterEvent("LEARNED_SPELL_IN_TAB");
 c.eventFrame:RegisterEvent("UPDATE_MACROS");
 
 -- socketing (new in tbc classic)
-if c:IsTBC() then
+if not c:IsClassic() then
     c.eventFrame:RegisterEvent("SOCKET_INFO_SUCCESS");
     c.eventFrame:RegisterEvent("SOCKET_INFO_CLOSE");
 end
@@ -414,7 +414,7 @@ c.eventFrame:HookScript("OnEvent", function(self, event, arg1, arg2, arg3, ...)
             end
             -- end
         elseif event == "ITEM_LOCK_CHANGED" then
-            if not c:IsInCombat() then
+            if not c:IsInCombat() and not c:IsDead() then
                 lastGearAndBagsCache = c:CacheCurrentGearAndBags();
             end
         elseif event == "ITEM_LOCKED" then
@@ -693,6 +693,10 @@ function c:IsInCombat()
     return InCombatLockdown() or inCombat;
 end
 
+function c:IsDead()
+    return UnitIsDeadOrGhost("player");
+end
+
 function c:IsOnBattleground()
     local bgPosition = UnitInBattleground("player");
     if not bgPosition then
@@ -707,14 +711,14 @@ function c:IsCastingSpell()
 end
 
 function c:SpellCastStart(spellId)
-    if not c:IsInCombat() then
+    if not c:IsInCombat() and not c:IsDead() then
         lastGearAndBagsCache = c:CacheCurrentGearAndBags();
     end
 end
 
 function c:SpellCastSuccess(spellId)
     -- check for enchanted items
-    if not c:IsInCombat() then
+    if not c:IsInCombat() and not c:IsDead() then
         C_Timer.After(c:GetHomeLatency(100 + GQ_OPTIONS[c.OPT_SWITCHDELAY]) / 1000, function()
             c:CheckForNewEnchantment();
         end);
@@ -747,7 +751,7 @@ function c:SpellAuraRemoved(spellId)
 end
 
 function c:SpellCastEnd()
-    if not c:IsInCombat() then
+    if not c:IsInCombat() and not c:IsDead() then
         C_Timer.After(c:GetHomeLatency(100 + GQ_OPTIONS[c.OPT_SWITCHDELAY]) / 1000, function()
             -- if not c:IsSwitching() and not c:IsInCombat() and not c:IsCastingSpell() then
             if table.getn(switchQueue) > 0 then
@@ -780,7 +784,7 @@ function c:CheckDruidFormChanged(eventType)
 end
 
 function c:CheckForNewEnchantment()
-    if not c:IsInCombat() and lastGearAndBagsCache then
+    if not c:IsInCombat() and not c:IsDead() and lastGearAndBagsCache then
         local cacheType, bagId, slotId, oldItemString, newItemString = c:GetFirstChangedItem(lastGearAndBagsCache);
         c:DebugPrint("CheckForNewEnchantment", cacheType, bagId, slotId, oldItemString, newItemString);
 
@@ -841,7 +845,7 @@ function c:QueueSwitch(switchArgs)
     -- complex call
     if switchArgs then
         switchArgs[c.SWITCHARG_ID] = GetNextSwitchId();
-        if not c:IsSwitching() and not c:IsInCombat() and not c:IsCastingSpell() then
+        if not c:IsSwitching() and not c:IsInCombat() and not c:IsCastingSpell() and not c:IsDead() then
             -- switch immediately
             c:SwitchToSet(switchArgs);
             return;
@@ -1020,6 +1024,8 @@ function c:SwitchToSet(switchArgs)
                     c:SaveCurrentSetName(c:LoadPreviousSetName());
                 end
 
+                -- c:SetKeyBindings(c:LoadKeyBindings(setName));
+
                 c:FinishSwitch(switchArgs);
                 return true;
             end
@@ -1081,7 +1087,7 @@ function c:LoadActionConfiguration(setName)
             ClearCursor();
 
             if not c:IsEmpty(entry) then
-                if entry[c.FIELD_TYPE] == "spell" then
+                if entry[c.FIELD_TYPE] == "spell" or entry[c.FIELD_TYPE] == "companion" then
                     PickupSpell(entry[c.FIELD_ID]);
                 elseif entry[c.FIELD_TYPE] == "item" then
                     PickupItem(entry[c.FIELD_ID]);
@@ -1263,5 +1269,39 @@ function c:GetItemFromBank(itemString, bagSpaceCache)
 
     if CursorHasItem() then
         return c:PutInBag(bagSpaceCache, itemString);
+    end
+end
+
+function c:GetCurrentKeyBindings()
+    local bindings = {};
+    -- LoadBindings(GetCurrentBindingSet());
+    for i = 1, GetNumBindings() do
+        local b = {GetBinding(i)};
+
+        local command = b[1];
+        bindings[command] = bindings[command] or {};
+
+        local size = c:GetTableSize(b);
+        if size > 1 then
+            for i = 2, size do
+                tinsert(bindings[command], b[i]);
+            end
+        end
+    end
+    return bindings;
+end
+
+function c:SetKeyBindings(bindings)
+    if bindings then
+        for command, keys in pairs(bindings) do
+            keys = keys or {};
+
+            for _, key in ipairs(keys) do
+                if SetBinding(key, command) == 1 then
+                    c:Println("changed " .. key .. " " .. command);
+                end
+            end
+            -- SaveBindings(GetCurrentBindingSet());
+        end
     end
 end

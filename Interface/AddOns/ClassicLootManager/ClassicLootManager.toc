@@ -2,7 +2,7 @@
 ## Title: Classic Loot Manager
 ## Notes: Robust, DKP based Loot Manager system
 ## Author: Lantis
-## Version: v1.9.1
+## Version: v1.9.2
 ## X-License: MIT
 ## X-Curse-Project-ID: 481373
 ## X-WoWI-ID: 26001

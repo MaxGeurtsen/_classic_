@@ -1,7 +1,16 @@
 # <DBM> PvP
 
-## [r133](https://github.com/DeadlyBossMods/DBM-PvP/tree/r133) (2022-05-31)
-[Full Changelog](https://github.com/DeadlyBossMods/DBM-PvP/compare/r132...r133) [Previous Releases](https://github.com/DeadlyBossMods/DBM-PvP/releases)
+## [r136](https://github.com/DeadlyBossMods/DBM-PvP/tree/r136) (2022-09-02)
+[Full Changelog](https://github.com/DeadlyBossMods/DBM-PvP/compare/r135...r136) [Previous Releases](https://github.com/DeadlyBossMods/DBM-PvP/releases)
 
-- toc bump  
-- Match capitaliztaion for Flag properly  
+- Editor fail  
+- Update PvPGeneral.lua  
+- Fix last  
+- Update wrath check for latest ptr build (compat code for live for now)  
+- more pvp fixes  
+- Update PvPGeneral.lua  
+- Enable IOC for wrath classic  
+- add isRetail  
+- Misc changes for Wrath  
+    Change some checks to `not isRetail` instead, as it handles all 3classics  
+    Added `D4WC` addon comm  

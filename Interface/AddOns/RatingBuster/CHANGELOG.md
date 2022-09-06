@@ -1,8 +1,6 @@
 # RatingBuster
 
-## [1.4.3](https://github.com/raethkcj/RatingBuster/tree/1.4.3) (2022-06-25)
-[Full Changelog](https://github.com/raethkcj/RatingBuster/compare/1.4.2...1.4.3) [Previous Releases](https://github.com/raethkcj/RatingBuster/releases)
+## [1.5.1](https://github.com/raethkcj/RatingBuster/tree/1.5.1) (2022-08-29)
+[Full Changelog](https://github.com/raethkcj/RatingBuster/compare/1.5.0...1.5.1) [Previous Releases](https://github.com/raethkcj/RatingBuster/releases)
 
-- Don't detect grimoires as containing nested recipes (Fixes #80)  
-- Bump TOC  
-- Bump TOC  
+- Add wago id to toc  

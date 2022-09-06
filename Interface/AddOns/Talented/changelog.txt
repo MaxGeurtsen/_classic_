@@ -1,9 +1,22 @@
-v211202
-    - Add Spanish localisation and fix a display issue with a Warlock talent (thanks @dcarril)
+v220904
+    - Fix accidental mis-indexing of talents (don't debug at 2am, kids)
+    - Fix hunter pet talents
 
-v211114b
-    - Minor update to Korean localisation
-    - Update to AceConfig
+    To do:
+    - Add buttons to set group finder role, as in the default blizzard frames.
+
+v220903
+    - Fix desaturation of talent templates when "always edit" is disabled
+    - Fix incorrect invoke of PlaySound when removing glyphs
+    - Fix linking of incorrect talents in chat
+    - Update TOC to WotLK
+    - Fix spellID when linking talents
+    - Stop unnecessary spell scanning (and hence printing of information)
+    - Fix URL of WoWHead export
+
+    To do:
+    - Add buttons to set group finder role, as in the default blizzard frames.
+    - Fix hunter pet talents
 
 v210718
     - Add korean localisation (thank you Jinny2305 on Curseforge)

@@ -31,7 +31,7 @@ local function AddFeaturesTab(mainFrame)
     end)
 
     UIHelper:CreateSettingsKeyCB(featureTab, "Report Ele Earth", "REPORT_ELEMENTAL_EARTH")
-    UIHelper:CreateSettingsKeyCB(featureTab, "BETA: Auto follow", "AUTO_FOLLOW")
+    UIHelper:CreateSettingsKeyCB(featureTab, "Auto follow", "AUTO_FOLLOW")
 end
 
 -- Adds additional options for the lockout tracker system
@@ -40,6 +40,7 @@ local function AddLockoutTrackerSettings(mainFrame)
         local tab = UIHelper:CreateTab(mainFrame, "Lockout settings")
         UIHelper:CreateSettingsKeyCB(tab, "Record statistics", "FEATURE_LockoutStatistics")
         UIHelper:CreateSettingsKeyCB(tab, "Report instance resets", "LOCKOUT_REPORTRESET")
+        UIHelper:CreateSettingsKeyCB(tab, "Report stats to party", "STATISTICS_REPORT_PARTY")
         UIHelper:CreateSettingsKeyCB(tab, "Create statistics link", "STATISTICS_REPORT")
         UIHelper:CreateSettingsKeyCB(tab, "Reset upon joining group", "LOCKOUT_RESETONGROUPCHANGE")
         UIHelper:CreateSettingsKeyCB(tab, "Display locked warning on logoff", "LOCKOUT_LOGOFFWARNING", 250)

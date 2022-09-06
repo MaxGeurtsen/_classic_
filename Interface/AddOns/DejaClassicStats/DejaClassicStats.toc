@@ -1,5 +1,5 @@
 ## Interface: 30400
-## Version: 30400r2
+## Version: 30400r3
 ## Author: Dejablue, Kakjens, loudsoul
 ## Title-deDE: |TInterface\Addons\DejaClassicStats\DCSArt\DejoLogo:26:26|t|cff00c0ffDCS|r
 ## Title-enUS: |TInterface\Addons\DejaClassicStats\DCSArt\DejoLogo:26:26|t|cff00c0ffDCS|r

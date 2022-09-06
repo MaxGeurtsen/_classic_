@@ -16,10 +16,15 @@ AL["Azure Templar"] = "Templario azur"
 AL["Badge of Justice"] = "Distintivo de justicia"
 AL["Baron Charr"] = "Barón Charr"
 AL["Baron Kazum"] = "Barón Kazum"
+--[[Translation missing --]]
+--[[ AL["BC"] = "BC"--]] 
 AL["Box of Chocolates"] = "Caja de bombones"
 AL["Brewfest"] = "Fiesta de la Cerveza"
 AL["Brightly Colored Egg"] = "Huevo de colores vivos"
-AL["Burning Crusade"] = "Burning Crusade"
+--[[Translation missing --]]
+--[[ AL["Capitals"] = "Capitals"--]] 
+--[[Translation missing --]]
+--[[ AL["Card Game Tabards"] = "Card Game Tabards"--]] 
 AL["Childrens Week"] = "Semana de los Niños"
 AL["Classic"] = "Clásico"
 AL["Crimson Templar"] = "Templario Carmesí"
@@ -79,6 +84,10 @@ AL["Tier Sets"] = "Conjuntos de Tier"
 AL["Totems"] = "Tótems"
 AL["Two-Handed Weapons"] = "Armas de dos manos"
 AL["Unobtainable"] = "Inobtenible"
+--[[Translation missing --]]
+--[[ AL["Unobtainable Tabards"] = "Unobtainable Tabards"--]] 
 AL["Wands"] = "Varitas"
 AL["World Epics"] = "Épicos del Mundo"
 AL["World Events"] = "Eventos del Mundo"
+--[[Translation missing --]]
+--[[ AL["Wrath"] = "Wrath"--]] 
